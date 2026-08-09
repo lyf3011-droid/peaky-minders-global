@@ -374,15 +374,31 @@
     <p class="sd">Beta, alfa, resiliencia, estabilidad y opcionalidad</p>
 
     <div class="tw"><table>
-      <thead><tr><th>Capa</th><th style="text-align:right">Peso</th><th>Bloques</th><th>Responsabilidad</th></tr></thead>
+      <thead><tr><th>Capa</th><th style="text-align:right">Peso</th><th>Bloques</th><th>Responsabilidad</th><th style="text-align:right">Alfa asignado ᴬ</th></tr></thead>
       <tbody>
-        <tr><td><strong>Núcleo / beta</strong></td><td class="n">31%</td><td>Motor</td><td>Capturar el mercado global. <strong>No produce alfa</strong></td></tr>
-        <tr><td><strong>Alfa activo</strong></td><td class="n">33%</td><td>Convicción · Reversión · Aceleración</td><td><strong>Aquí debe salir el exceso de retorno</strong></td></tr>
-        <tr><td><strong>Resiliencia</strong></td><td class="n">12%</td><td>Calidad</td><td>Reducir la sensibilidad del beneficio al ciclo</td></tr>
-        <tr><td><strong>Estabilizadores</strong></td><td class="n">20%</td><td>Freno · Protección</td><td>Munición, estabilidad y cobertura</td></tr>
-        <tr><td><strong>Opcionalidad</strong></td><td class="n">4%</td><td>Bitcoin</td><td>Recorrido no lineal con tamaño limitado</td></tr>
+        <tr><td><strong>Núcleo / beta</strong></td><td class="n">31%</td><td>Motor</td><td>Capturar el mercado global. <strong>No produce alfa</strong> por definición: replica el benchmark</td><td class="n">0 pb</td></tr>
+        <tr><td><strong>Alfa activo</strong></td><td class="n">33%</td><td>Convicción · Reversión · Aceleración</td><td><strong>El grueso del exceso de retorno</strong></td><td class="n" style="color:var(--pos);font-weight:700">+112 pb</td></tr>
+        <tr><td><strong>Resiliencia</strong></td><td class="n">12%</td><td>Calidad</td><td>Reducir la sensibilidad del beneficio al ciclo</td><td class="n" style="color:var(--pos)">+18 pb</td></tr>
+        <tr><td><strong>Estabilizadores y activos reales</strong></td><td class="n">20%</td><td>Freno · Protección</td><td>Munición, estabilidad y cobertura monetaria. <strong>El cobre es activo real de crecimiento, no defensivo</strong> ᴮ</td><td class="n" style="color:var(--neg);font-weight:700">−77 pb</td></tr>
+        <tr><td><strong>Opcionalidad</strong></td><td class="n">4%</td><td>Bitcoin</td><td>Recorrido no lineal con tamaño limitado</td><td class="n" style="color:var(--pos)">+28 pb</td></tr>
+        <tr><td><strong>Disciplina</strong></td><td class="n">—</td><td>Rebalanceo</td><td>Prima de proceso: reequilibrar con las aportaciones</td><td class="n" style="color:var(--pos)">+20 pb</td></tr>
+        <tr class="tot"><td>NETO SOBRE ACWI</td><td class="n">100%</td><td></td><td></td><td class="n" style="color:var(--cyan-dk)">+76 pb</td></tr>
       </tbody>
     </table></div>
+
+    <p class="fn"><strong>ᴬ Supuestos de diseño propios, no datos oficiales.</strong> Se
+      detallan bloque a bloque en la sección 09 y se someten a análisis de sensibilidad en la
+      10. Se publican precisamente para que puedan discutirse.<br>
+      <strong>ᴮ</strong> El cobre cayó con fuerza en la crisis de 2007-2009, a diferencia del
+      oro. Por eso se contabiliza como activo real y no como cobertura, aunque comparta bloque
+      con el oro. <span class="pend">[Magnitud exacta pendiente de verificar en serie oficial
+      de precios]</span></p>
+
+    <div class="note warn"><b>Los estabilizadores restan 77 puntos básicos.</b> No es un coste
+      oculto: es el precio explícito de caer doce puntos menos que el índice. Cada punto
+      porcentual de estabilizador cuesta aproximadamente 5 pb de exceso de retorno, y esa
+      relación es la que obligó a reformular el objetivo del mandato de +150/+200 pb a
+      +50/+100 pb. <strong>Preferimos enseñarlo en la tabla a que aparezca en una pregunta.</strong></div>
 
     <div class="band"><p class="q">Si todos los bloques deben batir al mercado,<br>ninguno responde.</p></div>
   </section>
@@ -1070,17 +1086,87 @@
       como dato sería un error grave; presentarlos como lo que son es lo que permite el
       análisis de sensibilidad de la sección 10.</div>
 
+    <h4>Fuentes primarias de datos — índices MSCI</h4>
+    <p>Todas las cifras de rentabilidad, volatilidad, Sharpe, caída máxima, beta, tracking
+      error, rotación, composición sectorial y geográfica de los índices proceden de los
+      <strong>factsheets oficiales de MSCI con datos a 31 de julio de 2026</strong>, descargados
+      de msci.com el 9 de agosto de 2026. Son documentos públicos y gratuitos.</p>
+
+    <div class="tw"><table>
+      <thead><tr><th>Índice</th><th>Documento</th><th>Usado en</th></tr></thead>
+      <tbody>
+        <tr><td>MSCI World</td><td class="pend">msci.com/documents/10199/255599/msci-world-index.pdf</td><td>Base de comparación</td></tr>
+        <tr><td>MSCI World Diversified Multiple-Factor</td><td class="pend">msci.com/documents/10199/255599/msci-world-diversified-multi-factor-index-usd-gross.pdf</td><td>§08 Aceleración</td></tr>
+        <tr><td>MSCI World Quality</td><td class="pend">msci.com/documents/10199/344aa133-d8fa-4a15-b091-20a8fd024b65</td><td>§08, §19b descarte</td></tr>
+        <tr><td>MSCI World Momentum</td><td class="pend">msci.com/documents/10199/255599/msci-world-momentum-index-usd-gross.pdf</td><td>§08, §19b descarte</td></tr>
+        <tr><td>MSCI World Enhanced Value</td><td class="pend">msci.com/documents/10199/255599/msci-world-enhanced-value-index-net-usd.pdf</td><td>§19b descarte</td></tr>
+        <tr><td>MSCI World Minimum Volatility</td><td class="pend">msci.com/documents/10199/255599/msci-world-minimum-volatility-index.pdf</td><td>§19b descarte</td></tr>
+        <tr><td>MSCI World Small Cap Quality</td><td class="pend">msci.com/documents/10199/255599/msci-world-small-cap-quality-index-usd-net.pdf</td><td>§08 Aceleración</td></tr>
+        <tr><td>MSCI World Small Cap</td><td class="pend">msci.com/documents/10199/255599/msci-world-small-cap-index.pdf</td><td>Comparación de la prima de tamaño</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="note warn"><b>Dos advertencias metodológicas obligatorias al citar estos
+      datos.</b><br>
+      <strong>1. Bases distintas.</strong> Quality, Momentum, Multi-Factor y Minimum Volatility
+      se publican en rentabilidad <em>bruta</em>; Enhanced Value y Small Cap Quality en
+      <em>neta</em>. <strong>No son comparables entre sí</strong>, solo cada uno con su índice
+      padre, que aparece en su misma base y en el mismo documento.<br>
+      <strong>2. Historial reconstruido.</strong> Los índices de factores se lanzaron después
+      del inicio de sus series: Quality en dic-2012, Momentum en dic-2013, Multi-Factor en
+      mar-2015, Small Cap Quality en abr-2022. Los datos anteriores son <em>back-tested</em>.
+      <strong>MSCI advierte expresamente que suele haber diferencias materiales entre el
+      backtest y el resultado real.</strong></div>
+
+    <h4>Literatura académica citada</h4>
+    <div class="tw"><table>
+      <thead><tr><th>Referencia</th><th>Publicación</th><th>Usado en</th></tr></thead>
+      <tbody>
+        <tr><td>Bessembinder, H. (2018) — <em>Do Stocks Outperform Treasury Bills?</em></td><td>Journal of Financial Economics 129(3), 440-457 · SSRN 2900447</td><td>§08 Motor, §19b</td></tr>
+        <tr><td>Bessembinder et al. (2019) — <em>Do Global Stocks Outperform US Treasury Bills?</em></td><td>SSRN 3415739</td><td>§08 Motor</td></tr>
+        <tr><td>Jorion, P. &amp; Goetzmann, W. (1999) — <em>Global Stock Markets in the Twentieth Century</em></td><td>Journal of Finance 54(3), 953-980</td><td>§08 Motor</td></tr>
+        <tr><td>Brinson, Hood &amp; Beebower (1986, 1991) — <em>Determinants of Portfolio Performance</em></td><td>Financial Analysts Journal 42(4) y 47(3)</td><td>§04 Proceso</td></tr>
+        <tr><td>Ibbotson, R. &amp; Kaplan, P. (2000) — <em>Does Asset Allocation Policy Explain 40, 90, or 100% of Performance?</em></td><td>Financial Analysts Journal 56(1)</td><td>§04 Proceso — matiz de cita</td></tr>
+        <tr><td>Novy-Marx, R. (2013) — <em>The Other Side of Value</em></td><td>Journal of Financial Economics 108(1), 1-28</td><td>§08 Convicción</td></tr>
+        <tr><td>Fama, E. &amp; French, K. (2015) — <em>A Five-Factor Asset Pricing Model</em></td><td>Journal of Financial Economics 116(1), 1-22</td><td>§08 Convicción</td></tr>
+        <tr><td>Asness, Frazzini &amp; Pedersen (2019) — <em>Quality Minus Junk</em></td><td>Review of Accounting Studies 24, 34-112 · aqr.com</td><td>§08 Convicción, Calidad</td></tr>
+        <tr><td>Banz, R. (1981) — <em>The Relationship Between Return and Market Value of Common Stocks</em></td><td>Journal of Financial Economics 9(1), 3-18</td><td>§08 Aceleración</td></tr>
+        <tr><td><strong>Asness, Frazzini, Israel, Moskowitz &amp; Pedersen (2018) — <em>Size Matters, If You Control Your Junk</em></strong></td><td>Journal of Financial Economics 129(3), 479-509 · aqr.com</td><td>§08 Aceleración — filtro de calidad</td></tr>
+        <tr><td>Jegadeesh, N. &amp; Titman, S. (1993) — <em>Returns to Buying Winners and Selling Losers</em></td><td>Journal of Finance 48(1), 65-91</td><td>§08 Aceleración</td></tr>
+        <tr><td>Carhart, M. (1997) — <em>On Persistence in Mutual Fund Performance</em></td><td>Journal of Finance 52(1), 57-82</td><td>§08 Aceleración</td></tr>
+        <tr><td>Asness, Moskowitz &amp; Pedersen (2013) — <em>Value and Momentum Everywhere</em></td><td>Journal of Finance 68(3), 929-985 · aqr.com</td><td>§08 Aceleración</td></tr>
+        <tr><td>Geczy, C. &amp; Samonov, M. (2016) — <em>Two Centuries of Price-Return Momentum</em></td><td>Financial Analysts Journal 72(5)</td><td>§08 Aceleración</td></tr>
+        <tr><td>Daniel, K. &amp; Moskowitz, T. (2016) — <em>Momentum Crashes</em></td><td>Journal of Financial Economics 122(2), 221-247</td><td>§19b descarte de momentum</td></tr>
+        <tr><td>Siegel, J. — <em>Stocks for the Long Run</em>, 5ª ed. (2014)</td><td>McGraw-Hill · datos 1957-2012</td><td>§08 Calidad</td></tr>
+        <tr><td>Shiller, R. — serie CAPE</td><td>econ.yale.edu/~shiller/data.htm</td><td>§08 Reversión</td></tr>
+        <tr><td>Dimson, Marsh &amp; Staunton — <em>Triumph of the Optimists</em> (2002) y <em>Global Investment Returns Yearbook</em></td><td>Princeton University Press · UBS, anual</td><td>§08 Aceleración, límites sectoriales</td></tr>
+        <tr><td>Swensen, D. — <em>Unconventional Success</em> (2005)</td><td>Free Press</td><td>§19 Yale</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>Fuentes institucionales</h4>
+    <div class="tw"><table>
+      <tbody>
+        <tr><td style="width:36%"><strong>S&amp;P Dow Jones Indices</strong></td><td>SPIVA Scorecard y Persistence Scorecard, publicación semestral · spglobal.com/spdji</td></tr>
+        <tr><td><strong>Morningstar</strong></td><td><em>Mind the Gap</em>, informe anual sobre la brecha de comportamiento del inversor</td></tr>
+        <tr><td><strong>MSCI</strong></td><td>Definición, cobertura y metodología del MSCI ACWI</td></tr>
+        <tr><td><strong>Bridgewater</strong></td><td><em>The All Weather Story</em> — marco de entornos económicos</td></tr>
+        <tr><td><strong>BlackRock</strong></td><td>Benchmarking, budgeting, investing y monitoring — proceso institucional</td></tr>
+      </tbody>
+    </table></div>
+
     <h4>Verificaciones pendientes antes de la entrega</h4>
     <div class="tw"><table>
       <thead><tr><th>#</th><th>Qué verificar</th><th>Por qué</th></tr></thead>
       <tbody>
-        <tr><td class="n">1</td><td>Cifras sectoriales de Siegel</td><td>Sostienen el bloque Calidad</td></tr>
-        <tr><td class="n">2</td><td>Caídas pico-valle 2007-2009</td><td>Sostienen todo el análisis de riesgo</td></tr>
-        <tr><td class="n">3</td><td>Composición y rentabilidad del MSCI ACWI</td><td>Es el benchmark oficial</td></tr>
-        <tr><td class="n">4</td><td>Cifras de Bessembinder</td><td>Sostienen el núcleo indexado</td></tr>
-        <tr><td class="n">5</td><td>Ferrocarriles al 63% en 1900</td><td>Sostiene los límites sectoriales</td></tr>
-        <tr><td class="n">6</td><td>Cobertura del ACWI (~85%)</td><td>Sostiene el argumento de completitud de small caps</td></tr>
-        <tr><td class="n">7</td><td>SPIVA y Mind the Gap, última edición</td><td>Cifras citadas de memoria</td></tr>
+        <tr><td class="n">1</td><td>Cifras sectoriales de Siegel (13,3% / 12,8% / 10,1%)</td><td>Sostienen el bloque Calidad entero</td></tr>
+        <tr><td class="n">2</td><td>Caídas pico-valle 2007-2009 de cada componente</td><td>Sostienen el análisis de riesgo</td></tr>
+        <tr><td class="n">3</td><td><strong>Factsheet del MSCI ACWI</strong></td><td>Es el benchmark oficial y aún no está verificado en fuente</td></tr>
+        <tr><td class="n">4</td><td>Cifras de Bessembinder (57,8% / 4,3%)</td><td>Sostienen el núcleo indexado</td></tr>
+        <tr><td class="n">5</td><td>Ferrocarriles al 63% de la bolsa americana en 1900</td><td>Sostiene los límites sectoriales</td></tr>
+        <tr><td class="n">6</td><td>Cobertura del ACWI (~85% del universo invertible)</td><td>Sostiene el argumento de completitud de small caps</td></tr>
+        <tr><td class="n">7</td><td>Comportamiento del cobre y del oro en 2007-2009</td><td>Sostiene la separación de roles dentro de Protección</td></tr>
+        <tr><td class="n">8</td><td>SPIVA y <em>Mind the Gap</em>, última edición</td><td>Cifras citadas de memoria</td></tr>
       </tbody>
     </table></div>
   </section>
