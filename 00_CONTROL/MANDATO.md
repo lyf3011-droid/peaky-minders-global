@@ -3,7 +3,7 @@
 > Este archivo registra el mandato **inicial** del 8 de agosto de 2026 y se conserva
 > como trazabilidad del proceso. **No se reescribe el pasado.**
 >
-> **La versión vigente es la v3.1**, en `02_CARTERA/CARTERA_DEFINITIVA.md`.
+> **La versión vigente es la v3.2**, en `02_CARTERA/CARTERA_DEFINITIVA.md`.
 >
 > Cambios posteriores: benchmark fijado en MSCI ACWI · objetivo reformulado de
 > +150/+200 pb a +50/+100 pb · caída de diseño de −45% a −42% · equipo de 7 a 6

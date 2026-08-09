@@ -71,7 +71,7 @@ si un dato no está disponible o no puedes verificarlo, lo dices explícitamente
 | Caída de diseño | −42% |
 | Freno (renta fija corta + liquidez) | 11% (banda 5-13%) |
 | Perfil | Agresivo, justificado por horizonte y aportaciones |
-| Cartera vigente | v3.1 — ver 02_CARTERA/CARTERA_DEFINITIVA.md |
+| Cartera vigente | v3.2 — ver 02_CARTERA/CARTERA_DEFINITIVA.md |
 | Exclusiones sectoriales | Ninguna |
 
 ## REGLAS DE TRABAJO

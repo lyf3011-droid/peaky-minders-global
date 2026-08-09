@@ -39,8 +39,8 @@ Más de la mitad entra escalonada: **las caídas durante el periodo juegan a fav
 | Perfil | Agresivo |
 | **Benchmark oficial** | **MSCI ACWI** |
 | Benchmark secundario | S&P 500 |
-| **Objetivo** | **ACWI +50/+100 pb anualizados a ciclo completo, con caída 10-12 puntos inferior a la del índice** |
-| Caída de diseño | **−42%** (no es límite duro ni garantía) |
+| **Objetivo** | **ACWI +50/+100 pb anualizados a ciclo completo, con caída 10-15 puntos inferior a la del índice** |
+| Caída de diseño | **−43%** (no es límite duro ni garantía) |
 | Renta variable total | 76% (envolvente de diseño 75-85%) |
 | Revisión formal | Trimestral |
 | Gobernanza | Comité humano. La IA no firma |
@@ -110,7 +110,7 @@ son **supuestos de diseño declarados**, no proyecciones ni datos históricos.
 |---|---|---|---|
 | Convicción — 7 empresas seleccionadas | 14% | +500 pb | **+70 pb** |
 | Asimetría — Bitcoin | 4% | +700 pb | **+28 pb** |
-| Aceleración — momentum + small caps con calidad | 8% | +250 pb | **+20 pb** |
+| Aceleración — Multi-Factor + small caps con calidad | 8% | +250 pb | **+20 pb** |
 | Reversión — EM + Japón por valoración | 11% | +200 pb | **+22 pb** |
 | Calidad — resiliencia de beneficios | 12% | +150 pb | **+18 pb** |
 | Rebalanceo disciplinado | — | — | **+20 pb** |
@@ -146,7 +146,7 @@ Qué pasa si los supuestos no se cumplen:
 
 **Lectura honesta:** el resultado depende de que **al menos dos** de las tres fuentes de
 alfa funcionen. Si solo funciona una, la cartera queda plana frente al índice — pero con
-una caída 12 puntos menor, que sigue siendo un resultado defendible.
+una caída 15 puntos menor, que sigue siendo un resultado defendible.
 
 > **La tesis, en una frase:** si nos equivocamos eligiendo, igualamos al mercado con
 > bastante menos caída. Si acertamos, lo batimos. El bloque de Convicción es la palanca;
@@ -314,7 +314,7 @@ ACWI no incluye, y **su top 10 pesa solo un 6,17%** frente al 23,82% del MSCI Wo
 el único de los seis que reduce la concentración en lugar de aumentarla.
 
 **Por qué no hay bloque tecnológico.** El look-through reveló que la cartera ya lleva
-**~16,5% en tecnología** sin comprarla como bloque: 8,7% dentro del Motor, 2,8% vía los
+**~18,7% en tecnología** sin comprarla como bloque: 8,7% dentro del Motor, 2,8% vía los
 semiconductores asiáticos de Reversión y ~5% por Alphabet y Meta en Convicción. Un bloque
 tecnológico habría sido la tercera compra del mismo riesgo. Además, el research de cuellos
 de botella de la IA situó a las seis candidatas con una prima media del **+73%** sobre su
@@ -389,23 +389,23 @@ Aplicando a cada bloque su caída **pico-valle** entre octubre de 2007 y marzo d
 
 | Bloque | Peso | Caída aplicada | Aporta |
 |---|---|---|---|
-| Motor (ACWI) | 31% | −54% | −16,7 |
+| Motor (ACWI) | 31% | −58,4% | −18,1 |
 | Convicción | 14% | −52% | −7,3 |
-| Reversión (EM + Japón) | 11% | −56% | −6,2 |
-| Aceleración | 8% | −60% | −4,8 |
+| Reversión (EM + Japón) | 11% | −59%¹ | −6,5 |
+| Aceleración | 8% | −57,1% | −4,6 |
 | Calidad | 12% | −25% | −3,0 |
 | Freno | 11% | **+2%** | **+0,2** |
 | Oro | 7% | **+5%** | **+0,4** |
 | Cobre / recursos | 2% | −55% | −1,1 |
 | Bitcoin | 4% | −80%¹ | −3,2 |
-| | | **TOTAL** | **−41,7% ≈ −42%** |
+| | | **TOTAL** | **−43,2% ≈ −43%** |
 
 ¹ *Bitcoin no existía en 2008. Se aplica −80%, su comportamiento real en sus tres desplomes
 documentados (2014, 2018, 2022).*
 
-> **Sobre 100.000 €, la cartera bajaría hasta unos 58.000 €.**
-> **El MSCI ACWI, en ese mismo periodo, cayó aproximadamente un 54%.**
-> **Diferencia: 12 puntos porcentuales.**
+> **Sobre 100.000 €, la cartera bajaría hasta unos 57.000 €.**
+> **El MSCI ACWI, en ese mismo periodo, cayó aproximadamente un 58,4%.**
+> **Diferencia: 15 puntos porcentuales.**
 
 ⚠️ **Precisión obligatoria al citarlo:** estas son caídas **de máximo a mínimo (pico-valle)**,
 no del año natural 2008. En año natural el MSCI World hizo ≈ −41% y el S&P 500 ≈ −37%.

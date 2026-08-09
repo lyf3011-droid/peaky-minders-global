@@ -4,7 +4,7 @@
 *Think Global. Allocate with Conviction.*
 
 **Academia de Inversión · Ejercicio de Cartera Permanente · Profesor Antonio Baeza**
-Documento de entrega · Versión 3.1 · 9 de agosto de 2026
+Documento de entrega · Versión 3.2 · 9 de agosto de 2026
 
 ---
 
@@ -15,14 +15,14 @@ Documento de entrega · Versión 3.1 · 9 de agosto de 2026
 | **Nombre del grupo** | Peaky Minders |
 | **Nombre de la cartera** | **Peaky Minders Global** |
 | **Integrantes** | Fran González · Cristina R. · Andrea · Celia · Jordi · Mary `[apellidos pendientes]` |
-| **Perfil de riesgo** | Agresivo. Caída de diseño: −42% |
+| **Perfil de riesgo** | Agresivo. Caída de diseño: −43% |
 | **Horizonte temporal** | 10 años mínimo, sin fecha de salida |
 | **Capital inicial** | 100.000 € |
 | **Aportación periódica** | 1.000 € mensuales |
 | **Total aportado a 10 años** | 220.000 € |
 | **Benchmark oficial** | MSCI ACWI |
 | **Benchmark secundario** | S&P 500 |
-| **Objetivo** | ACWI +50/+100 pb anualizados a ciclo completo, con caída 10-12 puntos inferior |
+| **Objetivo** | ACWI +50/+100 pb anualizados a ciclo completo, con caída 10-15 puntos inferior |
 | **Rebalanceo** | Calendario + umbral, prioridad a las aportaciones |
 | **Portavoz** | Fran González |
 
@@ -52,7 +52,7 @@ parte de la variabilidad del resultado, muy por encima de qué producto concreto
    que batan al mercado: se lo exigimos a Convicción, Reversión y Aceleración, y hemos
    cuantificado cuánto puede aportar cada uno.
 3. **El riesgo se calculó, no se estimó.** Aplicamos el comportamiento real de 2008 a
-   cada bloque por separado: la cartera cae un 42% donde el MSCI ACWI cayó un 54%.
+   cada bloque por separado: la cartera cae un 43% donde el MSCI ACWI cayó un 58,4%.
 
 **La tesis, en una frase:** *si nos equivocamos eligiendo empresas, seguimos igualando al
 mercado con bastante menos caída; si acertamos, lo batimos.* El diseño tiene suelo y
@@ -107,7 +107,7 @@ como referencia secundaria, exigente y comprensible, pero no como listón oficia
 ## 3.2 El objetivo
 
 > **Superar al MSCI ACWI en 50-100 puntos básicos anualizados a lo largo de un ciclo
-> completo, asumiendo una caída máxima 10-12 puntos inferior a la del índice.**
+> completo, asumiendo una caída máxima 10-15 puntos inferior a la del índice.**
 
 **No prometemos batir al mercado todos los años.** Un objetivo anual obligaría a asumir
 riesgo en el peor momento para cumplirlo.
@@ -131,7 +131,7 @@ objetivo que no se sostiene en el papel no sobrevive a la primera pregunta incó
 
 ## 3.5 La tolerancia a la caída
 
-**Caída de diseño: −42%.** Sobre 100.000 €, la cartera bajaría a unos 58.000 €.
+**Caída de diseño: −43%.** Sobre 100.000 €, la cartera bajaría a unos 57.000 €.
 
 No es un límite duro ni una garantía. Es el resultado de aplicar el comportamiento de
 2008 a cada bloque por separado (§9), y se fijó **antes** de conocer la composición final.
@@ -176,7 +176,7 @@ picaporte de una casa sin cimientos.
 | 📉 **REVERSIÓN** | Emergentes + Japón | **11%** | 11.000 € | Jordi |
 | ⚓ **FRENO** | Renta fija corta + liquidez | **11%** | 11.000 € | Fran |
 | 🛡️ **PROTECCIÓN** | Oro 7% + cobre/recursos 2% | **9%** | 9.000 € | Mary · Cristina |
-| ⚡ **ACELERACIÓN** | Momentum 4% + small caps calidad 4% | **8%** | 8.000 € | Fran |
+| ⚡ **ACELERACIÓN** | Multi-Factor 4% + Small Cap Quality 4% | **8%** | 8.000 € | Fran |
 | 💥 **ASIMETRÍA** | Bitcoin | **4%** | 4.000 € | Andrea |
 | | **TOTAL** | **100%** | **100.000 €** | |
 
@@ -456,7 +456,7 @@ Al abrir la cartera con look-through encontramos esto:
 | Motor — MSCI ACWI | 31% × ~28% | 8,7% |
 | Reversión — TSMC, Samsung, SK Hynix | 11% × ~25% | 2,8% |
 | Convicción — Alphabet y Meta | ~5% directo | 5,0% |
-| | **TOTAL** | **≈ 16,5%** |
+| | **TOTAL** | **≈ 18,7%** |
 
 **Un bloque tecnológico habría sido la tercera compra del mismo riesgo.** Además,
 investigamos en profundidad la cadena de valor de la inteligencia artificial —doce
@@ -574,7 +574,7 @@ que casi ningún trabajo se hace: *si decimos que vamos a batir al índice, ¿co
 | Convicción — 7 empresas seleccionadas | 14% | +500 pb | **+70 pb** |
 | Asimetría — Bitcoin | 4% | +700 pb | **+28 pb** |
 | Reversión — emergentes + Japón | 11% | +200 pb | **+22 pb** |
-| Aceleración — momentum + small caps | 8% | +250 pb | **+20 pb** |
+| Aceleración — Multi-Factor + small caps | 8% | +250 pb | **+20 pb** |
 | Calidad — resiliencia de beneficios | 12% | +150 pb | **+18 pb** |
 | Rebalanceo disciplinado | — | — | **+20 pb** |
 | | | **ALFA BRUTO** | **+178 pb** |
@@ -610,7 +610,7 @@ Qué pasa si los supuestos no se cumplen:
 
 **Lectura honesta:** el resultado depende de que **al menos dos de las tres fuentes de
 alfa funcionen**. Si solo funciona una, la cartera queda plana frente al índice — pero con
-una caída doce puntos menor, lo que sigue siendo un resultado defendible.
+una caída quince puntos menor, lo que sigue siendo un resultado defendible.
 
 > **La tesis, en una frase:** si nos equivocamos eligiendo, igualamos al mercado con
 > bastante menos caída. Si acertamos, lo batimos. **Convicción es la palanca; el resto de
@@ -650,23 +650,23 @@ No estimamos la caída: la calculamos aplicando a cada bloque su comportamiento 
 
 | Bloque | Peso | Caída aplicada | Aporta |
 |---|---|---|---|
-| Motor (ACWI) | 31% | −54% | −16,7 |
+| Motor (ACWI) | 31% | −58,4% | −18,1 |
 | Convicción | 14% | −52% | −7,3 |
-| Reversión (EM + Japón) | 11% | −56% | −6,2 |
-| Aceleración | 8% | −60% | −4,8 |
+| Reversión (EM + Japón) | 11% | −59%¹ | −6,5 |
+| Aceleración | 8% | −57,1% | −4,6 |
 | Calidad | 12% | −25% | −3,0 |
 | Freno | 11% | **+2%** | **+0,2** |
 | Oro | 7% | **+5%** | **+0,4** |
 | Cobre / recursos | 2% | −55% | −1,1 |
 | Bitcoin | 4% | −80%¹ | −3,2 |
-| | | **TOTAL** | **−41,7% ≈ −42%** |
+| | | **TOTAL** | **−43,2% ≈ −43%** |
 
 ¹ *Bitcoin no existía en 2008. Se le aplica −80%, su comportamiento real en sus tres
 desplomes documentados.*
 
-> **Sobre 100.000 €, la cartera bajaría hasta unos 58.000 €.**
-> **El MSCI ACWI, en ese mismo periodo, cayó aproximadamente un 54%.**
-> **Diferencia: 12 puntos porcentuales.**
+> **Sobre 100.000 €, la cartera bajaría hasta unos 57.000 €.**
+> **El MSCI ACWI, en ese mismo periodo, cayó aproximadamente un 58,4%.**
+> **Diferencia: 15 puntos porcentuales.**
 
 ## ⚠️ Precisión metodológica obligatoria
 
@@ -676,7 +676,7 @@ no del año natural 2008.
 | Índice | Año natural 2008 | **Pico-valle 2007-2009** |
 |---|---|---|
 | S&P 500 | ≈ −37% | ≈ **−57%** |
-| MSCI World | ≈ −41% | ≈ **−54%** |
+| MSCI World | ≈ −41% | ≈ **−58,4%** |
 | MSCI Emerging | ≈ −53% | ≈ **−61%** |
 
 Es la medida correcta para hablar de caída máxima, pero **hay que nombrarla como tal**:
@@ -789,7 +789,7 @@ de ella; no se borra.
 | Riesgo | Impacto | Cómo lo gestionamos |
 |---|---|---|
 | **El alfa depende de Convicción y Aceleración** | Alto | Cuantificado en §7.4. El suelo sigue siendo igualar al índice con menos caída |
-| **Concentración real en tecnología ~16,5%** | Medio | Declarada y en línea con el peso natural del mundo. Sin bloque tecnológico añadido |
+| **Concentración real en tecnología ~18,7%** | Medio | Declarada y en línea con el peso natural del mundo. Sin bloque tecnológico añadido |
 | **El equipo abandona durante una caída** | Alto | Protocolo de 72 h, aportaciones mensuales y perfil sin retiradas |
 | Momentum se desploma en un rebote | Medio | Documentado en §6. Peso limitado al 4% |
 | Small caps sin filtro de calidad | Medio | Filtro obligatorio en el vehículo |

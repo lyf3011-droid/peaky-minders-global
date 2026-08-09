@@ -9,6 +9,77 @@ Descargados de msci.com el 9 de agosto de 2026
 
 ---
 
+## 0. EL BENCHMARK — MSCI ACWI
+
+**Factsheet oficial a 31 de julio de 2026** (rentabilidad neta, serie desde dic-2000).
+
+| Concepto | Valor |
+|---|---|
+| **Constituyentes** | **2.460** |
+| **Cobertura del universo invertible global** | **~85%** ✅ |
+| Mercados | 23 desarrollados + 24 emergentes |
+| **Rentabilidad anualizada desde dic-2000** | **7,39%** |
+| Volatilidad 10 años | 14,71% |
+| Ratio de Sharpe desde 2000 | 0,41 |
+| **Máxima caída** | **−58,38%** (31-oct-2007 → 9-mar-2009) |
+| Rotación anual | 3,21% |
+| P/E · P/E fwd · P/BV | 23,24 · 17,13 · 3,82 |
+| Rentabilidad por dividendo | 1,59% |
+
+### Composición sectorial y geográfica
+
+| Sector | Peso | | País | Peso |
+|---|---|---|---|---|
+| **Tecnología** | **30,28%** | | **Estados Unidos** | **63,55%** |
+| Financieras | 17,18% | | Japón | 5,05% |
+| Industriales | 10,86% | | Reino Unido | 3,19% |
+| Consumo discrecional | 8,97% | | Taiwán | 3,14% |
+| Salud | 8,39% | | Canadá | 3,01% |
+| Comunicación | 7,87% | | Resto | 22,07% |
+| Consumo defensivo | 4,83% | | | |
+
+### Top 10 — el 24,21% del índice
+
+| # | Compañía | País | Peso |
+|---|---|---|---|
+| 1 | Nvidia | US | 4,57% |
+| 2 | Apple | US | 4,47% |
+| 3 | Microsoft | US | 3,23% |
+| 4 | Amazon | US | 2,59% |
+| 5 | Alphabet A | US | 2,04% |
+| 6 | **TSMC** | **TW** | 1,82% |
+| 7 | Broadcom | US | 1,73% |
+| 8 | Alphabet C | US | 1,62% |
+| 9 | Meta | US | 1,20% |
+| 10 | JPMorgan Chase | US | 0,93% |
+
+### Índices de referencia comparados
+
+| Índice | Rentab. desde 2000 | Volatilidad 10 a. | Sharpe | **Máxima caída** |
+|---|---|---|---|---|
+| **MSCI ACWI** | **7,39%** | 14,71% | 0,41 | **−58,38%** |
+| MSCI World | 7,45% | 14,86% | 0,42 | −57,82% |
+| MSCI Emerging Markets | **9,06%** | 17,44% | 0,43 | **−65,25%** (oct-2007 → oct-2008) |
+
+---
+
+## 0-bis. TRES CORRECCIONES QUE OBLIGA ESTE DATO
+
+| # | Lo que decíamos | **Dato oficial** | Efecto |
+|---|---|---|---|
+| 1 | El índice cayó −54% | **−58,38%** | Nuestra ventaja **aumenta** de 12 a 15 puntos |
+| 2 | Tecnología en el ACWI ~28% | **30,28%** | La exposición real de la cartera sube a ~18,7% |
+| 3 | Cobertura del ACWI ~85% | **~85% confirmado** | ✅ El argumento de small caps queda validado en fuente |
+
+**La corrección 1 es a mejor:** el índice cayó más de lo que suponíamos, así que la
+diferencia a nuestro favor es mayor. La 2 obliga a actualizar el dato de tecnología. La 3
+confirma oficialmente uno de los argumentos centrales del trabajo.
+
+**Fuente:** MSCI ACWI Index (USD) Factsheet, 31-jul-2026 —
+`msci.com/documents/10199/255599/msci-acwi-net.pdf`
+
+---
+
 ## 1. TABLA MAESTRA
 
 | Índice | Serie desde | Rentab. anualizada | Volatilidad 10 a. | Sharpe desde inicio | **Máx. caída** | Beta | Tracking error | Rotación anual |

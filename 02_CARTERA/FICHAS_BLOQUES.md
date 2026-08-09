@@ -1,6 +1,6 @@
 # FICHAS DE BLOQUE — Peaky Minders Global
 
-**Fecha límite de entrega: 11 de agosto de 2026** · Cartera v3.1
+**Fecha límite de entrega: 11 de agosto de 2026** · Cartera v3.2
 
 > ⚠️ **PESOS ACTUALIZADOS EL 9 DE AGOSTO.** Si recibiste una versión anterior por
 > WhatsApp con otros porcentajes, **esta manda**. Los cambios: Motor 29→31 ·
@@ -18,7 +18,7 @@
 | 📉 Reversión — emergentes + Japón | 11% | **Jordi** |
 | ⚓ Freno — renta fija corta | 11% | Fran |
 | 🛡️ Protección — oro | 7% | **Mary** |
-| ⚡ Aceleración — momentum + small caps | 8% | Fran |
+| ⚡ Aceleración — Multi-Factor + small caps | 8% | Fran |
 | 💥 Asimetría — bitcoin | 4% | **Andrea** |
 | 🛡️ Protección — cobre / recursos | 2% | **Cristina** |
 
@@ -166,10 +166,10 @@ Hynix), lo que se suma a nuestra exposición tecnológica.
 
 | Componente | Peso |
 |---|---|
-| Momentum global | 4% |
+| MSCI World Diversified Multiple-Factor | 4% |
 | Small caps globales **con filtro de calidad** | 4% |
 
-**Por qué ya no es tecnología.** Al abrir la cartera vimos que ya llevábamos ~16,5% en
+**Por qué ya no es tecnología.** Al abrir la cartera vimos que ya llevábamos ~18,7% en
 tecnología sin comprarla como bloque: dentro del índice mundial, vía los semiconductores
 asiáticos de emergentes, y por Alphabet y Meta en Convicción. Un bloque tecnológico
 habría sido la tercera compra del mismo riesgo. Además, las seis empresas candidatas del

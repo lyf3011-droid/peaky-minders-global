@@ -1,16 +1,47 @@
 # FICHA DE BLOQUE — ⚡ ACELERACIÓN
 
-**Peso: 8% · 8.000 € · Responsable: Fran · Versión 2.0 · 9 de agosto de 2026**
+**Peso: 8% · 8.000 € · Responsable: Fran · Versión 3.0 · 9 de agosto de 2026**
 
-> **Cambio respecto a la v1.0.** El bloque pasa de exposición sectorial tecnológica a
-> **exposición factorial**. Motivo: la cartera ya tenía ~25% de tecnología por otras vías
-> y el research disponible situaba todas las candidatas con una prima media del +73%
-> sobre su valoración histórica. La v1.0 queda archivada al final como registro.
+## COMPOSICIÓN VIGENTE
 
-| Composición | Peso | Importe |
-|---|---|---|
-| **Momentum global** | 4% | 4.000 € |
-| **Small caps globales (con filtro de calidad)** | 4% | 4.000 € |
+| Componente | Peso | Importe | Prima oficial | Tracking error | **Ratio inf.** |
+|---|---|---|---|---|---|
+| **MSCI World Diversified Multiple-Factor** | 4% | 4.000 € | +2,88 pp | 4,07% | **0,71** |
+| **MSCI World Small Cap Quality** | 4% | 4.000 € | +1,86 pp | 3,36% | **0,55** |
+
+> ### 📌 HISTORIAL DE VERSIONES — no se reescribe el pasado
+>
+> **v1.0** — Cuellos de botella de la IA (advanced packaging, red eléctrica,
+> refrigeración líquida). **Descartada:** las seis candidatas cotizaban con una prima
+> media del **+73%** sobre su valoración de cinco años.
+>
+> **v2.0** — Momentum 4% + Small Cap Quality 4%. **Momentum descartado** tras obtener los
+> datos oficiales: misma prima que Multi-Factor (+2,91 vs +2,88) con **casi el doble de
+> riesgo activo** (7,85% vs 4,07%) y **tres veces más rotación** (119,69% vs 40,50%).
+> Ratio de información 0,37 frente a 0,71.
+>
+> **v3.0 · vigente** — Multi-Factor 4% + Small Cap Quality 4%. **No se renuncia a
+> momentum:** el índice Multi-Factor ya lo incorpora, junto con value, quality y tamaño.
+> Se compra el factor diversificado en lugar de concentrado.
+>
+> Las secciones 4 y el anexo conservan el análisis completo de momentum y del research de
+> IA. **Se mantienen como registro de por qué se descartaron, no como recomendación.**
+
+### Los seis índices evaluados — datos oficiales MSCI a 31-jul-2026
+
+| Índice | Prima | Caída máx. | Beta | TE | Rotación | Top 10 | EE.UU. | **Ratio** |
+|---|---|---|---|---|---|---|---|---|
+| **Multi-Factor** ✅ | +2,88 | −56,4% | 0,98 | 4,07% | 40,5% | 25,6% | 69,8% | **0,71** |
+| Quality | +3,01 | −48,0% | 0,90 | 4,49% | 48,0% | 37,1% | 78,2% | 0,67 |
+| **Small Cap Quality** ✅ | +1,86 | −57,9% | 0,94 | 3,36% | 57,9% | **6,2%** | 56,2% | **0,55** |
+| Momentum ❌ | +2,91 | −55,5% | 0,93 | 7,85% | **119,7%** | 28,0% | 56,3% | 0,37 |
+| Enhanced Value ❌ | +2,21 | **−62,0%** | 1,06 | 7,27% | 27,4% | 27,6% | **46,2%** | 0,30 |
+| Minimum Volatility ❌ | −0,29 | **−47,7%** | **0,67** | 7,17% | **20,5%** | **13,5%** | 67,7% | −0,04 |
+
+**Por qué se descartó Quality pese a tener el segundo mejor ratio:** su tracking error de
+4,49% y su **78,15% en Estados Unidos** significan que es el índice que ya tenemos, mejor
+filtrado. Sus diez mayores posiciones son Microsoft, Apple, Broadcom, Nvidia, Meta y
+Alphabet — las mismas que ya dominan el Motor. Habría concentrado, no diversificado.
 
 ---
 
@@ -222,7 +253,7 @@ demuestra que los factores atraviesan periodos largos de mal comportamiento.
 
 | Componente | Peso | Alfa supuesto | Aporta |
 |---|---|---|---|
-| Momentum global | 4% | +300 pb | +12 pb |
+| MSCI World Diversified Multiple-Factor | 4% | +300 pb | +12 pb |
 | Small caps con calidad | 4% | +200 pb | +8 pb |
 | | | **Total bloque** | **+20 pb** |
 

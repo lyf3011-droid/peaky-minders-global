@@ -78,8 +78,8 @@ Butterfly. Tampoco vale modificar ligeramente sus pesos.
 | Retiradas | Ninguna. Nunca |
 | Moneda base | EUR (se admiten activos en USD, con conversión indicada) |
 | **Benchmark oficial** | **MSCI ACWI**. Secundario: S&P 500 |
-| **Objetivo** | **ACWI +50/+100 pb anualizados** a ciclo completo, con caída 10-12 puntos inferior a la del índice |
-| **Caída de diseño** | **−42%** (no es límite duro ni garantía) |
+| **Objetivo** | **ACWI +50/+100 pb anualizados** a ciclo completo, con caída 10-15 puntos inferior a la del índice |
+| **Caída de diseño** | **−43%** (no es límite duro ni garantía) |
 | Renta variable total | 76% (envolvente 75-85%) |
 | Perfil | Agresivo, justificado por horizonte y aportaciones |
 | Exclusiones sectoriales | Ninguna |
@@ -91,7 +91,7 @@ riesgo lo alcanzaba. Se reformuló a +50/+100 pb, que sí es alcanzable y verifi
 
 ---
 
-## LA CARTERA — v3.1 (vigente)
+## LA CARTERA — v3.2 (vigente)
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
@@ -101,10 +101,10 @@ riesgo lo alcanzaba. Se reformuló a +50/+100 pb, que sí es alcanzable y verifi
 | 📉 Reversión | Emergentes + Japón | 11% | Jordi |
 | ⚓ Freno | Renta fija corta + liquidez | 11% | Fran |
 | 🛡️ Protección | Oro 7% + cobre 2% | 9% | Mary · Cristina |
-| ⚡ Aceleración | Momentum 4% + small caps calidad 4% | 8% | Fran |
+| ⚡ Aceleración | Multi-Factor 4% + Small Cap Quality 4% | 8% | Fran |
 | 💥 Asimetría | Bitcoin | 4% | Andrea |
 
-**Caída de diseño −42%** (ACWI: −54% pico-valle 2007-2009) · **Alfa neto estimado +76 pb**
+**Caída de diseño −43%** (ACWI: −58,4% pico-valle 2007-2009) · **Alfa neto estimado +76 pb**
 
 ---
 
@@ -152,7 +152,7 @@ Al terminar cualquier bloque de trabajo, actualizar en `ESTADO.md`:
 - **Peso monetario ≠ contribución al riesgo.** Toda decisión se mira en las dos vistas.
 - **Look-through obligatorio.** Cuatro posiciones aparentes pueden ser una sola apuesta
   económica. El límite temático se mide **después** del look-through, nunca antes.
-- **Sin bloque tecnológico:** la cartera ya lleva ~16,5% por otras vías. Añadirlo sería
+- **Sin bloque tecnológico:** la cartera ya lleva ~18,7% por otras vías. Añadirlo sería
   comprar tres veces el mismo riesgo.
 - **Primas factoriales antes que apuestas sectoriales.** Un factor documentado en muchos
   mercados y periodos tiene más respaldo que un sector de moda.

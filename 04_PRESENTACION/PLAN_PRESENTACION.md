@@ -47,7 +47,7 @@ lo encuentre el profesor.
 
 *(Pendiente de cerrar el diseño. Estructura prevista.)*
 
-*(Cartera v3.1, cerrada el 9 de agosto.)*
+*(Cartera v3.2, cerrada el 9 de agosto.)*
 
 | Función | Peso | Qué hace en una frase |
 |---|---|---|
@@ -57,14 +57,14 @@ lo encuentre el profesor.
 | 📉 **REVERSIÓN** | 11% | Apuesta a que lo barato se pague: emergentes y Japón |
 | ⚓ **FRENO** | 11% | Munición para comprar en las caídas |
 | 🛡️ **PROTECCIÓN** | 9% | Oro como seguro, cobre como activo real |
-| ⚡ **ACELERACIÓN** | 8% | Primas documentadas: momentum y small caps con calidad |
+| ⚡ **ACELERACIÓN** | 8% | Primas documentadas: Multi-Factor y small caps con calidad |
 | 💥 **ASIMETRÍA** | 4% | Poco peso, mucho recorrido posible |
 
 **Ventaja narrativa:** ocho bloques, ocho frases. Unos 35 segundos cada uno dentro de los
 cinco minutos del acto central. Es una presentación que se sostiene sin leer.
 
 **Y hay dos ausencias que también se explican, y valen tanto como las presencias:**
-- **No hay bloque tecnológico** — ya llevamos ~16,5% por otras vías
+- **No hay bloque tecnológico** — ya llevamos ~18,7% por otras vías
 - **No hay bloque de Europa** — las compañías europeas de calidad entran por Convicción
   si superan el proceso. La geografía por sí sola no es una tesis
 
@@ -75,13 +75,13 @@ cinco minutos del acto central. Es una presentación que se sostiene sin leer.
 | # | Acto | Min | Visual protagonista |
 |---|---|---|---|
 | 1 | **No existe la cartera perfecta** | 1 | Apertura a pantalla completa. Frase única |
-| 2 | **Quiénes somos y qué nos hemos propuesto** | 1,5 | Contadores animados: 100.000 € · 1.000 €/mes · 10 años · −45% |
+| 2 | **Quiénes somos y qué nos hemos propuesto** | 1,5 | Contadores animados: 100.000 € · 1.000 €/mes · 10 años · −43% |
 | 3 | **Las reglas que nos dimos** | 2 | Los 7 estudios apareciendo uno a uno al hacer scroll |
 | 4 | **Por qué no copiamos a los famosos** | 2 | Comparativa animada: All Weather / Permanent / Golden Butterfly vs nuestro mandato |
 | 5 | **La cartera, función por función** ⭐ | 4 | **El corazón.** Cada bloque entra en escena con su función y su peso |
 | 6 | **Dónde está el dinero en el mundo** | 1,5 | **Mapa mundial** con los pesos por geografía |
 | 7 | **La radiografía: lo que de verdad llevamos** | 2 | X-Ray. **Revelación del solapamiento tecnológico** |
-| 8 | **Y si viene otro 2008** | 2 | Caída animada activo por activo hasta el −45% |
+| 8 | **Y si viene otro 2008** | 2 | Caída animada activo por activo hasta el −43% |
 | 9 | **Cómo la mantenemos** | 1,5 | Rebalanceo con aportaciones. Flujo mensual animado |
 | 10 | **Nuestro método propio** | 1,5 | Demo del IDC con 2-3 empresas reales |
 | 11 | **Qué pasa si nos equivocamos** | 1 | Cierre honesto. Riesgos e invalidación |

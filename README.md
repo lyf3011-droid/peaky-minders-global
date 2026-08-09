@@ -20,7 +20,7 @@
 
 ---
 
-## LA CARTERA — v3.1
+## LA CARTERA — v3.2
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
@@ -30,11 +30,11 @@
 | 📉 Reversión | Emergentes + Japón | 11% | Jordi |
 | ⚓ Freno | Renta fija corta + liquidez | 11% | Fran |
 | 🛡️ Protección | Oro 7% + cobre 2% | 9% | Mary · Cristina |
-| ⚡ Aceleración | Momentum 4% + small caps calidad 4% | 8% | Fran |
+| ⚡ Aceleración | Multi-Factor 4% + Small Cap Quality 4% | 8% | Fran |
 | 💥 Asimetría | Bitcoin | 4% | Andrea |
 
-**Benchmark:** MSCI ACWI · **Objetivo:** +50/+100 pb anualizados con caída 10-12 puntos
-inferior al índice · **Caída de diseño:** −42% · **Alfa neto estimado:** +76 pb
+**Benchmark:** MSCI ACWI · **Objetivo:** +50/+100 pb anualizados con caída 10-15 puntos
+inferior al índice · **Caída de diseño:** −43% · **Alfa neto estimado:** +76 pb
 
 ---
 
@@ -59,7 +59,7 @@ claude-cartera-antonio/
 │   └── FUENTES_Y_TRAZABILIDAD.md   Dato / estimación / supuesto
 │
 ├── 02_CARTERA/
-│   ├── CARTERA_DEFINITIVA.md    ⭐ La cartera v3.1
+│   ├── CARTERA_DEFINITIVA.md    ⭐ La cartera v3.2
 │   ├── FICHA_ACELERACION.md     Bloque factorial + research IA archivado
 │   └── FICHAS_BLOQUES.md        Plantillas para el equipo
 │
@@ -84,7 +84,7 @@ claude-cartera-antonio/
 |---|---|
 | Mandato y riesgo | ✅ Cerrado |
 | Base de evidencia | ✅ 16 estudios |
-| Diseño de cartera | ✅ v3.1 |
+| Diseño de cartera | ✅ v3.2 |
 | Fichas de bloque | 🔵 1 de 9 |
 | Documento de entrega | 🔵 65% |
 | Radiografía | ⏳ 12 ago |

@@ -38,9 +38,9 @@ cian es la marca de la cartera (producto). Es como funcionan las gestoras reales
 | Fase | Qué produce | Estado | Fecha |
 |---|---|---|---|
 | 0 · Reglas del juego | Perfil, objetivo, riesgo aceptado | ✅ Cerrada | — |
-| 1 · Presupuesto de riesgo | Freno 11%, caída de diseño −42% | ✅ Cerrada | — |
+| 1 · Presupuesto de riesgo | Freno 11%, caída de diseño −43% | ✅ Cerrada | — |
 | 1b · Base de evidencia | 16 estudios con referencia completa | ✅ Cerrada | — |
-| 2 · Diseño de cartera | 8 bloques, bandas, presupuesto de alfa | ✅ **v3.1** | 9 ago |
+| 2 · Diseño de cartera | 8 bloques, bandas, presupuesto de alfa | ✅ **v3.2** | 9 ago |
 | **3 · Fichas de bloque** | Producto, datos, invalidación | 🔵 **1 de 9 hecha** | 9-11 ago |
 | 4 · Puesta en común | Activos concretos elegidos | ⏳ | 11 ago |
 | 5 · Radiografía (X-Ray) | Métricas obligatorias del enunciado | ⏳ | 12 ago |
@@ -60,8 +60,8 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 |---|---|---|---|
 | D1 | Perfil: 34 años, 100.000 €, 1.000 €/mes, sin retiradas en 10 años | 8 ago | [CARTERA §1](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D2 | **Benchmark oficial: MSCI ACWI.** Secundario: S&P 500 | 9 ago | [CARTERA §2](02_CARTERA/CARTERA_DEFINITIVA.md) |
-| D3 | **Objetivo: ACWI +50/+100 pb** con caída 10-12 puntos inferior al índice | 9 ago | [CARTERA §2](02_CARTERA/CARTERA_DEFINITIVA.md) |
-| D4 | Caída de diseño: **−42%** (no es límite duro ni garantía) | 9 ago | [CARTERA §8](02_CARTERA/CARTERA_DEFINITIVA.md) |
+| D3 | **Objetivo: ACWI +50/+100 pb** con caída 10-15 puntos inferior al índice | 9 ago | [CARTERA §2](02_CARTERA/CARTERA_DEFINITIVA.md) |
+| D4 | Caída de diseño: **−43%** (no es límite duro ni garantía) | 9 ago | [CARTERA §8](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D5 | Renta variable total 76% (envolvente 75-85%) | 9 ago | [CARTERA §12](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D6 | Decisiones por mayoría simple (4/6); vender exige +72 h | 8 ago | [CARTERA §10](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D7 | Sin exclusiones sectoriales en este vehículo (salud entra) | 8 ago | [CARTERA §6](02_CARTERA/CARTERA_DEFINITIVA.md) |
@@ -71,7 +71,7 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 | D11 | Convicción: 7 empresas, media 2%, máx 3% | 9 ago | [CARTERA §6](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D12 | Reversión = **emergentes + Japón**, medido contra ACWI | 9 ago | [CARTERA §6](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D13 | Protección = **oro 7% + cobre 2%**, roles separados | 9 ago | [CARTERA §6](02_CARTERA/CARTERA_DEFINITIVA.md) |
-| D14 | **Sin bloque tecnológico.** Ya hay ~16,5% por otras vías | 9 ago | [FICHA ACELERACIÓN §1](02_CARTERA/FICHA_ACELERACION.md) |
+| D14 | **Sin bloque tecnológico.** Ya hay ~18,7% por otras vías | 9 ago | [FICHA ACELERACIÓN §1](02_CARTERA/FICHA_ACELERACION.md) |
 | D15 | **Aceleración = momentum 4% + small caps con calidad 4%** | 9 ago | [FICHA ACELERACIÓN](02_CARTERA/FICHA_ACELERACION.md) |
 | D16 | Rebalanceo Calendar + Threshold, primero con aportaciones | 8 ago | [CARTERA §9](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D17 | Gobernanza: la IA no firma. Decisión humana obligatoria | 9 ago | [CARTERA §10](02_CARTERA/CARTERA_DEFINITIVA.md) |
@@ -80,7 +80,7 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 
 ---
 
-## 4. LA CARTERA — v3.1
+## 4. LA CARTERA — v3.2
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
@@ -90,12 +90,12 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 | 📉 Reversión | Emergentes + Japón | **11%** | Jordi ⚠️ |
 | ⚓ Freno | Renta fija corta + liquidez | **11%** | Fran |
 | 🛡️ Protección | Oro 7% + cobre 2% | **9%** | Mary (oro) · Cristina (m. primas) |
-| ⚡ Aceleración | Momentum 4% + small caps calidad 4% | **8%** | Fran |
+| ⚡ Aceleración | Multi-Factor 4% + Small Cap Quality 4% | **8%** | Fran |
 | 💥 Asimetría | Bitcoin | **4%** | Andrea |
 
 ⚠️ *Pendiente confirmar: Jordi lleva Reversión entera (EM + Japón) y Celia lleva Calidad entera.*
 
-**Caída de diseño: −42%** (el ACWI cayó ~−54% pico-valle 2007-2009).
+**Caída de diseño: −43%** (el ACWI cayó ~−58,4% pico-valle 2007-2009).
 **Alfa neto estimado: +76 pb** sobre ACWI.
 **Fran lleva el 64% de la cartera** más todo lo transversal.
 
@@ -108,7 +108,7 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 
 | Tema | Resumen | Desarrollado en | Estado |
 |---|---|---|---|
-| **La cartera completa** | §4 | [02_CARTERA/CARTERA_DEFINITIVA.md](02_CARTERA/CARTERA_DEFINITIVA.md) | ✅ v3.1 |
+| **La cartera completa** | §4 | [02_CARTERA/CARTERA_DEFINITIVA.md](02_CARTERA/CARTERA_DEFINITIVA.md) | ✅ v3.2 |
 | **Presupuesto de alfa y sensibilidad** | §6 | [CARTERA §5](02_CARTERA/CARTERA_DEFINITIVA.md) | ✅ |
 | **Estudios que nos respaldan** | §6 | [01_EVIDENCIA/INFORME_EVIDENCIA.md](01_EVIDENCIA/INFORME_EVIDENCIA.md) | ✅ |
 | **Fuentes: dato / estimación / supuesto** | §7 | [01_EVIDENCIA/FUENTES_Y_TRAZABILIDAD.md](01_EVIDENCIA/FUENTES_Y_TRAZABILIDAD.md) | ✅ |
@@ -116,12 +116,12 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 | **Por qué elegir acciones merece la pena** | — | [INFORME_EVIDENCIA parte 3](01_EVIDENCIA/INFORME_EVIDENCIA.md) | ✅ |
 | **Ficha de Aceleración (factorial)** | §4 | [02_CARTERA/FICHA_ACELERACION.md](02_CARTERA/FICHA_ACELERACION.md) | ✅ |
 | **Research de cuellos de botella IA** | — | [FICHA ACELERACIÓN, anexo](02_CARTERA/FICHA_ACELERACION.md) | ✅ Archivado |
-| **Plantillas de ficha para el equipo** | — | [02_CARTERA/FICHAS_BLOQUES.md](02_CARTERA/FICHAS_BLOQUES.md) | ✅ v3.1 con responsables |
+| **Plantillas de ficha para el equipo** | — | [02_CARTERA/FICHAS_BLOQUES.md](02_CARTERA/FICHAS_BLOQUES.md) | ✅ v3.2 con responsables |
 | **Documento de entrega** | — | [03_ENTREGA/DOCUMENTO_ENTREGA.md](03_ENTREGA/DOCUMENTO_ENTREGA.md) | ✅ 18 capítulos · 4 pendientes de datos |
-| **Plan de la presentación** | — | [04_PRESENTACION/PLAN_PRESENTACION.md](04_PRESENTACION/PLAN_PRESENTACION.md) | ✅ v3.1 |
+| **Plan de la presentación** | — | [04_PRESENTACION/PLAN_PRESENTACION.md](04_PRESENTACION/PLAN_PRESENTACION.md) | ✅ v3.2 |
 | **Panel de control** | — | [00_CONTROL/PANEL.html](00_CONTROL/PANEL.html) | ✅ |
 | **Plano de obra** | — | [00_CONTROL/PLANO_DE_OBRA.html](00_CONTROL/PLANO_DE_OBRA.html) | ✅ |
-| **Briefing del equipo** | — | [00_CONTROL/BRIEFING_EQUIPO.html](00_CONTROL/BRIEFING_EQUIPO.html) | ✅ v3.1 |
+| **Briefing del equipo** | — | [00_CONTROL/BRIEFING_EQUIPO.html](00_CONTROL/BRIEFING_EQUIPO.html) | ✅ v3.2 |
 | **Mandato inicial** | — | [00_CONTROL/MANDATO.md](00_CONTROL/MANDATO.md) | 📁 Histórico, no vigente |
 | **Enunciado del concurso** | — | [99_FUENTES/Clase_Antonio_Baeza_completa.pdf](99_FUENTES/) | ✅ |
 | **Radiografía (X-Ray)** | — | `02_CARTERA/XRAY.md` | ⏳ 12 ago |
@@ -156,11 +156,11 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 
 ## 7. LOS CUATRO DATOS QUE HAY QUE SABER DE MEMORIA
 
-1. **La cartera cae −42% donde el ACWI cayó −54%.** Doce puntos menos, calculado activo
+1. **La cartera cae −43% donde el ACWI cayó −58,4%.** Doce puntos menos, calculado activo
    por activo con caídas **pico-valle** octubre 2007 – marzo 2009 (no del año natural).
-2. **Llevamos ~16,5% en tecnología sin tener bloque tecnológico**, y por eso no lo tenemos.
+2. **Llevamos ~18,7% en tecnología sin tener bloque tecnológico**, y por eso no lo tenemos.
 3. **El alfa depende de dos de las tres fuentes.** Si solo funciona una, quedamos planos
-   frente al índice — pero con 12 puntos menos de caída.
+   frente al índice — pero con 15 puntos menos de caída.
 4. **Momentum está documentado desde 1801**, en 8 clases de activos y decenas de países.
 
 ---
@@ -169,7 +169,7 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 
 | # | Pendiente | Depende de | Para cuándo |
 |---|---|---|---|
-| P1 | **Reenviar al grupo los pesos v3.1** — las fichas antiguas llevaban otros | Fran | Hoy |
+| P1 | **Reenviar al grupo los pesos v3.2** — las fichas antiguas llevaban otros | Fran | Hoy |
 | P2 | Confirmar Celia (Calidad) y Jordi (Reversión entera) | Grupo | Hoy |
 | P3 | Apellidos de los seis | Grupo | 11 ago |
 | P4 | Fichas de Calidad, Reversión, Protección ×2 y Asimetría | Responsables | 11 ago |
@@ -185,7 +185,7 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 | Fecha | Qué se cerró |
 |---|---|
 | **8 ago 2026** | Mandato completo. Base de evidencia con 9 estudios. Cartera v1 y v2. Detectada y corregida la incompatibilidad entre objetivo y estructura. Briefing y plano de obra publicados. Identidad Peaky Minders aplicada. |
-| **9 ago 2026** | Ingesta del PDF maestro y de VIGÍA. Presupuesto de alfa cuantificado con sensibilidad. **Cartera v3.0 opción B** con benchmark ACWI y objetivo reformulado a +50/+100 pb. Documento de fuentes y trazabilidad. Panel de control. Equipo cerrado en 6 personas y reparto asignado. Nombre de cartera: Peaky Minders Global. Research de cuellos de botella IA analizado y **descartado por valoración** (prima media +73%). **Cartera v3.1: Aceleración pasa de tecnología a factorial** (momentum + small caps con calidad). **Pase completo de coherencia a todo el proyecto**: documento de entrega reescrito con 18 capítulos, CLAUDE.md, informe de evidencia y fuentes ampliados con la literatura factorial, fichas del equipo con pesos y responsables, plan de presentación, plano de obra, panel y briefing. Mandato inicial marcado como histórico. |
+| **9 ago 2026** | Ingesta del PDF maestro y de VIGÍA. Presupuesto de alfa cuantificado con sensibilidad. **Cartera v3.0 opción B** con benchmark ACWI y objetivo reformulado a +50/+100 pb. Documento de fuentes y trazabilidad. Panel de control. Equipo cerrado en 6 personas y reparto asignado. Nombre de cartera: Peaky Minders Global. Research de cuellos de botella IA analizado y **descartado por valoración** (prima media +73%). **Cartera v3.2: Aceleración pasa de tecnología a factorial** (momentum + small caps con calidad). **Pase completo de coherencia a todo el proyecto**: documento de entrega reescrito con 18 capítulos, CLAUDE.md, informe de evidencia y fuentes ampliados con la literatura factorial, fichas del equipo con pesos y responsables, plan de presentación, plano de obra, panel y briefing. Mandato inicial marcado como histórico. |
 
 ---
 
