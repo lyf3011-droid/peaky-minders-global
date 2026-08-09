@@ -14,7 +14,7 @@ Documento de entrega · Versión 3.2 · 9 de agosto de 2026
 |---|---|
 | **Nombre del grupo** | Peaky Minders |
 | **Nombre de la cartera** | **Peaky Minders Global** |
-| **Integrantes** | Fran González · Cristina R. · Andrea · Celia · Jordi · Mary `[apellidos pendientes]` |
+| **Integrantes** | Fran González · Cristina Rodríguez · Celia Bravo · Andrea Miguel · Mary Morcillo · Jordi |
 | **Perfil de riesgo** | Agresivo. Caída de diseño: −43% |
 | **Horizonte temporal** | 10 años mínimo, sin fecha de salida |
 | **Capital inicial** | 100.000 € |
@@ -170,12 +170,12 @@ picaporte de una casa sin cimientos.
 
 | Función | Bloque | Peso | Importe | Responsable |
 |---|---|---|---|---|
-| 🚀 **MOTOR** | Índice mundial — MSCI ACWI | **31%** | 31.000 € | Fran |
+| 🚀 **MOTOR** | Índice mundial — MSCI ACWI | **31%** | 31.000 € | Fran · Cristina R. |
 | 🎯 **CONVICCIÓN** | 7 empresas, método IDC | **14%** | 14.000 € | Fran |
 | 🌿 **CALIDAD** | Salud + consumo defensivo | **12%** | 12.000 € | Celia |
 | 📉 **REVERSIÓN** | Emergentes + Japón | **11%** | 11.000 € | Jordi |
-| ⚓ **FRENO** | Renta fija corta + liquidez | **11%** | 11.000 € | Fran |
-| 🛡️ **PROTECCIÓN** | Oro 7% + cobre/recursos 2% | **9%** | 9.000 € | Mary · Cristina |
+| ⚓ **FRENO** | Renta fija corta + liquidez | **11%** | 11.000 € | **Grupo** |
+| 🛡️ **PROTECCIÓN** | Oro 7% + cobre/recursos 2% | **9%** | 9.000 € | Mary Morcillo · Cristina Rodríguez |
 | ⚡ **ACELERACIÓN** | Multi-Factor 4% + Small Cap Quality 4% | **8%** | 8.000 € | Fran |
 | 💥 **ASIMETRÍA** | Bitcoin | **4%** | 4.000 € | Andrea |
 | | **TOTAL** | **100%** | **100.000 €** | |

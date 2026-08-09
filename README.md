@@ -5,7 +5,7 @@
 
 > ## ⏰ ENTREGA: 17 de agosto de 2026 · PRESENTACIÓN: 18 de agosto
 
-**Equipo:** Fran González (portavoz) · Cristina R. · Andrea · Celia · Jordi · Mary
+**Equipo:** Fran González (portavoz) · Cristina Rodríguez · Celia Bravo · Andrea Miguel · Mary Morcillo · Jordi
 
 ---
 
@@ -24,14 +24,14 @@
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
-| 🚀 Motor | Índice mundial (ACWI) | 31% | Fran |
+| 🚀 Motor | Índice mundial (ACWI) | 31% | Fran · Cristina Rodríguez |
 | 🎯 Convicción | 7 empresas, método IDC | 14% | Fran |
-| 🌿 Calidad | Salud + consumo defensivo | 12% | Celia |
+| 🌿 Calidad | Salud + consumo defensivo | 12% | Celia Bravo |
 | 📉 Reversión | Emergentes + Japón | 11% | Jordi |
-| ⚓ Freno | Renta fija corta + liquidez | 11% | Fran |
-| 🛡️ Protección | Oro 7% + cobre 2% | 9% | Mary · Cristina |
+| ⚓ Freno | Renta fija corta + liquidez | 11% | **Grupo** |
+| 🛡️ Protección | Oro 7% + cobre 2% | 9% | Mary Morcillo · Cristina Rodríguez |
 | ⚡ Aceleración | Multi-Factor 4% + Small Cap Quality 4% | 8% | Fran |
-| 💥 Asimetría | Bitcoin | 4% | Andrea |
+| 💥 Asimetría | Bitcoin | 4% | Andrea Miguel |
 
 **Benchmark:** MSCI ACWI · **Objetivo:** +50/+100 pb anualizados con caída 10-15 puntos
 inferior al índice · **Caída de diseño:** −43% · **Alfa neto estimado:** +76 pb

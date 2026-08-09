@@ -12,15 +12,15 @@
 
 | Bloque | Peso | Responsable |
 |---|---|---|
-| 🚀 Motor — índice mundial (ACWI) | 31% | Fran |
+| 🚀 Motor — índice mundial (ACWI) | 31% | Fran · Cristina R. |
 | 🎯 Convicción — 7 empresas | 14% | Fran |
-| 🌿 Calidad — salud + consumo defensivo | 12% | **Celia** |
+| 🌿 Calidad — salud + consumo defensivo | 12% | **Celia Bravo** |
 | 📉 Reversión — emergentes + Japón | 11% | **Jordi** |
-| ⚓ Freno — renta fija corta | 11% | Fran |
-| 🛡️ Protección — oro | 7% | **Mary** |
+| ⚓ Freno — renta fija corta | 11% | **Grupo** |
+| 🛡️ Protección — oro | 7% | **Mary Morcillo** |
 | ⚡ Aceleración — Multi-Factor + small caps | 8% | Fran |
-| 💥 Asimetría — bitcoin | 4% | **Andrea** |
-| 🛡️ Protección — cobre / recursos | 2% | **Cristina** |
+| 💥 Asimetría — bitcoin | 4% | **Andrea Miguel** |
+| 🛡️ Protección — cobre / recursos | 2% | **Cristina Rodríguez** |
 
 ---
 
@@ -184,7 +184,7 @@ prima de tamaño reaparece con fuerza al controlar por calidad (Asness et al., 2
 
 # 🌿 BLOQUE 5 · CALIDAD — Salud + consumo defensivo · 12%
 
-**Responsable: Celia**
+**Responsable: Celia Bravo**
 
 > **Sube de 10% a 12%.** Es el bloque que mejor se comportó en el análisis: el único que
 > sube la rentabilidad esperada **y** baja la caída de la cartera al mismo tiempo.
@@ -258,7 +258,7 @@ está para disparar cuando toque.
 
 # 🛡️ BLOQUE 7 · PROTECCIÓN — Oro 7% (Mary) + Cobre/recursos 2% (Cristina)
 
-**Responsables: Mary (oro) · Cristina (cobre y recursos)**
+**Responsables: Mary Morcillo (oro) · Cristina Rodríguez (cobre y recursos)**
 
 > **Son dos roles económicos distintos y por eso van separados:**
 >
@@ -299,7 +299,7 @@ réplica física o sintética, y si está en euros o en dólares.
 
 # 💥 BLOQUE 8 · ASIMETRÍA — Bitcoin · 4%
 
-**Responsable: Andrea**
+**Responsable: Andrea Miguel**
 
 ### Ya está hecho — qué función cumple
 

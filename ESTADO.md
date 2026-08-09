@@ -22,7 +22,7 @@ Entrega: **17 de agosto** · Presentación: 18 de agosto · Portavoz: Fran · Eq
 | **Cartera** | **PEAKY MINDERS GLOBAL** |
 | Lema | *Think Global. Allocate with Conviction.* |
 | Portavoz | Fran González |
-| Equipo | Fran González · Cristina R. · Andrea · Celia · Jordi · Mary |
+| Equipo | Fran González · Cristina Rodríguez · Celia Bravo · Andrea Miguel · Mary Morcillo · Jordi |
 | Escudo del grupo | `98_ASSETS/logo-peaky-minders.png` (dorado, leones) |
 | Escudo de la cartera | `98_ASSETS/escudo-pm-global.jpg` (cian, 8 bloques) |
 
@@ -72,7 +72,7 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 | D12 | Reversión = **emergentes + Japón**, medido contra ACWI | 9 ago | [CARTERA §6](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D13 | Protección = **oro 7% + cobre 2%**, roles separados | 9 ago | [CARTERA §6](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D14 | **Sin bloque tecnológico.** Ya hay ~18,7% por otras vías | 9 ago | [FICHA ACELERACIÓN §1](02_CARTERA/FICHA_ACELERACION.md) |
-| D15 | **Aceleración = momentum 4% + small caps con calidad 4%** | 9 ago | [FICHA ACELERACIÓN](02_CARTERA/FICHA_ACELERACION.md) |
+| D15 | **Aceleración = Multi-Factor 4% + Small Cap Quality 4%** | 9 ago | [FICHA ACELERACIÓN](02_CARTERA/FICHA_ACELERACION.md) |
 | D16 | Rebalanceo Calendar + Threshold, primero con aportaciones | 8 ago | [CARTERA §9](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D17 | Gobernanza: la IA no firma. Decisión humana obligatoria | 9 ago | [CARTERA §10](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D18 | Nombre del grupo: **Peaky Minders**. Cartera: **Peaky Minders Global** | 9 ago | §1 de este archivo |
@@ -84,20 +84,20 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
-| 🚀 Motor | Índice mundial (ACWI) | **31%** | Fran |
+| 🚀 Motor | Índice mundial (ACWI) | **31%** | Fran · Cristina Rodríguez |
 | 🎯 Convicción | 7 empresas, método IDC | **14%** | Fran |
-| 🌿 Calidad | Salud + consumo defensivo | **12%** | Celia ⚠️ |
-| 📉 Reversión | Emergentes + Japón | **11%** | Jordi ⚠️ |
-| ⚓ Freno | Renta fija corta + liquidez | **11%** | Fran |
-| 🛡️ Protección | Oro 7% + cobre 2% | **9%** | Mary (oro) · Cristina (m. primas) |
+| 🌿 Calidad | Salud + consumo defensivo | **12%** | Celia Bravo |
+| 📉 Reversión | Emergentes + Japón | **11%** | Jordi |
+| ⚓ Freno | Renta fija corta + liquidez | **11%** | **Grupo** |
+| 🛡️ Protección | Oro 7% + cobre 2% | **9%** | Mary Morcillo · Cristina Rodríguez |
 | ⚡ Aceleración | Multi-Factor 4% + Small Cap Quality 4% | **8%** | Fran |
-| 💥 Asimetría | Bitcoin | **4%** | Andrea |
+| 💥 Asimetría | Bitcoin | **4%** | Andrea Miguel |
 
-⚠️ *Pendiente confirmar: Jordi lleva Reversión entera (EM + Japón) y Celia lleva Calidad entera.*
+*Reparto confirmado el 9 de agosto. El bloque Freno lo decide el grupo en conjunto.*
 
 **Caída de diseño: −43%** (el ACWI cayó ~−58,4% pico-valle 2007-2009).
 **Alfa neto estimado: +76 pb** sobre ACWI.
-**Fran lleva el 64% de la cartera** más todo lo transversal.
+**Fran lleva el 53% de la cartera** (Motor compartido, Convicción y Aceleración) más todo lo transversal. El **Freno lo decide el grupo**.
 
 > **Tesis en una frase:** si nos equivocamos eligiendo empresas, seguimos igualando al
 > mercado con bastante menos caída. Si acertamos, lo batimos.

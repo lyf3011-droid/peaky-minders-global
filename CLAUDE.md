@@ -41,7 +41,7 @@ académico grupal.
 |---|---|
 | Ejercicio | Cartera Permanente, Academia de Inversión |
 | Profesor | Antonio Baeza |
-| Equipo | 7 personas. Fran es el portavoz |
+| Equipo | 6 personas. Fran es el portavoz |
 | **Entrega** | **17 de agosto de 2026** |
 | Presentación | 18 de agosto, 15-20 minutos |
 | X-Ray | **Obligatorio** |
@@ -64,7 +64,7 @@ Butterfly. Tampoco vale modificar ligeramente sus pesos.
 | Grupo | **Peaky Minders** |
 | Cartera | **PEAKY MINDERS GLOBAL** |
 | Lema | *Think Global. Allocate with Conviction.* |
-| Equipo | Fran González (portavoz) · Cristina R. · Andrea · Celia · Jordi · Mary |
+| Equipo | Fran González (portavoz) · Cristina Rodríguez · Celia Bravo · Andrea Miguel · Mary Morcillo · Jordi |
 
 ---
 
@@ -95,14 +95,14 @@ riesgo lo alcanzaba. Se reformuló a +50/+100 pb, que sí es alcanzable y verifi
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
-| 🚀 Motor | Índice mundial (ACWI) | 31% | Fran |
+| 🚀 Motor | Índice mundial (ACWI) | 31% | Fran · Cristina Rodríguez |
 | 🎯 Convicción | 7 empresas, método IDC | 14% | Fran |
-| 🌿 Calidad | Salud + consumo defensivo | 12% | Celia |
+| 🌿 Calidad | Salud + consumo defensivo | 12% | Celia Bravo |
 | 📉 Reversión | Emergentes + Japón | 11% | Jordi |
-| ⚓ Freno | Renta fija corta + liquidez | 11% | Fran |
-| 🛡️ Protección | Oro 7% + cobre 2% | 9% | Mary · Cristina |
+| ⚓ Freno | Renta fija corta + liquidez | 11% | **Grupo** |
+| 🛡️ Protección | Oro 7% + cobre 2% | 9% | Mary Morcillo · Cristina Rodríguez |
 | ⚡ Aceleración | Multi-Factor 4% + Small Cap Quality 4% | 8% | Fran |
-| 💥 Asimetría | Bitcoin | 4% | Andrea |
+| 💥 Asimetría | Bitcoin | 4% | Andrea Miguel |
 
 **Caída de diseño −43%** (ACWI: −58,4% pico-valle 2007-2009) · **Alfa neto estimado +76 pb**
 
