@@ -1,0 +1,14 @@
+# Archivos originales pesados (se conservan las versiones optimizadas)
+98_ASSETS/*-original.png
+98_ASSETS/escudo-pm-global.png
+
+# Temporales del sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+~$*
+
+# Borradores locales
+**/borrador_*
+**/_scratch/
