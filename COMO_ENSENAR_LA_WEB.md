@@ -3,18 +3,18 @@
 ## Sirve siempre. Da igual a quién y da igual cuánto tiempo tengas.
 
 > **Se baja de arriba abajo, sin saltar.** La web está ordenada como el argumento.
-> Nueve paradas. Si vas justo de tiempo, haz solo las marcadas ⭐.
+> **Ocho paradas** (la 3 está retirada). Si vas justo de tiempo, haz solo las marcadas ⭐.
 
 ---
 
-# 📍 LAS NUEVE PARADAS
+# 📍 LAS PARADAS
 
 | # | Sección | Tiempo | Qué se demuestra |
 |---|---|---|---|
 | 0 | **La portada** | 30 s | Quiénes somos y las seis cifras |
 | 1 | Documentos | 30 s | Que hay obra detrás |
 | 2 | ⭐ **Las dos vistas** | 2 min | Que sabemos qué riesgo corremos |
-| 3 | ⭐ **La radiografía independiente** | 3 min | **Que no nos lo hemos inventado** |
+| 3 | *(retirada — ver nota abajo)* | — | — |
 | 4 | ⭐ **La cartera** | 2 min | Ocho funciones, con ISIN y coste |
 | 5 | Convicción | 1,5 min | Que no compramos por impulso |
 | 6 | Los números | 1 min | Caída de diseño y alfa |
@@ -62,45 +62,17 @@
 
 ---
 
-## 3 · ⭐ La radiografía independiente — 3 minutos · **ES LA PARADA MÁS FUERTE**
+## 3 · ⚠️ RETIRADA — no la enseñes
 
-**Empieza por el recuadro de arriba.**
+**La sección de la radiografía de Morningstar está oculta en la web.** El informe se generó
+sin tres de los once vehículos —un 22,20% de la cartera sin leer— y con el cobre fundido
+dentro del oro, lo que daba un 10,50% que no cuadra con el 7% real.
 
-> *«Nuestra radiografía la hicimos a mano, con los datos que publica cada gestora. Después
-> metimos la cartera en la herramienta de Morningstar, que mira dentro por su cuenta. Lo
-> hicimos para comprobar si nos habíamos equivocado.»*
+**Si alguien pregunta por la radiografía:** el portavoz enseña el informe por su cuenta, y lo
+usa para decir **qué vehículos faltan**, que es para lo que sirve hoy.
 
-**Señala las cinco cifras y quédate en la primera:**
-
-> *«Beta 0,68. Significa que cuando el mercado se mueve diez, nosotros nos movemos casi siete.
-> Y aun así vamos por delante del índice: casi tres puntos al año más en cinco años. Más
-> rentabilidad con dos tercios del vaivén.»*
-
-**Baja a las tres comprobaciones:**
-
-> *«Tecnología, salud y Estados Unidos. Las tres coinciden con lo que habíamos calculado a
-> mano, con menos de un punto y medio de diferencia. No es que acertáramos: es que el método
-> funciona.»*
-
-**Baja a las diez mayores posiciones — y haz una pausa aquí:**
-
-> *«La primera empresa de nuestra cartera es NVIDIA. No la hemos comprado. Ninguna de estas
-> diez la hemos elegido. Entran solas, dentro de los fondos. Por eso nuestra lista de espera
-> evita a TSMC: comprarla sería comprarla dos veces.»*
-
-**Y el bitcoin:**
-
-> *«Estas cinco cifras miden cómo se mueve el bitcoin respecto al resto de la cartera. Están
-> todas pegadas a cero. El bitcoin no se mueve con nada de lo que tenemos. Por eso un 4% que
-> puede perder el 80% en el escenario malo sigue mereciendo estar: no está para ganar, está
-> para no acompañar.»*
-
-**Y termina TÚ señalando el hueco, antes de que lo pregunten:**
-
-> *«Y hay que decir lo que este informe no cubre: tres productos nuestros no están en la base
-> de datos de Morningstar. Es un 22%, y la mitad de ese 22% es el monetario, que no tiene
-> empresas dentro. El informe lee el 78% de la cartera y el 87% de la parte que lleva
-> acciones.»*
+**No se vuelve a publicar** hasta que el informe cubra los once productos con sus pesos
+verdaderos.
 
 ---
 
@@ -169,8 +141,9 @@ creíbles los aciertos.
 
 1. **Portada** — las cuatro cifras
 2. **Los dos donuts** — «el mismo dinero mirado de dos formas»
-3. **La radiografía** — beta 0,68 y NVIDIA
-4. **Qué falta** — «y esto es lo que no tenemos»
+3. **La barra de tecnología** — «18,7% sin haber comprado ni un fondo del sector»
+4. **La cartera** — ocho bloques con ISIN y coste
+5. **Qué falta** — «y esto es lo que no tenemos»
 
 ---
 
@@ -189,9 +162,9 @@ creíbles los aciertos.
 
 ```
 100.000 €  →  57.000 €     la caída de diseño
-0,68                        la beta: nos movemos dos tercios de lo que se mueve el mercado
 0,10%                       lo que cuesta la cartera entera al año
-78%                         lo que cubre la radiografía independiente
+18,7%                       la tecnología que llevamos sin haberla comprado
+14,1%                       la caída media del S&P 500 dentro de un año normal
 ```
 
 ---
@@ -200,4 +173,5 @@ creíbles los aciertos.
 
 | Fecha | Acción |
 |---|---|
-| 2026-08-11 | Creación. Guion de nueve paradas para enseñar la web. Añadida la parada 3 tras incorporar el informe X-Ray de Morningstar |
+| 2026-08-11 | Creación. Guion de nueve paradas para enseñar la web |
+| 2026-08-11 | **Parada 3 retirada.** El informe X-Ray se generó sin tres de los once vehículos (22,20% sin leer) y con el cobre fundido dentro del oro. La sección queda oculta en la web y el portavoz enseña el informe por separado, para señalar qué vehículos faltan. Quedan **ocho paradas** |
