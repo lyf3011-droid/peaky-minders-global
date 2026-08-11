@@ -749,6 +749,100 @@ justifica que el bloque sea del **2%** y no mayor. **[FUENTE EXACTA PENDIENTE]**
 | **F** | 🆕 **El 1,5% de tecnología de Aceleración.** El fondo real lleva **16,57%** de tecnología · 8% × 16,57% = **1,33%**, no 1,5% | Total: **18,5%** en vez de 18,7% |
 | **G** | 🔴 🆕 **CAPITAL INICIAL: ¿10.000 € o 100.000 €?** Dos documentos del proyecto dicen cosas distintas | **Decisión de grupo. Urgente** |
 | **H** | 🆕 **Gestión táctica sí o no.** Han llegado **dos** propuestas de overlay táctico en bloques distintos | Decidir **para toda la cartera**, no bloque a bloque |
+| **I** | 🔴 🆕 **¿DÓNDE VA EL 4% DE JAPÓN?** Japón sale de la cartera (11-ago) y su peso queda sin asignar | **Bloquea el X-Ray.** Ver abajo |
+| **J** | 🔴 🆕 **Vehículo extra en Aceleración, con filtro de CALIDAD** | Sin buscar todavía |
+| **K** | 🆕 **Salud: ETF indexado o Polar Capital** | Polar bate al índice **neto de comisiones** |
+| **L** | 🆕 **Oro: ¿Core (0,12%) o Swiss Gold (0,15%)?** | El Swiss es 2,5× más grande por 2 €/año más |
+| **M** | ⏸️ **Ethereum en Asimetría** | **Aplazado a propósito** hasta tener el X-Ray |
+
+## 🇯🇵 Sobre la decisión I — Japón sale de la cartera
+
+**Decidido el 11-ago-2026 por el portavoz.** El bloque Reversión pasa de **emergentes + Japón**
+a **solo emergentes**.
+
+**El argumento que hay que usar en la presentación:**
+
+> ### El Motor ya lleva Japón dentro: el MSCI World tiene **~6% de Japón**.
+> Un bloque de Japón aparte era **comprar dos veces lo mismo** — el mismo error que el
+> look-through nos hizo detectar con la tecnología.
+
+**Es coherente y suma:** *«el análisis de qué hay dentro de los fondos nos hizo eliminar dos
+bloques, no uno: el tecnológico y el de Japón.»*
+
+### 🔴 Y queda su 4% sin asignar
+
+| | Opción | Consecuencia |
+|---|---|---|
+| **A** | Todo a **emergentes** → Reversión 11% | Simple. Sube emergentes al 11% |
+| **B** | A **Aceleración** → 8% + 4% = **12%** | **Lectura preferida**: encaja con la decisión J |
+| **C** | Al **Freno** → 15% | Más defensiva. Baja el alfa |
+
+⚠️ **Sin esto no hay pesos, y sin pesos no hay X-Ray.** Es lo primero de la próxima sesión.
+
+## ⚡ Sobre la decisión J — el vehículo de calidad para Aceleración
+
+**Instrucción del portavoz (11-ago):** buscar un producto de pequeñas compañías que
+**(a) aparezca en Morningstar** y **(b) lleve filtro de calidad**.
+
+**Por qué el filtro no es un capricho:** toda la ficha del bloque está construida sobre el
+**MSCI World Small Cap Quality**, y **Asness et al. (2018)** demuestran que la prima de
+pequeñas compañías **solo reaparece al controlar por calidad**. El Vanguard que tenemos
+replica el índice **sin filtrar**.
+
+🔴 **No se ha buscado todavía.** Es la tarea 2 de la próxima sesión.
+
+## 🥇 Sobre la decisión L — el oro queda cerrado en el más barato
+
+**Elegido: WisdomTree Core Physical Gold `JE00BN2CJ301` · 0,12% · 1.668 M$ · custodio HSBC
+Bank plc · barras LBMA Good Delivery segregadas y asignadas.**
+
+⚠️ **El iShares Physical Gold (IGLN) que propuso Mary NO existe en el catálogo** — búsqueda
+directa, **cero resultados**. El iShares de oro disponible es el suizo `CH0104136236` a
+**0,19%**, no al 0,12% que figura en su ficha.
+
+| Alternativa abierta | ISIN | Coste | Patrimonio |
+|---|---|---|---|
+| WisdomTree Physical **Swiss** Gold | `JE00B588CD74` | 0,15% | **4.238 M$** |
+
+**Diferencia sobre 7.000 €: 2,10 € al año.** Si el equipo prioriza tamaño sobre coste, es
+una alternativa razonable.
+
+## 🌿 Sobre la decisión K — salud
+
+| | Janus *(descartado)* | **Polar Capital** | iShares ETF |
+|---|---|---|---|
+| ISIN | `IE0002122038` | `IE00BKSBD942` | `IE00B43HR379` |
+| TER | **2,38%** | **1,60%** | **0,15%** |
+| Morningstar | *sin estrellas* | **★★★★★** | ★★★★★ |
+| **5 años anualizado** | **5,09%** | **7,41%** | **6,42%** |
+| Tipo | Fondo | **Fondo** *(traspasable)* | ETF |
+
+> **Polar bate al índice NETO de su 1,60%.** Es una apuesta al gestor, no una cuenta.
+> El ETF es coherente con indexar el 31% del Motor citando SPIVA y Bessembinder.
+
+⚠️ **Su clase en euros `IE00B3NLSS43` es de REPARTO.** La de acumulación `IE00BKSBD942` está
+**en dólares**.
+
+## 💰 Y el cálculo que zanja «fondo traspasable vs ETF»
+
+**¿Cuánta comisión de más puede pagar un fondo traspasable antes de perder contra un ETF?**
+Modelo a 10 años sobre 6.000 €, con los tipos del ahorro españoles (19/21/23%):
+
+| Nº de traspasos en 10 años | Comisión extra que aguanta |
+|---|---|
+| **Ninguno** | **+0,00 pp** |
+| 1 | +0,19 pp |
+| 3 | +0,31 pp |
+| 8 | +0,38 pp |
+| 15 | **+0,39 pp** |
+
+> ### La ventaja fiscal del traspaso **se satura en 0,39 puntos**. Da igual cuántas veces
+> ### cambies — porque el traspaso **no perdona el impuesto, solo lo retrasa**.
+>
+> **Y si compras y mantienes, vale exactamente cero.**
+
+**Este cálculo vale para toda la cartera, no solo para salud.** Es el que justifica pagar el
+peaje fiscal del ETC de oro en vez de irse a un fondo de mineras.
 
 ## 🔴 Sobre la decisión G — el capital inicial
 
@@ -947,6 +1041,13 @@ entregar, o se entrega el error corregido.
 | 2026-08-11 | **Tesis del cobre CERRADA.** Añadida la IEA (*Global Critical Minerals Outlook 2026*, déficit ≈25% en 2035) a la base de evidencia — pasa de 16 a **17 estudios**. Añadido el **§11-bis**: un ETC de metal físico y un ETC de futuros no son el mismo producto. Ningún vehículo de materias primas se aprueba ya sin declarar si lleva físico o futuros |
 | 2026-08-11 | 🔴 **Abiertas las decisiones G y H.** **G:** discrepancia de capital inicial 10.000 € / 100.000 € entre documentos — afecta a la defensa del bloque Freno. **H:** dos propuestas independientes de gestión táctica frente a nuestro rebalanceo por bandas. **Ambas son fallo de coordinación del grupo y las cierra el portavoz** |
 | 2026-08-11 | ❌ **Descartado RobecoSAM Smart Energy** `LU2145461757` como sustituto del cobre: **52,76% tecnología y 0,00% materiales básicos.** No aporta exposición a metales |
+| 2026-08-11 | 🥇 **ORO CERRADO** en WisdomTree **Core** Physical Gold `JE00BN2CJ301` · **0,12%** — el más barato de los ocho ETC de oro físico del catálogo. Custodio **HSBC Bank plc**, barras LBMA segregadas y asignadas. **El iShares Physical Gold (IGLN) no existe en el catálogo**; el iShares disponible es el suizo `CH0104136236` a 0,19% |
+| 2026-08-11 | 🇯🇵 **JAPÓN SALE DE LA CARTERA.** Reversión pasa de emergentes+Japón a solo emergentes. Motivo: **el Motor ya lleva ~6% de Japón dentro del MSCI World** — era comprar dos veces lo mismo. **Su 4% queda sin asignar (decisión I)** |
+| 2026-08-11 | ⏸️ **Ethereum aplazado a propósito.** Asimetría se queda en 4% solo bitcoin hasta tener el X-Ray |
+| 2026-08-11 | ❌ **Janus Henderson descartado** con números: la clase comprable cuesta **2,38%** y rinde **5,09%** a 5 años, por debajo del ETF indexado (**6,42%** a 0,15%). Aparece **Polar Capital `IE00BKSBD942`**, que bate al índice **neto de su 1,60%** — decisión K |
+| 2026-08-11 | 💰 **Calculada la ventaja fiscal del traspaso**: se satura en **+0,39 pp** de comisión, y vale **cero** si se compra y se mantiene. Zanja el debate fondo-vs-ETF para toda la cartera |
+| 2026-08-11 | 🚫 **Sección X-Ray retirada de la web.** El informe se generó sin tres de los once vehículos (22,20% sin leer) y con el cobre fundido dentro del oro (10,50% frente al 7% real) |
+| 2026-08-11 | ⚠️ **Corrección:** el **VanEck Gold Miners `IE00BQQP9F84` SÍ está** en el catálogo (0,53%). Se descarta **por diseño** —es renta variable, vol. 5a **31,65%** frente al 16,79% del oro físico—, **no por disponibilidad** |
 
 ---
 

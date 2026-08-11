@@ -19,14 +19,28 @@
 | 🎯 | **Convicción** | **14%** | Fran | *Lista de espera · 10 empresas* | — | — | 🟡 **Método cerrado** |
 | 🌿 | **Calidad** | **12%** | Celia Bravo | Xtrackers World Consumer Staples | `IE00BM67HN09` | 0,25% | 🟡 **Candidato** |
 | | *· salud* | *6%* | | iShares S&P 500 Health Care | `IE00B43HR379` | 0,15% | 🟡 **Candidato** |
-| 📉 | **Reversión** | **11%** | Jordi | iShares Emerging Markets **clase S** | `IE000QAZP7L2` | **0,16%** | 🟡 **Candidato** |
-| | *· Japón* | | | Fidelity MSCI Japan | `IE00BYX5N771` | **0,10%** | 🟡 **Candidato** |
-| ⚓ | **Freno** | **11%** | **Grupo** | AXA Trésor Court Terme C | `FR0000447823` | **0,06%** | ✅ **CERRADO** |
-| 🛡️ | **Protección** | **7%** | Mary Morcillo | WisdomTree Core Physical Gold | `JE00BN2CJ301` | 0,12% | 🟡 **Candidato** |
-| | *· cobre* | *2%* | Cristina R. | **NO EXISTE VEHÍCULO DE COBRE** | — | — | 🔴 **DECISIÓN** |
-| ⚡ | **Aceleración** | **8%** | Fran | Vanguard Global Small-Cap EUR | `IE00B42W4L06` | 0,30% | ✅ **CERRADO** |
+| 📉 | **Reversión** | **7%** | Jordi | iShares Emerging Markets **clase S** | `IE000QAZP7L2` | **0,16%** | 🟡 **Candidato** |
+| | ~~*· Japón*~~ | ~~*4%*~~ | | ~~Fidelity MSCI Japan~~ | ~~`IE00BYX5N771`~~ | — | ❌ **FUERA 11-ago** |
+| ⚓ | **Freno** | **11%** | **Grupo** | AXA Trésor Court Terme C *(7%)* | `FR0000447823` | **0,06%** | ✅ **CERRADO** |
+| | *· bonos* | *4%* | | iShares Global Aggregate 1-5y | `IE0004ZP1ND3` | **0,08%** | ✅ **CERRADO** |
+| 🛡️ | **Protección** | **7%** | Mary Morcillo | **WisdomTree Core Physical Gold** | **`JE00BN2CJ301`** | **0,12%** | ✅ **CERRADO 11-ago** |
+| | *· cobre* | *2%* | Cristina R. | **SIN ISIN VERIFICADO** | — | — | 🔴 **DECISIÓN** |
+| ⚡ | **Aceleración** | **8%** | Fran | Vanguard Global Small-Cap EUR | `IE00B42W4L06` | 0,30% | 🟡 **Revisar** |
+| | *· valor* | | | Xtrackers MSCI World Value | `IE00BL25JM42` | 0,25% | 🟡 **Candidato** |
 | 💥 | **Asimetría** | **4%** | Andrea Miguel | 21Shares Bitcoin Core ETP | `CH1199067674` | **0,10%** | ✅ **CERRADO** |
-| | **TOTAL** | **100%** | | **4 cerrados · 3 con candidato · 1 decisión** | | **≈0,10%** | |
+| 🔴 | **SIN ASIGNAR** | **4%** | **Grupo** | *(el peso que deja Japón)* | — | — | 🔴 **DECIDIR** |
+| | **TOTAL** | **100%** | | | | **≈0,11%** | |
+
+> ## 🔴 LO PRIMERO DE LA PRÓXIMA SESIÓN
+>
+> **Japón sale de la cartera** *(decidido el 11-ago)*. Motivo: **el Motor ya lleva ~6% de
+> Japón dentro del MSCI World** — tenerlo aparte era comprar dos veces lo mismo.
+>
+> **Su 4% está sin asignar.** Tres opciones: todo a emergentes (Reversión 11%), a Aceleración
+> (12%, la lectura preferida) o al Freno (15%).
+>
+> **Sin decidir esto no hay pesos, y sin pesos no hay X-Ray.**
+> Detalle completo en `00_CONTROL/PROXIMA_SESION.md`.
 
 ## 💰 Y el dato que sale de todo esto
 
