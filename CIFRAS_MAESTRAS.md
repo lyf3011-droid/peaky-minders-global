@@ -492,13 +492,68 @@ mientras el activo subyacente subía.
 > **Esto descarta a la vez las mineras de bitcoin (Asimetría) y las mineras de oro
 > (Protección).** Un solo dato, dos decisiones defendidas.
 
-## ⏳ Pendiente de elegir — 32% de la cartera
+## 🛡️ PROTECCIÓN — 9% · vehículos identificados (11-ago-2026)
 
-| Bloque | Peso | Responsable |
+### Oro · 7% — Mary Morcillo
+
+| Concepto | Valor |
+|---|---|
+| **Producto** | **WisdomTree Core Physical Gold** · `JE00BN2CJ301` · **0,12%** |
+| Respaldo | **Lingotes físicos asignados**, custodia HSBC, estándar LBMA Good Delivery |
+| ⚠️ Trampa a evitar | El WisdomTree más grande (`JE00B1VS3770`) cuesta **0,39%** — tres veces más por el mismo oro |
+| Divisa | **Sin cubrir.** Cubrir a euros costó **30 puntos** en 5 años (+150,2% vs +119,9%) |
+
+### Cobre · 2% — Cristina Rodríguez
+
+| Concepto | Valor |
+|---|---|
+| **Producto** | **WisdomTree Copper** · `GB00B15KXQ89` · ticker COPA · **0,49%** |
+| Divisa | **EUR** · Patrimonio **1.549 M€** |
+| Índice | Bloomberg Commodity Copper Subindex 4W Total Return |
+| Rentabilidad | 5 años **+50,3%** · 1 año **+46,4%** · volatilidad 5a **17,8%** |
+| Años naturales | 2021 **+33,4%** · 2022 **−9,1%** · 2023 −0,4% · 2024 +12,9% · 2025 +20,7% |
+
+> **FUENTE:** catálogo de instrumentos, 11-ago-2026.
+
+### 🔴 EL MATIZ QUE HAY QUE DECLARAR — y es importante
+
+> **El ETC de oro tiene lingotes. El de cobre tiene contratos de futuros.**
+
+El oro se guarda en una cámara: un lingote es pequeño y vale mucho. **El cobre no se puede
+almacenar así** — una tonelada vale poco y ocupa mucho. Por eso **no existe ningún ETC de
+cobre físico**: todos replican el metal comprando **futuros** y renovándolos.
+
+**Qué implica y hay que decirlo:**
+
+| | Oro `JE00BN2CJ301` | Cobre `GB00B15KXQ89` |
 |---|---|---|
-| 🌿 Calidad | 12% | Celia Bravo |
-| 📉 Reversión | 11% | Jordi |
-| 🛡️ Protección | 9% | Mary Morcillo (oro) · Cristina Rodríguez (cobre) |
+| Qué tiene dentro | **Lingotes físicos asignados** | **Contratos de futuros** |
+| Riesgo añadido | Custodia | **Coste de renovación** (*roll*) |
+| Comisión | 0,12% | **0,49%** — cuatro veces más |
+
+**En cristiano:** cada mes hay que vender el contrato que vence y comprar el siguiente. Si el
+contrato siguiente está más caro, esa diferencia se pierde. **A diez años ese roce puede
+comerse parte del rendimiento del metal**, y es la razón de que cueste cuatro veces más que
+el oro.
+
+> **Frase para la presentación:** *«Llevamos oro con lingotes y cobre con futuros, porque el
+> cobre físico no se puede almacenar de forma rentable. Lo decimos porque cambia el riesgo:
+> en el cobre no solo apostamos al precio del metal, también asumimos el coste de renovar los
+> contratos cada mes.»*
+
+### ❌ Descartado: Global X Copper Miners `IE0003Z9E2Y3` · 0,55%
+
+**Son empresas mineras, es decir, renta variable.** Ya descartamos las mineras dos veces —en
+oro y en bitcoin— con el dato del VanEck DAPP. **Aceptarlas aquí nos dejaría en
+contradicción.** Y su volatilidad a 3 años es del **31,7%**, frente al **18,8%** del ETC del
+metal.
+
+## ⏳ Pendiente de confirmar — 23% de la cartera
+
+| Bloque | Peso | Responsable | Qué falta |
+|---|---|---|---|
+| 🌿 Calidad | 12% | Celia Bravo | Confirmar los dos ETF propuestos y el reparto |
+| 📉 Reversión | 11% | Jordi | Confirmar los dos fondos y el reparto |
 
 ---
 
