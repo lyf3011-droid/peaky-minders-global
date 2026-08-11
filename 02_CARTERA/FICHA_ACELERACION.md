@@ -49,6 +49,83 @@
 
 ---
 
+## 0-bis. 📈 LA TESIS DEL FACTOR TAMAÑO — por qué small caps y por qué ahora
+
+> ⚠️ **AVISO DE FUENTE, y hay que decirlo.** Buena parte de este apartado procede de un
+> **esquema de trabajo divulgativo** (canal de YouTube de inversión) que el portavoz recopiló.
+> **No es fuente primaria.** El razonamiento es sólido y encaja con literatura académica que
+> sí tenemos citada (Banz, Fama-French, Asness), pero **las cifras concretas están marcadas
+> como pendientes de verificar**. El propio esquema original advierte de **sesgo de
+> confirmación**, y esa honestidad se conserva aquí.
+
+### 0-bis.1 Por qué existe la prima de tamaño
+
+**El factor tamaño es una prima de riesgo documentada**, no una moda. Tres motivos
+estructurales explican por qué las compañías pequeñas han tendido a batir a las grandes a
+plazos largos:
+
+| Motivo | Qué significa |
+|---|---|
+| **Más espacio para crecer** | Doblar el tamaño de una empresa de 2.000 M€ es posible; doblar el de una de 3 billones, no |
+| **Menos analistas siguiéndolas** | Menos cobertura → más ineficiencia de precio → más oportunidad para quien mira |
+| **Mayor sensibilidad al ciclo** | Sufren más en las caídas, pero son **explosivas en las fases de recuperación** |
+
+**Respaldo académico que sí tenemos citado:** Banz (1981) documentó el efecto tamaño;
+Fama-French lo incorporaron como factor; **Asness et al. (2018)** demostraron que la prima
+**reaparece con fuerza al controlar por calidad**.
+
+⚠️ **Nuestro matiz honesto:** compramos el índice **sin filtro de calidad**, porque no existe
+vehículo del filtrado (§0.1). **La prima que compramos es la del tamaño a secas.**
+
+### 0-bis.2 Por qué ahora — cuatro señales
+
+| # | Señal | Estado |
+|---|---|---|
+| 1 | **Descuento histórico de valoración.** Las pequeñas cotizan con uno de los mayores descuentos frente a las grandes que se recuerdan | `[PENDIENTE DE VERIFICAR]` |
+| 2 | **12-14 años de comportamiento inferior**, uno de los ciclos más largos de la historia. Los ciclos han durado históricamente **8-12 años** alternando quién domina | `[PENDIENTE DE VERIFICAR]` |
+| 3 | **Concentración extrema en las grandes.** Las siete mayores tecnológicas han absorbido el protagonismo de la década, dejando a las pequeñas baratas y fuera del radar | ✅ Coherente con nuestro propio look-through |
+| 4 | **Recortes de tipos.** Tras un ciclo de bajadas, las pequeñas —más dependientes de financiación— han tendido a superar a las grandes en los **12 meses siguientes** | `[PENDIENTE DE VERIFICAR]` |
+
+### 0-bis.3 Por qué el índice mundial ya no basta
+
+**El índice se mueve al ritmo de las megacaps.** Cada empresa pesa según su capitalización, así
+que las mayores marcan el resultado del conjunto. Nuestro propio look-through lo confirma: el
+índice mundial lleva un **30,28%** de tecnología, y de ahí sale el **9,4%** de tecnología de
+toda la cartera.
+
+> **Comprar small caps es la forma barata de dejar de depender de siete empresas.**
+
+### 0-bis.4 El riesgo, dicho por su nombre
+
+| Riesgo | Nuestro dato |
+|---|---|
+| **Más volatilidad** | El fondo elegido: **15,71%** a cinco años |
+| **Caídas más profundas** | Peor año natural reciente: **−13,46%** |
+| **Sufren más en recesiones** | En la prueba de estrés le aplicamos **−57,1%** |
+| **El ciclo puede tardar** | Llevan 12-14 años por detrás. **Nada garantiza que gire ahora** |
+
+### 0-bis.5 Cuánto pesa — y por qué menos de lo que sugiere la fuente
+
+**El esquema de referencia propone un 10-15% como satélite.** Nosotros llevamos **8%**.
+
+> **Estamos por debajo de lo que sugiere la fuente, y es deliberado.** El bloque depende de un
+> solo factor y sin filtro de calidad. Un 8% permite que la prima aporte si llega y que no
+> rompa nada si no llega. **Prudencia declarada, no omisión.**
+
+### 0-bis.6 Cómo se defiende en la exposición
+
+> *«Las pequeñas compañías llevan doce años por detrás de las grandes, y eso ha dejado uno de
+> los mayores descuentos de valoración de su historia. La prima de tamaño está documentada
+> desde Banz en 1981, y Asness demostró en 2018 que reaparece al controlar por calidad.
+> Nosotros compramos el índice sin filtrar, porque el filtrado no tiene vehículo comprable, y
+> lo decimos. Por eso pesa un 8% y no un 15%: es un satélite, no un pilar.»*
+
+⚠️ **Antes del 17 de agosto hay que trazar a fuente primaria** las tres cifras marcadas: el
+descuento de valoración, la duración de los ciclos y el comportamiento tras recortes de tipos.
+**Sin fuente, esas tres afirmaciones no se dicen en la presentación.**
+
+---
+
 ## 0. POR QUÉ EL BLOQUE PASÓ DE DOS COMPONENTES A UNO
 
 ### 0.1 Lo que buscábamos y lo que encontramos

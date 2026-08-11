@@ -90,6 +90,40 @@
       font-variant-numeric:tabular-nums;white-space:nowrap}
   .tw2 tbody tr:last-child td{border-bottom:0}
 
+  .donuts{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .dn{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:7px;
+      padding:20px 22px 18px;display:flex;flex-direction:column;align-items:center;gap:4px}
+  .dn svg{width:min(190px,52vw);height:auto}
+  .dn .dc1{font-family:var(--display);font-size:30px;fill:var(--ink);text-anchor:middle}
+  .dn .dc2{font-family:var(--mono);font-size:9px;letter-spacing:.14em;fill:var(--ink-faint);
+      text-anchor:middle;text-transform:uppercase}
+  .dn figcaption{font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+      text-transform:uppercase;color:var(--cyan-dk);font-weight:700;margin:6px 0 12px}
+  .dn .dl{list-style:none;margin:0;padding:0;width:100%;display:flex;flex-direction:column;gap:5px}
+  .dn .dl li{display:flex;align-items:baseline;gap:8px;font-size:13.5px;line-height:1.35}
+  .dn .dl i{flex:none;width:10px;height:10px;border-radius:2px;transform:translateY(1px)}
+  .dn .dl b{font-family:var(--mono);margin-left:auto;font-variant-numeric:tabular-nums;
+      color:var(--ink)}
+  .dn .dl small{display:block;width:100%;padding-left:18px;margin-top:-3px;
+      font-size:11.5px;color:var(--ink-faint)}
+  .dn .dl li{flex-wrap:wrap}
+
+  .lookthrough{margin-top:16px;background:var(--surface);border:1px solid var(--line);
+      border-radius:7px;padding:19px 22px}
+  .lt-head b{font-family:var(--display);font-size:17px;display:block}
+  .lt-head span{font-size:13px;color:var(--ink-faint);font-style:italic}
+  .lt-bar{display:flex;height:30px;border-radius:4px;overflow:hidden;margin:13px 0 10px;
+      border:1px solid var(--line)}
+  .lt-bar span{display:flex;align-items:center;justify-content:center;
+      border-right:1px solid rgba(255,255,255,.3)}
+  .lt-bar span:last-child{border-right:0}
+  .lt-bar em{font-family:var(--mono);font-size:10.5px;font-weight:700;color:#fff;font-style:normal}
+  .lt-leg{display:flex;flex-wrap:wrap;gap:5px 18px;font-size:12.5px;color:var(--ink-soft)}
+  .lt-leg i{display:inline-block;width:10px;height:10px;border-radius:2px;
+      margin-right:6px;vertical-align:-1px}
+  .lt-tot{margin:13px 0 0;font-size:14px;color:var(--ink-soft)}
+  .lt-tot b{color:var(--ink)}
+
   .stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:11px}
   .st{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:15px 17px;display:flex;flex-direction:column;gap:2px}
   .st b{font-family:var(--mono);font-size:22px;color:var(--cyan-dk);font-variant-numeric:tabular-nums;line-height:1.1}
@@ -169,6 +203,90 @@
         <span>Todo el material fuente: evidencia, fichas de bloque, política de rotación y el historial completo de decisiones.</span>
         <span class="go">Ver en GitHub →</span>
       </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Las dos vistas de la cartera</h2>
+    <p class="sd">El mismo dinero, mirado de dos formas · las dos suman 100%</p>
+
+    <div class="donuts">
+      <figure class="dn">
+        <svg viewBox="0 0 200 200" role="img" aria-label="Reparto por función: Motor 31%, Convicción 14%, Calidad 12%, Reversión 11%, Freno 11%, Protección 9%, Aceleración 8%, Asimetría 4%">
+          <g transform="rotate(-90 100 100)" fill="none" stroke-width="30">
+            <circle cx="100" cy="100" r="70" stroke="#04121C" stroke-dasharray="136.34 303.48" stroke-dashoffset="0"/>
+            <circle cx="100" cy="100" r="70" stroke="#12757E" stroke-dasharray="61.58 378.24" stroke-dashoffset="-136.34"/>
+            <circle cx="100" cy="100" r="70" stroke="#2FD6D6" stroke-dasharray="52.78 387.04" stroke-dashoffset="-197.92"/>
+            <circle cx="100" cy="100" r="70" stroke="#2F6E8F" stroke-dasharray="48.38 391.44" stroke-dashoffset="-250.70"/>
+            <circle cx="100" cy="100" r="70" stroke="#8FA6B2" stroke-dasharray="48.38 391.44" stroke-dashoffset="-299.08"/>
+            <circle cx="100" cy="100" r="70" stroke="#C9A227" stroke-dasharray="39.58 400.24" stroke-dashoffset="-347.46"/>
+            <circle cx="100" cy="100" r="70" stroke="#5CA9C4" stroke-dasharray="35.19 404.63" stroke-dashoffset="-387.04"/>
+            <circle cx="100" cy="100" r="70" stroke="#C2703D" stroke-dasharray="17.59 422.23" stroke-dashoffset="-422.23"/>
+          </g>
+          <text x="100" y="95" class="dc1">8</text>
+          <text x="100" y="115" class="dc2">bloques</text>
+        </svg>
+        <figcaption>Por función</figcaption>
+        <ul class="dl">
+          <li><i style="background:#04121C"></i>Motor <b>31%</b><small>Índice mundial</small></li>
+          <li><i style="background:#12757E"></i>Convicción <b>14%</b><small>Acciones elegidas</small></li>
+          <li><i style="background:#2FD6D6"></i>Calidad <b>12%</b><small>Salud + consumo</small></li>
+          <li><i style="background:#2F6E8F"></i>Reversión <b>11%</b><small>Emergentes + Japón</small></li>
+          <li><i style="background:#8FA6B2"></i>Freno <b>11%</b><small>Monetario</small></li>
+          <li><i style="background:#C9A227"></i>Protección <b>9%</b><small>Oro + cobre</small></li>
+          <li><i style="background:#5CA9C4"></i>Aceleración <b>8%</b><small>Small caps</small></li>
+          <li><i style="background:#C2703D"></i>Asimetría <b>4%</b><small>Bitcoin</small></li>
+        </ul>
+      </figure>
+
+      <figure class="dn">
+        <svg viewBox="0 0 200 200" role="img" aria-label="Reparto por tipo de activo: renta variable 76%, monetario 11%, oro 7%, bitcoin 4%, cobre 2%">
+          <g transform="rotate(-90 100 100)" fill="none" stroke-width="30">
+            <circle cx="100" cy="100" r="70" stroke="#12757E" stroke-dasharray="334.26 105.56" stroke-dashoffset="0"/>
+            <circle cx="100" cy="100" r="70" stroke="#8FA6B2" stroke-dasharray="48.38 391.44" stroke-dashoffset="-334.26"/>
+            <circle cx="100" cy="100" r="70" stroke="#C9A227" stroke-dasharray="30.79 409.03" stroke-dashoffset="-382.64"/>
+            <circle cx="100" cy="100" r="70" stroke="#C2703D" stroke-dasharray="17.59 422.23" stroke-dashoffset="-413.43"/>
+            <circle cx="100" cy="100" r="70" stroke="#8C4A2F" stroke-dasharray="8.80 431.02" stroke-dashoffset="-431.02"/>
+          </g>
+          <text x="100" y="95" class="dc1">76%</text>
+          <text x="100" y="115" class="dc2">en bolsa</text>
+        </svg>
+        <figcaption>Por tipo de activo</figcaption>
+        <ul class="dl">
+          <li><i style="background:#12757E"></i>Renta variable <b>76%</b><small>Índices, sectores y acciones</small></li>
+          <li><i style="background:#8FA6B2"></i>Monetario <b>11%</b><small>Munición para comprar</small></li>
+          <li><i style="background:#C9A227"></i>Oro <b>7%</b><small>Cobertura monetaria</small></li>
+          <li><i style="background:#C2703D"></i>Bitcoin <b>4%</b><small>Asimetría</small></li>
+          <li><i style="background:#8C4A2F"></i>Cobre <b>2%</b><small>Activo real · sin vehículo</small></li>
+        </ul>
+      </figure>
+    </div>
+
+    <div class="note" style="margin-top:16px"><b>Por qué hacen falta las dos.</b> El primer
+      gráfico dice <i>qué papel juega cada euro</i>. El segundo dice <i>qué riesgo estamos
+      corriendo de verdad</i>. Un bloque llamado «Protección» suena defensivo, pero el 2% de
+      cobre es un activo cíclico; y «Freno» suena aburrido hasta que entiendes que es la
+      munición con la que se compra barato en una caída. <b>Mirar solo la primera vista es el
+      error más común al leer una cartera.</b></div>
+
+    <div class="lookthrough">
+      <div class="lt-head"><b>Y una tercera lectura: la tecnología</b>
+        <span>No es un bloque. Está repartida dentro de los demás.</span></div>
+      <div class="lt-bar">
+        <span style="width:50.3%;background:#04121C"><em>9,4%</em></span>
+        <span style="width:26.7%;background:#12757E"><em>5,0%</em></span>
+        <span style="width:15.0%;background:#2F6E8F"><em>2,8%</em></span>
+        <span style="width:8.0%;background:#5CA9C4"></span>
+      </div>
+      <div class="lt-leg">
+        <span><i style="background:#04121C"></i>Dentro del índice mundial · 9,4%</span>
+        <span><i style="background:#12757E"></i>Alphabet y Meta · 5,0%</span>
+        <span><i style="background:#2F6E8F"></i>TSMC, Samsung, SK Hynix · 2,8%</span>
+        <span><i style="background:#5CA9C4"></i>Small caps · 1,5%</span>
+      </div>
+      <p class="lt-tot"><b>18,7% de la cartera está en tecnología</b> — y no hemos comprado ni
+        un solo fondo tecnológico. Por eso eliminamos el bloque del sector que teníamos
+        previsto: habría sido comprar tres veces el mismo riesgo.</p>
     </div>
   </section>
 
