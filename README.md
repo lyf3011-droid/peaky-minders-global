@@ -13,6 +13,7 @@
 
 | Si quieres… | Abre |
 |---|---|
+| 🔒 **Comprobar cualquier cifra** | [CIFRAS_MAESTRAS.md](CIFRAS_MAESTRAS.md) — **fuente única. Manda sobre todos los demás archivos** |
 | **Ver dónde estamos y qué queda** | [ESTADO.md](ESTADO.md) — el mapa del proyecto |
 | **Ver el progreso y las tareas** | [00_CONTROL/PANEL.html](00_CONTROL/PANEL.html) |
 | **Entender el trabajo entero de un vistazo** | [00_CONTROL/PLANO_DE_OBRA.html](00_CONTROL/PLANO_DE_OBRA.html) |
@@ -43,9 +44,11 @@ inferior al índice · **Caída de diseño:** −43% · **Alfa neto estimado:** 
 ```
 claude-cartera-antonio/
 │
+├── CIFRAS_MAESTRAS.md           🔒 Fuente única de cifras. Manda sobre todo lo demás
 ├── ESTADO.md                    ⭐ El mapa. Empieza aquí
 ├── README.md                    Este archivo
 ├── CLAUDE.md                    Reglas del agente
+├── index.html                   Portada web del proyecto
 │
 ├── 00_CONTROL/
 │   ├── PANEL.html               Progreso, tareas y bloqueos
@@ -56,16 +59,22 @@ claude-cartera-antonio/
 │
 ├── 01_EVIDENCIA/
 │   ├── INFORME_EVIDENCIA.md     Los estudios con su argumento de defensa
-│   └── FUENTES_Y_TRAZABILIDAD.md   Dato / estimación / supuesto
+│   ├── FUENTES_Y_TRAZABILIDAD.md   Dato / estimación / supuesto
+│   └── DATOS_OFICIALES_MSCI.md  Factsheets oficiales de los índices MSCI
 │
 ├── 02_CARTERA/
 │   ├── CARTERA_DEFINITIVA.md    ⭐ La cartera v3.2
 │   ├── FICHA_ACELERACION.md     Bloque factorial + research IA archivado
-│   └── FICHAS_BLOQUES.md        Plantillas para el equipo
+│   ├── FICHAS_BLOQUES.md        Plantillas para el equipo
+│   ├── POLITICA_ROTACION_FISCALIDAD.md   Traspasos y fiscalidad española
+│   └── VEHICULOS_MYINVESTOR.md  Fondos disponibles en la plataforma
 │
 ├── 03_ENTREGA/
 │   ├── DOCUMENTO_ENTREGA.md     El documento para el profesor
-│   └── *.pdf                    Piezas generadas
+│   ├── FACTSHEET.html           Ficha de la cartera en una página
+│   ├── MANUAL.html              Manual de la cartera
+│   ├── INVESTMENT_BOOK.html     Investment Book completo
+│   └── *.pdf                    Versiones PDF de las piezas anteriores
 │
 ├── 04_PRESENTACION/
 │   └── PLAN_PRESENTACION.md     Estructura de la web y guion
@@ -73,6 +82,10 @@ claude-cartera-antonio/
 ├── 98_ASSETS/                   Escudos e imágenes
 └── 99_FUENTES/                  Enunciado del concurso
 ```
+
+*Árbol comprobado contra el contenido real de la carpeta el 10 de agosto de 2026.
+No existen todavía: `02_CARTERA/XRAY.md`, `02_CARTERA/STRESS_MONTECARLO.md` y
+`03_ENTREGA/IPS.md`.*
 
 ---
 

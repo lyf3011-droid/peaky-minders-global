@@ -15,10 +15,10 @@ Preparado: 8 de agosto de 2026
 ```
 Construcción, justificación y presentación de una cartera de inversión permanente
 a 10+ años para el ejercicio grupal de la Academia de Inversión (profesor Antonio
-Baeza). Equipo de 7 personas. Entrega: 17 de agosto de 2026. Incluye diseño de
+Baeza). Equipo de 6 personas. Entrega: 17 de agosto de 2026. Incluye diseño de
 cartera, X-Ray, justificación con evidencia académica y preparación de la
-presentación de 15-20 minutos. Objetivo declarado: batir al índice mundial en
-+1,5/+2 puntos anuales, con caída máxima aceptada del 45%.
+presentación de 15-20 minutos. Objetivo declarado: MSCI ACWI +50/+100 puntos
+básicos anualizados, con caída de diseño del −43%.
 ```
 
 ---
@@ -41,15 +41,15 @@ si un dato no está disponible o no puedes verificarlo, lo dices explícitamente
 - **Lenguaje llano obligatorio.** Nada de jerga financiera sin traducir.
   Prohibido usar drawdown, benchmark, tracking error, cap-weighted, DCA o
   similares sin explicarlos en cristiano la primera vez.
-- Cuantificar en euros, no solo en porcentaje. "−45%" no dice nada;
-  "de 100.000 € a 55.000 €" sí.
+- Cuantificar en euros, no solo en porcentaje. "−43%" no dice nada;
+  "de 100.000 € a 57.000 €" sí.
 - Ejemplos concretos antes que definiciones.
 - El usuario es el PORTAVOZ del grupo: todo lo que produzcas debe poder ser
-  defendido en voz alta ante seis compañeros y un profesor.
+  defendido en voz alta ante cinco compañeros y un profesor.
 
 ## CONTEXTO DEL EJERCICIO
 - Ejercicio grupal de la Academia de Inversión. Profesor: Antonio Baeza.
-- Equipo de 7 personas. Fran es el portavoz.
+- Equipo de 6 personas. Fran es el portavoz.
 - Entrega: 17 de agosto de 2026. Presentación: 18 de agosto, 15-20 minutos.
 - **NO se gestiona dinero real ni se mide rentabilidad real.** Lo que se evalúa
   es la CALIDAD DE LA JUSTIFICACIÓN: por qué cada activo, por qué cada peso,
@@ -67,8 +67,8 @@ si un dato no está disponible o no puedes verificarlo, lo dices explícitamente
 | Retiradas | Ninguna. Nunca |
 | Moneda base | EUR (se admiten activos en USD, con conversión indicada) |
 | Benchmark | MSCI ACWI (secundario: S&P 500) |
-| Objetivo | ACWI +50/+100 pb anualizados, con caída 10-12 puntos inferior |
-| Caída de diseño | −42% |
+| Objetivo | ACWI +50/+100 pb anualizados, con caída 10-15 puntos inferior |
+| Caída de diseño | −43% |
 | Freno (renta fija corta + liquidez) | 11% (banda 5-13%) |
 | Perfil | Agresivo, justificado por horizonte y aportaciones |
 | Cartera vigente | v3.2 — ver 02_CARTERA/CARTERA_DEFINITIVA.md |
@@ -120,10 +120,11 @@ si un dato no está disponible o no puedes verificarlo, lo dices explícitamente
 
 | Archivo | Dónde está | Para qué |
 |---|---|---|
-| **Clase completa Antonio Baeza (PDF)** | `C:\Users\fgonz\Downloads\Clase_Completa_Antonio_Baeza_Carteras_Concurso_Montecarlo (1) (1).pdf` | Enunciado, requisitos, plantilla de entrega, métricas exigidas |
-| **INFORME_EVIDENCIA_CARTERA.md** | `C:\Users\fgonz\Desktop\claude-tradingview\` | Los 7 estudios, las carteras de referencia, respuestas a preguntas difíciles |
-| **CARTERA_CONCURSO.md** | `C:\Users\fgonz\Desktop\claude-tradingview\` | Mandato cerrado, fases, decisiones tomadas, cuestiones abiertas |
-| **Este documento** | `C:\Users\fgonz\Desktop\claude-tradingview\PROYECTO_CONCURSO_SETUP.md` | Instrucciones y arranque |
+| **Clase completa Antonio Baeza (PDF)** | `99_FUENTES/Clase_Antonio_Baeza_completa.pdf` | Enunciado, requisitos, plantilla de entrega, métricas exigidas |
+| **INFORME_EVIDENCIA.md** | `01_EVIDENCIA/INFORME_EVIDENCIA.md` | Los 16 estudios, las carteras de referencia, respuestas a preguntas difíciles |
+| **MANDATO.md** | `00_CONTROL/MANDATO.md` | Mandato inicial (histórico), fases, decisiones tomadas, cuestiones abiertas |
+| **Este documento** | `00_CONTROL/SETUP_PROYECTO.md` | Instrucciones y arranque |
+| **CIFRAS_MAESTRAS.md** | `CIFRAS_MAESTRAS.md` (raíz) | **Única fuente de verdad de todas las cifras vigentes** |
 
 ## Prioridad 2 — útiles
 
@@ -154,18 +155,18 @@ si un dato no está disponible o no puedes verificarlo, lo dices explícitamente
 *(Copiar y pegar tal cual al abrir el proyecto nuevo)*
 
 ```
-Contexto: soy el portavoz de un equipo de 7 personas en el ejercicio de Cartera
+Contexto: soy el portavoz de un equipo de 6 personas en el ejercicio de Cartera
 Permanente de la Academia de Inversión (profesor Antonio Baeza). Entregamos el
 17 de agosto y presentamos el 18, en 15-20 minutos. Ya tenemos cerrado el mandato
-(está en CARTERA_CONCURSO.md) y la base de estudios (está en
-INFORME_EVIDENCIA_CARTERA.md).
+(está en 00_CONTROL/MANDATO.md) y la base de estudios (está en
+01_EVIDENCIA/INFORME_EVIDENCIA.md).
 
 Lo que necesito ahora, en este orden y sin adelantarte a los siguientes pasos:
 
 PASO 1 — Diseña la cartera concreta.
 Partiendo del mandato ya cerrado (100.000 € iniciales, 1.000 €/mes, 10 años sin
-retiradas, caída máxima aceptada 45%, freno 10-15%, objetivo batir al índice
-mundial en +1,5/+2 puntos anuales), propón la composición definitiva con:
+retiradas, caída de diseño −43%, freno 10-15%, objetivo MSCI ACWI +50/+100
+puntos básicos anualizados), propón la composición definitiva con:
 - Cada bloque, su peso exacto y su importe en euros
 - La FUNCIÓN que cumple cada uno (motor, estabilidad, protección, diversificación,
   cobertura de un escenario concreto)
@@ -180,7 +181,7 @@ Condiciones obligatorias:
 - Reserva 10-15% para un satélite de acciones individuales seleccionadas con
   nuestro método de valoración propio
 - Calcula la caída estimada de la cartera resultante aplicando 2008 activo por
-  activo, y comprueba que no supera el 45%
+  activo, y comprueba que no supera el 43%
 
 Enséñame la propuesta y espera mi OK antes de escribir nada en ningún archivo.
 
@@ -216,7 +217,7 @@ Habla en cristiano. Soy quien tiene que defender esto en voz alta.
 Según la plantilla del enunciado. Nada de esto puede faltar:
 
 - [ ] Nombre del grupo
-- [ ] Integrantes (los 7)
+- [ ] Integrantes (los 6)
 - [ ] Nombre de la cartera
 - [ ] Perfil de riesgo definido y justificado
 - [ ] Horizonte temporal
@@ -247,7 +248,7 @@ Según la plantilla del enunciado. Nada de esto puede faltar:
 
 | # | Cuestión | Urgencia |
 |---|---|---|
-| 1 | **Regla de decisión del equipo de 7** cuando no hay acuerdo | Alta — va en el documento |
+| 1 | **Regla de decisión del equipo de 6** cuando no hay acuerdo | Alta — va en el documento |
 | 2 | ¿Los 100.000 € y los 1.000 €/mes son reales o supuesto del ejercicio? | Alta — cambia la fase 5 |
 | 3 | Desglose de pesos del bloque nómada (bitcoin / sectorial / materias primas) | Alta — Paso 1 |
 | 4 | Nombre del grupo y de la cartera | Media |

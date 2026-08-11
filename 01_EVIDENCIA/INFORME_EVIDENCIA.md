@@ -1,7 +1,7 @@
 # INFORME DE EVIDENCIA — Sobre qué se construye nuestra cartera
 
 **Documento de trabajo para el grupo · Academia de Inversión · Ejercicio Cartera Permanente**
-Fecha: 8 de agosto de 2026 · Preparado para: portavoz y equipo (7 integrantes)
+Fecha: 8 de agosto de 2026 · Preparado para: portavoz y equipo (6 integrantes)
 
 ---
 
@@ -27,7 +27,7 @@ Cada apartado tiene la misma estructura:
 
 ---
 
-# PARTE 1 · LAS SIETE VERDADES
+# PARTE 1 · LAS OCHO VERDADES
 
 ---
 
@@ -76,7 +76,7 @@ ganancia de la bolsa la producen un puñado diminuto de empresas.
 | Empresas que generaron TODA la riqueza neta del mercado | **4,3%** |
 | Riqueza neta creada por ese 4,3% | ~35 billones de dólares |
 
-**Versión global (2019):** 64.000 acciones, 42 países, 1990-2018. Solo el **1,3%**
+**Versión global (2019):** 64.000 acciones, 42 países, 1990-2020. Solo el **1,3%**
 de las empresas generó toda la riqueza neta mundial.
 
 ### QUÉ SIGNIFICA PARA NOSOTROS
@@ -202,7 +202,7 @@ persistencia.
 
 ---
 
-## VERDAD 6-bis — Las primas factoriales son lo más documentado que existe
+## VERDAD 7 — Las primas factoriales son lo más documentado que existe
 
 ### QUÉ DICE
 Existen características medibles de los activos —tamaño, valor, calidad, momentum— que
@@ -236,14 +236,22 @@ desplomes severos y no aleatorios, **tras las grandes caídas de mercado, durant
 rebote**. En 2009 perdió con violencia justo cuando el mercado se recuperaba.
 
 ### QUÉ SIGNIFICA PARA NOSOTROS
-Justifica el bloque de Aceleración con momentum y small caps en lugar de una apuesta
-sectorial. Y determina dos decisiones concretas: **el vehículo de small caps lleva filtro
-de calidad**, y **momentum pesa 4% y no 12%**.
+Justifica el bloque de Aceleración **por factores en lugar de por sectores**. El bloque son
+**Multi-Factor 4% + Small Cap Quality 4%**, y de aquí salen dos decisiones concretas: **el
+vehículo de small caps lleva filtro de calidad**, y **el otro 4% va a un índice
+multi-factor, no a un factor único**.
+
+⚠️ **Momentum no está en la cartera.** La literatura de momentum es sólida y por eso se
+estudió; el vehículo se descartó al ver el dato oficial de MSCI: **rotación del 119,69%
+anual**, un coste real que el índice no descuenta y un fondo sí paga. Ver
+`01_EVIDENCIA/DATOS_OFICIALES_MSCI.md` y `CIFRAS_MAESTRAS.md §9`.
 
 ### CÓMO DEFENDERLO
-> "Momentum está documentado desde 1801, en ocho clases de activos y decenas de países.
-> Cuando un efecto se sostiene 215 años, 'casualidad estadística' deja de ser una objeción
-> creíble. Y sabemos cuándo falla: en los rebotes tras las caídas. Por eso pesa un 4%."
+> "Un factor no es una moda sectorial: es una regularidad medida. Momentum está documentado
+> desde 1801, en ocho clases de activos y decenas de países. Estudiamos comprarlo y
+> decidimos que no: el índice rota el 119,69% al año, se renueva entero cada doce meses, y
+> ese coste se lo come el partícipe, no el índice. Nos quedamos con un vehículo
+> multi-factor, que recoge varias primas a la vez sin depender de una sola."
 
 > "La prima de tamaño no está muerta: estaba contaminada. Asness y su equipo demostraron
 > en 2018 que al retirar las empresas de baja calidad reaparece con fuerza. Por eso nuestro
@@ -251,7 +259,7 @@ de calidad**, y **momentum pesa 4% y no 12%**.
 
 ---
 
-## VERDAD 7 — El inversor gana menos que sus propios fondos
+## VERDAD 8 — El inversor gana menos que sus propios fondos
 
 ### QUÉ DICE
 La gente compra después de las subidas y vende después de las caídas. Esa diferencia
@@ -266,7 +274,7 @@ buscando ganar más.
 
 ### QUÉ SIGNIFICA PARA NOSOTROS
 Es **el estudio que justifica las reglas escritas de antemano**. No basta con
-diseñar bien: hay que blindar el comportamiento. Especialmente siendo 7 personas
+diseñar bien: hay que blindar el comportamiento. Especialmente siendo 6 personas
 y ninguna con experiencia en una caída real.
 
 ### CÓMO DEFENDERLO
@@ -313,7 +321,7 @@ quiere conservarlo**. Nosotros estamos en la situación contraria:
 
 - 10 años **sin tocar el dinero, nunca**
 - 1.000 € entrando **cada mes**, pase lo que pase
-- Aceptamos caer un 45%
+- Aceptamos caer un **−43%** — de 100.000 € a 57.000 €
 - Equipo joven, en fase de **acumulación**
 
 **Con ese mandato, casi todas las carteras famosas son demasiado defensivas para
@@ -381,7 +389,7 @@ estructurales **que a nosotros no nos afectan**:
 ### Y la honestidad que hay que mantener
 
 > "Sabemos que la acción media es una mala inversión. Por eso este bloque está
-> limitado al 15%, con un máximo del 3% por empresa, un método de valoración
+> limitado al 14%, con un máximo del 3% por empresa, un método de valoración
 > escrito y una regla de salida definida antes de comprar. Si el bloque solo
 > iguala al mercado, seguimos cumpliendo el suelo de la cartera."
 
@@ -454,7 +462,7 @@ mejor que hacerlo cada año, y genera más costes.
 | Opción | Cómo funciona | Valoración |
 |---|---|---|
 | Anual por calendario | Cada 1 de enero, se recolocan los pesos | Simple. Es lo que usa el ejemplo de clase |
-| **Por bandas** | Se rebalancea solo cuando un activo se desvía más de un 25% relativo de su objetivo | Más eficiente: actúa cuando hace falta, no por el calendario |
+| **Por bandas** | Se rebalancea solo cuando un activo se desvía más de un 25% relativo de su objetivo **[⚠️ PENDIENTE DE DECISIÓN — ver CIFRAS_MAESTRAS §13.A]** | Más eficiente: actúa cuando hace falta, no por el calendario |
 | **Con aportaciones** ⭐ | Los 1.000 €/mes se dirigen al activo más rezagado | **La mejor de las tres para nosotros** |
 
 ## Nuestra ventaja: rebalancear sin vender
@@ -475,6 +483,9 @@ nada**. Y no vender significa:
 **Regla propuesta:** aportaciones mensuales dirigidas al activo más rezagado +
 revisión de bandas una vez al año + venta solo si algo se desvía más de un 25%
 relativo y las aportaciones no bastan para corregirlo.
+**[⚠️ PENDIENTE DE DECISIÓN — ver CIFRAS_MAESTRAS §13.A]** `CARTERA_DEFINITIVA §9` y el
+entregable usan **bandas absolutas** (suelo / neutral / techo). Hay que elegir una de las
+dos redacciones y borrar la otra antes de la entrega.
 
 ---
 
@@ -492,7 +503,7 @@ cualquier decisión, la respuesta está aquí.
 | Sobreponderar lo que está más barato | Shiller (CAPE) |
 | Apuestas sectoriales limitadas y conscientes | Dimson-Marsh-Staunton (ferrocarriles 1900); Siegel |
 | Reglas de comportamiento escritas de antemano | Morningstar *Mind the Gap* |
-| Perfil agresivo pese a la caída del 45% | Nuestro propio mandato: 10 años, aportaciones mensuales, sin retiradas |
+| Perfil agresivo pese a la caída del −43% (de 100.000 € a 57.000 €) | Nuestro propio mandato: 10 años, aportaciones mensuales, sin retiradas |
 | Satélite de acciones acotado al 10-15% | Bessembinder (por eso está limitado, no prohibido) |
 | Rebalanceo con aportaciones | Vanguard (frecuencia poco relevante) + ventaja fiscal española |
 
@@ -500,7 +511,7 @@ cualquier decisión, la respuesta está aquí.
 
 # PARTE 6 · LAS TRES PREGUNTAS DIFÍCILES QUE NOS VAN A HACER
 
-## 1. "Vuestra cartera cae un 45%. ¿Podríais mantenerla?"
+## 1. "Vuestra cartera cae un −43%. ¿Podríais mantenerla?"
 
 Es **la pregunta central de la clase**. Va a caer seguro.
 
@@ -509,8 +520,8 @@ Es **la pregunta central de la clase**. Va a caer seguro.
 > al mes, con lo que una caída larga nos hace comprar barato durante años — es un
 > viento a favor, no en contra. Y tercera: tenemos escrito de antemano qué hacemos
 > en esa situación, incluida una regla de grupo para que nadie pueda forzar una
-> venta en pánico. Sabemos que el 45% es nuestro límite porque lo calculamos
-> aplicando 2008 a nuestra cartera, activo por activo."
+> venta en pánico. Sabemos que el −43% es nuestro límite —de 100.000 € a 57.000 €—
+> porque lo calculamos aplicando 2008 a nuestra cartera, activo por activo."
 
 ## 2. "¿Por qué no hacéis simplemente la All Weather, que está probada?"
 

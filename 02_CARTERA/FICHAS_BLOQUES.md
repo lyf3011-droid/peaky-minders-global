@@ -1,6 +1,6 @@
 # FICHAS DE BLOQUE — Peaky Minders Global
 
-**Fecha límite de entrega: 11 de agosto de 2026** · Cartera v3.2
+**Fecha límite de entrega: 11 de agosto de 2026** · Cartera v3.3
 
 > ⚠️ **PESOS ACTUALIZADOS EL 9 DE AGOSTO.** Si recibiste una versión anterior por
 > WhatsApp con otros porcentajes, **esta manda**. Los cambios: Motor 29→31 ·
@@ -8,19 +8,28 @@
 > Freno 10→11 · Protección 8→**9** (oro 7% + cobre 2%) · Aceleración: **deja de ser
 > tecnología** y pasa a ser factorial.
 
+> 🆕 **CAMBIO DEL 10 DE AGOSTO — solo afecta a Aceleración.** El bloque pasa de **dos
+> componentes a uno**: deja de ser Multi-Factor 4% + Small Cap Quality 4% y pasa a ser
+> **Small Cap global 8%**. Motivo: al buscar los fondos se comprobó que **ninguno de los dos
+> índices tiene vehículo comprable**. **El peso del bloque no cambia — sigue siendo 8%**, así
+> que **ningún otro bloque se toca** y la suma sigue dando 100%. Ver `FICHA_ACELERACION.md`.
+
 ## REPARTO
 
 | Bloque | Peso | Responsable |
 |---|---|---|
-| 🚀 Motor — índice mundial (ACWI) | 31% | Fran · Cristina R. |
+| 🚀 Motor — índice mundial (ACWI) | 31% | Fran · Cristina Rodríguez |
 | 🎯 Convicción — 7 empresas | 14% | Fran |
 | 🌿 Calidad — salud + consumo defensivo | 12% | **Celia Bravo** |
 | 📉 Reversión — emergentes + Japón | 11% | **Jordi** |
 | ⚓ Freno — renta fija corta | 11% | **Grupo** |
 | 🛡️ Protección — oro | 7% | **Mary Morcillo** |
-| ⚡ Aceleración — Multi-Factor + small caps | 8% | Fran |
+| ⚡ Aceleración — **Small Cap global** *(un solo componente)* | 8% | Fran |
 | 💥 Asimetría — bitcoin | 4% | **Andrea Miguel** |
 | 🛡️ Protección — cobre / recursos | 2% | **Cristina Rodríguez** |
+
+**Fuente:** `CIFRAS_MAESTRAS.md` v3.3 §3 · catálogo de MyInvestor, consultado el
+10-ago-2026.
 
 ---
 
@@ -56,7 +65,7 @@ no. A diez años esa diferencia pesa más que unas décimas de comisión.
 
 # 🚀 BLOQUE 1 · MOTOR — Índice mundial (MSCI ACWI) · 31%
 
-**Responsable: Fran**
+**Responsables: Fran González · Cristina Rodríguez**
 
 ### Ya está hecho — qué función cumple
 
@@ -158,16 +167,34 @@ Hynix), lo que se suma a nuestra exposición tecnológica.
 ---
 ---
 
-# ⚡ BLOQUE 4 · ACELERACIÓN — Factorial · 8%
+# ⚡ BLOQUE 4 · ACELERACIÓN — Small Cap global · 8%
 
-**Responsable: Fran** — ✅ **Ficha ya completada**, ver `FICHA_ACELERACION.md`
+**Responsable: Fran** — ✅ **Ficha completada y vehículo cerrado**, ver `FICHA_ACELERACION.md`
 
-### Qué contiene
+### Qué contiene — un solo componente
 
-| Componente | Peso |
-|---|---|
-| MSCI World Diversified Multiple-Factor | 4% |
-| Small caps globales **con filtro de calidad** | 4% |
+| Componente | Peso | Índice que replica | Vehículo |
+|---|---|---|---|
+| **Small Cap global** | **8%** | **MSCI World Small Cap** — 23 países desarrollados | Vanguard Global Small-Cap Index Fund EUR Acc · `IE00B42W4L06` · **0,30%** |
+
+**Fuente:** catálogo de MyInvestor, consultado el 10-ago-2026 por dos vías independientes.
+
+> 🆕 **De dos componentes a uno (10-ago-2026).** El bloque se diseñó con **dos primas**:
+> Multi-Factor 4% + Small Cap Quality 4%. Al buscar los fondos se comprobó que **ninguno de
+> los dos índices tiene fondo indexado comprable**: `multifactor` devuelve 0, `quality`
+> devuelve 0 indexados —los 16 resultados son de gestión activa, con comisiones del 0,84%
+> al 2,47%— y `small cap` devuelve 4, que son cuatro clases del mismo fondo de Vanguard.
+> **Multi-Factor y Small Cap Quality son ahora DESCARTES, no posiciones.**
+
+**Tres cosas que hay que decir, y las decimos nosotros:**
+
+1. **El Multi-Factor no se descarta por sus datos** — eran los mejores de los seis índices
+   comparados (prima +2,88 pp, ratio de información 0,71). Se descarta porque **no existe
+   forma de comprarlo**.
+2. **Compramos el índice de pequeñas SIN filtro de calidad.** No fingimos que llevamos el
+   Quality. Es la debilidad declarada del bloque.
+3. **Se pierde la diversificación entre dos primas.** El bloque depende ahora de **un solo
+   factor: el tamaño**.
 
 **Por qué ya no es tecnología.** Al abrir la cartera vimos que ya llevábamos ~18,7% en
 tecnología sin comprarla como bloque: dentro del índice mundial, vía los semiconductores
@@ -175,9 +202,29 @@ asiáticos de emergentes, y por Alphabet y Meta en Convicción. Un bloque tecnol
 habría sido la tercera compra del mismo riesgo. Además, las seis empresas candidatas del
 research de IA cotizaban con una prima media del **+73%** sobre su valoración histórica.
 
-**Base académica:** momentum está documentado desde 1801 y en ocho clases de activos
-(Jegadeesh & Titman 1993; Asness, Moskowitz & Pedersen 2013; Geczy & Samonov 2016). La
-prima de tamaño reaparece con fuerza al controlar por calidad (Asness et al., 2018).
+**Base académica.** El bloque se apoya en la **prima de tamaño**: las compañías pequeñas
+han obtenido históricamente más rentabilidad de la que justificaba su riesgo de mercado
+—Banz (1981), formalizado como factor por Fama & French (1992, 1993) y documentado a muy
+largo plazo en múltiples países por Dimson, Marsh & Staunton—. Y hay un argumento que no
+depende de ninguna prima: el MSCI ACWI cubre grandes y medianas compañías, en torno al
+**85% del universo invertible global**; el 15% restante son las pequeñas, y **no estaban en
+la cartera por ninguna vía**. No sobreponderamos: tapamos un hueco de nuestro propio índice.
+
+> ⚠️ **El matiz que ya no podemos cumplir, y por eso va aquí.** Asness et al. (2018),
+> *Size Matters, If You Control Your Junk*: la prima de tamaño parecía débil porque el
+> universo de pequeñas está lleno de empresas de baja calidad, y **reaparece con fuerza al
+> controlar por calidad**. El diseño pedía por eso un vehículo con filtro. **No existe
+> ninguno indexado, así que compramos el índice completo y lo declaramos.** El estudio que
+> justifica el bloque es también el que señala su punto flaco.
+
+> **Momentum se descartó dos veces:** primero por análisis —rota el 119,69% de su cartera al
+> año y obtiene la mitad de ratio de información que el Multi-Factor— y después por
+> disponibilidad: **tampoco existe fondo indexado de momentum en la plataforma**. Al caer
+> también el Multi-Factor, que era la vía por la que la prima entraba diluida, **la cartera
+> se queda sin ninguna exposición a momentum**, y así hay que contarlo.
+
+> **La lección, en una frase:** *«Un índice no es una inversión.»* Hay que comprobar que
+> existe fondo comprable **antes** de analizar un índice, no después.
 
 ---
 ---
@@ -199,11 +246,15 @@ esperada y baja la caída de la cartera.
 
 **Por qué:** Siegel midió la rentabilidad por sector del S&P 500 entre 1957 y 2012:
 
-| Sector | Rentabilidad anualizada | Caída en 2008 |
+| Sector | Rentabilidad anualizada **1957-2003** | Caída **año natural 2008** |
 |---|---|---|
-| Consumo defensivo | ~13,3% | ~−15% |
-| Salud | ~12,8% | ~−23% |
-| S&P 500 | ~10,1% | −37% |
+| Consumo defensivo | **13,36%** | **−15,0%** |
+| Salud | **13,76%** | **−25,6%** |
+| S&P 500 | **11,18%** | **−37%** |
+
+**FUENTE:** rentabilidades — Jeremy Siegel, *The Future for Investors* (2005), anualizadas
+a partir de sus cifras de 1.000 $ invertidos 1957-2003. Caídas — año natural 2008 de los ETF
+sectoriales SPDR (XLP, XLV) frente al S&P 500. ⚠️ **Año natural, no pico-valle.**
 
 Los dos mejores sectores del histórico largo cayeron mucho menos que el mercado en
 la peor crisis reciente. Todos los demás ajustes que probamos mejoraban la
@@ -228,7 +279,7 @@ diversificación.
 
 # ⚓ BLOQUE 6 · FRENO — Renta fija corta + liquidez · 11%
 
-**Responsable: Fran**
+**Responsable: Grupo**
 
 ### Ya está hecho — qué función cumple
 
@@ -276,9 +327,10 @@ monetaria.
 
 **El dato honesto que damos nosotros:** el oro tuvo su máximo en 1980 y después
 **veinte años de rentabilidad real negativa**. No es un motor de rentabilidad: es un
-seguro. Por eso pesa 6% y no 20%.
+seguro. Por eso pesa 7% y no 20%.
 
-**Lo que sí hizo:** en 2008, mientras la bolsa mundial caía un 54%, el oro **subió**.
+**Lo que sí hizo:** en 2008, mientras la bolsa mundial caía un 58,4% (MSCI ACWI,
+pico-valle 2007-2009), el oro **subió**.
 Es el único bloque de la cartera que aporta en positivo en el peor escenario.
 
 ### ▶ Lo que tienes que completar
@@ -313,7 +365,7 @@ dimensionada para que **su peor escenario histórico no rompa la cartera**. Ha c
 más de un 80% en tres ocasiones (2014, 2018, 2022). Con un 4%, una caída del 80%
 cuesta 3,2 puntos de cartera.
 
-**Por qué 4% y no 8%:** porque con 8% no cuadra el límite del −45% que aceptamos. El
+**Por qué 4% y no 8%:** porque con 8% no cuadra el límite del −43% que aceptamos. El
 peso sale del presupuesto de riesgo, no del entusiasmo.
 
 ### ▶ Lo que tienes que completar

@@ -3,10 +3,14 @@
 > Este archivo registra el mandato **inicial** del 8 de agosto de 2026 y se conserva
 > como trazabilidad del proceso. **No se reescribe el pasado.**
 >
-> **La versión vigente es la v3.2**, en `02_CARTERA/CARTERA_DEFINITIVA.md`.
+> **Las cifras vigentes están en `CIFRAS_MAESTRAS.md` (raíz del proyecto).**
+> Ese archivo manda sobre todos los demás: si una cifra de aquí no coincide con la de allí,
+> la buena es la de `CIFRAS_MAESTRAS.md`.
+>
+> **La versión vigente de la cartera es la v3.2**, en `02_CARTERA/CARTERA_DEFINITIVA.md`.
 >
 > Cambios posteriores: benchmark fijado en MSCI ACWI · objetivo reformulado de
-> +150/+200 pb a +50/+100 pb · caída de diseño de −45% a −42% · equipo de 7 a 6
+> +150/+200 pb a +50/+100 pb · caída de diseño de −45% a −43% · equipo de 7 a 6
 > personas · Aceleración deja de ser tecnología y pasa a ser factorial.
 
 # CARTERA CONCURSO — Vehículo a 10 años
@@ -23,7 +27,7 @@ Estado: Fase 0 cerrada salvo 2 puntos. Fase 1 lista para abrir.
 > - X-Ray **obligatorio**. Montecarlo opcional
 > - Prohibido copiar All Weather, Permanent Portfolio o Golden Butterfly
 > - Máx. 10 integrantes (somos 7 ✓). Perfil de riesgo y pesos libres, pero justificados
-> - Ver `PROYECTO_CONCURSO_SETUP.md` para checklist de entrega y calendario
+> - Ver `00_CONTROL/SETUP_PROYECTO.md` para checklist de entrega y calendario
 
 > **Vehículo separado de CARTERA.md.** Mandato distinto, horizonte distinto,
 > reglas distintas. No mezclar posiciones, pesos ni reglas de riesgo entre
@@ -225,5 +229,8 @@ real del grupo tiende a la del integrante menos tolerante.
 |---|---|
 | CLAUDE.md | Reglas del agente. Los límites de capa aplican a CARTERA.md |
 | CARTERA.md | Cartera real. **Separada de este vehículo** |
-| 00_CONTROL/PROTOCOLO_FUENTES_CARTERA.md | Fuentes válidas de precios y datos de fondos |
-| DIARIO_TRADING.md | Registro de decisiones con consecuencia real |
+
+> **Nota:** `CLAUDE.md`, `CARTERA.md`, `PROTOCOLO_FUENTES_CARTERA.md` y `DIARIO_TRADING.md`
+> pertenecen al sistema de cartera real (proyecto `claude-tradingview`) y **son externos a este
+> proyecto**. No existen aquí. Dentro de este proyecto, las fuentes y la trazabilidad están en
+> `01_EVIDENCIA/FUENTES_Y_TRAZABILIDAD.md` y las cifras vigentes en `CIFRAS_MAESTRAS.md`.

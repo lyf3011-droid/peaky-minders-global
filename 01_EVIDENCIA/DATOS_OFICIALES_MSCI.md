@@ -9,6 +9,33 @@ Descargados de msci.com el 9 de agosto de 2026
 
 ---
 
+## ⚠️ QUÉ ÍNDICES ESTÁN DOCUMENTADOS AQUÍ Y CUÁLES NO
+
+**Léelo antes de citar nada.** Este archivo NO cubre todos los índices que aparecen en el
+proyecto. Si un dato no está en la lista verde, **no tiene respaldo en este documento** y no
+se puede llevar a la presentación como dato oficial.
+
+| Índice | ¿Factsheet leído? | Dónde |
+|---|---|---|
+| **MSCI ACWI** *(benchmark)* | ✅ Sí | §0 |
+| **MSCI World** (bruto y neto) | ✅ Sí | §1 |
+| **MSCI World Quality** | ✅ Sí | §1, §3 |
+| **MSCI World Momentum** | ✅ Sí | §1, §4 |
+| **MSCI World Enhanced Value** | ✅ Sí | §1, §5-bis |
+| **MSCI World Small Cap** | ✅ Sí | §1, §5 |
+| **MSCI World Small Cap Quality** ⭐ *(en cartera)* | ✅ Sí | §1, §5 |
+| **MSCI Emerging Markets** | 🟡 Solo la fila comparada de §0 | §0 |
+| **MSCI Diversified Multiple-Factor** ⭐ *(en cartera)* | ❌ **NO** | — |
+| **MSCI Minimum Volatility** | ❌ **NO** | — |
+| MSCI Japan · World Health Care · World Consumer Staples | ❌ **NO** | — |
+
+🚨 **El aviso importante:** el bloque **Aceleración** son dos vehículos —**Multi-Factor 4% +
+Small Cap Quality 4%**— y aquí **solo está documentado uno de los dos**. `FICHA_ACELERACION.md`
+cita Multi-Factor y Minimum Volatility, y **ninguno de los dos tiene factsheet leído todavía**.
+Cualquier cifra suya es `[PENDIENTE DE VERIFICAR]` hasta que se descargue su factsheet.
+
+---
+
 ## 0. EL BENCHMARK — MSCI ACWI
 
 **Factsheet oficial a 31 de julio de 2026** (rentabilidad neta, serie desde dic-2000).
@@ -149,9 +176,16 @@ Es el índice que mejor combina las dos caras del problema:
 
 | Concentración | World Quality | MSCI World |
 |---|---|---|
-| Peso de las 10 mayores | **37,10%** | 23,82% |
+| Peso de las 10 mayores | **37,10%** `[PENDIENTE DE VERIFICAR EN EL FACTSHEET]` | 23,82% |
 | Estados Unidos | **78,15%** | ~71% |
-| Tecnología | **37,10%** | ~26% |
+| Tecnología | **37,10%** `[PENDIENTE DE VERIFICAR EN EL FACTSHEET]` | ~26% |
+
+⚠️ **Las dos cifras marcadas son idénticas (37,10%) y eso es sospechoso.** Que el peso de las
+diez mayores y el peso de tecnología coincidan al segundo decimal apunta a un error al
+copiar del factsheet, no a una casualidad. **No se ha corregido porque no sabemos cuál de
+las dos es la buena.** Hay que abrir el factsheet de MSCI World Quality y leer las dos por
+separado antes de citar ninguna. La misma pareja de cifras vuelve a aparecer en la tabla de
+§5-bis.
 
 Sus mayores posiciones son Microsoft, Apple, Broadcom, Nvidia, Meta, Lilly, Visa, ASML y
 Alphabet. **Es un índice muy concentrado y muy americano.**
@@ -245,12 +279,15 @@ por el mismo hueco de 4% en el bloque Aceleración:
 | Tracking error | 7,85% | 4,49% | 7,27% |
 | **Rotación anual** | **119,69%** ❌ | 48,01% | **27,39%** ✅ |
 | Peso en EE.UU. | 56,33% | **78,15%** ❌ | **46,16%** ✅ |
-| Peso en tecnología | 32,40% | 37,10% | 29,84% |
-| Peso del top 10 | 28,02% | 37,10% | 27,58% |
+| Peso en tecnología | 32,40% | 37,10% ⚠️ | 29,84% |
+| Peso del top 10 | 28,02% | 37,10% ⚠️ | 27,58% |
 | **Mayor posición individual** | 5,80% | 5,41% | **12,60%** ❌ |
 | P/E | 25,43 | 26,67 | **14,43** ✅ |
 | P/BV | 3,74 | 9,13 | **1,62** ✅ |
 | Rentabilidad por dividendo | 1,53% | 1,21% | **2,65%** |
+
+⚠️ *Las dos celdas de Quality marcadas repiten el mismo 37,10%:
+`[PENDIENTE DE VERIFICAR EN EL FACTSHEET]`, ver el aviso de §3.*
 
 ### Lectura
 
@@ -275,16 +312,52 @@ exposición conjunta a una sola compañía sería relevante y habría que declar
 
 ---
 
-## 6. IMPLICACIONES PARA LA CARTERA
+## 6. IMPLICACIONES PARA LA CARTERA — LA DECISIÓN FINAL
 
-1. **El supuesto de +250 pb para Aceleración era razonable.** Con momentum + small cap
-   quality, la media ponderada real sería +238 pb. Se mantiene.
-2. **Quality domina a Momentum en las seis métricas medidas.** Sustituirlo mejora
-   rentabilidad, reduce caída, reduce tracking error y **menos de la mitad de rotación**.
-3. **Small Cap Quality es el que más diversifica.** Debe mantenerse.
-4. **El escenario 2008 puede recalcularse con datos reales** en lugar de estimaciones:
+> **Este apartado se reescribió el 10 de agosto de 2026.** La versión anterior recomendaba
+> sustituir Momentum por Quality. **Esa recomendación quedó superada:** al comparar los
+> cinco candidatos se eligió un índice **multi-factor**, que no aparecía en la comparación
+> original. Se deja constancia porque el proceso también se presenta.
+
+### ✅ Lo que entra en el bloque ACELERACIÓN (8%)
+
+| Componente | Peso | Por qué |
+|---|---|---|
+| **MSCI Diversified Multiple-Factor** (Multi-Factor) | **4%** | Recoge varias primas a la vez. No depende de que funcione un factor concreto |
+| **MSCI World Small Cap Quality** | **4%** | El único de los analizados que **reduce de verdad** la dependencia de las megacaps tecnológicas de EE.UU.: 12,71% de tecnología y 56,17% de EE.UU. |
+
+**Por qué 4 y 4 y no 8 a uno solo:** son dos primas distintas. El escenario que hunde a una
+no es el mismo que hunde a la otra. Repartir evita depender de un único factor.
+
+**Criterio de compra del vehículo Multi-Factor:** comprobar que su top 10 **no** coincide
+con el del ACWI. Si el top 10 supera el **40%**, no diversifica y se descarta.
+
+⚠️ **El factsheet de MSCI Diversified Multiple-Factor todavía no se ha leído** (ver el aviso
+de la cabecera). Sus cifras son `[PENDIENTE DE VERIFICAR]`.
+
+### ❌ Lo que se descartó, y por qué
+
+| Descartado | Motivo |
+|---|---|
+| **MSCI World Momentum** | **Rotación anual del 119,69%**: se renueva entero cada año. El índice no descuenta ese coste, un fondo real sí lo paga. Ofrece **la mitad de information ratio que Multi-Factor para la misma prima** |
+| **MSCI World Quality** | Tracking error de **4,49%** y **78,15% en EE.UU.**: es el índice padre re-filtrado. Sus diez mayores son Microsoft, Apple, Broadcom, Nvidia, Meta y Alphabet — **las mismas que ya dominan el Motor**. Comprarlo sería comprar dos veces lo mismo |
+| **MSCI Minimum Volatility** | No aporta prima. Su función —amortiguar— ya la cubre el bloque **Freno** |
+| **MSCI World Enhanced Value** | Prima insuficiente (+2,21 pp) para el riesgo asumido: peor caída de los tres (**−62,01%**), beta por encima de 1 y **Micron pesando el 12,60%** del índice |
+| **Un bloque tecnológico** | La cartera ya lleva **18,7%** de tecnología por otras vías |
+
+> **La lección que sí se presenta:** Quality ganaba en las seis métricas de rentabilidad y
+> riesgo, y aun así **no entró**. Un índice no se elige por su ficha aislada, sino por lo
+> que aporta **al lado de lo que ya tienes**. Con un 31% en el Motor, comprar Quality era
+> comprar el Motor otra vez con otro nombre.
+
+### Lo que además queda validado
+
+1. **Small Cap Quality confirma a Asness (2018):** más rentabilidad (**+1,86 pp**), menos
+   volatilidad, menos caída y mejor Sharpe que el Small Cap sin filtrar.
+2. **El escenario 2008 puede recalcularse con datos reales** en lugar de estimaciones:
    MSCI World cayó −57,46%, Quality −48,01%, Momentum −55,53%, Small Cap −61,35% y Small
    Cap Quality −57,86%, todos entre octubre de 2007 y marzo de 2009.
+3. **El alfa supuesto del bloque Aceleración es +250 pb** (`CIFRAS_MAESTRAS.md §8`).
 
 ---
 
@@ -307,8 +380,9 @@ entrega conviene comprobar si hay versión de agosto.
 
 | Dato | Para qué | Dónde |
 |---|---|---|
-| MSCI ACWI — rentabilidad, volatilidad, caída máxima | **Es nuestro benchmark oficial** | msci.com |
-| MSCI Emerging Markets | Bloque Reversión | msci.com |
+| **MSCI Diversified Multiple-Factor** | **Es la mitad del bloque Aceleración y no tiene factsheet** | msci.com |
+| MSCI Minimum Volatility | Se cita como descarte en `FICHA_ACELERACION.md` sin dato de respaldo | msci.com |
+| MSCI Emerging Markets — factsheet completo | Bloque Reversión (en §0 solo está la fila comparada) | msci.com |
 | MSCI Japan | Bloque Reversión | msci.com |
 | MSCI World Health Care y Consumer Staples | Bloque Calidad — sustituir a Siegel | msci.com |
 | Oro y renta fija corta en 2007-2009 | Prueba de estrés | Series de precio |
@@ -321,3 +395,4 @@ entrega conviene comprobar si hay versión de agosto.
 | Fecha | Acción |
 |---|---|
 | 2026-08-09 | Documento creado con cinco factsheets oficiales de MSCI a 31-jul-2026 |
+| 2026-08-10 | Añadida la cabecera con **qué índices están documentados y cuáles no**. Reescrito el §6 con la **decisión final del bloque Aceleración: Multi-Factor 4% + Small Cap Quality 4%**, y los motivos de descarte de Momentum, Quality, Minimum Volatility y Enhanced Value. Eliminada del §8 la fila del ACWI (sus datos ya están en §0). Marcadas con `[PENDIENTE DE VERIFICAR EN EL FACTSHEET]` las dos cifras de MSCI World Quality que repiten el mismo 37,10% |

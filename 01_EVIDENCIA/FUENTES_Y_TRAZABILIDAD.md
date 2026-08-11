@@ -1,6 +1,9 @@
 # FUENTES Y TRAZABILIDAD
 
-**Peaky Minders · Cartera Permanente · 8 de agosto de 2026**
+**Peaky Minders · Cartera Permanente · 10 de agosto de 2026**
+
+> 🔒 **Las cifras vigentes están en `CIFRAS_MAESTRAS.md`.** Si algo de aquí no coincide con
+> ese archivo, manda `CIFRAS_MAESTRAS.md`.
 
 > **Para qué sirve este documento.** Un fondo serio distingue cuatro cosas que la mayoría
 > mezcla: **hecho, estimación, supuesto y decisión**. Aquí está cada cifra del trabajo
@@ -87,9 +90,14 @@ y **UBS Global Investment Returns Yearbook** (anual, con LBS). El *Summary Editi
 |---|---|
 | 125 años, 35 países | Verificar en la edición vigente |
 | Rentabilidad real de la RV mundial ~5% anual a largo plazo | Verificar |
-| **En 1900 los ferrocarriles eran ~63% de la bolsa estadounidense** | **Verificar — sostiene el límite de ACELERACIÓN** |
+| **En 1900 los ferrocarriles eran ~63% de la bolsa estadounidense** | **Verificar — sostiene los límites de concentración temática del look-through** |
 
-**Justifica:** el límite del 8% en apuestas sectoriales.
+**Justifica:** los **límites de concentración por tema** que se comprueban en la radiografía
+(look-through) de la cartera — señaladamente el tope que nos ponemos al peso de tecnología,
+hoy en **18,7%**. **No justifica el bloque ACELERACIÓN**, que no es una apuesta sectorial
+sino factorial (Multi-Factor 4% + Small Cap Quality 4%). El argumento de los ferrocarriles
+sirve contra concentrar en un tema de moda; el bloque Aceleración no concentra en ningún
+tema.
 
 ---
 
@@ -202,9 +210,14 @@ Your Junk.* Journal of Financial Economics, 129(3), 479-509. — **aqr.com, acce
 | La prima de tamaño reaparece al controlar por calidad | **Verificar — sostiene la decisión de filtrar** |
 | Consistencia entre países y clases de activo | Verificar |
 
-**Justifican:** el bloque ACELERACIÓN con momentum 4% + small caps con filtro de calidad
-4%, y las dos decisiones prácticas derivadas: filtro de calidad obligatorio y peso limitado
-de momentum.
+**Justifican:** el bloque ACELERACIÓN con **Multi-Factor 4% + Small Cap Quality 4%**, y las
+dos decisiones prácticas derivadas: **filtro de calidad obligatorio** en el vehículo de
+small caps, y **no depender de un factor único** en el otro 4%.
+
+⚠️ **Momentum se estudió y se descartó.** La literatura sostiene la prima, pero el factsheet
+oficial de MSCI muestra una **rotación anual del 119,69%** que el índice no descuenta y un
+fondo real sí paga. Momentum solo aparece en el proyecto como **descarte documentado**.
+Ver `01_EVIDENCIA/DATOS_OFICIALES_MSCI.md` y `CIFRAS_MAESTRAS.md §9`.
 
 ⚠️ **Cobertura del ACWI (~85% del universo invertible):** dato de MSCI, a verificar en su
 factsheet. **Sostiene el argumento de completitud de las small caps**, que es uno de los
@@ -242,12 +255,19 @@ más potentes del trabajo.
 
 | Índice | Año natural 2008 | **Pico-valle oct 2007 – mar 2009** |
 |---|---|---|
+| **MSCI ACWI** *(nuestro benchmark)* | ≈ −42% | **−58,4%** ✅ dato oficial |
+| MSCI World *(neto)* | ≈ −41% | **−57,8%** ✅ dato oficial |
 | S&P 500 | ≈ −37% | ≈ **−57%** |
-| MSCI World | ≈ −41% | ≈ **−54%** |
-| MSCI Emerging Markets | ≈ −53% | ≈ **−61%** |
+| MSCI Emerging Markets | ≈ −53% | **−65,25%** ✅ dato oficial¹ |
 
-**Si dices "−54%" y alguien busca "MSCI World 2008" y ve "−40,7%", parece que te lo has
-inventado.** La fórmula correcta al citarlo es siempre:
+¹ *El mínimo del MSCI Emerging Markets se alcanzó en octubre de 2008, no en marzo de 2009.*
+
+**Fuente de los tres datos marcados:** factsheets oficiales de MSCI a 31-jul-2026, recogidos
+en `01_EVIDENCIA/DATOS_OFICIALES_MSCI.md §0`.
+
+⚠️ **No confundir ACWI con World.** El benchmark es el **ACWI (−58,4%)**; el World hizo
+**−57,8%**. Y si citas cualquiera de los dos y alguien busca "MSCI World 2008" y ve
+"−40,7%", parece que te lo has inventado. La fórmula correcta al citarlo es siempre:
 
 > *"caída máxima de pico a valle entre octubre de 2007 y marzo de 2009"*
 
@@ -278,7 +298,7 @@ nosotros.** Se publican para que puedan discutirse y modificarse.
 |---|---|---|
 | Motor (ACWI) | ~8% nominal | Rentabilidad histórica de la RV global, redondeada |
 | Reversión | ~8% | Igual al mercado; el alfa se cuenta aparte |
-| Aceleración | ~11% | Prima sectorial supuesta, no medida |
+| Aceleración | ~11% | **Prima factorial, ya no sectorial — y ahora medida:** MSCI World Small Cap Quality rindió **11,12%** anualizado desde dic-2000 (factsheet oficial). El componente Multi-Factor: `[PENDIENTE DE VERIFICAR]`, falta su factsheet |
 | Calidad | ~10% | Coherente con Siegel, pero ajustado a la baja |
 | Convicción | 8% base + alfa | El alfa se contabiliza en §3.2 |
 | Oro | ~5,5% | Nominal histórico largo, redondeado |
@@ -290,21 +310,25 @@ nosotros.** Se publican para que puedan discutirse y modificarse.
 
 | Fuente | Alfa supuesto | Nivel de confianza |
 |---|---|---|
-| Convicción | +500 pb | Bajo — depende enteramente de la selección |
+| Convicción | **+500 pb** | Bajo — depende enteramente de la selección |
 | Bitcoin | +700 pb | Muy bajo — activo sin historia larga |
-| Aceleración | +300 pb | Bajo |
+| Aceleración | **+250 pb** | Bajo |
 | Reversión | +200 pb | Medio — apoyado en CAPE |
 | Calidad | +150 pb | Medio — apoyado en Siegel |
 | Rebalanceo | +20 pb | Medio |
+
+> ✅ **Verificado el 10-ago-2026.** Estos seis supuestos, aplicados a sus pesos, reproducen
+> exactamente el alfa bruto de **+178 pb** declarado en `CARTERA_DEFINITIVA §5.1` y
+> `DOCUMENTO_ENTREGA §7.1`: 70 + 28 + 22 + 20 + 18 + 20 = 178.
 
 ## 3.3 Caídas aplicadas por bloque en el escenario 2008
 
 | Bloque | Caída aplicada | Origen |
 |---|---|---|
-| Motor | −54% | Dato de mercado (nivel 2) |
+| Motor | **−58,4%** | **Dato oficial** — MSCI ACWI, factsheet 31-jul-2026 |
 | Convicción | −52% | **Estimación por analogía** |
-| Reversión | −56% | **Estimación**: mezcla EM y Japón |
-| Aceleración | −60% | **Estimación** |
+| Reversión | **−59%** | **Estimación**: mezcla EM y Japón |
+| Aceleración | **−57,1%** | **Estimación** ponderada de los dos vehículos factoriales |
 | Calidad | −25% | Estimación basada en Siegel |
 | Cobre | −55% | **Estimación** |
 | Bitcoin | −80% | Traslación de sus caídas reales posteriores |
@@ -316,9 +340,18 @@ nosotros.** Se publican para que puedan discutirse y modificarse.
 |---|---|
 | TER medio de la cartera | 0,25% |
 | Tracking Error de diseño | 4-7% |
-| Peso de tecnología dentro del ACWI | ~28% |
 | Peso de tecnología dentro de EM | ~25% |
-| Peso de tecnología dentro de Convicción | ~40% |
+| Peso de tecnología dentro de Convicción | **~36%** (14% × 36% ≈ **5,0%** de la cartera, que es la cifra que usan todos los desgloses) |
+
+> **Ya no es supuesto:** el **peso de tecnología dentro del ACWI** era antes un supuesto
+> propio del ~28%. Hoy es **dato de mercado (nivel 2)** y está en la tabla de abajo.
+
+| 🟡 Dato de mercado que antes era supuesto | Valor | Fuente |
+|---|---|---|
+| **Peso de tecnología dentro del ACWI** | **30,28%** | MSCI ACWI Index Factsheet, 31-jul-2026 → `01_EVIDENCIA/DATOS_OFICIALES_MSCI.md §0` |
+
+*Efecto del cambio:* con 30,28% (y no 28%), la vía Motor aporta **9,4%** de tecnología y el
+total de la cartera sube a **18,7%**.
 
 ---
 
@@ -328,9 +361,8 @@ Frase para la presentación, si preguntan por las cifras de rentabilidad esperad
 
 > "Esas cifras no son proyecciones ni datos históricos. Son **supuestos de diseño
 > declarados**, y los publicamos precisamente para que se puedan discutir. Tenemos el
-> análisis de sensibilidad hecho: si el bloque de Convicción no genera los 500 puntos
-> básicos que suponemos, nuestro exceso de retorno baja de 80 a 10 puntos. Lo sabemos
-> de antemano y está escrito."
+> análisis de sensibilidad hecho: si el bloque de Convicción no aporta nada, nuestro exceso
+> de retorno baja **de 76 a 6 puntos básicos**. Lo sabemos de antemano y está escrito."
 
 **Esto es lo que separa un trabajo serio de uno que se inventa números bonitos.** La
 mayoría de trabajos no distingue entre dato, estimación y supuesto. Nosotros publicamos
@@ -346,7 +378,7 @@ la distinción.
 | **2** | Caídas pico-valle 2007-2009 | Sostienen todo el análisis de riesgo | Series de índices |
 | **3** | Composición y rentabilidad del ACWI | Es el benchmark oficial | msci.com |
 | **4** | Cifras de Bessembinder (57,8% / 4,3%) | Sostienen el núcleo indexado | SSRN 2900447 |
-| **5** | Ferrocarriles al 63% en 1900 | Sostiene el límite de Aceleración | Yearbook DMS |
+| **5** | Ferrocarriles al 63% en 1900 | Sostiene los **límites de concentración temática** que comprueba el look-through (p. ej. el 18,7% de tecnología) | Yearbook DMS |
 | **6** | Última edición de SPIVA | Cifra citada de memoria | spglobal.com |
 | **7** | Última edición de *Mind the Gap* | Cifra citada de memoria | morningstar.com |
 
@@ -360,3 +392,4 @@ tarde que separa un trabajo bueno de uno inatacable.
 | Fecha | Acción |
 |---|---|
 | 2026-08-08 | Documento creado. **Ninguna cifra verificada todavía en fuente original.** Todas las de nivel 1 y 2 proceden de conocimiento de la literatura, no de consulta directa en esta sesión |
+| 2026-08-10 | **Revisión de coherencia contra `CIFRAS_MAESTRAS.md`.** Aceleración pasa a **Multi-Factor 4% + Small Cap Quality 4%** (momentum queda solo como descarte documentado). Caídas pico-valle sustituidas por los datos oficiales de MSCI: ACWI **−58,4%**, World **−57,8%** neto, Emerging **−65,25%**. Caídas por bloque del escenario 2008 alineadas con la tabla vigente: Motor −58,4%, Reversión −59%, Aceleración −57,1%. Alfa de Aceleración corregido a **+250 pb** y la frase de defensa a **de 76 a 6 pb**. El peso de tecnología del ACWI (**30,28%**) pasa de supuesto propio a dato de mercado con fuente; el de Convicción se ajusta a **~36%** para cuadrar con el 5,0% de los desgloses. El argumento de los ferrocarriles se reasigna a los límites de concentración temática. Marcado `[PENDIENTE DE VERIFICAR]` el alfa de Convicción (+500 pb aquí frente a +300 pb en `CIFRAS_MAESTRAS §8`) |

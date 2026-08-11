@@ -27,11 +27,11 @@ académico grupal.
 - **Lenguaje llano obligatorio.** Prohibido usar jerga sin traducir: drawdown,
   benchmark, tracking error, cap-weighted, DCA, look-through. Si hay que usarlos,
   se explican en cristiano la primera vez.
-- **Cuantificar en euros**, no solo en porcentaje. "−45%" no dice nada;
-  "de 100.000 € a 55.000 €" sí.
+- **Cuantificar en euros**, no solo en porcentaje. "−43%" no dice nada;
+  "de 100.000 € a 57.000 €" sí.
 - Ejemplos concretos antes que definiciones.
 - El usuario es el **PORTAVOZ** del grupo: todo lo que se produzca debe poder
-  defenderse en voz alta ante seis compañeros y un profesor.
+  defenderse en voz alta ante cinco compañeros y un profesor.
 
 ---
 
@@ -91,7 +91,7 @@ riesgo lo alcanzaba. Se reformuló a +50/+100 pb, que sí es alcanzable y verifi
 
 ---
 
-## LA CARTERA — v3.2 (vigente)
+## LA CARTERA — v3.3 (vigente)
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
@@ -101,14 +101,32 @@ riesgo lo alcanzaba. Se reformuló a +50/+100 pb, que sí es alcanzable y verifi
 | 📉 Reversión | Emergentes + Japón | 11% | Jordi |
 | ⚓ Freno | Renta fija corta + liquidez | 11% | **Grupo** |
 | 🛡️ Protección | Oro 7% + cobre 2% | 9% | Mary Morcillo · Cristina Rodríguez |
-| ⚡ Aceleración | Multi-Factor 4% + Small Cap Quality 4% | 8% | Fran |
+| ⚡ Aceleración | **Small Cap global · 8%** *(un solo componente)* | 8% | Fran |
 | 💥 Asimetría | Bitcoin | 4% | Andrea Miguel |
 
+**Fuente:** `CIFRAS_MAESTRAS.md` v3.3 §3 · catálogo de MyInvestor, consultado el 10-ago-2026.
+
 **Caída de diseño −43%** (ACWI: −58,4% pico-valle 2007-2009) · **Alfa neto estimado +76 pb**
+
+> **Qué cambió en la v3.3 (10-ago-2026).** Aceleración pasa de dos componentes a uno.
+> Se diseñó como Multi-Factor 4% + Small Cap Quality 4%, pero al buscar los fondos en la
+> plataforma se comprobó que **ninguno de los dos índices tiene vehículo comprable**. El
+> bloque queda en **Small Cap global 8%** con el Vanguard Global Small-Cap Index Fund EUR
+> Acc (`IE00B42W4L06`, comisión 0,30%). **El peso del bloque no cambia: sigue siendo 8%**,
+> así que ninguna otra fila se toca y la suma sigue dando 100%. Detalle en
+> `CIFRAS_MAESTRAS.md` §9-bis.
 
 ---
 
 ## REGLA DE DOBLE NIVEL — LA MÁS IMPORTANTE
+
+**`CIFRAS_MAESTRAS.md` (raíz) es la fuente única de todas las cifras.** Manda sobre
+cualquier otro documento del proyecto: web, guion, ficha, entregable o HTML. Si un archivo
+dice una cifra distinta, el que está mal es el otro archivo.
+
+> **Ninguna cifra se cambia en ningún documento sin cambiarla antes en
+> `CIFRAS_MAESTRAS.md`.** Se cambia ahí, y desde ahí se propaga. Nunca al revés.
+> Antes de escribir cualquier número en cualquier sitio: mirar ahí primero.
 
 **`ESTADO.md` (raíz) es el mapa del proyecto.** Se lee primero al abrir el proyecto
 y se actualiza al final de cada sesión, sin excepción.
@@ -157,9 +175,19 @@ Al terminar cualquier bloque de trabajo, actualizar en `ESTADO.md`:
 - **Primas factoriales antes que apuestas sectoriales.** Un factor documentado en muchos
   mercados y periodos tiene más respaldo que un sector de moda.
 - **Small caps siempre con filtro de calidad** (Asness et al., 2018: la prima reaparece al
-  controlar por calidad).
-- **Momentum verificado antes de comprar:** si su top 10 coincide con el del ACWI, no
-  diversifica. Descartar si el top 10 supera el 40%.
+  controlar por calidad). ⚠️ **Este principio no se ha podido cumplir:** en la plataforma
+  no existe ningún fondo indexado de *small cap quality*. Compramos el índice de pequeñas
+  **sin filtrar** y lo decimos abiertamente. Ver `CIFRAS_MAESTRAS.md` §9-bis.
+- 🆕 **Un índice no es una inversión: comprobar que existe vehículo comprable ANTES de
+  analizar un índice, no después.** Es la lección del 10 de agosto. Comparamos seis índices
+  factoriales con sus datos oficiales y elegimos dos; al ir a comprarlos descubrimos que
+  solo uno de los seis tenía fondo indexado disponible. El análisis estaba bien hecho, pero
+  se hizo sobre productos que no se pueden comprar. **Primero se comprueba la
+  disponibilidad, después se analiza.** *(Momentum y Multi-Factor como componentes
+  independientes están descartados y solo pueden aparecer como descartes documentados:
+  momentum por rotación del 119,69% y la mitad de ratio de información que Multi-Factor;
+  Multi-Factor porque no existe vehículo, no por sus datos, que eran los mejores de los
+  seis.)*
 - **Fondos traspasables antes que ETFs** cuando sea posible (en España los fondos permiten
   cambiar sin tributar; los ETFs no).
 - **Rebalanceo preferente con las aportaciones** mensuales, dirigidas al bloque más

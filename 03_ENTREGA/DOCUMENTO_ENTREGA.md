@@ -4,7 +4,7 @@
 *Think Global. Allocate with Conviction.*
 
 **Academia de Inversión · Ejercicio de Cartera Permanente · Profesor Antonio Baeza**
-Documento de entrega · Versión 3.2 · 9 de agosto de 2026
+Documento de entrega · Versión 3.3 · 10 de agosto de 2026
 
 ---
 
@@ -170,14 +170,14 @@ picaporte de una casa sin cimientos.
 
 | Función | Bloque | Peso | Importe | Responsable |
 |---|---|---|---|---|
-| 🚀 **MOTOR** | Índice mundial — MSCI ACWI | **31%** | 31.000 € | Fran · Cristina R. |
-| 🎯 **CONVICCIÓN** | 7 empresas, método IDC | **14%** | 14.000 € | Fran |
-| 🌿 **CALIDAD** | Salud + consumo defensivo | **12%** | 12.000 € | Celia |
+| 🚀 **MOTOR** | Índice mundial — MSCI ACWI | **31%** | 31.000 € | Fran González · Cristina Rodríguez |
+| 🎯 **CONVICCIÓN** | 7 empresas, método IDC | **14%** | 14.000 € | Fran González |
+| 🌿 **CALIDAD** | Salud + consumo defensivo | **12%** | 12.000 € | Celia Bravo |
 | 📉 **REVERSIÓN** | Emergentes + Japón | **11%** | 11.000 € | Jordi |
 | ⚓ **FRENO** | Renta fija corta + liquidez | **11%** | 11.000 € | **Grupo** |
 | 🛡️ **PROTECCIÓN** | Oro 7% + cobre/recursos 2% | **9%** | 9.000 € | Mary Morcillo · Cristina Rodríguez |
-| ⚡ **ACELERACIÓN** | Multi-Factor 4% + Small Cap Quality 4% | **8%** | 8.000 € | Fran |
-| 💥 **ASIMETRÍA** | Bitcoin | **4%** | 4.000 € | Andrea |
+| ⚡ **ACELERACIÓN** | Small Cap global · 8% *(un solo componente)* | **8%** | 8.000 € | Fran González |
+| 💥 **ASIMETRÍA** | Bitcoin | **4%** | 4.000 € | Andrea Miguel |
 | | **TOTAL** | **100%** | **100.000 €** | |
 
 **Renta variable total: 76%** (envolvente de diseño: 75-85%).
@@ -338,13 +338,28 @@ proyección del negocio lo justifique.
 sensibles al ciclo. **No es protección — sigue siendo renta variable** — y lo decimos
 explícitamente para no vender como defensivo lo que no lo es.
 
-**Por qué.** Siegel midió la rentabilidad sectorial del S&P 500 entre 1957 y 2012:
+**Por qué.** Siegel midió la rentabilidad sectorial del S&P 500 entre **1957 y 2003**:
 
-| Sector | Rentabilidad anualizada | Caída pico-valle 2007-2009 |
+| Sector | Rentabilidad anualizada **1957-2003** | Caída **año natural 2008** |
 |---|---|---|
-| **Consumo defensivo** | ~13,3% | ~−15% |
-| **Salud** | ~12,8% | ~−23% |
-| S&P 500 | ~10,1% | ~−57% |
+| **Consumo defensivo** | **13,36%** | **−15,0%** |
+| **Salud** | **13,76%** | **−25,6%** |
+| S&P 500 | **11,18%** | **−37%** |
+
+**FUENTE (rentabilidad):** Jeremy Siegel, *The Future for Investors* (2005). Siegel publica
+el resultado de 1.000 $ invertidos de 1957 a 2003: S&P 500 → 130.768 $ · consumo defensivo →
+319.776 $ · salud → 375.969 $. Anualizando sobre 46 años se obtienen las tres cifras de la
+tabla. **La comprobación:** el 11,18% del S&P 500 así calculado coincide exactamente con la
+cifra que el propio Siegel publica, lo que valida el método.
+
+**FUENTE (caídas):** rentabilidad total del año natural 2008 de los ETF sectoriales SPDR —
+XLP (consumo defensivo) **−15,02%** y XLV (salud) **−25,63%** — frente al **−37%** del S&P 500
+en el mismo año natural.
+
+> ⚠️ **Las dos columnas NO son comparables entre sí: distinto periodo y distinta fuente.**
+> Y la columna de caídas es de **año natural, no pico-valle** — por eso el S&P 500 figura aquí
+> con −37% y no con el −57% que usamos en la prueba de estrés. Las tres cifras de la columna
+> están medidas igual, así que la comparación **dentro** de la columna sí es válida.
 
 **Es el único bloque que mejora las dos caras a la vez:** sube la rentabilidad esperada y
 baja la caída. Todos los demás ajustes que evaluamos —subir tecnología, subir bitcoin,
@@ -437,7 +452,12 @@ entre capacidad minera nueva de forma masiva.
 
 ---
 
-## ⚡ ACELERACIÓN — Momentum 4% + small caps con calidad 4% · 8%
+## ⚡ ACELERACIÓN — Small Cap global · 8%
+
+> **Este bloque cambió el 10 de agosto de 2026.** Se diseñó con dos componentes
+> —Multi-Factor 4% + Small Cap Quality 4%— y hoy tiene **uno solo: Small Cap global al 8%**.
+> El motivo no son los datos: es que **ninguno de los dos índices tiene fondo comprable**.
+> La historia completa está unas páginas más abajo, sin recortar.
 
 **Qué hace.** Acelerar el retorno del núcleo mediante **primas de riesgo documentadas**,
 no mediante apuestas sectoriales.
@@ -453,10 +473,15 @@ Al abrir la cartera con look-through encontramos esto:
 
 | Procedencia | Cálculo | Tecnología |
 |---|---|---|
-| Motor — MSCI ACWI | 31% × ~28% | 8,7% |
-| Reversión — TSMC, Samsung, SK Hynix | 11% × ~25% | 2,8% |
-| Convicción — Alphabet y Meta | ~5% directo | 5,0% |
-| | **TOTAL** | **≈ 18,7%** |
+| Motor — MSCI ACWI | 31% × **30,28%** (peso tecnológico oficial del ACWI) | **9,4%** |
+| Convicción — Alphabet y Meta, elegidas a mano | ~36% del bloque | **5,0%** |
+| Reversión — TSMC, Samsung y SK Hynix, dentro de emergentes | | **2,8%** |
+| Aceleración — dentro del fondo de pequeñas compañías | | **1,5%** |
+| | **TOTAL** | **18,7%** |
+
+**FUENTE:** peso sectorial de tecnología en el MSCI ACWI (30,28%) — MSCI ACWI Index (USD)
+Factsheet, 31 de julio de 2026, `msci.com/documents/10199/255599/msci-acwi-net.pdf`. Look-through
+propio de la cartera sobre los pesos de diseño. **9,4 + 5,0 + 2,8 + 1,5 = 18,7.**
 
 **Un bloque tecnológico habría sido la tercera compra del mismo riesgo.** Además,
 investigamos en profundidad la cadena de valor de la inteligencia artificial —doce
@@ -487,10 +512,16 @@ calidad** —poco rentables, muy endeudadas, con beneficios volátiles— que ar
 hacia abajo. **Controlando por calidad, la prima reaparece con fuerza y de forma consistente
 entre países.**
 
-**Consecuencia práctica directa:** el vehículo lleva **filtro de calidad**. Comprar el
-índice de pequeñas sin filtrar es exactamente el error que documenta ese estudio.
+**Consecuencia práctica que sacamos en su día:** el vehículo debía llevar **filtro de
+calidad**. Comprar el índice de pequeñas sin filtrar es exactamente el punto débil que
+documenta ese estudio.
 
-### Momentum — la prima mejor documentada que existe
+> ⚠️ **Y aquí está el problema, dicho antes de que nadie lo pregunte:** el fondo que
+> finalmente compramos **replica el índice de pequeñas sin filtro de calidad**, porque el
+> índice filtrado no existe como fondo. Lo explicamos entero más abajo. **No fingimos que
+> llevamos el filtro.**
+
+### Momentum — la prima mejor documentada que existe, y aun así no está en la cartera
 
 | Estudio | Qué aporta |
 |---|---|
@@ -509,32 +540,122 @@ desplomes severos y **no aleatorios**: ocurren tras las grandes caídas de merca
 el rebote. En 2009 perdió con violencia justo cuando el mercado se recuperaba, porque los
 perdedores previos rebotaron más que los ganadores.
 
-**Es un escenario perfectamente posible en nuestra cartera, y por eso momentum pesa 4% y
-no 12%.**
+### Paso 1 — Comparamos seis índices de factores con sus datos oficiales
 
-### Por qué los dos juntos y no 8% en uno solo
+La decisión no se tomó por intuición. Pedimos los factsheets oficiales de MSCI a 31 de julio
+de 2026 y los ordenamos por la métrica que usa un gestor profesional: **cuánta prima se
+obtiene por cada unidad de riesgo asumido frente al índice** (el ratio de información).
 
-Asness, Moskowitz y Pedersen documentan que estas primas están **negativamente
-correlacionadas** y que combinarlas ofrece mejor relación rentabilidad/riesgo que
-cualquiera por separado.
+| Índice MSCI | Prima sobre el MSCI World | Riesgo activo (tracking error) | **Ratio de información** | Rotación anual |
+|---|---|---|---|---|
+| **Diversified Multiple-Factor** | +2,88 pp | 4,07% | **0,71** | 40,5% |
+| Quality | +3,01 pp | 4,49% | 0,67 | 48,0% |
+| **Small Cap Quality** | +1,86 pp | 3,36% | **0,55** | 57,9% |
+| Momentum | +2,91 pp | 7,85% | 0,37 | **119,7%** |
+| Enhanced Value | +2,21 pp | 7,27% | 0,30 | 27,4% |
+| Minimum Volatility | −0,29 pp | 7,17% | −0,04 | 20,5% |
 
-| | Funciona mejor en | Sufre en |
-|---|---|---|
-| **Small caps con calidad** | Inicio de ciclo, recuperaciones | Recesión, huida hacia la calidad |
-| **Momentum** | Tendencias sostenidas | **Rebotes bruscos tras caídas** |
+**FUENTE:** factsheets oficiales de MSCI a 31 de julio de 2026 — MSCI World Diversified
+Multiple-Factor, Quality, Small Cap Quality, Momentum, Enhanced Value y Minimum Volatility
+Index (USD). Detalle y advertencias de comparabilidad en `01_EVIDENCIA/DATOS_OFICIALES_MSCI.md`.
 
-**Se cubren mutuamente:** el escenario que hunde a momentum es precisamente donde las
-small caps suelen liderar la recuperación. Dividir 4 y 4 no es indecisión: **es
+**Esta tabla se conserva íntegra** porque es el trabajo que justifica la decisión. Lo que
+cambia después no son los datos: es lo que se puede comprar con ellos.
+
+### Paso 2 — Con esos datos elegimos dos: Multi-Factor y Small Cap Quality
+
+**Multi-Factor** ganaba por eficiencia (0,71) y **Small Cap Quality** era el segundo (0,55)
+además de aportar algo que ningún otro daba: reducir concentración en lugar de aumentarla.
+
+**Y momentum se quedó fuera.** Una versión anterior del bloque lo llevaba al 4%. Con los
+datos delante: **la misma prima que Multi-Factor —+2,91 frente a +2,88— con casi el doble de
+riesgo asumido y tres veces más movimiento de cartera.** Una rotación del 119,69% anual
+significa que el fondo renueva su cartera entera cada año, con los costes de compraventa que
+eso arrastra. Además, el índice Multi-Factor **ya incorpora momentum**, junto con value,
+calidad y tamaño. Momentum figura en este trabajo únicamente como **descarte documentado**.
+
+Y elegimos dos y no uno porque Asness, Moskowitz y Pedersen documentan que estas primas están
+**negativamente correlacionadas**: el escenario que castiga al Multi-Factor —los rebotes
+bruscos tras una caída, por su componente de momentum— es precisamente donde las pequeñas
+compañías suelen liderar la recuperación. Dividir 4 y 4 no era indecisión: **era
 diversificación de primas.**
 
-### Verificación obligatoria del vehículo de momentum
+**FUENTE:** Asness, Moskowitz & Pedersen (2013), *Value and Momentum Everywhere*; Daniel &
+Moskowitz (2016), *Momentum Crashes*; Asness, Frazzini, Israel, Moskowitz & Pedersen (2018),
+*Size Matters, If You Control Your Junk*.
 
-Los índices de momentum van cargados de tecnología por construcción: compran lo que ha
-subido, y lo que ha subido son las megacaps tecnológicas. **Si el top 10 coincide con el
-del ACWI, no diversifica: recompra lo que acabamos de retirar.**
+### Paso 3 — Fuimos a comprarlos y no existen
 
-Umbrales de descarte: top 10 por encima del 40% del fondo, o más de cinco nombres
-coincidentes con el top 10 del ACWI.
+El 10 de agosto de 2026 buscamos los fondos en el catálogo de la plataforma donde se
+contrataría la cartera. Buscamos **por dos vías independientes** —el buscador web con sesión
+iniciada y una consulta estructurada al catálogo— para no fiarnos de una sola pantalla.
+
+| Qué buscamos | Fondos **indexados** encontrados |
+|---|---|
+| `multifactor` | **0** |
+| `multiple factor` / `factor` | **0** |
+| `quality` | **0 indexados** — los 16 resultados son de gestión activa, con comisión del 0,84% al 2,47% |
+| `momentum` | **0** |
+| `small cap` | **4** — y las cuatro son clases del **mismo** fondo de Vanguard |
+
+**Fuente: catálogo de MyInvestor, consultado el 10-ago-2026.**
+
+**Traducido:** de las tres primas factoriales que analizamos, **solo una es comprable**, y
+además **sin el filtro de calidad**. Un índice no es una inversión. Un índice es una idea; el
+fondo es lo único que se puede tener en cartera.
+
+> **Cambiamos la cartera, no los datos.** El Multi-Factor sigue siendo el mejor de los seis
+> por sus números, y así queda escrito. **Se descarta porque no hay forma de comprarlo**, no
+> porque haya dejado de ser bueno. Reescribir la tabla para que el descarte pareciera
+> analítico habría sido más cómodo y menos honesto.
+
+Como remate, el descarte de momentum queda doblemente confirmado: **en la plataforma tampoco
+existe ningún fondo indexado de momentum.** Aunque hubiéramos querido comprarlo, no
+habríamos podido. La decisión analítica y la realidad del mercado coincidieron.
+
+### Paso 4 — El vehículo que sí existe
+
+**Vanguard Global Small-Cap Index Fund EUR Acc · ISIN `IE00B42W4L06` · 8% de la cartera**
+
+| Concepto | Dato |
+|---|---|
+| Índice que replica | **MSCI World Small Cap** — 23 países desarrollados |
+| Comisión total anual (TER) | **0,30%** |
+| Comisión de éxito / suscripción / reembolso | **No · No · No** |
+| Divisa y formato | **EUR · acumulación** · mínimo **1,00 €** |
+| Morningstar | **4 estrellas** |
+| Patrimonio | **7.047 M$** · riesgo **4 sobre 7** |
+| Lanzamiento | **10/12/2009** → 16 años de histórico real |
+| Rentabilidad desde lanzamiento | **11,40% anualizado** (+336,43% acumulado) |
+| Rentabilidad | YTD 19,69% · 1 año 29,62% · 3 años 14,90% · 5 años 8,00% |
+| Volatilidad a 5 años | **15,71%** |
+| Peor año natural reciente | **−13,46%** |
+| Sectores principales | Industria 19,64% · **Tecnología 16,57%** · Financieros 13,44% · Salud 10,76% |
+
+**Fuente: catálogo de MyInvestor, consultado el 10-ago-2026.**
+
+**Por qué esta clase y no otra.** Existen cuatro clases del **mismo** fondo, todas al 0,30%:
+`IE00B42W4L06` (EUR acumulación — **la elegida**), `IE00B42LF923` (USD acumulación),
+`IE00BDCXSH02` (EUR reparto, descartada porque queremos acumulación) y `IE00B42W3S00` (clase
+Investor, **cerrada a nuevas suscripciones**; su propia ficha remite a la que hemos elegido).
+Nuestra moneda base es el euro: la clase en euros es la coherente.
+
+### Lo que perdemos, dicho por su nombre
+
+1. **Perdemos el filtro de calidad.** Asness y su equipo sostienen que la prima de tamaño
+   reaparece precisamente al controlar por calidad. Compramos el índice **sin filtrar** y lo
+   declaramos. *(El supuesto de alfa de este bloque queda por revisar a la luz de esto —
+   ver la nota del apartado 7.1.)*
+2. **Perdemos la diversificación entre dos primas.** El bloque ya no se apoya en dos ideas
+   que se cubren entre sí: **depende de una sola, el tamaño.** Si la prima de tamaño no
+   aparece en estos diez años, no hay segunda pata que compense.
+3. **No perdemos el argumento de completitud.** Ese sigue intacto: el 15% del universo
+   invertible que nuestro índice de referencia no cubre entra por aquí, filtrado o no.
+
+**Qué lo invalidaría.** Que aparezca en la plataforma un fondo indexado al MSCI World Small
+Cap **Quality** o a un índice multifactorial con vehículo real: ese día se revisa el bloque.
+También lo revisaríamos si el fondo bajara de 100 M€ de patrimonio o si su seguimiento del
+índice se deteriorase de forma sostenida.
 
 ---
 
@@ -574,10 +695,15 @@ que casi ningún trabajo se hace: *si decimos que vamos a batir al índice, ¿co
 | Convicción — 7 empresas seleccionadas | 14% | +500 pb | **+70 pb** |
 | Asimetría — Bitcoin | 4% | +700 pb | **+28 pb** |
 | Reversión — emergentes + Japón | 11% | +200 pb | **+22 pb** |
-| Aceleración — Multi-Factor + small caps | 8% | +250 pb | **+20 pb** |
+| Aceleración — Small Cap global | 8% | +250 pb | **+20 pb** |
 | Calidad — resiliencia de beneficios | 12% | +150 pb | **+18 pb** |
 | Rebalanceo disciplinado | — | — | **+20 pb** |
 | | | **ALFA BRUTO** | **+178 pb** |
+
+> ⚠️ **El +250 pb de Aceleración está [⚠️ PENDIENTE DE DECISIÓN — ver CIFRAS_MAESTRAS §13.E].**
+> Ese supuesto se construyó sobre el índice de pequeñas compañías **con filtro de calidad**, y
+> el fondo que finalmente se compra **no lo lleva** (ver el bloque de Aceleración). La cifra
+> **no se ha tocado** a la espera de la decisión del portavoz.
 
 ## 7.2 El peaje que casi nadie contabiliza
 
@@ -658,11 +784,19 @@ No estimamos la caída: la calculamos aplicando a cada bloque su comportamiento 
 | Freno | 11% | **+2%** | **+0,2** |
 | Oro | 7% | **+5%** | **+0,4** |
 | Cobre / recursos | 2% | −55% | −1,1 |
-| Bitcoin | 4% | −80%¹ | −3,2 |
+| Bitcoin | 4% | −80%² | −3,2 |
 | | | **TOTAL** | **−43,2% ≈ −43%** |
 
-¹ *Bitcoin no existía en 2008. Se le aplica −80%, su comportamiento real en sus tres
+¹ *El −59% es la media ponderada de las dos mitades del bloque: emergentes (−65,25% oficial)
+y Japón, que cayó menos. **[PENDIENTE DE VERIFICAR: la ponderación exacta entre ambos]***
+
+² *Bitcoin no existía en 2008. Se le aplica −80%, su comportamiento real en sus tres
 desplomes documentados.*
+
+**FUENTE:** caídas pico-valle octubre 2007 → marzo 2009 de los factsheets oficiales de MSCI a
+31 de julio de 2026 (ACWI −58,4%; Emerging Markets −65,25%; Small Cap Quality −57,86%). El
+resto de caídas por bloque son **supuestos propios declarados**, no datos históricos del
+vehículo concreto. Cálculo completo en `02_CARTERA/CARTERA_DEFINITIVA.md §8`.
 
 > **Sobre 100.000 €, la cartera bajaría hasta unos 57.000 €.**
 > **El MSCI ACWI, en ese mismo periodo, cayó aproximadamente un 58,4%.**
@@ -676,8 +810,16 @@ no del año natural 2008.
 | Índice | Año natural 2008 | **Pico-valle 2007-2009** |
 |---|---|---|
 | S&P 500 | ≈ −37% | ≈ **−57%** |
-| MSCI World | ≈ −41% | ≈ **−58,4%** |
-| MSCI Emerging | ≈ −53% | ≈ **−61%** |
+| **MSCI ACWI** *(nuestro benchmark)* | ≈ −42% | **−58,4%** |
+| MSCI World | ≈ −41% | **−57,8%** (neto) |
+| MSCI Emerging Markets | ≈ −53% | **−65,25%** |
+
+**FUENTE:** factsheets oficiales de MSCI a 31 de julio de 2026 — MSCI ACWI Index (USD),
+`msci.com/documents/10199/255599/msci-acwi-net.pdf`; MSCI World Index (USD); MSCI Emerging
+Markets Index (USD). Detalle en `01_EVIDENCIA/DATOS_OFICIALES_MSCI.md`.
+
+⚠️ **No confundir ACWI con World.** El −58,4% es del **ACWI**, que es nuestro benchmark. El
+MSCI World —solo mercados desarrollados— cayó un −57,8%.
 
 Es la medida correcta para hablar de caída máxima, pero **hay que nombrarla como tal**:
 confundirla con el año natural invalida cualquier comparación.
@@ -791,8 +933,8 @@ de ella; no se borra.
 | **El alfa depende de Convicción y Aceleración** | Alto | Cuantificado en §7.4. El suelo sigue siendo igualar al índice con menos caída |
 | **Concentración real en tecnología ~18,7%** | Medio | Declarada y en línea con el peso natural del mundo. Sin bloque tecnológico añadido |
 | **El equipo abandona durante una caída** | Alto | Protocolo de 72 h, aportaciones mensuales y perfil sin retiradas |
-| Momentum se desploma en un rebote | Medio | Documentado en §6. Peso limitado al 4% |
-| Small caps sin filtro de calidad | Medio | Filtro obligatorio en el vehículo |
+| **Aceleración depende ahora de un solo factor: el tamaño** | Medio | Al no existir vehículo para las otras primas, el bloque perdió su segunda pata. Peso limitado al 8% y revisión inmediata si aparece un fondo indexado multifactorial |
+| **Small caps sin filtro de calidad** | Medio | **No hay mitigación disponible: el índice filtrado no existe como fondo.** Riesgo asumido y declarado. Es la razón por la que el supuesto de alfa del bloque está en revisión |
 | Emergentes tardan una década en revertir | Medio | Peso contenido, ligeramente por encima del neutral |
 | Bitcoin cae un 80% o más | Medio | 4% de peso: cuesta 3,2 puntos de cartera |
 | Siete empresas mal elegidas | Medio | 3% máximo por empresa, revisión anual, salida escrita |
@@ -835,20 +977,30 @@ que es literalmente lo que pide el enunciado.
 
 # 14. PRODUCTOS CONCRETOS
 
-`[PENDIENTE — se completa con las fichas de bloque del 11 de agosto]`
+`[PENDIENTE — quedan cinco bloques por cerrar. Motor, Aceleración y Freno ya están elegidos]`
 
 | Bloque | Producto | ISIN | Comisión | Divisa | Formato |
 |---|---|---|---|---|---|
-| Motor | | | | | |
+| **Motor** ✅ | iShares Developed World Index (IE) Class S Acc EUR | **IE000ZYRH0Q7** | 0,06% + 0,01% de operación = **0,07%** | EUR | Fondo indexado, acumulación |
+| *Motor — suplente* | Fidelity MSCI World Index Fund P-ACC-EUR | IE00BYX5NX33 | 0,10% | EUR | Fondo indexado, acumulación |
 | Convicción | 7 empresas, ver §15 | | | | Acciones |
-| Calidad | | | | | |
-| Reversión | | | | | |
-| Freno | | | | | |
-| Protección — oro | | | | | |
-| Protección — cobre | | | | | |
-| Aceleración — momentum | | | | | |
-| Aceleración — small caps | | | | | |
-| Asimetría | | | | | |
+| Calidad | `[PENDIENTE]` | | | | |
+| Reversión | `[PENDIENTE]` | | | | |
+| **Freno** ✅ | AXA Trésor Court Terme C | **FR0000447823** | **0,06%** | EUR | Fondo monetario (€STR) |
+| Protección — oro | `[PENDIENTE]` | | | | |
+| Protección — cobre | `[PENDIENTE]` | | | | |
+| **Aceleración** ✅ | Vanguard Global Small-Cap Index Fund EUR Acc | **IE00B42W4L06** | **0,30%** | EUR | Fondo indexado, acumulación |
+| Asimetría | `[PENDIENTE]` | | | | |
+
+**Fuente: catálogo de MyInvestor, consultado el 10-ago-2026.** El coste y las comisiones del
+Motor están además verificados en el Documento de Datos Fundamentales oficial de BlackRock de
+5 de septiembre de 2025. **Ninguno de los tres fondos elegidos tiene comisión de éxito, de
+suscripción ni de reembolso.**
+
+**El Freno, además, valida una cifra del presupuesto de alfa.** El peaje del apartado 7.2
+supone que el Freno rinde en torno al **3%** frente al ~8% del índice. La rentabilidad real
+del AXA Trésor a tres años es del **3,06%**. Ese −55 pb deja de ser un supuesto y pasa a estar
+**verificado**.
 
 **Criterio de selección:** prioridad a **fondos indexados traspasables** sobre ETFs cuando
 exista la opción. En España los fondos permiten cambiar de producto sin tributar; los ETFs
@@ -965,13 +1117,13 @@ error grave; presentarlos como lo que son es lo que permite el análisis de sens
 | Bloque de Calidad con salud y consumo defensivo | Siegel (*Stocks for the Long Run*) |
 | Método de selección basado en calidad y rentabilidad | Novy-Marx (2013); Fama & French (2015); Asness, Frazzini & Pedersen (2019) |
 | Small caps dentro de la cartera | Banz (1981); Fama & French |
-| Small caps **con filtro de calidad** | Asness, Frazzini, Israel, Moskowitz & Pedersen (2018) |
-| Momentum como fuente de alfa | Jegadeesh & Titman (1993); Carhart (1997); Asness, Moskowitz & Pedersen (2013); Geczy & Samonov (2016) |
-| Momentum limitado al 4% | Daniel & Moskowitz (2016) — *Momentum Crashes* |
-| Combinar momentum con otra prima en lugar de concentrar | Asness, Moskowitz & Pedersen (2013) |
+| Small caps **con filtro de calidad** — criterio de diseño que **no se ha podido comprar**: no existe el fondo | Asness, Frazzini, Israel, Moskowitz & Pedersen (2018) |
+| La prima de momentum existe y está documentada, pero **no se compra**: ni aislada ni vía Multi-Factor, porque ninguno de los dos tiene vehículo | Jegadeesh & Titman (1993); Carhart (1997); Asness, Moskowitz & Pedersen (2013); Geczy & Samonov (2016) |
+| Multi-Factor limitado al 4% *(decisión superada: el bloque quedó en un solo componente)* | Daniel & Moskowitz (2016) — *Momentum Crashes* |
+| Combinar dos primas independientes en lugar de concentrar en una *(criterio correcto que la falta de vehículo impidió aplicar)* | Asness, Moskowitz & Pedersen (2013) |
 | Las 72 horas de espera antes de vender | Morningstar — *Mind the Gap* |
 | Rebalanceo con aportaciones antes que con ventas | Vanguard (investigación sobre rebalanceo) + fiscalidad española |
-| Perfil agresivo pese a la caída del 42% | Mandato propio: 10 años, aportaciones mensuales, sin retiradas |
+| Perfil agresivo pese a la caída del −43% | Mandato propio: 10 años, aportaciones mensuales, sin retiradas |
 
 ---
 

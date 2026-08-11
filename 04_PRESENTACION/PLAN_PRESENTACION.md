@@ -76,7 +76,7 @@ cinco minutos del acto central. Es una presentación que se sostiene sin leer.
 |---|---|---|---|
 | 1 | **No existe la cartera perfecta** | 1 | Apertura a pantalla completa. Frase única |
 | 2 | **Quiénes somos y qué nos hemos propuesto** | 1,5 | Contadores animados: 100.000 € · 1.000 €/mes · 10 años · −43% |
-| 3 | **Las reglas que nos dimos** | 2 | Los 7 estudios apareciendo uno a uno al hacer scroll |
+| 3 | **Las reglas que nos dimos** | 2 | Los 16 estudios apareciendo uno a uno al hacer scroll |
 | 4 | **Por qué no copiamos a los famosos** | 2 | Comparativa animada: All Weather / Permanent / Golden Butterfly vs nuestro mandato |
 | 5 | **La cartera, función por función** ⭐ | 4 | **El corazón.** Cada bloque entra en escena con su función y su peso |
 | 6 | **Dónde está el dinero en el mundo** | 1,5 | **Mapa mundial** con los pesos por geografía |
@@ -105,9 +105,12 @@ cinco minutos del acto central. Es una presentación que se sostiene sin leer.
 | 10 | Tarjeta de valoración por empresa: precio actual vs IDC |
 
 **Momento estrella:** el acto 7. Enseñar la cartera por geografía, y con un solo
-gesto convertirla en la vista por sectores para que se vea que un tercio del
-dinero está en tecnología aunque no haya ningún fondo tecnológico. Eso se
+gesto convertirla en la vista por sectores para que se vea que **el 18,7% del
+dinero está en tecnología** aunque no haya ningún fondo tecnológico. Eso se
 recuerda.
+
+❌ **No decir «un tercio».** Son **18,7%** (`CIFRAS_MAESTRAS.md §7`). Exagerar el dato en
+una presentación de inversión es justo lo que un profesor comprueba primero.
 
 ---
 
@@ -125,9 +128,13 @@ recuerda.
 
 ## 6. VÍDEO GENERADO CON IA — DÓNDE SÍ Y DÓNDE NO
 
-**Herramienta:** Higgsfield (MCP operativo, plan Ultra, 2.787 créditos disponibles
-a 8-ago-2026). HeyGen no está autorizado y **no hace falta**: sirve para avatares
-presentadores y aquí presenta Fran en persona.
+**Herramienta:** Higgsfield (MCP operativo, plan Ultra). HeyGen no está autorizado y **no
+hace falta**: sirve para avatares presentadores y aquí presenta Fran en persona.
+
+> ⚠️ **Dato caducado — revisar antes de la entrega.** El saldo de créditos que figuraba aquí
+> era de **2.787 a 8-ago-2026** y ya no sirve para planificar: los créditos se consumen con
+> cada generación. **Comprobar el saldo real el día que se produzcan los clips** y, si no
+> llega, recortar antes el clip opcional del acto 6.
 
 ### La regla que no se salta
 
