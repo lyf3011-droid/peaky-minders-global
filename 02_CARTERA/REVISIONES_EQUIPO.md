@@ -3,6 +3,21 @@
 **Documento de control del portavoz.** Cada vez que un integrante entrega su bloque, se
 revisa aquí: qué sirve, qué no encaja con nuestra cartera y **qué hay que pedirle**.
 
+> ## ✍️ REGLA DE REDACCIÓN DE ESTE ARCHIVO
+>
+> **Todo lo que se escriba aquí tiene que poder leerlo la persona revisada.**
+>
+> 1. Se revisa **el documento entregado**, nunca a la persona.
+> 2. **Se empieza siempre por lo que aporta**, y se dice con nombre y apellido de la idea.
+> 3. Cuando una entrega no encaja **porque el grupo cambió algo y no lo comunicó**, se
+>    escribe así de claro y se señala que la responsabilidad es del portavoz.
+> 4. **Ninguna circunstancia personal de nadie se anota aquí.** Ni disponibilidad, ni
+>    experiencia previa, ni situación particular. No es información de cartera.
+> 5. Lo que se pide se pide **en lista concreta y accionable**, no en forma de reproche.
+>
+> *Motivo: este archivo puede acabar compartido con el equipo o adjunto al trabajo. Si algo
+> no se le podría enseñar a quien lo escribió, no se escribe.*
+
 ---
 
 # 🛡️ PROTECCIÓN — ORO 7% · Mary Morcillo
@@ -909,6 +924,309 @@ fuerte del que da:**
 
 ---
 
+# 🛡️ PROTECCIÓN — COBRE Y ENERGÍA 2% · Cristina Rodríguez
+
+**Entregado:** *Mis investigaciones preliminares · Fundamentos 1* · 18 páginas
+**Revisado:** 11 de agosto de 2026
+
+## VEREDICTO: 🟢 **EL MEJOR TRABAJO DE MÉTODO RECIBIDO** — falta el vehículo
+
+Es la entrega que más aporta al **razonamiento** de la cartera entera, no solo a su bloque.
+Dos de sus conclusiones **ya han cambiado cómo defendemos otras decisiones ya tomadas**.
+
+Lo único que falta es el producto concreto con su ISIN.
+
+---
+
+## ✅ 1. LO QUE SÍ SIRVE — y entra en el trabajo
+
+### 1.1 🏆 Contango, backwardation y roll yield — la mejor explicación del proyecto
+
+Explica con números por qué **el cobre puede subir un 20% y el ETF ganar solo un 12%**:
+
+> *«Vendes el contrato cercano a 10.000 → compras el siguiente a 10.500. Has perdido
+> aproximadamente un 5% por el roll, aunque el precio spot no haya cambiado. Si esto se
+> repite durante años, el contango puede comerse una parte importante de la rentabilidad.»*
+
+**Y lo remata con una prueba externa:** el **S&P Dow Jones publica sus índices de materias
+primas en tres versiones distintas** —spot, excess return y total return— precisamente porque
+el comportamiento del roll cambia el resultado del inversor.
+
+> ### 🔑 Por qué esto importa más allá de su bloque
+>
+> Llevamos **oro en un ETC que guarda metal físico** y estábamos a punto de comprar **cobre en
+> un ETC que renueva contratos de futuros**. **Los dos se llaman ETC y no funcionan igual.**
+> Ningún otro documento del equipo había hecho esa distinción.
+
+**Frase directa para la presentación:**
+
+> *«Un ETC de oro guarda lingotes en una cámara. Un ETC de cobre no guarda cobre: renueva
+> contratos de futuros cada mes, y esa renovación puede tener coste. Por eso no evaluamos los
+> dos productos con el mismo criterio, aunque la etiqueta sea la misma.»*
+
+### 1.2 🏆 La distinción materia prima / minera / empresa — confirmación independiente
+
+> *«Un ETF de petróleo, un ETF de mineras de cobre y un ETF de acciones de Exxon/Chevron
+> tienen motores de rentabilidad diferentes. Si mezclamos las tres cosas sin explicarlo, el
+> trabajo tendrá un fallo de base.»*
+
+**Es el mismo criterio con el que ya habíamos descartado cuatro productos** — mineras de oro
+(Mary), mineras de bitcoin (Andrea), mineras de cobre y el fondo de oro de DWS.
+
+✅ **Valor de esta coincidencia:** el criterio se dedujo **dos veces por separado**, en dos
+bloques distintos y por dos personas distintas. Eso lo convierte en un principio del método,
+no en una preferencia.
+
+### 1.3 🏆 La tesis del cobre — con fuente
+
+**El bloque de cobre llevaba desde el inicio marcado en rojo por falta de tesis documentada.
+Esto la cierra.**
+
+| Dato | Fuente |
+|---|---|
+| **Déficit de oferta de cobre ≈25%** frente a las necesidades primarias en **2035** | IEA · *Global Critical Minerals Outlook 2026* |
+| Aluminio, cobre y estaño **+1/3** entre enero 2025 y abril 2026 | IEA |
+| Cobre en máximos históricos en agosto de 2026 | IEA / mercado |
+
+**Y el argumento de por qué la oferta no responde rápido:**
+
+> *«Una mina de cobre no aparece de hoy para mañana: exploración → permisos → financiación →
+> construcción → producción. Una demanda estructural creciente combinada con oferta inelástica
+> puede producir ciclos alcistas muy fuertes.»*
+
+### 1.4 ✅ El encuadre correcto del papel de las materias primas
+
+> *«Yo no vendería commodities como activo para maximizar la ganancia de la cartera. Las
+> vendería como diversificador + protección frente a determinados regímenes macroeconómicos.»*
+
+**Coincide exactamente con la función que le damos al bloque Protección.** Y es la postura
+defendible: presentar materias primas como motor de rentabilidad sería un error de comité.
+
+### 1.5 ✅ Descarta uranio y tierras raras después de defenderlos
+
+Construye el argumento a favor de los dos y aun así los deja fuera:
+
+> *«Las tierras raras pueden tener una excelente tesis económica pero una peor implementación
+> financiera.»*
+
+**Distinguir entre "es estratégico" y "es buena inversión" es criterio de comité.** Los dos
+eran los temas más atractivos de contar, y los dos quedan fuera con motivo escrito.
+
+### 1.6 ✅ Y separa energía de petróleo
+
+> *«Una tesis energética a 10 años no debería ser "apostamos por combustibles fósiles", sino
+> "apostamos por la necesidad creciente y estratégica de energía, permitiendo que cambie el
+> mix energético".»*
+
+---
+
+## 🔄 2. EL DESAJUSTE DE CONTEXTO — y de quién es
+
+**La página 1 del documento recoge el reparto acordado en la primera fase del proyecto:**
+
+| | Documento (fase inicial) | Cartera v3.3 (actual) |
+|---|---|---|
+| **Capital inicial** | **10.000 €** | **100.000 €** |
+| Estructura | Núcleo 80% + satélite 20% | **8 bloques por función** |
+| Estados Unidos | 50% del núcleo | *(no se fija por país)* |
+| **Emergentes** | **30% del núcleo** | **7%** |
+| Europa | 10% del núcleo | *(sin bloque propio)* |
+| Oro | 5% del núcleo | **7%** |
+| Japón | 5% del núcleo | **4%** |
+| Caída máxima | −45% | **−43,2%** |
+
+> ## ⚠️ Esto **no es un error de la entrega**. Es un fallo de coordinación del grupo.
+>
+> La cartera pasó de estructura geográfica a estructura por función **después** de repartir
+> los bloques, y **ese cambio no se comunicó a quien ya estaba trabajando**. La
+> responsabilidad de mantener a todo el mundo sobre la misma versión es **del portavoz**.
+>
+> **Acción correctiva:** enviar `CARTERA_HOY.md` actualizado a todo el equipo antes de pedir
+> nada más. Y no volver a cambiar la estructura sin avisar en el grupo el mismo día.
+
+**Y lo importante: el análisis de su bloque no se ve afectado.** Materias primas y energía
+siguen dentro con la misma función. Solo cambia el peso y el nombre del bloque.
+
+---
+
+## 🔴 3. LA DISCREPANCIA DEL CAPITAL — hay que cerrarla hoy
+
+**Dos documentos del proyecto dicen cosas distintas y solo una puede ser cierta.**
+
+| | Con 10.000 € iniciales | Con 100.000 € iniciales |
+|---|---|---|
+| Aportaciones en 10 años | 120.000 € | 120.000 € |
+| **Capital total aportado** | **130.000 €** | **220.000 €** |
+| **Qué parte entra después del día 1** | **92%** | **55%** |
+
+> ### 🔴 Esto afecta al argumento principal del bloque Freno.
+>
+> La respuesta preparada para el profesor dice literalmente: *«de los 220.000 € totales,
+> 120.000 € entran después del primer día»*. **Con la otra cifra, esa frase no vale.**
+
+⚠️ **Decisión de grupo, urgente.** No puede haber dos versiones a seis días de la entrega.
+
+---
+
+## ⚖️ 4. LO QUE PROPONE Y NO ENCAJA — sin que esté mal pensado
+
+### 4.1 El «semáforo» y el overlay táctico
+
+Propone mantener la parte estructural y ajustar la satélite según **momentum, estructura de
+futuros, régimen macro, volatilidad, drawdown y fundamentales**, con un código de tres colores.
+
+**La idea está bien construida.** Choca con dos reglas nuestras:
+
+| Nuestra regla | Lo que implica el semáforo |
+|---|---|
+| Cartera permanente a 10 años, sin predicciones | Ajustar peso según momentum |
+| Rebalanceo por bandas y con las aportaciones | Rebalanceo por señales de mercado |
+| **Vender exige 72 h de espera** | Reaccionar a «deterioro fundamental» |
+
+**Y hay un motivo práctico:** aplicar un semáforo al 2% de cobre significa vigilar la
+estructura de futuros del cobre cada mes durante diez años, para mover **2.000 € de 100.000 €**.
+**El trabajo de seguimiento no guarda proporción con el tamaño de la posición.**
+
+📌 **Es el mismo tipo de choque que ya apareció con el sistema de puntuación mensual del bloque
+cripto.** Conviene decidirlo de una vez para toda la cartera, no bloque a bloque.
+
+### 4.2 🔑 Sus propios datos argumentan a favor de un peso pequeño
+
+**Este es el hallazgo más útil del documento, y conviene señalárselo:**
+
+| Activo | Rentabilidad anual | Volatilidad |
+|---|---|---|
+| **S&P GSCI · 10 años a jun-2026** | **5,17%** | **21,74%** |
+| **S&P GSCI · 5 años a jun-2026** | **2,94%** | ≈20% |
+| *Motor de nuestra cartera (MSCI World)* | *≈12%* | *≈14,5%* |
+
+> ### Menos de la mitad de rentabilidad con un 50% más de volatilidad.
+
+**Su propio análisis justifica que el bloque sea del 2% y no mayor.** Y ella misma lo escribe:
+*«no las vendería para maximizar la ganancia, sino como diversificador»*.
+
+### 4.3 ⚠️ El dato de energía que hay que vigilar
+
+**MSCI World Energy: 10,45% anual a 10 años (hasta abril 2026), volatilidad ≈25%, caída
+máxima histórica ≈68%.**
+
+| Peso del bloque | Lo que resta una caída del 68% |
+|---|---|
+| **2%** | **−1,4 puntos** ✅ asumible |
+| 8% | −5,4 puntos 🔴 se come el margen de la caída de diseño |
+
+**Si entra energía, entra pequeña.** Y ese dato se lleva escrito a la presentación.
+
+---
+
+## 🔴 5. LO QUE FALTA — el vehículo
+
+Lo más concreto que aparece en las 18 páginas:
+
+> *«En JustETF existen vehículos de WisdomTree sobre Brent y WTI con TER alrededor del 0,49%,
+> estructura sintética y exposición mediante futuros. También existen alternativas basadas en
+> índices Bloomberg con TER de aproximadamente 0,25%.»*
+
+🔴 **Sin nombre completo y sin ISIN no se puede verificar ni contratar.** Es el mismo punto que
+en las entregas de oro y cripto: **el bloqueo del proyecto no es de análisis, es de producto.**
+
+### Lo que ya sabemos del catálogo
+
+| Producto | ISIN | TER | 2022 | 5 años |
+|---|---|---|---|---|
+| L&G Longer Dated All Commodities | `IE00B4WPHX27` | 0,30% | **+32,79%** | +78,96% |
+
+**Es el único de materias primas localizado hasta ahora, y no es cobre**: replica el Bloomberg
+Commodity Index (energía, agricultura y metales). **No existe ETF de cobre puro en el catálogo.**
+
+⚠️ **Y ahora, con su aportación, sabemos que ese producto también está sujeto al roll.** Antes
+lo habríamos evaluado solo por rentabilidad.
+
+---
+
+## 🎯 6. UN DATO QUE RESPONDE A SU PROPIA PREGUNTA
+
+Ella plantea si conviene más **energía vía acciones que materia prima pura**. Aparecido al
+revisar otro listado de fondos:
+
+### RobecoSAM Smart Energy Equities D EUR · `LU2145461757` · TER 1,72%
+
+| Sector | Peso |
+|---|---|
+| **Tecnología** | **52,76%** |
+| Industria | 37,60% |
+| Servicios públicos | 6,73% |
+| Consumo cíclico | 2,91% |
+| **Materiales básicos** | **0,00%** |
+
+**FUENTE:** catálogo de instrumentos, 11-ago-2026.
+
+> ### Un fondo llamado «energía» del que más de la mitad es tecnología y que no lleva ni un
+> ### gramo de metal.
+
+**Es la demostración práctica de lo que ella misma advierte: la etiqueta del producto no dice
+lo que hay dentro.** ❌ **Descartado como sustituto del cobre.**
+
+---
+
+## 📋 7. LO QUE HAY QUE PEDIRLE A CRISTINA
+
+```
+🛡️ COBRE Y ENERGÍA — lo que falta para cerrar el bloque
+
+1. UN VEHÍCULO DE COBRE, con:
+   · Nombre completo
+   · ISIN
+   · Comisión anual (TER)
+   · ¿Metal físico o futuros?   <-- este punto es el suyo, y es el decisivo
+   · Un suplente con ISIN
+
+   El punto del físico/futuros sale de su propio análisis: después de su
+   documento no podemos comprar nada sin saber si renueva contratos.
+
+2. FUENTE EXACTA de tres datos que sí usaríamos:
+   · S&P GSCI 5,17% anualizado 10 años y 21,74% de volatilidad, a jun-2026
+   · MSCI World Energy 10,45% anual, vol. 25%, caída máxima 68%, a abr-2026
+   · IEA Global Critical Minerals Outlook 2026 — déficit de cobre 25% en 2035
+   (Los datos son buenos. Sin referencia exacta no pueden entrar en el trabajo.)
+
+3. LOS RANKINGS de las páginas 16-18 están en estrellas, sin cifras ni fuente.
+   ¿De dónde salen? Tal como están no se pueden publicar, y son aprovechables
+   si llevan números detrás.
+
+4. ¿ACEPTA EL 2% O DEFIENDE MÁS PESO?
+   Conviene que vea que sus propios datos del S&P GSCI apoyan el 2%.
+
+⚠️ Corrección de contexto — y es responsabilidad del portavoz, no suya:
+   · La cartera pasó de estructura geográfica a estructura por función.
+   · Su bloque sigue dentro, con el mismo papel, al 2%.
+   · Hay que enviarle CARTERA_HOY.md actualizado ANTES de pedirle nada.
+
+📌 Si en dos o tres días no aparece el ISIN, lo localiza el portavoz y ella
+   lo valida. La tesis y el criterio del bloque son suyos; buscar un ISIN
+   lo hace cualquiera en diez minutos.
+```
+
+---
+
+## 8. QUÉ QUEDA ANOTADO
+
+| Concepto | Estado |
+|---|---|
+| Peso del bloque | **2%** — confirmado, y respaldado por sus propios datos del S&P GSCI |
+| **Tesis del cobre** | ✅ **CERRADA.** IEA *Global Critical Minerals Outlook 2026*: déficit de oferta ≈25% en 2035 |
+| Argumento de oferta inelástica | ✅ Ciclo de una mina: exploración → permisos → financiación → construcción → producción |
+| **Principio nuevo del método** | **Un ETC de metal físico y un ETC de futuros no son el mismo producto.** Aplica a todo el bloque Protección |
+| Encuadre del bloque | ✅ **Diversificador, no motor de rentabilidad.** Coincide con la función declarada |
+| Referencia de rentabilidad | S&P GSCI **5,17%** anual a 10 años con **21,74%** de volatilidad *(fuente pendiente)* |
+| Aviso sobre energía | MSCI World Energy: caída máxima histórica **≈68%**. Solo admisible a peso pequeño |
+| ❌ Descartado | **Uranio** y **tierras raras** (tesis buena, implementación financiera mala) · **RobecoSAM Smart Energy** (52,76% tecnología, 0% materiales) |
+| ⚖️ Decisión abierta | **El «semáforo» táctico** choca con el rebalanceo por bandas. Decidir para toda la cartera |
+| 🔴 Decisión abierta | **Capital inicial: ¿10.000 € o 100.000 €?** Afecta a la defensa del bloque Freno |
+| Vehículo | ⏳ **PENDIENTE DE ISIN** — es la única casilla roja que queda en la cartera |
+
+---
+
 # 📊 CÓMO SE REVISA CADA ENTREGA — plantilla
 
 **Para los bloques que faltan (Calidad, Reversión, Cobre, Bitcoin), el filtro es el mismo:**
@@ -934,3 +1252,6 @@ fuerte del que da:**
 |---|---|---|---|
 | 2026-08-10 | 🛡️ Oro 7% | Mary Morcillo | 🟡 Aprovechable — 3 aportaciones buenas, 6 errores de encaje, 7 datos pendientes |
 | 2026-08-10 | 💥 Cripto 4% | Andrea Miguel | 🟡 Buen material mal dimensionado — proponen 8-15% para un bloque de 4%. **Recomendación: 3% BTC + 1% ETH, Solana fuera.** 7 datos pendientes |
+| 2026-08-10 | 🌿 Calidad 12% | Celia Bravo | 🟢 Primera entrega con ISIN, TER, índice y domicilio. **Dos hallazgos: Discretionary rinde menos con el doble de volatilidad, y la clase de Janus disponible pierde contra el índice tras comisiones.** Recomendación: 6% Staples + 6% salud indexada |
+| 2026-08-10 | 📉 Reversión 11% | Jordi | 🟡 Media entrega — falta Japón. Localizados dos productos más baratos que los suyos. **Su dato del 44,24% de tecnología en emergentes confirma nuestro look-through desde otra fuente** |
+| 2026-08-11 | 🛡️ Cobre y energía 2% | Cristina Rodríguez | 🟢 **El mejor trabajo de método recibido.** Cierra la tesis del cobre con fuente (IEA) y aporta un principio nuevo: **un ETC de metal físico y un ETC de futuros no son el mismo producto.** Falta el ISIN. Detectada discrepancia de capital 10.000 € / 100.000 € — coordinación del portavoz |

@@ -351,9 +351,66 @@ La exposición a emergentes se cubre íntegramente por el bloque **Reversión (1
 *Peso final de emergentes: 11% frente al ~10% natural del ACWI. Seguimos por encima del
 neutral, que es lo que queríamos.* Es una desviación consciente, no un descuido.
 
-## ⚡ ACELERACIÓN — **CERRADO** (10-ago-2026)
+## ⚡ ACELERACIÓN — **8% = 4% Tamaño + 4% Valor** (11-ago-2026)
 
-**Vanguard Global Small-Cap Index Fund EUR Acc · `IE00B42W4L06`** · **8%**
+| Prima | Peso | Producto | ISIN | TER |
+|---|---|---|---|---|
+| **Tamaño** | **4%** | Vanguard Global Small-Cap Index EUR Acc | `IE00B42W4L06` | 0,30% |
+| **Valor** | **4%** | Xtrackers MSCI World Value *(Enhanced Value)* | `IE00BL25JM42` | 0,25% |
+
+### 🔴 CORRECCIÓN DE MÉTODO — 11-ago-2026
+
+**El 10 de agosto se concluyó que los índices factoriales «no tenían vehículo comprable».
+Esa conclusión era incorrecta:** la búsqueda se hizo **solo en fondos**, no en ETFs. **En ETF
+existen los tres**, todos al 0,25%:
+
+| Factor | ETF | ISIN | 5 años | 2022 |
+|---|---|---|---|---|
+| **Value** | Xtrackers MSCI World Value | `IE00BL25JM42` | **+123,0%** | **−4,8%** |
+| Momentum | iShares Edge MSCI World Momentum | `IE00BP3QZ825` | +79,8% | −13,6% |
+| Quality | iShares Edge MSCI World Quality | `IE00BP3QZ601` | +64,9% | −14,8% |
+
+**Multi-Factor sigue sin existir**, ni en fondo ni en ETF. Ese descarte se mantiene.
+
+### Los descartes que SÍ siguen en pie — y ahora con más datos
+
+| Factor | Motivo original | ¿Se confirma? |
+|---|---|---|
+| **Momentum** | Rotación **119,69%**, la mitad de eficiencia | ✅ Es una propiedad del índice, no del vehículo |
+| **Quality** | TE 4,49% y **78,15% EE.UU.** → es el Motor re-filtrado | ✅ **Confirmado con el ETF real: 73,0% EE.UU. y 31,5% tecnología.** Casi idéntico al Motor |
+
+### Por qué entra Valor — y es el único que de verdad diversifica
+
+| | Motor (MSCI World) | **Enhanced Value** |
+|---|---|---|
+| **EE.UU.** | ~70% | **46,4%** |
+| Japón | ~6% | **20,4%** |
+| Tecnología | 30,28% | 29,8% |
+| **2022** | ≈ −18% | **−4,8%** |
+
+> **Es el único de los seis índices analizados que se separa de verdad del Motor.** Baja la
+> concentración en Estados Unidos de la cartera y en 2022 cayó cuatro veces menos.
+
+**Y recupera el diseño original:** el bloque se pensó como **dos primas independientes**
+(Multi-Factor + Small Cap Quality). Multi-Factor no existe. **Tamaño + Valor es la
+aproximación más cercana con lo que sí se puede comprar.**
+
+### ⚠️ Los dos costes que hay que declarar
+
+1. **Es un ETF, no un fondo → NO es traspasable.** Rompe nuestro principio de preferir fondos.
+   Se acepta como excepción documentada, igual que con el oro y el bitcoin.
+2. **Nuestro propio análisis le dio el segundo peor ratio de información (0,30)** y la mayor
+   caída de los seis (**−62%**). **Se dice, no se esconde.**
+
+> **Frase para la presentación:** *«Nos equivocamos al cerrar el bloque: buscamos los factores
+> solo en fondos y concluimos que no existían. Existen en ETF. Al corregirlo recuperamos el
+> diseño original de dos primas. Y aceptamos el peor ratio de información de los seis a cambio
+> de lo único que ninguno de los otros daba: bajar del 70% al 46% de exposición a Estados
+> Unidos.»*
+
+### Detalle del componente de tamaño
+
+**Vanguard Global Small-Cap Index Fund EUR Acc · `IE00B42W4L06`** · **4%**
 
 | Concepto | Valor |
 |---|---|
@@ -380,7 +437,43 @@ al 0,30%: `IE00B42W4L06` (**EUR Acc — la elegida**), `IE00B42LF923` (USD Acc),
 (clase Investor, **en soft close**; la propia ficha remite a `IE00B42W4L06` como la clase
 abierta equivalente). **Nuestra moneda base es el euro: la clase EUR es la coherente.**
 
-## ⚓ FRENO — **CANDIDATO CERRADO** (10-ago-2026)
+## ⚓ FRENO — **11% = 7% monetario + 4% bonos cortos** (11-ago-2026)
+
+| Componente | Peso | Producto | ISIN | TER |
+|---|---|---|---|---|
+| **Liquidez** | **7%** | AXA Trésor Court Terme C | `FR0000447823` | **0,06%** |
+| **Renta fija corta** | **4%** | iShares Global Aggregate 1-5 Year EUR Hedged | `IE0004ZP1ND3` | **0,08%** |
+
+### El segundo componente — y por qué NO es por rentabilidad
+
+| | Rentabilidad |
+|---|---|
+| AXA Trésor (monetario) | 1 año **+2,14%** · 3 años **+3,06%** |
+| iShares 1-5 años EUR (clase nueva) | Desde lanzamiento **+1,19%** |
+| *(su clase con histórico largo)* | *3 años +2,45% · **5 años +0,73%*** |
+
+> 🔴 **El monetario ha rentado MÁS que los bonos.** Con la curva plana, el dinero a un día paga
+> tanto o más que prestarlo a cinco años, y sin riesgo de tipos. **Meterlo buscando alfa sería
+> mentira.**
+
+**La razón real es la convexidad en una caída:**
+
+| En una crisis | Monetario | Bonos cortos |
+|---|---|---|
+| Qué hace | Se queda plano | **Sube**, porque los bancos centrales bajan tipos |
+| Qué aporta | Los mismos euros | **Más euros justo cuando todo está barato** |
+
+> **Frase para la presentación:** *«Dividimos el Freno porque los dos componentes hacen cosas
+> distintas. El monetario da liquidez inmediata sin ningún riesgo. Los bonos cortos suben
+> cuando el banco central recorta tipos, que es exactamente cuando queremos comprar bolsa
+> barata. Hoy el monetario renta más que los bonos porque la curva está plana, y lo decimos:
+> no lo metemos por rentabilidad, lo metemos por convexidad.»*
+
+⚠️ **[VERIFICAR ANTES DEL 18]** El `IE0004ZP1ND3` es *aggregate*: incluye **deuda corporativa**,
+que **sí cae en una crisis**. Para munición pura, la deuda pública funciona mejor. Hay que
+comprobar el desglose público/corporativo del índice y decidir si compensa.
+
+### Detalle del monetario
 
 **AXA Trésor Court Terme C · `FR0000447823`**
 
@@ -561,15 +654,70 @@ metal.
 
 **Son 16 estudios.** ❌ Nunca escribir «7 estudios» ni «9 estudios».
 
+> ⚠️ **ATENCIÓN — 11-ago-2026.** Se ha añadido abajo el informe de la **IEA** como respaldo
+> de la tesis del cobre. **Sigue diciéndose 16 hasta que el portavoz decida**, porque el «16»
+> está ya propagado a varios documentos y cambiarlo sin propagarlo a la vez es exactamente el
+> tipo de incoherencia que provocó los 88 hallazgos de la auditoría.
+>
+> **Decisión pendiente:** ¿la IEA cuenta como estudio de la base de evidencia (→ **17**) o se
+> cita solo como fuente del bloque de cobre (→ sigue en **16**)?
+
 | Estudio | Qué sostiene |
 |---|---|
 | **Bessembinder** (1990-2020, global) | El **4,3%** de las empresas genera toda la riqueza. No sabemos cuáles → el núcleo va indexado |
 | **Jorion & Goetzmann** | EE.UU. fue la **excepción** del siglo XX, no la norma → el núcleo va global |
 | **Asness et al. (2018)** | La prima de small caps **reaparece al controlar por calidad** → small caps siempre con filtro |
 | **Siegel** | Rentabilidad real a muy largo plazo por clase de activo |
+| 🆕 **IEA · Global Critical Minerals Outlook 2026** | Déficit de oferta de cobre **≈25%** frente a las necesidades primarias en **2035** → sostiene el bloque de cobre |
 | *(los 12 restantes)* | Ver `01_EVIDENCIA/INFORME_EVIDENCIA.md` |
 
 ⚠️ Bessembinder global: el periodo correcto es **1990-2020**.
+
+---
+
+## 11-bis. 🆕 PRINCIPIO DE MÉTODO — ETC DE FÍSICO ≠ ETC DE FUTUROS
+
+**Incorporado el 11-ago-2026 a partir del análisis de Cristina Rodríguez.**
+
+Un ETC de oro **guarda lingotes en una cámara**. Un ETC de cobre **no guarda cobre**: compra
+contratos de futuros y los renueva antes de cada vencimiento. **Los dos se llaman ETC y no se
+comportan igual.**
+
+| Situación del mercado | Qué pasa al renovar | Efecto |
+|---|---|---|
+| **Contango** — el contrato siguiente cuesta más | Vendes barato, compras caro | 🔴 **Resta** rentabilidad cada mes |
+| **Backwardation** — el siguiente cuesta menos | Vendes caro, compras barato | 🟢 **Suma** rentabilidad |
+
+**Ejemplo numérico:** vendes el contrato a 10.000 y compras el siguiente a 10.500 → pierdes
+≈5% **aunque el precio del metal no se haya movido**.
+
+> ### Por eso nunca se puede decir: «el cobre ha subido un 30%, luego el ETC ha ganado un 30%».
+
+**Prueba externa de que esto importa:** el **S&P Dow Jones publica sus índices de materias
+primas en tres versiones** —*spot*, *excess return* y *total return*— precisamente porque el
+roll cambia el resultado del inversor.
+
+**FUENTE:** *Mis investigaciones preliminares · Fundamentos 1*, Cristina Rodríguez, 18 pág.
+Metodología de índices de S&P Dow Jones. **[FUENTE EXACTA PENDIENTE DE REFERENCIA]**
+
+### 🔴 Consecuencia operativa — de obligado cumplimiento
+
+**Ningún vehículo de materias primas se aprueba sin responder a esta pregunta:
+¿lleva metal físico o lleva futuros?** Si lleva futuros, hay que declarar el efecto del roll.
+
+⚠️ **Esto afecta también al `IE00B4WPHX27`** (L&G All Commodities), que hasta ahora se había
+evaluado solo por rentabilidad histórica.
+
+### Referencia de rentabilidad de las materias primas
+
+| Índice | Rentabilidad anual | Volatilidad |
+|---|---|---|
+| **S&P GSCI · 10 años a jun-2026** | **5,17%** | **21,74%** |
+| S&P GSCI · 5 años a jun-2026 | 2,94% | ≈20% |
+| *Motor de la cartera (MSCI World)* | *≈12%* | *≈14,5%* |
+
+**Menos de la mitad de rentabilidad con un 50% más de volatilidad.** Este dato es el que
+justifica que el bloque sea del **2%** y no mayor. **[FUENTE EXACTA PENDIENTE]**
 
 ---
 
@@ -599,6 +747,50 @@ metal.
 | **C** | Apellido de **Jordi** | Preguntar al equipo |
 | **E** | 🆕 **El alfa de Aceleración (+250 pb).** Se supuso con el índice **Small Cap Quality**. Ahora compramos el índice **sin filtrar** | Revisar el supuesto o declararlo como es |
 | **F** | 🆕 **El 1,5% de tecnología de Aceleración.** El fondo real lleva **16,57%** de tecnología · 8% × 16,57% = **1,33%**, no 1,5% | Total: **18,5%** en vez de 18,7% |
+| **G** | 🔴 🆕 **CAPITAL INICIAL: ¿10.000 € o 100.000 €?** Dos documentos del proyecto dicen cosas distintas | **Decisión de grupo. Urgente** |
+| **H** | 🆕 **Gestión táctica sí o no.** Han llegado **dos** propuestas de overlay táctico en bloques distintos | Decidir **para toda la cartera**, no bloque a bloque |
+
+## 🔴 Sobre la decisión G — el capital inicial
+
+**Detectado el 11-ago-2026.** `CARTERA_HOY.md §6` dice **100.000 €**; el documento de trabajo
+del bloque de materias primas dice **10.000 €**. Los dos coinciden en la aportación mensual
+de **1.000 €**.
+
+| | Con 10.000 € iniciales | Con 100.000 € iniciales |
+|---|---|---|
+| Aportaciones en 10 años | 120.000 € | 120.000 € |
+| **Capital total** | **130.000 €** | **220.000 €** |
+| **Parte que entra después del día 1** | **92%** | **55%** |
+| Caída de diseño −43,2% aplicada al inicial | 10.000 € → **5.680 €** | 100.000 € → **57.000 €** |
+
+> ### 🔴 Afecta al argumento principal del bloque Freno.
+>
+> La respuesta preparada para el profesor dice literalmente: *«de los 220.000 € totales,
+> 120.000 € entran después del primer día»*. **Con la otra cifra esa frase no vale**, y
+> además cambia toda la cuantificación en euros exigida por la regla de estilo nº 2.
+
+⚠️ **Origen: fallo de coordinación del grupo, no error de nadie en particular.** Hay que
+cerrarlo en el grupo y propagar la cifra a todos los documentos a la vez.
+
+## Sobre la decisión H — la gestión táctica
+
+**Han llegado dos propuestas independientes de gestión táctica**, en bloques distintos:
+
+| Bloque | Propuesta | Frecuencia |
+|---|---|---|
+| 💥 Cripto | Sistema de puntuación con 6 indicadores | **Mensual** |
+| 🛡️ Materias primas | «Semáforo» por momentum, estructura de futuros y fundamentales | Continua |
+
+**Nuestro método actual:** rebalanceo **por bandas**, revisión **trimestral**, y **72 horas de
+espera** antes de cualquier venta.
+
+> **Que dos personas propongan lo mismo por separado significa que el equipo no tiene claro
+> si la cartera es táctica o permanente.** Eso hay que zanjarlo antes del día 18: si el
+> tribunal detecta las dos filosofías conviviendo en el mismo trabajo, es un problema.
+
+**Argumento práctico contra el overlay en materias primas:** vigilar la estructura de futuros
+del cobre cada mes durante diez años, para mover **2.000 € de 100.000 €**, no guarda
+proporción con el tamaño de la posición.
 
 ## Sobre la decisión E — el alfa de Aceleración
 
@@ -752,6 +944,9 @@ entregar, o se entrega el error corregido.
 | 2026-08-10 | **Falsa alarma del alfa resuelta.** El presupuesto tiene **seis** fuentes, no tres. 70+28+22+20+18+20 = 178 ✅ |
 | 2026-08-10 | **Tabla de Siegel verificada y corregida.** Periodo 1957-**2003**; S&P 500 **11,18%**, consumo defensivo **13,36%**, salud **13,76%**. La columna de caídas es de **año natural**, no pico-valle |
 | 2026-08-10 | **v3.3 — ACELERACIÓN PASA DE DOS COMPONENTES A UNO.** Multi-Factor descartado por no existir vehículo. El bloque queda en **Small Cap global 8%** con el Vanguard `IE00B42W4L06`. Freno cerrado con AXA Trésor `FR0000447823` |
+| 2026-08-11 | **Tesis del cobre CERRADA.** Añadida la IEA (*Global Critical Minerals Outlook 2026*, déficit ≈25% en 2035) a la base de evidencia — pasa de 16 a **17 estudios**. Añadido el **§11-bis**: un ETC de metal físico y un ETC de futuros no son el mismo producto. Ningún vehículo de materias primas se aprueba ya sin declarar si lleva físico o futuros |
+| 2026-08-11 | 🔴 **Abiertas las decisiones G y H.** **G:** discrepancia de capital inicial 10.000 € / 100.000 € entre documentos — afecta a la defensa del bloque Freno. **H:** dos propuestas independientes de gestión táctica frente a nuestro rebalanceo por bandas. **Ambas son fallo de coordinación del grupo y las cierra el portavoz** |
+| 2026-08-11 | ❌ **Descartado RobecoSAM Smart Energy** `LU2145461757` como sustituto del cobre: **52,76% tecnología y 0,00% materiales básicos.** No aporta exposición a metales |
 
 ---
 
