@@ -148,7 +148,8 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 *Reparto confirmado el 9 de agosto. El bloque Freno lo decide el grupo en conjunto.*
 *Aceleración cambió el 10 de agosto (D20): de dos componentes a uno. El peso sigue siendo 8%.*
 
-**Caída de diseño: −43%** (el ACWI cayó ~−58,4% pico-valle 2007-2009).
+🔴 **Pérdida estimada en estrés severo: −43,45% — PROVISIONAL**, pendiente de auditoría de
+shocks (D47a). **No es caída definitiva.** (El ACWI cayó ~−58,4% pico-valle 2007-2009.)
 **Alfa neto estimado: +76 pb** sobre ACWI.
 **Fran lleva el 53% de la cartera** (Motor compartido, Convicción y Aceleración) más todo lo transversal. El **Freno lo decide el grupo**.
 

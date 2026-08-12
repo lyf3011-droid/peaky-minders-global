@@ -109,7 +109,8 @@ verdaderos.
 
 ## 6 · Los números — 1 minuto
 
-> *«Caída de diseño del 43%: de cien mil euros a cincuenta y siete mil. El índice en 2008 cayó
+> *«Nuestra pérdida estimada en un escenario como 2008 ronda el 43%: de cien mil euros a unos
+> cincuenta y seis mil quinientos. **Es una estimación provisional, todavía en auditoría.** El índice en 2008 cayó
 > un 58%. Quince puntos menos de caída. Y el alfa neto estimado son 76 puntos básicos, con el
 > peaje ya descontado.»*
 

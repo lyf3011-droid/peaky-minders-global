@@ -35,7 +35,7 @@
 | 💥 Asimetría | Bitcoin | 4% | Andrea Miguel |
 
 **Benchmark:** MSCI ACWI · **Objetivo:** +50/+100 pb anualizados con caída 10-15 puntos
-inferior al índice · **Caída de diseño:** −43% · **Alfa neto estimado:** +76 pb
+inferior al índice · **Pérdida estimada en estrés:** −43,45% *(PROVISIONAL, pendiente D47a)* · **Alfa neto estimado:** +76 pb
 
 ---
 
