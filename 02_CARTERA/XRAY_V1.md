@@ -254,7 +254,8 @@ escrito cuál se aplicó.**
 
 | # | Criterio | Cuándo manda |
 |---|---|---|
-| **1** | **Disponibilidad** | Si no está en el catálogo, no existe. **Se comprueba antes de nada** |
+| **1a** | **Contratable** | Si no está en el catálogo, **no existe**. Eliminatorio, y se comprueba antes de nada |
+| **1b** | **Auditable — que salga en el X-Ray** | **Morningstar tiene que poder mirar dentro**, o tiene que existir un equivalente del mismo índice que sí se lea |
 | **2** | **Función** | ¿Cumple el papel del bloque, o solo se le parece? |
 | **3** | **No redundancia** | ¿Aporta algo que no tengamos? **Se mide con correlación y look-through** |
 | **4** | **Coste** | A igualdad de lo anterior, el más barato |
@@ -265,6 +266,81 @@ escrito cuál se aplicó.**
 > ### 🔑 El orden importa: **el histórico va al final.** Elegir por rentabilidad reciente es
 > ### el error que este proyecto ha decidido no cometer.
 
+## 5.1-bis 🆕 EL CRITERIO 1b — «que salga en el X-Ray»
+
+**Incorporado el 12-ago-2026 por decisión del portavoz.**
+
+### Por qué es un criterio y no un capricho
+
+Un producto que Morningstar no puede leer nos impide tres cosas que el trabajo necesita:
+
+```
+1. Hacer la radiografía          → es entregable obligatorio del enunciado
+2. Medir el solapamiento         → sin ella no se aplica el protocolo de Convicción
+3. Verificar lo que tenemos      → a diez años, poder auditar la cartera importa
+```
+
+### 🔴 Pero NO puede ser eliminatorio, y hay que explicar por qué
+
+**Si «no lo lee Morningstar» descartara un producto, tendríamos que renunciar a la mejor
+decisión de todo el trabajo:**
+
+| | |
+|---|---|
+| **iShares Developed World clase S** `IE000ZYRH0Q7` | **0,06%** — la mitad que la clase D |
+| ¿La lee Morningstar? | ❌ **No** |
+| ¿Sería absurdo descartarla? | **Sí.** Es el 31% de la cartera y el hallazgo del mínimo de 200 M€ |
+
+> ### La cobertura de Morningstar es una limitación **de la base de datos**, no una propiedad
+> ### del producto. **Un fondo no es peor por que una empresa privada no lo tenga fichado.**
+
+### La regla, formulada
+
+> ## **Todo producto debe salir en el X-Ray, o tener un equivalente declarado del mismo
+> ## índice que sí salga.**
+>
+> Si no hay ni una cosa ni la otra, **el bloque se queda sin radiografía y eso se declara
+> como hueco**, con su peso.
+
+## 5.1-ter 📋 ESTADO DE AUDITABILIDAD — los once vehículos
+
+| Bloque | Producto elegido | ISIN | Catálogo | X-Ray | Equivalente auditable |
+|---|---|---|---|---|---|
+| 🚀 Motor | iShares Developed World **S** | `IE000ZYRH0Q7` | ✅ | ❌ | ✅ clase D `IE00BD0NCM55` |
+| 🌍 Emergentes | iShares Emerging Markets **S** | `IE000QAZP7L2` | ✅ | ❌ | ✅ clase D `IE00BYWYCC39` |
+| ⚓ Freno · monetario | AXA Trésor Court Terme C | `FR0000447823` | ✅ | ✅ | — |
+| ⚓ Freno · bonos | iShares Global Aggregate 1-5y | `IE0004ZP1ND3` | ✅ | ❌ | ⚠️ se fusiona en el monetario |
+| 🪙 Oro | WisdomTree **Core** Physical Gold | `JE00BN2CJ301` | ✅ | ❓ sin probar | ✅ `JE00B1VS3770` |
+| 🌿 Consumo | Xtrackers World Consumer Staples | `IE00BM67HN09` | ✅ | ✅ | — |
+| 🌿 Salud | iShares S&P 500 Health Care | `IE00B43HR379` | ✅ | ✅ | — |
+| ⚡ Small caps | Vanguard Global Small-Cap | `IE00B42W4L06` | ✅ | ❌ | ✅ SPDR `IE00BCBJG560` |
+| ⚡ **Valor** | Xtrackers MSCI World Value | `IE00BL25JM42` | ✅ | ❌ | 🔴 **NINGUNO** |
+| 💥 Bitcoin | 21Shares Bitcoin Core ETP | `CH1199067674` | ✅ | ✅ | — |
+| 🪙 Cobre | *(sin vehículo)* | — | ❌ | — | — |
+
+### 🔴 El hallazgo que produce este criterio
+
+> ## **El bloque de VALOR es el único sin equivalente auditable.**
+>
+> Han fallado **los dos** productos de valor mundial que existen:
+> `IE00BL25JM42` *(Xtrackers)* y `IE00BP3QZB59` *(iShares Edge)*.
+
+**Consecuencia directa sobre la decisión del tercer 4%:**
+
+Antes de elegir entre el L&G y el SPDR Europe Small Cap Value, **hay que probar si el europeo
+sale en el X-Ray**. Si sale:
+
+| | |
+|---|---|
+| ✅ Cubre el tercer componente de Aceleración | |
+| ✅ **Y da exposición a valor que sí se puede auditar** | |
+| ✅ Y baja la concentración en EE.UU., hoy en 64,75% | |
+
+**Tres problemas con un solo producto.** Por eso es el primer ISIN que hay que probar.
+
+⚠️ **Y si ninguno de los dos sale**, el bloque de valor se queda sin radiografía y **se declara
+como hueco con su 4%** — que es exactamente lo que la regla obliga a hacer.
+
 ## 5.2 Todo lo descartado, con su motivo
 
 | Producto | ISIN | Criterio | Motivo exacto |
@@ -272,14 +348,14 @@ escrito cuál se aplicó.**
 | **iShares World Quality** | `IE00BP3QZ601` | **3** | **Correlación 0,96 con el Motor** |
 | **iShares World Momentum** | `IE00BP3QZ825` | **3** | **33,4% tecnología** sobre una cartera ya cargada · rotación ~120% |
 | SPDR USA Small Cap Value | `IE00BSPLC413` | 3 | 98,3% EE.UU. — no corrige ninguna de las dos concentraciones |
-| **Avantis Global Small Cap Value** | `IE0003R87OG3` | **1** | **No existe en el catálogo** |
+| **Avantis Global Small Cap Value** | `IE0003R87OG3` | **1a** | **No existe en el catálogo** |
 | **Janus Henderson Global Life Sciences** | `IE0002122038` | **4** | **TER 2,38%** · 5,09% a 5 años, **por debajo del ETF a 0,15%** |
 | Polar Capital Healthcare | `IE00BKSBD942` | 5 | Bate al índice, pero **la clase en euros es de reparto** y la de acumulación en dólares |
 | **VanEck Gold Miners** | `IE00BQQP9F84` | **2** | **Es renta variable.** Vol. 31,65% frente al 16,79% del oro. Cae con la bolsa |
 | iShares Gold Producers | `IE00B6R52036` | 2 | Igual |
 | **RobecoSAM Smart Energy** | `LU2145461757` | **2** | **52,76% tecnología y 0,00% materiales.** No es exposición a metales |
-| **iShares Physical Gold (IGLN)** | — | **1** | **No existe en el catálogo** |
-| Xtrackers Physical Gold | — | 1 | No existe en el catálogo |
+| **iShares Physical Gold (IGLN)** | — | **1a** | **No existe en el catálogo** |
+| Xtrackers Physical Gold | — | 1a | No existe en el catálogo |
 | WisdomTree PHAU | `JE00B1VS3770` | 4 | **0,39% por el mismo oro** que el Core a 0,12% *(se usa solo en el X-Ray)* |
 | **Bloque de Japón** | `IE00BYX5N771` | **3** | **El Motor ya lleva ~6% de Japón.** Confirmado: el X-Ray mide 2,6% |
 | **Bloque de tecnología** | — | **3** | El look-through mostró **13,2%** ya presente sin comprarlo |
@@ -380,3 +456,4 @@ Trece fondos, reparto 80/20.
 | Fecha | Acción |
 |---|---|
 | 2026-08-12 | **Creación.** Primer X-Ray completo del proyecto: **0,00% sin clasificar**. Corregidas las métricas del informe incompleto anterior (beta 0,76 no 0,68; alfa 2,37 no 4,60). Descartado el iShares World Quality por correlación **0,96** con el Motor. Primera aplicación del protocolo de Convicción: **Microsoft baja de 3% a 2,74%**. Añadidos los siete criterios de decisión y el registro completo de desestimientos. Reformulada la tesis: banda **8-10%** con tracking error controlado |
+| 2026-08-12 | 🆕 **Añadido el criterio 1b — «que salga en el X-Ray».** Formulado en dos niveles para no descartar la clase S del Motor, que es la mejor decisión de coste del trabajo y que Morningstar no lee. **Regla: todo producto debe salir en el X-Ray o tener un equivalente declarado del mismo índice que sí salga.** Aplicado a los once vehículos, aparece el hallazgo de que **el bloque de valor es el único sin equivalente auditable** |
