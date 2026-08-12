@@ -215,22 +215,51 @@ UMBRAL 2 · precio ≤ IDC × 0,85
 **Así no se contradice la regla fundacional:** el 15% extra **no es requisito para considerar
 atractiva la empresa** — es el peaje que justifica usar una financiación fiscalmente peor.
 
-### Y el 0,85 no es un número arbitrario
+### ⚠️ CORRECCIÓN — el 0,85 es un umbral de política, NO una equivalencia matemática
 
-**Es aproximadamente el punto de equilibrio fiscal:**
+> ## **El `IDC × 0,85` es un umbral conservador de política. No es, ni pretende ser, una
+> ## equivalencia universal del coste fiscal.**
 
-| Ganancia del Motor | Descuento extra necesario para compensar el impuesto |
+**El orden de magnitud que lo inspira** — cuánto impuesto genera vender una parte del Motor
+según lo que haya ganado — es este:
+
+| Ganancia acumulada del Motor | Impuesto aproximado sobre lo vendido |
 |---|---|
-| +50% | 6,7% |
-| +100% | 10,0% |
-| +150% | 12,0% |
-| +200% | 13,3% |
+| +50% | ≈6,7% |
+| +100% | ≈10,0% |
+| +150% | ≈12,0% |
+| +200% | ≈13,3% |
 
-> **Un 15% de descuento adicional cubre el coste fiscal en todos los casos hasta que el Motor
-> haya multiplicado por más de tres.** El umbral está calibrado, no elegido.
+*Tipo del ahorro aplicado: 20%, como referencia del tramo medio 19-21%.*
 
-⚠️ **Comprobación obligatoria antes de cada venta:** que el beneficio económico esperado del
-descuento adicional **supere razonablemente el coste fiscal estimado en ese momento**.
+### 🔴 Por qué esta tabla NO puede usarse como regla
+
+**El coste fiscal real de una venta concreta depende de cosas que esta tabla no contiene:**
+
+```
+· El precio medio de compra de las participaciones que se vendan
+  (no la ganancia media del fondo: la de ESE lote, por el criterio FIFO)
+· El tramo marginal del ahorro que corresponda ese año
+· Otras ganancias o pérdidas patrimoniales del mismo ejercicio, que compensan
+· El importe concreto vendido, que puede cruzar tramos
+· La normativa vigente en el momento de la venta
+```
+
+> **Dos ventas del mismo importe, el mismo día, pueden tener costes fiscales muy distintos.**
+
+### La regla, en su formulación correcta
+
+| | |
+|---|---|
+| **El `IDC × 0,85`** | Es el **filtro de política** que abre la puerta a *estudiar* la operación |
+| **El coste fiscal efectivo** | Se calcula **operación por operación, antes de ejecutar** |
+
+> ## 🔒 **Ninguna venta del Motor se ejecuta sin haber calculado antes el coste fiscal
+> ## efectivo de esa operación concreta y haber comprobado que el beneficio esperado del
+> ## descuento adicional lo supera.**
+
+**El umbral del 15% no autoriza la venta: solo permite plantearla.** La autorización la da el
+cálculo del caso concreto.
 
 ---
 
@@ -543,3 +572,4 @@ la caída que esperamos en el peor año **no sea un número fijo, sino un rango*
 | Fecha | Acción |
 |---|---|
 | 2026-08-12 | **Creación.** D45 cerrada como **arquitectura A+ / Convicción condicional**. Incorporados los cuatro ajustes detectados en la crítica cruzada: peso ≠ riesgo · coste fiscal y pérdida de opcionalidad · umbral cuantificado del IDC × 0,85 calibrado contra el coste fiscal · separación TARGET / ACTUAL. Registrados los dos principios. Declarado por escrito que Convicción puede fracasar y cómo se medirá. Detectado el riesgo 5 (deriva por revalorización) **sin resolver** |
+| 2026-08-12 | ⚠️ **Corregida la formulación fiscal del §3.3.** El `IDC × 0,85` queda como **umbral conservador de política**, no como equivalencia matemática universal del coste fiscal. Añadidas las cinco variables que hacen que el coste real dependa de cada operación, y la regla de que **ninguna venta del Motor se ejecuta sin calcular antes su coste fiscal efectivo** |
