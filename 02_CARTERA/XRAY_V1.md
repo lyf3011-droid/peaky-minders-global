@@ -207,12 +207,152 @@ sin calificar del monetario. **`[PENDIENTE DE VERIFICAR ANTES DEL 18]`**
 
 ---
 
-# 4. 🔧 LA V2 — QUITAR QUALITY Y REPARTIR
+# 3-bis. ✅ LA MEDICIÓN DEFINITIVA — V3, sin Quality
+
+**Ejecutada el 12-ago-2026. Ocho productos. No clasificado: 0,00%.**
+
+## 3-bis.1 🏆 El resultado: quitar un producto MEJORÓ la cartera
+
+| | Con Quality | **Sin Quality** | |
+|---|---|---|---|
+| **Volatilidad 3 años** | 8,97% | **8,87%** | ✅ baja |
+| **Beta 3 años** | 0,76 | **0,75** | ✅ baja |
+| **Beta 5 años** | 0,76 | **0,74** | ✅ baja |
+| **Ratio de Sharpe 3a** | 1,10 | **1,11** | ✅ sube |
+| **Alfa 3 años** | 2,37 | **2,42** | ✅ sube |
+| **R²** | 89,78 | **88,64** | ✅ menos dependiente del mercado |
+| Rentabilidad 5 años | 9,85% | **9,82%** | ⚖️ **−0,03** |
+
+> ## Se retiró un producto y la cartera quedó **menos volátil, menos dependiente del mercado y
+> ## más eficiente**, a cambio de **tres centésimas** de rentabilidad.
+
+**Y esto no es opinión: es el mismo informe, con y sin el producto.**
+
+### La frase para la exposición
+
+> *«Retiramos un fondo de calidad global de 5.238 millones de euros. Al medirlo, la cartera
+> bajó de volatilidad, bajó de beta, subió de Sharpe y subió de alfa, y perdió tres centésimas
+> de rentabilidad. **No lo quitamos porque fuera un mal fondo: lo quitamos porque su
+> correlación con nuestro bloque principal era de 0,96 y lo único que añadía era coste.»***
+
+## 3-bis.2 Las cifras oficiales de la cartera
+
+| | 3 años | 5 años |
+|---|---|---|
+| **Rentabilidad anualizada** | **13,01%** | **9,82%** |
+| Frente al índice | +0,04 | **+1,26** |
+| **Volatilidad** | **8,87%** | 9,45% |
+| **Ratio de Sharpe** | **1,11** | 0,84 |
+| **Alfa** | **2,42** | 2,86 |
+| **Beta** | **0,75** | **0,74** |
+| R² | 88,64 | 91,46 |
+| Tracking error | 4,07 | 4,19 |
+| Ratio de información | 0,05 | 0,36 |
+
+**Distribución de activos:** acciones 70,68% · otro *(oro + bitcoin)* 18,75% · obligaciones
+8,34% · efectivo neto 2,24%.
+
+**Peores periodos reconstruidos:** 3 meses **−13,22%** *(COVID)* · 1 año −12,75% · 3 años
+anualizado −3,13%.
+
+### ✅ La comprobación que valida toda la conversión
+
+> **El oro sale al 9,20% en el informe. 9,20 × 0,76 = 6,99%. Y la cartera lleva un 7%.**
+>
+> **La cuenta cierra al decimal. El factor de conversión ×0,76 es correcto.**
+
+## 3-bis.3 Composición, convertida a cartera real
+
+### Sectores
+
+| | Sobre las acciones | **En la cartera** |
+|---|---|---|
+| **Tecnología** | 22,12% | **11,9%** |
+| **Salud** | 17,81% | **9,6%** |
+| Consumo defensivo | 14,68% | 7,9% |
+| Financieros | 12,47% | 6,7% |
+| Industria | 8,88% | 4,8% |
+| Comunicación | 5,99% | 3,2% |
+| Energía | 3,47% | 1,9% |
+| Materiales básicos | 3,27% | 1,8% |
+
+**Bloques:** cíclico 24,99% · sensible al ciclo 40,45% · **defensivo 34,56%**
+
+### Geografía
+
+| | Sobre las acciones | **En la cartera** |
+|---|---|---|
+| **Estados Unidos** | **64,12%** | **34,4%** |
+| Asia | 17,43% | 9,4% |
+| Europa | 14,94% | 8,0% |
+| *(Japón)* | 4,63% | **2,5%** |
+
+### Valoración — y la cartera se abarató
+
+| | Con Quality | **Sin Quality** |
+|---|---|---|
+| Precio / beneficio | 18,28 | **18,04** |
+| Precio / valor contable | 3,43 | **3,24** |
+| Precio / flujo de caja | 12,80 | **12,58** |
+
+## 3-bis.4 🎯 El protocolo de Convicción cambia de resultado
+
+**Quality llevaba Microsoft dentro. Al retirarlo, el peso implícito de Microsoft bajó.**
+
+| | Con Quality | **Sin Quality** |
+|---|---|---|
+| Microsoft ya en cartera | 1,26% | **1,01%** |
+| + entrada directa del 3% | **4,26%** 🔴 | **4,01%** |
+| Techo del protocolo | 4,00% | 4,00% |
+| **Entrada máxima permitida** | **2,74%** | **≈2,99%** |
+
+> ### Cambiando un vehículo de **otro bloque**, la posición máxima de una empresa se movió sola.
+> **Es la demostración de que el techo funciona y de que hay que recalcularlo en cada versión.**
+
+### Las diez mayores empresas — V3
+
+| # | Empresa | **Peso real** | ¿En Convicción? |
+|---|---|---|---|
+| 🥇 | **Oro** | **7,00%** | — |
+| 2 | **NVIDIA** | **1,63%** | ❌ **La mayor acción, y no se ha comprado** |
+| 3 | Apple | 1,44% | ❌ Descartada |
+| 4 | Eli Lilly | 1,25% | ❌ |
+| 5 | TSMC | 1,02% | ❌ Descartada por duplicidad |
+| 6 | **Microsoft** | **1,01%** | ✅ |
+| 7 | Johnson & Johnson | 0,85% | ❌ |
+| 8 | Walmart | 0,85% | ❌ |
+| 9 | **Amazon** | **0,78%** | ✅ |
+| 10 | Costco | 0,72% | ❌ Descartada |
+
+## 3-bis.5 Correlaciones — ocho productos
+
+| Producto | Con el Motor |
+|---|---|
+| SPDR World Small Cap | 0,85 |
+| iShares Emerging Markets | 0,64 |
+| iShares S&P 500 Health | 0,47 |
+| Xtrackers Staples | 0,45 |
+| **21Shares Bitcoin** | **0,39** |
+| AXA Trésor | 0,05 |
+| **WisdomTree Gold** | **0,01** |
+
+**Y tres correlaciones negativas, que son las que de verdad diversifican:**
+
+| Par | |
+|---|---|
+| Emergentes ↔ monetario | **−0,21** |
+| Oro ↔ salud | **−0,11** |
+| Bitcoin ↔ consumo defensivo | **−0,10** |
+| Bitcoin ↔ salud | **−0,10** |
+
+---
+
+# 4. 🔧 LA LISTA DE LA V3 — la que se ejecutó
 
 **Decisión del portavoz (12-ago):** eliminar el iShares World Quality por sobreponderación
-demostrada, y repartir su peso proporcionalmente.
+demostrada, y repartir su peso proporcionalmente. ✅ **Ejecutado. Resultados en el §3-bis.**
 
-## La lista para volver a ejecutar
+## La lista definitiva
 
 ```
 IE00BD0NCM55    40,7
@@ -239,9 +379,8 @@ IE00BCBJG560     5,3
 
 > **Nueva cobertura: 76% de la cartera. Factor de conversión: ×0,76.**
 
-**Qué se espera al quitar Quality:** el peso liberado va también al oro y al bitcoin, que
-correlacionan 0,01 y 0,39 con el Motor. **La cartera debería quedar algo más diversificada,
-no menos.** Hay que medirlo, no suponerlo.
+✅ **Confirmado al medirlo:** el peso liberado fue también al oro (correlación 0,01) y al
+bitcoin (0,39), y **la cartera quedó más diversificada, no menos**. Ver §3-bis.1.
 
 ---
 
@@ -441,7 +580,7 @@ Trece fondos, reparto 80/20.
 
 | # | Qué | Estado |
 |---|---|---|
-| 1 | **Volver a ejecutar el X-Ray** con la lista del §4 | 🔴 **Inmediato** |
+| 1 | ~~Volver a ejecutar el X-Ray sin Quality~~ | ✅ **HECHO 12-ago.** Ver §3-bis |
 | 2 | **El tercer 4% de Aceleración**: L&G `IE00B3CNHJ55` vs SPDR Europe `IE00BSPLC298` | 🔵 Con EE.UU. al 64,75%, la balanza se inclina al europeo |
 | 3 | **Cobre**: ISIN y auditoría de si mejora Sharpe y caída máxima | 🟠 |
 | 4 | **Convicción**: ficha de seis casillas por empresa | 🔴 Y **Microsoft baja a 2,74%** |
@@ -456,4 +595,5 @@ Trece fondos, reparto 80/20.
 | Fecha | Acción |
 |---|---|
 | 2026-08-12 | **Creación.** Primer X-Ray completo del proyecto: **0,00% sin clasificar**. Corregidas las métricas del informe incompleto anterior (beta 0,76 no 0,68; alfa 2,37 no 4,60). Descartado el iShares World Quality por correlación **0,96** con el Motor. Primera aplicación del protocolo de Convicción: **Microsoft baja de 3% a 2,74%**. Añadidos los siete criterios de decisión y el registro completo de desestimientos. Reformulada la tesis: banda **8-10%** con tracking error controlado |
+| 2026-08-12 | ✅ **V3 MEDIDA — la definitiva.** Retirado el iShares World Quality. **La cartera mejoró en cinco métricas de seis**: volatilidad 8,87% (era 8,97), beta 0,74 a 5 años (era 0,76), Sharpe 1,11 (era 1,10), alfa 2,42 (era 2,37) y R² 88,64 (era 89,78). Coste: **−0,03 puntos de rentabilidad**. Validada la conversión ×0,76 con el oro: 9,20 × 0,76 = 6,99% ≈ el 7% real. Microsoft pasa de tope 2,74% a **2,99%** porque Quality lo llevaba dentro |
 | 2026-08-12 | 🆕 **Añadido el criterio 1b — «que salga en el X-Ray».** Formulado en dos niveles para no descartar la clase S del Motor, que es la mejor decisión de coste del trabajo y que Morningstar no lee. **Regla: todo producto debe salir en el X-Ray o tener un equivalente declarado del mismo índice que sí salga.** Aplicado a los once vehículos, aparece el hallazgo de que **el bloque de valor es el único sin equivalente auditable** |
