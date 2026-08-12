@@ -1,13 +1,13 @@
 # 📋 PEAKY MINDERS GLOBAL — ESTADO A DÍA DE HOY
 
-## 10 de agosto de 2026 · Cartera v3.3
+## 12 de agosto de 2026 · Cartera v3.5
 
 > ## 👉 EMPIEZA POR AQUÍ
 >
 > **Este es el único documento que hay que mirar para saber dónde estamos.**
 > Una pantalla, ocho bloques, y qué falta en cada uno.
 >
-> **Entrega: 17 de agosto · Presentación: 18 de agosto · Quedan 7 días.**
+> **Entrega: 17 de agosto · Presentación: 18 de agosto · Quedan 5 días.**
 
 ---
 
@@ -15,15 +15,15 @@
 
 | | Bloque | Peso | Responsable | **Vehículo** | ISIN | TER | Estado |
 |---|---|---|---|---|---|---|---|
-| 🚀 | **Motor** | **31%** | Fran · Cristina R. | iShares Developed World **Class S** | `IE000ZYRH0Q7` | **0,06%** | ✅ **CERRADO** |
+| 🚀 | **Motor** | **33%** | Fran · Cristina R. | iShares Developed World **Class S** | `IE000ZYRH0Q7` | **0,06%** | ✅ **CERRADO** |
 | 🎯 | **Convicción** | **14%** | Fran | *Lista de espera · 10 empresas* | — | — | 🟡 **Método cerrado** |
-| 🌿 | **Calidad** | **12%** | Celia Bravo | Xtrackers World Consumer Staples | `IE00BM67HN09` | 0,25% | 🟡 **Candidato** |
+| 🌿 | **Defensivos** | **12%** | Celia Bravo | Xtrackers World Consumer Staples | `IE00BM67HN09` | 0,25% | 🟡 **Candidato** |
 | | *· salud* | *6%* | | iShares S&P 500 Health Care | `IE00B43HR379` | 0,15% | 🟡 **Candidato** |
-| 📉 | **Reversión** | **7%** | Jordi | iShares Emerging Markets **clase S** | `IE000QAZP7L2` | **0,16%** | 🟡 **Candidato** |
+| 🌍 | **Emergentes** | **7%** | Jordi | iShares Emerging Markets **clase S** | `IE000QAZP7L2` | **0,16%** | 🟡 **Candidato** |
 | | ~~*· Japón*~~ | ~~*4%*~~ | | ~~Fidelity MSCI Japan~~ | ~~`IE00BYX5N771`~~ | — | ❌ **FUERA 11-ago** |
-| ⚓ | **Freno** | **11%** | **Grupo** | AXA Trésor Court Terme C *(7%)* | `FR0000447823` | **0,06%** | ✅ **CERRADO** |
-| | *· bonos* | *4%* | | iShares Global Aggregate 1-5y | `IE0004ZP1ND3` | **0,08%** | ✅ **CERRADO** |
-| 🛡️ | **Protección** | **7%** | Mary Morcillo | **WisdomTree Core Physical Gold** | **`JE00BN2CJ301`** | **0,12%** | ✅ **CERRADO 11-ago** |
+| ⚓ | **Freno** | **9%** | **Grupo** | AXA Trésor Court Terme C *(6%)* | `FR0000447823` | **0,06%** | ✅ **CERRADO 12-ago** |
+| | *· bonos* | *3%* | | iShares Global Aggregate 1-5y | `IE0004ZP1ND3` | **0,08%** | ✅ **CERRADO** |
+| 🪙 | **Activos reales** | **7%** | Mary Morcillo | **WisdomTree Core Physical Gold** | **`JE00BN2CJ301`** | **0,12%** | ✅ **CERRADO 11-ago** |
 | | *· cobre* | *2%* | Cristina R. | **SIN ISIN VERIFICADO** | — | — | 🔴 **DECISIÓN** |
 | ⚡ | **Aceleración** | **12%** | Fran | Vanguard Global Small-Cap EUR *(4%)* | `IE00B42W4L06` | 0,30% | ✅ **CERRADO** |
 | | *· valor* | *4%* | | Xtrackers MSCI World Value | `IE00BL25JM42` | 0,25% | ✅ **CERRADO** |
@@ -45,7 +45,7 @@
 
 ## 💰 Y el dato que sale de todo esto
 
-**Si se confirman todos los candidatos, la cartera entera costaría un 0,10% anual.**
+**La cartera entera cuesta un 0,11% anual** (sin el cobre, que sigue sin vehículo).
 El presupuesto suponía **0,25%**. **Son 15 puntos básicos que vuelven al bolsillo**, sin
 cambiar ni una sola decisión de inversión: solo por elegir bien la clase de cada fondo.
 
@@ -53,7 +53,7 @@ cambiar ni una sola decisión de inversión: solo por elegir bien la clase de ca
 
 # 2. LO QUE YA ESTÁ CERRADO — con ISIN y comisión
 
-## 🚀 MOTOR · 31%
+## 🚀 MOTOR · 33%
 
 | | |
 |---|---|
@@ -69,9 +69,9 @@ es de 200.000.000 €**. Entramos con cero porque la comercializadora agrega el 
 sus clientes. **Eso divide por dos el coste del bloque más grande.**
 
 ⚠️ **Hay que declararlo:** replica el **MSCI World**, no el ACWI. No existe ningún indexado
-al ACWI en la plataforma. Los emergentes entran por el bloque **Reversión**.
+al ACWI en la plataforma. Los emergentes entran por el bloque **Emergentes**.
 
-## ⚡ ACELERACIÓN · 8%
+## ⚡ ACELERACIÓN · 12%
 
 | | |
 |---|---|
@@ -105,7 +105,7 @@ es en dólares y la `IE00B42W3S00` está cerrada a nuevos partícipes.
 ✅ **Y comprobado: repartir el bloque no cambiaba la caída de diseño.** Todas las variantes
 redondean a **−43%**. Solo añadía coste.
 
-## ⚓ FRENO · 11%
+## ⚓ FRENO · 9%
 
 | | |
 |---|---|
@@ -140,8 +140,9 @@ El dato real es **3,06%**. **El supuesto era exacto.**
 | 10 | Berkshire Hathaway | BRK.B | **407 $** | 530 | −23,2% |
 
 **Se compran 7 de las 10**, según cuáles lleguen antes a su precio. Máximo 3% por empresa.
-Mientras esperan, el dinero está en el monetario del Freno al 3,06%, **y puede pasar a la
-compra sin pagar impuestos**.
+🔴 **DÓNDE ESTÁ ESE DINERO MIENTRAS ESPERA ES UNA DECISIÓN ABIERTA (D45).** Si estuviera
+parado en el monetario, el efectivo real de la cartera sería 9% + 14% = **23%**, y la renta
+variable no sería 78% sino 64%. **La cartera declarada y la real no coincidirían.**
 
 ## El argumento que sostiene la espera
 
@@ -160,7 +161,7 @@ compra sin pagar impuestos**.
 
 **Ferrari (−2% de retorno esperado)** · **Apple (2%)** · **Costco (2%)** · **Nestlé (4%)** ·
 **American Express (7%)** — todas por debajo del mercado.
-**TSMC** — ya lo llevamos dentro de Reversión: comprarlo sería duplicar.
+**TSMC** — ya lo llevamos dentro de Emergentes: comprarlo sería duplicar.
 
 ---
 
