@@ -79,7 +79,7 @@ Butterfly. Tampoco vale modificar ligeramente sus pesos.
 | Moneda base | EUR (se admiten activos en USD, con conversión indicada) |
 | **Benchmark oficial** | **MSCI ACWI**. Secundario: S&P 500 |
 | **Objetivo** | **ACWI +50/+100 pb anualizados** a ciclo completo, con caída 10-15 puntos inferior a la del índice |
-| **Caída de diseño** | **−43%** (no es límite duro ni garantía) |
+| **Pérdida estimada en estrés** | 🔴 **−43,45% PROVISIONAL** — pendiente de auditoría de shocks (D47a). No es límite duro, ni garantía, ni cifra definitiva |
 | Renta variable total | 76% (envolvente 75-85%) |
 | Perfil | Agresivo, justificado por horizonte y aportaciones |
 | Exclusiones sectoriales | Ninguna |
@@ -106,7 +106,7 @@ riesgo lo alcanzaba. Se reformuló a +50/+100 pb, que sí es alcanzable y verifi
 
 **Fuente:** `CIFRAS_MAESTRAS.md` v3.3 §3 · catálogo de MyInvestor, consultado el 10-ago-2026.
 
-**Caída de diseño −43%** (ACWI: −58,4% pico-valle 2007-2009) · **Alfa neto estimado +76 pb**
+🔴 **Pérdida estimada en estrés −43,45%, PROVISIONAL** (ACWI: −58,4% pico-valle 2007-2009) · **Alfa neto estimado +76 pb**
 
 > **Qué cambió en la v3.3 (10-ago-2026).** Aceleración pasa de dos componentes a uno.
 > Se diseñó como Multi-Factor 4% + Small Cap Quality 4%, pero al buscar los fondos en la

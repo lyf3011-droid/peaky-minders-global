@@ -1,6 +1,24 @@
 # 🔜 PRÓXIMA SESIÓN — punto de partida
 
 ## Cerrado el 11 de agosto de 2026 · Entrega el 17 · Presentación el 18
+> ## 📌 COMPOSICIÓN VIGENTE — v3.6 · 12 de agosto de 2026
+>
+> | **HOY** | | **MACROBLOQUE** | | **FASE MADURA POSIBLE** | |
+> |---|---|---|---|---|---|
+> | 🚀 Motor | **44%** | Motor + Reserva + Convicción | **objetivo 47%** | 🚀 Motor | **33%** |
+> | 💧 Reserva Operativa | **3%** | *en fechas de revisión* | | 💧 Reserva | **0%** |
+> | 🎯 Convicción | **0%** | | | 🎯 Convicción | **hasta 14%** |
+>
+> **Resto en ambos casos:** Defensivos 12% · Aceleración 12% · Emergentes 7% · Freno 9% ·
+> Activos reales 9% · Asimetría 4%.
+>
+> ### 🔴 **La fase madura NO es obligatoria.** Si solo aparecen oportunidades para desplegar un
+> ### 8%, el Motor puede permanecer en el 39% indefinidamente.
+>
+> **Renta variable: 75% hoy · 78% en fase madura.** Detalle en
+> [`D45_CONVICCION_CONDICIONAL.md`](../02_CARTERA/D45_CONVICCION_CONDICIONAL.md).
+
+
 
 > ## 👉 EMPIEZA LEYENDO ESTE ARCHIVO
 >
@@ -90,8 +108,9 @@ Morningstar. **No se ha buscado todavía.**
 
 | Bloque | Peso | Vehículo | ISIN | TER | Estado |
 |---|---|---|---|---|---|
-| 🚀 **Motor** | **31%** | iShares Developed World **clase S** | `IE000ZYRH0Q7` | 0,06% | ✅ |
-| 🎯 **Convicción** | **14%** | 7 de 10 empresas, lista de espera | — | — | ✅ método |
+| 🚀 **Motor** | **44%** | iShares Developed World **clase S** | `IE000ZYRH0Q7` | 0,06% | ✅ |
+| 💧 **Reserva Operativa** | **3%** | Efectivo remunerado, disponibilidad inmediata | — | — | ✅ |
+| 🎯 **Convicción** | **0%** | hasta 7 empresas · máx. 2% · dos tramos | — | — | ✅ protocolo |
 | 🌿 **Calidad** | **12%** | Xtrackers World Consumer Staples | `IE00BM67HN09` | 0,25% | ✅ |
 | | | iShares S&P 500 Health Care | `IE00B43HR379` | 0,15% | 🟡 *(ver §3.2)* |
 | 📉 **Reversión** | **7%** | iShares Emerging Markets **clase S** | `IE000QAZP7L2` | 0,16% | ✅ |

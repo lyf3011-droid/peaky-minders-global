@@ -47,7 +47,7 @@ Más de la mitad entra escalonada: **las caídas durante el periodo juegan a fav
 | **Benchmark oficial** | **MSCI ACWI** |
 | Benchmark secundario | S&P 500 |
 | **Objetivo** | **ACWI +50/+100 pb anualizados a ciclo completo, con caída 10-15 puntos inferior a la del índice** |
-| Caída de diseño | **−43%** (no es límite duro ni garantía) |
+| Pérdida estimada en estrés severo | 🔴 **−43,45% PROVISIONAL** — pendiente de auditoría de shocks (D47a) |
 | Renta variable total | 76% (envolvente de diseño 75-85%) |
 | Revisión formal | Trimestral |
 | Gobernanza | Comité humano. La IA no firma |
@@ -82,8 +82,9 @@ Aceleración procede del catálogo de MyInvestor, consultado el 10-ago-2026.
 
 | Bloque | Suelo | Neutral | Techo |
 |---|---|---|---|
-| Motor | 28% | **31%** | 35% |
-| Convicción | 12% | **14%** | 17% |
+| Motor | 33% | **44%** *(hoy)* | 47% |
+| Reserva Operativa | 0% | **3%** | 3% |
+| Convicción | 0% | **0%** *(hoy)* | 14% |
 | Calidad | 9% | **12%** | 14% |
 | Reversión | 8% | **11%** | 14% |
 | Freno | 5% | **11%** | 13% |
@@ -101,7 +102,7 @@ No todos los bloques tienen que batir al mercado. Si todos deben, ninguno respon
 
 | Capa | Bloques | Peso | Responsabilidad |
 |---|---|---|---|
-| **Core / Beta** | Motor | 31% | Capturar el mercado. **No produce alfa** |
+| **Core / Beta** | Motor | **44%** *(33% en fase madura)* | Capturar el mercado. **No produce alfa** |
 | **Active Alpha** | Convicción + Reversión + Aceleración | 33% | **Aquí sale el exceso de retorno** |
 | **Earnings Resilience** | Calidad | 12% | Reducir sensibilidad al ciclo |
 | **Stabilisers** | Freno + Protección | 20% | Munición, estabilidad y cobertura |

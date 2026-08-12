@@ -2,6 +2,14 @@
 
 ## Peaky Minders Global · 12 de agosto de 2026
 
+> # 🔴 X-RAY HISTÓRICO DE UNA VERSIÓN ANTERIOR
+> ## **NO representa la composición v3.6 actual.**
+>
+> Se generó con **Motor 40,7%** sobre una base del 76%. La cartera vigente es
+> **Motor 44% · Reserva Operativa 3% · Convicción 0%**, con base del 84%.
+> **Los pesos, los sectores y las métricas de este informe corresponden a una composición
+> que ya no existe.** El X-Ray de la v3.6 es el siguiente paso.
+>
 > **Fuente:** Morningstar X-Ray, informe del 12-ago-2026 sobre nueve productos.
 > **No clasificado: 0,00%.** Es el primer informe completo del proyecto.
 >
@@ -96,8 +104,9 @@ vehículo) y el tercer factor (4%, sin decidir).
 | 1 año | −12,77% |
 | 3 años anualizado | −2,93% |
 
-⚠️ **La reconstrucción no llega a 2008.** Por eso la caída de diseño del **−43%** se calcula
-con datos de índice, no con esta serie. **Son dos cosas distintas y no se mezclan.**
+⚠️ **La reconstrucción no llega a 2008.** Por eso la pérdida estimada en estrés severo se
+calcula con datos de índice, no con esta serie. **Son dos cosas distintas y no se mezclan.**
+🔴 **Y esa cifra está provisional, pendiente de auditoría de shocks (D47a).**
 
 ---
 
@@ -797,7 +806,7 @@ X-Ray.** Es la primera vez que la regla de auditabilidad descarta candidatos.
 *Supuestos: renta variable 8,5% esperado · Freno 3,06% (dato real del AXA a 3 años) ·
 en estrés: RV −55%, Freno 0%.*
 
-| Opción | Freno | RV | **Rentabilidad esperada** | **Caída de diseño** |
+| Opción | Freno | RV | **Rentabilidad esperada** | **Pérdida estimada** *(provisional)* |
 |---|---|---|---|---|
 | **Actual** | 11% | 76% | — | **−43,2%** |
 | **A** | **9%** | 78% | **+0,11%** | **−44,3%** |
@@ -806,7 +815,7 @@ en estrés: RV −55%, Freno 0%.*
 
 ## 7.3 🔴 El aviso que hay que leer antes de decidir
 
-> ### La caída de diseño del **−43%** es cifra titular en **diez documentos** y en la web.
+> ### La cifra de estrés es titular en **diez documentos** y en la web. 🔴 **Y está provisional.**
 > **Cualquiera de las tres opciones la rompe.** Y el mandato dice *«caída 10-15 puntos inferior
 > al índice»* — con el índice en −58,4%, un −45,4% deja solo **13 puntos** de ventaja, en el
 > límite del rango.

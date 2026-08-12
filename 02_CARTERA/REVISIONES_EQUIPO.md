@@ -568,7 +568,7 @@ antes de comprar.
 | **Reparto propuesto** | **3% Bitcoin + 1% Ethereum** · Solana fuera |
 | Sobreponderación declarada | **+0,41 pp en Ethereum** frente a su peso de mercado |
 | Caída aplicada en la prueba de estrés | BTC −80% · ETH −94% → aporta **−3,34** |
-| **Caída de diseño de la cartera** | **−43%** — **no cambia** ✅ |
+| **Pérdida estimada en estrés** | **−43%** — no cambia ✅ · 🔴 **PROVISIONAL** — pendiente de auditoría de shocks (D47a) |
 | Argumento central | **Diversificar dentro de cripto no diversifica: amplifica.** Y se declara |
 | Invalidación | Captura estatal de la red · ruptura del límite de 21 M · prohibición coordinada +10 años |
 | ❌ Descartado | **Solana** (113 € no es posición, vehículo 3-10× más caro) · **mineras de bitcoin** (renta variable) · **sistema de puntuación mensual** (choca con nuestro rebalanceo por bandas) |

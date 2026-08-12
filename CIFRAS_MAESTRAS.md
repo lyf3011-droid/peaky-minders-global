@@ -62,13 +62,13 @@ tarjetas estrechas.
 | **Benchmark oficial** | **MSCI ACWI** · secundario: S&P 500 |
 | **Objetivo** | **ACWI +50/+100 pb anualizados** |
 | **Ventaja en caída** | **10-15 puntos** menos que el índice |
-| **Caída de diseño** | **−43%** (cálculo exacto: −43,2%) |
+| **Pérdida estimada en estrés severo** | 🔴 **−43,45% PROVISIONAL** — pendiente de auditoría de shocks (D47a). **No es caída definitiva** |
 | Renta variable total | **76%** (envolvente 75-85%) |
 | Perfil | Agresivo, justificado por horizonte y aportaciones |
 | Exclusiones sectoriales | Ninguna |
 
 ❌ **NUNCA escribir «−42%», «−45%», «+150/+200 pb» ni «10-12 puntos».**
-✅ Son **−43%**, **+50/+100 pb**, **10-15 puntos**.
+🔴 **La cifra de estrés está provisional.** Las otras dos se mantienen: **+50/+100 pb** y **10-15 puntos**.
 
 **El objetivo cambió y hay que saber por qué:** el mandato inicial fijaba +150/+200 pb. Al
 cuantificar el presupuesto de alfa se comprobó que **ninguna estructura compatible con el
@@ -78,11 +78,30 @@ verificable. *Esto no es un fallo: es la prueba de que el método funciona.*
 ---
 
 # 3. LA CARTERA v3.3 — OCHO BLOQUES
+> ## 📌 COMPOSICIÓN VIGENTE — v3.6 · 12 de agosto de 2026
+>
+> | **HOY** | | **MACROBLOQUE** | | **FASE MADURA POSIBLE** | |
+> |---|---|---|---|---|---|
+> | 🚀 Motor | **44%** | Motor + Reserva + Convicción | **objetivo 47%** | 🚀 Motor | **33%** |
+> | 💧 Reserva Operativa | **3%** | *en fechas de revisión* | | 💧 Reserva | **0%** |
+> | 🎯 Convicción | **0%** | | | 🎯 Convicción | **hasta 14%** |
+>
+> **Resto en ambos casos:** Defensivos 12% · Aceleración 12% · Emergentes 7% · Freno 9% ·
+> Activos reales 9% · Asimetría 4%.
+>
+> ### 🔴 **La fase madura NO es obligatoria.** Si solo aparecen oportunidades para desplegar un
+> ### 8%, el Motor puede permanecer en el 39% indefinidamente.
+>
+> **Renta variable: 75% hoy · 78% en fase madura.** Detalle en
+> [`D45_CONVICCION_CONDICIONAL.md`](../02_CARTERA/D45_CONVICCION_CONDICIONAL.md).
+
+
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
-| 🚀 Motor | Índice mundial | **31%** | **Fran · Cristina Rodríguez** |
-| 🎯 Convicción | 7 empresas, método IDC | **14%** | Fran |
+| 🚀 Motor | Índice mundial | **44%** *(33% en fase madura)* | **Fran · Cristina Rodríguez** |
+| 💧 Reserva Operativa | Efectivo remunerado | **3%** | Fran |
+| 🎯 Convicción | hasta 7 empresas, método IDC | **0%** *(hasta 14%)* | Fran |
 | 🌿 Calidad | Salud + consumo defensivo | **12%** | Celia Bravo |
 | 📉 Reversión | Emergentes + Japón | **11%** | Jordi |
 | ⚓ Freno | Renta fija corta + liquidez | **11%** | **Grupo** |
@@ -105,7 +124,7 @@ verificable. *Esto no es un fallo: es la prueba de que el método funciona.*
 
 | # | Cifra | Frase exacta |
 |---|---|---|
-| 1 | **−43%** | *«Nuestra cartera caería a 57.000 € en un 2008»* |
+| 1 | 🔴 **−43,45% PROVISIONAL** | ⚠️ **No decirlo como cifra cerrada.** Pendiente de auditoría de shocks |
 | 2 | **−58,4%** | *«El MSCI ACWI cayó un 58,4% pico-valle entre 2007 y 2009»* |
 | 3 | **15 puntos** | *«Quince puntos menos de caída que el mercado»* |
 | 4 | **18,7%** | *«Llevamos un 18,7% en tecnología sin comprar ni un solo fondo tecnológico»* |
@@ -136,6 +155,22 @@ verificable. *Esto no es un fallo: es la prueba de que el método funciona.*
 # 6. PRUEBA DE ESTRÉS — LA TABLA BUENA
 
 Caída pico-valle aplicada a cada bloque, octubre 2007 → marzo 2009:
+
+> ## ⚠️ CIFRA DE ESTRÉS PROVISIONAL — NO ES DEFINITIVA
+>
+> **Los shocks de esta tabla están pendientes de auditoría (D47a).** Tres proceden de bloques
+> que después cambiaron de composición:
+>
+> | Shock | Problema |
+> |---|---|
+> | **Motor −58,4%** | Es la caída del **ACWI**. El Motor real replica el **MSCI World** |
+> | **Emergentes −59%** | Procede del bloque **EM + Japón**. Hoy es **EM solo** |
+> | **Aceleración −57,1%** | Procede de una versión de **solo small caps**. Hoy son **tres componentes** |
+>
+> **Hasta que esa auditoría se complete, cualquier resultado se denomina «pérdida estimada bajo
+> escenario de estrés severo — provisional».** ❌ **No es max drawdown ni caída definitiva.**
+
+
 
 | Bloque | Peso | Caída aplicada | Aporta |
 |---|---|---|---|
@@ -855,7 +890,7 @@ de **1.000 €**.
 | Aportaciones en 10 años | 120.000 € | 120.000 € |
 | **Capital total** | **130.000 €** | **220.000 €** |
 | **Parte que entra después del día 1** | **92%** | **55%** |
-| Caída de diseño −43,2% aplicada al inicial | 10.000 € → **5.680 €** | 100.000 € → **57.000 €** |
+| Pérdida estimada −43,2% *(provisional)* aplicada al inicial | 10.000 € → **5.680 €** | 100.000 € → **57.000 €** |
 
 > ### 🔴 Afecta al argumento principal del bloque Freno.
 >

@@ -46,7 +46,8 @@
 > se queda en 39% indefinidamente. **El 14% es un límite, no una orden de compra.**
 >
 > **Renta variable: 75% hoy · 78% si el bloque se llena.** Las dos dentro de la banda 75-85%.
-> **Caída de diseño de la cartera de hoy: −43,45%**, 15,0 puntos por debajo del índice.
+> 🔴 **Pérdida estimada en estrés severo — PROVISIONAL: −43,45%**, 15,0 puntos por debajo del
+> índice. **Pendiente de auditoría de shocks (D47a). No es caída definitiva.**
 >
 > ## ✅ ACELERACIÓN CERRADA — 12 de agosto
 >
@@ -281,7 +282,7 @@ décimas de comisión.
 | Horizonte | **10 años**, sin retiradas |
 | Referencia | **MSCI ACWI** |
 | Objetivo | **Batir al índice en 50-100 puntos básicos al año** |
-| **Caída de diseño** | **−43%** → de 100.000 € a **57.000 €** |
+| **Pérdida estimada en estrés** | 🔴 **−43,45% PROVISIONAL** → unos **56.550 €**. Pendiente de auditoría (D47a) |
 | El índice en 2008 | **−58,4%** → 41.600 € |
 | **Ventaja** | **15 puntos menos de caída** |
 | Renta variable total | 76% |

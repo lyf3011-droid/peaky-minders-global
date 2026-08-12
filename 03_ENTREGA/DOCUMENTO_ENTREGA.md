@@ -15,7 +15,7 @@ Documento de entrega · Versión 3.3 · 10 de agosto de 2026
 | **Nombre del grupo** | Peaky Minders |
 | **Nombre de la cartera** | **Peaky Minders Global** |
 | **Integrantes** | Fran González · Cristina Rodríguez · Celia Bravo · Andrea Miguel · Mary Morcillo · Jordi |
-| **Perfil de riesgo** | Agresivo. Caída de diseño: −43% |
+| **Perfil de riesgo** | Agresivo. Pérdida estimada en estrés severo: 🔴 **PROVISIONAL** — pendiente de auditoría de shocks (D47a) |
 | **Horizonte temporal** | 10 años mínimo, sin fecha de salida |
 | **Capital inicial** | 100.000 € |
 | **Aportación periódica** | 1.000 € mensuales |
@@ -131,7 +131,8 @@ objetivo que no se sostiene en el papel no sobrevive a la primera pregunta incó
 
 ## 3.5 La tolerancia a la caída
 
-**Caída de diseño: −43%.** Sobre 100.000 €, la cartera bajaría a unos 57.000 €.
+🔴 **Pérdida estimada en estrés severo — PROVISIONAL.** Sobre 100.000 €, la cartera bajaría a
+unos 56.550 €. **Cifra pendiente de auditoría de shocks (D47a): no es caída definitiva.**
 
 No es un límite duro ni una garantía. Es el resultado de aplicar el comportamiento de
 2008 a cada bloque por separado (§9), y se fijó **antes** de conocer la composición final.

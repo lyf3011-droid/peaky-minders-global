@@ -2,10 +2,15 @@
 
 ## 12 de agosto de 2026
 
-> **Objeto:** calcular la caída de diseño en los dos extremos del bloque Convicción, porque la
-> D45 estableció que **el riesgo no es constante aunque el peso lo sea**.
+> **Objeto:** calcular la caída en los dos extremos del bloque Convicción, porque la D45
+> estableció que **el riesgo no es constante aunque el peso lo sea**.
 >
-> **Alcance:** solo esto. No se toca ninguna otra pieza de la cartera.
+> ## 🟡 ESTADO: **estructura del escenario CERRADA · resultado PROVISIONAL**
+>
+> **La mecánica queda fijada y el método verificado. El resultado NO es definitivo** porque
+> **tres de los nueve shocks proceden de bloques que después cambiaron de composición**
+> *(ver §5)*. Toda cifra de este documento se denomina **«pérdida estimada bajo escenario de
+> estrés severo — provisional»**. ❌ **No es max drawdown ni caída definitiva.**
 
 ---
 
@@ -52,7 +57,17 @@ octubre 2007 → marzo 2009. Ninguna hipótesis se modifica.**
 
 # 2. ESCENARIO A · Convicción 0% / Motor 47%
 
-## 🔴 Es la cartera que se entrega el 17 de agosto
+## ⚠️ ESTE ESCENARIO YA NO ES LA CARTERA VIGENTE
+
+**Se calculó con la arquitectura anterior, en la que el capital no desplegado de Convicción
+permanecía íntegramente en el Motor.** La **v3.6 (D48)** reparte ese 47% entre
+**Motor 44% + Reserva Operativa 3% + Convicción 0%**.
+
+**Con la composición vigente, la pérdida estimada provisional es −43,45%** *(la Reserva es
+efectivo y no cae en el escenario)*. **La estructura del cálculo es la misma; cambia el
+reparto interno del macrobloque.**
+
+🔴 **Ambas cifras siguen siendo provisionales hasta completar la auditoría de shocks del §5.**
 
 ## 2.1 Composición utilizada
 
@@ -87,7 +102,7 @@ octubre 2007 → marzo 2009. Ninguna hipótesis se modifica.**
 
 | | |
 |---|---|
-| **Caída de diseño** | **−45,20%** |
+| **Pérdida estimada — provisional** | **−45,20%** |
 | Sobre 100.000 € | **54.800 €** |
 | El índice ACWI en el mismo periodo | **−58,40%** → 41.600 € |
 | **Ventaja sobre el índice** | **13,2 puntos** |
@@ -208,7 +223,7 @@ punto dentro de un rango, no una caída de diseño.**
 > ### El **−44,3%** es el escenario B: **supone Convicción totalmente desplegada al 14%.**
 > ### El **17 de agosto, Convicción estará al 0%.**
 
-| | Caída de diseño | Ventaja sobre el índice |
+| | Pérdida estimada *(provisional)* | Ventaja sobre el índice |
 |---|---|---|
 | **Escenario A** · la cartera **real** del 17 de agosto | **−45,2%** | **13,2 puntos** |
 | Escenario B · la cartera **objetivo** *(sin verificar)* | −44,3% | 14,1 puntos |
@@ -241,21 +256,24 @@ hipótesis actual les asigna menos caída, y esa hipótesis está pendiente de v
 
 ---
 
-# 5. ⚠️ LO QUE TAMPOCO ES RIGUROSO EN EL ESCENARIO A
+# 5. 🔴 AUDITORÍA DE SHOCKS PENDIENTE — por esto el resultado es provisional
 
 **Honestidad completa: A es calculable, pero dos de sus nueve hipótesis se heredaron de bloques
 que después cambiaron de composición.**
 
 | Hipótesis | Problema | Efecto probable |
 |---|---|---|
+| **Motor −58,4%** | 🔴 **Es la caída del ACWI. El Motor real replica el MSCI World (Developed World), que NO incluye emergentes** | Dirección incierta, y afecta al bloque dominante |
 | **Emergentes −59%** | Era la caída del bloque **EM + Japón**. Ahora se aplica a **EM solo** | 🔴 **Probablemente la subestima**: los emergentes cayeron más que Japón en 2008 |
 | **Aceleración −57,1%** | Era la caída de **small caps**. Ahora el bloque tiene **tres componentes**, uno de ellos Europa de gran capitalización | 🟡 Dirección incierta |
 
-**El bloque dominante —el Motor, 47%— sí está sostenido con el dato del ACWI.**
+> ### 🔴 **Los tres shocks afectan al 63% de la cartera.** Hasta auditarlos, ninguna cifra de
+> ### este documento puede presentarse como definitiva.
 
-> **Conclusión:** el **−45,2% es la mejor estimación disponible con el método vigente**, y las
-> dos hipótesis heredadas deberían revisarse. **Pero se puede publicar hoy**, cosa que el
-> escenario B no.
+> **Conclusión:** la **estructura del cálculo queda cerrada**, pero **el resultado es
+> provisional hasta completar la auditoría de los tres shocks**. Se puede citar como
+> *«pérdida estimada bajo escenario de estrés severo — provisional»*, **nunca como caída de
+> diseño definitiva ni como max drawdown**.
 
 ---
 
@@ -264,8 +282,8 @@ que después cambiaron de composición.**
 | | Escenario A | Escenario B |
 |---|---|---|
 | Composición | Motor 47% / Convicción 0% | Motor 33% / Convicción 14% |
-| ¿Es la cartera del 17 de agosto? | ✅ **Sí** | ❌ No |
-| Caída de diseño | **−45,20%** | *(−44,30% aritmético)* |
+| ¿Es la cartera del 17 de agosto? | ⚠️ **Ya no** — la v3.6 es Motor 44 / Reserva 3 / Convicción 0 | ❌ No |
+| Pérdida estimada — **provisional** | **−45,20%** | *(−44,30% aritmético)* |
 | Sobre 100.000 € | **54.800 €** | *(55.695 €)* |
 | Ventaja sobre el índice | **13,2 puntos** | *(14,1 puntos)* |
 | **¿Publicable?** | ✅ **Sí, con la salvedad del §5** | 🔴 **NO. Pendiente** |

@@ -1,6 +1,24 @@
 # 🏛️ ARQUITECTURA DE LA CARTERA — v1 DEFINITIVA
 
 ## Peaky Minders Global · 11 de agosto de 2026
+> ## 📌 COMPOSICIÓN VIGENTE — v3.6 · 12 de agosto de 2026
+>
+> | **HOY** | | **MACROBLOQUE** | | **FASE MADURA POSIBLE** | |
+> |---|---|---|---|---|---|
+> | 🚀 Motor | **44%** | Motor + Reserva + Convicción | **objetivo 47%** | 🚀 Motor | **33%** |
+> | 💧 Reserva Operativa | **3%** | *en fechas de revisión* | | 💧 Reserva | **0%** |
+> | 🎯 Convicción | **0%** | | | 🎯 Convicción | **hasta 14%** |
+>
+> **Resto en ambos casos:** Defensivos 12% · Aceleración 12% · Emergentes 7% · Freno 9% ·
+> Activos reales 9% · Asimetría 4%.
+>
+> ### 🔴 **La fase madura NO es obligatoria.** Si solo aparecen oportunidades para desplegar un
+> ### 8%, el Motor puede permanecer en el 39% indefinidamente.
+>
+> **Renta variable: 75% hoy · 78% en fase madura.** Detalle en
+> [`D45_CONVICCION_CONDICIONAL.md`](../02_CARTERA/D45_CONVICCION_CONDICIONAL.md).
+
+
 
 > **Este documento explica por qué la cartera tiene la forma que tiene.**
 > No qué compramos, sino **por qué el conjunto se sostiene**.
@@ -34,9 +52,9 @@ mismo, uno sobra.
 
 | Nivel | Bloques | Peso | Habilidad exigida |
 |---|---|---|---|
-| **1 · NÚCLEO** | Motor | **31%** | **Ninguna.** Solo hay que poseer el mercado |
+| **1 · NÚCLEO** | Motor | **44%** *(33% en fase madura)* | **Ninguna.** Solo hay que poseer el mercado |
 | **2 · INCLINACIONES** | Defensivos · Emergentes · Aceleración | **31%** | **Evidencia académica.** No hay que predecir nada |
-| **3 · SELECCIÓN** | Convicción | **14%** | **Habilidad real.** Es la fuente menos fiable |
+| **3 · SELECCIÓN** | Convicción + Reserva | **3%** *(hasta 14%+3%)* | **Habilidad real.** Es la fuente menos fiable |
 | **4 · CONTRAPESOS** | Freno · Activos reales · Asimetría | **24%** | **Ninguna. Solo disciplina** |
 
 ## 1.1 Por qué el Motor es el Motor
@@ -86,8 +104,9 @@ compras.** Juzgarlos por su rentabilidad es no haber entendido para qué están.
 
 | | Peso |
 |---|---|
-| Motor | 31% |
-| Convicción | 14% |
+| Motor | **44%** |
+| Reserva Operativa | **3%** |
+| Convicción | **0%** *(hasta 14%)* |
 | Defensivos | 12% |
 | Emergentes | 7% |
 | Aceleración | 12% |

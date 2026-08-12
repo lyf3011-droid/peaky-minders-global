@@ -68,7 +68,7 @@ si un dato no está disponible o no puedes verificarlo, lo dices explícitamente
 | Moneda base | EUR (se admiten activos en USD, con conversión indicada) |
 | Benchmark | MSCI ACWI (secundario: S&P 500) |
 | Objetivo | ACWI +50/+100 pb anualizados, con caída 10-15 puntos inferior |
-| Caída de diseño | −43% |
+| Pérdida estimada en estrés | 🔴 **PROVISIONAL** — pendiente de auditoría de shocks (D47a) |
 | Freno (renta fija corta + liquidez) | 11% (banda 5-13%) |
 | Perfil | Agresivo, justificado por horizonte y aportaciones |
 | Cartera vigente | v3.2 — ver 02_CARTERA/CARTERA_DEFINITIVA.md |
