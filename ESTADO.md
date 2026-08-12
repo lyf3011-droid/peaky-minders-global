@@ -1,6 +1,6 @@
 # ESTADO DEL PROYECTO — Peaky Minders Global
 
-**Última actualización: 10 de agosto de 2026**
+**Última actualización: 12 de agosto de 2026**
 Entrega: **17 de agosto** · Presentación: 18 de agosto · Portavoz: Fran · Equipo: 6
 
 > # 👉 ¿SOLO QUIERES SABER DÓNDE ESTAMOS? → [CARTERA_HOY.md](CARTERA_HOY.md)
@@ -15,8 +15,9 @@ Entrega: **17 de agosto** · Presentación: 18 de agosto · Portavoz: Fran · Eq
 > —o de cualquier otro— no coincide con `CIFRAS_MAESTRAS.md`, **el que está mal es el otro
 > archivo**. Ninguna cifra se cambia en ningún sitio sin cambiarla ANTES ahí.
 >
-> Lo esencial en cuatro números: **−43%** de caída de diseño (100.000 € → 57.000 €) ·
-> **−58,4%** cayó el ACWI · **15 puntos** menos que el mercado · **18,7%** en tecnología.
+> Lo esencial en cuatro números: **−43,45%** de caída de diseño de la cartera inicial
+> (100.000 € → 56.552 €) · **−58,4%** cayó el ACWI · **15,0 puntos** menos que el mercado ·
+> **11,9%** en tecnología *(medido en el X-Ray, no estimado)*.
 
 > ## 📍 CÓMO FUNCIONA ESTE ARCHIVO
 >
@@ -77,7 +78,7 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 | D2 | **Benchmark oficial: MSCI ACWI.** Secundario: S&P 500 | 9 ago | [CARTERA §2](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D3 | **Objetivo: ACWI +50/+100 pb** con caída 10-15 puntos inferior al índice | 9 ago | [CARTERA §2](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D4 | Caída de diseño: **−43%** (no es límite duro ni garantía) | 9 ago | [CARTERA §8](02_CARTERA/CARTERA_DEFINITIVA.md) |
-| D5 | Renta variable total 76% (envolvente 75-85%) | 9 ago | [CARTERA §12](02_CARTERA/CARTERA_DEFINITIVA.md) |
+| D5 | **Renta variable: objetivo 76%, banda operativa 75-85% — evaluada en las FECHAS PERIÓDICAS DE REVISIÓN, no de forma continua.** Las desviaciones debidas exclusivamente al movimiento de mercado **no obligan a operar de inmediato** *(precisado el 12-ago por D48)* | 9 ago · **rev. 12 ago** | [CARTERA §12](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D6 | Decisiones por mayoría simple (4/6); vender exige +72 h | 8 ago | [CARTERA §10](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D7 | Sin exclusiones sectoriales en este vehículo (salud entra) | 8 ago | [CARTERA §6](02_CARTERA/CARTERA_DEFINITIVA.md) |
 | D8 | Cartera organizada **por función**, no por activos ni sectores | 8 ago | [CARTERA §6](02_CARTERA/CARTERA_DEFINITIVA.md) |
@@ -119,7 +120,14 @@ Decisiones cerradas. **No se re-discuten** salvo argumento nuevo.
 | D44 | 📏 **PRINCIPIO DE MÉTODO: «la cartera no se adapta al relato; el relato se adapta a la cartera».** Un número titular que aparece en varios documentos **no es motivo para no cambiar una decisión**. Si la cartera cambia, se cambian los documentos | 12 ago | §3 de este archivo |
 | D45 | ✅ **CONVICCIÓN CONDICIONAL — arquitectura A+.** *(decisión metodológica principal · documento propio)*<br>**«El 14% es un límite de riesgo, no una orden de compra.»** Convicción es un **presupuesto máximo** de selección activa, no una obligación de invertir. Mientras no está desplegado, **ese capital permanece en el Motor**, nunca en el monetario. **Motor + Convicción = 47% constante.** El Freno conserva su función independiente al 9%.<br>**Financiación:** aportaciones nuevas como vía ordinaria; **venta del Motor solo excepcional**, porque cristaliza plusvalías y el capital pasa de un fondo traspasable a acciones no traspasables.<br>**Dos umbrales:** `precio ≤ IDC` habilita la compra ordinaria · `precio ≤ IDC × 0,85` habilita **estudiar** la venta de Motor. **El descuento extra no compra la acción: compra el derecho a financiarla por la vía cara**, y está calibrado contra el coste fiscal.<br>**TARGET vs ACTUAL:** con Convicción al 0%, la cartera realmente desplegada tiene **Motor 47%**. Ambas fotografías se publican siempre, con el indicador **«Convicción desplegada: X / 14%»**.<br>**Benchmark del bloque: el Motor.** Y queda escrito que **puede fracasar**: si a diez años no lo supera tras costes y fiscalidad, la conclusión será que ese capital debió estar indexado, y no se ocultará | 12 ago | [**D45 completa**](02_CARTERA/D45_CONVICCION_CONDICIONAL.md) |
 | D46 | 📏 **PRINCIPIO: «El 14% es un límite de riesgo, no una orden de compra.»** Ningún bloque discrecional obliga a invertir por calendario ni por disponer de capital | 12 ago | [D45 §7](02_CARTERA/D45_CONVICCION_CONDICIONAL.md) |
-| D47 | 🔴 **ABIERTOS por la D45 — dos cálculos pendientes antes del 17:** **(a)** prueba de estrés en los dos extremos *(Convicción 0% / Motor 47%, y Convicción 14% / Motor 33%)*, para expresar la caída de diseño como **rango** y no como cifra única; **(b)** **banda de rebalanceo del bloque**, porque si Convicción se revaloriza puede superar el 14% sin comprar nada y el límite obligaría a vender **tributando** | 12 ago | [D45 §3.1 y §6](02_CARTERA/D45_CONVICCION_CONDICIONAL.md) |
+| D47a | ✅ **ESTRÉS EN LOS DOS EXTREMOS — CALCULADO.** Método verificado reproduciendo el −43,17% de la tabla original. **Cartera inicial (44/3/0): −43,45%**, 15,0 puntos por debajo del índice. **Escenario maduro NO publicable**: el −52% de Convicción es un supuesto sin fuente y **Meta y Visa no tienen caída pico-valle 2007-2009** | 12 ago | [D47a](02_CARTERA/D47a_ESTRES_DOS_EXTREMOS.md) |
+| D47b | ⏳ **ABIERTO — banda de rebalanceo de Convicción por revalorización.** Filosofía acordada: *«revisión periódica, uso prioritario de nuevas aportaciones para corregir desviaciones y ausencia de ventas por pequeñas desviaciones de peso»*. **La banda concreta se decide en D47b** | 12 ago | — |
+| D48 | ✅ **MACROBLOQUE DEL 47% — arquitectura definitiva de Convicción.** **«Motor + Reserva Operativa + Convicción constituye un macrobloque estratégico del 47% de la cartera»**, entendido como **objetivo de asignación en las fechas de revisión**, no como identidad matemática continua. Dentro: **Motor** = componente indexado · **Reserva Operativa** ≤3% · **Convicción** ≤14%.<br>**Fases:** inicio **44 / 3 / 0** · parcial 38 / 3 / 6 · maduro **33 / 0 / 14**. 🔴 **La fase madura NO es obligatoria**: si solo hay oportunidades para un 8%, el Motor puede quedarse en 39% indefinidamente.<br>**Financiación: solo dos fuentes** — la Reserva Operativa y las nuevas aportaciones. **Se derogan las ventas extraordinarias del Motor, el doble umbral fiscal y la figura de «oportunidad excepcional»** | 12 ago | [**D45 §2.2**](02_CARTERA/D45_CONVICCION_CONDICIONAL.md) |
+| D49 | 🎯 **REGLA DE COMPRA DE CONVICCIÓN — dos tramos.** **Hasta 7 empresas**, máximo **2% por empresa**, en **dos tramos de 1%**: <br>**Tramo 1** — `precio ≤ IDC` + tesis intacta. **Tramo 2** — `precio ≤ 0,90 × IDC` + **nueva validación explícita de la tesis**. **Después del tramo 2 no se compra más en esa empresa aunque siga cayendo.**<br>El 2% es límite de **capital asignado mediante compras**, no obligación de vender si sube. **Una caída de precio no habilita ninguna compra si la tesis se ha deteriorado** *(sustituye el máximo del 3% de D11/D32)* | 12 ago | [D45 §3.3 y §4.2](02_CARTERA/D45_CONVICCION_CONDICIONAL.md) |
+| D50 | 💧 **RESERVA OPERATIVA — excepción explícita a D45 §4.4.** *«Puede mantenerse hasta un 3% de la cartera como Reserva Operativa de Convicción, líquida y remunerada, exclusivamente para permitir la ejecución inmediata de oportunidades previamente analizadas.»* **No forma parte del Freno** y **no constituye una apuesta sobre la dirección del mercado**. ⚠️ El efectivo puede repartirse entre bancos y **fondos monetarios (QMMF)**: **la parte en QMMF no es un depósito bancario garantizado**. Tipo **variable**, se usa el verificado en la cuenta | 12 ago | [D45 §4.4](02_CARTERA/D45_CONVICCION_CONDICIONAL.md) |
+| D51 | 📉 **EL TRIGGER NUNCA ES EL ÍNDICE.** No se formula como *«el S&P caerá»* ni *«S&P cae X% → comprar»*. Se formula como: *«las caídas significativas forman parte históricamente de la renta variable; el protocolo no intenta predecir cuándo ocurrirán, sino establecer por adelantado cómo actuar si una caída general o específica lleva a una compañía previamente estudiada hasta su IDC»*. **El trigger es siempre `empresa ≤ IDC + tesis intacta`** | 12 ago | [D45 §2.4](02_CARTERA/D45_CONVICCION_CONDICIONAL.md) |
+| D52 | 🔬 **EL X-RAY QUEDA COMO CONTROL EX POST DE CONCENTRACIÓN.** Aunque la compra directa máxima sea del 2%, se usa para conocer la **exposición económica total** a cada compañía sumando **posición directa + exposición indirecta vía fondos** | 12 ago | [XRAY_V1](02_CARTERA/XRAY_V1.md) |
+| D53 | ⏳ **ABIERTO — escenarios ilustrativos de implantación a tres años**: sin oportunidades · despliegue lento · despliegue central · despliegue completo. **Son escenarios, no objetivos temporales ni previsiones** | 12 ago | — |
 
 ---
 

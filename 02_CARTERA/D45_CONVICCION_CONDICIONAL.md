@@ -50,16 +50,38 @@ Y aparcar ese 14% en efectivo esperando el precio tiene un coste medible:
 **La decisión de dónde espera ese capital vale más que casi cualquier otra decisión de
 producto del trabajo.**
 
-## 2.2 La solución: vasos comunicantes dentro de la renta variable
+## 2.2 La solución: el MACROBLOQUE del 47%
 
-> ## **Motor + Convicción = 47% siempre.**
+> ## **Motor + Reserva Operativa + Convicción constituye un macrobloque estratégico
+> ## del 47% de la cartera.**
 
-| Convicción desplegada | Motor | Total |
+⚠️ **Se entiende como objetivo de asignación en las fechas de revisión y rebalanceo, NO como
+una identidad matemática que deba mantenerse continuamente mientras se mueven los precios.**
+
+| Componente | Papel | Límite |
 |---|---|---|
-| **0%** | **47%** | 47% |
-| 5% | 42% | 47% |
-| 10% | 37% | 47% |
-| **14%** *(máximo)* | **33%** | 47% |
+| 🚀 **Motor** | Componente **indexado** | El resto del macrobloque |
+| 💧 **Reserva Operativa** | Efectivo remunerado para ejecutar sin esperar | **hasta 3%** |
+| 🎯 **Convicción** | Selección activa | **hasta 14%** |
+
+| Fase | Motor | Reserva | Convicción | Macrobloque |
+|---|---|---|---|---|
+| **Inicio** | **44%** | **3%** | 0% | **47%** |
+| Parcial | 38% | 3% | 6% | 47% |
+| **Maduro** | **33%** | 0% | **14%** | **47%** |
+
+> ### 🔴 **La fase madura NO es obligatoria.**
+> Si solo aparecen oportunidades suficientes para desplegar un 8%, **el Motor puede permanecer
+> en el 39% indefinidamente**. La cartera «madura» puede no existir jamás, y eso no es un
+> fallo: es la consecuencia de que el 14% sea un límite y no una orden.
+
+### La formulación correcta — y no es un matiz
+
+**El Motor no es «33% o 44%». No es un residuo.**
+
+> *«El 47% de la cartera está destinado a renta variable global de gran capitalización. La
+> pregunta es cuánta se compra indexada y cuánta seleccionada. Empezamos con el 100%
+> indexada, y solo se convierte en selección cuando una compañía alcanza nuestro precio.»*
 
 **Convicción deja de competir con el Freno.** No se dice *«tengo un 14% en efectivo esperando
 comprar acciones»*, se dice:
@@ -133,8 +155,15 @@ ESCENARIO B · Convicción 14%  → Motor 33%  → caída  Y
 > selección activa. No damos una cifra única porque la cartera no tiene una sola composición:
 > tiene un rango.»*
 
-⚠️ **`[PENDIENTE DE CALCULAR]`** — los dos escenarios no están medidos todavía. Hoy solo
-tenemos el **−44,3%** de la cartera objetivo.
+✅ **CALCULADO el 12-ago en `D47a_ESTRES_DOS_EXTREMOS.md`.** Con la arquitectura definitiva:
+
+| Escenario | Composición | Caída | Ventaja sobre el índice |
+|---|---|---|---|
+| **Inicial** — la cartera que se entrega | Motor 44 / Reserva 3 / Convicción 0 | **−43,45%** | **15,0 puntos** |
+| Maduro — si el bloque se llena | Motor 33 / Reserva 0 / Convicción 14 | *(−44,30%)* | *(14,1 puntos)* |
+
+🔴 **El escenario maduro NO se publica:** depende del **−52%** de Convicción, que es un supuesto
+sin fuente y que **no puede verificarse porque Meta y Visa no tienen caída pico-valle 2007-2009**.
 
 ---
 
@@ -195,25 +224,42 @@ un G%:**
 precio de compra al 15% anual, sin descuentos adicionales**. Entonces, si el precio normal de
 entrada es el IDC, **¿qué es «excepcional»?**
 
-### El arreglo — dos umbrales
+### 🆕 EL ARREGLO DEFINITIVO — dos TRAMOS, no dos vías de financiación
+
+**Sustituye a la versión anterior del doble umbral fiscal, que queda derogada.**
 
 ```
-UMBRAL 1 · precio ≤ IDC
-   → SE COMPRA con la aportación del mes
+TRAMO 1 · 1% del capital
+   precio ≤ IDC  +  tesis intacta
    → Es el precio de compra normal. Sin descuentos extra.
    → La regla fundacional queda intacta.
 
-UMBRAL 2 · precio ≤ IDC × 0,85
-   → SE HABILITA estudiar la venta de Motor para financiar la compra
-   → Requiere además: tesis intacta · límite de posición · coste fiscal aceptable
-     · Convicción total < 14%
+TRAMO 2 · 1% adicional
+   precio ≤ 0,90 × IDC  +  NUEVA validación explícita de la tesis
+   → Completa la posición.
+
+DESPUÉS DEL TRAMO 2 NO SE COMPRA MÁS EN ESA EMPRESA,
+aunque siga cayendo.
 ```
 
-> ### 🔑 **El descuento adicional del 15% no compra la acción. Compra el derecho a financiarla
-> ### por la vía cara.**
+> ### 🔑 **El 10% adicional no compra la acción: compra el derecho a comprar MÁS.**
 
-**Así no se contradice la regla fundacional:** el 15% extra **no es requisito para considerar
-atractiva la empresa** — es el peaje que justifica usar una financiación fiscalmente peor.
+**Así no se contradice la regla fundacional:** el descuento extra **no es requisito para
+considerar atractiva la empresa** — es el requisito para duplicar la posición.
+
+⚠️ **El 2% es un límite de capital asignado mediante compras, no una obligación de vender si
+la posición supera ese porcentaje por revalorización.** Ese problema pertenece a **D47b**.
+
+### 🗑️ Lo que desaparece con esta simplificación
+
+| | |
+|---|---|
+| ❌ | El umbral `IDC × 0,85` para vender Motor |
+| ❌ | El cálculo del coste fiscal efectivo antes de cada operación |
+| ❌ | La pérdida de opcionalidad de traspaso |
+| ❌ | La figura de la «oportunidad excepcional» |
+
+**No hay ventas de Motor para financiar Convicción. El ajuste 2 deja de aplicar.**
 
 ### ⚠️ CORRECCIÓN — el 0,85 es un umbral de política, NO una equivalencia matemática
 
@@ -349,11 +395,19 @@ CH1199067674     4,1     21Shares Bitcoin Core ETP
 
 | Límite | Valor |
 |---|---|
-| Bloque Convicción | **≤ 14%** de la cartera |
-| Por empresa | **≤ 3%** de la cartera |
-| **Peso real por empresa** *(Motor + directa)* | **≤ 4%** |
-| Número de posiciones | **7** de una lista de 10 |
+| Macrobloque Motor + Reserva + Convicción | **47%** *(en fechas de revisión)* |
+| **Reserva Operativa** | **hasta 3%** |
+| Bloque Convicción | **hasta 14%** — **puede no llenarse nunca** |
+| **Por empresa** | **máximo 2%** de capital asignado mediante compras |
+| Tramos por empresa | **2** · 1% + 1% |
+| Número de posiciones | **hasta 7** — no es una cuota que rellenar |
+| **Peso real por empresa** *(Motor + directa)* | ≤ 4% — control **ex post** vía X-Ray |
 | Espera obligatoria antes de vender | **72 horas** |
+
+> ### ⚠️ **«Hasta», no «igual a».**
+> Si solo tres compañías alcanzan su precio, **el bloque se queda en 6% y no se rellena con
+> cuatro mediocres.** Forzar siete para completar el 14% sería exactamente lo contrario de lo
+> que este bloque afirma ser.
 
 ⚠️ **El peso real se recalcula en cada versión de la cartera.** *(D37)*
 
@@ -369,11 +423,34 @@ es válido** y hay que rehacer la valoración.
 
 ## 4.4 Qué pasa cuando no hay nada en precio
 
-> ### La aportación del mes va al **Motor**. Nunca al monetario.
+> ### La aportación del mes va al **Motor**. Nunca al Freno.
 
 **Motivo:** no se cambia el presupuesto de riesgo de la cartera solo porque temporalmente no
 haya oportunidades de selección activa. El Freno conserva su 9%, Convicción conserva su
 capacidad futura, y el patrimonio sigue productivo.
+
+### 🆕 EXCEPCIÓN EXPLÍCITA — la Reserva Operativa
+
+> **«Puede mantenerse hasta un 3% de la cartera como Reserva Operativa de Convicción, líquida
+> y remunerada, exclusivamente para permitir la ejecución inmediata de oportunidades
+> previamente analizadas.»**
+
+| | |
+|---|---|
+| **No forma parte del Freno** | El Freno estabiliza la cartera; la Reserva solo ejecuta compras |
+| **No es una apuesta direccional** | No implica ninguna opinión sobre si el mercado subirá o bajará |
+| **Es transitoria** | Se consume al desplegar Convicción y se repone con aportaciones |
+| **Vive dentro del macrobloque del 47%** | No es un bloque adicional |
+
+**Instrumentación:** efectivo remunerado de disponibilidad inmediata. ⚠️ **Usar el tipo
+realmente verificado en la cuenta**, registrándolo como **variable** y no como rentabilidad
+garantizada a diez años.
+
+⚠️ **Y hay que declarar la estructura de custodia:** el efectivo puede repartirse entre bancos
+asociados y **fondos monetarios (QMMF)**. **La parte en QMMF es una inversión monetaria de bajo
+riesgo, NO un depósito bancario garantizado**, y su liquidez puede tensionarse precisamente en
+episodios de estrés de mercado. **Con una cartera de 220.000 €, una Reserva del 3% son unos
+6.600 €.**
 
 ---
 
@@ -572,4 +649,5 @@ la caída que esperamos en el peor año **no sea un número fijo, sino un rango*
 | Fecha | Acción |
 |---|---|
 | 2026-08-12 | **Creación.** D45 cerrada como **arquitectura A+ / Convicción condicional**. Incorporados los cuatro ajustes detectados en la crítica cruzada: peso ≠ riesgo · coste fiscal y pérdida de opcionalidad · umbral cuantificado del IDC × 0,85 calibrado contra el coste fiscal · separación TARGET / ACTUAL. Registrados los dos principios. Declarado por escrito que Convicción puede fracasar y cómo se medirá. Detectado el riesgo 5 (deriva por revalorización) **sin resolver** |
+| 2026-08-12 | ✅ **ARQUITECTURA DEFINITIVA (D48).** Sustituida la identidad `Motor + Convicción = 47%` por el **macrobloque Motor + Reserva Operativa + Convicción = 47%**, entendido como objetivo en fechas de revisión. Añadida la **Reserva Operativa hasta 3%** como excepción explícita a §4.4. El doble umbral fiscal queda **derogado** y sustituido por **dos tramos de 1%**. Máximo por empresa de 3% a **2%**. «7 empresas» pasa a **«hasta 7»** y «14%» a **«hasta 14%»**, con declaración expresa de que **el bloque puede no llenarse nunca**. El X-Ray queda como **control ex post** de concentración real |
 | 2026-08-12 | ⚠️ **Corregida la formulación fiscal del §3.3.** El `IDC × 0,85` queda como **umbral conservador de política**, no como equivalencia matemática universal del coste fiscal. Añadidas las cinco variables que hacen que el coste real dependa de cada operación, y la regla de que **ninguna venta del Motor se ejecuta sin calcular antes su coste fiscal efectivo** |

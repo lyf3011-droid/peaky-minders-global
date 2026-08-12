@@ -1,6 +1,6 @@
 # 📋 PEAKY MINDERS GLOBAL — ESTADO A DÍA DE HOY
 
-## 12 de agosto de 2026 · Cartera v3.5
+## 12 de agosto de 2026 · Cartera v3.6
 
 > ## 👉 EMPIEZA POR AQUÍ
 >
@@ -15,8 +15,9 @@
 
 | | Bloque | Peso | Responsable | **Vehículo** | ISIN | TER | Estado |
 |---|---|---|---|---|---|---|---|
-| 🚀 | **Motor** | **33%** | Fran · Cristina R. | iShares Developed World **Class S** | `IE000ZYRH0Q7` | **0,06%** | ✅ **CERRADO** |
-| 🎯 | **Convicción** | **14%** | Fran | *Lista de espera · 10 empresas* | — | — | 🟡 **Método cerrado** |
+| 🚀 | **Motor** | **44%** | Fran · Cristina R. | iShares Developed World **Class S** | `IE000ZYRH0Q7` | **0,06%** | ✅ **CERRADO** |
+| 💧 | **Reserva Operativa** | **3%** | Fran | Efectivo remunerado · disponibilidad inmediata | — | — | ✅ **CERRADA 12-ago** |
+| 🎯 | **Convicción** | **0%** | Fran | *hasta 14% · hasta 7 empresas · máx. 2% cada una* | — | — | 🟡 **Protocolo cerrado** |
 | 🌿 | **Defensivos** | **12%** | Celia Bravo | Xtrackers World Consumer Staples | `IE00BM67HN09` | 0,25% | 🟡 **Candidato** |
 | | *· salud* | *6%* | | iShares S&P 500 Health Care | `IE00B43HR379` | 0,15% | 🟡 **Candidato** |
 | 🌍 | **Emergentes** | **7%** | Jordi | iShares Emerging Markets **clase S** | `IE000QAZP7L2` | **0,16%** | 🟡 **Candidato** |
@@ -31,6 +32,22 @@
 | 💥 | **Asimetría** | **4%** | Andrea Miguel | 21Shares Bitcoin Core ETP | `CH1199067674` | **0,10%** | ✅ **CERRADO** |
 | | **TOTAL** | **100%** | | **7 bloques cerrados · 1 sin vehículo** | | **≈0,11%** | |
 
+> ## 🏛️ EL MACROBLOQUE DEL 47% — cerrado el 12 de agosto
+>
+> **Motor + Reserva Operativa + Convicción = 47%**, como objetivo en las fechas de revisión.
+>
+> | Fase | Motor | Reserva | Convicción |
+> |---|---|---|---|
+> | **HOY** | **44%** | **3%** | **0%** |
+> | Parcial | 38% | 3% | 6% |
+> | Maduro | 33% | 0% | 14% |
+>
+> **🔴 La fase madura NO es obligatoria.** Si solo aparecen oportunidades para un 8%, el Motor
+> se queda en 39% indefinidamente. **El 14% es un límite, no una orden de compra.**
+>
+> **Renta variable: 75% hoy · 78% si el bloque se llena.** Las dos dentro de la banda 75-85%.
+> **Caída de diseño de la cartera de hoy: −43,45%**, 15,0 puntos por debajo del índice.
+>
 > ## ✅ ACELERACIÓN CERRADA — 12 de agosto
 >
 > El 4% que dejó Japón fue a Aceleración, que pasa de 8% a **12%**. El tercer componente se
@@ -53,7 +70,7 @@ cambiar ni una sola decisión de inversión: solo por elegir bien la clase de ca
 
 # 2. LO QUE YA ESTÁ CERRADO — con ISIN y comisión
 
-## 🚀 MOTOR · 33%
+## 🚀 MOTOR · 44% hoy · 33% en fase madura
 
 | | |
 |---|---|
@@ -139,10 +156,30 @@ El dato real es **3,06%**. **El supuesto era exacto.**
 | 9 | Visa | V | **278 $** | 359 | −22,6% |
 | 10 | Berkshire Hathaway | BRK.B | **407 $** | 530 | −23,2% |
 
-**Se compran 7 de las 10**, según cuáles lleguen antes a su precio. Máximo 3% por empresa.
-🔴 **DÓNDE ESTÁ ESE DINERO MIENTRAS ESPERA ES UNA DECISIÓN ABIERTA (D45).** Si estuviera
-parado en el monetario, el efectivo real de la cartera sería 9% + 14% = **23%**, y la renta
-variable no sería 78% sino 64%. **La cartera declarada y la real no coincidirían.**
+## ✅ EL PROTOCOLO, CERRADO EL 12 DE AGOSTO
+
+| Regla | Valor |
+|---|---|
+| Empresas | **hasta 7** — no es una cuota que rellenar |
+| Por empresa | **máximo 2%** de capital asignado mediante compras |
+| Bloque | **hasta 14%** — **puede no llenarse nunca** |
+| **Tramo 1** | **1%** cuando `precio ≤ IDC` + tesis intacta |
+| **Tramo 2** | **1%** adicional cuando `precio ≤ 0,90 × IDC` + **nueva validación de la tesis** |
+| Después del tramo 2 | **No se compra más**, aunque siga cayendo |
+
+**Financiación: solo dos fuentes.** La **Reserva Operativa (3%)** y las **nuevas aportaciones**.
+**No se vende Motor.**
+
+> ### 🔴 Una caída de precio **no habilita ninguna compra si la tesis se ha deteriorado.**
+> **Precio bajo + tesis rota = no hay oportunidad.**
+
+### Y el trigger nunca es el índice
+
+> *«Las caídas significativas forman parte históricamente de la renta variable. El protocolo no
+> intenta predecir cuándo ocurrirán: establece por adelantado cómo actuar si una caída general
+> o específica lleva a una compañía previamente estudiada hasta su IDC.»*
+
+**El disparador es siempre `empresa ≤ IDC + tesis intacta`. Nunca `el S&P cae X% → comprar`.**
 
 ## El argumento que sostiene la espera
 
