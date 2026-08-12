@@ -1,5 +1,12 @@
 # 🔒 CIFRAS MAESTRAS — PEAKY MINDERS GLOBAL
 
+> ## 📕 PROTOCOLO OPERATIVO MAESTRO
+>
+> **Las reglas de ejecución consolidadas (flujo mensual, tramos, prioridades, Reserva,
+> benchmark) viven en [`PROTOCOLO_OPERATIVO.md`](02_CARTERA/PROTOCOLO_OPERATIVO.md).**
+> Donde este documento y aquel discrepen, **manda el protocolo**.
+
+
 ## Versión 3.3 · Actualizado el 10 de agosto de 2026
 
 > ## ⚠️ ESTE ARCHIVO MANDA SOBRE TODOS LOS DEMÁS
@@ -179,7 +186,7 @@ Caída pico-valle aplicada a cada bloque, octubre 2007 → marzo 2009:
 | Reversión (EM + Japón) | 11% | −59% | **−6,5** |
 | Aceleración | 8% | −57,1% | **−4,6** |
 | Calidad | 12% | −25% | **−3,0** |
-| Freno | 11% | **+2%** | **+0,2** |
+| Freno | 11% ⚠️ *v3.3* | **+2%** | **+0,2** |
 | Oro | 7% | **+5%** | **+0,4** |
 | Cobre / recursos | 2% | −55% | **−1,1** |
 | Bitcoin | 4% | −80%¹ | **−3,2** |

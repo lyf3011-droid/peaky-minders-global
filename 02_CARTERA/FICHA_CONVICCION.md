@@ -1,5 +1,12 @@
 # FICHA DE BLOQUE — 🎯 CONVICCIÓN
 
+> ## 📕 PROTOCOLO OPERATIVO MAESTRO
+>
+> **Las reglas de ejecución consolidadas (flujo mensual, tramos, prioridades, Reserva,
+> benchmark) viven en [`PROTOCOLO_OPERATIVO.md`](PROTOCOLO_OPERATIVO.md).**
+> Donde este documento y aquel discrepen, **manda el protocolo**.
+
+
 **Peso: 14% · 14.000 € · Responsable: Fran · 10 de agosto de 2026**
 
 > **El bloque que sostiene el alfa de toda la cartera.** Sin él, la cartera iguala al

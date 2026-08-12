@@ -1,5 +1,12 @@
 # 📋 PEAKY MINDERS GLOBAL — ESTADO A DÍA DE HOY
 
+> ## 📕 PROTOCOLO OPERATIVO MAESTRO
+>
+> **Las reglas de ejecución consolidadas (flujo mensual, tramos, prioridades, Reserva,
+> benchmark) viven en [`PROTOCOLO_OPERATIVO.md`](02_CARTERA/PROTOCOLO_OPERATIVO.md).**
+> Donde este documento y aquel discrepen, **manda el protocolo**.
+
+
 ## 12 de agosto de 2026 · Cartera v3.6
 
 > ## 👉 EMPIEZA POR AQUÍ
@@ -289,6 +296,8 @@ décimas de comisión.
 | Decisión de grupo | Mayoría simple **4 de 6** · vender exige **+72 h** |
 
 ## Coste de la cartera — lo que llevamos medido
+
+⚠️ **TABLA CON LA COMPOSICIÓN v3.3.** Los pesos y la nomenclatura de las filas *(Reversión, Calidad, Protección)* son de una versión anterior de la cartera. **La composición vigente es la v3.6** — Motor 44 / Reserva 3 / Convicción 0 / Defensivos 12 / Aceleración 12 / Emergentes 7 / Freno 9 / Activos reales 9 / Asimetría 4. **No se recalcula aquí**: pertenece a la auditoría pendiente de D47a y al nuevo X-Ray v3.6.
 
 | Bloque | Peso | Coste |
 |---|---|---|

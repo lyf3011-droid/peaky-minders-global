@@ -110,14 +110,14 @@ compras.** Juzgarlos por su rentabilidad es no haber entendido para qué están.
 | Defensivos | 12% |
 | Emergentes | 7% |
 | Aceleración | 12% |
-| **RENTA VARIABLE TOTAL** | **76%** |
-| Freno | 11% |
+| **RENTA VARIABLE TOTAL** | **75%** *(objetivo D5: 76%, banda 75-85%)* |
+| Freno | 9% |
 | Activos reales | 9% |
 | Asimetría | 4% |
-| **NO RENTA VARIABLE** | **24%** |
+| **NO RENTA VARIABLE** | **25%** |
 
 > ## **Cinco de los ocho bloques son renta variable.**
-> ### El riesgo de esta cartera no lo definen los ocho nombres: lo define ese **76%**.
+> ### El riesgo de esta cartera no lo definen los ocho nombres: lo define ese **75%**.
 
 **Cuatro de esos cinco bloques no son alternativas al Motor: son inclinaciones sobre él.**
 Cambian el perfil de la renta variable —más defensiva, más geográficamente amplia, más
@@ -135,7 +135,7 @@ por qué merece el capital.
 
 ---
 
-## 🚀 1 · MOTOR — 31%
+## 🚀 1 · MOTOR — **44%** *(33% en fase madura)*
 
 | | |
 |---|---|
@@ -153,12 +153,12 @@ Es un índice ponderado por capitalización: **cuanto más sube algo, más peso 
 **⚠️ Dónde falla:** en una década perdida de la bolsa estadounidense, este bloque no protege.
 Y **no incluye emergentes** — por eso existe el bloque 4.
 
-**Por qué merece el 31%:** porque es la parte de la cartera donde la evidencia dice que no
+**Por qué merece el 44%:** porque es la parte de la cartera donde la evidencia dice que no
 debemos intentar ser listos. **Y es coherente que el bloque más grande sea el más barato.**
 
 ---
 
-## 🎯 2 · CONVICCIÓN — 14%
+## 🎯 2 · CONVICCIÓN — **0% hoy** *(techo del 14%)*
 
 | | |
 |---|---|

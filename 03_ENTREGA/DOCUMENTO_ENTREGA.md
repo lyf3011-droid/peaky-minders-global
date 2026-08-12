@@ -187,6 +187,9 @@ picaporte de una casa sin cimientos.
 
 No todos los bloques tienen que batir al mercado. **Si todos deben, ninguno responde.**
 
+
+⚠️ **TABLA CON LA COMPOSICIÓN v3.3.** Los pesos y la nomenclatura de las filas *(Reversión, Calidad, Protección)* son de una versión anterior de la cartera. **La composición vigente es la v3.6** — Motor 44 / Reserva 3 / Convicción 0 / Defensivos 12 / Aceleración 12 / Emergentes 7 / Freno 9 / Activos reales 9 / Asimetría 4. **No se recalcula aquí**: pertenece a la auditoría pendiente de D47a y al nuevo X-Ray v3.6.
+
 | Capa | Bloques | Peso | Responsabilidad |
 |---|---|---|---|
 | **Núcleo / beta** | Motor | 31% | Capturar el mercado global. **No produce alfa** |
@@ -782,7 +785,7 @@ No estimamos la caída: la calculamos aplicando a cada bloque su comportamiento 
 | Reversión (EM + Japón) | 11% | −59%¹ | −6,5 |
 | Aceleración | 8% | −57,1% | −4,6 |
 | Calidad | 12% | −25% | −3,0 |
-| Freno | 11% | **+2%** | **+0,2** |
+| Freno | 11% ⚠️ *v3.3* | **+2%** | **+0,2** |
 | Oro | 7% | **+5%** | **+0,4** |
 | Cobre / recursos | 2% | −55% | −1,1 |
 | Bitcoin | 4% | −80%² | −3,2 |

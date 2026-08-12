@@ -1,5 +1,12 @@
 # 🎯 CONVICCIÓN — LA LISTA DE ESPERA CON PRECIOS DE DISPARO
 
+> ## 📕 PROTOCOLO OPERATIVO MAESTRO
+>
+> **Las reglas de ejecución consolidadas (flujo mensual, tramos, prioridades, Reserva,
+> benchmark) viven en [`PROTOCOLO_OPERATIVO.md`](PROTOCOLO_OPERATIVO.md).**
+> Donde este documento y aquel discrepen, **manda el protocolo**.
+
+
 **10 de agosto de 2026 · Bloque 14% · 14.000 € · Responsable: Fran**
 
 > ## LA TESIS EN UNA FRASE

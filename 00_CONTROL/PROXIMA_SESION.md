@@ -1,5 +1,12 @@
 # 🔜 PRÓXIMA SESIÓN — punto de partida
 
+> ## 📕 PROTOCOLO OPERATIVO MAESTRO
+>
+> **Las reglas de ejecución consolidadas (flujo mensual, tramos, prioridades, Reserva,
+> benchmark) viven en [`PROTOCOLO_OPERATIVO.md`](../02_CARTERA/PROTOCOLO_OPERATIVO.md).**
+> Donde este documento y aquel discrepen, **manda el protocolo**.
+
+
 ## Cerrado el 11 de agosto de 2026 · Entrega el 17 · Presentación el 18
 > ## 📌 COMPOSICIÓN VIGENTE — v3.6 · 12 de agosto de 2026
 >

@@ -226,15 +226,22 @@ entrada es el IDC, **¿qué es «excepcional»?**
 
 ### 🆕 EL ARREGLO DEFINITIVO — dos TRAMOS, no dos vías de financiación
 
+> 📌 **El protocolo operativo consolidado de esta regla vive en
+> [`PROTOCOLO_OPERATIVO.md`](PROTOCOLO_OPERATIVO.md) §5.** Este documento conserva el
+> razonamiento que llevó a ella.
+
 **Sustituye a la versión anterior del doble umbral fiscal, que queda derogada.**
 
 ```
-TRAMO 1 · 1% del capital
+TRAMO 1 · hasta el 1% del NAV
+   (NAV = valor total de la cartera medido
+    INMEDIATAMENTE ANTES de ejecutar — D57)
    precio ≤ IDC  +  tesis intacta
    → Es el precio de compra normal. Sin descuentos extra.
    → La regla fundacional queda intacta.
 
-TRAMO 2 · 1% adicional
+TRAMO 2 · hasta otro 1% del NAV vigente en ese momento
+   (sin superar el ~2% del NAV en posición directa)
    precio ≤ 0,90 × IDC  +  NUEVA validación explícita de la tesis
    → Completa la posición.
 

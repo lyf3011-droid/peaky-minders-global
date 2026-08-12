@@ -1,5 +1,12 @@
 # LA CARTERA — Composición definitiva v3.3 · Opción B
 
+> ## 📕 PROTOCOLO OPERATIVO MAESTRO
+>
+> **Las reglas de ejecución consolidadas (flujo mensual, tramos, prioridades, Reserva,
+> benchmark) viven en [`PROTOCOLO_OPERATIVO.md`](PROTOCOLO_OPERATIVO.md).**
+> Donde este documento y aquel discrepen, **manda el protocolo**.
+
+
 **Versión 3.3 · 10 de agosto de 2026** *(la opción B se aprobó el 8 de agosto de 2026)*
 Peaky Minders · Cartera Permanente · Academia de Inversión
 
@@ -417,6 +424,9 @@ siendo válido.
 **Por qué no hay bloque tecnológico.** El look-through reveló que la cartera ya lleva
 **18,7% en tecnología** sin comprarla como bloque:
 
+
+⚠️ **TABLA CON LA COMPOSICIÓN v3.3.** Los pesos y la nomenclatura de las filas *(Reversión, Calidad, Protección)* son de una versión anterior de la cartera. **La composición vigente es la v3.6** — Motor 44 / Reserva 3 / Convicción 0 / Defensivos 12 / Aceleración 12 / Emergentes 7 / Freno 9 / Activos reales 9 / Asimetría 4. **No se recalcula aquí**: pertenece a la auditoría pendiente de D47a y al nuevo X-Ray v3.6.
+
 | Vía de entrada | Cálculo | Peso |
 |---|---|---|
 | Motor | 31% × 30,28% (peso tecnológico del ACWI) | **9,4%** |
@@ -503,6 +513,8 @@ Weather se diseñó durante cuarenta años de tipos a la baja — ese viento ya 
 ## 8. RIESGO — ESCENARIO 2008
 
 Aplicando a cada bloque su caída **pico-valle** entre octubre de 2007 y marzo de 2009:
+
+⚠️ **TABLA CON LA COMPOSICIÓN v3.3.** Los pesos y la nomenclatura de las filas *(Reversión, Calidad, Protección)* son de una versión anterior de la cartera. **La composición vigente es la v3.6** — Motor 44 / Reserva 3 / Convicción 0 / Defensivos 12 / Aceleración 12 / Emergentes 7 / Freno 9 / Activos reales 9 / Asimetría 4. **No se recalcula aquí**: pertenece a la auditoría pendiente de D47a y al nuevo X-Ray v3.6.
 
 | Bloque | Peso | Caída aplicada | Aporta |
 |---|---|---|---|
