@@ -25,22 +25,23 @@
 | | *· bonos* | *4%* | | iShares Global Aggregate 1-5y | `IE0004ZP1ND3` | **0,08%** | ✅ **CERRADO** |
 | 🛡️ | **Protección** | **7%** | Mary Morcillo | **WisdomTree Core Physical Gold** | **`JE00BN2CJ301`** | **0,12%** | ✅ **CERRADO 11-ago** |
 | | *· cobre* | *2%* | Cristina R. | **SIN ISIN VERIFICADO** | — | — | 🔴 **DECISIÓN** |
-| ⚡ | **Aceleración** | **8%** | Fran | Vanguard Global Small-Cap EUR | `IE00B42W4L06` | 0,30% | 🟡 **Revisar** |
-| | *· valor* | | | Xtrackers MSCI World Value | `IE00BL25JM42` | 0,25% | 🟡 **Candidato** |
+| ⚡ | **Aceleración** | **12%** | Fran | Vanguard Global Small-Cap EUR *(4%)* | `IE00B42W4L06` | 0,30% | ✅ **CERRADO** |
+| | *· valor* | *4%* | | Xtrackers MSCI World Value | `IE00BL25JM42` | 0,25% | ✅ **CERRADO** |
+| | *· multifactor* | *4%* | | **iShares STOXX Europe Multifactor** | **`IE00BZ0PKV06`** | **0,25%** | ✅ **CERRADO 12-ago** |
 | 💥 | **Asimetría** | **4%** | Andrea Miguel | 21Shares Bitcoin Core ETP | `CH1199067674` | **0,10%** | ✅ **CERRADO** |
-| 🔴 | **SIN ASIGNAR** | **4%** | **Grupo** | *(el peso que deja Japón)* | — | — | 🔴 **DECIDIR** |
-| | **TOTAL** | **100%** | | | | **≈0,11%** | |
+| | **TOTAL** | **100%** | | **7 bloques cerrados · 1 sin vehículo** | | **≈0,11%** | |
 
-> ## 🔴 LO PRIMERO DE LA PRÓXIMA SESIÓN
+> ## ✅ ACELERACIÓN CERRADA — 12 de agosto
 >
-> **Japón sale de la cartera** *(decidido el 11-ago)*. Motivo: **el Motor ya lleva ~6% de
-> Japón dentro del MSCI World** — tenerlo aparte era comprar dos veces lo mismo.
+> El 4% que dejó Japón fue a Aceleración, que pasa de 8% a **12%**. El tercer componente se
+> eligió con un **experimento controlado**: los ocho vehículos congelados y cada candidato
+> probado en la misma casilla, con **los criterios escritos antes de medir**.
 >
-> **Su 4% está sin asignar.** Tres opciones: todo a emergentes (Reversión 11%), a Aceleración
-> (12%, la lectura preferida) o al Freno (15%).
+> **Ganó el iShares STOXX Europe Multifactor `IE00BZ0PKV06`**: pasó los seis criterios y siete
+> de las nueve métricas. Baja Estados Unidos del 64,12% al 59,70% y la tecnología del 22,12%
+> al 21,20%.
 >
-> **Sin decidir esto no hay pesos, y sin pesos no hay X-Ray.**
-> Detalle completo en `00_CONTROL/PROXIMA_SESION.md`.
+> **Ya solo falta el cobre.** Detalle en `02_CARTERA/XRAY_V1.md §6.6`.
 
 ## 💰 Y el dato que sale de todo esto
 

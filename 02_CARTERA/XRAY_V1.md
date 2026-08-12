@@ -687,7 +687,138 @@ V2-V3 **no afecta a la comparación entre candidatos**.
 
 ---
 
-# 7. LO QUE FALTA PARA LA V2
+## 6.6 🏁 RESULTADO DEL EXPERIMENTO — 12 de agosto de 2026
+
+**Cinco brazos ejecutados. Los ocho vehículos de base, idénticos en todos.**
+
+| | **Control V3** | **A · Europe Small Cap Value** | **B · Europe Multifactor** | C · L&G | D · USA SC Value |
+|---|---|---|---|---|---|
+| ISIN | — | `IE00BSPLC298` | **`IE00BZ0PKV06`** | `IE00B3CNHJ55` | `IE00BSPLC413` |
+| **¿Sale en el X-Ray?** | — | ✅ | ✅ | ❌ **NO** | ❌ **NO** |
+| **Correlación con el Motor** | — | **0,52** | 0,70 | — | — |
+| **EE.UU. sobre acciones** | 64,12% | 59,81% | **59,70%** | — | — |
+| **Tecnología** | 22,12% | **20,91%** | 21,20% | — | — |
+| **Sharpe 3a** | 1,11 | 1,13 | **1,14** | — | — |
+| **Rentabilidad 5a** | 9,82% | 9,81% | **9,88%** | — | — |
+| Rentabilidad 3a | 13,01% | 13,16% | **13,29%** | — | — |
+| Alfa 3a | 2,42 | 2,55 | **2,69** | — | — |
+| Volatilidad 3a | 8,87 | 8,81 | **8,79** | — | — |
+| Ratio de información 3a | 0,05 | 0,09 | **0,13** | — | — |
+| Salud | 17,81% | 16,91% | 17,36% | — | — |
+
+### Contra los criterios registrados
+
+| # | Criterio | Umbral | A | B |
+|---|---|---|---|---|
+| 1 | Correlación con el Motor | < 0,85 | ✅ 0,52 | ✅ 0,70 |
+| 2 | EE.UU. debe bajar de 64,12% | — | ✅ 59,81 | ✅ 59,70 |
+| 3 | Tecnología no debe subir de 22,12% | — | ✅ 20,91 | ✅ 21,20 |
+| 4 | Sharpe 3a ≥ 1,05 | — | ✅ 1,13 | ✅ 1,14 |
+| 5 | Rentabilidad 5a ≥ 9,50% | — | ✅ 9,81 | ✅ 9,88 |
+| 6 | **Sale en el X-Ray** | eliminatorio | ✅ | ✅ |
+
+**Los dos pasan los seis. Se aplica la regla de desempate escrita antes de medir.**
+
+| | Qué aporta | |
+|---|---|---|
+| **A** | tamaño + **valor** | 🔴 **El valor ya está** en la cartera (Xtrackers Value 4%) |
+| **B** | **multifactor** — valor, momentum, calidad y tamaño | ✅ **Atributo nuevo** |
+
+> # 🥇 GANA `IE00BZ0PKV06` — iShares STOXX Europe Equity Multifactor · **0,25%**
+>
+> **Gana dos veces:** por la regla escrita de antemano **y** por siete de las nueve métricas.
+
+### ⚠️ La predicción, evaluada con honestidad
+
+**Se predijo que ganaría el Europe Multifactor: acertado.** Se predijo que el L&G caería por el
+criterio 2 *(EE.UU. 97,5%)*, y **cayó por el criterio 6: Morningstar no lo lee**.
+
+> **Acertado el ganador. Fallado el motivo de los perdedores.** Queda escrito.
+
+### 🔒 Y el criterio 1b elimina por primera vez
+
+**Ni el L&G `IE00B3CNHJ55` ni el SPDR USA Small Cap Value `IE00BSPLC413` aparecen en el
+X-Ray.** Es la primera vez que la regla de auditabilidad descarta candidatos.
+
+**Con esto se cierra la búsqueda de small caps.**
+
+---
+
+# 6-bis. ❌ POR QUÉ NO ENTRA NINGÚN FONDO TEMÁTICO
+
+**Decisión del 12-ago-2026, a petición expresa del portavoz de evaluarlo.**
+
+| # | Motivo | Dato |
+|---|---|---|
+| 1 | **Contradice la tesis del núcleo** | *«No intentamos generar alfa donde hay menos evidencia de que podamos.»* Un temático es una apuesta sectorial **sin prima documentada** |
+| 2 | **Es lo más fácil de atacar** | *«¿Por qué esta megatendencia y no otra? ¿Cómo saben que no está en el precio?»* **No hay respuesta buena** |
+| 3 | **La etiqueta no describe el contenido** | **RobecoSAM Smart Energy: 52,76% tecnología, 0,00% materiales** |
+| 4 | **Ya llevamos la megatendencia dentro** | El X-Ray mide **21,20% de tecnología** sin haber comprado ningún fondo del sector |
+| 5 | **Coste** | Los temáticos van de **1,5% a 2%**. La cartera entera cuesta **0,11%** |
+
+> ## Y el argumento que lo cierra: **el objetivo declarado es 8-10% y estamos en 9,88%.**
+> **Añadir riesgo para buscar más contradice el propio mandato.**
+
+### La frase para la exposición — vale más que el fondo
+
+> *«Evaluamos incorporar un fondo temático de megatendencias. Lo descartamos con tres datos: el
+> look-through ya arroja un 21,2% de tecnología sin haberla comprado; el único temático que
+> analizamos a fondo resultó ser un 52,76% tecnología y 0% materiales pese a llamarse de
+> energía; y el coste habría multiplicado por quince el de la cartera. **No renunciamos a la
+> rentabilidad: renunciamos a pagar por una historia que ya teníamos dentro.**»*
+
+### 🎯 Dónde van las megatendencias en esta cartera
+
+> **En Convicción.** Es el bloque discrecional y revisable. La diferencia es que ahí se compran
+> **empresas concretas a un precio calculado**, no una etiqueta sectorial. **Misma idea, con
+> disciplina de valoración encima.**
+
+---
+
+# 7. ⏳ DECISIÓN ABIERTA — REBAJAR EL FRENO
+
+**Petición del portavoz el 12-ago: subir la renta variable.**
+
+## 7.1 Por qué se puede — el argumento cuantificado
+
+| | |
+|---|---|
+| Aportaciones anuales | **12.000 €** = **12%** de una cartera de 100.000 € |
+| Freno actual | **11%** |
+| **Capacidad de compra al año** | **11% + 12% = 23%** |
+| Lo que Convicción necesita **en diez años** | **14%** |
+
+> ### **Las aportaciones mensuales son la munición principal, no el Freno.**
+> Con un 12% anual de dinero nuevo entrando, **un colchón del 11% es más de lo que la lista de
+> espera puede absorber.**
+
+## 7.2 Las tres opciones, con su coste
+
+*Supuestos: renta variable 8,5% esperado · Freno 3,06% (dato real del AXA a 3 años) ·
+en estrés: RV −55%, Freno 0%.*
+
+| Opción | Freno | RV | **Rentabilidad esperada** | **Caída de diseño** |
+|---|---|---|---|---|
+| **Actual** | 11% | 76% | — | **−43,2%** |
+| **A** | **9%** | 78% | **+0,11%** | **−44,3%** |
+| **B** | **8%** | 79% | **+0,16%** | **−44,9%** |
+| **C** | **7%** | 80% | **+0,22%** | **−45,4%** |
+
+## 7.3 🔴 El aviso que hay que leer antes de decidir
+
+> ### La caída de diseño del **−43%** es cifra titular en **diez documentos** y en la web.
+> **Cualquiera de las tres opciones la rompe.** Y el mandato dice *«caída 10-15 puntos inferior
+> al índice»* — con el índice en −58,4%, un −45,4% deja solo **13 puntos** de ventaja, en el
+> límite del rango.
+
+**Y hay que decidir también a dónde van los puntos liberados:** al Motor, a Aceleración o
+repartidos.
+
+⚠️ **Sin decidir. Requiere voto del grupo (4 de 6)** porque cambia una cifra titular.
+
+---
+
+# 8. LO QUE FALTA
 
 | # | Qué | Estado |
 |---|---|---|
