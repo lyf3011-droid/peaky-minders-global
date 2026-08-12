@@ -576,6 +576,117 @@ Trece fondos, reparto 80/20.
 
 ---
 
+# 6. 🔬 DISEÑO EXPERIMENTAL — cómo se elige el tercer 4%
+
+## 6.1 ⚠️ La corrección metodológica que obliga a este diseño
+
+**La comparación V2 vs V3 está contaminada y hay que decirlo.**
+
+| | V2 *(con Quality)* | V3 *(sin Quality)* |
+|---|---|---|
+| **Renta variable** | **72,18%** | **70,68%** |
+
+Al repartir el 5% de Quality, parte fue al monetario, al oro y al bitcoin — que tienen **0% de
+acciones**. La cartera perdió **1,5 puntos de bolsa**.
+
+> ### 🔴 Parte de esa menor volatilidad **no viene de quitar Quality: viene de tener menos
+> ### renta variable.**
+
+| ✅ Lo que SÍ se puede afirmar | Por qué |
+|---|---|
+| **Quitar Quality no costó rentabilidad** | −0,03 pp a 5 años. Sin confusión posible |
+| **Quality correlaciona 0,96 con el Motor** | Medida directa, no inferencia |
+| **Bajaron tecnología y EE.UU.** | Composición medida |
+
+❌ **Lo que NO se puede afirmar:** *«quitar Quality redujo el riesgo»*.
+
+## 6.2 El diseño: ocho fijos, una casilla variable
+
+**Los ocho vehículos quedan congelados. Cada candidato se prueba en la misma casilla del 5%.**
+
+### BASE B — los ocho, fijos en todas las pruebas
+
+| # | Producto | ISIN | Peso |
+|---|---|---|---|
+| 1 | iShares Emerging Markets Index D | `IE00BYWYCC39` | 8,75 |
+| 2 | Xtrackers World Consumer Staples | `IE00BM67HN09` | 7,50 |
+| 3 | iShares S&P 500 Health Care | `IE00B43HR379` | 7,50 |
+| 4 | 21Shares Bitcoin Core ETP | `CH1199067674` | 5,00 |
+| 5 | WisdomTree Physical Gold | `JE00B1VS3770` | 8,75 |
+| 6 | AXA Trésor Court Terme C | *(por nombre)* | 13,75 |
+| 7 | iShares Developed World Index D | `IE00BD0NCM55` | 38,75 |
+| 8 | SPDR MSCI World Small Cap | `IE00BCBJG560` | 5,00 |
+| | **subtotal** | | **95,00** |
+| **9** | 🔵 **candidato** | | **5,00** |
+
+**Es la Base A (control) multiplicada por 0,95.** Los ocho mantienen su proporción exacta.
+
+> 🎁 **La Base B con Quality en la casilla 9 ES la V2 ya medida.** Un brazo del experimento
+> viene hecho de serie.
+
+### ✅ Y esta vez el sesgo no existe
+
+| Candidato | % en acciones |
+|---|---|
+| Europe Small Cap Value | 99,48% |
+| Europe Multifactor | 99,41% |
+| USA Small Cap Value | 99,96% |
+| L&G Small Quality | 99,93% |
+| *(Quality, ya medido)* | 99,63% |
+
+**Los cinco son prácticamente 100% renta variable.** El problema que contamina la comparación
+V2-V3 **no afecta a la comparación entre candidatos**.
+
+## 6.3 🏅 CRITERIOS REGISTRADOS ANTES DE MEDIR
+
+**Escritos el 12-ago-2026, antes de ejecutar ningún test.**
+
+| # | Criterio | Umbral | Peso |
+|---|---|---|---|
+| **1** | **Correlación con el Motor** | **< 0,85** *(la del small cap actual)*. **Descarte automático si > 0,90** | 🥇 |
+| **2** | **EE.UU. sobre las acciones** | **Debe bajar del 64,12%** | 🥇 |
+| **3** | **Tecnología sobre las acciones** | **No debe subir del 22,12%** | 🥈 |
+| **4** | **Ratio de Sharpe a 3 años** | No debe bajar de **1,05** | 🥈 |
+| **5** | **Rentabilidad a 5 años** | No debe bajar de **9,50%** | 🥉 |
+| **6** | **¿Sale en el X-Ray?** | **Eliminatorio** *(criterio 1b)* | 🔒 |
+
+### Regla de desempate, también escrita antes
+
+> **Si dos candidatos pasan los seis, gana el que aporte el factor que la cartera NO tiene.**
+>
+> Orden de preferencia: **tamaño × calidad** → **multifactor** → **valor** *(ya lo tenemos)*.
+
+### Por qué esto importa
+
+> *«Escribimos los criterios y los umbrales **antes** de medir, para no elegir después el
+> resultado que más nos gustara. El candidato que gane lo hará contra reglas fijadas de
+> antemano.»*
+
+## 6.4 Los cinco brazos
+
+| # | Candidato | ISIN | TER | Estado |
+|---|---|---|---|---|
+| **0** | *(control, sin noveno)* | — | — | ✅ **= V3** |
+| **1** | iShares World Quality | `IE00BP3QZ601` | 0,25% | ✅ **= V2, ya medido.** ❌ Falla el criterio 1 (0,96) |
+| **2** | SPDR MSCI Europe Small Cap Value | `IE00BSPLC298` | 0,30% | ⏳ |
+| **3** | iShares STOXX Europe Equity Multifactor | `IE00BZ0PKV06` | **0,25%** | ⏳ |
+| **4** | L&G Russell 2000 US Small Cap Quality | `IE00B3CNHJ55` | 0,30% | ⏳ |
+| **5** | SPDR MSCI USA Small Cap Value | `IE00BSPLC413` | 0,30% | ⏳ |
+
+## 6.5 Predicción registrada — para poder equivocarnos en público
+
+| Candidato | EE.UU. | Tecnología | Predicción |
+|---|---|---|---|
+| **Europe Multifactor** | **0%** | **8,43%** | 🥇 **Pasa 1, 2 y 3** |
+| Europe Small Cap Value | **0%** | ~3% | 🥈 Pasa 1, 2 y 3, pero **duplica valor** |
+| L&G Small Quality | **97,5%** | 15,06% | ❌ **Falla el criterio 2** |
+| USA Small Cap Value | **98,3%** | 9,07% | ❌ Falla el criterio 2 |
+
+> **Si la predicción se cumple, el L&G queda fuera por una regla escrita antes de medirlo**,
+> no por preferencia. **Y si falla, también es un resultado.**
+
+---
+
 # 7. LO QUE FALTA PARA LA V2
 
 | # | Qué | Estado |
