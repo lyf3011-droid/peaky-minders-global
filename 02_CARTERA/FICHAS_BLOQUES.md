@@ -18,17 +18,18 @@
 
 | Bloque | Peso | Responsable |
 |---|---|---|
-| 🚀 Motor — índice mundial (ACWI) | 31% | Fran · Cristina Rodríguez |
-| 🎯 Convicción — 7 empresas | 14% | Fran |
-| 🌿 Calidad — salud + consumo defensivo | 12% | **Celia Bravo** |
-| 📉 Reversión — emergentes + Japón | 11% | **Jordi** |
-| ⚓ Freno — renta fija corta | 11% | **Grupo** |
-| 🛡️ Protección — oro | 7% | **Mary Morcillo** |
-| ⚡ Aceleración — **Small Cap global** *(un solo componente)* | 8% | Fran |
+| 🚀 Motor — índice mundial *(MSCI World)* | **44%** | Fran · Cristina Rodríguez |
+| 💧 Reserva Operativa — efectivo remunerado | **3%** | Fran |
+| 🎯 Convicción — hasta 7 empresas | **0%** *(techo 14%)* | Fran |
+| 🌿 Defensivos — salud + consumo defensivo | 12% | **Celia Bravo** |
+| ⚡ Aceleración — factores y pequeñas compañías | 12% | Fran |
+| 🌍 Emergentes — mercados emergentes | 7% | **Jordi** |
+| ⚓ Freno — renta fija corta | 9% | **Grupo** |
+| 🥇 Activos reales — oro | 7% | **Mary Morcillo** |
+| 🥇 Activos reales — cobre / recursos | 2% | **Cristina Rodríguez** |
 | 💥 Asimetría — bitcoin | 4% | **Andrea Miguel** |
-| 🛡️ Protección — cobre / recursos | 2% | **Cristina Rodríguez** |
 
-**Fuente:** `CIFRAS_MAESTRAS.md` v3.3 §3 · catálogo de MyInvestor, consultado el
+**Composición v3.6** · protocolo en [`PROTOCOLO_OPERATIVO.md`](PROTOCOLO_OPERATIVO.md) · **Fuente de vehículos:** `CIFRAS_MAESTRAS.md` · catálogo de MyInvestor, consultado el
 10-ago-2026.
 
 ---

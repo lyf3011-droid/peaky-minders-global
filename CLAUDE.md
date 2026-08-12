@@ -95,16 +95,17 @@ riesgo lo alcanzaba. Se reformuló a +50/+100 pb, que sí es alcanzable y verifi
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
-| 🚀 Motor | Índice mundial (ACWI) | 31% | Fran · Cristina Rodríguez |
-| 🎯 Convicción | 7 empresas, método IDC | 14% | Fran |
-| 🌿 Calidad | Salud + consumo defensivo | 12% | Celia Bravo |
-| 📉 Reversión | Emergentes + Japón | 11% | Jordi |
-| ⚓ Freno | Renta fija corta + liquidez | 11% | **Grupo** |
-| 🛡️ Protección | Oro 7% + cobre 2% | 9% | Mary Morcillo · Cristina Rodríguez |
-| ⚡ Aceleración | **Small Cap global · 8%** *(un solo componente)* | 8% | Fran |
+| 🚀 Motor | Índice mundial *(MSCI World)* | **44%** | Fran · Cristina Rodríguez |
+| 💧 Reserva Operativa | Efectivo remunerado para Convicción | **3%** | Fran |
+| 🎯 Convicción | Hasta 7 empresas, método IDC | **0%** *(techo 14%)* | Fran |
+| 🌿 Defensivos | Salud + consumo defensivo | 12% | Celia Bravo |
+| ⚡ Aceleración | Factores y pequeñas compañías | 12% | Fran |
+| 🌍 Emergentes | Mercados emergentes | 7% | Jordi |
+| ⚓ Freno | Renta fija corta + liquidez | 9% | **Grupo** |
+| 🥇 Activos reales | Oro 7% + cobre 2% | 9% | Mary Morcillo · Cristina Rodríguez |
 | 💥 Asimetría | Bitcoin | 4% | Andrea Miguel |
 
-**Fuente:** `CIFRAS_MAESTRAS.md` v3.3 §3 · catálogo de MyInvestor, consultado el 10-ago-2026.
+**Composición v3.6** · protocolo en [`02_CARTERA/PROTOCOLO_OPERATIVO.md`](02_CARTERA/PROTOCOLO_OPERATIVO.md) · **Fuente de vehículos:** `CIFRAS_MAESTRAS.md` · catálogo de MyInvestor, consultado el 10-ago-2026.
 
 🔴 **Pérdida estimada en estrés −43,45%, PROVISIONAL** (ACWI: −58,4% pico-valle 2007-2009) · **Alfa neto estimado +76 pb**
 

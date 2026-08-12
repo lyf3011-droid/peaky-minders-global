@@ -25,13 +25,14 @@
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
-| 🚀 Motor | Índice mundial (ACWI) | 31% | Fran · Cristina Rodríguez |
-| 🎯 Convicción | 7 empresas, método IDC | 14% | Fran |
-| 🌿 Calidad | Salud + consumo defensivo | 12% | Celia Bravo |
-| 📉 Reversión | Emergentes + Japón | 11% | Jordi |
-| ⚓ Freno | Renta fija corta + liquidez | 11% | **Grupo** |
-| 🛡️ Protección | Oro 7% + cobre 2% | 9% | Mary Morcillo · Cristina Rodríguez |
-| ⚡ Aceleración | Multi-Factor 4% + Small Cap Quality 4% | 8% | Fran |
+| 🚀 Motor | Índice mundial *(MSCI World)* | **44%** | Fran · Cristina Rodríguez |
+| 💧 Reserva Operativa | Efectivo remunerado para Convicción | **3%** | Fran |
+| 🎯 Convicción | Hasta 7 empresas, método IDC | **0%** *(techo 14%)* | Fran |
+| 🌿 Defensivos | Salud + consumo defensivo | 12% | Celia Bravo |
+| ⚡ Aceleración | Factores y pequeñas compañías | 12% | Fran |
+| 🌍 Emergentes | Mercados emergentes | 7% | Jordi |
+| ⚓ Freno | Renta fija corta + liquidez | 9% | **Grupo** |
+| 🥇 Activos reales | Oro 7% + cobre 2% | 9% | Mary Morcillo · Cristina Rodríguez |
 | 💥 Asimetría | Bitcoin | 4% | Andrea Miguel |
 
 **Benchmark:** MSCI ACWI · **Objetivo:** +50/+100 pb anualizados con caída 10-15 puntos

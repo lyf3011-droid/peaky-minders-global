@@ -51,16 +51,21 @@ lo encuentre el profesor.
 
 | Función | Peso | Qué hace en una frase |
 |---|---|---|
-| 🚀 **MOTOR** | 31% | Captura el mercado mundial. No se le pide alfa |
-| 🎯 **CONVICCIÓN** | 14% | La palanca del objetivo: siete empresas con método propio |
-| 🌿 **CALIDAD** | 12% | Beneficios que aguantan el ciclo. Sube retorno y baja caída |
-| 📉 **REVERSIÓN** | 11% | Apuesta a que lo barato se pague: emergentes y Japón |
-| ⚓ **FRENO** | 11% | Munición para comprar en las caídas |
-| 🛡️ **PROTECCIÓN** | 9% | Oro como seguro, cobre como activo real |
-| ⚡ **ACELERACIÓN** | 8% | Primas documentadas: Multi-Factor y small caps con calidad |
+| 🚀 **MOTOR** | **44%** | Captura el mercado mundial. No se le pide alfa |
+| 💧 **RESERVA OPERATIVA** | **3%** | Munición inmediata para comprar sin vender nada |
+| 🎯 **CONVICCIÓN** | **0%** *(techo 14%)* | **Un límite de riesgo, no una orden de compra.** Solo entra al precio escrito |
+| 🌿 **DEFENSIVOS** | 12% | Beneficios que aguantan el ciclo. Sube retorno y baja caída |
+| ⚡ **ACELERACIÓN** | 12% | Primas documentadas: factores y pequeñas compañías |
+| 🌍 **EMERGENTES** | 7% | Crecimiento que el índice desarrollado no recoge |
+| ⚓ **FRENO** | 9% | Estabilidad y munición para las caídas |
+| 🥇 **ACTIVOS REALES** | 9% | Oro como seguro, cobre como activo real |
 | 💥 **ASIMETRÍA** | 4% | Poco peso, mucho recorrido posible |
 
-**Ventaja narrativa:** ocho bloques, ocho frases. Unos 35 segundos cada uno dentro de los
+⚠️ **La casilla de Convicción al 0% no es un hueco: es la tesis.** Es el punto que hay
+que explicar despacio — el bloque existe, tiene reglas escritas, y **está vacío porque
+ninguna empresa ha llegado a su precio todavía**.
+
+**Ventaja narrativa:** nueve bloques, nueve frases. Unos 35 segundos cada uno dentro de los
 cinco minutos del acto central. Es una presentación que se sostiene sin leer.
 
 **Y hay dos ausencias que también se explican, y valen tanto como las presencias:**
