@@ -1,5 +1,13 @@
 # 🔬 X-RAY v3.6 — RADIOGRAFÍA DE LA CARTERA VIGENTE
 
+> # 🗄️ DOCUMENTO HISTÓRICO — **NO ES LA REFERENCIA VIGENTE**
+>
+> **El X-Ray vigente es [`XRAY_V4_FINAL.md`](XRAY_V4_FINAL.md)** *(Morningstar, 13-ago-2026,
+> 12 posiciones).* Este documento se conserva **solo como trazabilidad del proceso**: sus
+> pesos, vehículos y métricas corresponden a versiones anteriores de la cartera.
+> ❌ **No citar ninguna de sus cifras como vigente.**
+
+
 ## 13 de agosto de 2026 · **Fuente: catálogo MyInvestor + fichas Morningstar de cada vehículo**
 
 > **Objeto:** fotografía exacta de la cartera que se entrega, no de la fase madura ni de la

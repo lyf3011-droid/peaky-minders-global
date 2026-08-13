@@ -377,7 +377,7 @@ Aparecieron en la búsqueda general, pendientes de análisis:
 |---|---|---|
 | AXA Trésor Court Terme C | FR0000447823 | Euro Money Market |
 | AXA IM Euro Liquidity SRI | FR0000978371 | Euro Money Market |
-| iShares Global Aggregate 1-5 Year bond Index Fund EUR Hedged | IE0004ZP1ND3 | Global Fixed Income |
+| ~~iShares Global Aggregate 1-5 Year bond Index Fund EUR Hedged~~ | ~~IE0004ZP1ND3~~ | 🔄 **SUSTITUIDO por PIMCO GIS Income (D63)** |
 
 ---
 

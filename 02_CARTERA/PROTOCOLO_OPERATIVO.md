@@ -58,17 +58,24 @@ rebalanceo** y hace innecesaria la mayoría de las ventas.
 | 💧 **Reserva Operativa** | **3%** | Efectivo remunerado |
 | 🎯 **Convicción** | **0%** *(techo 14%)* | **Discrecional** |
 | 🌿 Defensivos | 12% | Sistemático |
-| ⚡ Aceleración | 12% | Sistemático |
+| ⚡ Aceleración | 12% | Sistemático + **1 delegado** |
 | 🌍 Emergentes | 7% | Sistemático |
-| ⚓ Freno | 9% | Sistemático |
+| ⚓ Freno | 9% | Sistemático + **1 delegado** |
 | 🥇 Activos reales | 9% | Sistemático |
 | 💥 Asimetría | 4% | Sistemático |
 | | **100%** | |
 
 **Renta variable inicial: ≈75%.**
 
-> ### 🔑 **Convicción es la ÚNICA capa propiamente discrecional de selección fundamental
-> ### individual. Todo el resto de la arquitectura es sistemático y reglado.**
+> ### 🔑 **Convicción es la única capa de SELECCIÓN DIRECTA Y DISCRECIONAL DE ACCIONES.**
+> ### **Determinados módulos pueden utilizar GESTIÓN ACTIVA DELEGADA cuando su función esté**
+> ### **previamente delimitada y justificada** *(D63)*.
+>
+> | Nivel | Quién decide | Dónde |
+> |---|---|---|
+> | **Selección directa discrecional** | **Nosotros**, empresa a empresa, con IDC | 🎯 **Solo Convicción** |
+> | **Gestión activa delegada** | Un gestor externo, con mandato acotado | ⚡ Aceleración *(Robeco)* · ⚓ Freno *(PIMCO)* |
+> | **Réplica sistemática** | Nadie: un índice | El resto |
 >
 > Esa frase es la tesis del trabajo en una línea. **El 97% de la cartera no depende de que
 > acertemos con ninguna empresa.**

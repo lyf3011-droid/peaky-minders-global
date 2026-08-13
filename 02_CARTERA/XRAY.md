@@ -1,5 +1,13 @@
 # 🔬 RADIOGRAFÍA DE LA CARTERA (X-RAY)
 
+> # 🗄️ DOCUMENTO HISTÓRICO — **NO ES LA REFERENCIA VIGENTE**
+>
+> **El X-Ray vigente es [`XRAY_V4_FINAL.md`](XRAY_V4_FINAL.md)** *(Morningstar, 13-ago-2026,
+> 12 posiciones).* Este documento se conserva **solo como trazabilidad del proceso**: sus
+> pesos, vehículos y métricas corresponden a versiones anteriores de la cartera.
+> ❌ **No citar ninguna de sus cifras como vigente.**
+
+
 ## Peaky Minders Global · 11 de agosto de 2026
 
 > **Entregable obligatorio del enunciado.** Qué hay realmente dentro de la cartera una vez se

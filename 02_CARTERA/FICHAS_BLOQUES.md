@@ -1,5 +1,13 @@
 # FICHAS DE BLOQUE — Peaky Minders Global
 
+> # 🔬 X-RAY VIGENTE: **v4 FINAL** — [`02_CARTERA/XRAY_V4_FINAL.md`](XRAY_V4_FINAL.md)
+>
+> **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
+> Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
+> Rentabilidad 3a **14,14%**. **Coste ≈0,21%.**
+> ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
+
+
 **Fecha límite de entrega: 11 de agosto de 2026** · Cartera v3.3
 
 > ⚠️ **PESOS ACTUALIZADOS EL 9 DE AGOSTO.** Si recibiste una versión anterior por
@@ -22,9 +30,9 @@
 | 💧 Reserva Operativa — efectivo remunerado | **3%** | Fran |
 | 🎯 Convicción — hasta 7 empresas | **0%** *(techo 14%)* | Fran |
 | 🌿 Defensivos — salud + consumo defensivo | 12% | **Celia Bravo** |
-| ⚡ Aceleración — factores y pequeñas compañías | 12% | Fran |
+| ⚡ Aceleración — Small Cap + **Robeco Global Premium** + Europe Multifactor | 12% | Fran |
 | 🌍 Emergentes — mercados emergentes | 7% | **Jordi** |
-| ⚓ Freno — renta fija corta | 9% | **Grupo** |
+| ⚓ Freno — AXA monetario + **PIMCO GIS Income** | 9% | **Grupo** |
 | 🥇 Activos reales — oro | 7% | **Mary Morcillo** |
 | 🥇 Activos reales — cobre / recursos | 2% | **Cristina Rodríguez** |
 | 💥 Asimetría — bitcoin | 4% | **Andrea Miguel** |

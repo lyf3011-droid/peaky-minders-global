@@ -1,5 +1,13 @@
 # PLAN DE PRESENTACIÓN — Web cinematográfica
 
+> # 🔬 X-RAY VIGENTE: **v4 FINAL** — [`02_CARTERA/XRAY_V4_FINAL.md`](../02_CARTERA/XRAY_V4_FINAL.md)
+>
+> **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
+> Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
+> Rentabilidad 3a **14,14%**. **Coste ≈0,21%.**
+> ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
+
+
 **15-20 minutos · Portavoz: Fran · 18 de agosto de 2026**
 
 > ⚠️ **Regla de orden:** esta web se construye **DESPUÉS** de tener la cartera
@@ -55,9 +63,9 @@ lo encuentre el profesor.
 | 💧 **RESERVA OPERATIVA** | **3%** | Munición inmediata para comprar sin vender nada |
 | 🎯 **CONVICCIÓN** | **0%** *(techo 14%)* | **Un límite de riesgo, no una orden de compra.** Solo entra al precio escrito |
 | 🌿 **DEFENSIVOS** | 12% | Beneficios que aguantan el ciclo. Sube retorno y baja caída |
-| ⚡ **ACELERACIÓN** | 12% | Primas documentadas: factores y pequeñas compañías |
+| ⚡ **ACELERACIÓN** | 12% | Primas documentadas: pequeñas compañías, valor delegado y multifactor |
 | 🌍 **EMERGENTES** | 7% | Crecimiento que el índice desarrollado no recoge |
-| ⚓ **FRENO** | 9% | Estabilidad y munición para las caídas |
+| ⚓ **FRENO** | 9% | Estabilidad y munición. **Duración 4,46 tras entrar el PIMCO** |
 | 🥇 **ACTIVOS REALES** | 9% | Oro como seguro, cobre como activo real |
 | 💥 **ASIMETRÍA** | 4% | Poco peso, mucho recorrido posible |
 

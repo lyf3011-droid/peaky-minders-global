@@ -1,5 +1,13 @@
 # CLAUDE.md — Proyecto Cartera Permanente · Academia de Inversión
 
+> # 🔬 X-RAY VIGENTE: **v4 FINAL** — [`02_CARTERA/XRAY_V4_FINAL.md`](02_CARTERA/XRAY_V4_FINAL.md)
+>
+> **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
+> Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
+> Rentabilidad 3a **14,14%**. **Coste ≈0,21%.**
+> ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
+
+
 ## Versión 1.0 · 2026-08-08
 
 > Proyecto exclusivo del ejercicio de Cartera Permanente de la Academia de
@@ -99,9 +107,9 @@ riesgo lo alcanzaba. Se reformuló a +50/+100 pb, que sí es alcanzable y verifi
 | 💧 Reserva Operativa | Efectivo remunerado para Convicción | **3%** | Fran |
 | 🎯 Convicción | Hasta 7 empresas, método IDC | **0%** *(techo 14%)* | Fran |
 | 🌿 Defensivos | Salud + consumo defensivo | 12% | Celia Bravo |
-| ⚡ Aceleración | Factores y pequeñas compañías | 12% | Fran |
+| ⚡ Aceleración | Small Cap 4 + **Robeco Global Premium 4** + Europe Multifactor 4 | 12% | Fran |
 | 🌍 Emergentes | Mercados emergentes | 7% | Jordi |
-| ⚓ Freno | Renta fija corta + liquidez | 9% | **Grupo** |
+| ⚓ Freno | AXA monetario 6 + **PIMCO GIS Income 3** | 9% | **Grupo** |
 | 🥇 Activos reales | Oro 7% + cobre 2% | 9% | Mary Morcillo · Cristina Rodríguez |
 | 💥 Asimetría | Bitcoin | 4% | Andrea Miguel |
 

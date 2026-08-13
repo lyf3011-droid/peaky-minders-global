@@ -1,5 +1,13 @@
 # 🔜 PRÓXIMA SESIÓN — punto de partida
 
+> # 🔬 X-RAY VIGENTE: **v4 FINAL** — [`02_CARTERA/XRAY_V4_FINAL.md`](../02_CARTERA/XRAY_V4_FINAL.md)
+>
+> **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
+> Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
+> Rentabilidad 3a **14,14%**. **Coste ≈0,21%.**
+> ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
+
+
 > ## 📕 PROTOCOLO OPERATIVO MAESTRO
 >
 > **Las reglas de ejecución consolidadas (flujo mensual, tramos, prioridades, Reserva,
@@ -123,11 +131,11 @@ Morningstar. **No se ha buscado todavía.**
 | 📉 **Reversión** | **7%** | iShares Emerging Markets **clase S** | `IE000QAZP7L2` | 0,16% | ✅ |
 | | ~~4%~~ | ~~Fidelity MSCI Japan~~ | ~~`IE00BYX5N771`~~ | — | ❌ **FUERA** |
 | ⚓ **Freno** | **11%** | AXA Trésor Court Terme C *(7%)* | `FR0000447823` | 0,06% | ✅ |
-| | | iShares Global Aggregate 1-5y *(4%)* | `IE0004ZP1ND3` | **0,08%** | ✅ |
+| | | 🔄 **PIMCO GIS Income** *(3%)* — sustituye al iShares Global Aggregate 1-5a `IE0004ZP1ND3` **(D63)** | *gestión activa delegada* | 🔴 **≈1,45%** | ✅ |
 | 🛡️ **Protección** | **9%** | WisdomTree Core Physical Gold *(7%)* | `JE00BN2CJ301` | **0,12%** | ✅ **CERRADO** |
 | | | Cobre *(2%)* | 🔴 **sin ISIN verificado** | — | 🔴 |
 | ⚡ **Aceleración** | **8%** | Vanguard Global Small-Cap | `IE00B42W4L06` | 0,30% | 🟡 |
-| | | Xtrackers MSCI World Value | `IE00BL25JM42` | 0,25% | 🟡 |
+| | | 🔄 **Robeco BP Global Premium** — sustituye al Xtrackers MSCI World Value `IE00BL25JM42` **(D63)** | `LU0951559797` | 🔴 **1,46%** | ✅ |
 | 💥 **Asimetría** | **4%** | 21Shares Bitcoin Core ETP | `CH1199067674` | 0,10% | ✅ |
 | **+ 4% libre** | | *(el de Japón — sin asignar)* | | | 🔴 |
 
