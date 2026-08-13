@@ -4,7 +4,7 @@
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
-> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,21%** *(pendiente de fuente primaria)*.
+> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,24%** *(13 fuentes primarias pendientes)*.
 > ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
 
 
@@ -406,7 +406,7 @@ neutral, que es lo que queríamos.* Es una desviación consciente, no un descuid
 | Prima | Peso | Producto | ISIN | TER |
 |---|---|---|---|---|
 | **Tamaño** | **4%** | Vanguard Global Small-Cap Index EUR Acc | `IE00B42W4L06` | 0,30% |
-| **Valor** | **4%** | 🔄 **Robeco BP Global Premium Equities** — **gestión activa delegada (D63)** | `LU0951559797` | 🔴 **1,46%** |
+| **Valor** | **4%** | 🔄 **Robeco BP Global Premium Equities** — **gestión activa delegada (D63)** | `LU0203975437` *(D Acc **EUR**)* | 🔴 **1,46%** |
 | *(sustituido)* | | ~~Xtrackers MSCI World Value~~ | ~~`IE00BL25JM42`~~ | ~~0,25%~~ |
 
 ### 🔴 CORRECCIÓN DE MÉTODO — 11-ago-2026

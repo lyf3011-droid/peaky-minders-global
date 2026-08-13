@@ -32,7 +32,7 @@
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
-> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,21%** *(pendiente de fuente primaria)*.
+> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,24%** *(13 fuentes primarias pendientes)*.
 > ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
 
 
@@ -163,7 +163,7 @@ Morningstar. **No se ha buscado todavía.**
 | 🛡️ **Protección** | **9%** | WisdomTree Core Physical Gold *(7%)* | `JE00BN2CJ301` | **0,12%** | ✅ **CERRADO** |
 | | | Cobre *(2%)* | 🔴 **sin ISIN verificado** | — | 🔴 |
 | ⚡ **Aceleración** | **8%** | Vanguard Global Small-Cap | `IE00B42W4L06` | 0,30% | 🟡 |
-| | | 🔄 **Robeco BP Global Premium** — sustituye al Xtrackers MSCI World Value `IE00BL25JM42` **(D63)** | `LU0951559797` | 🔴 **1,46%** | ✅ |
+| | | 🔄 **Robeco BP Global Premium** — sustituye al Xtrackers MSCI World Value `IE00BL25JM42` **(D63)** | `LU0203975437` | 🔴 **1,46%** | ✅ |
 | 💥 **Asimetría** | **4%** | 21Shares Bitcoin Core ETP | `CH1199067674` | 0,10% | ✅ |
 | **+ 4% libre** | | *(el de Japón — sin asignar)* | | | 🔴 |
 

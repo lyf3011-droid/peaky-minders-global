@@ -305,7 +305,7 @@ casi juntos.**
 
 ## 6.4 🔴 PENDIENTE DE VERIFICACIÓN
 
-**El TER del Robeco (1,46%) está verificado en el catálogo** *(clase D, `LU0951559797`)*.
+**El TER del Robeco (1,46%) está verificado en el catálogo** *(clase D, `LU0203975437`)*.
 
 ⚠️ **El del PIMCO GIS Income E EUR Hedged Acc NO.** La clase concreta no aparece en el
 catálogo consultado. **Las clases E hermanas de PIMCO están entre 1,39% y 1,69%**, y se ha
@@ -412,7 +412,7 @@ final **eso ya no es cierto** y hay que decirlo antes de la entrega:
 | 2 | **El cobre analizado es la clase EUR Daily Hedged** | La canónica es `GB00B15KXQ89`. **La cobertura de divisa cambia el comportamiento** |
 | 3 | **Datos del cobre a 31-oct-2025** | **Nueve meses de antigüedad.** Es el dato más viejo del informe |
 | 4 | **El Small Cap analizado es el SPDR**, no el Vanguard `IE00B42W4L06` | **Mismo índice MSCI World Small Cap.** Look-through equivalente |
-| 5 | **El Robeco analizado es la clase D EUR**; el catálogo verifica la **D USD** `LU0951559797` | Mismo fondo, misma cartera |
+| 5 | **El Robeco analizado es la clase D EUR**; el catálogo verifica la **D USD** `LU0203975437` | Mismo fondo, misma cartera |
 | 6 | **Motor y Emergentes en clase D**, no en la clase S contratada | **Mismos fondos, mismos índices.** La clase S no está en la base de Morningstar |
 
 **Ninguna de las seis altera la composición económica analizada. Las seis deben aparecer

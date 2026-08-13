@@ -374,7 +374,7 @@ JE00B1VS3770     7,1     WisdomTree Physical Gold
 IE00BM67HN09     6,1     Xtrackers World Consumer Staples
 IE00B43HR379     6,1     iShares S&P 500 Health Care
 IE00BCBJG560     4,1     SPDR MSCI World Small Cap
-LU0951559797     4,1     Robeco BP Global Premium (sustituye al Xtrackers, D63)
+LU0203975437     4,1     Robeco BP Global Premium (sustituye al Xtrackers, D63)
 IE00BZ0PKV06     4,1     iShares STOXX Europe Multifactor
 CH1199067674     4,1     21Shares Bitcoin Core ETP
 ```

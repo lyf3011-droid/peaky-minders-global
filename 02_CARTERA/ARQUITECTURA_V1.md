@@ -4,7 +4,7 @@
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
-> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,21%** *(pendiente de fuente primaria)*.
+> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,24%** *(13 fuentes primarias pendientes)*.
 > ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
 
 
@@ -349,7 +349,7 @@ en el dinero. **El cobre está en revisión** — ver §6.
 |---|---|
 | **Nombre académico** | **Primas factoriales** *(nunca «alfa»)* |
 | **Función** | Inclinar la renta variable hacia exposiciones sistemáticas documentadas, distintas de la beta |
-| **Vehículos** | 🔄 **Robeco BP Global Premium** `LU0951559797` · 🔴 **1,46%** *(4%)* — **gestión activa delegada (D63)**, sustituye al Xtrackers `IE00BL25JM42`<br>Vanguard Global Small-Cap `IE00B42W4L06` · 0,30% *(4%)*<br>✅ iShares STOXX Europe Multifactor `IE00BZ0PKV06` · 0,25% *(4%)*<br>⚠️ **Robeco ↔ Multifactor correlacionan 0,91** *(D66)* |
+| **Vehículos** | 🔄 **Robeco BP Global Premium** `LU0203975437` *(D Acc **EUR**)* · 🔴 **1,46%** *(4%)* — **gestión activa delegada (D63)**, sustituye al Xtrackers `IE00BL25JM42`<br>Vanguard Global Small-Cap `IE00B42W4L06` · 0,30% *(4%)*<br>✅ iShares STOXX Europe Multifactor `IE00BZ0PKV06` · 0,25% *(4%)*<br>⚠️ **Robeco ↔ Multifactor correlacionan 0,91** *(D66)* |
 
 **De dónde sale el 4% nuevo:** del bloque de Japón, **eliminado el 11-ago-2026** porque el
 Motor ya lleva ~6% de Japón dentro del MSCI World. **Tenerlo aparte era comprar dos veces lo

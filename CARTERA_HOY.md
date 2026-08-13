@@ -4,7 +4,7 @@
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
-> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,21%** *(pendiente de fuente primaria)*.
+> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,24%** *(13 fuentes primarias pendientes)*.
 > ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
 
 
@@ -44,10 +44,10 @@
 | 🪙 | **Activos reales** | **7%** | Mary Morcillo | **WisdomTree Core Physical Gold** | **`JE00BN2CJ301`** | **0,12%** | ✅ **CERRADO 11-ago** |
 | | *· cobre* | *2%* | Cristina R. | **WisdomTree Copper** | **`GB00B15KXQ89`** | **0,49%** | ✅ **CERRADO 13-ago** |
 | ⚡ | **Aceleración** | **12%** | Fran | Vanguard Global Small-Cap EUR *(4%)* | `IE00B42W4L06` | 0,30% | ✅ **CERRADO** |
-| | *· valor* | *4%* | | **Robeco BP Global Premium Equities** | `LU0951559797` *(clase D)* | 🔴 **1,46%** | ✅ **CERRADO 13-ago** |
+| | *· valor* | *4%* | | **Robeco BP Global Premium Equities** | `LU0203975437` *(D Acc **EUR**)* *(clase D)* | 🔴 **1,46%** | ✅ **CERRADO 13-ago** |
 | | *· multifactor* | *4%* | | **iShares STOXX Europe Multifactor** | **`IE00BZ0PKV06`** | **0,25%** | ✅ **CERRADO 12-ago** |
 | 💥 | **Asimetría** | **4%** | Andrea Miguel | 21Shares Bitcoin Core ETP | `CH1199067674` | **0,10%** | ✅ **CERRADO** |
-| | **TOTAL** | **100%** | | **✅ LOS 8 BLOQUES CERRADOS** | | 🔴 **≈0,23% estimado** | |
+| | **TOTAL** | **100%** | | **✅ LOS 8 BLOQUES CERRADOS** | | 🔴 **≈0,24% estimado** | |
 
 > ## 🏛️ EL MACROBLOQUE DEL 47% — cerrado el 12 de agosto
 >
