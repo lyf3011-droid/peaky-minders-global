@@ -20,7 +20,7 @@
 | **B · Candidato nuevo** | **iShares Core S&P 500 ~22% + Vanguard FTSE All-World ~22%** | Trabajo externo, entra hoy |
 
 > ## **No se puede escribir el capítulo del Motor con dos Motores.**
-> **Y el X-Ray `XRAY_FINAL_2026-08-13.md` mide el A. Si se adopta el B, ese informe deja de
+> **Y el X-Ray `XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md` mide el A. Si se adopta el B, ese informe deja de
 > describir la cartera** y hay que regenerarlo entero.
 
 ## 0.2 Qué cambia si entra el B — y no es cosmético
@@ -472,7 +472,7 @@ riesgo que introduce · **dónde falla** · correlación · alternativa descarta
 | Archivo | Alimenta | Estado |
 |---|---|---|
 | `02_CARTERA/PROTOCOLO_OPERATIVO.md` | Caps. 2, 5, 17, 24, 28-36, 39 | ✅ **VIGENTE** |
-| `02_CARTERA/XRAY_FINAL_2026-08-13.md` | Caps. 40-42, 45-48 | ✅ **VIGENTE** |
+| `02_CARTERA/XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md` | Caps. 40-42, 45-48 | ✅ **VIGENTE** |
 | `ESTADO.md` | Caps. 12-14, anexo C | ✅ **VIGENTE** |
 | `CIFRAS_MAESTRAS.md` | Caps. 18, 22, 25-26 | 🟡 mixto |
 | `02_CARTERA/ARQUITECTURA_V1.md` | Caps. 6-7, 11, 15 | 🟡 mixto |

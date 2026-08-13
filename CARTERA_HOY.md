@@ -1,6 +1,6 @@
 # 📋 PEAKY MINDERS GLOBAL — ESTADO A DÍA DE HOY
 
-> # 🔬 X-RAY VIGENTE: **XRAY_FINAL_2026-08-13** — [`02_CARTERA/XRAY_FINAL_2026-08-13.md`](02_CARTERA/XRAY_FINAL_2026-08-13.md)
+> # 🔬 X-RAY VIGENTE: **XRAY_OFICIAL_2026-08-13** — [`02_CARTERA/XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md`](02_CARTERA/XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md)
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
@@ -30,7 +30,9 @@
 
 | | Bloque | Peso | Responsable | **Vehículo** | ISIN | TER | Estado |
 |---|---|---|---|---|---|---|---|
-| 🚀 | **Motor** | **44%** | Fran · Cristina R. | iShares Developed World **Class S** | `IE000ZYRH0Q7` | **0,06%** | ✅ **CERRADO** |
+| 🚀 | **Motor** *(tilt USA)* | **22%** | Fran · Cristina R. | **iShares Core S&P 500** | **`IE00B5BMR087`** | **0,07%** | ✅ **D73** |
+| | *· ancla global* | *22%* | | **Vanguard FTSE All-World** | **`IE00BK5BQT80`** | **0,14%** | ✅ **D73** |
+| | ~~*anterior*~~ | | | ~~iShares Developed World Class S~~ | ~~`IE000ZYRH0Q7`~~ | — | 🗄️ **descartado D73** |
 | 💧 | **Reserva Operativa** | **3%** | Fran | Efectivo remunerado · disponibilidad inmediata | — | — | ✅ **CERRADA 12-ago** |
 | 🎯 | **Convicción** | **0%** | Fran | *hasta 14% · hasta 7 empresas · máx. 2% cada una* | — | — | 🟡 **Protocolo cerrado** |
 | 🌿 | **Defensivos** | **12%** | Celia Bravo | Xtrackers World Consumer Staples | `IE00BM67HN09` | 0,25% | 🟡 **Candidato** |
@@ -45,7 +47,7 @@
 | | *· valor* | *4%* | | **Robeco BP Global Premium Equities** | `LU0951559797` *(clase D)* | 🔴 **1,46%** | ✅ **CERRADO 13-ago** |
 | | *· multifactor* | *4%* | | **iShares STOXX Europe Multifactor** | **`IE00BZ0PKV06`** | **0,25%** | ✅ **CERRADO 12-ago** |
 | 💥 | **Asimetría** | **4%** | Andrea Miguel | 21Shares Bitcoin Core ETP | `CH1199067674` | **0,10%** | ✅ **CERRADO** |
-| | **TOTAL** | **100%** | | **✅ LOS 8 BLOQUES CERRADOS** | | 🔴 **≈0,21% estimado** | |
+| | **TOTAL** | **100%** | | **✅ LOS 8 BLOQUES CERRADOS** | | 🔴 **≈0,23% estimado** | |
 
 > ## 🏛️ EL MACROBLOQUE DEL 47% — cerrado el 12 de agosto
 >

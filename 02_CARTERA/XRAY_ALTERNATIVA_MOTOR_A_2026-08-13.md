@@ -1,5 +1,17 @@
 # 🔬 X-RAY FINAL · 13 de agosto de 2026 — REFERENCIA VIGENTE
 
+> # 🗄️ ALTERNATIVA ESTUDIADA Y DESCARTADA — Motor A
+>
+> **El equipo eligió el Motor B el 13-ago-2026 (D73).** Este informe documenta el **Motor A**
+> *(iShares Developed World 44%)*, que **se estudió a fondo y se descartó**.
+> **El X-Ray oficial es [`XRAY_OFICIAL_2026-08-13.md`](XRAY_OFICIAL_2026-08-13.md).**
+>
+> ✅ **Se conserva íntegro como trazabilidad.** Sus ventajas medidas —menor concentración en
+> EEUU y tecnología, beta y volatilidad más bajas, Sharpe y alfa a 3 años superiores, y
+> ausencia de solapamiento interno— **deben aparecer resumidas en el capítulo del Motor**.
+> ❌ **Ninguna de sus cifras describe la cartera vigente.**
+
+
 ## PEAKY MINDERS GLOBAL 10Y · Informe Morningstar de 13 de agosto de 2026
 
 > # ✅ **ESTE ES EL X-RAY DE REFERENCIA DE LA ARQUITECTURA INICIAL.**

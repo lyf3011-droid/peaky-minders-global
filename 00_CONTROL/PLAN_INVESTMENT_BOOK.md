@@ -15,7 +15,7 @@
 | | |
 |---|---|
 | **Arquitectura** | 🔒 **CONGELADA** — D65 |
-| **X-Ray de referencia** | ✅ [`XRAY_FINAL_2026-08-13.md`](../02_CARTERA/XRAY_FINAL_2026-08-13.md) |
+| **X-Ray de referencia** | ✅ [`XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md`](../02_CARTERA/XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md) |
 | **Decisiones registradas** | **D1 → D68** |
 | **Carpeta del trabajo final** | ❌ **sin crear** — pendiente de decidir `04_` o `05_` |
 | **Coste de la cartera** | 🔴 **≈0,21% ESTIMADO**, pendiente de KIID del PIMCO |
@@ -130,7 +130,7 @@ Activos reales 9 (Oro 7 + Cobre 2) · Asimetría 4        =  100
 > **El grupo produce EVIDENCIA y PROSA. Nunca pesos, vehículos ni cifras del X-Ray.**
 >
 > **Solo lectura para todos:** `ESTADO.md` · `PROTOCOLO_OPERATIVO.md` ·
-> `XRAY_FINAL_2026-08-13.md`
+> `XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md`
 
 | # | Tarea | Quién | h |
 |---|---|---|---|

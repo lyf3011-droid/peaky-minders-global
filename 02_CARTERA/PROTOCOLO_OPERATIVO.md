@@ -54,7 +54,7 @@ rebalanceo** y hace innecesaria la mayoría de las ventas.
 
 | Bloque | Objetivo | Naturaleza |
 |---|---|---|
-| 🚀 **Motor** | **44%** | Indexado |
+| 🚀 **Motor** | **44%** | Indexado — **global con tilt estructural USA** *(D73)* |
 | 💧 **Reserva Operativa** | **3%** | Efectivo remunerado |
 | 🎯 **Convicción** | **0%** *(techo 14%)* | **Discrecional** |
 | 🌿 Defensivos | 12% | Sistemático |

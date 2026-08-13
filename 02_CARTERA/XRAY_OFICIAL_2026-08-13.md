@@ -1,15 +1,16 @@
-# 🟡 X-RAY DEL CANDIDATO B — EVIDENCIA, NO DECISIÓN
+# ✅ X-RAY OFICIAL — MOTOR GLOBAL CON TILT ESTRUCTURAL USA
 
 ## Motor S&P 500 + FTSE All-World · Informe Morningstar de 13 de agosto de 2026
 
-> # 🟡 **ESTO NO ES LA CARTERA VIGENTE.**
+> # ✅ **X-RAY OFICIAL DE REFERENCIA — ARQUITECTURA CONGELADA (D73)**
 >
-> **La cartera vigente es el Motor A** *(iShares Developed World 44%, **D65**)*, y su X-Ray
-> de referencia es [`XRAY_FINAL_2026-08-13.md`](XRAY_FINAL_2026-08-13.md).
+> **Ésta es la cartera vigente: MOTOR GLOBAL CON TILT ESTRUCTURAL USA.**
+> El Motor A *(iShares Developed World 44%)* queda como **alternativa estudiada y
+> descartada** en [`XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md`](XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md).
 >
-> **Este documento existe para una sola cosa: dar evidencia medida al candidato B (D70)
-> para que la decisión A/B se tome con datos y no con intuición.** ❌ **Ninguna de sus
-> cifras describe la cartera de hoy.**
+> 🔴 **El solapamiento S&P 500 ↔ All-World de 0,97 NO es un defecto de construcción: es la
+> consecuencia esperable y buscada del tilt deliberado hacia Estados Unidos.** Si no hubiera
+> solapamiento, no habría sobreponderación.
 
 ---
 
@@ -241,4 +242,4 @@ de oct-2025, Small Cap del SPDR, Motor y Emergentes en clase D)*, **más una nue
 
 | Fecha | Acción |
 |---|---|
-| 2026-08-13 | **Creación como EVIDENCIA del candidato B (D70).** Informe Morningstar de 13 posiciones. **Hallazgo principal: S&P 500 ↔ FTSE All-World = 0,97**, la correlación más alta del proyecto — **partir el Motor no diversifica, sobrepondera Estados Unidos**. Segundo hallazgo: **All-World ↔ Emergentes = 0,74**, doble contabilización con el bloque Emergentes. **EEUU pasa de 46,76% a 51,15% del patrimonio y la tecnología de 21,42% a 26,70% de las acciones.** ❌ **No sustituye a `XRAY_FINAL_2026-08-13.md`** |
+| 2026-08-13 | **Creación como EVIDENCIA del candidato B (D70).** Informe Morningstar de 13 posiciones. **Hallazgo principal: S&P 500 ↔ FTSE All-World = 0,97**, la correlación más alta del proyecto — **partir el Motor no diversifica, sobrepondera Estados Unidos**. Segundo hallazgo: **All-World ↔ Emergentes = 0,74**, doble contabilización con el bloque Emergentes. **EEUU pasa de 46,76% a 51,15% del patrimonio y la tecnología de 21,42% a 26,70% de las acciones.** ❌ **No sustituye a `XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md`** |

@@ -1,6 +1,6 @@
 # PEAKY MINDERS GLOBAL
 
-> # 🔬 X-RAY VIGENTE: **XRAY_FINAL_2026-08-13** — [`02_CARTERA/XRAY_FINAL_2026-08-13.md`](02_CARTERA/XRAY_FINAL_2026-08-13.md)
+> # 🔬 X-RAY VIGENTE: **XRAY_OFICIAL_2026-08-13** — [`02_CARTERA/XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md`](02_CARTERA/XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md)
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
@@ -33,7 +33,7 @@
 
 | Función | Bloque | Peso | Responsable |
 |---|---|---|---|
-| 🚀 Motor | Índice mundial *(MSCI World)* | **44%** | Fran · Cristina Rodríguez |
+| 🚀 **Motor** | **Global con tilt estructural USA**: S&P 500 `IE00B5BMR087` 22% + FTSE All-World `IE00BK5BQT80` 22% | **44%** | Fran · Cristina Rodríguez |
 | 💧 Reserva Operativa | Efectivo remunerado para Convicción | **3%** | Fran |
 | 🎯 Convicción | Hasta 7 empresas, método IDC | **0%** *(techo 14%)* | Fran |
 | 🌿 Defensivos | Salud + consumo defensivo | 12% | Celia Bravo |

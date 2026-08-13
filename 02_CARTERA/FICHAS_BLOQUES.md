@@ -1,6 +1,6 @@
 # FICHAS DE BLOQUE — Peaky Minders Global
 
-> # 🔬 X-RAY VIGENTE: **XRAY_FINAL_2026-08-13** — [`02_CARTERA/XRAY_FINAL_2026-08-13.md`](XRAY_FINAL_2026-08-13.md)
+> # 🔬 X-RAY VIGENTE: **XRAY_OFICIAL_2026-08-13** — [`02_CARTERA/XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md`](XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md)
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
@@ -26,7 +26,7 @@
 
 | Bloque | Peso | Responsable |
 |---|---|---|
-| 🚀 Motor — índice mundial *(MSCI World)* | **44%** | Fran · Cristina Rodríguez |
+| 🚀 **Motor — global con tilt estructural USA** *(S&P 500 22% + FTSE All-World 22%)* | **44%** | Fran · Cristina Rodríguez |
 | 💧 Reserva Operativa — efectivo remunerado | **3%** | Fran |
 | 🎯 Convicción — hasta 7 empresas | **0%** *(techo 14%)* | Fran |
 | 🌿 Defensivos — salud + consumo defensivo | 12% | **Celia Bravo** |
