@@ -1,10 +1,10 @@
 # 📋 PEAKY MINDERS GLOBAL — ESTADO A DÍA DE HOY
 
-> # 🔬 X-RAY VIGENTE: **v4 FINAL** — [`02_CARTERA/XRAY_V4_FINAL.md`](02_CARTERA/XRAY_V4_FINAL.md)
+> # 🔬 X-RAY VIGENTE: **XRAY_FINAL_2026-08-13** — [`02_CARTERA/XRAY_FINAL_2026-08-13.md`](02_CARTERA/XRAY_FINAL_2026-08-13.md)
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
-> Rentabilidad 3a **14,14%**. **Coste ≈0,21%.**
+> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,21%** *(pendiente de fuente primaria)*.
 > ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
 
 
@@ -38,14 +38,14 @@
 | 🌍 | **Emergentes** | **7%** | Jordi | iShares Emerging Markets **clase S** | `IE000QAZP7L2` | **0,16%** | 🟡 **Candidato** |
 | | ~~*· Japón*~~ | ~~*4%*~~ | | ~~Fidelity MSCI Japan~~ | ~~`IE00BYX5N771`~~ | — | ❌ **FUERA 11-ago** |
 | ⚓ | **Freno** | **9%** | **Grupo** | AXA Trésor Court Terme C *(6%)* | `FR0000447823` | **0,06%** | ✅ **CERRADO 12-ago** |
-| | *· renta fija* | *3%* | | **PIMCO GIS Income E EUR Hedged Acc** | *gestión activa delegada* | 🔴 **≈1,45%** *(sin verificar)* | ✅ **CERRADO 13-ago** |
+| | *· renta fija* | *3%* | | **PIMCO GIS Income E EUR Hedged Acc** | *gestión activa delegada* | 🔴 **1,45%** *(Morningstar; pendiente KIID)* | ✅ **CERRADO 13-ago** |
 | 🪙 | **Activos reales** | **7%** | Mary Morcillo | **WisdomTree Core Physical Gold** | **`JE00BN2CJ301`** | **0,12%** | ✅ **CERRADO 11-ago** |
 | | *· cobre* | *2%* | Cristina R. | **WisdomTree Copper** | **`GB00B15KXQ89`** | **0,49%** | ✅ **CERRADO 13-ago** |
 | ⚡ | **Aceleración** | **12%** | Fran | Vanguard Global Small-Cap EUR *(4%)* | `IE00B42W4L06` | 0,30% | ✅ **CERRADO** |
 | | *· valor* | *4%* | | **Robeco BP Global Premium Equities** | `LU0951559797` *(clase D)* | 🔴 **1,46%** | ✅ **CERRADO 13-ago** |
 | | *· multifactor* | *4%* | | **iShares STOXX Europe Multifactor** | **`IE00BZ0PKV06`** | **0,25%** | ✅ **CERRADO 12-ago** |
 | 💥 | **Asimetría** | **4%** | Andrea Miguel | 21Shares Bitcoin Core ETP | `CH1199067674` | **0,10%** | ✅ **CERRADO** |
-| | **TOTAL** | **100%** | | **✅ LOS 8 BLOQUES CERRADOS** | | 🔴 **≈0,21%** | |
+| | **TOTAL** | **100%** | | **✅ LOS 8 BLOQUES CERRADOS** | | 🔴 **≈0,21% estimado** | |
 
 > ## 🏛️ EL MACROBLOQUE DEL 47% — cerrado el 12 de agosto
 >

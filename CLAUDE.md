@@ -1,10 +1,10 @@
 # CLAUDE.md — Proyecto Cartera Permanente · Academia de Inversión
 
-> # 🔬 X-RAY VIGENTE: **v4 FINAL** — [`02_CARTERA/XRAY_V4_FINAL.md`](02_CARTERA/XRAY_V4_FINAL.md)
+> # 🔬 X-RAY VIGENTE: **XRAY_FINAL_2026-08-13** — [`02_CARTERA/XRAY_FINAL_2026-08-13.md`](02_CARTERA/XRAY_FINAL_2026-08-13.md)
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
-> Rentabilidad 3a **14,14%**. **Coste ≈0,21%.**
+> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,21%** *(pendiente de fuente primaria)*.
 > ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
 
 

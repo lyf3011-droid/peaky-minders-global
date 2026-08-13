@@ -1,4 +1,4 @@
-# 🔬 X-RAY v4 FINAL — REFERENCIA VIGENTE
+# 🔬 X-RAY FINAL · 13 de agosto de 2026 — REFERENCIA VIGENTE
 
 ## PEAKY MINDERS GLOBAL 10Y · Informe Morningstar de 13 de agosto de 2026
 
@@ -264,7 +264,7 @@ casi juntos.**
 | Health Care | 6% | 0,15% | 0,90 |
 | Emergentes | 7% | 0,16% | 1,12 |
 | AXA monetario | 6% | 0,06% | 0,36 |
-| **PIMCO GIS Income** | **3%** | 🔴 **≈1,45%** | **≈4,35** |
+| **PIMCO GIS Income** | **3%** | 🔴 **1,45%** | **≈4,35** |
 | Oro | 7% | 0,12% | 0,84 |
 | Cobre | 2% | 0,49% | 0,98 |
 | Small Cap | 4% | 0,30% | 1,20 |
@@ -424,4 +424,4 @@ declaradas en la entrega.**
 
 | Fecha | Acción |
 |---|---|
-| 2026-08-13 | **Creación. X-Ray v4 FINAL establecido como referencia vigente.** 12 posiciones, cobertura del 100% del 97% invertido. Entran **Robeco BP Global Premium** *(Aceleración)* y **PIMCO GIS Income** *(Freno)* como **gestión activa delegada**. Registradas las 21 cifras de rentabilidad y riesgo. **Hallazgos materiales: coste ≈0,21% (era 0,12%), efectivo neto −1,86%, duración de renta fija 0,01 → 4,46, y correlación Robeco ↔ Multifactor de 0,91 dentro de Aceleración.** `XRAY_V1.md` y `XRAY_V36.md` pasan a históricos |
+| 2026-08-13 | **Creación. X-Ray FINAL 2026-08-13 establecido como referencia vigente.** 12 posiciones, cobertura del 100% del 97% invertido. Entran **Robeco BP Global Premium** *(Aceleración)* y **PIMCO GIS Income** *(Freno)* como **gestión activa delegada**. Registradas las 21 cifras de rentabilidad y riesgo. **Hallazgos materiales: coste ≈0,21% (era 0,12%), efectivo neto −1,86%, duración de renta fija 0,01 → 4,46, y correlación Robeco ↔ Multifactor de 0,91 dentro de Aceleración.** `XRAY_V1.md` y `XRAY_V36.md` pasan a históricos |

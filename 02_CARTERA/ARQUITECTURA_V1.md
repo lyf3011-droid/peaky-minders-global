@@ -1,10 +1,10 @@
 # 🏛️ ARQUITECTURA DE LA CARTERA — v1 DEFINITIVA
 
-> # 🔬 X-RAY VIGENTE: **v4 FINAL** — [`02_CARTERA/XRAY_V4_FINAL.md`](XRAY_V4_FINAL.md)
+> # 🔬 X-RAY VIGENTE: **XRAY_FINAL_2026-08-13** — [`02_CARTERA/XRAY_FINAL_2026-08-13.md`](XRAY_FINAL_2026-08-13.md)
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
-> Rentabilidad 3a **14,14%**. **Coste ≈0,21%.**
+> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,21%** *(pendiente de fuente primaria)*.
 > ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
 
 
@@ -269,7 +269,7 @@ hueco con moderación.
 |---|---|
 | **Nombre académico** | **Estabilización y liquidez** |
 | **Función** | **(1)** Reducir la volatilidad · **(2)** preservar capacidad de compra · **(3)** dar liquidez · **(4)** permitir rebalanceos |
-| **Vehículos** | AXA Trésor Court Terme C `FR0000447823` · **0,06%** *(7%)*<br>🔄 **PIMCO GIS Income** *(3%)* · 🔴 **≈1,45%** — **gestión activa delegada (D63)**, sustituye al iShares Global Aggregate 1-5a `IE0004ZP1ND3`. ⚠️ **Duración efectiva de la renta fija: 4,46** |
+| **Vehículos** | AXA Trésor Court Terme C `FR0000447823` · **0,06%** *(7%)*<br>🔄 **PIMCO GIS Income** *(3%)* · 🔴 **1,45%** — **gestión activa delegada (D63)**, sustituye al iShares Global Aggregate 1-5a `IE0004ZP1ND3`. ⚠️ **Duración efectiva de la renta fija: 4,46** |
 
 **🔑 Y esta es una de las mejores ideas de la cartera:**
 

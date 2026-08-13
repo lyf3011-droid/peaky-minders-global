@@ -1,10 +1,10 @@
 # 🔜 PRÓXIMA SESIÓN — punto de partida
 
-> # 🔬 X-RAY VIGENTE: **v4 FINAL** — [`02_CARTERA/XRAY_V4_FINAL.md`](../02_CARTERA/XRAY_V4_FINAL.md)
+> # 🔬 X-RAY VIGENTE: **XRAY_FINAL_2026-08-13** — [`02_CARTERA/XRAY_FINAL_2026-08-13.md`](../02_CARTERA/XRAY_FINAL_2026-08-13.md)
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
-> Rentabilidad 3a **14,14%**. **Coste ≈0,21%.**
+> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,21%** *(pendiente de fuente primaria)*.
 > ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
 
 
@@ -131,7 +131,7 @@ Morningstar. **No se ha buscado todavía.**
 | 📉 **Reversión** | **7%** | iShares Emerging Markets **clase S** | `IE000QAZP7L2` | 0,16% | ✅ |
 | | ~~4%~~ | ~~Fidelity MSCI Japan~~ | ~~`IE00BYX5N771`~~ | — | ❌ **FUERA** |
 | ⚓ **Freno** | **11%** | AXA Trésor Court Terme C *(7%)* | `FR0000447823` | 0,06% | ✅ |
-| | | 🔄 **PIMCO GIS Income** *(3%)* — sustituye al iShares Global Aggregate 1-5a `IE0004ZP1ND3` **(D63)** | *gestión activa delegada* | 🔴 **≈1,45%** | ✅ |
+| | | 🔄 **PIMCO GIS Income** *(3%)* — sustituye al iShares Global Aggregate 1-5a `IE0004ZP1ND3` **(D63)** | *gestión activa delegada* | 🔴 **1,45%** | ✅ |
 | 🛡️ **Protección** | **9%** | WisdomTree Core Physical Gold *(7%)* | `JE00BN2CJ301` | **0,12%** | ✅ **CERRADO** |
 | | | Cobre *(2%)* | 🔴 **sin ISIN verificado** | — | 🔴 |
 | ⚡ **Aceleración** | **8%** | Vanguard Global Small-Cap | `IE00B42W4L06` | 0,30% | 🟡 |

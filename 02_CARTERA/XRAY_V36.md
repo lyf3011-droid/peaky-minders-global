@@ -2,7 +2,7 @@
 
 > # 🗄️ DOCUMENTO HISTÓRICO — **NO ES LA REFERENCIA VIGENTE**
 >
-> **El X-Ray vigente es [`XRAY_V4_FINAL.md`](XRAY_V4_FINAL.md)** *(Morningstar, 13-ago-2026,
+> **El X-Ray vigente es [`XRAY_FINAL_2026-08-13.md`](XRAY_FINAL_2026-08-13.md)** *(Morningstar, 13-ago-2026,
 > 12 posiciones).* Este documento se conserva **solo como trazabilidad del proceso**: sus
 > pesos, vehículos y métricas corresponden a versiones anteriores de la cartera.
 > ❌ **No citar ninguna de sus cifras como vigente.**

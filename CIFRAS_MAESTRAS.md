@@ -1,10 +1,10 @@
 # 🔒 CIFRAS MAESTRAS — PEAKY MINDERS GLOBAL
 
-> # 🔬 X-RAY VIGENTE: **v4 FINAL** — [`02_CARTERA/XRAY_V4_FINAL.md`](02_CARTERA/XRAY_V4_FINAL.md)
+> # 🔬 X-RAY VIGENTE: **XRAY_FINAL_2026-08-13** — [`02_CARTERA/XRAY_FINAL_2026-08-13.md`](02_CARTERA/XRAY_FINAL_2026-08-13.md)
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
-> Rentabilidad 3a **14,14%**. **Coste ≈0,21%.**
+> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,21%** *(pendiente de fuente primaria)*.
 > ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
 
 
@@ -493,7 +493,7 @@ abierta equivalente). **Nuestra moneda base es el euro: la clase EUR es la coher
 | Componente | Peso | Producto | ISIN | TER |
 |---|---|---|---|---|
 | **Liquidez** | **7%** | AXA Trésor Court Terme C | `FR0000447823` | **0,06%** |
-| **Renta fija** | **3%** | 🔄 **PIMCO GIS Income E EUR Hedged Acc** — **gestión activa delegada (D63)** | *clase sin verificar* | 🔴 **≈1,45%** |
+| **Renta fija** | **3%** | 🔄 **PIMCO GIS Income E EUR Hedged Acc** — **gestión activa delegada (D63)** | `IE00B84J9L26` | 🔴 **1,45%** |
 | *(sustituido)* | | ~~iShares Global Aggregate 1-5 Year EUR Hedged~~ | ~~`IE0004ZP1ND3`~~ | ~~0,08%~~ |
 
 ### El segundo componente — y por qué NO es por rentabilidad
