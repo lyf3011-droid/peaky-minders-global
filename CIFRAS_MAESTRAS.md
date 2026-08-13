@@ -406,7 +406,8 @@ neutral, que es lo que queríamos.* Es una desviación consciente, no un descuid
 | Prima | Peso | Producto | ISIN | TER |
 |---|---|---|---|---|
 | **Tamaño** | **4%** | Vanguard Global Small-Cap Index EUR Acc | `IE00B42W4L06` | 0,30% |
-| **Valor** | **4%** | Xtrackers MSCI World Value *(Enhanced Value)* | `IE00BL25JM42` | 0,25% |
+| **Valor** | **4%** | 🔄 **Robeco BP Global Premium Equities** — **gestión activa delegada (D63)** | `LU0951559797` | 🔴 **1,46%** |
+| *(sustituido)* | | ~~Xtrackers MSCI World Value~~ | ~~`IE00BL25JM42`~~ | ~~0,25%~~ |
 
 ### 🔴 CORRECCIÓN DE MÉTODO — 11-ago-2026
 
@@ -416,7 +417,7 @@ existen los tres**, todos al 0,25%:
 
 | Factor | ETF | ISIN | 5 años | 2022 |
 |---|---|---|---|---|
-| **Value** | Xtrackers MSCI World Value | `IE00BL25JM42` | **+123,0%** | **−4,8%** |
+| **Value** *(histórico — sustituido por el Robeco, D63)* | Xtrackers MSCI World Value | `IE00BL25JM42` | **+123,0%** | **−4,8%** |
 | Momentum | iShares Edge MSCI World Momentum | `IE00BP3QZ825` | +79,8% | −13,6% |
 | Quality | iShares Edge MSCI World Quality | `IE00BP3QZ601` | +64,9% | −14,8% |
 
@@ -492,7 +493,8 @@ abierta equivalente). **Nuestra moneda base es el euro: la clase EUR es la coher
 | Componente | Peso | Producto | ISIN | TER |
 |---|---|---|---|---|
 | **Liquidez** | **7%** | AXA Trésor Court Terme C | `FR0000447823` | **0,06%** |
-| **Renta fija corta** | **4%** | iShares Global Aggregate 1-5 Year EUR Hedged | `IE0004ZP1ND3` | **0,08%** |
+| **Renta fija** | **3%** | 🔄 **PIMCO GIS Income E EUR Hedged Acc** — **gestión activa delegada (D63)** | *clase sin verificar* | 🔴 **≈1,45%** |
+| *(sustituido)* | | ~~iShares Global Aggregate 1-5 Year EUR Hedged~~ | ~~`IE0004ZP1ND3`~~ | ~~0,08%~~ |
 
 ### El segundo componente — y por qué NO es por rentabilidad
 
@@ -519,7 +521,8 @@ abierta equivalente). **Nuestra moneda base es el euro: la clase EUR es la coher
 > barata. Hoy el monetario renta más que los bonos porque la curva está plana, y lo decimos:
 > no lo metemos por rentabilidad, lo metemos por convexidad.»*
 
-⚠️ **[VERIFICAR ANTES DEL 18]** El `IE0004ZP1ND3` es *aggregate*: incluye **deuda corporativa**,
+🗄️ **NOTA HISTÓRICA — este vehículo fue sustituido por el PIMCO GIS Income el 13-ago (D63).**
+⚠️ El `IE0004ZP1ND3` era *aggregate*: incluía **deuda corporativa**,
 que **sí cae en una crisis**. Para munición pura, la deuda pública funciona mejor. Hay que
 comprobar el desglose público/corporativo del índice y decidir si compensa.
 
