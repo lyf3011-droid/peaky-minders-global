@@ -41,7 +41,7 @@
 
 ---
 
-# 2. LOS CUATRO CASOS QUE HAY QUE EXPLICAR
+# 2. LOS CINCO CASOS QUE HAY QUE EXPLICAR
 
 ## 2.1 ✅ Aceleración · tamaño — **RESUELTO POR D77**
 
@@ -144,4 +144,5 @@ usar el TER de la clase S *(0,16%)*, no el de la D.
 
 | Fecha | Acción |
 |---|---|
-| 2026-08-13 | **Creación.** Conciliación de las trece posiciones: 8 idénticas, 2 proxy de bajo impacto, **2 con advertencia expresa** *(cobre por cobertura de divisa, small cap por contradicción documental)* y 1 fuera por diseño *(Reserva)*. **Ningún vehículo modificado.** |
+| 2026-08-13 | **Creación.** Conciliación de las trece posiciones. Detectada la discrepancia del bloque de pequeña capitalización |
+| 2026-08-13 | ✅ **RESUELTO POR D77.** Recuento final: **8 idénticas · 2 proxy de bajo impacto** *(Emergentes clase S/D, oro Core/estándar)* **· 1 proxy declarado con regla de atribución** *(small cap)* **· 1 con advertencia expresa** *(cobre, cubierto vs sin cubrir)* **· 1 fuera por diseño** *(Reserva)*. **Ningún vehículo modificado.** El único caso realmente no equivalente es el cobre |
