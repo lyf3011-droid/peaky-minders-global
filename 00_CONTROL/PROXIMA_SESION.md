@@ -1,5 +1,33 @@
 # 🔜 PRÓXIMA SESIÓN — punto de partida
 
+> # 🚀 ARRANQUE DE LA PRÓXIMA SESIÓN — 14 de agosto de 2026
+>
+> ## **La cartera está CERRADA. Ya no se rediseña.**
+>
+> **Lee primero:** [`PLAN_INVESTMENT_BOOK.md`](PLAN_INVESTMENT_BOOK.md) — índice de 27
+> capítulos, matriz de evidencia, tareas delegables y dependencias.
+>
+> ### Los cuatro primeros movimientos, por orden
+>
+> | # | Qué | Tiempo |
+> |---|---|---|
+> | **1** | **Confirmar `05_TRABAJO_FINAL/`** *(o 04)* y crear la estructura | 5 min |
+> | **2** | 🔴 **T2 — KIID del PIMCO `IE00B84J9L26`.** Desbloquea los capítulos 10 y 23 | **30 min** |
+> | **3** | Repartir al grupo T1, T3, T4, T5, T6 | 20 min |
+> | **4** | 🔴 **D47a — auditoría de shocks.** Es el cuello de botella caro | media sesión |
+>
+> ### Estado congelado
+>
+> **Arquitectura (D65):** Motor 44 · Reserva 3 · Convicción 0-14 · Defensivos 12 ·
+> Aceleración 12 · Emergentes 7 · Freno 9 · Activos reales 9 · Asimetría 4 = **100**.
+> **Decisiones D1 → D69.** **Coste ≈0,21% ESTIMADO**, pendiente de KIID.
+>
+> ### 🔴 Lo único abierto
+>
+> **D47a** *(estrés)* · **D47b** *(sobreponderaciones)* · **D53** *(escenarios)* ·
+> **TER del PIMCO** · **fichas de Convicción**. **Nada más.**
+
+
 > # 🔬 X-RAY VIGENTE: **XRAY_FINAL_2026-08-13** — [`02_CARTERA/XRAY_FINAL_2026-08-13.md`](../02_CARTERA/XRAY_FINAL_2026-08-13.md)
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
