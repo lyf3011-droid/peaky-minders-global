@@ -19,7 +19,7 @@
 | 💧 **Reserva Operativa** | Efectivo remunerado | ❌ **No representado** | 🔴 **FUERA DEL INFORME** |
 | 🌿 **Defensivos · consumo** | Xtrackers World Consumer Staples · `IE00BM67HN09` | El mismo | ✅ **IDÉNTICO** |
 | 🌿 **Defensivos · salud** | iShares S&P 500 Health Care · `IE00B43HR379` | El mismo | ✅ **IDÉNTICO** |
-| ⚡ **Aceleración · tamaño** | 🔴 **CONTRADICCIÓN ABIERTA** *(ver §2.1)* | SPDR MSCI World Small Cap · `IE00BCBJG560` | 🔴 **A RESOLVER** |
+| ⚡ **Aceleración · tamaño** | Vanguard Global Small-Cap Index EUR Acc · `IE00B42W4L06` | SPDR MSCI World Small Cap · `IE00BCBJG560` | 🟡 **PROXY DECLARADO** *(D77)* |
 | ⚡ **Aceleración · valor** | Robeco BP Global Premium **D Acc EUR** · `LU0203975437` | Robeco BP Global Premium Equities D EUR | ✅ **IDÉNTICO** |
 | ⚡ **Aceleración · multifactor** | iShares STOXX Europe Multifactor · `IE00BZ0PKV06` | El mismo | ✅ **IDÉNTICO** |
 | 🌍 **Emergentes** | iShares Emerging Markets Index **clase S** · `IE000QAZP7L2` | iShares EM Index **clase D** · `IE00BYWYCC39` | 🟡 **PROXY** *(§2.2)* |
@@ -35,14 +35,15 @@
 |---|---|
 | ✅ **Idénticas** | **8** |
 | 🟡 Proxy de bajo impacto | **2** |
-| 🔴 **Requieren advertencia expresa** | **2** |
+| 🟡 **Proxy declarado con regla de atribución** | **1** *(small cap, D77)* |
+| 🔴 **Requiere advertencia expresa** | **1** *(cobre)* |
 | ❌ Fuera del informe | **1** |
 
 ---
 
 # 2. LOS CUATRO CASOS QUE HAY QUE EXPLICAR
 
-## 2.1 🔴 Aceleración · tamaño — **contradicción abierta, no resuelta**
+## 2.1 ✅ Aceleración · tamaño — **RESUELTO POR D77**
 
 | Documento | Vehículo | TER |
 |---|---|---|
@@ -59,13 +60,21 @@ es equivalente. **Pero no son el mismo producto y no cuestan lo mismo.**
 | Patrimonio | 7.047 M€ | 1.783 M€ |
 | Posiciones | — | **3.623** |
 | EEUU | — | 62,73% |
-| ⚠️ Fiscalidad | **Traspasable sin tributar** | **No traspasable** |
+| ⚠️ Fiscalidad | ✅ **Traspasable sin tributar** | ❌ **No traspasable** |
+| **Papel** | ✅ **VEHÍCULO REAL** | 🟡 **PROXY DEL X-RAY** |
 
-> ### 🔴 **NO se resuelve aquí porque cambiaría un vehículo, y la instrucción es no tocar
-> ### ninguno.** **Requiere decisión del equipo.**
+> ### ✅ **RESUELTO POR D77: el VANGUARD es el vehículo real. El SPDR es proxy analítico**
+> ### **exclusivamente para el X-Ray**, cuando la clase Vanguard no se resuelve en la herramienta.
 >
-> ⚠️ **Y no es menor: la diferencia no es solo de 15 puntos básicos de coste. Es que uno
-> es traspasable y el otro no**, lo cual afecta al rebalanceo a diez años.
+> **Razones, en orden de peso:** ① **el fondo es traspasable y el ETF no** — decisivo con
+> rebalanceos a diez años · ② **15 pb menos de coste** *(≈6 €/año sobre 100.000 €: real pero
+> menor)* · ③ **el fondo admite aportaciones por importe exacto**, el ETF deja residuos cada mes.
+>
+> 🔴 **REGLA DE ATRIBUCIÓN:** de la posición del X-Ray se toman **geografía, sectores y estilo**.
+> **NUNCA su coste, su fiscalidad ni su operativa**, que son los del Vanguard.
+>
+> **Calidad de réplica verificada:** sectores con diferencias **< 0,25 pp** · acumulado 3 años
+> **53,94% vs 53,38%** · 5 años **46,59% vs 46,70%** · volatilidad 5a **15,71% vs 15,72%**.
 
 ## 2.2 🟡 Emergentes — clase S vs clase D
 

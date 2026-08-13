@@ -4,7 +4,7 @@
 >
 > **Informe Morningstar de 13-ago-2026 · 12 posiciones · 100% del 97% invertido.**
 > Alfa 3a **3,04** · Beta 3a **0,79** · Sharpe 3a **1,19** · Volatilidad 3a **9,13** ·
-> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,24%** *(13 fuentes primarias pendientes)*.
+> Rentabilidad 3a **14,14%**. **Coste estimado ≈0,23%** *(13 fuentes primarias pendientes)*.
 > ⚠️ Países y sectores de Morningstar van **sobre la parte accionarial (76,93%)**, no sobre el NAV.
 
 
