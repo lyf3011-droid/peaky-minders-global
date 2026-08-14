@@ -132,8 +132,8 @@ dimensiones sigue vigente como vara de medir.)*
 | 5 | Capas transversales: Convicción y ejecución | Estructura ≠ gestión ≠ gobernanza ≠ ejecución | §5 | D50 · D63 · D78-D80 | — | diagrama 3 capas | 🟢 **CERRADO v2** |
 | 6 | Los dos modos de análisis: por posición y mirando dentro | Intención vs resultado | §7, §10 | D52 · D62 · D73 · D77 · D81 | — | doble vista | 🟢 **CERRADO v2** |
 | 7 | Las herramientas del método: clasificar, registrar y comprobar | El método es procedimiento, no intuición | §14-16, §27, §29 | D75 · D77-D79 · D82 | — | árbol + control final | 🟢 **CERRADO v2** |
-| 8 | Validación descriptiva: 8 arquitecturas históricas | Capacidad descriptiva, no universalidad | §11-13 | — | 🔴 **fuentes primarias (B7)** | tabla comparativa | 🟠 |
-| 9 | Limitaciones del marco | Subjetividad, falsabilidad, ex post | §28 | C.2 de esta auditoría | — | — | 🟡 |
+| 8 | Validación descriptiva: 8 arquitecturas históricas | Capacidad descriptiva, no universalidad | §11-13 | D83 | 🟠 páginas Browne/Swensen | tabla comparativa | 🟢 **CERRADO provisional** |
+| 9 | Limitaciones del marco | Subjetividad, falsabilidad, ex post | §28 | C.2 · D83 | — | tres zonas + condiciones de retirada | 🔵 **v1 redactado** |
 | **PARTE II — IMPLEMENTACIÓN: GLOBAL 10Y** | | | | | | | |
 | 10 | Del mandato a la parametrización | Los pesos como instancia, no como regla | §8 pasos 2-3, §18 | D65 · D73 · D75 | — | target vs actual | 🔵 |
 | 11 | Los siete módulos implementados *(7 secciones)* | Ficha §17 por módulo, con «dónde falla» | §17 | D73 · D67 · fichas | D67 ①-④ sin responder | 7 fichas | 🟠 |
