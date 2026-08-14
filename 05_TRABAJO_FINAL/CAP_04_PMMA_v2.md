@@ -141,15 +141,15 @@ Cuatro propiedades completan la definición:
 **[MODELO — mapa de diseño contrastado posteriormente en el capítulo 19]** Como referencia
 de diseño, cada módulo llevaba asociado un comportamiento *esperado* por régimen económico
 (crecimiento × inflación). Su desarrollo, datación histórica y contraste cuantitativo se
-realizaron en el capítulo 19. **Las filas que aparecen sin valor son aquellas cuya lectura
+realizaron en el capítulo 19. **Las celdas que aparecen sin valor son aquellas cuya lectura
 por régimen no recibió apoyo suficiente en esa prueba, o no pudo contrastarse con la
-evidencia disponible; las filas que conservan valores siguen expresando hipótesis de
+evidencia disponible; las celdas que conservan valor siguen expresando hipótesis de
 diseño, no resultados históricos medidos.**
 
 | Módulo | Crecim.↑ Infl.↓ | Crecim.↑ Infl.↑ | Crecim.↓ Infl.↑ | Crecim.↓ Infl.↓ |
 |---|---|---|---|---|
 | Motor | — | — | — | — |
-| Defensivos | favorable | mixto | mixto | **menos adverso** |
+| Defensivos | favorable | mixto | mixto | — |
 | Aceleración | — | — | — | — |
 | Emergentes | favorable | **mixto/favorable** | adverso | adverso |
 | Freno | — | — | — | — |
@@ -196,6 +196,17 @@ diseño, no resultados históricos medidos.**
 > ⚠️ **La ausencia de valores significa evidencia insuficiente para contrastar la hipótesis
 > original, no evidencia de que Freno carezca de comportamiento diferenciado según el
 > entorno. Su función estructural permanece intacta.**
+
+> **[MODELO — actualizado tras el capítulo 19 · D102]** **La lectura de Defensivos se acota
+> tras la prueba histórica.** En **crecimiento débil + inflación alta**, los proxies de
+> consumo básico y salud **recibieron apoyo bajo los dos clasificadores examinados**. En
+> **crecimiento débil + inflación baja**, el resultado **no fue estable**: el proxy que
+> cumplía cambiaba al modificar el criterio de clasificación. Por ello, **se retira la
+> lectura de esa última celda**.
+>
+> ⚠️ **No se modifica retrospectivamente la celda de crecimiento débil + inflación alta para
+> hacerla más favorable.** El mapa conserva su hipótesis de diseño allí donde no ha sido
+> retirada; **el detalle empírico y su nivel de apoyo corresponden al capítulo 19**.
 
 ---
 

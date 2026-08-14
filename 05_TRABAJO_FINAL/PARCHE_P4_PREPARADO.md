@@ -1,9 +1,11 @@
-# 🩹 PARCHE P-4 — PREPARADO, **NO EJECUTADO**
+# 🩹 PARCHE P-4 — ✅ **EJECUTADO**
 
 ## Defensivos: acotar la lectura a una sola celda · 14 de agosto de 2026
 
-> **P-4 aceptado conceptualmente; no ejecutado.** El capítulo 4 no se ha modificado.
-> **P-5 y P-6 no se abren.**
+> ✅ **EJECUTADO el 14-ago-2026 (D102).** Tres ediciones: **una celda de Defensivos**,
+> **«filas» → «celdas»** en el encabezado y **la nota**, con «recibieron apoyo» en lugar de
+> «mantuvieron apoyo» para usar exactamente el lenguaje del capítulo 19. **P-5 y P-6 sin
+> ejecutar.**
 
 ---
 
@@ -50,10 +52,12 @@ lado**.
 ## 2.1 La decisión más delicada: no premiar la celda que sí salió bien
 
 **La celda de crecimiento débil + inflación alta se queda como «mixto» aunque el capítulo 19
-encontrara apoyo estable.** El motivo es metodológico y conviene que quede escrito: **mejorar
-una etiqueta después de conocer el resultado sería ajuste retrospectivo** — el mismo vicio
-que R8 prohíbe en el capítulo 19. Se retira lo que no se sostiene; **no se recompensa lo que
-sí, porque el mapa sigue siendo un mapa de diseño, no un cuadro de resultados.**
+encontrara apoyo estable.** El motivo es metodológico y conviene que quede escrito: mejorar
+`mixto → favorable` después de conocer el resultado **sería contrario al mismo principio de
+evitar el ajuste retrospectivo que inspira R8** — no una violación literal de R8, que rige
+sobre las reglas de clasificación del capítulo 19 y no sobre las etiquetas de este mapa. Se
+retira lo que no se sostiene; **no se recompensa lo que sí, porque el mapa sigue siendo un
+mapa de diseño, no un cuadro de resultados.**
 
 *(Ese reconocimiento del apoyo empírico es precisamente lo que P-6 propone canalizar con una
 columna específica de nivel de apoyo — no retocando las etiquetas de diseño.)*
@@ -63,9 +67,9 @@ columna específica de nivel de apoyo — no retocando las etiquetas de diseño.
 Se insertaría **el último**, tras el párrafo del Freno *(orden actual de las notas:
 Motor → Aceleración → Freno → **Defensivos**)*. **Texto propuesto, con tu formulación:**
 
-> **[MODELO — actualizado tras el capítulo 19]** **La lectura de Defensivos se acota tras la
-> prueba histórica.** En **crecimiento débil + inflación alta**, los proxies de consumo
-> básico y salud **mantuvieron apoyo bajo los dos clasificadores examinados**. En
+> **[MODELO — actualizado tras el capítulo 19 · D102]** **La lectura de Defensivos se acota
+> tras la prueba histórica.** En **crecimiento débil + inflación alta**, los proxies de
+> consumo básico y salud **recibieron apoyo bajo los dos clasificadores examinados**. En
 > **crecimiento débil + inflación baja**, el resultado **no fue estable**: el proxy que
 > cumplía cambiaba al modificar el criterio de clasificación. Por ello, **se retira la
 > lectura de esa última celda**.
@@ -142,5 +146,5 @@ etiqueta · ✅ las dos cajas de crecimiento fuerte **no se reinterpretan**, por
 formuló sobre crecimiento débil · ✅ no cambia función, pregunta de control, pesos ni
 vehículos · ✅ el detalle empírico se remite al capítulo 19.
 
-**Estado: PREPARADO — pendiente de tu aprobación y de la decisión sobre §3 (encabezado:
-«filas» → «celdas»).**
+**Estado: ✅ EJECUTADO (D102).** Encabezado ajustado a «celdas» dentro de P-4. Para **P-6**
+quedan la tabla resumen final y la futura columna de nivel de apoyo empírico.
