@@ -131,7 +131,7 @@ dimensiones sigue vigente como vara de medir.)*
 | 4 | PMMA: función dominante y los siete módulos | El núcleo del método | §2-4, §31-34 | D75 · D78-D79 | — | esquema de capas | 🟢 **CERRADO v2** |
 | 5 | Capas transversales: Convicción y ejecución | Estructura ≠ gestión ≠ gobernanza ≠ ejecución | §5 | D50 · D63 · D78-D80 | — | diagrama 3 capas | 🟢 **CERRADO v2** |
 | 6 | Los dos modos de análisis: por posición y mirando dentro | Intención vs resultado | §7, §10 | D52 · D62 · D73 · D77 · D81 | — | doble vista | 🟢 **CERRADO v2** |
-| 7 | Instrumental: árbol, extensión, modelo de datos, gate | El método es procedimiento, no intuición | §14-16, §27, §29 | D75 | **9 campos nuevos (A.4)** | árbol + gate | 🟡 |
+| 7 | Las herramientas del método: clasificar, registrar y comprobar | El método es procedimiento, no intuición | §14-16, §27, §29 | D75 · D77-D79 · D82 | — | árbol + control final | 🟢 **CERRADO v2** |
 | 8 | Validación descriptiva: 8 arquitecturas históricas | Capacidad descriptiva, no universalidad | §11-13 | — | 🔴 **fuentes primarias (B7)** | tabla comparativa | 🟠 |
 | 9 | Limitaciones del marco | Subjetividad, falsabilidad, ex post | §28 | C.2 de esta auditoría | — | — | 🟡 |
 | **PARTE II — IMPLEMENTACIÓN: GLOBAL 10Y** | | | | | | | |
