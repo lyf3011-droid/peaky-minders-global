@@ -73,9 +73,11 @@ débil muestra además consistencia mayoritaria entre episodios**.
 **R:** No, y por tres razones estructurales. Primera: la clasificación usa **series
 revisadas que nadie conocía en tiempo real**, así que es descriptiva del pasado y no puede
 generar señales. Segunda: **no produce ninguna instrucción de compra o venta** en ningún
-punto. Y tercera: en nuestro sistema, **ninguna capa macro puede autorizar una compra** —
-para comprar hace falta que una empresa llegue al precio que escribimos de antemano. La
-macro modula la prudencia; no dispara operaciones.
+punto. Y tercera: en nuestro sistema, **ninguna capa macro dispara una compra**. Las compras de
+Convicción exigen que una empresa llegue al precio que escribimos de antemano; las
+aportaciones y el rebalanceo siguen su propio protocolo mensual. **En ninguno de los dos
+casos interviene una lectura del entorno.** La macro modula la prudencia; no dispara
+operaciones.
 
 ---
 

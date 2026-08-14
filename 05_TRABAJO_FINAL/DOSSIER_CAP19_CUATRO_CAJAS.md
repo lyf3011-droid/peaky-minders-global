@@ -2,6 +2,11 @@
 
 ## Marco de cuatro cajas: crecimiento × inflación · 14 de agosto de 2026
 
+> ⚠️ **CORRECCIÓN POSTERIOR (D96):** este borrador v1 afirmaba que el precio del oro
+> estuvo fijado hasta 1971. **Es incorrecto** —desde marzo de 1968 existía mercado privado
+> libre—. Se conserva sin reescribir como registro histórico; la versión vigente es el
+> dossier v2 y el capítulo 19 v1.2.
+>
 > **Esto no es el capítulo 19.** Es el trabajo previo que fija definiciones, criterios,
 > fuentes y episodios **antes** de mirar ningún resultado — para que la conclusión no pueda
 > acomodarse a la hipótesis. **Regla fundamental de este dossier: primero datos y

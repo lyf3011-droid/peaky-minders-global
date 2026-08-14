@@ -158,7 +158,7 @@ en 1974 con estos números.** Este capítulo analiza robustez, no genera señale
 | Tipo oficial | **Reserva Federal** | 1954→ | 📚 Contexto |
 | Retornos por clase de activo | **Damodaran** *(NYU, anual 1928→)* · **Shiller** *(S&P y CPI)* | 1928→ | 📚 **Clave también para el cap. 20** |
 | Factores tamaño y valor | **Biblioteca de datos Fama-French** *(pública)* | 1926→ | 📚 Por descargar |
-| Oro | **LBMA / World Gold Council** | 1968→ útil | 📚 ⚠️ precio fijado hasta 1971 |
+| Oro | **LBMA** | 1968→ | 📚 ⚠️ mercado privado libre desde 1968; la muestra arranca en 1971Q4 por homogeneidad de régimen
 | PIB e IPC zona euro / España | **Eurostat · INE** | ~1995→ | 📚 Solo periodo reciente |
 
 **Regla de fuentes:** cada serie se cita con proveedor, identificador, fecha de descarga y
@@ -206,7 +206,7 @@ resultado del capítulo; reescribir el criterio hasta que dé lo esperado, no.**
 | ⚡ Aceleración | Factores tamaño y valor *(Fama-French)* | 1926→ | Los factores académicos **no son productos comprables**: miden la prima, sin costes ni implementación |
 | 🌍 Emergentes | Índice de emergentes | 1988→ | **No cubre 1973 ni 1979** |
 | ⚓ Freno | Letras y bonos del Tesoro | 1928→ | Nuestro vehículo real es otro; el proxy mide **el tipo de exposición**, no nuestros fondos |
-| 🥇 Activos Reales | Oro y materias primas | 1968→ útil | **Oro con precio fijo hasta 1971**: nada anterior es interpretable |
+| 🥇 Activos Reales | Oro y materias primas | 1968→ | Muestra desde 1971Q4 **por homogeneidad de régimen**, no por falta de precio de mercado
 | 💥 Asimetría | Bitcoin | 2010→ | 🔴 **No analizable en ninguna caja histórica relevante.** Se dice — no se sustituye por otra cosa |
 
 > **Regla dura:** los proxies miden **cómo se comporta ese tipo de exposición en cada
@@ -275,7 +275,7 @@ ya con la regla de consistencia del §9.1 incorporada.
 |---|---|---|---|
 | **P1** | **Módulos casi sin historia**: Asimetría *(2010→)*, Emergentes *(1988→)* | 🔴 | No analizables en cajas antiguas. **No se inventa sustituto** |
 | **P2** | **Defensivos sin serie sectorial larga y gratuita** | 🔴 | Si no aparece fuente, se analiza solo desde donde haya datos |
-| **P3** | **Oro con precio fijo hasta 1971** | 🟠 | Todo análisis de oro empieza en 1971-73 |
+| **P3** | **Cambio de régimen del oro entre 1968 y 1971** *(dos niveles → convertibilidad suspendida)* | 🟠 | La muestra arranca en 1971Q4 para no mezclar regímenes |
 | **P4** | **Revisiones del PIB** | 🟠 | Ver §5: descriptivo ex post, no invertible |
 | **P5** | **Sesgo EEUU** | 🟠 | Ver §12 |
 | **P6** | **Divisa**: retornos históricos en dólares ≠ lo que cobraría un inversor en euros | 🟠 | Declarado; la conversión es trabajo del cap. 18 |

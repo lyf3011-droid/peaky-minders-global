@@ -70,8 +70,8 @@
 | **Función** | Comportamiento ligado a inflación y confianza monetaria |
 | **Proxy disponible** | Precio del oro, fixing PM de Londres, USD |
 | **Fuente** | **LBMA** *(fuente primaria oficial)* |
-| **Periodo** | Serie desde 1968-04; **utilizada solo desde 1971Q4** |
-| **Por qué se recorta** | ⚠️ **El precio del oro estuvo administrado hasta el fin de la convertibilidad en 1971.** Analizar «retornos» de un precio fijado por decreto no mide nada |
+| **Periodo** | Serie desde 1968-04 *(precio de mercado privado válido desde el origen)*; **utilizada desde 1971Q4 por decisión de alcance** |
+| **Por qué se recorta** | ⚠️ **Por homogeneidad de régimen, no por falta de dato.** Desde marzo de 1968, disuelto el London Gold Pool, existía un **sistema de dos niveles** con **mercado privado a precio libre**; el precio oficial de 35 $/onza regía solo entre autoridades monetarias. Se excluye el tramo anterior a la **suspensión de la convertibilidad del dólar en oro (15-ago-1971)** para no mezclar dos regímenes distintos *(fuente: Federal Reserve History)* |
 | **Representa bien** | El oro físico — que es exactamente lo que tenemos *(ETC de oro asignado)*. **Es el proxy más fiel de toda la matriz** |
 | **NO representa** | 🔴 **El cobre** *(2 de los 9 puntos)*: sin serie pública gratuita con historia larga |
 | **Confianza** | 🟢 **Alta para el oro** *(9 episodios en la caja 4, robusto a las dos clasificaciones)* · ⛔ **nula para el cobre** |
