@@ -1,0 +1,193 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AUDITORIA_CRITERIO_R1_R8</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🔍 AUDITORÍA DEL CRITERIO R1-R8</h1>
+<h2>14 de agosto de 2026 · antes de descargar ninguna serie</h2>
+<blockquote>
+<p><strong>Objetivo:</strong> comprobar que ninguna regla deja margen de decisión discrecional, que
+ninguna mira al futuro, y que un tercero podría repetir la clasificación y obtener
+exactamente lo mismo.</p>
+</blockquote>
+<hr />
+<h2>1. Auditoría regla por regla</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Regla</th>
+<th>¿Sin ambigüedad?</th>
+<th>¿Sin mirar al futuro?</th>
+<th>¿Reproducible?</th>
+<th>Observación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>R1</strong></td>
+<td>Trimestre</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>La unidad la impone el PIB</td>
+</tr>
+<tr>
+<td><strong>R2</strong></td>
+<td>Crecimiento = PIB real interanual</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Serie única identificada</td>
+</tr>
+<tr>
+<td><strong>R3</strong></td>
+<td>Inflación = IPC interanual</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Se usa el IPC <strong>general</strong>, no el subyacente <em>(fijado aquí: es el que vive la gente y el que tiene serie más larga)</em></td>
+</tr>
+<tr>
+<td><strong>R4</strong></td>
+<td>Mediana móvil de 40 trimestres, excluyendo el clasificado</td>
+<td>✅</td>
+<td>✅ <strong>Solo pasado</strong></td>
+<td>✅</td>
+<td>La exclusión del propio trimestre está definida sin ambigüedad</td>
+</tr>
+<tr>
+<td><strong>R5</strong></td>
+<td>Episodio = ≥2 trimestres consecutivos</td>
+<td>✅</td>
+<td>⚠️ <strong>Ver §2.1</strong></td>
+<td>✅</td>
+<td>Un trimestre aislado <strong>conserva su caja</strong> para el cálculo por cajas; lo que exige ≥2 es llamarlo «episodio»</td>
+</tr>
+<tr>
+<td><strong>R6</strong></td>
+<td>Sin zona frontera; marca informativa con fórmula fija</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td><strong>La discrecionalidad de la v1 queda eliminada</strong></td>
+</tr>
+<tr>
+<td><strong>R7</strong></td>
+<td>Publicación de umbrales, código y series</td>
+<td>✅</td>
+<td>—</td>
+<td>✅</td>
+<td>Es la regla que hace auditable todo lo demás</td>
+</tr>
+<tr>
+<td><strong>R8</strong></td>
+<td>Reglas congeladas antes de mirar rentabilidades</td>
+<td>✅</td>
+<td>—</td>
+<td>✅</td>
+<td>Con procedimiento explícito si hubiera que cambiarlas</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Las cuatro ambigüedades detectadas — y cerradas aquí</h2>
+<h3>2.1 R5 · ¿qué pasa con un trimestre aislado?</h3>
+<p><strong>Ambigüedad:</strong> si un trimestre cae en la caja 4 rodeado de caja 3, ¿cuenta o no?</p>
+<blockquote>
+<p><strong>🔒 Cerrado:</strong> <strong>cuenta para el cálculo agregado por cajas</strong> <em>(no se descarta ningún
+dato)</em>, pero <strong>no constituye un «episodio»</strong> ni entra en el recuento de episodios de la
+regla de consistencia del §9.1. Los trimestres aislados se publican en una tabla aparte.</p>
+</blockquote>
+<h3>2.2 Los 40 primeros trimestres de la muestra</h3>
+<p><strong>Ambigüedad:</strong> los primeros 10 años no tienen ventana completa hacia atrás.</p>
+<blockquote>
+<p><strong>🔒 Cerrado:</strong> <strong>no se clasifican.</strong> Con PIB desde 1947, la clasificación empieza en
+<strong>1957</strong>. Nada de rellenar con ventanas más cortas — eso daría umbrales inestables
+precisamente en el arranque.</p>
+</blockquote>
+<h3>2.3 Empates exactos con la mediana</h3>
+<p><strong>Ambigüedad:</strong> ¿y si un valor coincide con la mediana?</p>
+<blockquote>
+<p><strong>🔒 Cerrado:</strong> <strong>valor ≥ mediana = «alto»</strong>. Convención declarada, aplicada igual a
+ambas variables. <em>(Con datos continuos es prácticamente imposible, pero la regla existe
+para que no haya ni una decisión sin escribir.)</em></p>
+</blockquote>
+<h3>2.4 Trimestre del IPC</h3>
+<p><strong>Ambigüedad:</strong> el IPC es mensual; ¿qué mes representa al trimestre?</p>
+<blockquote>
+<p><strong>🔒 Cerrado:</strong> <strong>media de los tres meses del trimestre</strong>, y la variación interanual se
+calcula sobre esa media trimestral. <em>(Alternativa descartada: usar el último mes — más
+volátil y menos comparable con un PIB que es un flujo del trimestre entero.)</em></p>
+</blockquote>
+<h2>3. Riesgos que la auditoría NO puede eliminar</h2>
+<table>
+<thead>
+<tr>
+<th>Riesgo</th>
+<th>Por qué persiste</th>
+<th>Cómo se trata</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>La elección misma de niveles vs sorpresas</strong></td>
+<td>Es una decisión de diseño, no un error</td>
+<td>Declarada en §1 del dossier</td>
+</tr>
+<tr>
+<td><strong>La elección de EEUU</strong></td>
+<td>Idem</td>
+<td>Declarada en §12</td>
+</tr>
+<tr>
+<td><strong>Revisiones históricas del PIB</strong></td>
+<td>Los datos originales no son recuperables sin pagar</td>
+<td>Declarado en §5: descriptivo ex post</td>
+</tr>
+<tr>
+<td><strong>Pocos episodios en la caja 4</strong></td>
+<td>Es la historia, no el método</td>
+<td>Regla de consistencia §9.1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ninguno de los cuatro se puede resolver: los cuatro se declaran.</strong> Ésa es la diferencia
+entre una limitación y un defecto.</p>
+<h2>4. Prueba de integridad exigida al código <em>(antes de usar resultados)</em></h2>
+<ol>
+<li><strong>Suma de trimestres por caja = total de trimestres clasificados</strong> <em>(sin pérdidas)</em>.</li>
+<li><strong>Ningún umbral usa datos posteriores</strong> al trimestre clasificado — verificable por
+   construcción de la ventana.</li>
+<li>La <strong>clasificación alternativa</strong> <em>(media de 10 años)</em> se calcula con el mismo código,
+   cambiando un solo parámetro.</li>
+<li>Los <strong>resultados se guardan con la fecha de descarga de las series</strong>.</li>
+</ol>
+<h2>5. Veredicto</h2>
+<blockquote>
+<h3>✅ <strong>El criterio R1-R8 queda CERRADO. No hay ninguna decisión metodológica abierta.</strong></h3>
+<p>Las cuatro ambigüedades detectadas se han cerrado en §2 con reglas fijas <em>(trimestre
+aislado, arranque en 1957, empates, trimestralización del IPC)</em>, y forman parte del
+criterio congelado por R8.</p>
+</blockquote>
+<p><strong>Queda por tanto habilitada la preparación de series y cálculos</strong> — no la redacción del
+capítulo.</p></div></body></html>

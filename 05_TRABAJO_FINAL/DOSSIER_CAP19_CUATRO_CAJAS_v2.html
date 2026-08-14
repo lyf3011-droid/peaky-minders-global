@@ -1,0 +1,634 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DOSSIER_CAP19_CUATRO_CAJAS_v2</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>📦 DOSSIER PREPARATORIO — CAPÍTULO 19 · <strong>v2</strong></h1>
+<h2>Marco de cuatro cajas: crecimiento × inflación · auditoría aplicada · 14 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Esto no es el capítulo 19.</strong> Es el trabajo previo que fija definiciones, criterios,
+fuentes y episodios <strong>antes</strong> de mirar ningún resultado. <strong>Regla fundamental: primero
+datos y episodios; después narrativa. Si los datos contradicen el mapa del capítulo 4,
+se corrige el mapa — nunca al revés.</strong></p>
+<p>⚠️ <strong>Ninguna cifra de este documento está calculada todavía.</strong></p>
+</blockquote>
+<hr />
+<h1>1. Naturaleza del marco — qué es y qué NO es</h1>
+<p><strong>[EVIDENCIA EXTERNA]</strong> El marco original de cuatro cuadrantes que popularizó Bridgewater
+<em>(y del que derivan las carteras de «todo clima»)</em> <strong>se formula en términos de cambios y
+sorpresas de crecimiento e inflación respecto de lo que el mercado ya descontaba</strong> — no en
+términos de niveles absolutos. La intuición es que los precios de los activos ya
+incorporan las expectativas: lo que mueve un mercado no es que la inflación sea del 4%,
+sino que sea del 4% cuando se esperaba el 2%.</p>
+<p><strong>[MODELO]</strong> Nuestro clasificador <strong>no reproduce ese sistema.</strong> Lo que construimos aquí es:</p>
+<blockquote>
+<h3><strong>Una aproximación histórica operativa y reproducible</strong> basada en <strong>niveles</strong></h3>
+<h3>observados de crecimiento e inflación frente a su propia historia reciente.</h3>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Marco original <em>(Bridgewater)</em></th>
+<th>Nuestro clasificador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable</td>
+<td><strong>Sorpresa</strong> frente a expectativa descontada</td>
+<td><strong>Nivel</strong> frente a su mediana histórica reciente</td>
+</tr>
+<tr>
+<td>Requiere</td>
+<td>Series de expectativas <em>(encuestas, breakevens)</em></td>
+<td>Solo PIB e IPC públicos</td>
+</tr>
+<tr>
+<td>Reproducible por un tercero</td>
+<td>Difícil; imposible antes de ~1990</td>
+<td>✅ Sí, con dos series gratuitas</td>
+</tr>
+<tr>
+<td>Qué explica</td>
+<td>Por qué se mueven los precios</td>
+<td>En qué clima económico ocurrió cada periodo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Por qué elegimos niveles:</strong> porque el criterio debe poder <strong>repetirlo cualquiera</strong> con
+fuentes públicas para todo el periodo, incluidos los años setenta. Un método elegante que
+nadie puede comprobar vale menos, para este trabajo, que uno simple y verificable.</p>
+<p><strong>Consecuencia que el capítulo debe declarar:</strong> nuestras cajas describen <strong>el clima
+económico observado</strong>, no el <strong>shock</strong> que movió los mercados. Son cosas relacionadas pero
+distintas, y confundirlas sería un error de método.</p>
+<hr />
+<h1>2. Definiciones — crecimiento e inflación</h1>
+<p><strong>Crecimiento</strong> es cuánto más produce y vende una economía que el año anterior. Si las
+empresas venden más, contratan más y sus beneficios suben. <strong>Variable: variación
+interanual del PIB real.</strong></p>
+<p><strong>Inflación</strong> es cuánto suben los precios de lo que compramos: si el carro de la compra
+costaba 100 € y ahora 103 €, la inflación es del 3%. <strong>Variable: variación interanual del
+IPC.</strong></p>
+<p>Las dos importan a la vez porque afectan a cosas distintas: <strong>el crecimiento mueve los
+beneficios de las empresas; la inflación mueve el valor del dinero y el tipo de interés al
+que se descuentan esos beneficios.</strong> Una empresa puede ir bien y la inversión ir mal, si
+la inflación obliga a subir los tipos.</p>
+<hr />
+<h1>3. Definición operacional de las cuatro cajas</h1>
+<p><strong>[MODELO]</strong> Dos variables con dos estados dan cuatro combinaciones. No hay más — y ésa es
+la fuerza del marco: <strong>es exhaustivo</strong>. Toda situación cae en una de las cuatro.</p>
+<pre><code>                    INFLACIÓN BAJA          INFLACIÓN ALTA
+                 ┌──────────────────────┬──────────────────────┐
+ CRECIMIENTO     │   CAJA 1             │   CAJA 2             │
+ ALTO            │   Expansión          │   Recalentamiento    │
+                 │   desinflacionaria   │   (crecimiento caro) │
+                 ├──────────────────────┼──────────────────────┤
+ CRECIMIENTO     │   CAJA 3             │   CAJA 4             │
+ BAJO            │   Recesión           │   Estanflación       │
+                 │   desinflacionaria   │                      │
+                 └──────────────────────┴──────────────────────┘
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Caja</th>
+<th>Definición formal</th>
+<th>Qué se vive en la calle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · Expansión desinflacionaria</strong></td>
+<td>Crecimiento &gt; umbral <strong>y</strong> inflación &lt; umbral</td>
+<td>Las empresas ganan más y el dinero no pierde valor</td>
+</tr>
+<tr>
+<td><strong>2 · Recalentamiento</strong></td>
+<td>Crecimiento &gt; umbral <strong>e</strong> inflación &gt; umbral</td>
+<td>Va rápido pero caro; el banco central suele subir tipos</td>
+</tr>
+<tr>
+<td><strong>3 · Recesión desinflacionaria</strong></td>
+<td>Crecimiento &lt; umbral <strong>e</strong> inflación &lt; umbral</td>
+<td>Se vende menos y los precios se moderan; bajan tipos</td>
+</tr>
+<tr>
+<td><strong>4 · Estanflación</strong></td>
+<td>Crecimiento &lt; umbral <strong>e</strong> inflación &gt; umbral</td>
+<td>No se crece y encima todo sube. <strong>El escenario que rompe la lógica del 60/40</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nota obligatoria del capítulo:</strong> las cajas son una <strong>simplificación deliberada</strong>. La
+economía es continua y nosotros la partimos en cuatro cuadrantes con dos variables. Es un
+instrumento de <strong>análisis de robustez ante entornos económicos diferentes</strong> — no una teoría
+de cómo funciona la economía, y <strong>en ningún caso una herramienta de predicción</strong>.</p>
+<hr />
+<h1>4. Criterio de clasificación R1-R8 — congelado antes de calcular</h1>
+<h2>4.1 Las reglas</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Regla</th>
+<th>Motivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>R1</strong></td>
+<td><strong>Unidad de análisis: el trimestre</strong></td>
+<td>El PIB es trimestral; usar meses obligaría a interpolar</td>
+</tr>
+<tr>
+<td><strong>R2</strong></td>
+<td><strong>Crecimiento = variación interanual del PIB real</strong></td>
+<td>Interanual elimina estacionalidad</td>
+</tr>
+<tr>
+<td><strong>R3</strong></td>
+<td><strong>Inflación = variación interanual del IPC</strong></td>
+<td>Homogéneo con R2</td>
+</tr>
+<tr>
+<td><strong>R4</strong></td>
+<td><strong>Umbral principal = MEDIANA MÓVIL de los 40 trimestres anteriores</strong> <em>(10 años), </em><em>excluyendo el trimestre que se clasifica</em>**</td>
+<td>La mediana resiste valores extremos mejor que la media; excluir el trimestre clasificado evita que el dato se compare consigo mismo. <strong>Solo usa información pasada</strong></td>
+</tr>
+<tr>
+<td><strong>R5</strong></td>
+<td><strong>Un episodio requiere ≥2 trimestres consecutivos</strong> en la misma caja</td>
+<td>Evita cambios de caja por ruido de un trimestre</td>
+</tr>
+<tr>
+<td><strong>R6</strong></td>
+<td><strong>Sin zona frontera en la clasificación.</strong> Todo trimestre con datos recibe caja por comparación estricta con la mediana. <strong>Ninguna observación se excluye ni se ajusta a mano</strong></td>
+<td>Ver §4.2</td>
+</tr>
+<tr>
+<td><strong>R7</strong></td>
+<td><strong>Umbrales, código y series se publican en anexo</strong> con proveedor, identificador, fecha de descarga y transformación</td>
+<td>Reproducibilidad: un tercero debe poder repetirlo</td>
+</tr>
+<tr>
+<td><strong>R8</strong></td>
+<td>🔒 <strong>Todas las reglas de clasificación quedan CONGELADAS antes de analizar las rentabilidades de los activos.</strong> Cualquier cambio posterior de R1-R7 se registra como decisión fechada, con su motivo, y <strong>obliga a repetir y republicar la clasificación completa</strong></td>
+<td>Impide el ajuste retroactivo del método a resultados que no gustan</td>
+</tr>
+</tbody>
+</table>
+<h2>4.2 La zona frontera: <strong>eliminada de la clasificación</strong></h2>
+<p>La v1 proponía excluir los trimestres «cercanos al umbral». <strong>Se elimina</strong>, porque un
+criterio de exclusión sin fórmula fijada de antemano introduce exactamente la
+discrecionalidad que este capítulo intenta evitar.</p>
+<p><strong>En su lugar, un indicador puramente informativo con fórmula fija, que NO altera ninguna
+clasificación:</strong></p>
+<blockquote>
+<p><strong>Marca de proximidad:</strong> un trimestre se señala como «cercano al umbral» si
+<code>|valor − mediana móvil| &lt; 0,20 × desviación típica de la misma ventana de 40 trimestres</code>.</p>
+</blockquote>
+<p>Los trimestres marcados <strong>conservan su caja</strong> y <strong>entran en todos los cálculos</strong>; la marca
+solo se publica en una tabla informativa que responde a «¿cuántas asignaciones penden de
+un hilo?». No hay decisión manual en ningún punto del proceso.</p>
+<h2>4.3 Robustez obligatoria — se publican las dos clasificaciones</h2>
+<table>
+<thead>
+<tr>
+<th>Publicación</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · Clasificación principal</strong></td>
+<td>Mediana móvil de 40 trimestres <em>(R4)</em></td>
+</tr>
+<tr>
+<td><strong>2 · Clasificación alternativa</strong></td>
+<td><strong>Media móvil de 10 años</strong> <em>(el criterio de la v1)</em></td>
+</tr>
+<tr>
+<td><strong>3 · Tabla de desacuerdo</strong></td>
+<td><strong>Número y porcentaje de trimestres que cambian de caja</strong> entre ambas, con el detalle de cuáles</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Los desacuerdos se publican, no se esconden.</strong> Si las dos clasificaciones difieren mucho,
+ése es un resultado del capítulo: significaría que la frontera entre climas es más difusa
+de lo que el marco sugiere.</p>
+<hr />
+<h1>5. Limitación por revisiones macro — el sistema es descriptivo, no invertible</h1>
+<blockquote>
+<p><strong>[MODELO — texto que va literal al capítulo]</strong> La clasificación utiliza series
+históricas <strong>actualmente revisadas</strong>. Los umbrales no utilizan observaciones futuras
+<em>(R4 solo mira hacia atrás)</em>, pero las cifras históricas pueden incorporar <strong>revisiones
+que un inversor no conocía en tiempo real</strong>. Por eso el sistema es <strong>descriptivo ex post
+y no una señal invertible de market timing</strong>.</p>
+</blockquote>
+<p>Dicho en corto para la defensa: <strong>sabemos hoy en qué caja estuvo 1974; nadie podía saberlo
+en 1974 con estos números.</strong> Este capítulo analiza robustez, no genera señales.</p>
+<hr />
+<h1>6. Fuentes macro primarias</h1>
+<table>
+<thead>
+<tr>
+<th>Dato</th>
+<th>Fuente primaria</th>
+<th>Cobertura</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PIB real EEUU trimestral</td>
+<td><strong>BEA</strong> <em>(Bureau of Economic Analysis)</em>, vía FRED</td>
+<td>1947→</td>
+<td>📚 Por descargar</td>
+</tr>
+<tr>
+<td>IPC EEUU mensual</td>
+<td><strong>BLS</strong> <em>(Bureau of Labor Statistics)</em>, vía FRED</td>
+<td>1913→</td>
+<td>📚 Por descargar</td>
+</tr>
+<tr>
+<td>Tipo oficial</td>
+<td><strong>Reserva Federal</strong></td>
+<td>1954→</td>
+<td>📚 Contexto</td>
+</tr>
+<tr>
+<td>Retornos por clase de activo</td>
+<td><strong>Damodaran</strong> <em>(NYU, anual 1928→)</em> · <strong>Shiller</strong> <em>(S&amp;P y CPI)</em></td>
+<td>1928→</td>
+<td>📚 <strong>Clave también para el cap. 20</strong></td>
+</tr>
+<tr>
+<td>Factores tamaño y valor</td>
+<td><strong>Biblioteca de datos Fama-French</strong> <em>(pública)</em></td>
+<td>1926→</td>
+<td>📚 Por descargar</td>
+</tr>
+<tr>
+<td>Oro</td>
+<td><strong>LBMA / World Gold Council</strong></td>
+<td>1968→ útil</td>
+<td>📚 ⚠️ precio fijado hasta 1971</td>
+</tr>
+<tr>
+<td>PIB e IPC zona euro / España</td>
+<td><strong>Eurostat · INE</strong></td>
+<td>~1995→</td>
+<td>📚 Solo periodo reciente</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regla de fuentes:</strong> cada serie se cita con proveedor, identificador, fecha de descarga y
+transformación aplicada. Sin eso, no entra en el capítulo.</p>
+<hr />
+<h1>7. Episodios históricos — 🔬 candidatos, y su papel exacto</h1>
+<p>⚠️ <strong>Ninguno está clasificado todavía.</strong> La clasificación sale de aplicar R1-R8 a las
+series descargadas.</p>
+<table>
+<thead>
+<tr>
+<th>Episodio candidato</th>
+<th>Caja esperada <em>(descripción histórica habitual)</em></th>
+<th>Por qué interesa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1973-1975</strong> <em>(crisis del petróleo)</em></td>
+<td>4 · Estanflación</td>
+<td>Ver §7.1 — prueba externa de sentido económico</td>
+</tr>
+<tr>
+<td><strong>1979-1982</strong> <em>(Volcker)</em></td>
+<td>4 → 3</td>
+<td>Inflación alta combatida con tipos hasta provocar recesión</td>
+</tr>
+<tr>
+<td><strong>1990-1991</strong></td>
+<td>3</td>
+<td>Recesión corta</td>
+</tr>
+<tr>
+<td><strong>1995-1999</strong></td>
+<td>1</td>
+<td>Expansión con inflación contenida</td>
+</tr>
+<tr>
+<td><strong>2000-2002</strong> <em>(puntocom)</em></td>
+<td>3</td>
+<td>Caída bursátil severa <strong>sin</strong> inflación</td>
+</tr>
+<tr>
+<td><strong>2007-2009</strong></td>
+<td>3</td>
+<td>El estrés de referencia del proyecto <em>(D47a)</em></td>
+</tr>
+<tr>
+<td><strong>2010-2019</strong></td>
+<td>1</td>
+<td>La década que formó las expectativas actuales</td>
+</tr>
+<tr>
+<td><strong>2020</strong> <em>(covid)</em></td>
+<td>?</td>
+<td>⚠️ Caso límite: caída y recuperación en meses; el criterio trimestral puede no capturarlo</td>
+</tr>
+<tr>
+<td><strong>2021-2023</strong></td>
+<td>2 → 4 según trimestre</td>
+<td><strong>El más valioso</strong>: 2022 rompió el 60/40 y es el único que el equipo ha vivido invirtiendo</td>
+</tr>
+</tbody>
+</table>
+<h2>7.1 El papel de 1973-75 — <strong>prueba externa, no condición de validez</strong></h2>
+<blockquote>
+<p><strong>[MODELO — texto literal al capítulo]</strong> El episodio 1973-75 funciona como <strong>prueba
+externa de sentido económico</strong>. Si la clasificación difiere de la descripción histórica
+habitual, <strong>la discrepancia se investiga y se publica; no se modifica automáticamente el
+algoritmo para forzar el resultado.</strong></p>
+</blockquote>
+<p>Una discrepancia puede deberse a varias causas legítimas — el retardo entre el shock y la
+caída medida del PIB, el efecto de la ventana móvil en una década de inflación creciente,
+o el propio criterio de niveles frente al de sorpresas <em>(§1)</em>. <strong>Investigarlas es parte del
+resultado del capítulo; reescribir el criterio hasta que dé lo esperado, no.</strong></p>
+<hr />
+<h1>8. Series, activos y proxies por módulo</h1>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Proxy histórico</th>
+<th>Cobertura</th>
+<th>Límite declarado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td>Índice amplio de acciones EEUU</td>
+<td>1928→</td>
+<td>El All-World no existía; el proxy sobre-representa EEUU <em>(igual que nuestra cartera)</em></td>
+</tr>
+<tr>
+<td>🌿 Defensivos</td>
+<td>Sectores consumo básico y salud</td>
+<td>⚠️ Series largas escasas</td>
+<td>🔴 <strong>El proxy más débil.</strong> Si no hay serie fiable y gratuita, se declara «no analizable con datos largos»</td>
+</tr>
+<tr>
+<td>⚡ Aceleración</td>
+<td>Factores tamaño y valor <em>(Fama-French)</em></td>
+<td>1926→</td>
+<td>Los factores académicos <strong>no son productos comprables</strong>: miden la prima, sin costes ni implementación</td>
+</tr>
+<tr>
+<td>🌍 Emergentes</td>
+<td>Índice de emergentes</td>
+<td>1988→</td>
+<td><strong>No cubre 1973 ni 1979</strong></td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td>Letras y bonos del Tesoro</td>
+<td>1928→</td>
+<td>Nuestro vehículo real es otro; el proxy mide <strong>el tipo de exposición</strong>, no nuestros fondos</td>
+</tr>
+<tr>
+<td>🥇 Activos Reales</td>
+<td>Oro y materias primas</td>
+<td>1968→ útil</td>
+<td><strong>Oro con precio fijo hasta 1971</strong>: nada anterior es interpretable</td>
+</tr>
+<tr>
+<td>💥 Asimetría</td>
+<td>Bitcoin</td>
+<td>2010→</td>
+<td>🔴 <strong>No analizable en ninguna caja histórica relevante.</strong> Se dice — no se sustituye por otra cosa</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Regla dura:</strong> los proxies miden <strong>cómo se comporta ese tipo de exposición en cada
+clima</strong>, no cómo se habría comportado nuestra cartera — que no existía, igual que la
+mitad de sus productos. Cualquier frase del tipo «nuestra cartera habría rendido X en
+1973» queda <strong>prohibida</strong> salvo etiquetada como simulación con todos sus supuestos.</p>
+</blockquote>
+<hr />
+<h1>9. «Proteger» — definición operativa obligatoria</h1>
+<p><strong>[MODELO]</strong> La palabra «proteger» <strong>no se usa sin definir</strong>. Para cada módulo o activo, en
+cada caja, se calculan y publican <strong>cuatro cosas</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Medida</th>
+<th>Qué responde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M1</strong></td>
+<td><strong>Rentabilidad nominal</strong> anualizada en esa caja</td>
+<td>¿Ganó o perdió dinero?</td>
+</tr>
+<tr>
+<td><strong>M2</strong></td>
+<td><strong>Rentabilidad real</strong> <em>(descontada la inflación del propio periodo)</em></td>
+<td>¿Conservó poder de compra? <strong>Es la medida decisiva en las cajas 2 y 4</strong></td>
+</tr>
+<tr>
+<td><strong>M3</strong></td>
+<td><strong>Comportamiento relativo al Motor</strong> <em>(diferencia de rentabilidad real frente al proxy del Motor en la misma caja)</em></td>
+<td>¿Aportó algo que el Motor no daba ya?</td>
+</tr>
+<tr>
+<td><strong>M4</strong></td>
+<td><strong>Consistencia entre episodios</strong> de la misma caja</td>
+<td>¿Fue una vez o siempre?</td>
+</tr>
+</tbody>
+</table>
+<h2>9.1 Definición cuantitativa de «relativamente favorable» y de «consistente»</h2>
+<blockquote>
+<p><strong>Relativamente favorable en una caja</strong> = <strong>M3 &gt; 0</strong> <em>(rentabilidad real superior a la
+del Motor en esa caja)</em>. Se publica siempre junto a M1 y M2, porque un activo puede ser
+relativamente favorable <strong>perdiendo dinero</strong>, y eso hay que decirlo con esas palabras.</p>
+<p><strong>Consistencia (M4), regla fija:</strong>
+· <strong>≥3 episodios con datos</strong> → consistente si es relativamente favorable en <strong>la mayoría</strong>
+<em>(≥2 de 3, ≥3 de 4…)</em>.
+· <strong>2 episodios</strong> → se publican ambos y el veredicto es <strong>«evidencia insuficiente»</strong>.
+· <strong>1 episodio</strong> → se publica como <strong>«ilustración, no evidencia»</strong>. <strong>Un solo episodio no
+confirma ni invalida ningún módulo.</strong></p>
+</blockquote>
+<p>Esta regla se congela aquí, con R8, <strong>antes de ver ningún resultado</strong>.</p>
+<hr />
+<h1>10. Hipótesis del mapa PMMA — reformuladas</h1>
+<p><strong>[MODELO]</strong> El capítulo 4 publicó un mapa módulo→régimen etiquetado como <strong>hipótesis de
+diseño sin validar</strong>. Aquí queda enumerado qué se somete a prueba y <strong>cómo puede fallar</strong>,
+ya con la regla de consistencia del §9.1 incorporada.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Hipótesis reformulada</th>
+<th>🔴 Se pone en cuestión si…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>H1 · Motor</strong></td>
+<td>Las acciones muestran rentabilidad real mayor en la caja 1 que en la 3, de forma consistente</td>
+<td>El orden se invierte de forma consistente → se corrige el mapa; el Motor sigue justificado por crecimiento a largo plazo, pero pierde su lectura por regímenes</td>
+</tr>
+<tr>
+<td><strong>H2 · Defensivos</strong></td>
+<td>En las cajas 3 y 4, los defensivos son <strong>relativamente favorables</strong> <em>(M3 &gt; 0)</em> de forma consistente</td>
+<td>No lo son de forma consistente → <strong>golpe a la razón de ser del módulo</strong>: habría que replantear el 12% o redefinir su función como «menor volatilidad» sin promesa de caídas menores</td>
+</tr>
+<tr>
+<td><strong>H3 · Activos Reales</strong> <em>(reformulada)</em></td>
+<td><strong>En los episodios de caja 4 con datos utilizables, el oro y las materias primas son relativamente favorables frente al Motor (M3 &gt; 0) de forma consistente según §9.1.</strong> Con menos de 3 episodios, el resultado es ilustración y <strong>no puede confirmar ni refutar la hipótesis por sí solo</strong></td>
+<td>La mayoría de los episodios disponibles muestra M3 ≤ 0 → <strong>se publica y se revisa la función del módulo</strong> <em>(de «cobertura de inflación» a «diversificador»)</em>. ⚠️ <strong>Un único episodio desfavorable NO invalida el módulo</strong></td>
+</tr>
+<tr>
+<td><strong>H4 · Freno</strong></td>
+<td>Los bonos son relativamente favorables en la caja 3 y <strong>desfavorables</strong> en la 4</td>
+<td>Si también ayudan en la caja 4, el módulo <strong>mejora</strong> respecto a lo previsto — y también se publica</td>
+</tr>
+<tr>
+<td><strong>H5 · Aceleración</strong></td>
+<td>Los factores muestran comportamiento diferenciado por caja</td>
+<td>Sin diferencia apreciable → Aceleración pierde el argumento de régimen; le queda el de prima a largo plazo, ya declarado como discutido</td>
+</tr>
+<tr>
+<td><strong>H6 · Emergentes</strong></td>
+<td>Se comporta distinto del Motor según la caja</td>
+<td>Datos desde 1988: <strong>como mucho, evidencia insuficiente</strong></td>
+</tr>
+<tr>
+<td><strong>H7 · Cobertura</strong> <em>(reformulada)</em></td>
+<td><strong>Cada caja tiene al menos un módulo relativamente favorable de forma consistente.</strong> Si en alguna caja <strong>ningún</strong> módulo lo es de forma consistente, se declara <strong>«posible hueco de robustez»</strong> — no «la cartera falla»</td>
+<td>Un hueco declarado es <strong>el resultado más valioso del capítulo aunque sea el peor</strong>: se publica como limitación estructural, con su nivel de evidencia</td>
+</tr>
+<tr>
+<td><strong>H8 · Reserva</strong></td>
+<td>⚪ No comprobable con datos históricos: es una propiedad operativa, no de retorno</td>
+<td>Se declara como tal</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Compromiso registrado:</strong> si H3 o H7 quedan en cuestión <strong>según la regla de consistencia
+del §9.1</strong> <em>(no por un episodio suelto)</em>, se publica en el capítulo 19 y <strong>se propaga la
+corrección al capítulo 4 y al 11</strong>. El capítulo 4 <strong>no se toca antes</strong> de tener
+resultados, ni para adelantarse a ellos.</p>
+</blockquote>
+<hr />
+<h1>11. Problemas de datos — declarados por adelantado</h1>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Problema</th>
+<th>Gravedad</th>
+<th>Tratamiento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P1</strong></td>
+<td><strong>Módulos casi sin historia</strong>: Asimetría <em>(2010→)</em>, Emergentes <em>(1988→)</em></td>
+<td>🔴</td>
+<td>No analizables en cajas antiguas. <strong>No se inventa sustituto</strong></td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td><strong>Defensivos sin serie sectorial larga y gratuita</strong></td>
+<td>🔴</td>
+<td>Si no aparece fuente, se analiza solo desde donde haya datos</td>
+</tr>
+<tr>
+<td><strong>P3</strong></td>
+<td><strong>Oro con precio fijo hasta 1971</strong></td>
+<td>🟠</td>
+<td>Todo análisis de oro empieza en 1971-73</td>
+</tr>
+<tr>
+<td><strong>P4</strong></td>
+<td><strong>Revisiones del PIB</strong></td>
+<td>🟠</td>
+<td>Ver §5: descriptivo ex post, no invertible</td>
+</tr>
+<tr>
+<td><strong>P5</strong></td>
+<td><strong>Sesgo EEUU</strong></td>
+<td>🟠</td>
+<td>Ver §12</td>
+</tr>
+<tr>
+<td><strong>P6</strong></td>
+<td><strong>Divisa</strong>: retornos históricos en dólares ≠ lo que cobraría un inversor en euros</td>
+<td>🟠</td>
+<td>Declarado; la conversión es trabajo del cap. 18</td>
+</tr>
+<tr>
+<td><strong>P7</strong></td>
+<td><strong>Pocos episodios por caja</strong> — la caja 4 tiene esencialmente uno y medio</td>
+<td>🔴</td>
+<td><strong>Con 1-2 episodios no hay inferencia, hay ilustración.</strong> Regla §9.1</td>
+</tr>
+<tr>
+<td><strong>P8</strong></td>
+<td><strong>Covid (2020) tensiona el criterio trimestral</strong></td>
+<td>🟡</td>
+<td>Se muestra aparte como caso límite del método</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>12. Limitación geográfica — declarada</h1>
+<blockquote>
+<p><strong>[MODELO — texto literal al capítulo]</strong> La clasificación histórica utiliza
+principalmente <strong>macro de Estados Unidos</strong>. Por tanto, <strong>clasifica el entorno
+macroeconómico estadounidense, no un régimen global perfectamente sincronizado.</strong> Otras
+economías pueden haber estado en una caja distinta en el mismo trimestre.</p>
+</blockquote>
+<p><strong>Por qué se acepta:</strong> EEUU es el mercado dominante de la cartera <em>(≈2/3 de la renta
+variable)</em> y el único con series homogéneas desde 1947. <strong>Qué se hará si hay tiempo:</strong>
+repetir la clasificación con datos de la zona euro desde ~1995 y publicar <strong>cuánto
+coinciden</strong> — un desacuerdo alto sería, otra vez, un resultado y no un defecto que tapar.</p>
+<hr />
+<h1>✅ SIGUIENTE PASO</h1>
+<ol>
+<li>Auditoría de R1-R8 → ver <a href="AUDITORIA_CRITERIO_R1_R8.md"><code>AUDITORIA_CRITERIO_R1_R8.md</code></a>.</li>
+<li>Preparación de series y cálculo → ver <a href="PREPARACION_SERIES_CAP19.md"><code>PREPARACION_SERIES_CAP19.md</code></a>.</li>
+<li><strong>El capítulo 19 no se redacta hasta tener resultados.</strong> El capítulo 4 <strong>no se modifica
+   para hacerlo coincidir con ellos.</strong></li>
+</ol>
+<p><strong>Este dossier no contiene un solo resultado.</strong></p></div></body></html>

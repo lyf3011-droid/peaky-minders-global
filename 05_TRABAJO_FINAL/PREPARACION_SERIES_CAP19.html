@@ -1,0 +1,405 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PREPARACION_SERIES_CAP19</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🧮 PREPARACIÓN DE SERIES Y CÁLCULO — CAPÍTULO 19</h1>
+<h2>14 de agosto de 2026 · clasificación macro ejecutada según R1-R8 congelado</h2>
+<blockquote>
+<p><strong>Esto no es el capítulo 19.</strong> Es la ejecución del criterio congelado sobre datos reales.
+<strong>Los resultados macro de este documento están calculados, no estimados</strong>; las
+rentabilidades de los activos <strong>todavía no se han descargado ni analizado</strong> <em>(R8 exigía
+congelar las reglas primero — ya está hecho)</em>.</p>
+</blockquote>
+<hr />
+<h1>1. Series descargadas — trazabilidad completa</h1>
+<table>
+<thead>
+<tr>
+<th>Serie</th>
+<th>Proveedor original</th>
+<th>Identificador</th>
+<th>Cobertura descargada</th>
+<th>Descarga</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PIB real EEUU, trimestral, encadenado</td>
+<td><strong>BEA</strong>, vía FRED</td>
+<td><code>GDPC1</code></td>
+<td>1947Q1 → <strong>2026Q2</strong></td>
+<td>14-ago-2026</td>
+</tr>
+<tr>
+<td>IPC EEUU, todos los consumidores urbanos, mensual</td>
+<td><strong>BLS</strong>, vía FRED</td>
+<td><code>CPIAUCSL</code></td>
+<td>1947-01 → 2026</td>
+<td>14-ago-2026</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Transformaciones aplicadas</strong> <em>(R2, R3, cierre 2.4 de la auditoría)</em>: PIB → variación
+interanual; IPC → media de los tres meses del trimestre → variación interanual.
+<strong>Ninguna otra manipulación.</strong></p>
+<p><strong>Anexo de datos:</strong> <a href="ANEXO_CLASIFICACION_CAJAS.csv"><code>ANEXO_CLASIFICACION_CAJAS.csv</code></a> — 273
+filas con trimestre, ambas variables, ambos umbrales, caja principal, caja alternativa y
+marca de proximidad. <strong>Reproducible línea a línea.</strong></p>
+<hr />
+<h1>2. Resultado de la clasificación <em>(criterio principal: mediana móvil de 40 trimestres)</em></h1>
+<p><strong>Periodo clasificado: 1958Q1 → 2026Q2 · 273 trimestres.</strong>
+<em>(La v2 del dossier anticipaba el arranque en 1957; el dato real es </em><em>1958Q1</em><em>, porque la
+variación interanual consume 4 trimestres antes de que empiece a contar la ventana de 40.
+Corrección registrada.)</em></p>
+<table>
+<thead>
+<tr>
+<th>Caja</th>
+<th style="text-align: right;">Trimestres</th>
+<th style="text-align: right;">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · Expansión desinflacionaria</strong></td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">23,1%</td>
+</tr>
+<tr>
+<td><strong>2 · Recalentamiento</strong></td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">23,1%</td>
+</tr>
+<tr>
+<td><strong>3 · Recesión desinflacionaria</strong></td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">22,3%</td>
+</tr>
+<tr>
+<td><strong>4 · Estanflación</strong></td>
+<td style="text-align: right;"><strong>86</strong></td>
+<td style="text-align: right;"><strong>31,5%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Episodios (R5, ≥2 trimestres consecutivos): 50 en total</strong> — 13 de caja 1, 12 de caja 2,
+13 de caja 3, <strong>12 de caja 4</strong>. Además, <strong>33 trimestres aislados</strong>, que conservan su caja
+en los cálculos pero no cuentan como episodio <em>(cierre 2.1 de la auditoría)</em>.</p>
+<hr />
+<h1>3. ✅ Prueba externa de sentido económico: <strong>1973-75 la supera</strong></h1>
+<table>
+<thead>
+<tr>
+<th>Trimestre</th>
+<th style="text-align: right;">PIB real i.a.</th>
+<th style="text-align: right;">Umbral</th>
+<th style="text-align: right;">IPC i.a.</th>
+<th style="text-align: right;">Umbral</th>
+<th style="text-align: center;">Caja</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1973Q1</td>
+<td style="text-align: right;">+7,56</td>
+<td style="text-align: right;">+4,49</td>
+<td style="text-align: right;">+4,11</td>
+<td style="text-align: right;">+3,25</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td>1973Q2</td>
+<td style="text-align: right;">+6,32</td>
+<td style="text-align: right;">+4,66</td>
+<td style="text-align: right;">+5,61</td>
+<td style="text-align: right;">+3,30</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td><strong>1973Q3</strong></td>
+<td style="text-align: right;">+4,77</td>
+<td style="text-align: right;">+4,89</td>
+<td style="text-align: right;">+6,84</td>
+<td style="text-align: right;">+3,42</td>
+<td style="text-align: center;"><strong>4</strong> <em>(cerca del umbral)</em></td>
+</tr>
+<tr>
+<td>1973Q4</td>
+<td style="text-align: right;">+4,02</td>
+<td style="text-align: right;">+4,86</td>
+<td style="text-align: right;">+8,42</td>
+<td style="text-align: right;">+3,52</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td>1974Q1</td>
+<td style="text-align: right;">+0,64</td>
+<td style="text-align: right;">+4,64</td>
+<td style="text-align: right;">+9,91</td>
+<td style="text-align: right;">+3,55</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td>1974Q2</td>
+<td style="text-align: right;">−0,21</td>
+<td style="text-align: right;">+4,49</td>
+<td style="text-align: right;">+10,55</td>
+<td style="text-align: right;">+3,66</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td>1974Q3</td>
+<td style="text-align: right;">−0,63</td>
+<td style="text-align: right;">+4,42</td>
+<td style="text-align: right;">+11,46</td>
+<td style="text-align: right;">+3,93</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td>1974Q4</td>
+<td style="text-align: right;">−1,95</td>
+<td style="text-align: right;">+4,19</td>
+<td style="text-align: right;">+12,05</td>
+<td style="text-align: right;">+4,12</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td>1975Q1</td>
+<td style="text-align: right;">−2,30</td>
+<td style="text-align: right;">+3,93</td>
+<td style="text-align: right;">+11,13</td>
+<td style="text-align: right;">+4,20</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td>1975Q2</td>
+<td style="text-align: right;">−1,83</td>
+<td style="text-align: right;">+3,66</td>
+<td style="text-align: right;">+9,54</td>
+<td style="text-align: right;">+4,29</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td>1975Q3</td>
+<td style="text-align: right;">+0,80</td>
+<td style="text-align: right;">+3,29</td>
+<td style="text-align: right;">+8,68</td>
+<td style="text-align: right;">+4,40</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td>1975Q4</td>
+<td style="text-align: right;">+2,55</td>
+<td style="text-align: right;">+3,09</td>
+<td style="text-align: right;">+7,38</td>
+<td style="text-align: right;">+4,55</td>
+<td style="text-align: center;"><strong>4</strong> <em>(cerca)</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>El clasificador sitúa 1973Q3–1975Q4 en la caja 4 de forma continuada (10 trimestres),
+coincidiendo con la descripción histórica habitual del episodio.</strong> El criterio no se
+tocó para conseguirlo: se aplicó tal como quedó congelado.</p>
+</blockquote>
+<p><strong>Otros episodios candidatos, según el clasificador</strong> <em>(secuencias completas en el CSV)</em>:
+1979Q2–1981Q2 caja 4 → 1982 entero caja 3 <em>(la transición Volcker aparece tal como la
+describe la historia)</em> · <strong>2000Q3–2001Q2 caja 4 → 2001Q3-2002 caja 3</strong> · 2007Q4–2008Q3
+caja 4 → 2008Q4–2009 caja 3 · 1997–1999 caja 1 sostenida · <strong>2022Q3–2023Q1 caja 4</strong> ·
+2020Q2–Q4 caja 3.</p>
+<hr />
+<h1>4. Robustez: las dos clasificaciones y su desacuerdo</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Caja 1</th>
+<th style="text-align: right;">Caja 2</th>
+<th style="text-align: right;">Caja 3</th>
+<th style="text-align: right;">Caja 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Principal</strong> <em>(mediana 40T)</em></td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;"><strong>86</strong></td>
+</tr>
+<tr>
+<td><strong>Alternativa</strong> <em>(media 10 años)</em></td>
+<td style="text-align: right;"><strong>83</strong></td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;"><strong>67</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3><strong>Desacuerdo: 44 trimestres de 273 = 16,1%</strong></h3>
+</blockquote>
+<p><strong>El desacuerdo se concentra casi por completo entre las cajas 1 y 4</strong> — es decir, en si un
+trimestre tenía «inflación alta» o no. La media se deja arrastrar por los picos
+inflacionistas de los setenta y eleva el umbral; la mediana no. <strong>Un 16,1% de desacuerdo
+no es despreciable y se publica tal cual</strong>: significa que la frontera entre climas es más
+difusa de lo que sugiere una tabla de cuatro casillas.</p>
+<p><strong>Marca informativa de proximidad <em>(R6)</em>: 91 trimestres, el 33,3%</strong>, quedan a menos de
+0,20 desviaciones típicas de su umbral. <strong>Un tercio de las asignaciones pende de un hilo</strong> —
+dato incómodo y publicable, que no altera ninguna clasificación.</p>
+<hr />
+<h1>5. 🔴 DISCREPANCIA CON EL PROPIO DOSSIER — para auditoría, no corregida por iniciativa propia</h1>
+<p><strong>El dossier (P7 y §7) afirmaba que «la caja 4 tiene esencialmente uno o dos episodios» y
+que por eso solo cabía ilustrar, no inferir.</strong></p>
+<p><strong>El clasificador encuentra 12 episodios de caja 4 y 86 trimestres (31,5%).</strong></p>
+<p><strong>La afirmación P7 queda contradicha por nuestro propio criterio.</strong> Explicación técnica
+—no corrección— del porqué:</p>
+<blockquote>
+<p>La caja 4 está definida como <strong>crecimiento por debajo de su mediana reciente e inflación
+por encima de la suya</strong>. Eso es <strong>mucho más ancho que el término histórico
+«estanflación»</strong>, que evoca recesión profunda con inflación de dos dígitos. Bajo nuestra
+definición operativa, un trimestre con crecimiento del +2,5% e inflación del +3% puede
+caer en la caja 4 si ambos están al lado equivocado de sus medianas.</p>
+</blockquote>
+<p><strong>Consecuencias que exigen decisión del equipo, no mía:</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Cuestión abierta</th>
+<th>Opciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td><strong>¿Se mantiene P7?</strong></td>
+<td>Retirarla <em>(los datos la desmienten)</em> · o reformularla como «episodios de estanflación <strong>severa</strong> son escasos», distinguiendo la caja operativa del fenómeno histórico</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td><strong>¿Debe renombrarse la caja 4?</strong></td>
+<td>«Estanflación» sugiere más de lo que la definición mide. Alternativa neutra: <strong>«crecimiento débil con inflación alta»</strong>, reservando «estanflación» para los episodios severos</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td><strong>¿Se añade una capa de severidad?</strong></td>
+<td>P. ej. marcar los episodios de caja 4 con PIB interanual negativo <em>(1974-75, 1980, 1990-91, 2008)</em> como subgrupo «severo» — <strong>requiere fórmula fija antes de mirar rentabilidades, por R8</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>No he tocado el dossier ni el capítulo 4.</strong> La discrepancia se publica; la decisión es
+del equipo. <em>(La regla del proyecto es enumerar contradicciones, no corregirlas en
+silencio.)</em></p>
+<hr />
+<h1>6. Verificaciones de integridad — las cuatro exigidas por la auditoría</h1>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Prueba</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Suma de trimestres por caja = total clasificado</td>
+<td>✅ <code>True</code> <em>(63+63+61+86 = 273)</em></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Ningún umbral usa datos posteriores al trimestre</td>
+<td>✅ Por construcción: la ventana es <code>trims[n−40:n]</code>, estrictamente anterior</td>
+</tr>
+<tr>
+<td>3</td>
+<td>La alternativa usa el mismo código, cambiando un parámetro</td>
+<td>✅ <code>median</code> → <code>mean</code>, nada más</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Resultados guardados con la fecha de descarga</td>
+<td>✅ 14-ago-2026, en el CSV y en este documento</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>7. Lo que queda para poder redactar el capítulo 19</h1>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Tarea</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Decisión del equipo sobre A, B y C del §5</strong></td>
+<td>🔴 <strong>Bloqueante</strong> — afecta a cómo se nombran y agrupan las cajas</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Descargar retornos por clase de activo <em>(Damodaran / Shiller: acciones, bonos, letras)</em></td>
+<td>⏳ Siguiente paso técnico</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Descargar factores tamaño y valor <em>(Fama-French)</em> y precio del oro</td>
+<td>⏳</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>Calcular M1-M4 por módulo y caja <em>(nominal, real, relativo al Motor, consistencia)</em></td>
+<td>⏳ Depende de 2 y 3</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Evaluar H1-H7 con la regla de consistencia §9.1</td>
+<td>⏳ Depende de 4</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>Buscar serie sectorial larga para Defensivos <em>(P2)</em></td>
+<td>🟠 Puede resultar imposible — se declararía</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>Redactar el capítulo 19</td>
+<td>⛔ <strong>No antes de 1-5</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>El capítulo 4 no se ha modificado y no se modificará para hacerlo coincidir con estos
+resultados.</strong> Cualquier corrección al mapa del capítulo 4 saldrá de la evaluación
+completa de H1-H7, se registrará como decisión, y se propagará <strong>después</strong>.</p>
+</blockquote>
+<hr />
+<h2>Código</h2>
+<p>El clasificador es un script de ~90 líneas sin dependencias externas, que va al anexo del
+libro junto al CSV <em>(exigencia R7)</em>. Reproduce este documento entero con las dos series
+públicas y un solo comando.</p></div></body></html>
