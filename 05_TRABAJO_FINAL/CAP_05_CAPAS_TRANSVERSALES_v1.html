@@ -1,0 +1,545 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capítulo 5 — Capas transversales</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>CAPÍTULO 5 — CAPAS TRANSVERSALES: CONVICTION OVERLAY Y EXECUTION LAYER</h1>
+<h2>Investment Book · Parte I · Borrador v1 para auditoría · 13 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Convención tipográfica:</strong> <strong>[MODELO]</strong> = afirmación propia de PMMA.
+<strong>[EVIDENCIA EXTERNA]</strong> = afirmación que requiere cita o fuente primaria, recogida en la
+tabla final. Los términos técnicos se explican en lenguaje llano la primera vez que
+aparecen.</p>
+<p><strong>Pregunta que responde este capítulo:</strong> <em>¿cómo puede cambiar la forma en que gestionamos
+o ejecutamos el capital sin alterar —ni contar dos veces— su función económica?</em></p>
+</blockquote>
+<hr />
+<h2>5.1 Por qué una cartera necesita más de una dimensión</h2>
+<p>El capítulo 4 clasificó todo el capital por su <strong>función</strong>: qué trabajo hace cada euro
+dentro de la cartera. Esa clasificación responde a la pregunta más importante, pero no a
+todas. Hay tres preguntas más que una cartera bien gobernada tiene que poder responder de
+cada posición, y ninguna de las tres es la función:</p>
+<table>
+<thead>
+<tr>
+<th>Dimensión</th>
+<th>Pregunta que responde</th>
+<th>Ejemplo de respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · Función estructural</strong> <em>(Structural Function)</em></td>
+<td>¿Qué trabajo económico hace este capital?</td>
+<td>«Capturar el crecimiento de las empresas grandes»</td>
+</tr>
+<tr>
+<td><strong>2 · Modo de gestión</strong> <em>(Management Mode)</em></td>
+<td>¿Cómo se toma la decisión de inversión?</td>
+<td>«Lo decide un índice» / «lo decide un gestor» / «lo decidimos nosotros»</td>
+</tr>
+<tr>
+<td><strong>3 · Capa de gobernanza</strong> <em>(Governance Layer)</em></td>
+<td>¿Está sometido a algún protocolo especial?</td>
+<td>«Sí: solo se compra si el precio llega al nivel escrito de antemano»</td>
+</tr>
+<tr>
+<td><strong>4 · Capa de ejecución</strong> <em>(Execution Layer)</em></td>
+<td>¿Cómo mantenemos la capacidad de ejecutar?</td>
+<td>«Con una pequeña caja operativa siempre disponible»</td>
+</tr>
+</tbody>
+</table>
+<p><strong>[MODELO]</strong> Estas cuatro dimensiones <strong>coexisten sobre el mismo capital sin sumarse</strong>.
+Un mismo euro tiene una función, un modo de gestión, puede estar bajo un protocolo y puede
+haber pasado por la caja de ejecución — y sigue siendo <strong>un</strong> euro. La regla que lo
+garantiza son las tres vistas analíticas del capítulo 4 (§4.7): el capital se cuenta una
+sola vez en cada vista, y las vistas responden preguntas distintas, no reparten el dinero
+en trozos distintos.</p>
+<p>Un ejemplo cotidiano ayuda. Una misma vivienda puede describirse por su función (vivienda
+habitual), por quién la administra (el propietario o una gestora), por su régimen especial
+(protección oficial o libre) y por cómo se pagó (contado o hipoteca). Son cuatro
+descripciones verdaderas del mismo inmueble; a nadie se le ocurriría sumar «una vivienda +
+una administración + un régimen + una forma de pago = cuatro casas». Con el capital ocurre
+lo mismo, y sin embargo es el error más común en carteras: contar la gestión activa, la
+liquidez operativa o el protocolo de compra como si fueran clases de activo adicionales.</p>
+<hr />
+<h2>5.2 Management Mode: cómo se toma cada decisión</h2>
+<p><strong>[MODELO]</strong> El modo de gestión describe <strong>quién decide qué se compra dentro de una
+posición</strong>. PMMA reconoce cuatro, ordenados de menor a mayor intervención humana directa:</p>
+<table>
+<thead>
+<tr>
+<th>Modo</th>
+<th>Quién decide</th>
+<th>Qué exige del inversor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① <strong>Pasiva / indexada</strong></td>
+<td>Un índice público</td>
+<td>Nada, salvo elegir el índice</td>
+</tr>
+<tr>
+<td>② <strong>Sistemática / factorial</strong></td>
+<td>Una regla predefinida</td>
+<td>Entender la regla y su evidencia</td>
+</tr>
+<tr>
+<td>③ <strong>Activa delegada</strong></td>
+<td>Un gestor externo, dentro de un mandato acotado</td>
+<td>Elegir al gestor y vigilar el mandato</td>
+</tr>
+<tr>
+<td>④ <strong>Convicción directa</strong></td>
+<td>El propio equipo, empresa a empresa, con protocolo escrito</td>
+<td>Capacidad real de análisis y disciplina</td>
+</tr>
+</tbody>
+</table>
+<p>La regla central es que <strong>el modo no altera automáticamente el módulo</strong>. La función dice
+para qué está el capital; el modo dice cómo se administra. Cuatro ejemplos de la propia
+implementación:</p>
+<pre><code>Robeco BP Global Premium      →  Aceleración  +  activa delegada
+PIMCO GIS Income              →  Freno        +  activa delegada
+ETF multifactor europeo       →  Aceleración  +  sistemática/factorial
+Microsoft por protocolo propio →  Motor       +  convicción directa
+</code></pre>
+<p>Los dos primeros casos merecen una frase más, porque son el error que este capítulo
+previene: <strong>un fondo de gestión activa no es una posición de Convicción.</strong> El Robeco es
+capital del módulo Aceleración cuya administración se ha delegado en un gestor; el equipo
+no elige sus empresas ni aplica su protocolo de compra sobre ellas. Es una <strong>posición
+estructural</strong> con modo ③ — no una capa superpuesta, no «convicción», no una excepción.</p>
+<hr />
+<h2>5.3 Conviction Overlay: la capa condicional de gobernanza</h2>
+<p><strong>[MODELO]</strong> El Conviction Overlay (en español: capa de convicción) es la <strong>capa
+condicional de gobernanza para decisiones directas y discrecionales de elevada exigencia
+analítica</strong>. Traducido: la parte de la cartera donde el equipo se reserva el derecho —no
+la obligación— de comprar empresas concretas, bajo un protocolo escrito antes de mirar
+ninguna pantalla.</p>
+<p>Sus seis propiedades definitorias:</p>
+<ol>
+<li><strong>Puede estar al 0%.</strong> Hoy lo está, y podría estarlo siempre. Un cero permanente no es
+   un fallo del diseño: significa que ninguna empresa llegó a su precio.</li>
+<li><strong>El 14% es techo, no cuota.</strong> Es el máximo que la selección directa puede consumir
+   mediante nuevas decisiones de compra; nunca una cantidad que haya que alcanzar.</li>
+<li><strong>No es una octava clase de activo.</strong> Es una etiqueta de gobernanza sobre capital que
+   ya tiene módulo.</li>
+<li><strong>Toda posición de Convicción tiene módulo estructural.</strong> Una acción comprada por el
+   protocolo se clasifica por su función como cualquier otra posición (§5.7).</li>
+<li><strong>Su existencia depende de tres condiciones simultáneas:</strong> oportunidad de precio,
+   valoración propia y tesis vigente. Si falta una, no hay compra.</li>
+<li><strong>No se fuerza su utilización.</strong> Ni por calendario, ni por disponer de capital, ni por
+   la sensación de estar «perdiéndose algo».</li>
+</ol>
+<p>El principio económico que la justifica es de dos caras. <strong>[MODELO]</strong> Por un lado, la
+selección directa es la única actividad de la cartera que exige habilidad genuina de
+valoración — por eso es la capa más pequeña y la más regulada. Por otro, tener el precio
+de entrada escrito de antemano convierte las caídas de mercado en oportunidades ya
+decididas, en lugar de decisiones tomadas con miedo en el peor momento.</p>
+<p>El protocolo completo —el precio de entrada IDC, la Fecha Cero, el número máximo de
+compañías, los tramos de compra y la evaluación posterior— se desarrolla en el
+<strong>capítulo 12</strong>. Aquí basta con el principio: <strong>es una capa que existe solo cuando el
+mercado ofrece lo que el protocolo exige.</strong></p>
+<hr />
+<h2>5.4 El capital no invertido y el coste de oportunidad</h2>
+<p>Una capa condicional plantea una pregunta inevitable: <strong>¿dónde vive el capital mientras no
+existe oportunidad?</strong> Si la respuesta fuera «en efectivo, esperando», la cartera pagaría
+un precio silencioso: el dinero aparcado deja de participar del crecimiento del mercado, y
+a diez años ese peaje se acumula. A ese peaje se le llama <strong>coste de oportunidad</strong> — lo
+que dejas de ganar por tener el dinero en un sitio en lugar de en otro.</p>
+<p><strong>[MODELO]</strong> La solución adoptada por esta implementación (decisiones D45 y D48) es que el
+capital no desplegado de Convicción <strong>permanece invertido en el Motor</strong>, no en efectivo.
+La consecuencia es el compromiso de gobernanza del §5.7: mientras no hay oportunidad, ese
+capital trabaja como lo que estructuralmente es —exposición al crecimiento global— y solo
+se convierte en selección directa cuando una empresa alcanza su precio.</p>
+<p>Queda una necesidad práctica: si toda la capacidad está invertida, ¿con qué se ejecuta una
+compra cuando aparece la oportunidad? Vender otra posición cada vez sería lento y costoso.
+De esa necesidad —y solo de ella— nace la capa siguiente.</p>
+<p>⚠️ <strong>Lo que esta lógica NO es:</strong> no es una predicción de caídas, ni una apuesta a que el
+mercado bajará, ni una reserva «por si acaso viene algo malo». Es la respuesta operativa a
+una restricción mecánica: las oportunidades aparecen más rápido de lo que el capital puede
+moverse. La sección 5.9 desarrolla esa asimetría.</p>
+<hr />
+<h2>5.5 Execution Layer: la Reserva Operativa</h2>
+<p><strong>[MODELO]</strong> La Reserva Operativa es la capa de ejecución de la cartera, y su formulación
+exacta es:</p>
+<blockquote>
+<h3><strong>La política de Reserva es permanente; el capital que la ocupa es transitorio.</strong></h3>
+</blockquote>
+<p>Existe siempre una <em>capacidad</em> operativa —en esta implementación, hasta un 3% del
+patrimonio— pero el <em>saldo</em> concreto fluctúa: se consume al ejecutar compras y se
+reconstruye con las aportaciones siguientes.</p>
+<p><strong>Qué hace:</strong></p>
+<ul>
+<li><strong>Recibe flujos</strong> — las aportaciones entran por aquí antes de asignarse.</li>
+<li><strong>Permite ejecutar</strong> una compra del overlay sin esperar al reembolso de otro fondo.</li>
+<li><strong>Facilita las aportaciones mensuales</strong> y su asignación ordenada.</li>
+<li><strong>Corrige infraponderaciones</strong> — participa del mecanismo de rebalanceo por aportaciones.</li>
+<li><strong>Financia oportunidades</strong> cuando aparecen varias a la vez.</li>
+<li><strong>Reduce la fricción operativa</strong> — menos ventas, menos órdenes, menos coste.</li>
+</ul>
+<p><strong>Qué NO hace:</strong></p>
+<ul>
+<li>❌ <strong>No es Freno.</strong> El Freno es una asignación estratégica permanente con función
+  estabilizadora; la Reserva es una herramienta operativa (§5.6).</li>
+<li>❌ <strong>No es una apuesta bajista</strong> ni expresa opinión alguna sobre la dirección del mercado.</li>
+<li>❌ <strong>No es predicción.</strong> Su tamaño no cambia porque el mercado «parezca caro».</li>
+<li>❌ <strong>No es capital estratégicamente desinvertido de forma indefinida.</strong> Un saldo
+  permanentemente alto sin ejecutar nada sería una señal de mal uso, no de prudencia.</li>
+</ul>
+<p>La justificación externa de su existencia es operativa y concreta: la suscripción y el
+reembolso de fondos de inversión no se liquidan en el acto. <strong>[EVIDENCIA EXTERNA —
+pendiente de cita con vehículo y proceso concretos]</strong> Para los fondos utilizados en esta
+implementación, los plazos de liquidación publicados se documentan vehículo a vehículo en
+el capítulo 14; la referencia general de la CNMV sobre reembolsos se incorporará solo si
+respalda el plazo del proceso concreto que se cite. Diseñar la ejecución de compras
+dependiendo de reembolsos cuyos plazos varían según instrumento y entidad sería introducir
+una incertidumbre evitable — la Reserva la evita.</p>
+<hr />
+<h2>5.6 Reserva y Freno: parecidos por fuera, opuestos por dentro</h2>
+<p>Ambos contienen activos de bajo riesgo, y por eso se confunden. La tabla los separa:</p>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>💧 Reserva Operativa</th>
+<th>⚓ Freno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función</strong></td>
+<td>Capacidad de <strong>ejecutar</strong> sin vender</td>
+<td><strong>Estabilizar</strong> la cartera y responder a escenarios distintos de la renta variable</td>
+</tr>
+<tr>
+<td><strong>Permanencia de la política</strong></td>
+<td>Permanente</td>
+<td>Permanente</td>
+</tr>
+<tr>
+<td><strong>Permanencia del saldo</strong></td>
+<td><strong>Transitoria</strong> — se consume y se reconstruye</td>
+<td><strong>Estable</strong> — es una asignación con peso objetivo</td>
+</tr>
+<tr>
+<td><strong>Fuente esperada de retorno</strong></td>
+<td>Remuneración del efectivo, accesoria</td>
+<td>Rentas de la renta fija y estabilidad, esencial</td>
+</tr>
+<tr>
+<td><strong>Función frente a crisis</strong></td>
+<td>Munición inmediata para ejecutar compras ya decididas</td>
+<td>Amortiguar la caída del conjunto</td>
+</tr>
+<tr>
+<td><strong>Uso en rebalanceo</strong></td>
+<td>Es el <strong>vehículo</strong> del rebalanceo por aportaciones</td>
+<td>Es un <strong>destino</strong> del rebalanceo, como cualquier módulo</td>
+</tr>
+<tr>
+<td><strong>Tratamiento en PMMA</strong></td>
+<td><strong>Execution Layer</strong> — fuera de los siete módulos</td>
+<td><strong>Módulo estructural</strong> — uno de los siete</td>
+</tr>
+</tbody>
+</table>
+<p>La distinción práctica en una frase: <strong>un 20% mantenido siempre en letras del tesoro como
+estabilizador es Freno; un 3% esperando ejecutar una compra es Reserva.</strong> El primero es
+una decisión de inversión; el segundo, una necesidad operativa.</p>
+<hr />
+<h2>5.7 El 47% Governance Funding Pool</h2>
+<p><strong>[MODELO]</strong> En esta implementación, tres piezas comparten una identidad de gobernanza
+denominada <strong>47% Governance Funding Pool</strong> (en español: bolsa de financiación gobernada
+del 47%). En la Fecha Cero:</p>
+<blockquote>
+<p><strong>44% Motor ordinario + 3% Reserva + 0% Convicción = 47%</strong></p>
+</blockquote>
+<p>El término existe para evitar una confusión precisa: <strong>el Motor como función estructural
+no es lo mismo que el capital que financia operativamente Convicción.</strong> El 47% no es una
+clase de activo ni un módulo: es el perímetro de capital dentro del cual el overlay puede
+desplegarse, evaluado en las fechas de revisión — no una identidad que deba cumplirse
+cada día mientras los precios se mueven.</p>
+<p><strong>Ejemplo numérico.</strong> Cartera de 100.000 € en una fecha de revisión posterior, con dos
+empresas ya compradas por el protocolo:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Fecha Cero</th>
+<th>Revisión posterior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motor ordinario <em>(fondos indexados)</em></td>
+<td>44.000 €</td>
+<td><strong>40.000 €</strong></td>
+</tr>
+<tr>
+<td>Reserva Operativa</td>
+<td>3.000 €</td>
+<td><strong>3.000 €</strong></td>
+</tr>
+<tr>
+<td>Convicción Directa <em>(acciones compradas por protocolo)</em></td>
+<td>0 €</td>
+<td><strong>4.000 €</strong></td>
+</tr>
+<tr>
+<td><strong>Governance Funding Pool</strong></td>
+<td><strong>47.000 €</strong></td>
+<td><strong>47.000 €</strong></td>
+</tr>
+</tbody>
+</table>
+<p>El total no aumenta: el capital se ha movido <em>dentro</em> del perímetro. Y en la <strong>Structural
+Exposure View</strong>, esas acciones vuelven a clasificarse por su función: si las dos empresas
+compradas son grandes compañías del núcleo productivo, el módulo Motor estructural sigue
+mostrando 44.000 € — 40.000 en fondos más 4.000 en acciones directas con la etiqueta
+<em>Convicción Directa</em>. <strong>Los mismos 4.000 € aparecen una vez en cada vista, respondiendo a
+preguntas distintas. No existe doble contabilización.</strong></p>
+<hr />
+<h2>5.8 Las tres vistas analíticas, aplicadas</h2>
+<p>Con el ejemplo anterior, las tres vistas del capítulo 4 quedan así:</p>
+<p><strong>A · Total Capital View</strong> — <em>¿dónde está físicamente todo el dinero?</em></p>
+<pre><code>7 módulos (97.000 €) + Reserva (3.000 €) = 100.000 €
+</code></pre>
+<p><strong>B · Strategic Allocation View</strong> — <em>¿cómo está distribuida la cartera estratégica?</em>
+Excluye la Reserva y normaliza los siete módulos sobre 100. Aplica la misma lógica de
+normalización sobre el capital analizado que utiliza el X-Ray al excluir la Reserva
+(capítulo 15). El Motor estructural aparece con sus 44.000 € — fondos y acciones directas
+juntos, porque cumplen la misma función.</p>
+<p><strong>C · Governance / Funding View</strong> — <em>¿bajo qué protocolo se administra el capital?</em>
+Muestra el Funding Pool: 40 + 3 + 4 = 47. Aquí —y solo aquí— «Convicción Directa» aparece
+como categoría, porque esta vista pregunta por el protocolo, no por la función.</p>
+<p>Una misma posición —los 4.000 € en acciones— aparece en las tres vistas: como parte de los
+módulos en A, como Motor en B, como Convicción Directa en C. <strong>Tres apariciones, un solo
+capital</strong>: cada vista responde una pregunta distinta sobre el mismo dinero.</p>
+<hr />
+<h2>5.9 Los dos relojes</h2>
+<p><strong>[MODELO]</strong> El mercado y la cartera funcionan a velocidades distintas, y confundirlas es
+una fuente clásica de malas decisiones:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>⏱️ Reloj del mercado</th>
+<th>🗓️ Reloj del capital</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ritmo</td>
+<td><strong>Continuo</strong> — los precios cambian cada segundo</td>
+<td><strong>Periódico</strong> — aportaciones mensuales y fechas de revisión</td>
+</tr>
+<tr>
+<td>Qué produce</td>
+<td>Oportunidades que aparecen y desaparecen en días</td>
+<td>Momentos de decisión definidos de antemano</td>
+</tr>
+<tr>
+<td>Qué exige</td>
+<td>Nada: el mercado no exige respuesta</td>
+<td>Disciplina: decidir solo en los momentos previstos</td>
+</tr>
+</tbody>
+</table>
+<p>El principio de gobernanza que se deriva es simple de enunciar y difícil de cumplir:
+<strong>que el mercado cambie cada día no obliga a la cartera a reaccionar cada día.</strong> Las
+aportaciones y las revisiones proporcionan los momentos de decisión; entre ellos, la
+cartera no se toca. La única excepción diseñada es precisamente el overlay: cuando una
+empresa alcanza el precio escrito, la Reserva permite actuar sin esperar al siguiente
+momento periódico — pero esa actuación ejecuta una decisión ya tomada por escrito, no
+improvisa una nueva.</p>
+<p>Este desfase tiene también un coste declarado: si muchas oportunidades aparecen a la vez,
+la capacidad de ejecución (aportación del mes más Reserva) no alcanza para todas, y el
+despliegue es gradual por diseño. Las reglas operativas completas —prioridades, importes y
+qué ocurre con lo no ejecutado— se desarrollan en los capítulos 12 y 13.</p>
+<hr />
+<h2>5.10 Qué errores evita esta arquitectura</h2>
+<p><strong>[MODELO]</strong> El valor práctico de las capas transversales se ve mejor en negativo: en los
+errores que hacen imposibles si se respetan.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Error evitado</th>
+<th>Qué lo impide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Confundir un fondo activo con Convicción</strong></td>
+<td>El Management Mode: activa delegada (③) y convicción directa (④) son modos distintos con exigencias distintas</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Contar dos veces el mismo capital</strong></td>
+<td>Las tres vistas con su regla de agregación: módulo + etiqueta, nunca dos filas</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Confundir liquidez táctica con la Reserva</strong></td>
+<td>La definición: la Reserva no expresa opinión de mercado; su tamaño no cambia por «sensaciones»</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Vender el Motor rutinariamente para perseguir oportunidades</strong></td>
+<td>La Execution Layer existe exactamente para no hacerlo</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Convertir el techo del 14% en una cuota que rellenar</strong></td>
+<td>La definición del overlay: condicional, sin obligación de uso</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Tratar una compañía de Convicción como una clase de activo nueva</strong></td>
+<td>La Structural Exposure View: toda acción recibe su módulo funcional</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Mezclar la asignación de activos con el proceso de decisión</strong></td>
+<td>La separación de dimensiones del §5.1: función, modo, gobernanza y ejecución son preguntas distintas</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5.11 Limitaciones</h2>
+<p>Las capas transversales tienen costes propios, y declararlos forma parte del método:</p>
+<ol>
+<li><strong>Complejidad de representación.</strong> Explicar una cartera con cuatro dimensiones y tres
+   vistas exige más del lector que una lista de fondos con porcentajes. Es un coste real
+   de comunicación que este trabajo paga a cambio de precisión.</li>
+<li><strong>Mantenimiento de varias vistas.</strong> Cada vista debe actualizarse con cada operación; una
+   vista desactualizada es peor que ninguna, porque da apariencia de control.</li>
+<li><strong>Dependencia del registro de decisiones.</strong> Sin un registro bien mantenido, la
+   distinción entre modos y protocolos se vuelve invisible: nadie puede demostrar <em>a
+   posteriori</em> bajo qué regla se compró qué.</li>
+<li><strong>Ambigüedad posible sobre la financiación.</strong> Cuando una compra se financia parte con
+   Reserva y parte con aportación, la trazabilidad del origen exige anotación expresa; de
+   lo contrario, el Funding Pool se vuelve difícil de auditar.</li>
+<li><strong>Coste de oportunidad de la Reserva.</strong> El 3% en efectivo remunerado rinde
+   previsiblemente menos que el capital invertido. Es un peaje pequeño y consciente que se
+   paga por capacidad de ejecución — y debe vigilarse que siga siendo pequeño.</li>
+<li><strong>Riesgo de que «Convicción» degenere en discrecionalidad.</strong> Si el protocolo no se
+   respeta —compras sin precio escrito, tesis redactadas después de comprar— la capa se
+   convierte en la justificación elegante de decisiones impulsivas. El protocolo del
+   capítulo 12 y el registro de decisiones son la defensa; la disciplina del equipo, la
+   única garantía real.</li>
+</ol>
+<hr />
+<h2>5.12 Síntesis</h2>
+<blockquote>
+<p><strong>Los módulos explican qué posee económicamente la cartera. El Management Mode explica
+cómo se seleccionó cada posición. El Conviction Overlay identifica dónde existe
+gobernanza activa directa. La Execution Layer mantiene la capacidad operativa. Ninguna
+de estas dimensiones autoriza a contar dos veces el mismo capital.</strong></p>
+</blockquote>
+<p>El capítulo 6 desarrolla los dos modos de análisis (Position y Look-Through) con los que
+estas dimensiones se verifican; el capítulo 12 convierte el principio del overlay en
+protocolo operativo completo; el capítulo 13 hace lo propio con la Reserva y el flujo de
+aportaciones.</p>
+<hr />
+<h2>CIERRE DEL CAPÍTULO — control de auditoría</h2>
+<table>
+<thead>
+<tr>
+<th>Decisiones</th>
+<th>Evidencia</th>
+<th>Limitaciones</th>
+<th>Visuales</th>
+<th>Fuentes pendientes</th>
+<th>Remisiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D45 <em>(el 14% como límite, no orden)</em> · D48 <em>(macrobloque y financiación)</em> · D50 <em>(Reserva y su naturaleza)</em> · D56-D59 <em>(flujo, prioridades, dos relojes, despliegue gradual)</em> · D63 <em>(activa delegada)</em> · D78-D79 <em>(Management Mode, Conviction Overlay, Funding Pool, tres vistas)</em></td>
+<td>Ejemplo numérico del §5.7 verificado <em>(40+3+4 = 47 en ambas vistas, sin doble conteo)</em> · la tabla Reserva/Freno deriva de definiciones ya registradas <em>(D50, PROTOCOLO §10)</em> · el coste de oportunidad del capital aparcado se cuantificó en <code>D45 §2.1</code> y se remite al cap. 12</td>
+<td>Complejidad de representación · mantenimiento de vistas · dependencia del decision log · ambigüedad de financiación sin anotación expresa · coste de oportunidad de la Reserva · riesgo de discrecionalidad disfrazada <em>(§5.11)</em></td>
+<td>① Tabla de las 4 dimensiones sobre una misma posición ② Los 4 Management Modes con los 4 ejemplos ③ Tabla Reserva vs Freno ④ Diagrama del Funding Pool en Fecha Cero y posterior ⑤ Las tres vistas de los mismos 4.000 € ⑥ Los dos relojes</td>
+<td>🟠 <strong>CNMV — plazos de reembolso:</strong> se incorporará <strong>solo</strong> con vehículo y proceso concretos identificados <em>(cap. 14)</em>; no se afirma ningún plazo general · 🟡 remuneración típica del efectivo operativo <em>(para cuantificar el coste de la Reserva en el cap. 22)</em></td>
+<td><strong>Cap. 6</strong> <em>(Position/Look-Through)</em> · <strong>Cap. 12</strong> <em>(protocolo completo de Convicción: IDC, Fecha Zero, tramos, evaluación)</em> · <strong>Cap. 13</strong> <em>(flujo de aportaciones y reconstrucción de la Reserva)</em> · <strong>Cap. 14</strong> <em>(plazos de liquidación por vehículo)</em> · <strong>Cap. 15</strong> <em>(normalización del X-Ray)</em> · <strong>Cap. 22</strong> <em>(coste de la Reserva en euros)</em></td>
+</tr>
+</tbody>
+</table>
+<h3>Prueba anti-redundancia — qué se sintetizó en lugar de repetir</h3>
+<table>
+<thead>
+<tr>
+<th>Contenido compartido con el cap. 4</th>
+<th>Tratamiento en el cap. 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definición de los cuatro Management Modes <em>(§4.5)</em></td>
+<td><strong>Tabla resumida en una línea por modo</strong> + lo nuevo: la columna «qué exige del inversor» y los cuatro ejemplos aplicados. La definición formal no se repite</td>
+</tr>
+<tr>
+<td>Definición de las tres vistas <em>(§4.7)</em></td>
+<td><strong>No se redefinen</strong>: se <strong>aplican</strong> a un ejemplo numérico concreto <em>(§5.8)</em>, que es lo que el cap. 4 no hace</td>
+</tr>
+<tr>
+<td>Conviction Overlay como término reservado <em>(§4.5-4.6)</em></td>
+<td>Se da por definido; el cap. 5 añade <strong>las seis propiedades y el principio económico</strong>, no la definición</td>
+</tr>
+<tr>
+<td>«La política es permanente; el capital transitorio» <em>(§4.6)</em></td>
+<td>Se cita una vez como fórmula y se desarrolla <strong>lo que el cap. 4 no contiene</strong>: qué hace, qué no hace, y la tabla Reserva/Freno</td>
+</tr>
+<tr>
+<td>Regla anti-doble-conteo <em>(§4.7)</em></td>
+<td>Se demuestra con números <em>(§5.7-5.8)</em> en lugar de enunciarse</td>
+</tr>
+<tr>
+<td>El Funding Pool <em>(§4.7 C)</em></td>
+<td>El cap. 4 lo nombra; el cap. 5 lo <strong>explica y ejemplifica</strong> — es su desarrollo natural, no repetición</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Confirmación:</strong> ninguna definición del capítulo 4 se reproduce íntegra; todo el material
+compartido aparece como recordatorio de una línea con remisión, y el desarrollo es nuevo
+<em>(implicaciones, ejemplos numéricos, tablas comparativas, errores evitados y limitaciones)</em>.</p>
+<hr />
+<h2>REGISTRO</h2>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-13</td>
+<td><strong>Borrador v1 completo del capítulo 5</strong> — 12 secciones según la estructura aprobada, con regla de lenguaje llano <em>(explicación sencilla → ejemplo → detalle técnico)</em>, marcadores [MODELO]/[EVIDENCIA EXTERNA], ejemplo numérico del Funding Pool, tabla Reserva/Freno, prueba anti-redundancia y control de auditoría con remisiones. <strong>La afirmación sobre plazos de reembolso queda como principio operativo sin plazos concretos, pendiente de documentarse vehículo a vehículo en el cap. 14.</strong> Pendiente de auditoría</td>
+</tr>
+</tbody>
+</table></div></body></html>
