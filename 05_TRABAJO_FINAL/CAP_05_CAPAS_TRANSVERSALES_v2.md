@@ -1,6 +1,6 @@
 # CAPÍTULO 5 — CAPAS TRANSVERSALES: CONVICCIÓN Y EJECUCIÓN
 
-## Investment Book · Parte I · **Borrador v2** de precisión y lenguaje · 13 de agosto de 2026
+## Investment Book · Parte I · 🟢 **CERRADO v2** · aprobado el 13 de agosto de 2026 *(D80)*
 
 > **Convención tipográfica:** **[MODELO]** = afirmación propia de PMMA.
 > **[EVIDENCIA EXTERNA]** = afirmación que requiere cita o fuente primaria, recogida en la
@@ -126,10 +126,11 @@ Una capa condicional plantea una pregunta inevitable: **¿dónde vive el capital
 existe oportunidad?** Si la respuesta fuera «en efectivo, esperando», la cartera se
 expondría a un riesgo silencioso: el **coste de oportunidad** — lo que se deja de ganar
 por tener el dinero en un sitio en lugar de en otro. La formulación correcta es
-condicional: **si el conjunto del mercado sube durante la espera, el capital aparcado se
-queda atrás, y a diez años ese peaje se acumula**. Nadie garantiza que ocurra —hay
-periodos en los que esperar habría sido mejor—, pero una cartera de largo plazo no puede
-diseñarse apostando a que el mercado caerá justo cuando a ella le convenga.
+condicional: **si durante ese periodo el Motor obtiene una rentabilidad superior a la
+Reserva, mantener demasiado capital esperando supone un coste de oportunidad** — y a diez
+años ese peaje se acumula. Nadie garantiza que ocurra —hay periodos en los que esperar
+habría sido mejor—, pero una cartera de largo plazo no puede diseñarse apostando a que el
+mercado caerá justo cuando a ella le convenga.
 
 **[MODELO]** La solución adoptada por esta implementación (decisiones D45 y D48) es que el
 capital no desplegado de Convicción **permanece invertido en el Motor**, no en efectivo.
@@ -143,8 +144,9 @@ De esa necesidad —y solo de ella— nace la capa siguiente.
 
 ⚠️ **Lo que esta lógica NO es:** no es una predicción de caídas, ni una apuesta a que el
 mercado bajará, ni una reserva «por si acaso viene algo malo». Es la respuesta operativa a
-una restricción mecánica: las oportunidades aparecen más rápido de lo que el capital puede
-moverse. La sección 5.9 desarrolla esa asimetría.
+una restricción mecánica: **una oportunidad puede aparecer en un momento en que movilizar
+capital desde otras posiciones lleve tiempo o genere fricciones.** La sección 5.9
+desarrolla esa asimetría.
 
 ---
 
@@ -309,7 +311,7 @@ qué ocurre con lo no ejecutado— se desarrollan en los capítulos 12 y 13.
 ## 5.10 Qué errores evita esta arquitectura
 
 **[MODELO]** El valor práctico de las capas transversales se ve mejor en negativo: en los
-errores que hacen muy difíciles si se respetan.
+errores que esta arquitectura busca evitar.
 
 | # | Error evitado | Qué lo impide |
 |---|---|---|
@@ -389,4 +391,5 @@ con la Reserva y el flujo de aportaciones.
 | Fecha | Acción |
 |---|---|
 | 2026-08-13 | Borrador v1 — 12 secciones según la estructura aprobada |
-| 2026-08-13 | **Borrador v2 de precisión y lenguaje.** Aplicados los 11 cambios de la última pasada: título en español; terminología española con el inglés una sola vez entre paréntesis *(forma de gestión, capa de Convicción, capa de ejecución, bolsa del 47%, y las tres vistas en llano)*; la indexación exige elegir y controlar exposición y vehículo; la Convicción como responsabilidad directa de valorar *(no «única habilidad genuina»)*; las caídas solo son oportunidad con precio adecuado + tesis intacta; coste de oportunidad en condicional; el Freno «busca amortiguar determinadas caídas», sin garantía; regla explícita módulo + Convicción con ambos ejemplos *(Motor y Aceleración)*; los dos relojes admiten reglas predefinidas ante eventos materiales; la Reserva «reduce la necesidad» de vender el Motor; su menor rendimiento como riesgo posible, no como hecho; síntesis sin cadena de términos ingleses. **Pendiente de auditoría de cierre** |
+| 2026-08-13 | **Borrador v2 de precisión y lenguaje.** Aplicados los 11 cambios de la última pasada: título en español; terminología española con el inglés una sola vez entre paréntesis *(forma de gestión, capa de Convicción, capa de ejecución, bolsa del 47%, y las tres vistas en llano)*; la indexación exige elegir y controlar exposición y vehículo; la Convicción como responsabilidad directa de valorar *(no «única habilidad genuina»)*; las caídas solo son oportunidad con precio adecuado + tesis intacta; coste de oportunidad en condicional; el Freno «busca amortiguar determinadas caídas», sin garantía; regla explícita módulo + Convicción con ambos ejemplos *(Motor y Aceleración)*; los dos relojes admiten reglas predefinidas ante eventos materiales; la Reserva «reduce la necesidad» de vender el Motor; su menor rendimiento como riesgo posible, no como hecho; síntesis sin cadena de términos ingleses. Auditoría superada |
+| 2026-08-13 | 🟢 **CERRADO v2 (D80).** Tres microcorrecciones finales: coste de oportunidad comparado con el Motor *(no con «el conjunto del mercado»)*; la restricción operativa formulada sin absolutos; «errores que esta arquitectura busca evitar». **Sin más cambios.** La v1 se conserva como trazabilidad |

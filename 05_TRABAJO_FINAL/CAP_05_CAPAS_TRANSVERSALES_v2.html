@@ -24,7 +24,7 @@ hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
 strong{color:#000}
 @media print{body{background:#fff}.pag{padding:0}}
 </style></head><body><div class="pag"><h1>CAPÍTULO 5 — CAPAS TRANSVERSALES: CONVICCIÓN Y EJECUCIÓN</h1>
-<h2>Investment Book · Parte I · <strong>Borrador v2</strong> de precisión y lenguaje · 13 de agosto de 2026</h2>
+<h2>Investment Book · Parte I · 🟢 <strong>CERRADO v2</strong> · aprobado el 13 de agosto de 2026 <em>(D80)</em></h2>
 <blockquote>
 <p><strong>Convención tipográfica:</strong> <strong>[MODELO]</strong> = afirmación propia de PMMA.
 <strong>[EVIDENCIA EXTERNA]</strong> = afirmación que requiere cita o fuente primaria, recogida en la
@@ -177,10 +177,11 @@ mercado ofrece lo que el protocolo exige.</strong></p>
 existe oportunidad?</strong> Si la respuesta fuera «en efectivo, esperando», la cartera se
 expondría a un riesgo silencioso: el <strong>coste de oportunidad</strong> — lo que se deja de ganar
 por tener el dinero en un sitio en lugar de en otro. La formulación correcta es
-condicional: <strong>si el conjunto del mercado sube durante la espera, el capital aparcado se
-queda atrás, y a diez años ese peaje se acumula</strong>. Nadie garantiza que ocurra —hay
-periodos en los que esperar habría sido mejor—, pero una cartera de largo plazo no puede
-diseñarse apostando a que el mercado caerá justo cuando a ella le convenga.</p>
+condicional: <strong>si durante ese periodo el Motor obtiene una rentabilidad superior a la
+Reserva, mantener demasiado capital esperando supone un coste de oportunidad</strong> — y a diez
+años ese peaje se acumula. Nadie garantiza que ocurra —hay periodos en los que esperar
+habría sido mejor—, pero una cartera de largo plazo no puede diseñarse apostando a que el
+mercado caerá justo cuando a ella le convenga.</p>
 <p><strong>[MODELO]</strong> La solución adoptada por esta implementación (decisiones D45 y D48) es que el
 capital no desplegado de Convicción <strong>permanece invertido en el Motor</strong>, no en efectivo.
 La consecuencia es el compromiso de gobernanza del §5.7: mientras no hay oportunidad, ese
@@ -191,8 +192,9 @@ compra cuando aparece la oportunidad? Vender otra posición cada vez sería lent
 De esa necesidad —y solo de ella— nace la capa siguiente.</p>
 <p>⚠️ <strong>Lo que esta lógica NO es:</strong> no es una predicción de caídas, ni una apuesta a que el
 mercado bajará, ni una reserva «por si acaso viene algo malo». Es la respuesta operativa a
-una restricción mecánica: las oportunidades aparecen más rápido de lo que el capital puede
-moverse. La sección 5.9 desarrolla esa asimetría.</p>
+una restricción mecánica: <strong>una oportunidad puede aparecer en un momento en que movilizar
+capital desde otras posiciones lleve tiempo o genere fricciones.</strong> La sección 5.9
+desarrolla esa asimetría.</p>
 <hr />
 <h2>5.5 La capa de ejecución: la Reserva Operativa</h2>
 <p><strong>[MODELO]</strong> La Reserva Operativa es la capa de ejecución de la cartera <em>(en inglés,
@@ -407,7 +409,7 @@ qué ocurre con lo no ejecutado— se desarrollan en los capítulos 12 y 13.</p>
 <hr />
 <h2>5.10 Qué errores evita esta arquitectura</h2>
 <p><strong>[MODELO]</strong> El valor práctico de las capas transversales se ve mejor en negativo: en los
-errores que hacen muy difíciles si se respetan.</p>
+errores que esta arquitectura busca evitar.</p>
 <table>
 <thead>
 <tr>
@@ -567,7 +569,11 @@ con la Reserva y el flujo de aportaciones.</p>
 </tr>
 <tr>
 <td>2026-08-13</td>
-<td><strong>Borrador v2 de precisión y lenguaje.</strong> Aplicados los 11 cambios de la última pasada: título en español; terminología española con el inglés una sola vez entre paréntesis <em>(forma de gestión, capa de Convicción, capa de ejecución, bolsa del 47%, y las tres vistas en llano)</em>; la indexación exige elegir y controlar exposición y vehículo; la Convicción como responsabilidad directa de valorar <em>(no «única habilidad genuina»)</em>; las caídas solo son oportunidad con precio adecuado + tesis intacta; coste de oportunidad en condicional; el Freno «busca amortiguar determinadas caídas», sin garantía; regla explícita módulo + Convicción con ambos ejemplos <em>(Motor y Aceleración)</em>; los dos relojes admiten reglas predefinidas ante eventos materiales; la Reserva «reduce la necesidad» de vender el Motor; su menor rendimiento como riesgo posible, no como hecho; síntesis sin cadena de términos ingleses. <strong>Pendiente de auditoría de cierre</strong></td>
+<td><strong>Borrador v2 de precisión y lenguaje.</strong> Aplicados los 11 cambios de la última pasada: título en español; terminología española con el inglés una sola vez entre paréntesis <em>(forma de gestión, capa de Convicción, capa de ejecución, bolsa del 47%, y las tres vistas en llano)</em>; la indexación exige elegir y controlar exposición y vehículo; la Convicción como responsabilidad directa de valorar <em>(no «única habilidad genuina»)</em>; las caídas solo son oportunidad con precio adecuado + tesis intacta; coste de oportunidad en condicional; el Freno «busca amortiguar determinadas caídas», sin garantía; regla explícita módulo + Convicción con ambos ejemplos <em>(Motor y Aceleración)</em>; los dos relojes admiten reglas predefinidas ante eventos materiales; la Reserva «reduce la necesidad» de vender el Motor; su menor rendimiento como riesgo posible, no como hecho; síntesis sin cadena de términos ingleses. Auditoría superada</td>
+</tr>
+<tr>
+<td>2026-08-13</td>
+<td>🟢 <strong>CERRADO v2 (D80).</strong> Tres microcorrecciones finales: coste de oportunidad comparado con el Motor <em>(no con «el conjunto del mercado»)</em>; la restricción operativa formulada sin absolutos; «errores que esta arquitectura busca evitar». <strong>Sin más cambios.</strong> La v1 se conserva como trazabilidad</td>
 </tr>
 </tbody>
 </table></div></body></html>
