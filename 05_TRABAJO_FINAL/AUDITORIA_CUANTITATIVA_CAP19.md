@@ -43,10 +43,11 @@ con los dos métodos, y con la misma consistencia entre episodios (7 de 9).** Lo
 es **la magnitud: de +12,44 a +7,34 puntos** — una diferencia importante que **no puede
 publicarse sin declarar**.
 
-La causa es conocida: promediar precios **suaviza** la serie y, en un activo con tendencia
-fuerte dentro del periodo *(el oro en los años setenta)*, la media del trimestre puede
-recoger más subida que la comparación de cierres. **No es un error de cálculo, es una
-elección de método que no estaba declarada.**
+**Descripción, sin interpretación:** las mayores diferencias entre ambos métodos aparecen
+en las **cajas 2 y 4**; en las cajas 1 y 3 el efecto es marginal. **No se atribuye esa
+diferencia a ninguna causa concreta —por ejemplo, al comportamiento del precio dentro del
+trimestre— porque no se ha comprobado.** No es un error de cálculo: es una elección de
+método que no estaba declarada.
 
 ## 2.3 Qué NO he hecho
 
