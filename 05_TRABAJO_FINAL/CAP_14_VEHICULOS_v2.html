@@ -1,0 +1,393 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CAP_14_VEHICULOS_v2</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>CAPÍTULO 14 — VEHÍCULOS, PROXIES Y ALTERNATIVAS DESCARTADAS</h1>
+<h2>Investment Book · Parte II · <strong>Borrador v2</strong> · auditoría externa aplicada · 14 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Convención:</strong> <strong>[MODELO]</strong> = decisión propia · <strong>[EVIDENCIA EXTERNA]</strong> = requiere
+fuente. Datos de producto: ✅ fuente primaria <em>(KID/documento oficial)</em> · 🟡 fuente
+secundaria <em>(catálogo del distribuidor / plataforma de análisis, consultados el
+13-ago-2026)</em>, pendiente de primaria · 🔴 no usar.</p>
+<p><strong>El último eslabón de la cadena.</strong> Mandato, funciones y pesos ya están; este capítulo
+documenta con qué productos concretos se implementa cada función — y con qué criterios,
+qué sustitutos analíticos y qué descartes por el camino.</p>
+</blockquote>
+<hr />
+<h2>14.1 Los criterios de selección</h2>
+<p><strong>[MODELO]</strong> Antes de cualquier comparación rige un veto previo:</p>
+<blockquote>
+<h3><strong>VETO 0 — ACCESIBILIDAD REAL.</strong> Una clase no puede ganar una comparación si no se</h3>
+<h3>ha confirmado que es <strong>realmente contratable</strong> para la plataforma, el tipo de</h3>
+<h3>inversor y el importe previsto. Este veto precede a todos los demás criterios.</h3>
+</blockquote>
+<p>Superado el veto, los candidatos se comparan con una lista estable de criterios — en este
+orden aproximado de peso:</p>
+<ol>
+<li><strong>Fidelidad a la exposición buscada</strong> <em>(índice o mandato correctos)</em>;</li>
+<li><strong>Coste total</strong>;</li>
+<li><strong>Estructura y tamaño</strong> <em>(patrimonio, réplica, antigüedad)</em>;</li>
+<li><strong>Operativa con el mandato</strong> <em>(aportaciones mensuales por importe, divisa, clase de
+   acumulación)</em>;</li>
+<li><strong>Tratamiento fiscal del vehículo</strong> — ⚠️ atributo relevante en España cuya
+   documentación formal se realiza en el capítulo 22; hasta entonces no se usan
+   afirmaciones fiscales categóricas;</li>
+<li><strong>Disponibilidad real en la plataforma de contratación.</strong></li>
+</ol>
+<p>Un criterio que NO está en la lista: la rentabilidad reciente del producto. ⚠️ Y una
+precisión: <strong>dos vehículos del mismo índice no difieren solo en coste</strong> — también en
+calidad de seguimiento, estructura, método de muestreo, tratamiento de dividendos,
+préstamo de valores, cobertura de divisa y operativa. Elegir por el histórico corto es
+elegir ruido; comparar solo por TER es comparar a medias.</p>
+<hr />
+<h2>14.2 La tabla de vehículos — versión de referencia v1.0</h2>
+<p><strong>Estado de verificación: todos los datos proceden de fuente secundaria</strong> <em>(catálogo,
+13-ago-2026)</em>; <strong>la documentación primaria oficial —KID, factsheet, prospecto o documento
+del emisor, según el producto— está pendiente para las 13 posiciones</strong> — por eso ninguna
+fila lleva ✅ todavía. La tabla de conciliación completa vive en
+<a href="CARTERA_V1_0_FUENTE_DE_VERDAD.md"><code>CARTERA_V1_0_FUENTE_DE_VERDAD.md</code></a>, que es la fuente
+única de verdad de la cartera; este capítulo la cita, no la duplica. El coste total estimado de la cartera se mantiene como <strong>estimado</strong>
+hasta cerrar esa verificación.</p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Vehículo</th>
+<th>ISIN</th>
+<th>Coste</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor · tilt EEUU 22%</td>
+<td>iShares Core S&amp;P 500 UCITS ETF</td>
+<td><code>IE00B5BMR087</code></td>
+<td>0,07%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>🚀 Motor · ancla global 22%</td>
+<td>Vanguard FTSE All-World UCITS ETF Acc</td>
+<td><code>IE00BK5BQT80</code></td>
+<td>0,14%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>🌿 Defensivos · consumo 6%</td>
+<td>Xtrackers MSCI World Consumer Staples</td>
+<td><code>IE00BM67HN09</code></td>
+<td>0,25%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>🌿 Defensivos · salud 6%</td>
+<td>iShares S&amp;P 500 Health Care</td>
+<td><code>IE00B43HR379</code></td>
+<td>0,15%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>⚡ Aceleración · tamaño 4%</td>
+<td>Vanguard Global Small-Cap Index EUR Acc</td>
+<td><code>IE00B42W4L06</code></td>
+<td>0,30%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>⚡ Aceleración · valor 4%</td>
+<td>Robeco BP Global Premium Eq <strong>D Acc EUR</strong></td>
+<td><code>LU0203975437</code></td>
+<td>1,46%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>⚡ Aceleración · multifactor 4%</td>
+<td>iShares STOXX Europe Equity Multifactor</td>
+<td><code>IE00BZ0PKV06</code></td>
+<td>0,25%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>🌍 Emergentes 7%</td>
+<td>iShares Emerging Markets Index <strong>clase S</strong></td>
+<td><code>IE000QAZP7L2</code></td>
+<td>0,16%</td>
+<td>🟡 · ⚠️ clase pendiente de confirmación contractual</td>
+</tr>
+<tr>
+<td>⚓ Freno · monetario 6%</td>
+<td>AXA Trésor Court Terme C</td>
+<td><code>FR0000447823</code></td>
+<td>0,06%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>⚓ Freno · renta fija 3%</td>
+<td>PIMCO GIS Income E EUR (H) Acc</td>
+<td><code>IE00B84J9L26</code></td>
+<td>1,45%</td>
+<td>🟡 <em>(plataforma de análisis)</em> · 🔴 KID pendiente · ⚠️ <strong>vehículo vigente sujeto a revisión de implementación por coste</strong></td>
+</tr>
+<tr>
+<td>🥇 Reales · oro 7%</td>
+<td>WisdomTree <strong>Core</strong> Physical Gold</td>
+<td><code>JE00BN2CJ301</code></td>
+<td>0,12%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>🥇 Reales · cobre 2%</td>
+<td>WisdomTree Copper</td>
+<td><code>GB00B15KXQ89</code></td>
+<td>0,49%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>💥 Asimetría 4%</td>
+<td>21Shares Bitcoin Core ETP</td>
+<td><code>CH1199067674</code></td>
+<td>0,10%</td>
+<td>🟡</td>
+</tr>
+<tr>
+<td>💧 Reserva 3%</td>
+<td>Efectivo remunerado</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Coste ponderado estimado de la cartera: ≈0,23%</strong> <em>(cálculo peso × coste sobre los datos
+anteriores; cifra </em><em>estimada</em><em> hasta las 13 verificaciones primarias — el detalle del
+cálculo y su sensibilidad, en el capítulo 22)</em>.</p>
+<hr />
+<h2>14.3 Vehículo real y vehículo analizado: la tabla de conciliación</h2>
+<p><strong>[MODELO]</strong> El análisis mirando dentro <em>(el X-Ray oficial de la Parte III)</em> no siempre
+pudo usar el vehículo exacto contratable. La conciliación completa, posición a posición:</p>
+<table>
+<thead>
+<tr>
+<th>Posición</th>
+<th>Vehículo real</th>
+<th>Vehículo del análisis</th>
+<th>Situación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motor · ambas piezas</td>
+<td>Los de la tabla</td>
+<td>Los mismos</td>
+<td>✅ idénticos</td>
+</tr>
+<tr>
+<td>Defensivos · ambas</td>
+<td>Los de la tabla</td>
+<td>Los mismos</td>
+<td>✅ idénticos</td>
+</tr>
+<tr>
+<td>Aceleración · multifactor</td>
+<td>El de la tabla</td>
+<td>El mismo</td>
+<td>✅ idéntico</td>
+</tr>
+<tr>
+<td>Aceleración · valor</td>
+<td>Robeco D Acc EUR</td>
+<td>Robeco D EUR</td>
+<td>✅ mismo fondo</td>
+</tr>
+<tr>
+<td>Freno · ambas</td>
+<td>Los de la tabla</td>
+<td>Los mismos</td>
+<td>✅ idénticos</td>
+</tr>
+<tr>
+<td>Asimetría</td>
+<td>El de la tabla</td>
+<td>El mismo</td>
+<td>✅ idéntico</td>
+</tr>
+<tr>
+<td><strong>Aceleración · tamaño</strong></td>
+<td><strong>Vanguard</strong> <code>IE00B42W4L06</code></td>
+<td><strong>SPDR MSCI World Small Cap</strong> <code>IE00BCBJG560</code></td>
+<td>🟡 <strong>proxy declarado (D77)</strong> — mismo índice; del proxy se toman geografía, sectores y estilo; <strong>nunca coste, fiscalidad ni condiciones contractuales</strong></td>
+</tr>
+<tr>
+<td><strong>Emergentes</strong></td>
+<td>Clase S</td>
+<td><strong>Clase D del mismo fondo</strong></td>
+<td>🟡 proxy de clase — misma cartera interna; el coste que se publica es el de la clase contratada</td>
+</tr>
+<tr>
+<td><strong>Reales · oro</strong></td>
+<td>WisdomTree <strong>Core</strong> <em>(0,12%)</em></td>
+<td>WisdomTree Physical Gold <em>(clase estándar)</em></td>
+<td>🟡 mismo oro físico; <strong>el coste que cuenta es el del Core</strong></td>
+</tr>
+<tr>
+<td><strong>Reales · cobre</strong></td>
+<td>Sin cobertura de divisa</td>
+<td><strong>Clase cubierta a euro</strong></td>
+<td>🔴 <strong>la única discrepancia que cambia el comportamiento</strong> — la cobertura altera rentabilidad y volatilidad; limitación declarada en toda cifra del cobre</td>
+</tr>
+<tr>
+<td>Reserva</td>
+<td>Efectivo</td>
+<td>No representada</td>
+<td>— fuera del análisis por diseño <em>(se analiza el 97% y se reescala)</em></td>
+</tr>
+</tbody>
+</table>
+<p>La regla que gobierna la tabla es la de D77, y vale para todos los casos:</p>
+<blockquote>
+<p><strong>Del proxy solo se toma aquello para lo que es realmente equivalente.</strong></p>
+</blockquote>
+<hr />
+<h2>14.4 Las alternativas descartadas — el archivo que da credibilidad</h2>
+<p><strong>[MODELO]</strong> Una cartera sin descartes documentados es sospechosa: significa que se compró
+lo primero que apareció. Ésta lleva su archivo — cada descarte con su motivo y su rastro
+en el registro:</p>
+<table>
+<thead>
+<tr>
+<th>Alternativa estudiada</th>
+<th>Para</th>
+<th>Por qué se descartó</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fondo de calidad global</strong></td>
+<td>Aceleración</td>
+<td>El análisis cuestionó que aportara suficiente diferenciación respecto al núcleo: la medición interna arrojó <strong>una correlación muy elevada con el Motor</strong> 🟡 — <strong>el valor exacto no se publica hasta disponer de fuente + ventana + frecuencia + moneda + fecha</strong> <em>(re-verificación pendiente)</em>. Al retirarlo, varias métricas de la cartera mejoraron</td>
+</tr>
+<tr>
+<td><strong>Vehículo único de desarrollados</strong> <em>(Motor «A»)</em></td>
+<td>Motor</td>
+<td>Estudiado con análisis completo propio; descartado por decisión de equipo a favor del tilt declarado <em>(D73)</em> — expediente íntegro conservado</td>
+</tr>
+<tr>
+<td><strong>Bloque tecnológico específico</strong></td>
+<td>—</td>
+<td>El análisis mirando dentro mostró exposición tecnológica ya material por varias vías <em>(caso del cap. 6; cifra auditada en el cap. 16)</em></td>
+</tr>
+<tr>
+<td><strong>Japón como pieza separada</strong></td>
+<td>Emergentes/desarrollados</td>
+<td>La exposición deseada quedaba razonablemente cubierta; su peso se reasignó</td>
+</tr>
+<tr>
+<td><strong>Fondo de salud de gestión activa</strong></td>
+<td>Defensivos</td>
+<td>La clase contratable resultaba cara frente al indexado comparable; la comparación quedó registrada</td>
+</tr>
+<tr>
+<td><strong>Mineras de oro</strong></td>
+<td>Activos Reales</td>
+<td>Disponibles, pero descartadas <strong>por diseño</strong>: son renta variable, con volatilidad muy superior al metal — no cumplen la función del módulo</td>
+</tr>
+<tr>
+<td><strong>Cesta amplia de materias primas</strong></td>
+<td>Activos Reales</td>
+<td>Mezcla exposiciones no buscadas <em>(energía, agrícolas)</em></td>
+</tr>
+<tr>
+<td><strong>Clase estándar del oro</strong> <em>(0,39%)</em></td>
+<td>Activos Reales</td>
+<td>El mismo oro a más del triple de coste que la clase Core</td>
+</tr>
+<tr>
+<td><strong>Cesta diversificada de criptoactivos</strong></td>
+<td>Asimetría</td>
+<td>Histórico de caídas peor que el del activo principal en la comparación registrada</td>
+</tr>
+<tr>
+<td><strong>Renta fija indexada global de corto plazo</strong></td>
+<td>Freno</td>
+<td>Fue la pieza de referencia anterior; sustituida por el vehículo vigente — <strong>y es candidata natural de vuelta si la revisión por coste del PIMCO concluye en contra</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>[MODELO]</strong> Nótese la asimetría sana del archivo: hay descartes por coste, por función,
+por redundancia y por diseño — y uno de ellos <em>(la renta fija indexada)</em> puede volver.
+<strong>Descartar no es condenar: es documentar por qué hoy no.</strong></p>
+<hr />
+<h2>14.5 Síntesis</h2>
+<blockquote>
+<p><strong>Trece vehículos con sus códigos y costes en fuente secundaria a la espera de trece
+documentos oficiales; cuatro sustitutos analíticos con su regla de atribución —de los
+cuales solo uno altera el comportamiento y queda señalado—; y un archivo de diez
+descartes con motivo y rastro. El eslabón final de la cadena está documentado: qué se
+compra, por qué eso, y por qué no lo otro.</strong></p>
+</blockquote>
+<hr />
+<h2>CIERRE — control de auditoría</h2>
+<table>
+<thead>
+<tr>
+<th>Decisiones</th>
+<th>Evidencia</th>
+<th>Limitaciones</th>
+<th>Visuales</th>
+<th>Fuentes pendientes</th>
+<th>Remisiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D73 <em>(Motor)</em> · D77 <em>(proxy y regla de atribución)</em> · D68 <em>(identificación del vehículo de renta fija)</em> · D67 <em>(preguntas de coste abiertas)</em> · registro de descartes del proyecto</td>
+<td>La tabla de 13 vehículos con estado por fila · la conciliación posición a posición · el archivo de 10 descartes trazados</td>
+<td><strong>Ningún dato de producto en fuente primaria todavía</strong> · PIMCO en revisión por coste · clase de Emergentes pendiente de confirmación · la discrepancia de cobertura del cobre afecta a toda cifra suya · la correlación del caso calidad es medición propia sin ventana documentada</td>
+<td>① La tabla de vehículos con semáforos ② La conciliación real↔analizado ③ El archivo de descartes</td>
+<td>🔴 <strong>Documentación primaria oficial de las 13 posiciones</strong> <em>(KID, factsheet, prospecto o documento del emisor según el producto)</em> — la mayor pendencia del capítulo · 🟠 revisión por coste del vehículo de renta fija <em>(alternativa indexada identificada)</em> · 🔴 <strong>Emergentes: VETO 0 + cierre formal</strong> <em>(fuente de verdad §2.1)</em> · 🟡 re-verificación formal de la correlación del caso calidad <em>(fuente+ventana+frecuencia+moneda+fecha)</em></td>
+<td><strong>Cap. 22</strong> <em>(costes y fiscalidad con fuente primaria)</em> · <strong>Caps. 15-18</strong> <em>(el análisis que usa los proxies)</em> · <strong>Cap. 11</strong> <em>(la función de cada vehículo)</em> · <strong>Anexo D</strong> <em>(descartes en detalle)</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>REGISTRO</h2>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-13</td>
+<td><strong>Borrador v1</strong> — criterios de selección <em>(la rentabilidad reciente excluida a propósito)</em>, tabla de 13 vehículos íntegramente en 🟡 con los KID en 🔴, conciliación real↔analizado con el cobre como única discrepancia de comportamiento, y archivo de 10 descartes — incluida la candidatura de retorno de la renta fija indexada si la revisión del PIMCO concluye en contra</td>
+</tr>
+<tr>
+<td>2026-08-14</td>
+<td><strong>v2 — auditoría externa aplicada.</strong> <strong>VETO 0 de accesibilidad real</strong> antepuesto a todos los criterios; «13 KID» sustituido por «documentación primaria oficial: KID, factsheet, prospecto o documento del emisor según el producto»; eliminada la afirmación de que dos vehículos del mismo índice solo difieren en coste <em>(añadidos seguimiento, estructura, muestreo, dividendos, préstamo de valores, cobertura y operativa)</em>; <strong>el 0,96 del caso calidad retirado</strong> hasta disponer de fuente+ventana+frecuencia+moneda+fecha; el capítulo remite a <code>CARTERA_V1_0_FUENTE_DE_VERDAD.md</code> como fuente única. <strong>PIMCO: vigente sujeto a revisión, sin tocar la función Freno.</strong> La v1 se conserva</td>
+</tr>
+</tbody>
+</table></div></body></html>

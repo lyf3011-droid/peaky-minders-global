@@ -1,0 +1,480 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CAP_11_MODULOS_v2</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>CAPÍTULO 11 — LOS SIETE MÓDULOS IMPLEMENTADOS</h1>
+<h2>Investment Book · Parte II · <strong>Borrador v2</strong> · auditoría externa aplicada · 14 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Convención:</strong> <strong>[MODELO]</strong> = decisión propia · <strong>[EVIDENCIA EXTERNA]</strong> = requiere
+fuente. Datos de producto: ✅ verificado en fuente primaria <em>(documento oficial del
+fondo)</em> · 🟡 verificado en fuente secundaria <em>(catálogo del distribuidor o plataforma de
+análisis)</em>, pendiente de primaria · 🔴 no usar todavía.</p>
+<p>⚠️ <strong>Estado de verificación general:</strong> a fecha de este borrador, <strong>los datos de producto
+proceden de fuentes secundarias consultadas el 13-ago-2026</strong> <em>(catálogo MyInvestor y
+fichas Morningstar)</em>. <strong>Los documentos oficiales (KID) de los vehículos están pendientes:
+por eso ningún dato de producto lleva ✅ todavía.</strong> Cuando se verifiquen, este capítulo
+actualizará las etiquetas sin cambiar su estructura.</p>
+</blockquote>
+<p>Cada módulo responde las mismas diez preguntas: para qué existe, qué problema resuelve,
+por qué ese peso, qué exposición busca, qué vehículo la implementa, qué aporta, qué
+riesgos introduce, qué solapa, qué alternativa se estudió y qué nos haría cambiarlo.</p>
+<hr />
+<h2>11.1 🚀 Motor — 44%</h2>
+<p><strong>Para qué existe y qué problema resuelve.</strong> Es la fuente principal de crecimiento: captura
+el beneficio agregado de las empresas cotizadas del mundo. Sin él, la cartera no tendría
+motor de largo plazo — de ahí el nombre.</p>
+<p><strong>Por qué el 44%.</strong> <strong>El Motor reduce la dependencia de acertar con empresas concretas y
+utiliza una exposición amplia al mercado como base de la cartera</strong> — y es el peso mayor
+porque es la función con más evidencia acumulada a su favor <strong>[EVIDENCIA EXTERNA — SPIVA;
+Bessembinder, pendientes de cita formal]</strong>. La cifra exacta es parametrización <em>(cap. 10)</em>: suficiente para dominar el
+crecimiento de la cartera, sin ahogar al resto de funciones.</p>
+<p><strong>Qué exposición busca — y cómo hay que contarla.</strong> [MODELO]</p>
+<blockquote>
+<h3><strong>Motor global con mayor peso estructural de Estados Unidos.</strong></h3>
+</blockquote>
+<p>Dos piezas: el <strong>ancla global</strong> <em>(un fondo del mercado mundial, emergentes incluidos)</em> y la
+<strong>sobreponderación deliberada de EEUU</strong> <em>(un fondo del índice S&amp;P 500)</em>. ❌ <strong>No son dos
+fuentes independientes de diversificación y nunca se presentan así</strong>: comparten muchas de
+las mayores compañías y su comportamiento está estrechamente ligado. <strong>La sobreponderación
+de EEUU es la tesis; el solapamiento es una consecuencia deliberada de su
+implementación</strong> — si no lo hubiera, no habría sobreponderación. Es un riesgo
+declarado aquí y cuantificado en la Parte III <em>(caps. 16 y 18)</em>.</p>
+<p><strong>Vehículos</strong> <em>(versión de referencia v1.0)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Pieza</th>
+<th>Vehículo</th>
+<th>ISIN</th>
+<th>Coste</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tilt EEUU · 22%</td>
+<td>iShares Core S&amp;P 500 UCITS ETF</td>
+<td><code>IE00B5BMR087</code></td>
+<td>0,07%</td>
+<td>🟡 catálogo 13-ago</td>
+</tr>
+<tr>
+<td>Ancla global · 22%</td>
+<td>Vanguard FTSE All-World UCITS ETF Acc</td>
+<td><code>IE00BK5BQT80</code></td>
+<td>0,14%</td>
+<td>🟡 catálogo 13-ago</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué aporta.</strong> La beta del mercado mundial más una convicción estratégica sobre el
+ecosistema empresarial estadounidense — cuya defensa completa <em>(escala, productividad,
+mercados de capitales, beneficios)</em> exige el dossier de evidencia registrado como
+pendiente <strong>[EVIDENCIA EXTERNA — dossier macro del tilt, por construir]</strong>.</p>
+<p><strong>Riesgos que introduce.</strong> Concentración geográfica en EEUU y sectorial en tecnología por
+encima de un índice mundial estándar; sensibilidad plena a las caídas de mercado; y el
+compromiso de gobernanza más duro de la cartera: <strong>mantener el tilt aunque EEUU lo haga
+peor durante años</strong> — compromiso registrado <em>(D73)</em> con su criterio de revisión.</p>
+<p><strong>Solapamientos.</strong> Entre sus dos piezas <em>(deliberado)</em>; con Emergentes a través del ancla
+global <em>(deliberado y medido — cap. 16)</em>; con Defensivos y Aceleración en las mayores
+compañías <em>(medido en el X-Ray)</em>.</p>
+<p><strong>Alternativa estudiada.</strong> Un vehículo único de mercados desarrollados <em>(Motor «A»)</em>: menor
+concentración y menor coste de gobernanza, sin tilt y sin emergentes. <strong>Se estudió a fondo,
+con su propio análisis completo, y se descartó por decisión del equipo</strong> — el expediente
+íntegro se conserva <em>(anexo C)</em> y sus ventajas medidas quedan reconocidas en la decisión
+que lo descartó <em>(D73)</em>.</p>
+<p><strong>Qué nos haría cambiarlo.</strong> Lo fija D73: un cambio del objetivo del mandato <em>(de
+sobreponderar EEUU a ampliar cobertura global — en cuyo caso el instrumento correcto sería
+el ancla global sola)</em>, o la invalidación de la evidencia metodológica pendiente.
+<strong>Expresamente excluido como motivo: la rentabilidad relativa reciente.</strong></p>
+<hr />
+<h2>11.2 🌿 Defensivos — 12%</h2>
+<p><strong>Para qué existe y qué problema resuelve.</strong> Mantener exposición a empresas cuyos
+beneficios dependen menos del ciclo: lo que la gente sigue comprando —alimentación,
+higiene, medicinas— cuando la economía se tuerce. Reduce la sensibilidad del conjunto sin
+salir de la renta variable.</p>
+<p><strong>Por qué el 12%.</strong> Suficiente para notarse en un año malo; no tanto como para lastrar una
+década buena. Parametrización razonada, no cifra mágica.</p>
+<p><strong>Qué exposición busca.</strong> Dos mitades: consumo básico global y salud.</p>
+<p><strong>Vehículos</strong> <em>(versión de referencia)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Pieza</th>
+<th>Vehículo</th>
+<th>ISIN</th>
+<th>Coste</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Consumo básico · 6%</td>
+<td>Xtrackers MSCI World Consumer Staples</td>
+<td><code>IE00BM67HN09</code></td>
+<td>0,25%</td>
+<td>🟡 catálogo</td>
+</tr>
+<tr>
+<td>Salud · 6%</td>
+<td>iShares S&amp;P 500 Health Care</td>
+<td><code>IE00B43HR379</code></td>
+<td>0,15%</td>
+<td>🟡 catálogo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué aporta.</strong> Beneficios más estables y, <strong>[EVIDENCIA EXTERNA — comportamiento
+histórico en recesiones pendiente de cita con fuente y periodo]</strong>, históricamente mejores
+caídas relativas en recesiones — sin garantía de que ocurra en todas <em>(regla del cap. 5)</em>.</p>
+<p><strong>Riesgos que introduce.</strong> ⚠️ El vehículo de salud replica un índice <strong>exclusivamente
+estadounidense</strong>: un 6% de la cartera queda en un solo sector de un solo país. Es el
+bloque más concentrado geográficamente y se declara como tal — y se suma al tilt del Motor
+en la cuenta total de EEUU <em>(cap. 16)</em>.</p>
+<p><strong>Solapamientos.</strong> Sus empresas también están en el Motor <em>(el módulo las sobrepondera, no
+las descubre)</em>.</p>
+<p><strong>Alternativa estudiada.</strong> Un fondo de salud de gestión activa se comparó con el vehículo
+indexado; la comparación —coste frente a resultado— favoreció al indexado y quedó
+registrada. También se evaluó un fondo activo de salud global como candidato <em>(registro
+del proyecto)</em>.</p>
+<p><strong>Qué nos haría cambiarlo.</strong> Un vehículo de salud global comparable en coste <em>(eliminaría
+la concentración EEUU del bloque)</em>; o evidencia de que la mitad de salud duplica riesgos
+que el mandato no quiere.</p>
+<hr />
+<h2>11.3 ⚡ Aceleración — 12%</h2>
+<p><strong>Para qué existe y qué problema resuelve.</strong> Buscar fuentes adicionales de rentabilidad
+esperada sobre el mercado neutral: primas documentadas por la investigación académica
+<strong>[EVIDENCIA EXTERNA — Fama-French; Asness et al., pendientes de cita formal]</strong> — tamaño
+pequeño, valoración baja, combinación de factores.</p>
+<p><strong>Por qué el 12%.</strong> Las primas son inciertas y pasan años sin aparecer: peso suficiente
+para que importen si llegan, acotado para que su ausencia no hunda el plan.</p>
+<p><strong>Qué exposición busca.</strong> Tres vías: pequeñas compañías globales <em>(4%)</em>, valor global de
+gestión activa <em>(4%)</em> y multifactor europeo <em>(4%)</em>.</p>
+<p><strong>Vehículos</strong> <em>(versión de referencia)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Pieza</th>
+<th>Vehículo</th>
+<th>ISIN</th>
+<th>Coste</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tamaño · 4%</td>
+<td>Vanguard Global Small-Cap Index EUR Acc</td>
+<td><code>IE00B42W4L06</code></td>
+<td>0,30%</td>
+<td>🟡 catálogo</td>
+</tr>
+<tr>
+<td>Valor · 4%</td>
+<td>Robeco BP Global Premium Eq D Acc EUR</td>
+<td><code>LU0203975437</code></td>
+<td>1,46%</td>
+<td>🟡 catálogo</td>
+</tr>
+<tr>
+<td>Multifactor · 4%</td>
+<td>iShares STOXX Europe Equity Multifactor</td>
+<td><code>IE00BZ0PKV06</code></td>
+<td>0,25%</td>
+<td>🟡 catálogo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>La lección de las pequeñas compañías — la función sobrevivió a los vehículos.</strong> Esta
+casilla cambió de forma durante la construcción <em>(composición del bloque, candidatos,
+clases)</em> y su análisis se realiza con un producto sustituto del mismo índice <strong>(proxy:
+SPDR MSCI World Small Cap, <code>IE00BCBJG560</code> — regla D77: del proxy se toman geografía,
+sectores y estilo; nunca coste, fiscalidad ni condiciones contractuales, que son las del
+Vanguard)</strong>. A pesar de todos esos cambios, <strong>la función —capturar la prima de tamaño—
+no se movió</strong>. Es la demostración práctica de la tabla maestra del cap. 10: vehículo
+sustituible, función estable. ⚠️ <strong>Y la prima misma no se presenta como certeza: la
+evidencia a su favor es histórica pero discutida, y menos robusta cuando no se controla
+la calidad de las empresas</strong> <strong>[EVIDENCIA EXTERNA — literatura del factor tamaño y su
+crítica, pendiente de cita]</strong>.</p>
+<p><strong>Qué aporta.</strong> Exposición a primas distintas de la beta — y el multifactor europeo es,
+además, <strong>una sobreponderación europea específica dentro de Aceleración</strong> <em>(su efecto
+geográfico se mide, no se proclama — cap. 16)</em>.</p>
+<p><strong>Riesgos que introduce.</strong> Las primas pueden no pagar durante períodos larguísimos; el
+vehículo de valor es caro <em>(1,46%)</em> y de gestión delegada — su justificación frente a
+alternativas indexadas es una pregunta de investigación abierta y registrada <em>(D67)</em> que
+este libro responde en este capítulo o declara pendiente; y los tres vehículos pueden
+moverse muy juntos — medido en el cap. 18.</p>
+<p><strong>Solapamientos.</strong> Con el Motor <em>(son renta variable global)</em>: <strong>el bloque diversifica el
+origen de la prima, no el riesgo</strong> — formulación registrada tras medirlo.</p>
+<p><strong>Alternativa estudiada.</strong> Un fondo de calidad global: se probó y se descartó porque el
+análisis cuestionó que aportara suficiente diferenciación respecto al núcleo <em>(cifras en
+el cap. 14)</em>. También se evaluaron vehículos alternativos de valor indexado.</p>
+<p><strong>Qué nos haría cambiarlo.</strong> Respuesta negativa a las preguntas D67 sobre el vehículo de
+valor <em>(¿justifica su coste?)</em>; o evidencia de que alguna pieza no captura la prima que
+dice capturar.</p>
+<hr />
+<h2>11.4 🌍 Emergentes — 7%</h2>
+<p><strong>Para qué existe y qué problema resuelve.</strong> Exposición dedicada al crecimiento de las
+economías emergentes, con peso propio y modificable con independencia del Motor.</p>
+<p><strong>Por qué el 7%.</strong> Peso deliberadamente moderado: relevante para participar, acotado
+frente a la volatilidad y los riesgos institucionales de esos mercados.</p>
+<p><strong>⚠️ La cifra que hay que leer bien.</strong> <strong>El 7% es el peso de la decisión dedicada — no la
+exposición económica total.</strong> El ancla global del Motor también contiene emergentes; la
+exposición total es mayor que el 7% y se cuantifica mirando dentro <em>(cap. 16)</em>. <strong>Es una
+sobreponderación deliberada y declarada</strong>, no un descuido <em>(D73)</em>.</p>
+<p><strong>Vehículo</strong> <em>(versión de referencia)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Vehículo</th>
+<th>ISIN</th>
+<th>Coste</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iShares Emerging Markets Index <strong>clase S</strong></td>
+<td><code>IE000QAZP7L2</code></td>
+<td>0,16%</td>
+<td>🟡 catálogo 13-ago · ⚠️ <strong>identidad de clase pendiente de confirmar contra documentación contractual vigente antes de imprimirse como definitiva</strong>; el análisis X-Ray usó la clase D del mismo fondo como proxy declarado</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué aporta.</strong> Crecimiento demográfico y económico no recogido por los índices
+desarrollados; diversificación geográfica parcial.</p>
+<p><strong>Riesgos que introduce.</strong> Volatilidad superior; riesgo político y de gobernanza;
+concentración asiática <em>(los mayores países del índice)</em>.</p>
+<p><strong>Solapamientos.</strong> Con el Motor vía ancla global — el deliberado del punto anterior.</p>
+<p><strong>Alternativa estudiada.</strong> Incluir Japón como pieza separada: se descartó al comprobar que
+la exposición deseada ya quedaba razonablemente cubierta, y su peso se reasignó
+<em>(registro del proyecto)</em>.</p>
+<p><strong>Qué nos haría cambiarlo.</strong> Que la exposición total medida <em>(bloque + Motor)</em> superara de
+forma sostenida lo que el mandato tolera; se revisa con el X-Ray periódico.</p>
+<hr />
+<h2>11.5 ⚓ Freno — 9%</h2>
+<p><strong>Para qué existe y qué problema resuelve.</strong> Estabilizar: la parte de la cartera que no
+depende de que la bolsa suba, aporta liquidez estratégica y amortigua — busca amortiguar
+determinadas caídas, sin garantía de lograrlo en todas <em>(regla del cap. 5)</em>.</p>
+<p><strong>Por qué el 9%.</strong> En un mandato agresivo a diez años, el estabilizador es deliberadamente
+pequeño: suficiente para dar estabilidad y financiar oportunidades, sin renunciar al
+crecimiento que el mandato pide.</p>
+<p><strong>Qué exposición busca.</strong> Dos pisos: liquidez remunerada de máxima estabilidad <em>(6%)</em> y
+renta fija con algo más de recorrido <em>(3%)</em>.</p>
+<p><strong>Vehículos</strong> <em>(versión de referencia)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Pieza</th>
+<th>Vehículo</th>
+<th>ISIN</th>
+<th>Coste</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monetario · 6%</td>
+<td>AXA Trésor Court Terme C</td>
+<td><code>FR0000447823</code></td>
+<td>0,06%</td>
+<td>🟡 catálogo</td>
+</tr>
+<tr>
+<td>Renta fija · 3%</td>
+<td>PIMCO GIS Income E EUR (H) Acc</td>
+<td><code>IE00B84J9L26</code></td>
+<td>1,45%</td>
+<td>🟡 ficha Morningstar · 🔴 <strong>KID pendiente</strong></td>
+</tr>
+</tbody>
+</table>
+<p>⚠️ <strong>Sobre la segunda pieza, con total claridad:</strong> el PIMCO es <strong>el vehículo vigente de la
+versión analizada, sujeto a revisión de implementación</strong> — el equipo está revisando si
+sigue siendo la mejor opción para ese 3% <strong>por su coste</strong>. <strong>La función del Freno no
+depende de que el PIMCO permanezca</strong>: si se sustituye, cambiará la fila de esta tabla y la
+versión <em>(v1.x)</em>, no el módulo. Además, su mandato es amplio <em>(renta fija flexible)</em>: esa
+amplitud es el riesgo específico que se vigila, y aporta a la cartera una duración y un
+perfil de crédito que se miden en la Parte III.</p>
+<p><strong>Qué aporta.</strong> Estabilidad estratégica y rentas. ⚠️ <strong>Separación absoluta con la
+Reserva: el Freno NO es la caja rutinaria para financiar Convicción</strong> — esa capacidad
+operativa es la Reserva <em>(cap. 13)</em>; el Freno es asignación estratégica con función
+propia.</p>
+<p><strong>Riesgos que introduce.</strong> El monetario no es una cuenta corriente <em>(es un fondo, con su
+naturaleza)</em>; la pieza de renta fija introduce sensibilidad a tipos y crédito, y su coste
+es alto para el módulo.</p>
+<p><strong>Solapamientos.</strong> Funcionales con la Reserva <strong>solo en apariencia</strong>: la tabla del cap. 5
+los separa — el Freno es asignación estratégica; la Reserva, capacidad operativa.</p>
+<p><strong>Alternativa estudiada.</strong> Renta fija global indexada de corto plazo y bajo coste — fue la
+pieza de referencia anterior y es candidata natural si la revisión del vehículo vigente
+concluye que el coste no se justifica <em>(registro del proyecto)</em>.</p>
+<p><strong>Qué nos haría cambiarlo.</strong> La revisión en curso del coste de la segunda pieza; o que la
+duración/crédito medidos <em>(Parte III)</em> excedan lo que la función estabilizadora tolera.</p>
+<hr />
+<h2>11.6 🥇 Activos Reales — 9%</h2>
+<p><strong>Para qué existe y qué problema resuelve.</strong> Comportamiento ligado a activos reales e
+inflación, distinto de acciones y bonos nominales: la parte pensada para los escenarios
+donde el dinero pierde valor o la confianza monetaria se resiente.</p>
+<p><strong>Por qué el 9%.</strong> Peso de seguro: material si el escenario llega, asumible si no llega.</p>
+<p><strong>Qué exposición busca.</strong> Oro físico <em>(7%)</em> como reserva de valor; cobre <em>(2%)</em> como metal
+industrial ligado al ciclo real.</p>
+<p><strong>Vehículos</strong> <em>(versión de referencia)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Pieza</th>
+<th>Vehículo</th>
+<th>ISIN</th>
+<th>Coste</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oro · 7%</td>
+<td>WisdomTree <strong>Core</strong> Physical Gold</td>
+<td><code>JE00BN2CJ301</code></td>
+<td>0,12%</td>
+<td>🟡 catálogo</td>
+</tr>
+<tr>
+<td>Cobre · 2%</td>
+<td>WisdomTree Copper</td>
+<td><code>GB00B15KXQ89</code></td>
+<td>0,49%</td>
+<td>🟡 catálogo</td>
+</tr>
+</tbody>
+</table>
+<p>⚠️ Dos matices honestos: el oro es físico asignado; <strong>el cobre no</strong> — es un producto sobre
+futuros con estructura de deuda, mecánica distinta que se declara <em>(y su análisis X-Ray
+usó una clase con cobertura de divisa distinta: limitación registrada, cap. 14)</em>.</p>
+<p><strong>Qué aporta.</strong> El oro, la descorrelación histórica más citada de la cartera — medida en la
+Parte III con su fuente y ventana. El cobre, exposición al ciclo industrial real.</p>
+<p><strong>Riesgos que introduce.</strong> El oro no produce rentas y puede pasar décadas planas; el cobre
+es volátil y cíclico; ninguno de los dos «garantiza» protección.</p>
+<p><strong>Solapamientos.</strong> <strong>Solapamiento directo reducido</strong> con el resto de módulos — lo cual
+<strong>no implica independencia estadística</strong>: las correlaciones se miden con su ventana y
+fuente en el cap. 18.</p>
+<p><strong>Alternativa estudiada.</strong> Mineras de oro <em>(descartadas por diseño: son renta variable,
+con volatilidad muy superior al metal)</em>; cestas amplias de materias primas <em>(descartadas:
+mezclan exposiciones no buscadas)</em>; y clases más caras del mismo oro <em>(descartadas por
+coste)</em> — todo en el registro.</p>
+<p><strong>Qué nos haría cambiarlo.</strong> Un vehículo de cobre físico o de mejor estructura a coste
+comparable; o que el papel del oro deje de sostenerse en la evidencia medida.</p>
+<hr />
+<h2>11.7 💥 Asimetría — 4%</h2>
+<p><strong>Para qué existe y qué problema resuelve.</strong> Opcionalidad: una posición cuyo potencial
+alcista es muy alto en relación con el daño máximo que su tamaño puede causar. La
+asimetría está <strong>en el tamaño</strong>, no en el activo.</p>
+<p><strong>Por qué el 4%.</strong> Es la respuesta a la pregunta de control del módulo: <em>¿aceptaríamos su
+pérdida prácticamente total sin comprometer el plan?</em> Con un 4%, sí. Con un 15%, no —
+dejaría de ser Asimetría y sería concentración.</p>
+<p><strong>Qué exposición busca.</strong> Bitcoin, con custodia institucional y formato cotizado.</p>
+<p><strong>Vehículo</strong> <em>(versión de referencia)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Vehículo</th>
+<th>ISIN</th>
+<th>Coste</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21Shares Bitcoin Core ETP</td>
+<td><code>CH1199067674</code></td>
+<td>0,10%</td>
+<td>🟡 catálogo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué aporta.</strong> Un recorrido posible no ligado a los beneficios empresariales ni a los
+tipos — y la disciplina de tener la posición especulativa <strong>regulada y acotada</strong> en lugar
+de negada o improvisada.</p>
+<p><strong>Riesgos que introduce.</strong> Volatilidad extrema y caídas históricas superiores al 70%
+<strong>[EVIDENCIA EXTERNA — episodios concretos pendientes de cita con fuente]</strong>; riesgo
+regulatorio; correlación no nula con el mercado en momentos de tensión <em>(medida, cap. 18)</em>.</p>
+<p><strong>Solapamientos.</strong> Ninguno estructural.</p>
+<p><strong>Alternativa estudiada.</strong> Cestas de criptoactivos diversificadas — descartadas tras
+comparar su histórico de caídas con el del activo principal <em>(registro del proyecto)</em>; y
+la alternativa de no tener el módulo, descartada por el mandato agresivo con pérdida
+acotada.</p>
+<p><strong>Qué nos haría cambiarlo.</strong> Que el tamaño creciera hasta romper la pregunta de control
+<em>(la política de sobreponderaciones, pendiente, lo regulará — D47b)</em>; o un cambio
+regulatorio que altere la custodia o el vehículo.</p>
+<hr />
+<h2>11.8 Síntesis</h2>
+<blockquote>
+<p><strong>Siete módulos, siete porqués, siete «qué nos haría cambiarlo». Ningún peso se presenta
+como perfecto y ningún vehículo como eterno: las funciones son estables; casi todo lo
+demás es parametrizable o sustituible, con registro. La defensa detallada de los números
+—cuánto EEUU, cuánta tecnología, cuánto solapamiento— pertenece a la Parte III, donde se
+mide en lugar de afirmarse.</strong></p>
+</blockquote>
+<hr />
+<h2>CIERRE — control de auditoría</h2>
+<table>
+<thead>
+<tr>
+<th>Decisiones</th>
+<th>Evidencia</th>
+<th>Limitaciones</th>
+<th>Visuales</th>
+<th>Fuentes pendientes</th>
+<th>Remisiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D73 <em>(Motor y su criterio de revisión)</em> · D77 <em>(proxy small caps)</em> · D67 <em>(preguntas Robeco/PIMCO — abiertas)</em> · D68 <em>(identificación del PIMCO)</em> · D75-D79 <em>(funciones y capas)</em></td>
+<td>Cada módulo con sus diez respuestas; alternativas estudiadas trazadas al registro; suma de piezas = 97% + Reserva</td>
+<td><strong>Todos los datos de producto en 🟡</strong> <em>(KID pendientes)</em> · PIMCO expresamente <strong>sujeto a revisión de implementación</strong> · clase exacta de Emergentes pendiente de confirmación contractual · dossier macro del tilt sin construir · D67 sin responder</td>
+<td>① Ficha visual por módulo <em>(10 preguntas)</em> ② El Motor como ancla+tilt ③ El mapa de solapamientos declarados</td>
+<td>🔴 <strong>13 KID</strong> <em>(todos los costes e identidades)</em> · 🟠 dossier macro del Motor · 🟠 episodios de caídas de bitcoin con fuente · 🟠 SPIVA/Bessembinder/Fama-French/Asness <em>(citas formales)</em> · 🟡 confirmación de clase de Emergentes</td>
+<td><strong>Cap. 14</strong> <em>(vehículos, proxies y descartados con detalle)</em> · <strong>Caps. 16-18</strong> <em>(las cifras: EEUU total, emergentes total, correlaciones)</em> · <strong>Cap. 12</strong> <em>(la capa que puede sobreponerse al Motor)</em> · <strong>D47b</strong> <em>(sobreponderaciones — pendiente)</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>REGISTRO</h2>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-13</td>
+<td><strong>Borrador v1</strong> — los siete módulos con estructura homogénea de diez respuestas. Motor presentado como <em>global con mayor peso estructural de EEUU</em> <em>(ancla + tilt, solapamiento declarado)</em> · PIMCO como <strong>vehículo vigente sujeto a revisión de implementación</strong> · Emergentes con el 7% como decisión dedicada, no exposición total, y clase pendiente de confirmación · small caps con la lección <em>«la función sobrevivió a los vehículos»</em> y D77 · <strong>todos los datos de producto etiquetados 🟡 con los KID en 🔴 pendiente</strong></td>
+</tr>
+<tr>
+<td>2026-08-14</td>
+<td><strong>v2 — auditoría externa aplicada.</strong> Motor: eliminado «la función que menos habilidad exige» → <em>reduce la dependencia de acertar con empresas concretas</em>; «la sobreponderación es la tesis; el solapamiento, consecuencia deliberada de su implementación». Defensivos: comportamiento histórico en recesiones marcado [EVIDENCIA EXTERNA]. Small caps: la prima de tamaño como evidencia histórica <strong>discutida</strong>, menos robusta sin controlar calidad. Multifactor: «sobreponderación europea específica», no «único contrapeso». Freno: separación absoluta con la Reserva. Activos Reales: «solapamiento directo reducido; no implica independencia estadística». La v1 se conserva</td>
+</tr>
+</tbody>
+</table></div></body></html>

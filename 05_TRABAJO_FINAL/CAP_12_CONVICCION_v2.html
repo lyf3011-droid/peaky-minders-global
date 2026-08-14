@@ -1,0 +1,206 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CAP_12_CONVICCION_v2</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>CAPÍTULO 12 — LA CAPA DE CONVICCIÓN: EL PROTOCOLO COMPLETO</h1>
+<h2>Investment Book · Parte II · <strong>Borrador v2</strong> · auditoría externa aplicada · 14 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Convención:</strong> <strong>[MODELO]</strong> = decisión propia · <strong>[EVIDENCIA EXTERNA]</strong> = requiere
+fuente.</p>
+<p>El capítulo 5 presentó el principio de la capa de Convicción. Este capítulo la convierte
+en protocolo operativo — y una advertencia preside todo lo demás: <strong>nada de lo que sigue
+es una invitación a usar la capa. Hoy está al 0%, y podría estarlo siempre. El 14% es
+techo, no cuota.</strong></p>
+</blockquote>
+<hr />
+<h2>12.1 Qué es y qué no es — recordatorio en tres líneas</h2>
+<p><strong>[MODELO]</strong> La capa de Convicción es el derecho —no la obligación— de comprar empresas
+concretas bajo un protocolo escrito de antemano. No es una clase de activo <em>(cada compra
+recibe su módulo estructural)</em>, no tiene objetivo de peso <em>(solo techo del 14%)</em> y no se
+activa por calendario ni por aburrimiento: <strong>solo por precio y tesis.</strong></p>
+<hr />
+<h2>12.2 El universo: quién puede entrar</h2>
+<p><strong>[MODELO]</strong> Ninguna empresa puede comprarse si antes no está en el <strong>universo de
+Convicción</strong>, y para entrar necesita <strong>siete documentos completos</strong>:</p>
+<pre><code>1. Análisis fundamental          5. Riesgos principales
+2. Tesis de inversión escrita    6. Horizonte fundamental
+3. Valoración                    7. Criterios de invalidación
+4. IDC (precio de entrada)
+</code></pre>
+<p>Sin los siete, la empresa no existe para la capa — <strong>aunque su precio parezca
+atractivo</strong>. El universo admite <strong>hasta siete compañías</strong>; no siete obligatorias: si solo
+tres merecen los siete documentos, el universo tiene tres.</p>
+<hr />
+<h2>12.3 El IDC: el precio de entrada, bien formulado</h2>
+<p><strong>[MODELO]</strong> El IDC es el precio de entrada derivado de nuestra valoración. Está
+construido de modo que, <strong>si las hipótesis del análisis se cumplen</strong>, la rentabilidad
+anualizada esperada desde ese precio ronde el 15% a cinco años.</p>
+<p>La formulación importa tanto como el número:</p>
+<table>
+<thead>
+<tr>
+<th>❌ Prohibido decir</th>
+<th>✅ Se dice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>«la acción dará como mínimo un 15%»</td>
+<td>«el precio ofrece aproximadamente un 15% anual <strong>implícito según el modelo, condicionado al cumplimiento de las hipótesis</strong>»</td>
+</tr>
+<tr>
+<td>«rentabilidad garantizada»</td>
+<td>«rentabilidad esperada bajo un modelo»</td>
+</tr>
+</tbody>
+</table>
+<p>Y la regla fundacional: <strong>el margen de seguridad ya está dentro del IDC.</strong> No se aplican
+descuentos adicionales sobre él — exigir «un 15% por debajo del IDC» sería duplicar el
+margen y bloquear entradas válidas.</p>
+<hr />
+<h2>12.4 La regla de compra: dos tramos y se acabó</h2>
+<p><strong>[MODELO]</strong></p>
+<pre><code>TRAMO 1 · hasta el 1% del valor total de la cartera
+  CONDICIÓN:  precio ≤ IDC  +  tesis intacta
+  (el 1% se mide sobre el valor de la cartera INMEDIATAMENTE ANTES de ejecutar)
+
+TRAMO 2 · hasta otro 1%
+  CONDICIÓN:  precio ≤ 0,90 × IDC  +  NUEVA revisión completa de la tesis
+  LÍMITE:     la posición directa no supera ≈2% del valor de la cartera al ejecutar
+
+DESPUÉS DEL TRAMO 2 NO SE COMPRA MÁS EN ESA EMPRESA, AUNQUE SIGA CAYENDO.
+</code></pre>
+<p>Tres consecuencias del diseño:</p>
+<ul>
+<li><strong>Elimina el promedio infinito a la baja</strong> — el error clásico de «comprar más porque ha
+  caído más» tiene un tope estructural de dos decisiones.</li>
+<li><strong>Una caída con tesis deteriorada no habilita nada.</strong> El precio es condición necesaria,
+  nunca suficiente.</li>
+<li><strong>Los importes son proporcionales, no fijos</strong>: como la cartera crece, dos tramos
+  ejecutados en momentos distintos difieren en euros. Es deliberado.</li>
+</ul>
+<p><strong>Límites agregados:</strong> hasta 7 empresas · máximo ≈2% de capital asignado por empresa ·
+máximo 14% del conjunto por nuevas decisiones de compra. Si el mercado revaloriza una
+posición por encima de esos pesos, <strong>no hay venta automática</strong> — el tratamiento de las
+sobreponderaciones pertenece a la política de ventas, pendiente y registrada como tal.</p>
+<hr />
+<h2>12.5 Si hay varias oportunidades y poco capital</h2>
+<p><strong>[MODELO]</strong> La financiación de cada mes es la aportación más la Reserva disponible
+<em>(cap. 13)</em>. Si las oportunidades válidas superan el capital:</p>
+<ol>
+<li><strong>Todas deben cumplirlo todo</strong> — tesis intacta, IDC formal, precio habilitado.</li>
+<li><strong>Se ordenan por mayor descuento porcentual sobre su IDC</strong> y se ejecutan en ese orden
+   hasta agotar el capital. Un solo criterio, verificable, sin discrecionalidad añadida.</li>
+<li><strong>Lo no ejecutado no genera derecho acumulado.</strong> El mes siguiente se reevalúa desde
+   cero: si sigue en precio, vuelve a competir; si subió, salió.</li>
+</ol>
+<p>Y el compromiso de los dos relojes <em>(cap. 5)</em>: el despliegue es <strong>gradual por diseño</strong>.
+Preferimos comprar menos compañías al precio previamente definido que forzar liquidez
+para capturar un mínimo de mercado.</p>
+<hr />
+<h2>12.6 La Fecha Cero y la cohorte real: el antídoto del autoengaño</h2>
+<p><strong>[MODELO]</strong> La trampa clásica de la selección de empresas es retrospectiva: calcular el
+precio de entrada <em>después</em> de ver el gráfico y presentarlo como disciplina. El protocolo
+la bloquea con dos piezas:</p>
+<p><strong>La Fecha Cero.</strong> Una tabla fechada con la cohorte inicial de candidatas: compañía,
+mercado, divisa, IDC, precio de referencia, distancia al IDC, fecha de valoración y
+estado <em>(en precio / cerca / en espera)</em>. 🔴 <strong>Prohibido aplicar retrospectivamente un IDC
+calculado después y presentarlo como decisión previa.</strong> Todo estudio hacia atrás se
+etiqueta «simulación retrospectiva» — sin esa etiqueta no vale nada.</p>
+<p><strong>La cohorte real.</strong> De cada operación real se registra: fecha, precio, IDC vigente,
+valor de la cartera, importe, tramo, tesis y motivo. Con eso, dentro de cinco años el
+resultado podrá evaluarse <strong>sin reescribir la historia</strong>.</p>
+<p>⚠️ Estado a fecha de este borrador: <strong>la tabla de la Fecha Cero está pendiente de
+construcción</strong> <em>(exige las valoraciones con IDC de las candidatas — hueco declarado, no
+relleno)</em>.</p>
+<hr />
+<h2>12.7 Cómo se mide el éxito: contra el Motor, no contra cero</h2>
+<p><strong>[MODELO]</strong> Cada posición de la capa se evalúa a su horizonte fundamental contra <strong>la
+alternativa real que sustituyó: el Motor.</strong></p>
+<pre><code>exceso = rentabilidad anualizada de la acción − rentabilidad anualizada del Motor
+</code></pre>
+<p><strong>Ganar dinero no basta.</strong> Si una selección renta un 9% mientras el Motor rentaba un 11%,
+la capa destruyó valor aunque el saldo sea positivo — y el compromiso registrado es
+decirlo así. El presupuesto de impacto es simétrico y se publica con sus dos caras —
+⚠️ <strong>y la cifra de ±0,7 puntos anuales corresponde EXCLUSIVAMENTE al caso de la capa
+completamente desplegada al 14% con un diferencial de ±5 puntos</strong>; con despliegues
+menores el impacto es proporcionalmente menor <em>(al 7%: ±0,35)</em>.</p>
+<p><strong>Condiciones técnicas de la comparación, registradas:</strong> el exceso frente al Motor solo es
+válido si se calcula con <strong>la misma ventana temporal, la misma moneda y rentabilidad
+total</strong> <em>(dividendos incluidos)</em> en ambos lados. Sin las tres, la cifra no se publica.</p>
+<p><strong>Años 1-4 se evalúa la tesis, no la cotización:</strong> crecimiento, márgenes, caja, balance,
+ventaja competitiva. Una caída no demuestra que la tesis falle; <strong>una subida tampoco
+demuestra que fuera correcta</strong> — la segunda mitad de esa frase es la difícil.</p>
+<hr />
+<h2>12.8 Síntesis</h2>
+<blockquote>
+<p><strong>Siete documentos para entrar, un precio escrito para comprar, dos tramos como máximo,
+prioridad por descuento cuando falte capital, Fecha Cero contra el autoengaño y el Motor
+como vara de medir. Y sobre todo: una capa que puede quedarse en cero para siempre sin
+que nada falle — porque el 14% es un límite de riesgo, no una promesa de actividad.</strong></p>
+</blockquote>
+<hr />
+<h2>CIERRE — control de auditoría</h2>
+<table>
+<thead>
+<tr>
+<th>Decisiones</th>
+<th>Evidencia</th>
+<th>Limitaciones</th>
+<th>Visuales</th>
+<th>Fuentes pendientes</th>
+<th>Remisiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D45-D46 <em>(límite, no orden)</em> · D49 <em>(dos tramos)</em> · D55 <em>(formulación del IDC)</em> · D57 <em>(1% medido antes de ejecutar)</em> · D58 <em>(priorización y no acumulación)</em> · D59 <em>(despliegue gradual)</em> · D60 <em>(benchmark Motor y simetría)</em> · D61 <em>(Fecha Cero)</em></td>
+<td>El protocolo completo consolidado en el documento operativo del proyecto; el árbol de decisión verificable sin interpretación añadida</td>
+<td>🔴 <strong>Fecha Cero sin construir</strong> <em>(exige valoraciones con IDC — hueco declarado)</em> · política de ventas por sobreponderación <strong>pendiente</strong> <em>(D47b)</em> · cero fichas de empresa a fecha del borrador</td>
+<td>① El embudo: universo→precio→tramos ② Los dos tramos con el tope ③ Tabla de la Fecha Cero <em>(plantilla)</em> ④ El presupuesto simétrico de impacto</td>
+<td>🟠 Las valoraciones con IDC de las candidatas <em>(mínimo tres para el estándar del trabajo)</em></td>
+<td><strong>Cap. 5</strong> <em>(el principio de la capa)</em> · <strong>Cap. 13</strong> <em>(la financiación)</em> · <strong>Cap. 24</strong> <em>(seguimiento y cohorte)</em> · <strong>D47b</strong> <em>(ventas — pendiente)</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>REGISTRO</h2>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-13</td>
+<td><strong>Borrador v1</strong> — protocolo completo en 8 secciones: universo de siete documentos, IDC con formulación obligatoria, dos tramos con fin del promedio infinito, priorización por descuento, Fecha Cero contra el sesgo retrospectivo y evaluación contra el Motor con presupuesto simétrico. <strong>Sin invitación a desplegar: 0% inicial, 14% techo.</strong> Huecos declarados: Fecha Cero y fichas con IDC</td>
+</tr>
+<tr>
+<td>2026-08-14</td>
+<td><strong>v2 — auditoría externa aplicada.</strong> El ±0,7 acotado <strong>exclusivamente</strong> al caso de despliegue completo al 14% × diferencial de ±5 puntos; registradas las tres condiciones técnicas de la comparación acción vs Motor <em>(misma ventana, misma moneda, rentabilidad total)</em>. <strong>La Fecha Cero sigue pendiente y no se inventa.</strong> La v1 se conserva</td>
+</tr>
+</tbody>
+</table></div></body></html>

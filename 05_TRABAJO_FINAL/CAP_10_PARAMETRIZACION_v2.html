@@ -1,0 +1,375 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CAP_10_PARAMETRIZACION_v2</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>CAPÍTULO 10 — DEL MANDATO A LA PARAMETRIZACIÓN: LOS PESOS DE GLOBAL 10Y</h1>
+<h2>Investment Book · Parte II · <strong>Borrador v2</strong> · auditoría externa aplicada · 14 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Convención:</strong> <strong>[MODELO]</strong> = decisión propia del proyecto · <strong>[EVIDENCIA EXTERNA]</strong> =
+requiere fuente. Datos de producto: ✅ fuente primaria · 🟡 secundaria, pendiente de
+primaria · 🔴 no usar todavía.</p>
+<p><strong>La Parte I respondió: ¿cuál es el método? La Parte II responde: ¿cómo lo aplicamos
+para construir <em>Peaky Minders Global 10Y</em>?</strong> Este capítulo muestra el primer tramo de la
+cadena: mandato → necesidades → funciones → pesos.</p>
+</blockquote>
+<hr />
+<h2>10.1 La cadena, visible</h2>
+<p><strong>[MODELO]</strong> Todo lo que sigue en la Parte II recorre esta cadena, y cada eslabón tiene su
+capítulo:</p>
+<pre><code>MANDATO (cap. 10)  →  NECESIDADES (cap. 10)  →  FUNCIONES (cap. 10-11)
+→  PESOS (cap. 10)  →  EXPOSICIONES (cap. 11)  →  VEHÍCULOS (cap. 14)
+→  REGLAS (caps. 12-13)
+</code></pre>
+<p>El orden importa porque es la prueba de que el método no se inventó después para
+justificar la cartera: el registro de decisiones fechado <em>(anexo B)</em> documenta que las
+funciones se discutieron antes que los productos, y que más de un producto cambió sin que
+cambiara ninguna función.</p>
+<hr />
+<h2>10.2 El mandato</h2>
+<table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>💰 Capital inicial</td>
+<td><strong>100.000 €</strong></td>
+</tr>
+<tr>
+<td>📅 Aportación</td>
+<td><strong>1.000 € al mes</strong></td>
+</tr>
+<tr>
+<td>⏳ Horizonte</td>
+<td><strong>10 años</strong></td>
+</tr>
+<tr>
+<td>🎯 Perfil</td>
+<td><strong>Agresivo</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Tres consecuencias del mandato que condicionan todo lo demás:</p>
+<ol>
+<li><strong>Las aportaciones son grandes en términos relativos.</strong> En diez años entran 120.000 €
+   nuevos sobre 100.000 iniciales — más que la cartera de partida. Eso convierte el flujo
+   mensual en una herramienta de primera magnitud: <strong>puede reducir la necesidad de vender
+   para corregir desviaciones — sin garantizar que nunca haya que vender</strong> <em>(capítulo 13;
+   la política de ventas por sobreponderación sigue pendiente)</em>.</li>
+<li><strong>El horizonte tolera volatilidad, no la ignora.</strong> Diez años permiten asumir una
+   mayoría amplia de renta variable; no eliminan la posibilidad de una década mediocre,
+   que se examina en la Parte IV.</li>
+<li><strong>«Agresivo» describe la tolerancia, no un objetivo de emociones fuertes.</strong> El perfil
+   habilita la asignación; las reglas <em>(caps. 12-13)</em> existen precisamente para que la
+   agresividad del diseño no se convierta en impulsividad de la gestión.</li>
+</ol>
+<hr />
+<h2>10.3 De las necesidades a las funciones</h2>
+<p><strong>[MODELO]</strong> El mandato genera necesidades; cada necesidad se cubre con una función; cada
+función es un módulo. Ésta es la traducción completa:</p>
+<table>
+<thead>
+<tr>
+<th>Necesidad del mandato</th>
+<th>Función que la cubre</th>
+<th>Módulo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crecer durante una década</td>
+<td>Capturar el crecimiento empresarial global</td>
+<td>🚀 Motor</td>
+</tr>
+<tr>
+<td>No depender solo del ciclo alcista</td>
+<td>Exposición productiva menos cíclica</td>
+<td>🌿 Defensivos</td>
+</tr>
+<tr>
+<td>Aspirar a algo más que el mercado</td>
+<td>Fuentes adicionales de rentabilidad esperada</td>
+<td>⚡ Aceleración</td>
+</tr>
+<tr>
+<td>Crecimiento fuera del mundo desarrollado</td>
+<td>Exposición dedicada a emergentes</td>
+<td>🌍 Emergentes</td>
+</tr>
+<tr>
+<td>Estabilidad y munición en caídas</td>
+<td>Estabilizar y financiar compras</td>
+<td>⚓ Freno</td>
+</tr>
+<tr>
+<td>Protección frente a inflación</td>
+<td>Comportamiento ligado a activos reales</td>
+<td>🥇 Activos Reales</td>
+</tr>
+<tr>
+<td>Potencial extraordinario acotado</td>
+<td>Opcionalidad con pérdida limitada por tamaño</td>
+<td>💥 Asimetría</td>
+</tr>
+<tr>
+<td>Poder ejecutar sin vender</td>
+<td>Capacidad operativa</td>
+<td>💧 Reserva <em>(capa de ejecución)</em></td>
+</tr>
+<tr>
+<td>Comprar empresas concretas solo a precio</td>
+<td>Selección directa condicional</td>
+<td>🎯 Convicción <em>(capa, 0-14%)</em></td>
+</tr>
+</tbody>
+</table>
+<p>Nótese qué <strong>no</strong> aparece: ningún producto. Los vehículos llegan en el capítulo 14,
+al final de la cadena — que es exactamente el orden que la Parte I prometió.</p>
+<hr />
+<h2>10.4 La parametrización v1.0</h2>
+<p><strong>[MODELO]</strong> Los pesos elegidos para este mandato, en la Fecha Cero:</p>
+<p><strong>Vista A — dónde está todo el dinero</strong> <em>(módulos + Reserva = 100%)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td><strong>44%</strong></td>
+</tr>
+<tr>
+<td>🌿 Defensivos</td>
+<td><strong>12%</strong></td>
+</tr>
+<tr>
+<td>⚡ Aceleración</td>
+<td><strong>12%</strong></td>
+</tr>
+<tr>
+<td>🌍 Emergentes</td>
+<td><strong>7%</strong></td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td><strong>9%</strong></td>
+</tr>
+<tr>
+<td>🥇 Activos Reales</td>
+<td><strong>9%</strong></td>
+</tr>
+<tr>
+<td>💥 Asimetría</td>
+<td><strong>4%</strong></td>
+</tr>
+<tr>
+<td><em>Subtotal módulos</em></td>
+<td><strong>97%</strong></td>
+</tr>
+<tr>
+<td>💧 Reserva Operativa</td>
+<td><strong>3%</strong></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Vista C — cómo se gobierna:</strong> la bolsa del 47% <em>(44 Motor ordinario + 3 Reserva + 0
+Convicción)</em>, con el techo de Convicción del 14% como presupuesto, no cuota. ⚠️ <strong>La bolsa
+del 47% se controla en las fechas de revisión, no de forma continua</strong> — los movimientos
+diarios de mercado no disparan ajustes.</p>
+<p>Tres advertencias que evitan leer esta tabla como lo que no es:</p>
+<ul>
+<li>⚠️ <strong>Ningún peso es «perfecto».</strong> Son <strong>la parametrización escogida para este mandato
+  con la información disponible en la Fecha Cero</strong> — juicio razonado y registrado, no
+  optimización matemática ni porcentajes universales.</li>
+<li>⚠️ <strong>La lógica de cada peso se defiende módulo a módulo en el capítulo 11</strong>, no aquí en
+  bloque: cada uno tiene su porqué, su riesgo y su alternativa estudiada.</li>
+<li>⚠️ <strong>Convicción no es una fila de esta tabla</strong> — es una etiqueta de gobernanza <em>(Parte
+  I, caps. 4-5)</em>. Cuando se despliegue, su capital seguirá contado una sola vez en su
+  módulo estructural.</li>
+</ul>
+<hr />
+<h2>10.5 Versionado: la implementación evoluciona sin rehacer el libro</h2>
+<p><strong>[MODELO]</strong> Esta implementación se denomina formalmente:</p>
+<blockquote>
+<h2><strong>Peaky Minders Global 10Y — v1.0</strong></h2>
+</blockquote>
+<p>Si el grupo modifica algo después <em>(un vehículo, un peso)</em>, la versión avanza — v1.1,
+v1.2… — con su entrada en el registro de decisiones. <strong>No se rehace el libro</strong>; se anota
+qué cambió, por qué y con qué evidencia.</p>
+<p>El principio que lo gobierna:</p>
+<blockquote>
+<p><strong>La arquitectura puede permanecer estable mientras pesos, exposiciones o vehículos
+mejoran, si nueva evidencia demuestra que existe una implementación mejor de la misma
+función.</strong></p>
+</blockquote>
+<p><strong>Cambiar no es sinónimo de error.</strong> Pero no todos los cambios son iguales, y confundir
+sus niveles sí lo sería:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo de cambio</th>
+<th>Qué toca</th>
+<th>Ejemplo</th>
+<th>Gravedad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>De vehículo</strong></td>
+<td>El producto que implementa una función</td>
+<td>Sustituir un fondo por otro del mismo índice</td>
+<td>Menor — versión nueva y ficha</td>
+</tr>
+<tr>
+<td><strong>De peso</strong></td>
+<td>La parametrización</td>
+<td>Motor 44 → 42</td>
+<td>Media — exige justificación registrada</td>
+</tr>
+<tr>
+<td><strong>De exposición</strong></td>
+<td>Qué busca un módulo por dentro</td>
+<td>Añadir un factor a Aceleración</td>
+<td>Media-alta — reabre la tesis del módulo</td>
+</tr>
+<tr>
+<td><strong>De función</strong></td>
+<td>La arquitectura misma</td>
+<td>Eliminar o crear un módulo</td>
+<td>Mayor — decisión de arquitectura</td>
+</tr>
+<tr>
+<td><strong>De mandato</strong></td>
+<td>El encargo entero</td>
+<td>Cambiar horizonte o perfil</td>
+<td>La mayor — todo lo demás se revisa</td>
+</tr>
+</tbody>
+</table>
+<p>Y la tabla maestra que resume qué es estable y qué es sustituible:</p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función</strong></td>
+<td>🔒 <strong>Estable por defecto</strong> — cambiarla exige una decisión de arquitectura registrada; estable no significa inmutable</td>
+</tr>
+<tr>
+<td><strong>Peso</strong></td>
+<td>🔧 Parametrizable</td>
+</tr>
+<tr>
+<td><strong>Exposición</strong></td>
+<td>🔧 Parametrizable</td>
+</tr>
+<tr>
+<td><strong>Vehículo</strong></td>
+<td>🔁 Sustituible</td>
+</tr>
+<tr>
+<td><strong>X-Ray</strong></td>
+<td>🔄 Regenerable</td>
+</tr>
+<tr>
+<td><strong>Regla de gobernanza</strong></td>
+<td>🔒 Estable salvo decisión registrada <em>(Dxx)</em></td>
+</tr>
+<tr>
+<td><strong>Mandato</strong></td>
+<td>🔐 Solo cambia mediante decisión mayor</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Por eso, cambiar más adelante un ETF o mover un 2% no invalida este libro:</strong> el libro
+documenta funciones y método; los productos y los decimales son la capa sustituible, y
+su historial vive en el registro.</p>
+<hr />
+<h2>10.6 Síntesis</h2>
+<blockquote>
+<p><strong>Un mandato concreto generó nueve necesidades; las necesidades se tradujeron a
+funciones; las funciones recibieron pesos razonados y registrados. Eso es la
+parametrización v1.0: la mejor respuesta del equipo en la Fecha Cero — revisable con
+evidencia, versionable sin rehacer nada, y nunca presentada como perfecta.</strong></p>
+</blockquote>
+<p>El capítulo 11 defiende cada módulo uno a uno; el 12 y el 13, las dos capas; el 14, los
+vehículos que lo implementan todo.</p>
+<hr />
+<h2>CIERRE — control de auditoría</h2>
+<table>
+<thead>
+<tr>
+<th>Decisiones</th>
+<th>Evidencia</th>
+<th>Limitaciones</th>
+<th>Visuales</th>
+<th>Fuentes pendientes</th>
+<th>Remisiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D54 <em>(mandato)</em> · D75 <em>(funciones)</em> · D73 <em>(Motor 44 con su composición)</em> · D48-D50 <em>(bolsa del 47%, Reserva)</em> · D78-D79 <em>(vistas y terminología)</em></td>
+<td>La cadena mandato→funciones→pesos con el registro fechado como prueba de orden · la suma 97+3=100 verificada</td>
+<td>Los pesos son juicio, no optimización <em>(declarado)</em> · la tensión «10 años + agresivo» del mandato se examina en el cap. 3 y la Parte IV</td>
+<td>① La cadena con sus capítulos ② Tabla necesidad→función→módulo ③ La parametrización en vista A ④ La tabla maestra estable/sustituible</td>
+<td>— <em>(este capítulo no usa datos de producto)</em></td>
+<td><strong>Cap. 3</strong> <em>(mandato en detalle)</em> · <strong>Cap. 11</strong> <em>(defensa de cada peso)</em> · <strong>Caps. 12-13</strong> <em>(reglas)</em> · <strong>Cap. 14</strong> <em>(vehículos)</em> · <strong>Anexo B</strong> <em>(registro)</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>REGISTRO</h2>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-13</td>
+<td><strong>Borrador v1</strong> — cadena mandato→necesidades→funciones→pesos, parametrización v1.0 en vista A <em>(97+3)</em>, versionado con los cinco niveles de cambio y la tabla maestra estable/sustituible</td>
+</tr>
+<tr>
+<td>2026-08-14</td>
+<td><strong>v2 — auditoría externa aplicada.</strong> Funciones «estables por defecto, no inmutables» <em>(tabla maestra)</em>; la bolsa del 47% se controla <strong>en fechas de revisión, no continuamente</strong>; las aportaciones «<strong>pueden reducir la necesidad de vender</strong>, no garantizar que nunca haya que vender». La v1 se conserva</td>
+</tr>
+</tbody>
+</table></div></body></html>

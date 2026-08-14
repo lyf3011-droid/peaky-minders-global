@@ -1,0 +1,267 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CAP_09_LIMITACIONES_PMMA_v2</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>CAPÍTULO 9 — LIMITACIONES DE PEAKY MINDERS MODULAR ARCHITECTURE</h1>
+<h2>Investment Book · Parte I · <strong>Borrador v2</strong> · auditoría externa aplicada · 14 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Convención tipográfica:</strong> <strong>[MODELO]</strong> = afirmación propia de PMMA.
+<strong>[EVIDENCIA EXTERNA]</strong> = afirmación que requiere fuente.</p>
+<p><strong>Pregunta que responde este capítulo:</strong> <em>¿dónde funciona PMMA, dónde empieza a perder
+información y en qué casos podría no aportar suficiente valor?</em></p>
+<p>Este no es el capítulo decorativo de «debilidades». Es <strong>el capítulo más crítico del
+marco</strong>, y cierra la Parte I a propósito: quien llegue hasta aquí debe salir sabiendo
+los bordes del método mejor que sus virtudes.</p>
+</blockquote>
+<hr />
+<h2>9.1 Por qué este capítulo existe</h2>
+<p>Un método que solo cuenta lo que hace bien no es un método: es un folleto. Los capítulos
+4 a 8 han ido dejando limitaciones declaradas por el camino; este capítulo las reúne,
+las ordena y añade las que faltaban. La ordenación es la aportación:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Qué significa</th>
+<th>Qué se hace con ellas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Limitaciones reducibles</strong></td>
+<td>Pueden mitigarse con datos, procedimientos o controles</td>
+<td>Se mitigan, y se dice cómo</td>
+</tr>
+<tr>
+<td><strong>Limitaciones inherentes</strong></td>
+<td>Forman parte de la naturaleza del método</td>
+<td>Se aceptan, y se dice por qué</td>
+</tr>
+</tbody>
+</table>
+<p>Confundir unas con otras produce dos errores simétricos: prometer que se arreglará lo que
+no tiene arreglo, o resignarse ante lo que sí lo tiene.</p>
+<hr />
+<h2>9.2 Limitaciones reducibles</h2>
+<p><strong>R1 — Dependencia de la calidad de los datos.</strong> Todo el análisis mirando dentro
+<em>(capítulo 6)</em> vale lo que valgan los datos publicados: carteras internas con retraso,
+desgloses parciales, clasificaciones que cambian según el proveedor. <strong>[EVIDENCIA
+EXTERNA — plazos y diferencias concretas pendientes de documentar.]</strong>
+<em>Mitigación:</em> el campo «fuente y fecha» en cada dato, la regla de denominador comparable
+y fechas compatibles antes de sumar, y declarar la antigüedad de cada foto.</p>
+<p><strong>R2 — Proxies.</strong> Cuando la herramienta de análisis no reconoce el vehículo exacto, se
+analiza un sustituto del mismo índice. Útil, pero nunca idéntico.
+<em>Mitigación:</em> la regla de atribución <em>(«del proxy solo se toma aquello para lo que es
+realmente equivalente»)</em>, el campo de proxy en la ficha y la tabla de conciliación
+vehículo real ↔ vehículo analizado.</p>
+<p><strong>R3 — Falsa precisión.</strong> Un porcentaje con dos decimales calculado sobre datos atrasados
+sigue siendo una estimación; los decimales no lo convierten en verdad.
+<em>Mitigación:</em> declarar método y fecha junto a cada cifra, y usar rangos u órdenes de
+magnitud cuando la precisión aparente supere a la real.</p>
+<p><strong>R4 — Carga de mantenimiento.</strong> Treinta y cinco campos por posición, tres vistas del
+capital, un registro de decisiones: todo eso hay que mantenerlo, y una ficha
+desactualizada da apariencia de control sin su sustancia.
+<em>Mitigación:</em> calendario de revisión <em>(Parte V)</em>, y la regla de que ninguna cifra se
+publica sin su fecha — lo viejo se ve viejo.</p>
+<p><strong>R5 — Fichas que caducan.</strong> Los fondos cambian por dentro; las tesis envejecen; los
+costes se revisan. La ficha perfecta de hoy describe mal la posición de dentro de dos
+años.
+<em>Mitigación:</em> el campo «regla de revisión» de cada posición, que fija cuándo se
+reconsidera — la caducidad se programa en lugar de descubrirse.</p>
+<p><strong>R6 — Concordancia entre analistas no testada.</strong> No se ha probado que dos analistas
+independientes clasifiquen igual con el árbol. Es reducible porque el test existe y puede
+hacerse <em>(clasificaciones a ciegas y comparación)</em>; hasta entonces, la mitigación es el
+campo de confianza de clasificación y la segunda revisión en casos ambiguos.</p>
+<p><strong>R7 — Activos que exigen el protocolo para excepciones.</strong> Gestión alternativa, capital
+privado, estructurados: instrumentos sin función dominante honesta. El protocolo los
+acoge como «Extensión», pero cada excepción es capacidad descriptiva que el marco admite
+no tener.
+<em>Mitigación:</em> parcial — el protocolo convierte el hueco en categoría declarada, pero no
+lo elimina: si una cartera estuviera dominada por estos activos, PMMA describiría poco.</p>
+<hr />
+<h2>9.3 Limitaciones inherentes</h2>
+<p><strong>I1 — La subjetividad de la función dominante.</strong> La función la decide quien clasifica,
+mirando la tesis. El árbol ordena el juicio; no lo sustituye. Esto no es un defecto a
+reparar: <strong>es el precio de clasificar por intención en lugar de por etiqueta</strong> — la
+intención no es observable desde fuera. Se acota <em>(árbol, tesis escrita, confianza,
+segunda revisión)</em>; no se elimina.</p>
+<p><strong>I2 — El riesgo de racionalización a posteriori.</strong> PMMA se desarrolló en paralelo a la
+cartera que lo implementa. El registro de decisiones fechado y la validación sobre
+carteras ajenas <em>(capítulo 8)</em> mitigan la sospecha; <strong>ninguna defensa la elimina del
+todo</strong>, porque el orden real de las ideas en la cabeza de un equipo no es auditable.
+Se declara y se convive con ella.</p>
+<p><strong>I3 — El riesgo de ser solo etiquetas nuevas.</strong> Con otros siete nombres, el método
+funcionaría igual. Si el valor estuviera en la taxonomía, no habría valor. La defensa
+—que el valor está en las separaciones y en el rastro documental— es razonable, pero es
+<strong>nuestra defensa de nuestro método</strong>: el lector debe juzgarla, no aceptarla.</p>
+<p><strong>I4 — Función distinta no implica comportamiento estadístico distinto.</strong> Dos posiciones
+con funciones diferentes pueden moverse casi igual — la propia implementación lo muestra
+<em>(las cifras, en el capítulo 18)</em>. El método obliga a medirlo y a declararlo; <strong>no puede
+impedirlo</strong>, porque la función es una intención y la correlación es un hecho del mercado.</p>
+<p><strong>I5 — Traducir pierde información.</strong> El capítulo 8 lo documentó caso por caso: la
+simetría de regímenes de Browne, el equilibrio de riesgo de All Seasons, la jerarquía
+táctica de Faber. Un lenguaje común <strong>compacta</strong>; compactar <strong>pierde</strong>. La pérdida se
+declara, no se evita.</p>
+<p><strong>I6 — PMMA no predice.</strong> Nada en el método estima rentabilidades futuras, detecta techos
+ni anticipa crisis. No es una carencia por inmadurez: <strong>el método no contiene ningún
+mecanismo predictivo, por diseño.</strong></p>
+<p><strong>I7 — PMMA no selecciona pesos automáticamente.</strong> Del mandato no se deduce
+mecánicamente «44% Motor». Los pesos son juicio parametrizado del equipo — el método
+exige justificarlos y registrarlos; no los calcula.</p>
+<p><strong>I8 — PMMA no garantiza rentabilidad.</strong> Una cartera impecablemente clasificada,
+registrada y verificada puede perder dinero durante años. El control final examina el
+proceso; el mercado no lee nuestros documentos.</p>
+<p><strong>I9 — PMMA no sustituye el análisis de riesgo.</strong> Clasificar por funciones no mide
+volatilidades, correlaciones, caídas ni concentraciones. El método <strong>exige</strong> ese análisis
+<em>(Parte III y IV)</em> y le da estructura; no lo reemplaza.</p>
+<p><strong>I10 — La escalabilidad amplia está declarada, no demostrada.</strong> Que el marco sirva para
+una estructura patrimonial compleja multi-cuenta es una extensión razonada; lo demostrado
+es su aplicación a un mandato concreto y su capacidad descriptiva sobre ocho carteras
+conocidas. La diferencia entre «declarado» y «demostrado» se mantiene siempre visible.</p>
+<hr />
+<h2>9.4 Dónde funciona, dónde pierde, dónde puede no compensar</h2>
+<p><strong>[MODELO]</strong> El resumen honesto del alcance:</p>
+<table>
+<thead>
+<tr>
+<th>Zona</th>
+<th>Situación</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ <strong>Funciona bien</strong></td>
+<td>Carteras de largo plazo con instrumentos convencionales <em>(fondos, ETF, acciones, bonos)</em> donde la pregunta central es <em>para qué está cada cosa</em></td>
+<td>Las ocho del capítulo 8 · la implementación de este trabajo</td>
+</tr>
+<tr>
+<td>🟡 <strong>Empieza a perder información</strong></td>
+<td>Diseños cuya lógica generadora no es funcional: equilibrio de riesgo, sistemas tácticos, simetrías de régimen</td>
+<td>All Seasons <em>(pierde el principio)</em> · GTAA <em>(pierde la jerarquía)</em></td>
+</tr>
+<tr>
+<td>🔴 <strong>Puede no aportar suficiente valor</strong></td>
+<td>Carteras dominadas por instrumentos sin función dominante honesta, o inversores que no van a mantener el registro</td>
+<td>Carteras centradas en gestión alternativa · uso ocasional sin decision log</td>
+</tr>
+</tbody>
+</table>
+<p>La tercera fila merece subrayarse: <strong>PMMA es un método de documentación continua. Quien no
+vaya a mantener las fichas y el registro obtiene el coste del sistema sin su beneficio —
+y estaría mejor con algo más simple.</strong></p>
+<hr />
+<h2>9.5 Qué tendría que ocurrir para retirar PMMA</h2>
+<p>El capítulo 4 fijó el criterio de falsación organizativo. Su formulación comparativa
+exacta es ésta:</p>
+<blockquote>
+<p><strong>PMMA solo justifica su mayor complejidad si, frente a un sistema convencional más
+sencillo, aporta una mejora material en trazabilidad, reproducibilidad del
+procedimiento, detección de duplicidades, separación función/vehículo, gobernanza y
+auditabilidad.</strong></p>
+</blockquote>
+<p>⚠️ El criterio <strong>no exige que PMMA «encuentre siempre problemas»</strong>: una cartera sana puede
+no tener duplicidades que detectar, y eso no falsa el método — lo que lo falsaría es no
+superar a la alternativa sencilla en las seis dimensiones cuando se comparan. La lista
+operativa: <strong>consideraríamos que PMMA no añade suficiente valor si se diera cualquiera de
+estas situaciones de forma sostenida:</strong></p>
+<ol>
+<li><strong>Las clasificaciones resultan irreproducibles</strong> — el test entre analistas <em>(R6)</em>,
+   cuando se haga, muestra desacuerdos frecuentes incluso con tesis escritas delante.</li>
+<li><strong>El registro deja de usarse</strong> — las decisiones reales se toman fuera del sistema y
+   se documentan después, con lo que el rastro ya no refleja el proceso <em>(I2 realizada)</em>.</li>
+<li><strong>El método no supera a la alternativa sencilla</strong> — comparado con una clasificación
+   convencional por clases de activo, no aporta mejora material en ninguna de las seis
+   dimensiones del criterio <em>(trazabilidad, reproducibilidad, detección de duplicidades
+   cuando existen, separación función/vehículo, gobernanza, auditabilidad)</em>.</li>
+<li><strong>El mantenimiento devora el beneficio</strong> — el tiempo de administrar fichas y vistas
+   supera de forma estable al valor de las decisiones que mejora.</li>
+<li><strong>La cartera deriva hacia instrumentos de Extensión</strong> — si la mayoría del capital
+   acabara en activos sin función dominante clara, el lenguaje describiría una minoría
+   del patrimonio.</li>
+</ol>
+<p>Ninguna de las cinco se da hoy. Pero el compromiso queda escrito: <strong>si se dan, la
+conclusión correcta no será defender el método — será simplificarlo o retirarlo.</strong></p>
+<hr />
+<h2>9.6 Síntesis — y cierre de la Parte I</h2>
+<blockquote>
+<p><strong>PMMA ordena, registra y comprueba. No predice, no elige pesos, no garantiza
+resultados y no sustituye al análisis de riesgo. Parte de sus límites se reducen con
+procedimiento; otra parte es inherente y se acepta con los ojos abiertos. Y si algún
+día el método cuesta más de lo que aporta, lo dicho en este capítulo obliga a
+simplificarlo o retirarlo — no a defenderlo.</strong></p>
+</blockquote>
+<p>Con esto queda cerrada la Parte I: el problema <em>(cap. 2)</em>, el mandato <em>(cap. 3)</em>, el
+método <em>(cap. 4)</em>, sus capas <em>(cap. 5)</em>, sus dos modos de análisis <em>(cap. 6)</em>, sus
+herramientas <em>(cap. 7)</em>, su validación descriptiva <em>(cap. 8)</em> y sus límites <em>(cap. 9)</em>.
+La Parte II aplica todo lo anterior a la construcción de <em>Peaky Minders Global 10Y</em>.</p>
+<hr />
+<h2>CIERRE DEL CAPÍTULO — control de auditoría</h2>
+<table>
+<thead>
+<tr>
+<th>Decisiones</th>
+<th>Evidencia</th>
+<th>Limitaciones</th>
+<th>Visuales</th>
+<th>Fuentes pendientes</th>
+<th>Remisiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D75 · D77 <em>(proxy)</em> · D78-D82 <em>(los cierres que fueron dejando limitaciones declaradas)</em></td>
+<td>Las limitaciones R1-R7 e I1-I10 proceden de los cierres de los caps. 4-8 y de la auditoría de integración <em>(C.2)</em>; ninguna es nueva sin origen</td>
+<td>Este capítulo ES la lista — y declara la suya propia: la clasificación reducible/inherente también es un juicio</td>
+<td>① Tabla reducibles vs inherentes ② El mapa de tres zonas <em>(§9.4)</em> ③ Las cinco condiciones de retirada <em>(§9.5)</em></td>
+<td>🟠 R1: plazos de publicación y diferencias entre proveedores <em>(heredado del cap. 6)</em> · 🟡 el test inter-analista como extensión futura</td>
+<td><strong>Cap. 18</strong> <em>(cifras de I4)</em> · <strong>Cap. 22</strong> <em>(fiscalidad del caso proxy)</em> · <strong>Cap. 26</strong> <em>(el control final y las respuestas incompletas honestas)</em> · <strong>Parte V</strong> <em>(calendario de mantenimiento)</em></td>
+</tr>
+</tbody>
+</table>
+<h3>Prueba anti-redundancia</h3>
+<p>Las limitaciones L1-L4 del capítulo 4 <strong>no se repiten como definiciones</strong>: se reparten en
+I1, I2, I4 y I6-I9 con desarrollo nuevo <em>(mitigaciones, ejemplos, condiciones de
+retirada)</em>. Lo nuevo de este capítulo: la partición reducible/inherente, el mapa de tres
+zonas y las cinco condiciones operativas de retirada.</p>
+<hr />
+<h2>REGISTRO</h2>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-13</td>
+<td><strong>Borrador v1 del capítulo 9</strong> — las 17 limitaciones exigidas cubiertas y ordenadas en 7 reducibles <em>(con mitigación cada una)</em> + 10 inherentes <em>(con su porqué)</em>, mapa de tres zonas de alcance y <strong>las cinco condiciones bajo las que PMMA debería simplificarse o retirarse</strong>. Cierra la Parte I</td>
+</tr>
+<tr>
+<td>2026-08-14</td>
+<td><strong>v2 — auditoría externa aplicada.</strong> Criterio de utilidad/falsación reescrito en forma <strong>comparativa</strong> con la formulación aprobada; eliminada la exigencia implícita de que el método «encuentre siempre problemas» <em>(condición 3 reformulada)</em>. La v1 se conserva</td>
+</tr>
+</tbody>
+</table></div></body></html>
