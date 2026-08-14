@@ -56,7 +56,13 @@ como checklist del propio libro, no como capítulo)*.
 
 ---
 
-# B. CONTRADICCIONES — enumeradas, NO corregidas
+# B. CONTRADICCIONES — enumeradas · ✅ **B1, B2, B3 y B8 RESUELTAS POR D78 el 13-ago**
+
+> **B1:** modos de gestión ①-④; Robeco = Aceleración + activa delegada; Convicción Directa ≠ toda gestión activa.
+> **B2:** política permanente, capital transitorio, capacidad 3%.
+> **B3:** Structural Exposure View *(módulo + tag)* / Governance-Funding View *(47% en revisión)*.
+> **B8:** cap. 19 desarrolla las cuatro cajas; el cap. 4 solo lleva el mapa módulo→régimen como hipótesis de diseño.
+> **Índice de 27 capítulos: APROBADO.** Quedan abiertas B4-B7, B9 *(tratamiento ya definido en la tabla)*.
 
 | # | Contradicción | Gravedad |
 |---|---|---|
@@ -261,9 +267,9 @@ EN ese lenguaje. Escribir el cap. 11 antes que el 4 obligaría a reescribirlo.
 
 | # | Decisión | Origen |
 |---|---|---|
-| **1** | **B1+B2+B3**: subtipos del Active Overlay · definición de Reserva · representación de Convicción desplegada *(fila vs marca)* | Contradicciones 🔴 |
-| **2** | **B8**: dónde viven las cuatro cajas *(propuesto: cap. 19 + mapeo módulo→caja en cap. 4)* | Rúbrica dim. 11 |
-| **3** | Aprobar este índice de 27 y el mapa E | Este documento |
+| **1** | ✅ **RESUELTA (D78)** — modos de gestión · política/capital · dos vistas contables | Contradicciones 🔴 |
+| **2** | ✅ **RESUELTA (D78)** — cap. 19 completo; cap. 4 solo el mapa módulo→régimen como hipótesis | Rúbrica dim. 11 |
+| **3** | ✅ **APROBADO (D78)** — 27 capítulos / 6 partes + anexos | Este documento |
 
 ---
 

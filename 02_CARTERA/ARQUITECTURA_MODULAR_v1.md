@@ -47,9 +47,25 @@ naturaleza distinta y mezclarlos oscurece el diseño.
 
 ---
 
-# 3. CONVICCIÓN — **ACTIVE OVERLAY CONDICIONAL**
+# 3. MODOS DE GESTIÓN Y ACTIVE OVERLAY *(precisado por D78)*
 
-> ## **No es un módulo estructural. Es una capa superpuesta que puede no existir.**
+> ## **La función estructural (los 7 módulos) y el MODO DE GESTIÓN son dimensiones
+> ## ortogonales.** Toda posición tiene un módulo Y un modo:
+
+| Modo de gestión | Quién decide | En Global 10Y |
+|---|---|---|
+| **① Pasiva / indexada** | Un índice | Motor, Emergentes, Defensivos… |
+| **② Sistemática / factorial** | Una regla | Small Cap, Multifactor |
+| **③ Activa delegada** | Un gestor externo con mandato | **Robeco (Aceleración) · PIMCO (Freno)** |
+| **④ Convicción directa** | **Nosotros, con IDC y protocolo propio** | 🎯 Convicción |
+
+> 🔴 **Active Overlay es el concepto general (modos ③ y ④). Convicción Directa NO es
+> sinónimo de cualquier gestión activa:** es la implementación específica de Global 10Y
+> para selección directa de compañías *(IDC · Fecha Cero · dos tramos · benchmark Motor)*.
+
+## 3.0 Convicción Directa — overlay condicional
+
+> **No es un módulo estructural. Es una capa superpuesta que puede no existir.**
 
 | | |
 |---|---|
@@ -75,7 +91,12 @@ Convicción forman el **macrobloque del 47%**.
 
 # 4. RESERVA OPERATIVA — **EXECUTION LAYER**
 
-> ## **No es una asignación de activos. Es infraestructura de ejecución.**
+> ## **«La POLÍTICA de Reserva es permanente; el CAPITAL que la ocupa es transitorio.»**
+> ## *(D78 · B2)*
+>
+> Capacidad operativa **objetivo/máxima del 3%**, con saldo fluctuante según aportaciones
+> y ejecución. **No es una asignación de activos ni una exposición estratégica equivalente
+> al Freno. Es infraestructura de ejecución.**
 
 | | |
 |---|---|
@@ -85,6 +106,19 @@ Convicción forman el **macrobloque del 47%**.
 
 **Su tamaño no responde a una visión de mercado, sino a una restricción operativa:**
 el reembolso de un fondo tarda días y las oportunidades no esperan.
+
+---
+
+# 4-bis. LAS DOS VISTAS CONTABLES *(D78 · B3)*
+
+> ## **Módulo = qué función económica desempeña el capital.**
+> ## **Convicción = bajo qué protocolo se tomó y gestiona la decisión.**
+> 🔴 **Nunca se suman ambas dimensiones en una misma tabla como clases de activo.**
+
+| Vista | Qué muestra | Regla |
+|---|---|---|
+| **STRUCTURAL EXPOSURE VIEW** | Todo el capital clasificado por función dominante en los 7 módulos | Una acción comprada vía Convicción **también recibe módulo**: *Microsoft directa → **Motor + tag Convicción Directa***. **Sin doble contabilización** |
+| **GOVERNANCE / FUNDING VIEW** | Qué capital está bajo el protocolo de Convicción | **Motor ordinario + Reserva + Convicción Directa = 47%** en fechas de revisión · techo **14%** *(presupuesto, no objetivo)* |
 
 ---
 

@@ -56,7 +56,7 @@ rebalanceo** y hace innecesaria la mayoría de las ventas.
 |---|---|---|
 | 🚀 **Motor** | **44%** | Indexado — **global con tilt estructural USA** *(D73)* |
 | 💧 **Reserva Operativa** | **3%** | Efectivo remunerado |
-| 🎯 **Convicción** | **0%** *(techo 14%)* | **Discrecional** |
+| 🎯 **Convicción** | **0%** *(techo 14%)* | **Convicción directa** *(vista de gobernanza — D78)* |
 | 🌿 Defensivos | 12% | Sistemático |
 | ⚡ Aceleración | 12% | Sistemático + **1 delegado** |
 | 🌍 Emergentes | 7% | Sistemático |
@@ -64,6 +64,11 @@ rebalanceo** y hace innecesaria la mayoría de las ventas.
 | 🥇 Activos reales | 9% | Sistemático |
 | 💥 Asimetría | 4% | Sistemático |
 | | **100%** | |
+
+⚠️ **Nota contable (D78 · B3):** Convicción figura en esta tabla como **vista de
+gobernanza**, no como clase de activo. **Al desplegarse, cada compra recibe su módulo
+estructural** *(Microsoft directa → Motor + tag Convicción Directa)* **y el capital cuenta
+UNA sola vez.** La identidad de revisión es Motor ordinario + Reserva + Convicción = 47%.
 
 **Renta variable inicial: ≈75%.**
 
