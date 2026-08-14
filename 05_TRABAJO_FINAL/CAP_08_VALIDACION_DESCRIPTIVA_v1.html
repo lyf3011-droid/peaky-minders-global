@@ -1,0 +1,601 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capítulo 8 — Validación descriptiva</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>CAPÍTULO 8 — VALIDACIÓN DESCRIPTIVA: OCHO CARTERAS HISTÓRICAS BAJO EL MISMO LENGUAJE</h1>
+<h2>Investment Book · Parte I · Borrador v1 para auditoría · 13 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Convención tipográfica:</strong> <strong>[MODELO]</strong> = afirmación propia de PMMA.
+<strong>[EVIDENCIA EXTERNA]</strong> = afirmación con fuente primaria; su estado de verificación se
+declara caso a caso y se resume en la tabla final.</p>
+<p><strong>Regla central de este capítulo:</strong> aquí <strong>no</strong> se demuestra que PMMA sea universal,
+superior ni capaz de predecir nada. Se demuestra una sola cosa, más modesta y más útil:
+<strong>capacidad descriptiva sobre arquitecturas heterogéneas</strong> — que carteras diseñadas por
+personas distintas, en épocas distintas y con filosofías distintas pueden describirse
+con el mismo lenguaje funcional sin deformarlas… y que, cuando algo se pierde en la
+traducción, se dice.</p>
+</blockquote>
+<hr />
+<h2>8.1 Por qué este ejercicio importa</h2>
+<p>Un lenguaje inventado para describir una sola cartera no vale mucho: siempre encajará con
+aquello para lo que fue diseñado. La prueba honesta es aplicarlo a carteras ajenas —
+conocidas, publicadas y anteriores a este trabajo — y ver dos cosas: <strong>qué describe bien</strong>
+y <strong>qué se le escapa</strong>.</p>
+<p>Por eso cada uno de los ocho casos siguientes usa exactamente la misma estructura:</p>
+<blockquote>
+<p><strong>qué intenta hacer → composición original → traducción PMMA → qué enseña al método →
+qué se pierde o simplifica al traducirla</strong></p>
+</blockquote>
+<p>La última columna es obligatoria. Ocho ejemplos donde el método siempre quedara perfecto
+no serían una validación: serían publicidad.</p>
+<p>⚠️ <strong>Advertencia previa:</strong> las traducciones son nuestras, no de los autores. Ninguno de
+ellos usó nuestros módulos ni pensó en ellos. Describir su cartera con nuestro lenguaje no
+significa que lo aprobaran, ni que el lenguaje capture todo lo que quisieron decir.</p>
+<hr />
+<h2>8.2 La cartera 60/40</h2>
+<p><strong>Qué intenta hacer.</strong> Es el equilibrio clásico entre crecimiento y estabilidad: una parte
+mayoritaria en acciones para crecer, una parte en bonos para amortiguar. Durante décadas
+ha sido la referencia por defecto de la inversión equilibrada.</p>
+<p><strong>Composición original.</strong> Aproximadamente 60% acciones y 40% bonos. <strong>[EVIDENCIA EXTERNA
+— verificada]</strong> Como implementación institucional de referencia se cita el <em>Vanguard
+Balanced Index Fund</em>, estructurado aproximadamente con esa distribución. ⚠️ Se cita como
+<strong>implementación institucional, no como origen histórico</strong> de la proporción — el 60/40 es
+anterior y de autoría difusa.</p>
+<p><strong>Traducción PMMA.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>Resto de módulos</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué enseña al método.</strong> Que dos módulos bastan para describir la cartera equilibrada más
+famosa del mundo — y que un 0% en cinco módulos también es información: esas funciones no
+fueron incorporadas.</p>
+<p><strong>Qué se pierde o simplifica.</strong> El «40% bonos» del 60/40 real puede contener cosas
+radicalmente distintas — deuda pública o privada, plazos cortos o larguísimos — que se
+comportan de manera muy diferente. La etiqueta <em>Freno 40%</em> agrupa todo eso en una sola
+casilla; sin los submódulos <em>(duración, crédito)</em>, la traducción pierde la textura que
+distingue un 60/40 conservador de uno agresivo por el lado de los bonos.</p>
+<hr />
+<h2>8.3 Buffett 90/10</h2>
+<p><strong>Qué intenta hacer.</strong> Máxima simplicidad para un heredero no experto: casi todo en el
+índice americano de grandes empresas, un resto en deuda pública corta para liquidez.</p>
+<p><strong>Composición original.</strong> 90% en un fondo indexado al S&amp;P 500 de muy bajo coste y 10% en
+bonos gubernamentales de corto plazo. <strong>[EVIDENCIA EXTERNA — verificada]</strong> Carta de
+Warren Buffett a los accionistas de Berkshire Hathaway, ejercicio 2013, <strong>página 18 del
+documento</strong>: instrucciones para el patrimonio destinado a su esposa.</p>
+<p><strong>Traducción PMMA.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td>10%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué enseña al método.</strong> El extremo minimalista: una cartera válida con dos módulos y una
+concentración funcional enorme en el Motor. El método no la corrige — la describe, y la
+describe en dos líneas.</p>
+<p><strong>Qué se pierde o simplifica.</strong> El contexto del mandato. Esa instrucción es para un caso
+concreto: un fideicomiso, una beneficiaria determinada, un horizonte y unas necesidades
+particulares. Traducida a dos casillas, parece una receta general — y Buffett no la
+formuló como tal. PMMA empieza siempre por el mandato <em>(capítulo 3)</em>; la tabla de
+traducción, sola, no lo muestra, y eso es una pérdida real de significado.</p>
+<hr />
+<h2>8.4 Bogleheads Three-Fund</h2>
+<p><strong>Qué intenta hacer.</strong> La filosofía de John Bogle llevada a la práctica por su comunidad:
+tres fondos indexados baratos —mercado doméstico completo, acciones internacionales, bonos—
+y nada más.</p>
+<p><strong>Composición original.</strong> Tres componentes <strong>sin pesos obligatorios</strong>: cada inversor los
+ajusta a su situación. <strong>[EVIDENCIA EXTERNA — verificada]</strong> Bogleheads Wiki; la propia
+fuente subraya que no existe una proporción única correcta.</p>
+<p><strong>Traducción PMMA.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td>Renta variable doméstica + internacional desarrollada</td>
+</tr>
+<tr>
+<td>🌍 Emergentes</td>
+<td>Solo si el vehículo internacional los separa deliberadamente</td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td>Bonos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué enseña al método.</strong> Dos cosas. Primera: el método puede describir <strong>familias</strong> de
+carteras, no solo carteras con pesos fijos — la estructura funcional es la misma aunque
+los porcentajes varíen. Segunda: la regla de no duplicidad en acción — los emergentes solo
+son módulo propio si existe una decisión separada sobre ellos.</p>
+<p><strong>Qué se pierde o simplifica.</strong> La distinción doméstico/internacional, que para la
+comunidad Bogleheads es una decisión central <em>(cuánto sesgo hacia el propio país)</em>, no
+tiene módulo propio en PMMA: ambos caen en Motor y la distinción queda relegada al
+análisis de exposiciones. Para un inversor cuya gran pregunta es precisamente esa, la
+traducción pierde el eje del debate.</p>
+<hr />
+<h2>8.5 Harry Browne — Permanent Portfolio</h2>
+<p><strong>Qué intenta hacer.</strong> Una cartera preparada para cualquier clima económico, sin
+predicciones: cuatro activos a partes iguales, cada uno pensado para un escenario
+—prosperidad, deflación, recesión, inflación.</p>
+<p><strong>Composición original.</strong> 25% acciones · 25% bonos del tesoro de larga duración · 25%
+letras del tesoro · 25% oro. <strong>[EVIDENCIA EXTERNA — composición validada; cita primaria
+pendiente]</strong> Harry Browne, <em>Fail-Safe Investing</em> — ⚠️ <strong>edición y página exacta
+pendientes de localizar; no se inventan.</strong></p>
+<p><strong>Traducción PMMA.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Peso</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td>25%</td>
+<td></td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td>50%</td>
+<td>25% duración larga + 25% liquidez estratégica</td>
+</tr>
+<tr>
+<td>🥇 Activos Reales</td>
+<td>25%</td>
+<td>Oro</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué enseña al método.</strong> La distinción más útil del capítulo 5 en acción: <strong>las letras
+del tesoro permanentes son Freno, no Reserva</strong> — son una asignación estratégica con
+función propia, no caja operativa. Y la necesidad de submódulos: el Freno de Browne
+contiene dos papeles opuestos <em>(duración larga para la deflación, liquidez para la
+recesión)</em> que la cifra agregada del 50% no distingue.</p>
+<p><strong>Qué se pierde o simplifica.</strong> La elegancia del diseño original. Browne construyó una
+<strong>simetría uno-a-uno</strong>: cada activo defiende un régimen económico, con pesos iguales
+porque ningún régimen se considera más probable. Al traducir a funciones, esa
+correspondencia activo-régimen —que es el alma de la cartera— se difumina en tres casillas
+de tamaños distintos. La traducción es correcta; el porqué profundo queda fuera del
+cuadro y hay que contarlo aparte, como aquí.</p>
+<hr />
+<h2>8.6 Golden Butterfly</h2>
+<p><strong>Qué intenta hacer.</strong> Una evolución de la Permanent Portfolio con una inclinación
+adicional hacia la prosperidad: mantiene la protección de todos los climas pero añade
+peso a las acciones pequeñas y baratas.</p>
+<p><strong>Composición original.</strong> Cinco bloques del 20%: grandes compañías · pequeñas compañías de
+valor · bonos del tesoro largos · bonos del tesoro cortos · oro. <strong>[EVIDENCIA EXTERNA —
+verificada]</strong> Portfolio Charts <em>(su creador, Tyler)</em>, artículo original.</p>
+<p><strong>Traducción PMMA.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Peso</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td>20%</td>
+<td>Grandes compañías</td>
+</tr>
+<tr>
+<td>⚡ Aceleración</td>
+<td>20%</td>
+<td>Pequeñas compañías de valor</td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td>40%</td>
+<td>20% largo + 20% corto</td>
+</tr>
+<tr>
+<td>🥇 Activos Reales</td>
+<td>20%</td>
+<td>Oro</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué enseña al método.</strong> El ejemplo más limpio de la diferencia entre <strong>Motor y
+Aceleración</strong>: las grandes compañías capturan el mercado; las pequeñas de valor se añaden
+buscando algo más que el mercado. Misma clase de activo <em>(acciones)</em>, dos funciones
+distintas — exactamente la distinción que da sentido al módulo Aceleración.</p>
+<p><strong>Qué se pierde o simplifica.</strong> El doble motivo de la pieza clave. En el diseño original,
+las pequeñas compañías de valor no están solo «por la prima»: completan el mapa de
+regímenes inclinándolo hacia la prosperidad. La etiqueta <em>Aceleración</em> captura el motivo
+de rentabilidad y deja fuera el motivo de régimen — media verdad bien clasificada.</p>
+<hr />
+<h2>8.7 All Seasons</h2>
+<p><strong>Qué intenta hacer.</strong> Una cartera para particulares inspirada en la idea de equilibrio
+entre escenarios económicos: que ningún clima —crecimiento, recesión, inflación,
+deflación— la dañe de forma desproporcionada.</p>
+<p><strong>Composición original.</strong> 30% acciones · 40% bonos del tesoro de larga duración · 15%
+bonos intermedios · 7,5% oro · 7,5% materias primas. <strong>[EVIDENCIA EXTERNA — verificada]</strong>
+Tony Robbins, a partir de sus conversaciones con Ray Dalio, <strong>para los pesos de la versión
+divulgada</strong>. ⚠️ <strong>Distinción obligatoria:</strong> esta versión <em>retail</em> no es el <em>All Weather</em>
+institucional de Bridgewater — aquél se construye por <strong>equilibrio de riesgo</strong>, con
+técnicas que una cartera de pesos fijos no replica. Bridgewater se cita únicamente para
+explicar esa diferencia, no como fuente de estos pesos.</p>
+<p><strong>Traducción PMMA.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Peso</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td>30%</td>
+<td></td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td>55%</td>
+<td>40% duración larga + 15% intermedia</td>
+</tr>
+<tr>
+<td>🥇 Activos Reales</td>
+<td>15%</td>
+<td>7,5% oro + 7,5% materias primas</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué enseña al método.</strong> Que una filosofía muy distinta de la nuestra cabe en el mismo
+lenguaje sin forzarla — y una lección de fondo: <strong>el peso en dinero no es el peso en
+riesgo</strong>. El 55% de bonos existe porque los bonos «pesan» menos en riesgo que las
+acciones; una lectura solo por capital no lo explica.</p>
+<p><strong>Qué se pierde o simplifica.</strong> Precisamente eso: <strong>la lógica que genera los pesos</strong>.
+La idea madre del diseño es equilibrar riesgo entre escenarios, y PMMA clasifica capital
+por función — puede describir el resultado, pero no contiene el principio de equilibrio de
+riesgo que lo produjo. De las ocho traducciones, ésta es donde el lenguaje funcional deja
+fuera la mayor parte del pensamiento original.</p>
+<hr />
+<h2>8.8 Swensen — la cartera para particulares</h2>
+<p><strong>Qué intenta hacer.</strong> David Swensen, gestor del patrimonio de Yale, propuso para
+particulares una cartera diversificada por funciones económicas: crecimiento, protección
+frente a crisis y protección frente a inflación, con vehículos indexados.</p>
+<p><strong>Composición original.</strong> 30% renta variable doméstica · 15% desarrollados
+internacionales · 5% emergentes · 20% inmobiliario cotizado (REIT) · 15% bonos del
+tesoro · 15% bonos ligados a la inflación (TIPS). <strong>[EVIDENCIA EXTERNA — composición
+validada; cita primaria pendiente]</strong> David Swensen, <em>Unconventional Success</em> —
+⚠️ <strong>página exacta pendiente de localizar; no se inventa.</strong></p>
+<p><strong>Traducción PMMA.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Peso</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td>45%</td>
+<td>Doméstica + internacional desarrollada</td>
+</tr>
+<tr>
+<td>🌍 Emergentes</td>
+<td>5%</td>
+<td>Asignación separada y deliberada</td>
+</tr>
+<tr>
+<td>🥇 Activos Reales</td>
+<td>20%</td>
+<td>REIT como asignación inmobiliaria específica</td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td>30%</td>
+<td>15% tesoro nominal + 15% ligado a inflación</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué enseña al método.</strong> Tres reglas de clasificación en un solo caso: los emergentes
+como módulo propio <em>(hay decisión separada)</em>, el REIT como Activos Reales <em>(es una
+asignación inmobiliaria específica, no parte de un índice global)</em> y los TIPS como Freno
+<em>(siguen siendo renta fija, aunque protejan de la inflación)</em>. Es la cartera ajena que más
+se parece estructuralmente al lenguaje del método — cinco módulos activos.</p>
+<p><strong>Qué se pierde o simplifica.</strong> Una restricción normativa central del autor: Swensen
+defiende que la renta fija del particular sea <strong>exclusivamente gubernamental</strong>, por
+desconfianza del crédito privado en los momentos de crisis. El módulo Freno de PMMA admite
+más cosas; la traducción conserva los pesos pero pierde esa prohibición — que en el diseño
+original no es un detalle, es una convicción.</p>
+<hr />
+<h2>8.9 Meb Faber — GTAA</h2>
+<p><strong>Qué intenta hacer.</strong> Un modelo con dos ideas: una estructura diversificada en cinco
+grandes grupos y, encima, una <strong>regla táctica</strong> que puede sacar cada grupo a liquidez
+cuando su tendencia se vuelve negativa.</p>
+<p><strong>Composición original.</strong> Cinco grupos a partes iguales <em>(20%)</em>: acciones estadounidenses ·
+acciones extranjeras · bonos · inmobiliario cotizado · materias primas. La versión táctica
+aplica una media móvil de diez meses: cada grupo permanece invertido o pasa a liquidez
+según la señal. <strong>[EVIDENCIA EXTERNA — verificada]</strong> Fuentes del propio Meb Faber /
+paper GTAA.</p>
+<p><strong>Traducción PMMA</strong> <em>(estructura de compra y mantenimiento)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Peso</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td>40%</td>
+<td>EEUU + extranjero</td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td>20%</td>
+<td>Bonos</td>
+</tr>
+<tr>
+<td>🥇 Activos Reales</td>
+<td>40%</td>
+<td>REIT + materias primas</td>
+</tr>
+</tbody>
+</table>
+<p>Y la regla táctica <strong>no es un módulo</strong>: es una <strong>forma de gestión sistemática aplicada
+sobre la estructura</strong> — una capa de decisión activa regulada, descrita con las dimensiones
+del capítulo 5.</p>
+<p><strong>Qué enseña al método.</strong> La separación estructura/gestión en su versión más exigente: un
+sistema táctico completo puede describirse <strong>sin romper la arquitectura</strong>, como regla
+superpuesta a módulos estables. Es la demostración de que las capas del capítulo 5 no son
+decorativas.</p>
+<p><strong>Qué se pierde o simplifica.</strong> Dos cosas, y la segunda es seria. Primera: en GTAA <strong>la
+esencia es la regla, no la estructura</strong> — describir primero los módulos invierte la
+jerarquía del autor, para quien la señal táctica es el corazón del modelo. Segunda: la
+liquidez táctica de GTAA no encaja limpiamente en nuestras casillas — no es Reserva <em>(no
+es caja de ejecución)</em> ni Freno estratégico <em>(no es permanente)</em>: es un estado temporal
+dictado por una señal. El método la describe como efecto de la regla, pero la casilla
+exacta de ese efectivo táctico es una <strong>tensión clasificatoria real</strong> que declaramos en
+lugar de esconder.</p>
+<hr />
+<h2>8.10 La tabla comparativa</h2>
+<table>
+<thead>
+<tr>
+<th>Cartera</th>
+<th>Motor</th>
+<th>Defensivos</th>
+<th>Aceleración</th>
+<th>Emergentes</th>
+<th>Freno</th>
+<th>Activos Reales</th>
+<th>Asimetría</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60/40</td>
+<td>60</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>40</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Buffett 90/10</td>
+<td>90</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>10</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Bogleheads 3-Fund</td>
+<td>variable</td>
+<td>—</td>
+<td>—</td>
+<td>opcional</td>
+<td>variable</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Permanent Portfolio</td>
+<td>25</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>50</td>
+<td>25</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Golden Butterfly</td>
+<td>20</td>
+<td>—</td>
+<td>20</td>
+<td>—</td>
+<td>40</td>
+<td>20</td>
+<td>—</td>
+</tr>
+<tr>
+<td>All Seasons</td>
+<td>30</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>55</td>
+<td>15</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Swensen</td>
+<td>45</td>
+<td>—</td>
+<td>—</td>
+<td>5</td>
+<td>30</td>
+<td>20</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Faber GTAA <em>(estructura)</em></td>
+<td>40</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>20</td>
+<td>40</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>La tabla no pretende decir qué cartera es mejor. Dice otra cosa: <strong>filosofías de inversión
+profundamente distintas pueden leerse con las mismas siete columnas</strong> — y las columnas
+vacías hablan tanto como las llenas.</p>
+<hr />
+<h2>8.11 Qué demuestra el conjunto — y qué no</h2>
+<p><strong>[MODELO]</strong> Cinco lecciones salen del ejercicio:</p>
+<ol>
+<li><strong>No hacen falta los siete módulos.</strong> Dos carteras funcionan con dos; ninguna de las
+   ocho usa Defensivos ni Asimetría — funciones que sí usa nuestra implementación, y esa
+   diferencia también describe algo.</li>
+<li><strong>El método no prescribe pesos.</strong> El Motor va del 20% al 90% entre casos igualmente
+   describibles.</li>
+<li><strong>El Freno adopta estructuras muy distintas</strong> — de la liquidez pura de Buffett a los
+   dos tramos opuestos de Browne — y por eso necesita submódulos.</li>
+<li><strong>Motor y Aceleración son funciones distintas de la misma clase de activo</strong> — Golden
+   Butterfly lo muestra mejor que cualquier definición.</li>
+<li><strong>La gestión activa puede describirse sin romper la estructura</strong> — GTAA lo demuestra,
+   con la tensión declarada de su liquidez táctica.</li>
+</ol>
+<p>Y lo que el ejercicio <strong>no</strong> demuestra, dicho sin rodeos:</p>
+<ul>
+<li><strong>No demuestra universalidad.</strong> Ocho carteras conocidas, todas de largo plazo y de
+  espíritu mayoritariamente indexado, elegidas por nosotros. Fuera quedan las estrategias
+  que más incomodarían al lenguaje <em>(gestión alternativa, derivados, apalancamiento)</em> —
+  para ésas existe el protocolo para excepciones, no esta galería.</li>
+<li><strong>No demuestra superioridad.</strong> Describir bien una cartera no la mejora ni la empeora.</li>
+<li><strong>No es un aval de los autores.</strong> Las traducciones son nuestras; los autores ni las
+  conocieron ni las aprobaron.</li>
+<li><strong>Y en dos casos la traducción pierde el corazón del diseño</strong> <em>(el equilibrio de riesgo
+  de All Seasons, la jerarquía táctica de GTAA)</em> — el lenguaje describe el resultado, no
+  siempre el porqué.</li>
+</ul>
+<hr />
+<h2>8.12 Síntesis</h2>
+<blockquote>
+<p><strong>Ocho carteras de autores, épocas y filosofías distintas caben en el mismo lenguaje de
+funciones — con sus pesos, sus ceros y sus reglas. Eso es capacidad descriptiva, y es
+todo lo que este capítulo reclama. Donde la traducción simplifica o pierde algo, queda
+dicho caso por caso: un lenguaje que no admite sus límites no describe — etiqueta.</strong></p>
+</blockquote>
+<p>El capítulo 9 reúne las limitaciones del marco, incluidas las que este ejercicio ha
+sacado a la luz; la Parte II aplica el lenguaje completo a <em>Peaky Minders Global 10Y</em>.</p>
+<hr />
+<h2>CIERRE DEL CAPÍTULO — control de auditoría</h2>
+<table>
+<thead>
+<tr>
+<th>Decisiones</th>
+<th>Evidencia</th>
+<th>Limitaciones</th>
+<th>Visuales</th>
+<th>Fuentes pendientes</th>
+<th>Remisiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D75 <em>(los siete módulos y su carácter no prescriptivo)</em> · D78-D79 <em>(formas de gestión — usadas en el caso GTAA)</em></td>
+<td><strong>Matriz documental del capítulo:</strong> 6 casos con fuente verificada <em>(Vanguard Balanced como implementación, carta Berkshire 2013 p. 18, Bogleheads Wiki, Portfolio Charts/Tyler, Robbins para los pesos retail con Bridgewater solo como contraste, Faber/paper GTAA)</em> · 2 casos con composición validada y cita primaria pendiente <em>(Browne y Swensen)</em></td>
+<td>Selección hecha por nosotros <em>(sesgo de muestra hacia carteras indexadas de largo plazo)</em> · traducciones propias, sin aval de los autores · dos casos pierden el principio generador <em>(All Seasons, GTAA)</em> · la liquidez táctica de GTAA como tensión clasificatoria declarada</td>
+<td>① Tabla comparativa 8×7 <em>(§8.10)</em> ② Ficha visual por cartera con las cinco filas de la estructura ③ El contraste All Seasons retail vs All Weather institucional ④ GTAA: estructura + regla como capas</td>
+<td>🟠 <strong>Browne, <em>Fail-Safe Investing</em>: edición y página exacta</strong> — pendiente, no se inventa · 🟠 <strong>Swensen, <em>Unconventional Success</em>: página exacta</strong> — pendiente, no se inventa</td>
+<td><strong>Cap. 5</strong> <em>(capas usadas en GTAA)</em> · <strong>Cap. 9</strong> <em>(limitaciones que este ejercicio aporta)</em> · <strong>Anexo E</strong> <em>(fichas bibliográficas completas cuando se cierren las dos citas)</em></td>
+</tr>
+</tbody>
+</table>
+<h3>Prueba anti-redundancia — respecto al capítulo 4</h3>
+<p>El capítulo 4 <strong>anuncia</strong> la validación descriptiva en una frase <em>(§4.13)</em> y remite aquí;
+no desarrolla ningún caso. Este capítulo no repite ninguna definición de módulos: los usa.
+La única superposición es la tabla comparativa, que existe solo aquí.</p>
+<hr />
+<h2>REGISTRO</h2>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-13</td>
+<td><strong>Borrador v1 completo del capítulo 8</strong> — 12 secciones. Los ocho casos con la estructura obligatoria de cinco pasos, <strong>incluida la columna «qué se pierde o simplifica» en los ocho</strong> <em>(las dos pérdidas mayores: el equilibrio de riesgo de All Seasons y la jerarquía táctica de GTAA; más la tensión clasificatoria de la liquidez táctica)</em>. Matriz documental aplicada: 6 fuentes verificadas, 2 composiciones validadas con <strong>página pendiente y no inventada</strong> <em>(Browne, Swensen)</em>. Sección explícita de qué NO demuestra el ejercicio. Pendiente de auditoría</td>
+</tr>
+</tbody>
+</table></div></body></html>
