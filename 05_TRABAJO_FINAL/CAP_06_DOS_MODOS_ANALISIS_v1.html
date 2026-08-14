@@ -1,0 +1,413 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capítulo 6 — Los dos modos de análisis</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>CAPÍTULO 6 — LOS DOS MODOS DE ANÁLISIS: POR POSICIÓN Y MIRANDO DENTRO DE LOS FONDOS</h1>
+<h2>Investment Book · Parte I · Borrador v1 para auditoría · 13 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Convención tipográfica:</strong> <strong>[MODELO]</strong> = afirmación propia de PMMA.
+<strong>[EVIDENCIA EXTERNA]</strong> = afirmación que requiere cita o fuente primaria.</p>
+<p><strong>Idea central del capítulo:</strong> <em>una cosa es para qué compramos una inversión; otra es
+qué contiene realmente.</em> O en la fórmula del método:</p>
+<h3><strong>La arquitectura expresa la intención; el X-Ray comprueba el resultado.</strong></h3>
+</blockquote>
+<hr />
+<h2>6.1 El problema</h2>
+<p>Una cartera puede parecer muy diversificada porque tiene muchos fondos… y no estarlo.
+Dentro de esos fondos pueden repetirse las mismas empresas, los mismos países y los mismos
+sectores, varias veces, sin que se vea a simple vista. Diez nombres distintos en el
+extracto no garantizan diez fuentes distintas de comportamiento.</p>
+<p>El motivo es sencillo: un fondo es una caja. Por fuera lleva una etiqueta («mundial»,
+«tecnológico», «defensivo»); por dentro lleva cientos o miles de empresas concretas. Si
+solo miramos las etiquetas, no sabemos qué tenemos. Si solo miramos el contenido, perdemos
+de vista para qué compramos cada caja.</p>
+<p><strong>[MODELO]</strong> Por eso PMMA usa <strong>dos formas de mirar la misma cartera</strong>, cada una con su
+pregunta:</p>
+<table>
+<thead>
+<tr>
+<th>Modo</th>
+<th>Pregunta</th>
+<th>Para qué sirve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Análisis por posición</strong> <em>(en inglés, Position Mode)</em></td>
+<td>¿Para qué compramos esta inversión?</td>
+<td>Diseñar, explicar y gobernar</td>
+</tr>
+<tr>
+<td><strong>Análisis mirando dentro</strong> <em>(en inglés, Look-Through Mode)</em></td>
+<td>¿Qué contiene realmente?</td>
+<td>Comprobar y auditar</td>
+</tr>
+</tbody>
+</table>
+<p>Ninguna de las dos basta sola. El resto del capítulo desarrolla cada una y muestra, con
+cuatro casos reales de este proyecto, qué pasa cuando se usan juntas.</p>
+<hr />
+<h2>6.2 El análisis por posición</h2>
+<p><strong>[MODELO]</strong> El análisis por posición mira cada inversión <strong>según el trabajo para el que
+fue comprada</strong>. Cada fondo o acción se asigna entero a su función, sin abrirlo.</p>
+<p>Sirve para las tareas donde manda la intención:</p>
+<ul>
+<li><strong>diseñar</strong> la cartera <em>(qué funciones necesita y con qué pesos)</em>;</li>
+<li><strong>explicarla</strong> <em>(cada posición tiene un porqué que cabe en una frase)</em>;</li>
+<li><strong>asignar pesos</strong> y compararlos con los objetivos;</li>
+<li><strong>gobernarla</strong> <em>(las reglas de revisión operan sobre posiciones, no sobre miles de
+  empresas subyacentes)</em>;</li>
+<li><strong>rebalancear</strong> <em>(las aportaciones se dirigen a bloques, no a sectores sueltos)</em>.</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code>Vanguard FTSE All-World  →  Motor
+</code></pre>
+<p>Aunque dentro tenga Estados Unidos, Europa, mercados emergentes, tecnología, salud y mil
+cosas más, <strong>al construir no se descompone</strong>. Se compró para hacer un trabajo —capturar el
+crecimiento del mercado mundial— y descomponerlo en este modo destruiría justo la
+información más valiosa: <strong>la intención de la decisión</strong>. Si cada fondo se disolviera en
+sus componentes, la cartera dejaría de tener autor; sería una nube de porcentajes que
+nadie decidió.</p>
+<hr />
+<h2>6.3 El análisis mirando dentro</h2>
+<p><strong>[MODELO]</strong> El análisis mirando dentro <strong>abre los fondos para comprobar qué tenemos
+realmente</strong>. Es la radiografía: no pregunta por la intención sino por el contenido.</p>
+<p>Qué se examina al mirar dentro:</p>
+<ul>
+<li><strong>países</strong> — ¿cuánto pesa realmente cada geografía, sumando todos los fondos?</li>
+<li><strong>sectores</strong> — ¿cuánta tecnología, salud o banca hay en total?</li>
+<li><strong>empresas</strong> — ¿qué compañías concretas se repiten en varios fondos y cuánto suman?</li>
+<li><strong>tamaño de compañías</strong> — ¿grandes, medianas, pequeñas?</li>
+<li><strong>factores</strong> — ¿hay inclinación a valor, calidad, momentum?</li>
+<li><strong>divisas</strong> — ¿en qué monedas está expuesto el dinero de verdad?</li>
+<li><strong>duración y calidad crediticia</strong> — cuando hay renta fija, ¿a qué plazo y a qué riesgo?</li>
+</ul>
+<p>El catálogo completo de métricas del X-Ray —rentabilidades, riesgo, correlaciones y sus
+reglas de lectura— corresponde a los capítulos 15 a 18. Aquí basta con la idea: <strong>mirar
+dentro es la única manera de saber si la cartera real coincide con la cartera pensada.</strong></p>
+<p>Los tres ejemplos siguientes son casos reales de este proyecto. Los tres cambiaron
+decisiones.</p>
+<hr />
+<h2>6.4 Ejemplo 1 — Emergentes: el peso de la decisión no es toda la exposición</h2>
+<p>La cartera tiene un bloque específico de Emergentes del 7%. Ésa es la <strong>decisión</strong>: un 7%
+del capital dedicado expresamente a esa función.</p>
+<p>Pero al mirar dentro aparece algo más: el Vanguard All-World del Motor <strong>también contiene
+mercados emergentes</strong>, porque su índice cubre el mundo entero, emergentes incluidos. De
+modo que:</p>
+<blockquote>
+<p><strong>El 7% es el peso de la decisión específica — no necesariamente la exposición económica
+total a emergentes.</strong> La exposición total es el bloque más lo que viene dentro del Motor,
+y solo se conoce mirando dentro. <em>(La cifra medida, con su fuente y su fecha, se recoge
+en el capítulo 16.)</em></p>
+</blockquote>
+<p>⚠️ <strong>Esto no es un error de construcción.</strong> Es una <strong>inclinación deliberada</strong>: la cartera
+quiere más emergentes que un índice mundial estándar, y lo consigue por dos vías — el
+bloque específico y el contenido del ancla global. Lo que el método exige no es eliminar
+el solapamiento, sino <strong>hacerlo visible y medirlo</strong>, para que la sobreponderación sea una
+cifra declarada y no una sorpresa.</p>
+<hr />
+<h2>6.5 Ejemplo 2 — Tecnología: el bloque que no hizo falta comprar</h2>
+<p>Durante la construcción, el equipo tenía prevista una posición tecnológica específica.
+Antes de comprarla se hizo la comprobación que este capítulo describe: <strong>¿cuánta
+tecnología hay ya dentro de los fondos elegidos?</strong></p>
+<p>El análisis mostró que la cartera ya tenía una exposición tecnológica <strong>material</strong> — el
+sector llegaba por varias vías a la vez: el peso natural de las grandes tecnológicas en
+los índices globales del Motor y su presencia en otros bloques. <em>(La cifra exacta de aquel
+análisis, con su fecha, su fuente y su denominador —sobre qué base se calculó—, se audita
+y se presenta en el capítulo 16; aquí importa el razonamiento, no el decimal.)</em></p>
+<p>La consecuencia fue una decisión en negativo, que son las más difíciles de tomar y las que
+mejor retratan un método:</p>
+<blockquote>
+<p><strong>No se compró el bloque tecnológico.</strong> Añadirlo habría sido comprar por tercera o
+cuarta vez el mismo riesgo con otra etiqueta.</p>
+</blockquote>
+<p>Este caso demuestra la frase que resume medio capítulo: <strong>más productos no significa
+necesariamente más diversificación.</strong> A veces significa lo contrario — el mismo riesgo
+acumulado en capas que ya no se ven.</p>
+<hr />
+<h2>6.6 Ejemplo 3 — S&amp;P 500 + All-World: el solapamiento que es la tesis</h2>
+<p>El Motor de esta cartera combina dos fondos: uno del índice S&amp;P 500 <em>(las grandes empresas
+de Estados Unidos)</em> y el All-World <em>(el mercado mundial)</em>.</p>
+<p><strong>En el análisis por posición</strong>, los dos forman parte del mismo módulo: ambos se compraron
+para el mismo trabajo, capturar el crecimiento empresarial global. Motor los dos.</p>
+<p><strong>Mirando dentro</strong>, aparece lo que cualquiera sospecharía: <strong>un fuerte solapamiento</strong>.
+Gran parte de las principales compañías estadounidenses están en ambos fondos — el
+All-World, por construcción, contiene casi todo lo que contiene el S&amp;P 500. Y su
+comportamiento histórico está estrechamente ligado: la correlación entre ambos es muy
+elevada <em>(el valor medido, con su ventana, frecuencia, fuente y fecha, se recoge en el
+capítulo 18)</em>.</p>
+<p>Aquí está el matiz que separa este trabajo de una lectura ingenua:</p>
+<blockquote>
+<p><strong>Ese solapamiento no significa que hayamos encontrado dos fuentes independientes de
+diversificación. No las hay, y no se buscaban.</strong> La combinación responde a una decisión
+consciente: un <strong>Motor global con mayor peso estructural de Estados Unidos</strong>. El fondo
+mundial es el ancla; el S&amp;P 500 es la sobreponderación deliberada.</p>
+</blockquote>
+<p>El papel del análisis mirando dentro no es aprobar o suspender esa decisión: es
+<strong>verificar que la inclinación existe realmente y cuánto mide</strong>. Si alguien presenta dos
+fondos solapados como «diversificación», mirar dentro lo desmiente; si los presenta como
+una inclinación declarada, mirar dentro la confirma y la cuantifica. La diferencia entre
+ambas presentaciones es la honestidad del constructor, no el contenido de los fondos.</p>
+<hr />
+<h2>6.7 El X-Ray no decide</h2>
+<p>Este punto evita un malentendido importante:</p>
+<blockquote>
+<p><strong>El X-Ray no nos dice qué cartera debemos construir. Nos dice qué cartera hemos
+construido.</strong></p>
+</blockquote>
+<p>La decisión nace del mandato y del método <em>(capítulos 3 y 4)</em>: qué funciones, qué pesos,
+qué reglas. El X-Ray llega después, como herramienta de comprobación — la báscula, no el
+médico. Una báscula no opina sobre cuánto deberías pesar; te dice cuánto pesas, y la
+interpretación es tuya.</p>
+<p><strong>[MODELO]</strong> Por eso este trabajo no trata a la plataforma de análisis como una autoridad
+que dictamina si algo «está bien» o «está mal». Un dato del X-Ray puede motivar una
+revisión —lo hizo varias veces en este proyecto— pero la revisión se decide con los
+criterios del mandato, no porque una herramienta lo ordene. La herramienta mide; el
+método decide.</p>
+<hr />
+<h2>6.8 Qué se puede sumar y qué no</h2>
+<p>Mirar dentro implica agregar: juntar lo que cada fondo aporta hasta obtener el total de la
+cartera. Y aquí hay una regla que evita errores serios: <strong>no todo se puede sumar igual</strong>.</p>
+<p>Para países, sectores o empresas, la cuenta es intuitiva — algo parecido a:</p>
+<pre><code>peso del fondo en la cartera  ×  porcentaje que ese fondo tiene dentro
+</code></pre>
+<p>Si un fondo pesa el 40% de la cartera y tiene un 60% en Estados Unidos, aporta unos 24
+puntos de exposición americana. Sumando lo de todos los fondos, sale el total. Esta cuenta
+funciona porque son <strong>porcentajes de contenido</strong>: trozos que se apilan.</p>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>¿Se suma así?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Países</td>
+<td>✅ Sí</td>
+</tr>
+<tr>
+<td>Sectores</td>
+<td>✅ Sí</td>
+</tr>
+<tr>
+<td>Empresas concretas</td>
+<td>✅ Sí</td>
+</tr>
+<tr>
+<td><strong>Volatilidad</strong> <em>(cuánto se mueve)</em></td>
+<td>❌ <strong>No</strong></td>
+</tr>
+<tr>
+<td><strong>Caída máxima</strong></td>
+<td>❌ <strong>No</strong></td>
+</tr>
+<tr>
+<td><strong>Riesgo total</strong></td>
+<td>❌ <strong>No</strong> — necesita tener en cuenta cómo se mueven las posiciones entre sí</td>
+</tr>
+</tbody>
+</table>
+<p>La razón, sin fórmulas: dos activos que se mueven en direcciones distintas se compensan en
+parte, y esa compensación hace que el riesgo del conjunto sea <strong>menor</strong> que la suma de los
+riesgos individuales. Sumar volatilidades como se suman países ignora la compensación y
+exagera el riesgo. El detalle matemático —qué agregaciones son válidas y cuáles no— se
+desarrolla en el capítulo de riesgo <em>(capítulo 17)</em>.</p>
+<hr />
+<h2>6.9 El problema de los datos</h2>
+<p>Mirar dentro de un fondo depende de algo que no controlamos: <strong>la calidad y la actualidad
+de los datos que el fondo publica</strong>. Cuatro realidades prácticas:</p>
+<ol>
+<li><strong>Las posiciones se publican con retraso.</strong> Lo que vemos «dentro» de un fondo puede ser
+   la fotografía de hace uno o varios meses, no la de hoy.</li>
+<li><strong>No todos los fondos informan igual.</strong> Algunos publican la cartera completa; otros,
+   solo las mayores posiciones o desgloses parciales.</li>
+<li><strong>A veces hay que usar un proxy analítico</strong> — un sustituto: cuando la herramienta de
+   análisis no reconoce el vehículo exacto que tenemos, se analiza otro producto que
+   replica el mismo índice.</li>
+<li><strong>Un proxy no autoriza a copiarlo todo.</strong> Del sustituto pueden tomarse las exposiciones
+   que comparte con el vehículo real; <strong>nunca</strong> sus costes, su fiscalidad ni sus
+   condiciones contractuales, que son del producto concreto que poseemos.</li>
+</ol>
+<p>El caso real de este proyecto <em>(decisión D77)</em>: el bloque de pequeñas compañías se
+implementa con un fondo indexado que la herramienta de análisis no resolvía. Para el
+X-Ray se usó un ETF del <strong>mismo índice</strong> como proxy. De ese proxy se tomaron la geografía,
+los sectores y el estilo — que son equivalentes porque el índice es el mismo — y <strong>no</strong> se
+tomaron ni su coste <em>(distinto)</em> ni su fiscalidad <em>(distinta: el fondo real es traspasable
+y el ETF no)</em>. La regla quedó escrita:</p>
+<blockquote>
+<p><strong>Del proxy solo se toma aquello para lo que es realmente equivalente.</strong></p>
+</blockquote>
+<hr />
+<h2>6.10 Realidad frente a intención</h2>
+<p>La utilidad de los dos modos se resume en una tabla de tres columnas: qué creíamos, qué
+comprobamos, qué se decidió.</p>
+<table>
+<thead>
+<tr>
+<th>Lo que creemos haber construido</th>
+<th>Lo que comprobamos mirando dentro</th>
+<th>Decisión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Emergentes</strong>: un bloque del 7%</td>
+<td>El ancla global del Motor también contiene emergentes: la exposición total supera el peso del bloque</td>
+<td><strong>Declararlo como sobreponderación deliberada</strong> y medirla <em>(cap. 16)</em> — no eliminarla ni esconderla</td>
+</tr>
+<tr>
+<td><strong>Tecnología</strong>: haría falta un bloque específico</td>
+<td>La cartera ya tenía exposición tecnológica material por varias vías</td>
+<td><strong>No comprar el bloque</strong> — habría duplicado el mismo riesgo</td>
+</tr>
+<tr>
+<td><strong>Motor S&amp;P 500 + All-World</strong>: dos fondos, un módulo</td>
+<td>Fuerte solapamiento y correlación muy elevada entre ambos</td>
+<td><strong>Presentarlo como tilt declarado hacia EEUU</strong>, nunca como diversificación <em>(caps. 11 y 18)</em></td>
+</tr>
+<tr>
+<td><strong>Pequeñas compañías</strong>: fondo indexado Vanguard</td>
+<td>La herramienta no lo resuelve; se analiza con un ETF del mismo índice</td>
+<td><strong>Proxy con regla de atribución</strong>: geografía y sectores sí; coste y fiscalidad, los del fondo real <em>(D77)</em></td>
+</tr>
+</tbody>
+</table>
+<p>Cuatro casos, un patrón: <strong>mirar dentro no cambió ninguna función — cambió lo que sabemos
+de ellas.</strong> Dos veces confirmó la intención <em>(emergentes, Motor)</em>; una vez evitó una compra
+<em>(tecnología)</em>; una vez impuso una regla de prudencia <em>(proxy)</em>.</p>
+<hr />
+<h2>6.11 Limitaciones</h2>
+<p>El análisis mirando dentro tiene límites propios, y conviene tenerlos delante:</p>
+<ol>
+<li><strong>Datos con retraso</strong> — la cartera interna de un fondo se publica con semanas o meses
+   de demora.</li>
+<li><strong>Clasificaciones distintas según el proveedor</strong> — dos plataformas pueden asignar la
+   misma empresa a sectores o países distintos <em>(¿una multinacional es de donde tiene la
+   sede o de donde vende?)</em>.</li>
+<li><strong>Fondos que no publican posiciones completas</strong> — el desglose disponible puede cubrir
+   solo una parte.</li>
+<li><strong>Proxies</strong> — útiles con regla de atribución, pero nunca idénticos al vehículo real.</li>
+<li><strong>Riesgo de falsa precisión</strong> — un porcentaje con dos decimales calculado sobre datos
+   atrasados y parciales sigue siendo una estimación; los decimales no lo convierten en
+   verdad exacta.</li>
+<li><strong>El contenido cambia con el tiempo</strong> — los fondos rotan posiciones; la radiografía de
+   hoy no describe la cartera interna de dentro de un año.</li>
+</ol>
+<blockquote>
+<p><strong>Un X-Ray es una fotografía suficientemente útil para analizar la cartera, no una
+reproducción perfecta y permanente de cada activo subyacente.</strong></p>
+</blockquote>
+<hr />
+<h2>6.12 Síntesis</h2>
+<blockquote>
+<p><strong>Primero decidimos para qué compramos cada inversión. Después miramos dentro para
+comprobar qué tenemos realmente. Si ambas cosas no coinciden, no cambiamos los datos
+para defender la idea: revisamos la cartera o nuestra explicación.</strong></p>
+</blockquote>
+<p>El capítulo 7 reúne las herramientas que hacen operable el método <em>(el árbol de
+clasificación, el protocolo para lo que no encaja, el modelo de datos y el examen final de
+aceptación)</em>; los capítulos 15 a 18 aplican el análisis mirando dentro a la cartera
+completa, con todas las cifras auditadas que este capítulo ha remitido.</p>
+<hr />
+<h2>CIERRE DEL CAPÍTULO — control de auditoría</h2>
+<table>
+<thead>
+<tr>
+<th>Decisiones</th>
+<th>Evidencia</th>
+<th>Limitaciones</th>
+<th>Visuales</th>
+<th>Fuentes pendientes</th>
+<th>Remisiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D52 <em>(el X-Ray como control posterior de concentración)</em> · D62 <em>(X-Ray oficial y regla de lectura sobre la parte de acciones)</em> · D73 <em>(Motor con tilt USA declarado; doble inclinación regional)</em> · D77 <em>(proxy de pequeñas compañías y regla de atribución)</em> · D78-D80 <em>(marco y capas cerrados)</em></td>
+<td>Los cuatro casos del §6.10 están registrados en el proyecto: emergentes <em>(D73)</em>, bloque tecnológico no comprado <em>(registro de construcción; cifra pendiente de auditoría)</em>, solapamiento del Motor <em>(X-Ray oficial)</em>, proxy <em>(<code>VEHICULO_REAL_VS_XRAY.md</code>)</em></td>
+<td>Datos con retraso · clasificaciones por proveedor · desgloses incompletos · proxies · falsa precisión · rotación interna de los fondos <em>(§6.11)</em></td>
+<td>① Las dos preguntas de los dos modos ② «La caja y su contenido» <em>(fondo con etiqueta vs empresas dentro)</em> ③ Diagrama del solapamiento S&amp;P 500 ⊂ All-World ④ Tabla realidad vs intención <em>(§6.10)</em> ⑤ Qué se suma y qué no</td>
+<td>🟠 <strong>Cifra histórica de exposición tecnológica</strong> <em>(el análisis que evitó el bloque)</em>: pendiente de trazarse con fuente, fecha y denominador antes de publicarse — cap. 16 · 🟠 <strong>Correlación exacta S&amp;P 500 / All-World</strong>: pendiente de ventana, frecuencia, fuente y fecha — cap. 18 · 🟡 exposición emergente total medida — cap. 16</td>
+<td><strong>Cap. 7</strong> <em>(instrumental del método)</em> · <strong>Cap. 11</strong> <em>(el Motor y su tesis de tilt)</em> · <strong>Caps. 15-16</strong> <em>(X-Ray aplicado: composición, geografía, sectores, con la regla % acciones vs % cartera)</em> · <strong>Cap. 17</strong> <em>(agregación de métricas de riesgo)</em> · <strong>Cap. 18</strong> <em>(correlaciones con ventana y fuente)</em></td>
+</tr>
+</tbody>
+</table>
+<h3>Regla de cifras aplicada</h3>
+<p><strong>Este capítulo no publica ninguna cifra exacta de exposición ni de correlación.</strong> Las
+cuatro que le corresponderían <em>(exposición emergente total, exposición tecnológica
+histórica, correlación del Motor, pesos medidos)</em> se remiten a los capítulos 16 y 18, donde
+se presentarán con fuente, fecha, denominador y metodología — distinguiendo siempre
+<strong>% de la parte de acciones</strong> de <strong>% de toda la cartera</strong>.</p>
+<h3>Prueba anti-redundancia — respecto al capítulo 4</h3>
+<table>
+<thead>
+<tr>
+<th>Contenido compartido con el cap. 4</th>
+<th>Tratamiento en el cap. 6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definición de los dos modos <em>(§4.8)</em></td>
+<td><strong>No se redefine</strong>: se recuerda en una tabla de dos filas y el capítulo se dedica a lo que el 4 no hace — desarrollarlos con cuatro casos reales</td>
+</tr>
+<tr>
+<td>«La arquitectura expresa la intención; el X-Ray verifica el resultado» <em>(§4.8)</em></td>
+<td>Se usa como idea central y se <strong>demuestra</strong> con ejemplos, no se re-enuncia como definición</td>
+</tr>
+<tr>
+<td>Fórmula de agregación y su límite de linealidad <em>(§4.8)</em></td>
+<td>El cap. 4 la formula técnicamente; el cap. 6 la explica <strong>sin fórmulas</strong> con la tabla de qué se suma y qué no, y remite el detalle al cap. 17</td>
+</tr>
+<tr>
+<td>Regla de no duplicidad de Emergentes <em>(§4.8)</em></td>
+<td>El cap. 4 la menciona; el cap. 6 la convierte en el <strong>ejemplo 1</strong> desarrollado</td>
+</tr>
+<tr>
+<td>El proxy y su regla de atribución <em>(cap. 4 §4.11, campo del modelo de datos)</em></td>
+<td>El cap. 4 lo registra como campo; el cap. 6 lo cuenta como <strong>caso con su regla</strong> <em>(§6.9)</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Confirmación:</strong> ninguna definición del capítulo 4 se reproduce íntegra; el material
+compartido aparece como recordatorio breve con remisión, y el desarrollo — los cuatro
+casos, la tabla realidad/intención, el problema de los datos y la regla de cifras — es
+nuevo.</p>
+<hr />
+<h2>REGISTRO</h2>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-13</td>
+<td><strong>Borrador v1 completo del capítulo 6</strong> — 12 secciones según la estructura aprobada. Regla de lenguaje aplicada <em>(explicación sencilla → ejemplo → detalle)</em>; los términos ingleses aparecen una sola vez entre paréntesis. <strong>Ninguna cifra exacta publicada</strong>: la exposición tecnológica histórica, la exposición emergente total y la correlación del Motor quedan remitidas a los capítulos 16 y 18 con la exigencia de fuente, fecha, denominador y metodología. Cuatro casos reales del proyecto como demostración <em>(emergentes, tecnología, Motor, proxy)</em>. Pendiente de auditoría</td>
+</tr>
+</tbody>
+</table></div></body></html>
