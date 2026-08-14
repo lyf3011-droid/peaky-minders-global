@@ -28,16 +28,16 @@
 
 # 2. Resumen de acciones propuestas sobre el capítulo 4
 
-**Ninguna se ejecuta ahora.** Se proponen para después de la auditoría final del cap. 19.
+✅ **Las seis quedaron ejecutadas entre el 14-ago (D99) y el 14-ago (D104)**, una a una y con aprobación previa e independiente de cada parche.
 
 | # | Acción propuesta | Alcance |
 |---|---|---|
-| **1** | Reformular la fila «Motor → crecimiento fuerte» del mapa de regímenes | 🟠 Media |
-| **2** | Acotar Defensivos a inflación alta; retirar la afirmación para inflación baja | 🟠 Media |
-| **3** | Mantener Activos Reales, ajustando el lenguaje a «recibe apoyo» | 🟢 Menor |
-| **4** | Marcar Freno como «no evaluable en su forma original» | 🟠 Media |
+| **1** | Reformular la fila «Motor → crecimiento fuerte» del mapa de regímenes | ✅ **EJECUTADA — P-2 (D100)** |
+| **2** | Acotar Defensivos a inflación alta; retirar la afirmación para inflación baja | ✅ **EJECUTADA — P-4 (D102)** |
+| **3** | Mantener Activos Reales, ajustando el lenguaje a «recibe apoyo» | ✅ **EJECUTADA — P-5 (D103)** |
+| **4** | Marcar Freno como «no evaluable en su forma original» | ✅ **EJECUTADA — P-3 (D101)** |
 | **5** | **Retirar la lectura por regímenes de Aceleración** y dejar solo el argumento de prima | ✅ **EJECUTADA el 14-ago (D98 decisión · D99 ejecución)** — con la calibración de no afirmar independencia del régimen |
-| **6** | Añadir al mapa la columna «nivel de apoyo empírico» con los resultados del cap. 19 | 🟢 Menor |
+| **6** | Añadir al mapa la columna «nivel de apoyo empírico» con los resultados del cap. 19 | ✅ **EJECUTADA — P-6 (D104)**, como **segunda tabla** en lugar de columna |
 
 ## 2.1 Lo que estas contradicciones NO significan
 

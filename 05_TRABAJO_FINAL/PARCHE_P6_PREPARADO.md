@@ -1,8 +1,11 @@
-# 🩹 PARCHE P-6 — PREPARADO, **NO EJECUTADO**
+# 🩹 PARCHE P-6 — ✅ **EJECUTADO**
 
 ## Consolidación final del contraste cap. 4 ↔ cap. 19 · 14 de agosto de 2026
 
-> **P-6 es el último parche de la tanda.** El capítulo 4 no se ha modificado.
+> ✅ **EJECUTADO el 14-ago-2026 (D104)** — **último parche de la tanda**. Siete ediciones
+> con las cuatro decisiones tomadas: **Asimetría homogeneizada**, **dos tablas de cinco y
+> dos columnas en lugar de una de seis**, **control de auditoría con la numeración real
+> (D99-D104)** y **§4.14 opción B**.
 
 ---
 
@@ -49,7 +52,19 @@ tabla y antes de las cinco notas**:
 > retiradas—, no resultados medidos.** Los dos planos se leen por separado: **a la
 > izquierda, lo que el diseño esperaba; a la derecha, qué dijo la prueba.**
 
-## 1.4 ⚠️ Dos decisiones de formato que necesito de ti
+## 1.4 ✅ Decisiones tomadas — y por qué la propuesta de seis columnas se descartó
+
+**El formato ejecutado NO es el de la sexta columna.** Se conserva **el mapa en cinco
+columnas** y se añade **una segunda tabla de dos columnas** *(módulo · contraste)*
+inmediatamente debajo, unidas por la frase que separa los dos planos. Es más legible y, sobre
+todo, **impide visualmente leer el contraste como una quinta etiqueta de régimen**.
+
+**La fila de Asimetría se homogeneizó** a `— | — | — | —`, y su contraste pasa a
+**«⚪ No aplicable por diseño al contraste por régimen»**. El encabezado se amplió en
+consecuencia a **tres razones** por las que una celda puede quedar sin valor: sin apoyo
+suficiente · no contrastable con la evidencia disponible · **no aplicable por diseño**.
+
+### Registro histórico de la propuesta descartada
 
 **① La fila de Asimetría.** Con la sexta columna, esa fila queda con el texto en la primera
 celda de régimen, **tres celdas vacías** y el veredicto en la sexta. Es la ambigüedad de
@@ -182,5 +197,7 @@ pendencia sobrevivirá a P-6.
 | **Ediciones a decidir** | Fila de Asimetría *(§1.4-①)* · Visuales ⑥ y registro D1-D103 *(§2.2)* · opción de redacción de §3.3 |
 | **No se toca** | Las **cuatro columnas de régimen** · funciones de los siete módulos · pesos · vehículos · las cinco notas D98-D103 · árbol · criterio de falsación · arquitectura PMMA · **capítulo 19** |
 
-**Estado: PREPARADO — pendiente de aprobación y de cuatro decisiones: fila de Asimetría ·
-Visuales ⑥ y D1-D103 · redacción de §3.3 · formato de la tabla.**
+**Estado: ✅ EJECUTADO (D104).** Las cuatro decisiones aplicadas · **§3.3 opción B** ·
+**Visuales ⑥ y registro D1-D104 corregidos** · numeración de ejecuciones **D99-D104**, no
+D98-D103. **Barrido final de referencias temporales: sin hallazgos.** Con P-6 concluye la
+tanda de parches al capítulo 4.

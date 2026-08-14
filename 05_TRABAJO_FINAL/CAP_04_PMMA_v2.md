@@ -142,9 +142,9 @@ Cuatro propiedades completan la definición:
 de diseño, cada módulo llevaba asociado un comportamiento *esperado* por régimen económico
 (crecimiento × inflación). Su desarrollo, datación histórica y contraste cuantitativo se
 realizaron en el capítulo 19. **Las celdas que aparecen sin valor son aquellas cuya lectura
-por régimen no recibió apoyo suficiente en esa prueba, o no pudo contrastarse con la
-evidencia disponible; las celdas que conservan valor siguen expresando hipótesis de
-diseño, no resultados históricos medidos.**
+por régimen no recibió apoyo suficiente en esa prueba, no pudo contrastarse con la
+evidencia disponible o no resulta aplicable por diseño; las celdas que conservan valor
+siguen expresando hipótesis de diseño, no resultados históricos medidos.**
 
 | Módulo | Crecim.↑ Infl.↓ | Crecim.↑ Infl.↑ | Crecim.↓ Infl.↑ | Crecim.↓ Infl.↓ |
 |---|---|---|---|---|
@@ -154,7 +154,21 @@ diseño, no resultados históricos medidos.**
 | Emergentes | favorable | **mixto/favorable** | adverso | adverso |
 | Freno | — | — | — | — |
 | Activos Reales | neutro | **favorable** | **favorable** | mixto |
-| Asimetría | *idiosincrático — no asignable a régimen* | | | |
+| Asimetría | — | — | — | — |
+
+**[MODELO]** **Las dos tablas deben leerse conjuntamente pero representan planos distintos:
+la primera conserva la hipótesis de diseño; la segunda recoge qué ocurrió al contrastarla
+históricamente.**
+
+| Módulo | Contraste histórico · cap. 19 |
+|---|---|
+| 🚀 Motor | 🔴 Lectura direccional no respaldada |
+| 🌿 Defensivos | 🟡 Apoyo parcial |
+| ⚡ Aceleración | 🟡 Sin apoyo como fenómeno específico de régimen |
+| 🌍 Emergentes | ⛔ No evaluable |
+| ⚓ Freno | ⛔ No evaluable en su forma completa |
+| 🥇 Activos Reales | 🟢 Apoyo en la pata evaluable: oro |
+| 💥 Asimetría | ⚪ No aplicable por diseño al contraste por régimen |
 
 > **[MODELO — actualizado tras el capítulo 19 · D100]** **La fila del Motor aparece sin
 > valor en las cuatro columnas.** La prueba histórica del capítulo 19 **no respalda la
@@ -567,8 +581,8 @@ que produce el método frente al que produce la alternativa convencional — est
 trabajo, con su registro íntegro de decisiones, constituye el caso de prueba.
 
 Como **test complementario, no como falsación principal**, se examina además si la
-agrupación funcional aporta información sobre el comportamiento (correlaciones, respuesta
-por régimen — capítulos 18 y 20). Este test puede arrojar resultados desfavorables en
+agrupación funcional aporta información sobre el comportamiento (correlaciones — capítulo
+18; respuesta por régimen — capítulo 19; estrés por regímenes históricos — capítulo 20). Este test puede arrojar resultados desfavorables en
 partes de la cartera sin refutar el marco, por lo dicho en L3: la ausencia de separación
 estadística es un dato que el método obliga a descubrir y declarar, no una promesa
 incumplida.
@@ -628,7 +642,7 @@ a *Peaky Minders Global 10Y*.
 
 | Decisiones | Evidencia | Limitaciones | Visuales | Fuentes pendientes |
 |---|---|---|---|---|
-| D75 *(arquitectura modular v1.0)* · D78 *(Management Mode, política/capital de la Reserva, vistas analíticas, mapa módulo→régimen como hipótesis)* · D63 *(gestión activa delegada)* · D50 *(Reserva)* · D48 *(macrobloque 47%)* | Correlaciones materialmente elevadas en Aceleración *(valores exactos pendientes del cap. 18, con ventana, frecuencia, fuente y fecha)* · registro D1-D78 como prueba del orden de decisión · conciliación real-vs-proxy *(D77)* como origen de 4 de los 9 campos añadidos | Subjetividad inter-analista **no testada** *(L1)* · desarrollo paralelo marco-cartera *(L2)* · separación funcional ≠ estadística, **declarada sin que invalide la clasificación** *(L3)* · marco descriptivo, no predictivo *(L4)* · mapa módulo→régimen **sin validar hasta el cap. 19** · linealidad del look-through **solo para exposiciones aditivas** · escalabilidad a family office **declarada, no demostrada** | ① Esquema de 3 capas *(módulos / Conviction Overlay / Execution Layer)* ② Árbol de clasificación de 8 preguntas ③ Tablero del Gate *(10 semáforos)* ④ Las tres vistas analíticas de la misma cartera ⑤ Cadena OBJETIVO→CONTROL ⑥ Cuadrante módulo→régimen *(marcado «hipótesis de diseño»)* | 🔴 SPIVA Persistence Scorecard *(persistencia débil)* · 🔴 Kahneman / Montier *(sesgo retrospectivo)* · 🟠 Fama-French y Asness et al. *(primas factoriales)* · 🟠 Bridgewater *All Weather Story* *(risk parity)* · 🟠 Swensen *Unconventional Success* *(asignación funcional)* · 🟡 literatura goals-based investing · 🟡 documentación Morningstar sobre roles de cartera |
+| D75 *(arquitectura modular v1.0)* · D78 *(Management Mode, política/capital de la Reserva, vistas analíticas, mapa módulo→régimen como hipótesis)* · D63 *(gestión activa delegada)* · D50 *(Reserva)* · D48 *(macrobloque 47%)* | Correlaciones materialmente elevadas en Aceleración *(valores exactos pendientes del cap. 18, con ventana, frecuencia, fuente y fecha)* · registro D1-D104 como prueba del orden de decisión · conciliación real-vs-proxy *(D77)* como origen de 4 de los 9 campos añadidos | Subjetividad inter-analista **no testada** *(L1)* · desarrollo paralelo marco-cartera *(L2)* · separación funcional ≠ estadística, **declarada sin que invalide la clasificación** *(L3)* · marco descriptivo, no predictivo *(L4)* · mapa módulo→régimen **contrastado en el cap. 19, con apoyo heterogéneo por módulo**; resultados y limitaciones incorporados mediante P-1 a P-6 *(D99-D104)* · linealidad del look-through **solo para exposiciones aditivas** · escalabilidad a family office **declarada, no demostrada** | ① Esquema de 3 capas *(módulos / Conviction Overlay / Execution Layer)* ② Árbol de clasificación de 8 preguntas ③ Tablero del Gate *(10 semáforos)* ④ Las tres vistas analíticas de la misma cartera ⑤ Cadena OBJETIVO→CONTROL ⑥ Mapa módulo→régimen acompañado de contraste histórico; las celdas de régimen conservadas siguen siendo hipótesis de diseño | 🔴 SPIVA Persistence Scorecard *(persistencia débil)* · 🔴 Kahneman / Montier *(sesgo retrospectivo)* · 🟠 Fama-French y Asness et al. *(primas factoriales)* · 🟠 Bridgewater *All Weather Story* *(risk parity)* · 🟠 Swensen *Unconventional Success* *(asignación funcional)* · 🟡 literatura goals-based investing · 🟡 documentación Morningstar sobre roles de cartera |
 
 ---
 
