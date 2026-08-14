@@ -1,0 +1,331 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capítulo 7 — Las herramientas del método</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>CAPÍTULO 7 — LAS HERRAMIENTAS DEL MÉTODO: CLASIFICAR, REGISTRAR Y COMPROBAR</h1>
+<h2>Investment Book · Parte I · Borrador v1 para auditoría · 13 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Convención tipográfica:</strong> <strong>[MODELO]</strong> = afirmación propia de PMMA.
+<strong>[EVIDENCIA EXTERNA]</strong> = afirmación que requiere cita o fuente primaria.</p>
+<p><strong>Objetivo del capítulo:</strong> demostrar que PMMA transforma una clasificación intuitiva en
+un <strong>procedimiento documentado, repetible y auditable</strong>. Repetible significa que el
+mismo equipo, siguiendo los mismos pasos, deja el mismo rastro; <strong>no</strong> afirmamos que dos
+analistas independientes llegarán necesariamente a la misma clasificación — esa
+comparabilidad sigue siendo una limitación no testada <em>(§7.7)</em>.</p>
+</blockquote>
+<hr />
+<h2>7.1 De la intuición al procedimiento</h2>
+<p>Los capítulos 4 a 6 definieron el lenguaje: funciones, capas y modos de análisis. Un
+lenguaje, por sí solo, no impide clasificar mal, olvidar por qué se compró algo o
+justificar cualquier posición a posteriori. Para eso hacen falta herramientas — cosas que
+se usan, que dejan rastro y que otro puede revisar.</p>
+<p><strong>[MODELO]</strong> PMMA tiene cuatro, y este capítulo enseña <strong>cómo se usan</strong>, no qué son
+<em>(las definiciones están en el capítulo 4 y no se repiten)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Herramienta</th>
+<th>Qué hace</th>
+<th>Cuándo se usa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>El árbol de clasificación</strong></td>
+<td>Asigna cada posición a su módulo mediante ocho preguntas en orden fijo</td>
+<td>Cada vez que entra una posición nueva</td>
+</tr>
+<tr>
+<td><strong>El protocolo para excepciones</strong> <em>(nombre formal: Protocolo de Extensión)</em></td>
+<td>Da salida honesta a lo que no encaja</td>
+<td>Cuando el árbol termina sin respuesta clara</td>
+</tr>
+<tr>
+<td><strong>El modelo de datos</strong> <em>(35 campos)</em></td>
+<td>Registra cada posición con todo lo necesario para auditarla después</td>
+<td>Siempre — es la ficha de cada posición</td>
+</tr>
+<tr>
+<td><strong>El control final de aceptación</strong> <em>(en inglés, Gate)</em></td>
+<td>Somete la cartera completa a diez preguntas antes de darla por aceptada</td>
+<td>Al cerrar la construcción y en revisiones mayores</td>
+</tr>
+</tbody>
+</table>
+<p>La secuencia natural es la del título: <strong>clasificar</strong> <em>(árbol y excepciones)</em>,
+<strong>registrar</strong> <em>(modelo de datos)</em> y <strong>comprobar</strong> <em>(control final)</em>. Lo que sigue es cada
+herramienta trabajando sobre casos reales de este proyecto.</p>
+<hr />
+<h2>7.2 El árbol en uso: tres clasificaciones reales</h2>
+<p>El árbol <em>(capítulo 4, §4.9)</em> hace ocho preguntas en orden fijo, todas sobre la <strong>función</strong>
+de la posición, nunca sobre su mera clase de activo. Verlo funcionar con posiciones reales
+enseña más que cualquier definición.</p>
+<p><strong>Caso 1 — El fondo de renta fija flexible del Freno.</strong> Un fondo de renta fija de gestión
+activa, con mandato amplio <em>(puede moverse entre tipos de deuda, plazos y niveles de
+riesgo)</em>. La tentación es clasificarlo automáticamente «porque es renta fija». El árbol no
+lo permite: la pregunta 2 no dice <em>«¿es renta fija?»</em> sino <em>«¿su función dominante es
+estabilizar la cartera o responder a escenarios distintos de los activos productivos?»</em>.
+La respuesta exige mirar la <strong>tesis</strong>: este fondo se incorporó para dar al Freno una
+fuente de renta y comportamiento distinta del monetario, dentro de la función
+estabilizadora del módulo. Respuesta: sí → <strong>Freno</strong>, con forma de gestión <em>activa
+delegada</em> y una anotación en la ficha: su mandato es más amplio que el del vehículo al
+que sustituyó, y esa amplitud es un riesgo que se vigila <em>(capítulo 11)</em>.</p>
+<p><strong>Caso 2 — La calidad, el caso ambiguo por excelencia.</strong> Un fondo de empresas de
+«calidad» <em>(beneficios estables, poca deuda)</em> puede comprarse por dos razones distintas:
+por resiliencia <em>(pregunta 5: Defensivos)</em> o como fuente de rentabilidad extra
+<em>(pregunta 6: Aceleración)</em>. El árbol resuelve el empate por orden —la pregunta defensiva
+llega antes— pero la respuesta depende de <strong>por qué</strong> se compró, y eso solo lo sabe la
+tesis registrada. En este proyecto el caso no es teórico: un fondo de calidad global se
+probó y se descartó al comprobarse, mirando dentro, que su comportamiento apenas se
+distinguía del núcleo de la cartera <em>(el análisis, con sus cifras y fuente, en el
+capítulo 14)</em>. La clasificación habría sido posible; la posición, redundante. <strong>Clasificar
+bien no sustituye a preguntarse si la posición aporta algo.</strong></p>
+<p><strong>Caso 3 — El cobre.</strong> Un producto cotizado sobre futuros de cobre. Pregunta 3: <em>¿su
+función dominante es aportar un comportamiento ligado a activos reales o a la inflación,
+distinto de acciones y bonos?</em> Sí → <strong>Activos Reales</strong>. Pero la ficha registra un matiz
+que la etiqueta no cuenta: el vehículo no posee cobre físico, sino contratos de futuros
+con estructura de deuda — un funcionamiento distinto del oro físico del mismo módulo.
+Mismo módulo, distinta mecánica interna: <strong>el árbol asigna la función; la ficha conserva
+la letra pequeña.</strong></p>
+<p>Los tres casos comparten el patrón: <strong>el árbol no ahorra el juicio — lo ordena y lo deja
+escrito.</strong> La pregunta correcta queda registrada junto a la respuesta, y cualquiera puede
+revisar después si la respuesta sigue siendo válida.</p>
+<hr />
+<h2>7.3 El protocolo para excepciones</h2>
+<p>¿Qué pasa cuando el árbol termina y ninguna pregunta ha capturado la función de un
+instrumento con honestidad? Gestión alternativa, capital privado, estrategias de
+volatilidad, productos estructurados: cosas cuya función dominante no es clara ni forzada.</p>
+<p><strong>[MODELO]</strong> La regla del método es contracultural en un sector que lo etiqueta todo:</p>
+<blockquote>
+<p><strong>Es preferible reconocer una excepción que falsear la arquitectura.</strong></p>
+</blockquote>
+<p>La posición se clasifica temporalmente como <strong>Extensión / Estrategia Alternativa</strong> y queda
+en un estado explícito de «pendiente de función»: o su tesis madura hasta justificar un
+módulo, o se concluye que no pertenece a la cartera. Lo que nunca ocurre es el encaje a
+martillazos — un producto complejo disfrazado de Freno porque «lleva bonos», o de
+Asimetría porque «puede subir mucho».</p>
+<p>En la implementación actual el protocolo no ha hecho falta: las trece posiciones tienen
+función dominante clara. Ese dato también informa — la cartera se construyó con
+instrumentos simples a propósito, y la puerta de las excepciones está para el futuro, no
+para maquillar el presente. Si algún día entra un instrumento de los listados arriba, su
+camino está escrito de antemano.</p>
+<hr />
+<h2>7.4 El modelo de datos: la ficha de cada posición</h2>
+<p><strong>[MODELO]</strong> Cada posición se registra con una ficha de <strong>35 campos</strong>: los 26 del modelo
+original <em>(identificación, pesos, módulo, marcas de capa, benchmark, exposiciones, coste,
+riesgo, tesis y regla de revisión)</em> más <strong>nueve añadidos durante la propia construcción</strong>.
+Esos nueve no salieron de un manual: <strong>cada uno existe porque su ausencia causó un
+problema real en este proyecto.</strong> Los seis principales:</p>
+<table>
+<thead>
+<tr>
+<th>Campo añadido</th>
+<th>El caso que lo exigió</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ISIN</strong></td>
+<td>El mismo producto cotiza en varias bolsas con distintos códigos de pizarra. En este proyecto, más de un vehículo aparece en dos o tres mercados: solo el ISIN identifica sin ambigüedad <strong>qué</strong> se posee</td>
+</tr>
+<tr>
+<td><strong>Clase de participación</strong></td>
+<td>Dos posiciones de la cartera se contrataron en una clase que las herramientas de análisis no reconocían; el análisis se hizo con otra clase del <strong>mismo fondo</strong>. Misma cartera interna, distinto coste. Sin este campo, la diferencia se vuelve invisible y el coste publicado sale mal</td>
+</tr>
+<tr>
+<td><strong>Proxy analítico</strong> <em>(sí/no y cuál)</em></td>
+<td>El bloque de pequeñas compañías se analiza con un producto sustituto del mismo índice <em>(decisión D77)</em>. El campo registra que hay proxy y cuál es — sin él, la regla <em>«del proxy solo se toma aquello para lo que es realmente equivalente»</em> no se puede aplicar ni auditar</td>
+</tr>
+<tr>
+<td><strong>Cobertura de divisa</strong></td>
+<td>El cobre analizado estaba cubierto a euro; el contratado, no. Es la única discrepancia del análisis que <strong>cambia el comportamiento</strong> del activo, y se detectó precisamente comparando este campo</td>
+</tr>
+<tr>
+<td><strong>Fuente y fecha del dato</strong></td>
+<td>El coste de un fondo del Freno procede de una plataforma de análisis y está pendiente de confirmarse en su documento oficial. El campo distingue «verificado en documento del fondo» de «tomado de plataforma» — sin esa distinción, todos los datos parecen igual de firmes y no lo son</td>
+</tr>
+<tr>
+<td><strong>Confianza de clasificación</strong> <em>(alta / media / ambigua)</em></td>
+<td>El caso de la calidad <em>(§7.2)</em>: cuando una posición admite dos módulos razonables, este campo lo declara y exige justificación y segunda revisión. <strong>Convierte la subjetividad en un dato auditable</strong> en lugar de esconderla</td>
+</tr>
+</tbody>
+</table>
+<p>Los otros tres — acumulación o reparto, atributos fiscales del vehículo <em>(cuya
+documentación formal corresponde al capítulo 22)</em> y contribución al riesgo — completan la
+ficha; el modelo íntegro figura en el anexo H.</p>
+<p>La lección de fondo: <strong>un modelo de datos no se diseña en abstracto — se gana a base de
+errores encontrados.</strong> Cuatro de los nueve campos existen porque el análisis de esta misma
+cartera falló sin ellos.</p>
+<hr />
+<h2>7.5 El control final de aceptación</h2>
+<p><strong>[MODELO]</strong> Ninguna cartera se da por aceptada por acumulación de entusiasmo. Antes de
+cerrarse, pasa un <strong>control final de aceptación</strong>: diez preguntas, cada una respondida
+<strong>con evidencia, no con adjetivos</strong> — un documento, una cifra con fuente, una regla
+escrita. Las diez preguntas están definidas en el capítulo 4 <em>(§4.12)</em>; aquí importa cómo
+se usan:</p>
+<ul>
+<li><strong>Cada respuesta señala su evidencia.</strong> «¿Existen reglas de aportación y rebalanceo?» no
+  se responde «sí»: se responde «sí — protocolo operativo, secciones tal y tal», con el
+  documento delante.</li>
+<li><strong>Una pregunta puede suspender, y decirlo es parte del método.</strong> Si la respuesta honesta
+  a «¿conocemos el riesgo?» es «parcialmente — el análisis de escenarios extremos sigue
+  pendiente», eso se escribe. Una cartera con un suspenso declarado y su plan de cierre es
+  más sólida que una con diez aprobados retóricos.</li>
+<li><strong>El control se repite.</strong> No es un trámite de inauguración: cada revisión mayor vuelve a
+  pasarlo, porque las respuestas caducan — los datos envejecen, los vehículos cambian, las
+  reglas se completan.</li>
+</ul>
+<p>La implementación de este trabajo pasa explícitamente por el control en el <strong>capítulo 26</strong>,
+con la evidencia acumulada en las Partes III a V — incluidas las preguntas cuya respuesta
+honesta, a fecha de hoy, es incompleta.</p>
+<p>⚠️ Y la advertencia que evita idolatrar la herramienta: <strong>el control final examina el
+proceso, no adivina el futuro.</strong> Una cartera puede responder las diez preguntas con
+evidencia impecable y aun así obtener malos resultados — el control garantiza que se sabe
+lo que se tiene y por qué, no que vaya a ganar dinero.</p>
+<hr />
+<h2>7.6 Cómo encajan las cuatro herramientas</h2>
+<p>Las cuatro forman un circuito, y el registro de decisiones lo cose todo:</p>
+<pre><code>posición nueva
+     │
+     ▼
+ÁRBOL DE CLASIFICACIÓN  ──sin función clara──►  PROTOCOLO PARA EXCEPCIONES
+     │                                                │
+     ▼                                                ▼
+MODELO DE DATOS  ◄────────────────────  (estado: Extensión, pendiente)
+  (ficha de 35 campos: módulo, tesis,
+   confianza, fuente y fecha…)
+     │
+     ▼
+CONTROL FINAL DE ACEPTACIÓN
+  (10 preguntas con evidencia, sobre la cartera completa)
+     │
+     ▼
+REGISTRO DE DECISIONES
+  (cada paso, fechado y con motivo)
+</code></pre>
+<p><strong>[MODELO]</strong> El resultado es la propiedad que da título al capítulo: cualquier tercero
+puede tomar una posición cualquiera y reconstruir su historia — con qué pregunta se
+clasificó, con qué confianza, qué dice su tesis, de dónde salió cada dato y cuándo, y qué
+respondió la cartera entera en su último control. Eso es lo que significa <strong>auditable</strong>: no
+que las decisiones sean infalibles, sino que <strong>están todas a la vista con su rastro</strong>.</p>
+<hr />
+<h2>7.7 Limitaciones</h2>
+<p>Las herramientas mejoran el proceso; no lo vuelven infalible. Cuatro límites reales:</p>
+<ol>
+<li><strong>El árbol reduce la subjetividad, no la elimina.</strong> Las preguntas ordenan el juicio,
+   pero el juicio sigue siendo humano: la función dominante la decide quien responde. Y la
+   comparabilidad entre analistas independientes —¿clasificarían igual dos personas que no
+   se conocen?— <strong>no ha sido testada</strong> y queda declarada como extensión futura.</li>
+<li><strong>Treinta y cinco campos aumentan el control… y la carga de mantenimiento.</strong> Cada campo
+   es algo que puede quedarse desactualizado. Una ficha incompleta o vieja da apariencia
+   de rigor sin su sustancia — el coste de mantener el sistema es real y permanente.</li>
+<li><strong>El control final no garantiza resultados.</strong> Examina si la cartera está bien
+   construida y documentada; el mercado no lee nuestros documentos. Proceso impecable y
+   mal resultado pueden convivir — y el método debe juzgarse por lo primero sin usar lo
+   primero para excusar eternamente lo segundo.</li>
+<li><strong>Una clasificación bien documentada puede seguir siendo una decisión equivocada.</strong>
+   Documentar no es acertar: el registro perfecto de una mala tesis produce una mala
+   inversión perfectamente trazable. El valor del rastro no es evitar el error, sino
+   poder encontrarlo, entenderlo y no repetirlo.</li>
+</ol>
+<hr />
+<h2>7.8 Síntesis</h2>
+<blockquote>
+<p><strong>Clasificar con preguntas ordenadas. Reconocer lo que no encaja en lugar de forzarlo.
+Registrar cada posición con todo lo necesario para auditarla. Y someter la cartera
+entera a un examen con evidencia antes de darla por buena. Ninguna de estas herramientas
+acierta por nosotros — pero todas juntas hacen imposible equivocarse sin dejar rastro.</strong></p>
+</blockquote>
+<p>El capítulo 8 somete el lenguaje del método a la prueba de describir ocho carteras ajenas;
+el capítulo 9 reúne todas las limitaciones del marco; y la Parte II muestra las
+herramientas aplicadas posición a posición en <em>Peaky Minders Global 10Y</em>.</p>
+<hr />
+<h2>CIERRE DEL CAPÍTULO — control de auditoría</h2>
+<table>
+<thead>
+<tr>
+<th>Decisiones</th>
+<th>Evidencia</th>
+<th>Limitaciones</th>
+<th>Visuales</th>
+<th>Fuentes pendientes</th>
+<th>Remisiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D75 <em>(arquitectura modular y modelo de datos)</em> · D77 <em>(proxy y regla de atribución — origen del campo proxy)</em> · D78-D79 <em>(campo de confianza de clasificación; formas de gestión usadas en los casos del árbol)</em> · D68 <em>(el fondo flexible del Freno y su mandato amplio)</em></td>
+<td>Los tres casos del árbol proceden del registro del proyecto: fondo flexible del Freno <em>(D68, D67-④)</em> · calidad probada y descartada <em>(X-Ray histórico del proyecto; cifras en el cap. 14)</em> · cobre y su mecánica de futuros <em>(fichas del proyecto)</em> · los seis campos añadidos con su caso real cada uno <em>(auditoría A.4)</em></td>
+<td>El árbol reduce, no elimina, la subjetividad · comparabilidad inter-analista <strong>no testada</strong> · carga de mantenimiento de 35 campos · el control final no garantiza resultados · documentar ≠ acertar <em>(§7.7)</em></td>
+<td>① El circuito de las cuatro herramientas <em>(§7.6)</em> ② El árbol con los tres casos reales recorridos ③ La ficha de 35 campos con los 9 añadidos destacados ④ Tablero del control final <em>(10 preguntas · evidencia · estado)</em></td>
+<td>🟡 Cifras del caso calidad <em>(correlación con el núcleo, con fuente y fecha)</em> — cap. 14 · 🟡 Documentación fiscal comparada de vehículos <em>(campo fiscal de la ficha)</em> — cap. 22</td>
+<td><strong>Cap. 8</strong> <em>(validación sobre carteras ajenas)</em> · <strong>Cap. 9</strong> <em>(limitaciones reunidas)</em> · <strong>Cap. 11</strong> <em>(la vigilancia del mandato amplio del fondo flexible)</em> · <strong>Cap. 14</strong> <em>(vehículos y el caso calidad con cifras)</em> · <strong>Cap. 26</strong> <em>(el control final aplicado a Global 10Y)</em> · <strong>Anexo H</strong> <em>(modelo de datos íntegro)</em></td>
+</tr>
+</tbody>
+</table>
+<h3>Prueba anti-redundancia — respecto al capítulo 4</h3>
+<table>
+<thead>
+<tr>
+<th>Contenido compartido con el cap. 4</th>
+<th>Tratamiento en el cap. 7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Las ocho preguntas del árbol <em>(§4.9)</em></td>
+<td><strong>No se reproducen</strong>: se recorren con tres posiciones reales, mostrando cómo la tesis decide los casos ambiguos</td>
+</tr>
+<tr>
+<td>El Protocolo de Extensión <em>(§4.10)</em></td>
+<td>La regla se cita en una línea; lo nuevo es su <strong>uso</strong> — incluido el dato de que aún no ha hecho falta y por qué eso también informa</td>
+</tr>
+<tr>
+<td>El modelo de datos y los 9 campos <em>(§4.11)</em></td>
+<td>El cap. 4 los lista; el cap. 7 cuenta <strong>el caso real que exigió cada campo</strong></td>
+</tr>
+<tr>
+<td>Las diez preguntas del control final <em>(§4.12)</em></td>
+<td><strong>No se repiten</strong>: se explica cómo se responde con evidencia, que puede suspenderse honestamente y que se repite en el tiempo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Confirmación:</strong> ninguna definición del capítulo 4 se reproduce íntegra; el capítulo
+enseña el uso de las herramientas con casos del propio proyecto.</p>
+<hr />
+<h2>REGISTRO</h2>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-13</td>
+<td><strong>Borrador v1 completo del capítulo 7</strong> — 8 secciones. Título en llano <em>(«las herramientas del método»)</em>; Gate → control final de aceptación; Protocolo de Extensión citado una vez como nombre formal. Tres casos reales del árbol <em>(fondo flexible del Freno, calidad, cobre)</em>, seis campos del modelo de datos con el problema real que los originó, y las cuatro limitaciones exigidas — incluida la comparabilidad inter-analista como no testada. <strong>Ninguna cifra exacta publicada</strong>; las del caso calidad remitidas al cap. 14. Pendiente de auditoría</td>
+</tr>
+</tbody>
+</table></div></body></html>
