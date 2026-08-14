@@ -208,6 +208,21 @@ diseño, no resultados históricos medidos.**
 > hacerla más favorable.** El mapa conserva su hipótesis de diseño allí donde no ha sido
 > retirada; **el detalle empírico y su nivel de apoyo corresponden al capítulo 19**.
 
+> **[MODELO — actualizado tras el capítulo 19 · D103]** **La lectura de Activos Reales se
+> mantiene como hipótesis de diseño.** Dentro de la parte históricamente evaluable, **la
+> pata de oro recibió apoyo en la prueba del capítulo 19**: presentó **comportamiento
+> relativo medio favorable en las dos cajas de inflación alta** y **consistencia mayoritaria
+> entre episodios únicamente en crecimiento débil + inflación alta**.
+>
+> **El veredicto se mantuvo bajo los dos clasificadores predefinidos y las dos convenciones
+> de precio examinadas.** Esta estabilidad **se refiere únicamente a esas pruebas de
+> sensibilidad concretas y no equivale a robustez general**.
+>
+> ⚠️ **La evidencia corresponde al oro, no al módulo completo de Activos Reales.** La pata
+> de cobre **no pudo evaluarse históricamente con el mismo nivel de rigor**, por lo que **no
+> se extrapola el resultado del oro al conjunto del módulo**. **La coincidencia entre la
+> hipótesis de diseño y el resultado del oro no convierte la fila en un resultado medido.**
+
 ---
 
 ## 4.5 Management Mode: la segunda dimensión

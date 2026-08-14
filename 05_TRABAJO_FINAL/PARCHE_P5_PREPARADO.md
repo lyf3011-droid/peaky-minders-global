@@ -1,9 +1,10 @@
-# 🩹 PARCHE P-5 — PREPARADO, **NO EJECUTADO**
+# 🩹 PARCHE P-5 — ✅ **EJECUTADO**
 
 ## Activos Reales: añadir nota de contraste sin tocar la fila · 14 de agosto de 2026
 
-> **P-5 aceptado conceptualmente; no ejecutado.** El capítulo 4 no se ha modificado.
-> **P-6 no se abre.**
+> ✅ **EJECUTADO el 14-ago-2026 (D103).** **Una sola edición, puramente aditiva:** la nota
+> de contraste, con la frase opcional aprobada incorporada al final. **La fila del mapa es
+> byte a byte idéntica.** **P-6 sin abrir.**
 
 ---
 
@@ -67,13 +68,9 @@ Es **la primera que documenta apoyo en lugar de retirada**. Y precisamente por e
 dos frenos que las otras no necesitaban: **la estabilidad se acota a las pruebas
 concretas** *(no robustez general)* y **el resultado se acota al oro** *(no al módulo)*.
 
-⚠️ **Nota de coherencia interna, para que decidas:** la fila del mapa marca **«favorable»
-en las dos columnas de inflación alta**, que es justo donde el oro recibió apoyo. Un lector
-atento podría leer la conjunción de fila y nota como si el mapa hubiera quedado
-*confirmado*. **La tercera frase de la nota lo desactiva** al decir que la evidencia es del
-oro y no del módulo — pero si prefieres reforzarlo, bastaría añadir al final: *«la
-coincidencia entre la hipótesis de diseño y el resultado del oro no convierte la fila en un
-resultado medido»*. **No lo incluyo sin tu visto bueno.**
+✅ **Refuerzo aprobado e incorporado.** La nota cierra con: *«La coincidencia entre la
+hipótesis de diseño y el resultado del oro no convierte la fila en un resultado medido.»*
+Con ella, la conjunción de fila y nota **no puede leerse como confirmación del mapa**.
 
 ---
 
@@ -106,5 +103,8 @@ del oro** · ✅ acota la estabilidad a **las pruebas de sensibilidad concretas*
 «robusto» · ✅ declara que **el cobre no pudo evaluarse con el mismo rigor** · ✅ no cambia
 función, pregunta de control, pesos ni vehículos.
 
-**Estado: PREPARADO — pendiente de tu aprobación, y de si quieres la frase adicional
-opcional del §2.1.**
+**Estado: ✅ EJECUTADO (D103).** Los cuatro niveles quedan inequívocos en la nota: ① el oro
+recibió apoyo · ② comportamiento relativo medio favorable en **las dos** cajas de inflación
+alta · ③ consistencia mayoritaria entre episodios **únicamente** en crecimiento débil +
+inflación alta · ④ **no valida el módulo completo**. Para **P-6** quedan la tabla resumen
+final y la columna de nivel de apoyo empírico.
