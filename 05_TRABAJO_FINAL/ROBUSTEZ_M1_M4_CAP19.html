@@ -1,0 +1,138 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ROBUSTEZ_M1_M4_CAP19</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🔁 ROBUSTEZ — M1-M4 CON EL SEGUNDO CLASIFICADOR</h1>
+<h2>14 de agosto de 2026 · media móvil de 10 años frente a mediana de 40 trimestres</h2>
+<blockquote>
+<p><strong>No se ha creado ningún tercer criterio.</strong> Se repite el cálculo íntegro con la
+clasificación alternativa que ya estaba <strong>predefinida como prueba de robustez</strong> en el
+dossier v2 <em>(§4.3)</em>. Mismo código, un solo parámetro cambiado <em>(<code>median</code> → <code>mean</code>)</em>.
+<strong>Ni las series, ni las convenciones C1-C7, ni las hipótesis se han tocado.</strong></p>
+</blockquote>
+<p><strong>Recordatorio del desacuerdo ya conocido: 44 trimestres de 273 = 16,1%.</strong>
+Reparto alternativo: caja 1 → 83 <em>(era 63)</em> · caja 2 → 63 <em>(igual)</em> · caja 3 → 60
+<em>(era 61)</em> · <strong>caja 4 → 67 <em>(era 86)</em></strong>. El desacuerdo se concentra entre las cajas 1 y 4.</p>
+<hr />
+<h1>1. Tabla de robustez por hipótesis</h1>
+<table>
+<thead>
+<tr>
+<th>Hipótesis</th>
+<th>Resultado con <strong>mediana</strong></th>
+<th>Resultado con <strong>media</strong></th>
+<th>¿Cambia signo?</th>
+<th>¿Cambia conclusión?</th>
+<th><strong>Robustez</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>H1 · Motor rinde más en caja 1 que en caja 3</strong></td>
+<td>Caja 1 <strong>+9,83%</strong> real vs caja 3 <strong>+15,76%</strong> → <strong>contrario</strong> <em>(−5,93 pp)</em></td>
+<td>Caja 1 <strong>+11,69%</strong> vs caja 3 <strong>+13,78%</strong> → <strong>contrario</strong> <em>(−2,09 pp)</em></td>
+<td><strong>No</strong> — la caja 3 supera a la 1 en ambas</td>
+<td><strong>No</strong></td>
+<td>🟢 <strong>Robusta en dirección</strong>, 🟡 <strong>sensible en magnitud</strong> <em>(la brecha se reduce a un tercio)</em></td>
+</tr>
+<tr>
+<td><strong>H2 · Defensivos favorables en caja 3</strong></td>
+<td>Consumo M3 <strong>+2,86</strong> · <strong>8/13 ✅</strong> · Salud <strong>−1,97</strong> · 6/13 ❌</td>
+<td>Consumo M3 <strong>+2,07</strong> · <strong>7/14 ❌</strong> · Salud <strong>−0,73</strong> · <strong>8/14 ✅</strong></td>
+<td>No en M3</td>
+<td><strong>SÍ</strong> — se invierte <strong>qué</strong> defensivo cumple la mayoría</td>
+<td>🔴 <strong>NO robusta.</strong> El apoyo en la caja 3 <strong>se rebaja</strong></td>
+</tr>
+<tr>
+<td><strong>H2 · Defensivos favorables en caja 4</strong></td>
+<td>Consumo <strong>+3,54</strong> · <strong>8/12 ✅</strong> · Salud <strong>+4,45</strong> · <strong>7/12 ✅</strong></td>
+<td>Consumo <strong>+4,68</strong> · <strong>9/11 ✅</strong> · Salud <strong>+4,90</strong> · <strong>7/11 ✅</strong></td>
+<td>No</td>
+<td><strong>No</strong></td>
+<td>🟢 <strong>Robusta</strong> — ambos defensivos cumplen con los dos criterios</td>
+</tr>
+<tr>
+<td><strong>H3 · Oro favorable en caja 4</strong></td>
+<td>M3 <strong>+12,44 pp</strong> · <strong>7/9 ✅</strong></td>
+<td>M3 <strong>+13,62 pp</strong> · <strong>6/8 ✅</strong></td>
+<td>No</td>
+<td><strong>No</strong></td>
+<td>🟢 <strong>ROBUSTA A LAS DOS CLASIFICACIONES</strong></td>
+</tr>
+<tr>
+<td><strong>H4 · Freno ayuda en caja 3 y estorba en caja 4</strong></td>
+<td>Caja 3 <strong>−14,49</strong> <em>(su peor)</em> · caja 4 <strong>−1,03</strong> <em>(su mejor)</em> → <strong>contrario</strong></td>
+<td>Caja 3 <strong>−12,46</strong> <em>(su peor)</em> · caja 4 <strong>+0,47</strong> <em>(su mejor)</em> → <strong>contrario</strong></td>
+<td>⚠️ <strong>Sí en caja 4</strong>: M3 pasa de −1,03 a <strong>+0,47</strong></td>
+<td><strong>No</strong> — el resultado contrario a la hipótesis se mantiene en ambas</td>
+<td>🟢 <strong>Robusta en dirección</strong> ⚠️ con el límite de medir <strong>solo la pata monetaria</strong></td>
+</tr>
+<tr>
+<td><strong>H5 · Aceleración diferenciada por régimen</strong></td>
+<td>Valor favorable en <strong>las 4 cajas</strong> <em>(7/13, 8/12, 10/13, 9/12)</em></td>
+<td>Valor favorable en <strong>las 4 cajas</strong> <em>(10/14, 9/12, 10/14, 7/11)</em></td>
+<td>No</td>
+<td><strong>No</strong></td>
+<td>🟢 <strong>Robusta</strong>: no aparece como fenómeno de régimen en ninguna de las dos</td>
+</tr>
+<tr>
+<td><strong>H7 · Cada caja con ≥1 módulo favorable consistente</strong></td>
+<td>1: consumo, valor · 2: valor · 3: consumo, small, valor · 4: oro, consumo, salud, small, valor</td>
+<td>1: consumo, salud, valor · 2: valor · 3: salud, small, valor · 4: consumo, salud, small, valor, oro</td>
+<td>No</td>
+<td><strong>No</strong> — todas las cajas siguen cubiertas</td>
+<td>🟢 <strong>Robusta</strong> ⚠️ <strong>solo sobre los módulos con datos</strong> <em>(cambia qué módulo cubre la caja 3)</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>2. Lecturas obligadas de esta prueba</h1>
+<h2>2.1 Lo que se refuerza</h2>
+<p><strong>El resultado del oro en la caja 4 sobrevive a las dos clasificaciones</strong>, con magnitud
+similar <em>(+12,4 y +13,6 puntos reales)</em> y mayoría de episodios en ambas <em>(7/9 y 6/8)</em>. <strong>Es
+el hallazgo más sólido del capítulo</strong> y así debe presentarse: <em>«recibe apoyo en esta prueba
+histórica, bajo estas dos definiciones, estas series y este periodo»</em>.</p>
+<p>También se refuerza la lectura contraria a H1 y a H4: <strong>cambia la magnitud, no la
+dirección.</strong></p>
+<h2>2.2 Lo que se rebaja — y no se esconde</h2>
+<p><strong>El apoyo a los defensivos en la caja 3 baja de nivel.</strong> Con mediana, el consumo básico
+cumple y la salud no; con media, ocurre exactamente lo contrario. <strong>Cuando la conclusión
+depende de qué umbral se elija, la conclusión no es sólida</strong> — y conforme a la instrucción,
+su nivel de confianza se rebaja a <strong>«sin apoyo estable»</strong> para la caja 3.</p>
+<p><strong>En la caja 4, en cambio, ambos defensivos cumplen con los dos criterios</strong>: ahí el apoyo
+sí es estable.</p>
+<h2>2.3 Un matiz de honestidad sobre H4</h2>
+<p>Con la clasificación alternativa, el monetario pasa a tener <strong>M3 positivo en la caja 4</strong>
+<em>(+0,47)</em>: batiría al Motor en términos relativos. <strong>Pero M4 sigue en 5/11</strong>, sin mayoría.
+<strong>M3 y M4 discrepan, y se publican los dos.</strong> No se elige el que mejor cuenta la historia.</p>
+<hr />
+<h1>3. Regla aplicada</h1>
+<blockquote>
+<p><strong>No se ha elegido el criterio que deja mejor a la cartera.</strong> La mediana es el criterio
+principal porque se fijó <strong>antes</strong> de ver ningún resultado <em>(R4)</em>, y se mantiene aunque
+la media produzca cifras algo más favorables al oro y al Motor en la caja 1.</p>
+</blockquote>
+<p><strong>Anexos:</strong> <a href="ANEXO_M1_M4_POR_CAJA.csv"><code>ANEXO_M1_M4_POR_CAJA.csv</code></a> <em>(principal)</em> ·
+<code>ANEXO_M1_M4_ALTERNATIVA.csv</code> <em>(robustez)</em> · script común
+<a href="ANEXO_calculo_m1_m4.py"><code>ANEXO_calculo_m1_m4.py</code></a>.</p></div></body></html>

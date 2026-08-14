@@ -1,0 +1,387 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>COBERTURA_HISTORICA_MODULOS_CAP19</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🗺️ COBERTURA HISTÓRICA POR MÓDULO — CAPÍTULO 19</h1>
+<h2>Qué puede evaluarse con rigor y qué no · 14 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Principio del documento:</strong> es mejor decir <strong>«no se puede evaluar con suficiente rigor»</strong>
+que rellenar un hueco con un proxy débil para que la tabla tenga siete filas completas.
+<strong>Cuatro de las trece líneas de este documento son huecos declarados.</strong></p>
+</blockquote>
+<hr />
+<h1>1. Módulos CON cobertura suficiente</h1>
+<h2>🚀 Motor</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función</strong></td>
+<td>Capturar el crecimiento económico y empresarial de largo plazo</td>
+</tr>
+<tr>
+<td><strong>Proxy</strong></td>
+<td>Mercado de acciones EEUU ponderado por capitalización, retorno total</td>
+</tr>
+<tr>
+<td><strong>Fuente</strong></td>
+<td>Biblioteca de datos Kenneth French <em>(Dartmouth)</em>, base CRSP 202606</td>
+</tr>
+<tr>
+<td><strong>Periodo</strong></td>
+<td><strong>1958Q1 → 2026Q2</strong> <em>(la serie llega a 1926; la limita la clasificación)</em></td>
+</tr>
+<tr>
+<td><strong>Representa bien</strong></td>
+<td>El comportamiento de la renta variable amplia en cada clima; el orden de magnitud de sus retornos reales</td>
+</tr>
+<tr>
+<td><strong>NO representa</strong></td>
+<td>Nuestro Motor real <em>(que es mitad global, mitad EEUU)</em>; costes, fiscalidad ni divisa euro</td>
+</tr>
+<tr>
+<td><strong>Confianza</strong></td>
+<td>🟢 <strong>Alta</strong> — 273 trimestres, 50 episodios</td>
+</tr>
+</tbody>
+</table>
+<h2>🌿 Defensivos</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función</strong></td>
+<td>Mantener exposición productiva reduciendo la sensibilidad al ciclo</td>
+</tr>
+<tr>
+<td><strong>Proxy</strong></td>
+<td>Carteras sectoriales <em>Consumer NonDurables</em> y <em>Healthcare</em></td>
+</tr>
+<tr>
+<td><strong>Fuente</strong></td>
+<td>Kenneth French, 12 Industry Portfolios <em>(value-weighted)</em></td>
+</tr>
+<tr>
+<td><strong>Periodo</strong></td>
+<td><strong>1958Q1 → 2026Q2</strong></td>
+</tr>
+<tr>
+<td><strong>Representa bien</strong></td>
+<td>El comportamiento relativo de sectores defensivos frente al mercado</td>
+</tr>
+<tr>
+<td><strong>NO representa</strong></td>
+<td>La definición sectorial de los índices MSCI que usan nuestros ETF; <strong>la composición del sector salud de 1960 no se parece a la actual</strong></td>
+</tr>
+<tr>
+<td><strong>Confianza</strong></td>
+<td>🟡 <strong>Media-alta.</strong> ⚠️ <strong>Rebajada a media tras la prueba de robustez</strong>: en la caja 3, qué defensivo cumple <strong>depende del umbral elegido</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>⚡ Aceleración <em>(tamaño y valor)</em></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función</strong></td>
+<td>Fuentes adicionales de rentabilidad esperada sobre el núcleo</td>
+</tr>
+<tr>
+<td><strong>Proxy</strong></td>
+<td>Media de las tres carteras pequeñas · media de las dos de alto valor contable</td>
+</tr>
+<tr>
+<td><strong>Fuente</strong></td>
+<td>Kenneth French, 6 Portfolios 2×3 <em>(tamaño × valor contable/precio)</em></td>
+</tr>
+<tr>
+<td><strong>Periodo</strong></td>
+<td><strong>1958Q1 → 2026Q2</strong></td>
+</tr>
+<tr>
+<td><strong>Representa bien</strong></td>
+<td>El comportamiento de las primas de tamaño y valor</td>
+</tr>
+<tr>
+<td><strong>NO representa</strong></td>
+<td>Un producto invertible: <strong>son carteras académicas sin costes, sin impuestos y sin límites de liquidez</strong>. Y el Robeco es gestión activa, no una cartera de factor</td>
+</tr>
+<tr>
+<td><strong>Confianza</strong></td>
+<td>🟢 <strong>Alta para la prima</strong> · 🟡 <strong>media para nuestros vehículos</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>2. Módulo con cobertura PARCIAL</h1>
+<h2>⚓ Freno — <strong>solo la pata monetaria</strong></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función</strong></td>
+<td>Estabilizar y exponer a factores distintos de los activos productivos</td>
+</tr>
+<tr>
+<td><strong>Proxy disponible</strong></td>
+<td>Letra del Tesoro EEUU a 1 mes</td>
+</tr>
+<tr>
+<td><strong>Fuente</strong></td>
+<td>Kenneth French <em>(Ibbotson hasta 2024-05; ICE BofA 1-Month T-Bill después)</em></td>
+</tr>
+<tr>
+<td><strong>Periodo</strong></td>
+<td>1958Q1 → 2026Q2</td>
+</tr>
+<tr>
+<td><strong>Representa bien</strong></td>
+<td>Los <strong>6 de 9 puntos</strong> que son fondo monetario <em>(AXA Trésor Court Terme)</em></td>
+</tr>
+<tr>
+<td><strong>NO representa</strong></td>
+<td>🔴 <strong>Los 3 puntos de renta fija con duración.</strong> No hay serie de retorno total de bonos largos en las fuentes descargadas</td>
+</tr>
+<tr>
+<td><strong>Por qué no se aproxima</strong></td>
+<td>Construir retornos de bonos a partir de rendimientos exige supuestos de duración y convexidad: <strong>sería inventar una serie</strong>, no medirla</td>
+</tr>
+<tr>
+<td><strong>Confianza</strong></td>
+<td>🟡 <strong>Media, y solo para la pata monetaria.</strong> <strong>H4 no puede evaluarse completa</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>🥇 Activos Reales — <strong>solo oro, y solo desde 1971Q4</strong></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función</strong></td>
+<td>Comportamiento ligado a inflación y confianza monetaria</td>
+</tr>
+<tr>
+<td><strong>Proxy disponible</strong></td>
+<td>Precio del oro, fixing PM de Londres, USD</td>
+</tr>
+<tr>
+<td><strong>Fuente</strong></td>
+<td><strong>LBMA</strong> <em>(fuente primaria oficial)</em></td>
+</tr>
+<tr>
+<td><strong>Periodo</strong></td>
+<td>Serie desde 1968-04; <strong>utilizada solo desde 1971Q4</strong></td>
+</tr>
+<tr>
+<td><strong>Por qué se recorta</strong></td>
+<td>⚠️ <strong>El precio del oro estuvo administrado hasta el fin de la convertibilidad en 1971.</strong> Analizar «retornos» de un precio fijado por decreto no mide nada</td>
+</tr>
+<tr>
+<td><strong>Representa bien</strong></td>
+<td>El oro físico — que es exactamente lo que tenemos <em>(ETC de oro asignado)</em>. <strong>Es el proxy más fiel de toda la matriz</strong></td>
+</tr>
+<tr>
+<td><strong>NO representa</strong></td>
+<td>🔴 <strong>El cobre</strong> <em>(2 de los 9 puntos)</em>: sin serie pública gratuita con historia larga</td>
+</tr>
+<tr>
+<td><strong>Confianza</strong></td>
+<td>🟢 <strong>Alta para el oro</strong> <em>(9 episodios en la caja 4, robusto a las dos clasificaciones)</em> · ⛔ <strong>nula para el cobre</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>3. Módulos SIN cobertura — declarados, no rellenados</h1>
+<h2>🌍 Emergentes — ⛔ <strong>no evaluable</strong></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función</strong></td>
+<td>Exposición estratégica diferenciada a economías emergentes</td>
+</tr>
+<tr>
+<td><strong>Proxy</strong></td>
+<td><strong>Ninguno disponible</strong></td>
+</tr>
+<tr>
+<td><strong>Por qué</strong></td>
+<td>Los índices de emergentes no existen antes de finales de los ochenta. <strong>No cubrirían ninguno de los episodios de inflación alta de los años setenta</strong>, que son justo los que interesan</td>
+</tr>
+<tr>
+<td><strong>Qué NO se hace</strong></td>
+<td><strong>No se sustituye por acciones de EEUU</strong> — sería exactamente lo contrario de lo que el módulo representa</td>
+</tr>
+<tr>
+<td><strong>Confianza</strong></td>
+<td>⛔ <strong>H6 no evaluable</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>💥 Asimetría — ⛔ <strong>no evaluable</strong></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función</strong></td>
+<td>Opcionalidad de alto potencial con pérdida acotada por tamaño</td>
+</tr>
+<tr>
+<td><strong>Proxy</strong></td>
+<td><strong>Ninguno</strong></td>
+</tr>
+<tr>
+<td><strong>Por qué</strong></td>
+<td><strong>Bitcoin existe desde 2009.</strong> No hay historia anterior, y <strong>no se inventa</strong></td>
+</tr>
+<tr>
+<td><strong>Qué cubre lo poco que hay</strong></td>
+<td>Ni los setenta, ni 2000-02, ni 2008. Solo una parte del periodo reciente, insuficiente para la regla de consistencia</td>
+</tr>
+<tr>
+<td><strong>Confianza</strong></td>
+<td>⛔ <strong>Nula.</strong> El módulo se justifica por diseño <em>(tamaño acotado)</em>, <strong>no por evidencia histórica de régimen</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>💧 Reserva — ⚪ <strong>no aplica</strong></h2>
+<p>Es <strong>capacidad operativa</strong>, no una fuente de retorno. H8 se declaró desde el principio como
+no comprobable con datos de rentabilidad.</p>
+<hr />
+<h1>4. Cuadro resumen</h1>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th style="text-align: right;">Peso</th>
+<th>Cobertura</th>
+<th>Desde</th>
+<th>Confianza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 Motor</td>
+<td style="text-align: right;">44%</td>
+<td>✅ Completa</td>
+<td>1958Q1</td>
+<td>🟢 Alta</td>
+</tr>
+<tr>
+<td>🌿 Defensivos</td>
+<td style="text-align: right;">12%</td>
+<td>✅ Completa</td>
+<td>1958Q1</td>
+<td>🟡 Media <em>(rebajada por robustez en caja 3)</em></td>
+</tr>
+<tr>
+<td>⚡ Aceleración</td>
+<td style="text-align: right;">12%</td>
+<td>✅ Completa</td>
+<td>1958Q1</td>
+<td>🟢 Alta para la prima</td>
+</tr>
+<tr>
+<td>⚓ Freno</td>
+<td style="text-align: right;">9%</td>
+<td>⚠️ <strong>Parcial</strong> <em>(6 de 9 puntos)</em></td>
+<td>1958Q1</td>
+<td>🟡 Media</td>
+</tr>
+<tr>
+<td>🥇 Activos Reales</td>
+<td style="text-align: right;">9%</td>
+<td>⚠️ <strong>Parcial</strong> <em>(7 de 9 puntos)</em></td>
+<td>1971Q4</td>
+<td>🟢 Alta <em>(oro)</em></td>
+</tr>
+<tr>
+<td>🌍 Emergentes</td>
+<td style="text-align: right;">7%</td>
+<td>⛔ <strong>Ninguna</strong></td>
+<td>—</td>
+<td>⛔</td>
+</tr>
+<tr>
+<td>💥 Asimetría</td>
+<td style="text-align: right;">4%</td>
+<td>⛔ <strong>Ninguna</strong></td>
+<td>—</td>
+<td>⛔</td>
+</tr>
+<tr>
+<td>💧 Reserva</td>
+<td style="text-align: right;">3%</td>
+<td>⚪ No aplica</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2>4.1 La cifra que el capítulo debe declarar</h2>
+<blockquote>
+<p><strong>Del 97% de la cartera asignado a módulos, el análisis histórico cubre con datos
+suficientes el 68%</strong> <em>(Motor 44 + Defensivos 12 + Aceleración 12)</em>, <strong>parcialmente el
+18%</strong> <em>(Freno 9 + Reales 9, con 5 de esos 18 puntos sin serie)</em>, <strong>y no cubre en absoluto
+el 11%</strong> <em>(Emergentes 7 + Asimetría 4)</em>.</p>
+</blockquote>
+<p><strong>Consecuencia directa:</strong> <strong>H7 —«cada caja tiene algo que funcione»— solo puede afirmarse
+sobre los módulos evaluables, nunca sobre la cartera completa.</strong> El capítulo 19 lo dirá con
+esas palabras, y el tribunal tiene derecho a saberlo antes de preguntarlo.</p></div></body></html>

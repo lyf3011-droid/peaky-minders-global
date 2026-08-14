@@ -68,17 +68,23 @@ publican ambos y se dice cuál es cuál** — nunca se elige el que conviene.
 
 ---
 
-# 4. Evaluación de las hipótesis — **tres quedan en cuestión**
+# 4. Evaluación de las hipótesis — **tres no se confirman**
+
+> ⚠️ **Calibración del lenguaje:** no se usa «demostrada» ni «refutada» en ningún caso.
+> Un resultado **recibe apoyo** o **resulta contrario a la hipótesis inicial** *en esta
+> prueba, bajo esta definición, estas series y este periodo*. **Las asociaciones históricas
+> no se convierten en causalidad.** Prueba de robustez con el segundo clasificador en
+> [`ROBUSTEZ_M1_M4_CAP19.md`](ROBUSTEZ_M1_M4_CAP19.md).
 
 | # | Hipótesis del capítulo 4 | Resultado | Veredicto |
 |---|---|---|---|
-| **H1 · Motor** | Rinde más en la caja 1 que en la 3 | Real: **+9,83% en caja 1 vs +15,76% en caja 3** | 🔴 **CONTRADICHA. El Motor rindió MÁS con crecimiento débil e inflación baja que con crecimiento fuerte** |
-| **H2 · Defensivos** | Relativamente favorables en cajas 3 y 4 | Caja 4: consumo **8/12 ✅**, salud **7/12 ✅**. Caja 3: consumo **8/13 ✅**, salud 6/13 ❌ | 🟡 **PARCIALMENTE SOSTENIDA**: se cumple en la caja 4 con ambos; en la caja 3 solo con consumo básico |
-| **H3 · Activos Reales** | El oro es relativamente favorable en la caja 4, de forma consistente | **M3 +12,44 pp** · **M4 7/9 episodios ✅** | ✅ **SOSTENIDA** — el resultado más fuerte del análisis, con 9 episodios *(muestra suficiente por §9.1)* |
-| **H4 · Freno** | Ayuda en la caja 3, estorba en la caja 4 | Monetario: **−14,49 en caja 3** *(su peor caja)*, **−1,03 en caja 4** *(su mejor)* | 🔴 **INVERTIDA respecto a lo previsto** ⚠️ con el límite de que **solo mide la pata monetaria**, no bonos largos |
-| **H5 · Aceleración** | Comportamiento **diferenciado** por caja | Valor es favorable en **las cuatro cajas** *(7/13, 8/12, 10/13, 9/12)*; small caps en dos | 🟡 **NO CONFIRMADA como fenómeno de régimen**: el valor parece una prima general, no una respuesta al clima |
+| **H1 · Motor** | Rinde más en la caja 1 que en la 3 | Real: **+9,83% en caja 1 vs +15,76% en caja 3** | 🔴 **NO CONFIRMADA — resultado contrario a la hipótesis inicial en esta prueba**, bajo esta definición, estas series y este periodo |
+| **H2 · Defensivos** | Relativamente favorables en cajas 3 y 4 | Caja 4: consumo **8/12 ✅**, salud **7/12 ✅**. Caja 3: consumo **8/13 ✅**, salud 6/13 ❌ | 🟡 **Apoyo parcial**: en la caja 4 con ambos; en la caja 3 el resultado **no es estable** *(ver robustez)* |
+| **H3 · Activos Reales** | El oro es relativamente favorable en la caja 4, de forma consistente | **M3 +12,44 pp** · **M4 7/9 episodios ✅** | ✅ **Recibe apoyo en esta prueba histórica**, bajo esta definición, estas series y este periodo *(9 episodios, muestra suficiente por §9.1)* — el resultado más sólido del análisis |
+| **H4 · Freno** | Ayuda en la caja 3, estorba en la caja 4 | Monetario: **−14,49 en caja 3** *(su peor caja)*, **−1,03 en caja 4** *(su mejor)* | 🔴 **Resultado contrario a la hipótesis inicial bajo esta medición** ⚠️ que **solo cubre la pata monetaria**, no bonos largos |
+| **H5 · Aceleración** | Comportamiento **diferenciado** por caja | Valor es favorable en **las cuatro cajas** *(7/13, 8/12, 10/13, 9/12)*; small caps en dos | 🟡 **No aparece como fenómeno específico de régimen**: en esta muestra el valor supera al Motor en las cuatro cajas |
 | **H6 · Emergentes** | — | ⛔ Sin datos | **No evaluable** *(P1)* |
-| **H7 · Cobertura** | Cada caja tiene ≥1 módulo consistentemente favorable | Caja 1: consumo y valor ✅ · Caja 2: valor ✅ · Caja 3: consumo, small, valor ✅ · Caja 4: **oro, consumo, salud, small y valor ✅** | ✅ **SOSTENIDA sobre los módulos con datos** — ⚠️ **no cubre Emergentes ni Asimetría, que no son evaluables** |
+| **H7 · Cobertura** | Cada caja tiene ≥1 módulo consistentemente favorable | Caja 1: consumo y valor ✅ · Caja 2: valor ✅ · Caja 3: consumo, small, valor ✅ · Caja 4: **oro, consumo, salud, small y valor ✅** | ✅ **Recibe apoyo parcial sobre los módulos para los que existe información histórica suficiente** — ⚠️ no cubre Emergentes ni Asimetría |
 | **H8 · Reserva** | Propiedad operativa | No comprobable por retorno | Declarada |
 
 ---
@@ -88,12 +94,12 @@ publican ambos y se dice cuál es cuál** — nunca se elige el que conviene.
 Conforme a la instrucción: **se registran y se publican; no se corrigen los datos ni se
 retoca el capítulo 4 todavía.**
 
-### C-1 · H1 invertida — el Motor rinde más en la caja 3 que en la 1
+### C-1 · H1 no confirmada — el Motor rindió más en la caja 3 que en la 1
 
 **Dato:** +15,76% real en «crecimiento débil + inflación baja» frente a +9,83% en
 «crecimiento fuerte + inflación baja».
 
-**Explicación candidata *(a validar, no adoptada)*:** la bolsa anticipa; cuando el
+**Hipótesis interpretativa *(no adoptada, no demostrada)*:** la bolsa anticipa; cuando el
 crecimiento medido está por debajo de su mediana, buena parte de la caída ya ocurrió y los
 precios de partida son bajos, de modo que el retorno **posterior** es alto. Nuestro
 clasificador empareja **retorno y macro del mismo trimestre** *(C1, sin desfases)*, así que
@@ -104,7 +110,7 @@ sustituir el principal.
 **Consecuencia para el capítulo 4:** la fila «Motor → caja 1» del mapa de diseño **no se
 sostiene con estos datos**. Corrección pendiente, tras auditoría.
 
-### C-2 · H4 invertida — el monetario es relativamente peor justo donde se esperaba que ayudase
+### C-2 · H4 con resultado contrario — el monetario queda relativamente peor justo donde se esperaba que ayudase
 
 **Dato:** M3 −14,49 pp en la caja 3 *(su peor)* y −1,03 en la caja 4 *(su mejor)*.
 **Matiz obligatorio:** es consecuencia directa de C-1 — si el Motor arrasa en la caja 3,
@@ -112,7 +118,7 @@ cualquier activo estable queda muy por detrás **en términos relativos**, aunqu
 absolutos el monetario tuviera retorno real positivo *(+1,27%)*. **Y solo medimos la pata
 monetaria: sin bonos largos, H4 no puede evaluarse completa.**
 
-### C-3 · H5 no confirmada como fenómeno de régimen
+### C-3 · H5 no aparece como fenómeno específico de régimen
 
 El valor bate al Motor en **las cuatro cajas**. Eso no lo desmerece — lo reclasifica: es
 una **prima general**, no una respuesta al clima económico. El argumento de Aceleración por

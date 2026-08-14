@@ -1,0 +1,426 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARQUITECTURA_MACRO_ANTONIO_VIGIA_PMMA</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🧭 ARQUITECTURA MACRO — ANTONIO · VIGÍA · PMMA</h1>
+<h2>Tres capas que responden a tres preguntas distintas · 14 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Etiquetas de atribución, obligatorias en todo el documento:</strong>
+<strong><code>[FUENTE ACADEMIA / ANTONIO]</code></strong> — procede de la clase y del manual MEF V.
+<strong><code>[DESARROLLO PROPIO HARVISS/VIGÍA]</code></strong> — lo construimos nosotros después, en el módulo
+<code>claude-macro</code>.
+<strong><code>[DESARROLLO PROPIO PMMA]</code></strong> — lo construimos para este trabajo final.
+<strong><code>[EVIDENCIA EXTERNA]</code></strong> — requiere cita de fuente primaria.</p>
+<p><strong>Nada de lo desarrollado por nosotros se atribuye a Antonio.</strong></p>
+</blockquote>
+<hr />
+<h1>0. El error que este documento evita</h1>
+<p>Tenemos tres cosas que hablan de «macro» y es tentador fundirlas en una. <strong>No son lo mismo
+y no responden a la misma pregunta:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Pregunta que responde</th>
+<th>Horizonte</th>
+<th>Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A · Cuatro cajas</strong></td>
+<td><em>¿Cómo se comportaron distintos activos cuando el crecimiento y la inflación estuvieron en combinaciones diferentes?</em></td>
+<td><strong>Pasado</strong> <em>(1958-2026)</em></td>
+<td><strong>2</strong></td>
+</tr>
+<tr>
+<td><strong>B · Brújula de Antonio</strong></td>
+<td><em>¿Cómo se interpreta el ciclo para modular la prudencia?</em></td>
+<td><strong>Presente, con criterio</strong></td>
+<td>17 conceptos</td>
+</tr>
+<tr>
+<td><strong>C · VIGÍA</strong></td>
+<td><em>¿Qué señales observamos hoy y qué terreno sugieren?</em></td>
+<td><strong>Presente, sistematizado</strong></td>
+<td>17 indicadores + mercado</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3>**Dos variables permiten clasificar el régimen histórico; un conjunto más amplio de</h3>
+<h3>indicadores ayuda a interpretar el régimen presente.**</h3>
+</blockquote>
+<hr />
+<h1>CAPA A — Las cuatro cajas históricas <code>[DESARROLLO PROPIO PMMA]</code></h1>
+<h2>A.1 Qué es</h2>
+<p>Un <strong>marco de robustez histórica</strong>: clasifica cada trimestre desde 1958 según si el
+crecimiento y la inflación estuvieron por encima o por debajo de su propia mediana
+reciente, y mide cómo se comportó cada tipo de activo en cada combinación.</p>
+<p><strong>Variables: exactamente dos.</strong> PIB real interanual e IPC interanual.</p>
+<h2>A.2 Qué NO es — las cuatro negaciones</h2>
+<table>
+<thead>
+<tr>
+<th>❌ No es</th>
+<th>Por qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>No dice dónde estamos hoy</strong></td>
+<td>La clasificación usa series revisadas que nadie conocía en tiempo real <em>(descriptivo ex post)</em></td>
+</tr>
+<tr>
+<td><strong>No usa los 17 indicadores</strong></td>
+<td>Usa dos. Deliberadamente</td>
+</tr>
+<tr>
+<td><strong>No es señal de market timing</strong></td>
+<td>No genera ninguna instrucción de compra o venta</td>
+</tr>
+<tr>
+<td><strong>No predice</strong></td>
+<td>Analiza robustez ante entornos distintos, no probabilidad de que ocurran</td>
+</tr>
+</tbody>
+</table>
+<h2>A.3 Qué aporta al trabajo</h2>
+<p>Permite responder con datos a la pregunta del tribunal: <em>«¿tiene su cartera algo que
+funcione en cada clima económico?»</em> — y <strong>enseñar el hueco cuando no lo tiene</strong>.</p>
+<p><code>[EVIDENCIA EXTERNA]</code> El marco original de cuatro cuadrantes se formula en <strong>sorpresas</strong>
+frente a expectativas; el nuestro trabaja con <strong>niveles</strong>. Es una aproximación histórica
+operativa y reproducible, <strong>no una reproducción del sistema original</strong>.</p>
+<hr />
+<h1>CAPA B — La brújula macro aprendida con Antonio <code>[FUENTE ACADEMIA / ANTONIO]</code></h1>
+<h2>B.1 Los dos principios rectores</h2>
+<blockquote>
+<h3><strong>«La macroeconomía es una brújula, no una bola de cristal.»</strong></h3>
+<h3><strong>«No se cambia una cartera por un dato aislado.»</strong></h3>
+</blockquote>
+<p>De ellos se derivan tres reglas que la clase dejó explícitas:</p>
+<ol>
+<li><strong>Se cambia de postura por acumulación de señales</strong>, nunca por un único dato.</li>
+<li><strong>La liquidez puede ser, en sí misma, una posición estratégica</strong> — no es dinero ocioso.</li>
+<li><strong>El horizonte temporal determina el peso de una señal</strong>: una señal de corto plazo no
+   vale lo que una tendencia estructural.</li>
+</ol>
+<h2>B.2 Los indicadores de la clase y para qué sirve cada uno</h2>
+<p><code>[FUENTE ACADEMIA / ANTONIO]</code> — recogidos fielmente del manual MEF V. La columna «para qué
+sirve» resume el criterio de lectura enseñado en clase; <strong>no es una regla automática</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>Tipo</th>
+<th>Para qué sirve — lectura de la clase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PER de índices</strong></td>
+<td>Coincidente</td>
+<td>Marca <strong>el margen de seguridad de partida</strong>. PER alto → exigir más margen en cada valoración; nunca usarlo como señal de timing <em>(«está caro, cae ya»)</em></td>
+</tr>
+<tr>
+<td><strong>Inflación</strong></td>
+<td>Retrasado/coincidente</td>
+<td>Condiciona a los bancos centrales y los márgenes. Inflación persistente con crecimiento débil → reducir agresividad. Distinguir general de subyacente</td>
+</tr>
+<tr>
+<td><strong>Bancos centrales</strong></td>
+<td>Adelantado</td>
+<td>El determinante más directo del coste del dinero. Giro hawkish inesperado → reducir agresividad. <strong>No anticipar decisiones como certeza</strong></td>
+</tr>
+<tr>
+<td><strong>PMI</strong></td>
+<td><strong>Adelantado</strong></td>
+<td>El termómetro más seguido del ciclo <em>(50 = frontera)</em>. Deterioro sostenido → menos agresividad, más liquidez. <strong>No sobrerreaccionar a un mes</strong></td>
+</tr>
+<tr>
+<td><strong>Empleo</strong></td>
+<td><strong>Retrasado</strong></td>
+<td>Sostiene el consumo. <strong>El paro subiendo de forma sostenida desde mínimos es señal clásica de inicio de recesión</strong> — pero confirma, no anticipa</td>
+</tr>
+<tr>
+<td><strong>Ventas minoristas</strong></td>
+<td>Coincidente</td>
+<td>Termómetro directo del consumo. <strong>Ajustar siempre por inflación</strong>: crecer solo en nominal no es crecer</td>
+</tr>
+<tr>
+<td><strong>Vivienda y permisos</strong></td>
+<td><strong>Adelantado</strong></td>
+<td>Muy sensible a tipos; suele <strong>anticipar giros del ciclo</strong>. Caída sostenida de permisos → alerta temprana</td>
+</tr>
+<tr>
+<td><strong>Tipos de interés</strong></td>
+<td>Adelantado/coincidente</td>
+<td>Mueven la tasa de descuento de toda valoración. Tipos altos → <strong>la liquidez remunerada pasa a ser posición estratégica</strong></td>
+</tr>
+<tr>
+<td><strong>Crédito</strong></td>
+<td>Coincidente/adelantado</td>
+<td><em>«La grieta empieza en crédito.»</em> Spreads ampliándose → precaución antes de que se vea en bolsa</td>
+</tr>
+<tr>
+<td><strong>Curva de tipos</strong></td>
+<td><strong>Adelantado</strong></td>
+<td>Históricamente uno de los avisos más consistentes de recesión — <strong>con retardo largo</strong>. No vender el primer día de inversión</td>
+</tr>
+<tr>
+<td><strong>Dólar / FX</strong></td>
+<td>Coincidente</td>
+<td>Dólar fuerte y rápido endurece las condiciones globales; castiga emergentes y multinacionales</td>
+</tr>
+<tr>
+<td><strong>Commodities</strong></td>
+<td>Coincidente</td>
+<td>Presión de costes e inflación</td>
+</tr>
+<tr>
+<td><strong>Cobre</strong> <em>(«Dr. Copper»)</em></td>
+<td><strong>Adelantado</strong></td>
+<td>Termómetro industrial del ciclo</td>
+</tr>
+<tr>
+<td><strong>Plata</strong></td>
+<td>Coincidente</td>
+<td>Mitad refugio, mitad industrial</td>
+</tr>
+<tr>
+<td><strong>VIX / estrés</strong></td>
+<td>Mercado</td>
+<td>Sentimiento y miedo</td>
+</tr>
+<tr>
+<td><strong>Drawdowns fuertes</strong></td>
+<td>Mercado</td>
+<td>Dónde está el mercado respecto a sus máximos</td>
+</tr>
+<tr>
+<td><strong>Liquidez del sistema</strong></td>
+<td>Adelantado</td>
+<td>Condiciones financieras generales</td>
+</tr>
+</tbody>
+</table>
+<h2>B.3 La lectura conjunta — lo que de verdad enseña la clase</h2>
+<p><code>[FUENTE ACADEMIA / ANTONIO]</code> Ningún indicador se lee solo. La secuencia de la clase es:</p>
+<pre><code>adelantados avisan  →  coincidentes confirman  →  retrasados certifican
+    (PMI, curva,         (ventas, PER,              (empleo, inflación)
+     permisos, cobre)      dólar)
+</code></pre>
+<p>Y el efecto de esa lectura <strong>no es comprar o vender</strong>, sino mover tres palancas:
+<strong>agresividad · liquidez · margen de seguridad exigido</strong>.</p>
+<h2>B.4 Qué NO hace esta capa</h2>
+<p><strong>No predice mercados.</strong> Sirve para <strong>interpretar el ciclo y modular el nivel de
+prudencia</strong>. Un semáforo en rojo no ordena vender: ordena exigir más margen.</p>
+<hr />
+<h1>CAPA C — HARVISS / VIGÍA <code>[DESARROLLO PROPIO HARVISS/VIGÍA]</code></h1>
+<h2>C.1 Qué añadimos nosotros sobre la clase</h2>
+<p>La clase dejó <strong>criterio</strong>. Nosotros construimos <strong>sistema</strong> en el módulo <code>claude-macro</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Aportación nuestra</th>
+<th>En qué consiste</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Clasificación por tipo</strong></td>
+<td>Los 17 indicadores ordenados en <strong>adelantados · coincidentes · retrasados · de mercado</strong> — para saber cuál avisa y cuál solo confirma</td>
+</tr>
+<tr>
+<td><strong>Ficha homogénea</strong></td>
+<td>Cada indicador con qué mide · lectura favorable · desfavorable · impacto en agresividad · en liquidez · en margen de seguridad · <strong>errores comunes</strong></td>
+</tr>
+<tr>
+<td><strong>Acumulación de señales</strong></td>
+<td>La regla de Antonio <em>(«no por un dato aislado»)</em> convertida en procedimiento con recuento</td>
+</tr>
+<tr>
+<td><strong>Semáforo de 4 estados</strong></td>
+<td><strong>VERDE · AMARILLO · NARANJA · ROJO</strong>, cada uno con postura, liquidez, agresividad, margen exigido y <strong>el error típico a evitar</strong> <em>(en verde, el FOMO)</em></td>
+</tr>
+<tr>
+<td><strong>Seis regímenes R1-R6</strong></td>
+<td><code>R1 Goldilocks · R2 Reflación · R3 Estanflación · R4 Recesión · R5 Deflación/crisis · R6 Recuperación</code>, con condiciones de activación, activos ganadores y perdedores y <strong>señales de transición</strong></td>
+</tr>
+<tr>
+<td><strong>Conexión a datos</strong></td>
+<td>Conectores hacia fuentes reales <em>(FRED, BCE y otros)</em>, con estado de verificación documentado</td>
+</tr>
+</tbody>
+</table>
+<h2>C.2 Una honestidad necesaria sobre el estado de VIGÍA</h2>
+<p><code>[DESARROLLO PROPIO HARVISS/VIGÍA]</code> Los documentos del módulo se declaran a sí mismos
+<strong>«versión 0.1 — metodología documentada, no operativa»</strong>, y la correspondencia exacta
+entre los seis regímenes y los cuatro colores del semáforo figura como <strong>decisión
+metodológica pendiente</strong>. <strong>El capítulo 19 debe decirlo así</strong>: VIGÍA es un marco
+construido y documentado, no un sistema con historial de aciertos.</p>
+<h2>C.3 🚫 Por qué las cuatro cajas y los seis regímenes <strong>NO se fusionan</strong></h2>
+<p>Es tentador emparejarlos — <strong>y sería un error metodológico</strong>. La coincidencia de nombres
+es superficial:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Caja 4 · crecimiento débil + inflación alta</strong></th>
+<th><strong>R3 · Estanflación (VIGÍA)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variables</td>
+<td>2 <em>(PIB e IPC)</em></td>
+<td>Crecimiento, inflación, <strong>política monetaria, VIX, curva, crédito…</strong></td>
+</tr>
+<tr>
+<td>Umbral</td>
+<td>Relativo a la mediana de 40 trimestres</td>
+<td>Niveles absolutos <em>(VIX 20-35, inflación persistente…)</em></td>
+</tr>
+<tr>
+<td>Momento</td>
+<td><strong>Retrospectivo</strong>, con datos revisados</td>
+<td><strong>Presente</strong>, con datos en tiempo real</td>
+</tr>
+<tr>
+<td>Para qué</td>
+<td>Medir comportamiento histórico de activos</td>
+<td>Interpretar el terreno actual y la postura</td>
+</tr>
+<tr>
+<td>Frecuencia</td>
+<td>86 de 273 trimestres <em>(31,5%)</em></td>
+<td>Un estado excepcional</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>La caja 4 aparece en el 31,5% de la historia; la estanflación como fenómeno severo es
+excepcional.</strong> Son etiquetas distintas para cosas distintas. <strong>Fusionarlas convertiría un
+marco descriptivo en una señal operativa — exactamente lo que ninguna de las dos capas
+pretende ser.</strong></p>
+</blockquote>
+<p><strong>Regla del trabajo:</strong> en el capítulo 19 se usan <strong>solo</strong> los nombres descriptivos de las
+cajas. Los nombres R1-R6 aparecen únicamente al describir VIGÍA, y con su etiqueta de
+atribución.</p>
+<hr />
+<h1>2. TRAZABILIDAD INTELECTUAL — quién aportó qué</h1>
+<pre><code>┌──────────────────────────────────────────────────────────────────────────────┐
+│  ① CLASE DE ANTONIO / MEF V                    [FUENTE ACADEMIA / ANTONIO]   │
+│     · «Brújula, no bola de cristal»                                          │
+│     · «No se cambia una cartera por un dato aislado»                         │
+│     · Los indicadores del ciclo y cómo leerlos                               │
+│     · Liquidez como posición estratégica · el horizonte manda                │
+│     APORTA: el CRITERIO                                                      │
+└───────────────────────────────┬──────────────────────────────────────────────┘
+                                ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  ② MANUAL MEF V · REGLAS CO IA                 [FUENTE ACADEMIA] + [PROPIO]  │
+│     · Traducción del criterio a reglas escritas y repetibles                 │
+│     · Impacto explícito en agresividad, liquidez y margen de seguridad       │
+│     APORTA: la REGLA OPERATIVA                                               │
+└───────────────────────────────┬──────────────────────────────────────────────┘
+                                ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  ③ HARVISS / VIGÍA — módulo claude-macro   [DESARROLLO PROPIO HARVISS/VIGÍA] │
+│     · 17 indicadores clasificados por tipo · fichas homogéneas               │
+│     · Acumulación de señales · semáforo de 4 estados · regímenes R1-R6       │
+│     · Conectores a fuentes de datos                                          │
+│     APORTA: el SISTEMA DE OBSERVACIÓN DEL PRESENTE                           │
+└───────────────────────────────┬──────────────────────────────────────────────┘
+                                ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  ④ PMMA GLOBAL 10Y — capítulo 19                    [DESARROLLO PROPIO PMMA] │
+│     · Cuatro cajas con criterio congelado R1-R8 · clasificación 1958-2026    │
+│     · M1-M4 sobre proxies históricos · prueba de robustez con dos umbrales   │
+│     · Hipótesis refutables escritas ANTES de calcular                        │
+│     APORTA: la PRUEBA HISTÓRICA CONTRASTABLE                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h2>2.1 Qué añadió cada etapa — sin invadir la anterior</h2>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Añadió</th>
+<th><strong>NO le pertenece</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① Antonio</strong></td>
+<td>El criterio de lectura del ciclo, los principios y los indicadores</td>
+<td>Los 17 clasificados por tipo, el semáforo, los R1-R6 y las cuatro cajas <strong>no son suyos</strong></td>
+</tr>
+<tr>
+<td><strong>② Manual / reglas</strong></td>
+<td>Convertir el criterio en reglas escritas</td>
+<td>La conexión a datos y la sistematización no estaban ahí</td>
+</tr>
+<tr>
+<td><strong>③ VIGÍA</strong></td>
+<td>Sistema de observación del presente: tipos, fichas, semáforo, regímenes, conectores</td>
+<td><strong>No contiene análisis histórico de retornos por régimen</strong></td>
+</tr>
+<tr>
+<td><strong>④ PMMA</strong></td>
+<td>La prueba histórica contrastable con criterio congelado y refutación previa</td>
+<td><strong>No sustituye a VIGÍA ni interpreta el presente</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>La frase para el tribunal:</strong> <em>«De la clase heredamos el criterio; nosotros construimos
+el sistema de observación y, después, la prueba histórica. Cada cosa lleva su etiqueta.»</em></p>
+</blockquote>
+<hr />
+<h1>3. Cómo conviven las tres capas en la cartera real</h1>
+<table>
+<thead>
+<tr>
+<th>Decisión de la cartera</th>
+<th>Qué capa manda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>La arquitectura</strong> <em>(qué módulos existen y con qué peso)</em></td>
+<td><strong>A</strong> — se diseñó para funcionar en climas distintos, y el cap. 19 lo comprueba</td>
+</tr>
+<tr>
+<td><strong>La postura</strong> <em>(nivel de prudencia, agresividad, margen exigido)</em></td>
+<td><strong>B + C</strong> — brújula y semáforo</td>
+</tr>
+<tr>
+<td><strong>La compra de una empresa concreta</strong></td>
+<td><strong>Ninguna de las tres.</strong> Manda el protocolo de Convicción: precio ≤ IDC y tesis viva <em>(cap. 12)</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ninguna de las tres capas autoriza una compra por sí sola.</strong> Ésa es la garantía de que
+el sistema macro no se convierte en market timing por la puerta de atrás.</p></div></body></html>
