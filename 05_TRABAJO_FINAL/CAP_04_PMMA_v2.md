@@ -142,8 +142,9 @@ Cuatro propiedades completan la definición:
 de diseño, cada módulo llevaba asociado un comportamiento *esperado* por régimen económico
 (crecimiento × inflación). Su desarrollo, datación histórica y contraste cuantitativo se
 realizaron en el capítulo 19. **Las filas que aparecen sin valor son aquellas cuya lectura
-por régimen no recibió apoyo suficiente en esa prueba; las filas que conservan valores
-siguen expresando hipótesis de diseño, no resultados históricos medidos.**
+por régimen no recibió apoyo suficiente en esa prueba, o no pudo contrastarse con la
+evidencia disponible; las filas que conservan valores siguen expresando hipótesis de
+diseño, no resultados históricos medidos.**
 
 | Módulo | Crecim.↑ Infl.↓ | Crecim.↑ Infl.↑ | Crecim.↓ Infl.↑ | Crecim.↓ Infl.↓ |
 |---|---|---|---|---|
@@ -151,7 +152,7 @@ siguen expresando hipótesis de diseño, no resultados históricos medidos.**
 | Defensivos | favorable | mixto | mixto | **menos adverso** |
 | Aceleración | — | — | — | — |
 | Emergentes | favorable | **mixto/favorable** | adverso | adverso |
-| Freno | neutro | adverso | mixto | **favorable** |
+| Freno | — | — | — | — |
 | Activos Reales | neutro | **favorable** | **favorable** | mixto |
 | Asimetría | *idiosincrático — no asignable a régimen* | | | |
 
@@ -183,6 +184,18 @@ siguen expresando hipótesis de diseño, no resultados históricos medidos.**
 >
 > **Alcance:** este cambio afecta **solo a la fila de Aceleración**. La función del módulo,
 > su peso, sus vehículos y las demás filas del mapa permanecen sin modificar.
+
+> **[MODELO — actualizado tras el capítulo 19 · D101]** **La fila de Freno aparece sin valor
+> en las cuatro columnas porque la prueba histórica no permitió evaluar el módulo en su
+> forma completa.** El análisis cubrió la pata monetaria, pero **no la renta fija con
+> duración**. Dentro de la parte evaluable, el comportamiento relativo —**siempre frente al
+> Motor, no en términos absolutos**— **no reprodujo el patrón previsto por la hipótesis
+> inicial**. **Ese resultado parcial no autoriza a invertir ni a reformular la lectura del
+> módulo completo.**
+>
+> ⚠️ **La ausencia de valores significa evidencia insuficiente para contrastar la hipótesis
+> original, no evidencia de que Freno carezca de comportamiento diferenciado según el
+> entorno. Su función estructural permanece intacta.**
 
 ---
 

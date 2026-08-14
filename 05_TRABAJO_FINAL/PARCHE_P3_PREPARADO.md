@@ -1,9 +1,10 @@
-# 🩹 PARCHE P-3 — PREPARADO, **NO EJECUTADO**
+# 🩹 PARCHE P-3 — ✅ **EJECUTADO**
 
 ## Freno: retirar la lectura por régimen por **evidencia insuficiente** · 14 de agosto de 2026
 
-> **P-3 aceptado conceptualmente; no ejecutado.** El capítulo 4 no se ha modificado.
-> **P-4, P-5 y P-6 no se abren.**
+> ✅ **EJECUTADO el 14-ago-2026 (D101)** con los tres ajustes aprobados: **encabezado
+> ampliado**, **«no reprodujo el patrón previsto»** en lugar de «fue contrario a la hipótesis
+> inicial», y **orden de notas corregido**. **P-4, P-5 y P-6 sin ejecutar.**
 
 ---
 
@@ -42,24 +43,27 @@ clima no significa que perdiera poder de compra en él.
 
 ## 🔹 CAMBIO 2 · Párrafo nuevo en la nota bajo la tabla
 
-Se insertaría **después** del párrafo del Motor y **antes** del de Aceleración *(orden de la
-tabla: Motor · Freno · Aceleración)*. **Texto propuesto, con tu formulación:**
+⚠️ **Corrección del documento:** el orden real del mapa es **Motor → Defensivos →
+Aceleración → Emergentes → Freno → Activos Reales → Asimetría**. Entre las filas retiradas,
+las notas quedan por tanto en el orden **Motor → Aceleración → Freno**, y el párrafo del
+Freno se inserta **el último**. *(La versión preparada de este documento decía que iría
+antes del de Aceleración: era incorrecto.)* **Texto ejecutado:**
 
 > **[MODELO — actualizado tras el capítulo 19]** **La fila de Freno aparece sin valor en las
 > cuatro columnas porque la prueba histórica no permitió evaluar el módulo en su forma
 > completa.** El análisis cubrió la pata monetaria, pero **no la renta fija con duración**.
-> Dentro de la parte evaluable, el comportamiento **relativo** observado —siempre **frente
-> al Motor**, no en términos absolutos— fue contrario a la hipótesis inicial en algunos
-> regímenes; **ese resultado parcial no autoriza a invertir ni a reformular la lectura del
-> módulo completo**.
+> Dentro de la parte evaluable, el comportamiento relativo —**siempre frente al Motor, no
+> en términos absolutos**— **no reprodujo el patrón previsto por la hipótesis inicial**.
+> **Ese resultado parcial no autoriza a invertir ni a reformular la lectura del módulo
+> completo.**
 >
 > ⚠️ **La ausencia de valores en esta fila significa evidencia insuficiente para contrastar
 > la hipótesis original, no evidencia de que Freno carezca de comportamiento diferenciado
 > según el entorno. Su función estructural permanece intacta.**
 
-*(Única adición sobre tu texto: la aclaración «siempre frente al Motor, no en términos
-absolutos», por tu propia regla de mantener explícito que M3 es relativo. Si prefieres tu
-redacción literal, se retira.)*
+*(Ajuste aprobado: «no reprodujo el patrón previsto» sustituye a «fue contrario a la
+hipótesis inicial en algunos regímenes» — más preciso, porque describe lo observado sin
+sugerir un veredicto sobre el módulo.)*
 
 ---
 
@@ -146,4 +150,5 @@ insuficiente, no evidencia en contra**.
 *(Se incorporará al material de dominio del capítulo 4 cuando se cierre la tanda de
 parches, conforme a la regla de D85.)*
 
-**Estado: PREPARADO — pendiente de tu aprobación y de la decisión sobre §3.1 (encabezado).**
+**Estado: ✅ EJECUTADO (D101).** Encabezado ampliado dentro de P-3. Para **P-6** quedan la
+tabla resumen final y la futura columna de nivel de apoyo empírico.
