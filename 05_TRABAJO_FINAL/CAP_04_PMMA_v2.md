@@ -1,6 +1,6 @@
 # CAPÍTULO 4 — PEAKY MINDERS MODULAR ARCHITECTURE
 
-## Investment Book · Parte I · **Borrador v2** tras auditoría · 13 de agosto de 2026
+## Investment Book · Parte I · ✅ **CERRADO v2** · aprobado el 13 de agosto de 2026 *(D79)*
 
 > **Convención tipográfica de este capítulo:**
 > **[MODELO]** = afirmación propia de PMMA, sostenida por su coherencia interna y por la
@@ -227,18 +227,22 @@ Reserva.
 
 **B. Strategic Allocation View.** Excluye la Reserva operativa y normaliza los siete
 módulos estratégicos sobre 100%. Responde a la pregunta *«¿cómo está distribuida la
-cartera estratégica?»* y es conceptualmente equivalente a la normalización que realiza el
-X-Ray oficial sobre el 97% invertido (capítulo 15): la misma convención con dos nombres.
+cartera estratégica?»* y **aplica la misma lógica de normalización sobre el capital
+analizado que utiliza el X-Ray al excluir la Reserva** (capítulo 15).
 
 **C. Governance / Funding View.** Registra bajo qué protocolo se administra el capital.
-En esta implementación, la identidad de gobernanza es:
+En esta implementación, la identidad de gobernanza se denomina **47% Governance Funding
+Pool** — el término evita confundir el Motor como *función estructural* con el *capital
+que financia operativamente Convicción*:
 
-> **Motor ordinario + Reserva + Convicción Directa = 47%** en las fechas de revisión,
+> **44 Motor ordinario + 3 Reserva + 0 Convicción = 47%** en Fecha Cero,
+> evaluado en las fechas de revisión,
 
-con un techo de Convicción del 14% que es presupuesto máximo de riesgo, no objetivo. En
-esta vista, una acción comprada mediante el protocolo recibe su módulo estructural más una
-etiqueta — *Microsoft directa → Motor + tag Convicción Directa* — de modo que el capital
-cuenta una sola vez en las vistas A y B.
+con un techo de Convicción del 14% que es presupuesto máximo de riesgo, no objetivo.
+Tras una compra de Convicción, la posición recibe **además** su clasificación funcional
+correspondiente en la Structural Exposure View: *Microsoft comprada por Convicción →
+**Motor** en Structural Exposure View + **Convicción Directa** en Governance View*.
+El capital cuenta una sola vez en las vistas A y B: **no existe doble contabilización.**
 
 La regla que une las tres vistas:
 
@@ -564,4 +568,5 @@ a *Peaky Minders Global 10Y*.
 | Fecha | Acción |
 |---|---|
 | 2026-08-13 | Borrador v1 completo — 16 secciones |
-| 2026-08-13 | **Borrador v2 tras auditoría.** Aplicadas las 10 correcciones: tres vistas analíticas *(Total Capital · Strategic Allocation · Governance/Funding)* sustituyen a las dos vistas contables; falsación principal reescrita sobre el claim organizativo con la separación estadística como test complementario; árbol reescrito para preguntar por función dominante *(P1-P3 reformuladas; ambiguos sin clasificación automática)*; Management Mode como dimensión general y Conviction Overlay como término reservado *(Robeco y PIMCO son posiciones estructurales, no overlay)*; «vistas contables» → «vistas analíticas»; linealidad del look-through acotada a exposiciones aditivas; sobreafirmaciones suavizadas; referencias internas corregidas *(§4.11, §4.9, §4.14)*; correlaciones exactas sustituidas por formulación provisional hasta el cap. 18; cierre de §4.15 sustituido por la formulación aprobada. **Pendiente de auditoría final** |
+| 2026-08-13 | **Borrador v2 tras auditoría.** Aplicadas las 10 correcciones: tres vistas analíticas *(Total Capital · Strategic Allocation · Governance/Funding)* sustituyen a las dos vistas contables; falsación principal reescrita sobre el claim organizativo con la separación estadística como test complementario; árbol reescrito para preguntar por función dominante *(P1-P3 reformuladas; ambiguos sin clasificación automática)*; Management Mode como dimensión general y Conviction Overlay como término reservado *(Robeco y PIMCO son posiciones estructurales, no overlay)*; «vistas contables» → «vistas analíticas»; linealidad del look-through acotada a exposiciones aditivas; sobreafirmaciones suavizadas; referencias internas corregidas *(§4.11, §4.9, §4.14)*; correlaciones exactas sustituidas por formulación provisional hasta el cap. 18; cierre de §4.15 sustituido por la formulación aprobada. Auditoría superada |
+| 2026-08-13 | ✅ **CERRADO v2 (D79).** Commit de sincronización: término **47% Governance Funding Pool**, Strategic Allocation View sin equivalencia estricta con el X-Ray, ejemplo explícito de doble vista tras compra de Convicción. **Sin más cambios conceptuales.** La v1 se conserva como trazabilidad |

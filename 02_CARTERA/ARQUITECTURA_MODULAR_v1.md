@@ -47,23 +47,24 @@ naturaleza distinta y mezclarlos oscurece el diseño.
 
 ---
 
-# 3. MODOS DE GESTIÓN Y ACTIVE OVERLAY *(precisado por D78)*
+# 3. MANAGEMENT MODE Y CONVICTION OVERLAY *(precisado por D78-D79)*
 
 > ## **La función estructural (los 7 módulos) y el MODO DE GESTIÓN son dimensiones
 > ## ortogonales.** Toda posición tiene un módulo Y un modo:
 
-| Modo de gestión | Quién decide | En Global 10Y |
+| Management Mode | Quién decide | En Global 10Y |
 |---|---|---|
 | **① Pasiva / indexada** | Un índice | Motor, Emergentes, Defensivos… |
 | **② Sistemática / factorial** | Una regla | Small Cap, Multifactor |
 | **③ Activa delegada** | Un gestor externo con mandato | **Robeco (Aceleración) · PIMCO (Freno)** |
 | **④ Convicción directa** | **Nosotros, con IDC y protocolo propio** | 🎯 Convicción |
 
-> 🔴 **Active Overlay es el concepto general (modos ③ y ④). Convicción Directa NO es
-> sinónimo de cualquier gestión activa:** es la implementación específica de Global 10Y
-> para selección directa de compañías *(IDC · Fecha Cero · dos tramos · benchmark Motor)*.
+> 🔴 **MANAGEMENT MODE es la dimensión general (D79). CONVICTION OVERLAY queda reservado
+> a la capa condicional de selección directa (modo ④):** IDC · Fecha Cero · dos tramos ·
+> benchmark Motor. **Robeco y PIMCO son POSICIONES ESTRUCTURALES de Aceleración y Freno
+> con modo activa delegada — NO se describen como overlay.**
 
-## 3.0 Convicción Directa — overlay condicional
+## 3.0 Conviction Overlay — la capa condicional
 
 > **No es un módulo estructural. Es una capa superpuesta que puede no existir.**
 
@@ -109,7 +110,7 @@ el reembolso de un fondo tarda días y las oportunidades no esperan.
 
 ---
 
-# 4-bis. LAS DOS VISTAS CONTABLES *(D78 · B3)*
+# 4-bis. LAS TRES VISTAS ANALÍTICAS *(D78-D79 · B3)*
 
 > ## **Módulo = qué función económica desempeña el capital.**
 > ## **Convicción = bajo qué protocolo se tomó y gestiona la decisión.**
@@ -117,8 +118,9 @@ el reembolso de un fondo tarda días y las oportunidades no esperan.
 
 | Vista | Qué muestra | Regla |
 |---|---|---|
-| **STRUCTURAL EXPOSURE VIEW** | Todo el capital clasificado por función dominante en los 7 módulos | Una acción comprada vía Convicción **también recibe módulo**: *Microsoft directa → **Motor + tag Convicción Directa***. **Sin doble contabilización** |
-| **GOVERNANCE / FUNDING VIEW** | Qué capital está bajo el protocolo de Convicción | **Motor ordinario + Reserva + Convicción Directa = 47%** en fechas de revisión · techo **14%** *(presupuesto, no objetivo)* |
+| **A · TOTAL CAPITAL VIEW** | Dónde está físicamente todo el dinero | **7 módulos + Reserva = 100%** *(Fecha Cero: 97 + 3)*. Los módulos solos NO suman el 100% cuando existe Reserva |
+| **B · STRATEGIC ALLOCATION VIEW** | La cartera estratégica normalizada | Excluye la Reserva y normaliza los 7 módulos sobre 100. **Aplica la misma lógica de normalización sobre el capital analizado que utiliza el X-Ray al excluir la Reserva** |
+| **C · GOVERNANCE / FUNDING VIEW** | Qué capital está bajo el protocolo de Convicción | **47% GOVERNANCE FUNDING POOL** — `44 Motor ordinario + 3 Reserva + 0 Convicción = 47%` en Fecha Cero · techo **14%** *(presupuesto, no objetivo)*. Una acción comprada vía Convicción **recibe además su módulo en la Structural Exposure View**: *Microsoft → Motor (structural) + Convicción Directa (governance)*. **Sin doble contabilización** |
 
 ---
 
@@ -126,8 +128,8 @@ el reembolso de un fondo tarda días y las oportunidades no esperan.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  ACTIVE OVERLAY  ·  condicional  ·  0-14%                   │
-│  🎯 CONVICCIÓN — selección directa y discrecional           │
+│  CONVICTION OVERLAY  ·  condicional  ·  0-14%               │
+│  🎯 selección directa y discrecional (modo ④)               │
 └─────────────────────────────────────────────────────────────┘
                               ▲
                     se financia desde

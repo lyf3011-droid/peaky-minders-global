@@ -128,7 +128,7 @@ dimensiones sigue vigente como vara de medir.)*
 | 1 | Resumen ejecutivo | Síntesis — **se escribe el último** | §33 | — | todo | 1 pág. visual | 🔴 |
 | 2 | El problema: carteras como listas de productos | Motivar el método | §1, §9 | — | — | comparativa lista/sistema | 🟡 |
 | 3 | Mandato Peaky Minders Global 10Y | 100k · 1k/mes · 10a · agresivo · ventana de retirada | §8 paso 1 | `PROTOCOLO §0` · D54 | **tensión 10 años/agresivo** | ficha de mandato | 🟠 |
-| 4 | PMMA: función dominante y los siete módulos | El núcleo del método | §2-4, §31-34 | D75 | — | esquema de capas | 🔵 |
+| 4 | PMMA: función dominante y los siete módulos | El núcleo del método | §2-4, §31-34 | D75 · D78-D79 | — | esquema de capas | 🟢 **CERRADO v2** |
 | 5 | Active Overlay y Execution Layer | Estructura ≠ gestión ≠ ejecución | §5 | D50 · D63 | **resolver B1, B2, B3** | diagrama 3 capas | 🟠 |
 | 6 | Position Mode y Look-Through Mode | Intención vs resultado | §7, §10 | D62 regla ×0,7693 | — | doble vista | 🔵 |
 | 7 | Instrumental: árbol, extensión, modelo de datos, gate | El método es procedimiento, no intuición | §14-16, §27, §29 | D75 | **9 campos nuevos (A.4)** | árbol + gate | 🟡 |
