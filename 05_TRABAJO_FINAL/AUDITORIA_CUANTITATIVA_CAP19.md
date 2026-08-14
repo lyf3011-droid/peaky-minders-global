@@ -92,7 +92,7 @@ mesa y **la decisión es del equipo**:
 # 5. Veredicto
 
 > ### ✅ **Los cálculos publicados son correctos y reproducibles. No hay anticipación de información ni errores de agregación.**
-> ### 🔴 **Una cifra —el M3 del oro— depende de una elección de método no declarada, y debe corregirse la declaración antes de redactar el capítulo.**
+> ### ✅ **HALLAZGO CERRADO (D93):** se adopta el **cierre de trimestre** como convención canónica **C8**, y el cálculo con medias se conserva publicado como prueba de sensibilidad. Detalle en [`DECISION_D93_ORO_CIERRE_TRIMESTRAL.md`](DECISION_D93_ORO_CIERRE_TRIMESTRAL.md).
 
 **Ninguna conclusión cualitativa del capítulo 19 cambia.** La única acción pendiente es
 **decidir cuál de las tres opciones del §2.3 se adopta**, y declararla en la matriz de

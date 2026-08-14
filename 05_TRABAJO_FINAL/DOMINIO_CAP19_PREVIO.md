@@ -127,8 +127,9 @@ conjunto más amplio de indicadores ayuda a interpretar el régimen presente.»*
 # 6 · 🆕 Lo que salió — incluidas las sorpresas
 
 **Lo que confirmó nuestra idea:** el **oro** se comportó claramente mejor que la bolsa en
-la caja de crecimiento débil + inflación alta *(+12 puntos reales al año, ganando en 7 de
-9 episodios)* — **y aguanta con los dos criterios de clasificación que probamos**. Es
+la caja de crecimiento débil + inflación alta *(más de **7 puntos reales al año** por encima
+de la bolsa, ganando en **7 de 9 episodios**)* — **y aguanta con los dos criterios de
+clasificación y con las dos formas de medir el precio que probamos**. Es
 nuestro resultado más sólido.
 
 **Lo que nos desmintió** — y hay que contarlo sin excusas:

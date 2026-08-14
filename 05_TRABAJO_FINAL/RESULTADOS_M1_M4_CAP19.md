@@ -2,6 +2,8 @@
 
 ## 14 de agosto de 2026 · criterio congelado aplicado · **sin redactar el capítulo**
 
+> ⚠️ **Cifras del oro actualizadas a la convención canónica C8** *(cierre de trimestre, D93)*. Las anteriores, con medias trimestrales, se conservan en [`DECISION_D93_ORO_CIERRE_TRIMESTRAL.md`](DECISION_D93_ORO_CIERRE_TRIMESTRAL.md) como prueba de sensibilidad.
+>
 > **Todo lo de este documento está calculado**, no estimado. Periodo **1958Q1-2026Q2**
 > *(273 trimestres)*; oro desde **1971Q4**. Moneda: **USD**. Fuentes: Kenneth French
 > *(CRSP 202606)*, LBMA, BLS. **Reglas R1-R8 y convenciones C1-C7 congeladas antes de
@@ -23,7 +25,7 @@
 | ⚡ Small caps | +10,46% / +7,97% | +11,32% / +6,64% | +22,09% / +19,74% | +10,19% / +4,55% |
 | ⚡ Valor | +12,35% / +9,82% | +15,92% / +11,04% | +21,48% / +19,13% | +10,94% / +5,27% |
 | ⚓ Monetario | +4,01% / +1,67% | +4,14% / **−0,24%** | +3,26% / +1,27% | +5,30% / **−0,08%** |
-| 🥇 Oro *(desde 1971Q4)* | −2,19% / −4,66% | +9,31% / +4,03% | +9,81% / +7,63% | **+16,59% / +9,99%** |
+| 🥇 Oro *(desde 1971Q4, cierre C8)* | −2,28% / −4,74% | +14,70% / +9,15% | +10,55% / +8,36% | **+11,19% / +4,89%** |
 
 **Lectura inmediata:** la caja 4 es, con diferencia, **la peor para el Motor** *(+0,95%
 real, frente a +9,83% y +15,76% en las otras dos favorables)*. Y **el efectivo pierde poder
@@ -41,7 +43,7 @@ justifica que la Reserva sea pequeña y tenga función operativa, no de inversi�
 | ⚡ Small caps | −1,86 | +1,10 | **+3,98** | **+3,60** |
 | ⚡ Valor | −0,01 | **+5,50** | **+3,38** | **+4,31** |
 | ⚓ Monetario | −8,16 | −5,78 | **−14,49** | −1,03 |
-| 🥇 Oro | −15,05 | −1,71 | −8,75 | **+12,44** |
+| 🥇 Oro *(C8)* | −15,13 | **+3,42** | −8,02 | **+7,34** |
 
 ---
 
@@ -57,7 +59,7 @@ la regla de mayoría del §9.1.
 | ⚡ Small caps | 6/13 ❌ | 6/12 ❌ | **10/13 ✅** | **7/12 ✅** |
 | ⚡ Valor | **7/13 ✅** | **8/12 ✅** | **10/13 ✅** | **9/12 ✅** |
 | ⚓ Monetario | 1/13 ❌ | 5/12 ❌ | 1/13 ❌ | 6/12 ❌ |
-| 🥇 Oro | 2/10 ❌ | 3/8 ❌ | 4/12 ❌ | **7/9 ✅** |
+| 🥇 Oro *(C8)* | 2/10 ❌ | 4/8 ❌ | 5/12 ❌ | **7/9 ✅** |
 
 ## 3.1 Aviso metodológico: M3 y M4 pueden discrepar
 
@@ -80,7 +82,7 @@ publican ambos y se dice cuál es cuál** — nunca se elige el que conviene.
 |---|---|---|---|
 | **H1 · Motor** | Rinde más en la caja 1 que en la 3 | Real: **+9,83% en caja 1 vs +15,76% en caja 3** | 🔴 **NO CONFIRMADA — resultado contrario a la hipótesis inicial en esta prueba**, bajo esta definición, estas series y este periodo |
 | **H2 · Defensivos** | Relativamente favorables en cajas 3 y 4 | Caja 4: consumo **8/12 ✅**, salud **7/12 ✅**. Caja 3: consumo **8/13 ✅**, salud 6/13 ❌ | 🟡 **Apoyo parcial**: en la caja 4 con ambos; en la caja 3 el resultado **no es estable** *(ver robustez)* |
-| **H3 · Activos Reales** | El oro es relativamente favorable en la caja 4, de forma consistente | **M3 +12,44 pp** · **M4 7/9 episodios ✅** | ✅ **Recibe apoyo en esta prueba histórica**, bajo esta definición, estas series y este periodo *(9 episodios, muestra suficiente por §9.1)* — el resultado más sólido del análisis |
+| **H3 · Activos Reales** | El oro es relativamente favorable en la caja 4, de forma consistente | **M3 +7,34 pp** *(C8; con medias, +12,44)* · **M4 7/9 episodios ✅** | ✅ **Recibe apoyo en esta prueba histórica**, bajo esta definición, estas series y este periodo *(9 episodios, muestra suficiente por §9.1)* — el resultado más sólido del análisis |
 | **H4 · Freno** | Ayuda en la caja 3, estorba en la caja 4 | Monetario: **−14,49 en caja 3** *(su peor caja)*, **−1,03 en caja 4** *(su mejor)* | 🔴 **Resultado contrario a la hipótesis inicial bajo esta medición** ⚠️ que **solo cubre la pata monetaria**, no bonos largos |
 | **H5 · Aceleración** | Comportamiento **diferenciado** por caja | Valor es favorable en **las cuatro cajas** *(7/13, 8/12, 10/13, 9/12)*; small caps en dos | 🟡 **No aparece como fenómeno específico de régimen**: en esta muestra el valor supera al Motor en las cuatro cajas |
 | **H6 · Emergentes** | — | ⛔ Sin datos | **No evaluable** *(P1)* |

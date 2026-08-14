@@ -40,6 +40,7 @@ convenciones, y se congelan ahora por el mismo principio:
 | **C5** | **M3** | Comparación frente al Motor **en rentabilidad real**, misma caja, mismos trimestres |
 | **C6** | **Trimestres aislados** | Entran en los agregados por caja; **no** cuentan como episodio para M4 *(cierre 2.1)* |
 | **C7** | **Sin selección posterior** | Se publican **todas** las series de la matriz, ganen o pierdan. Ninguna se retira después de ver el resultado |
+| **C8** 🆕 | **Nivel de precio de activos cotizados sin serie de retorno** | **Cierre del trimestre** *(última observación del periodo)*. **Convención canónica desde D93.** Afecta al oro. Motivo: homogeneidad con la construcción de los retornos financieros del resto de la matriz, que son retornos verdaderos. ⚠️ **No estaba especificada en la versión original de C1-C7; la ambigüedad la detectó la auditoría cuantitativa.** El cálculo anterior con medias trimestrales **se conserva publicado como prueba de sensibilidad**, no se borra |
 
 ---
 
@@ -54,7 +55,7 @@ convenciones, y se congelan ahora por el mismo principio:
 | ⚡ **Aceleración · valor** | Media de las dos carteras de alto valor contable | `SMALL HiBM`,`BIG HiBM` | Kenneth French | **1926-07 → 2026-06** | USD | Nominal → real | Ídem. El Robeco es gestión activa, no una cartera de factor |
 | ⚓ **Freno · monetario** | Letra del Tesoro a 1 mes | `RF` | Kenneth French *(Ibbotson hasta 2024-05; ICE BofA 1-Month T-Bill después)* | **1926-07 → 2026-06** | USD | Nominal → real | **Buen proxy de los 6 puntos de fondo monetario**; en euros el tipo habría sido otro |
 | ⚓ **Freno · renta fija** | — | ⛔ **SIN SERIE** | — | — | — | — | 🔴 **No hay retorno total de bonos largos en las fuentes descargadas.** El módulo se analiza **solo por su pata monetaria**, y se declara. **No se aproxima con rendimientos** — sería inventar retornos |
-| 🥇 **Activos Reales · oro** | Precio del oro, fixing PM de Londres | Serie diaria USD | **LBMA** *(fuente primaria oficial)* | **1968-04 → 2026-08** | USD | Nominal → real | ⚠️ **Precio administrado hasta agosto de 1971**: los trimestres anteriores se **excluyen** del análisis del oro |
+| 🥇 **Activos Reales · oro** | Precio del oro, fixing PM de Londres | Serie diaria USD, **cierre de trimestre *(C8)*** | **LBMA** *(fuente primaria oficial)* | **1968-04 → 2026-08** | USD | Nominal → real | ⚠️ **Precio administrado hasta agosto de 1971**: los trimestres anteriores se **excluyen**. Cifras con medias trimestrales conservadas como sensibilidad *(D93)* |
 | 🥇 **Activos Reales · cobre** | — | ⛔ **SIN SERIE** | — | — | — | — | 🔴 Pendiente de fuente pública gratuita con historia larga |
 | 🌍 **Emergentes** | — | ⛔ **SIN SERIE** | — | — | — | — | 🔴 **P1 confirmado.** No se sustituye por acciones EEUU: sería falsear el módulo |
 | 💥 **Asimetría** | — | ⛔ **NO ANALIZABLE** | — | *(bitcoin existe desde 2009)* | — | — | 🔴 **No se inventa historia anterior a su existencia.** No cubre ningún episodio de los años setenta, ochenta, noventa ni 2008 |

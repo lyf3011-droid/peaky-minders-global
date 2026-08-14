@@ -116,6 +116,11 @@ convenciones, y se congelan ahora por el mismo principio:</p>
 <td><strong>Sin selección posterior</strong></td>
 <td>Se publican <strong>todas</strong> las series de la matriz, ganen o pierdan. Ninguna se retira después de ver el resultado</td>
 </tr>
+<tr>
+<td><strong>C8</strong> 🆕</td>
+<td><strong>Nivel de precio de activos cotizados sin serie de retorno</strong></td>
+<td><strong>Cierre del trimestre</strong> <em>(última observación del periodo)</em>. <strong>Convención canónica desde D93.</strong> Afecta al oro. Motivo: homogeneidad con la construcción de los retornos financieros del resto de la matriz, que son retornos verdaderos. ⚠️ <strong>No estaba especificada en la versión original de C1-C7; la ambigüedad la detectó la auditoría cuantitativa.</strong> El cálculo anterior con medias trimestrales <strong>se conserva publicado como prueba de sensibilidad</strong>, no se borra</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -207,12 +212,12 @@ convenciones, y se congelan ahora por el mismo principio:</p>
 <tr>
 <td>🥇 <strong>Activos Reales · oro</strong></td>
 <td>Precio del oro, fixing PM de Londres</td>
-<td>Serie diaria USD</td>
+<td>Serie diaria USD, <strong>cierre de trimestre <em>(C8)</em></strong></td>
 <td><strong>LBMA</strong> <em>(fuente primaria oficial)</em></td>
 <td><strong>1968-04 → 2026-08</strong></td>
 <td>USD</td>
 <td>Nominal → real</td>
-<td>⚠️ <strong>Precio administrado hasta agosto de 1971</strong>: los trimestres anteriores se <strong>excluyen</strong> del análisis del oro</td>
+<td>⚠️ <strong>Precio administrado hasta agosto de 1971</strong>: los trimestres anteriores se <strong>excluyen</strong>. Cifras con medias trimestrales conservadas como sensibilidad <em>(D93)</em></td>
 </tr>
 <tr>
 <td>🥇 <strong>Activos Reales · cobre</strong></td>
