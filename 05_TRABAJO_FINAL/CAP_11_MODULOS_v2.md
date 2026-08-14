@@ -1,6 +1,6 @@
 # CAPÍTULO 11 — LOS SIETE MÓDULOS IMPLEMENTADOS
 
-## Investment Book · Parte II · **Borrador v2** · auditoría externa aplicada · 14 de agosto de 2026
+## Investment Book · Parte II · 🔷 **ESTRUCTURA CERRADA v2** · versionable por decisiones de vehículos y evidencia · 14-ago-2026 *(D86)*
 
 > **Convención:** **[MODELO]** = decisión propia · **[EVIDENCIA EXTERNA]** = requiere
 > fuente. Datos de producto: ✅ verificado en fuente primaria *(documento oficial del

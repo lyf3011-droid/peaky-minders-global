@@ -1,6 +1,6 @@
 # CAPÍTULO 10 — DEL MANDATO A LA PARAMETRIZACIÓN: LOS PESOS DE GLOBAL 10Y
 
-## Investment Book · Parte II · **Borrador v2** · auditoría externa aplicada · 14 de agosto de 2026
+## Investment Book · Parte II · 🟢 **CERRADO v2** · 14 de agosto de 2026 *(D86)*
 
 > **Convención:** **[MODELO]** = decisión propia del proyecto · **[EVIDENCIA EXTERNA]** =
 > requiere fuente. Datos de producto: ✅ fuente primaria · 🟡 secundaria, pendiente de

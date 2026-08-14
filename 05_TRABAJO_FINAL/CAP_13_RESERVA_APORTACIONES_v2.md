@@ -1,6 +1,6 @@
 # CAPÍTULO 13 — RESERVA OPERATIVA Y FLUJO DE APORTACIONES
 
-## Investment Book · Parte II · **Borrador v2** · auditoría externa aplicada · 14 de agosto de 2026
+## Investment Book · Parte II · 🟢 **CERRADO v2** · 14 de agosto de 2026 *(D86 — D47b como hueco declarado)*
 
 > **Convención:** **[MODELO]** = decisión propia · **[EVIDENCIA EXTERNA]** = requiere
 > fuente.

@@ -1,6 +1,6 @@
 # CAPÍTULO 12 — LA CAPA DE CONVICCIÓN: EL PROTOCOLO COMPLETO
 
-## Investment Book · Parte II · **Borrador v2** · auditoría externa aplicada · 14 de agosto de 2026
+## Investment Book · Parte II · 🟢 **PROTOCOLO CERRADO v2** · evidencia de implementación pendiente *(IDC + Fecha Cero)* · 14-ago-2026 *(D86)*
 
 > **Convención:** **[MODELO]** = decisión propia · **[EVIDENCIA EXTERNA]** = requiere
 > fuente.

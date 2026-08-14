@@ -1,6 +1,6 @@
 # CAPÍTULO 9 — LIMITACIONES DE PEAKY MINDERS MODULAR ARCHITECTURE
 
-## Investment Book · Parte I · **Borrador v2** · auditoría externa aplicada · 14 de agosto de 2026
+## Investment Book · Parte I · 🟢 **CERRADO v2** · 14 de agosto de 2026 *(D86)*
 
 > **Convención tipográfica:** **[MODELO]** = afirmación propia de PMMA.
 > **[EVIDENCIA EXTERNA]** = afirmación que requiere fuente.

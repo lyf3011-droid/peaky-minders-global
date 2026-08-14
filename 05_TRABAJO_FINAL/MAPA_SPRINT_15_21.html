@@ -1,0 +1,400 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAPA_SPRINT_15_21</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🗺️ MAPA DEL SPRINT 15-21 — PREPARACIÓN SIN REDACCIÓN</h1>
+<h2>14 de agosto de 2026 · Bloques A (15-18) y B (19-21)</h2>
+<blockquote>
+<p><strong>Nada de este sprint está redactado.</strong> Este mapa dice qué hay, qué falta y qué hay que
+calcular — sin inventar ningún resultado. <strong>Precondición declarada:</strong> las dos decisiones
+de <code>IMPACTO_DECISIONES_PRE_XRAY.md</code> <em>(PIMCO, Emergentes)</em> conviene cerrarlas antes del
+Bloque A, porque sus escenarios de impacto máximo regeneran el X-Ray sobre el que se
+escribe todo el bloque.</p>
+</blockquote>
+<p><strong>Leyenda:</strong> ✅ = ya disponible en el X-Ray oficial u otro documento del proyecto ·
+🔧 = requiere cálculo nuevo · 📚 = requiere evidencia externa.</p>
+<hr />
+<h1>BLOQUE A — RADIOGRAFÍA, COMPOSICIÓN, RIESGO Y CORRELACIONES (15-18)</h1>
+<h2>Capítulo 15 — El X-Ray oficial: metodología y salvedades</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pregunta que responde</strong></td>
+<td>¿Cómo se hizo la radiografía de la cartera y qué limitaciones tiene su lectura?</td>
+</tr>
+<tr>
+<td><strong>Datos disponibles</strong></td>
+<td>✅ Informe Morningstar 13-ago <em>(12 posiciones, 100% del 97%)</em> · ✅ regla de lectura ×0,7693 <em>(países/sectores sobre la parte de acciones)</em> · ✅ reescalado 97%→100 con factor ×0,97 · ✅ tabla de conciliación real↔analizado <em>(fuente de verdad)</em> · ✅ las salvedades registradas <em>(clases proxy, cobre cubierto, fechas de datos)</em></td>
+</tr>
+<tr>
+<td><strong>Cálculos necesarios</strong></td>
+<td>Ninguno — es el capítulo metodológico del bloque</td>
+</tr>
+<tr>
+<td><strong>Evidencia externa</strong></td>
+<td>📚 Ninguna imprescindible <em>(la metodología Morningstar se describe por lo observado en el propio informe, sin atribuirle internals no publicados)</em></td>
+</tr>
+<tr>
+<td><strong>Gráficos</strong></td>
+<td>Esquema del flujo cartera→reescalado→informe→conversión · tabla de salvedades</td>
+</tr>
+<tr>
+<td><strong>Dependencias</strong></td>
+<td>🔴 <strong>Las dos decisiones previas</strong> <em>(si regeneran X-Ray, este capítulo describe el nuevo)</em></td>
+</tr>
+<tr>
+<td><strong>Huecos actuales</strong></td>
+<td>Ninguno de contenido; solo la precondición</td>
+</tr>
+<tr>
+<td><strong>Fran debe poder explicar</strong></td>
+<td>Por qué el informe cubre el 97% y cómo se convierte <em>(×0,97)</em> · por qué «% de acciones» ≠ «% de cartera» <em>(×0,7693)</em> · qué es un proxy y qué se toma de él</td>
+</tr>
+</tbody>
+</table>
+<h2>Capítulo 16 — Composición: geografía, sectores, estilo y mayores posiciones</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pregunta que responde</strong></td>
+<td>¿Qué tenemos realmente — países, sectores, empresas — y coincide con lo que decidimos?</td>
+</tr>
+<tr>
+<td><strong>Datos disponibles</strong></td>
+<td>✅ EEUU 66,41% de las acciones <em>(≈51,2% del patrimonio)</em> · ✅ los 10 países · ✅ sectores <em>(tecnología 26,70% de acciones, salud 15,97…)</em> · ✅ estilo <em>(P/B 3,48 · P/E 17,87)</em> · ✅ 10 mayores posiciones <em>(oro 7,22 · NVIDIA 2,82 · Apple 2,44…)</em> · ✅ distribución de activos <em>(acciones 77,01 · efectivo neto −1,90)</em></td>
+</tr>
+<tr>
+<td><strong>Cálculos necesarios</strong></td>
+<td>🔧 <strong>Exposición emergente TOTAL</strong> <em>(bloque 7% + contenido del All-World — el dato que los caps. 6 y 11 remiten aquí)</em> · 🔧 <strong>exposición tecnológica auditada</strong> con fuente/fecha/denominador <em>(cierra la cifra histórica retirada del cap. 6)</em> · 🔧 EEUU total con y sin el tilt <em>(cuánto añade el S&amp;P 500 al ancla)</em></td>
+</tr>
+<tr>
+<td><strong>Evidencia externa</strong></td>
+<td>📚 Ninguna nueva <em>(todo sale del informe + desgloses de los fondos ya consultados)</em></td>
+</tr>
+<tr>
+<td><strong>Gráficos</strong></td>
+<td>Mapa/barras de países · barras de sectores con la doble escala <em>(% acciones / % cartera)</em> · top-10 posiciones</td>
+</tr>
+<tr>
+<td><strong>Dependencias</strong></td>
+<td>Cap. 15 <em>(metodología)</em> · decisión Emergentes <em>(escenario C lo cambia)</em></td>
+</tr>
+<tr>
+<td><strong>Huecos</strong></td>
+<td>Los tres cálculos 🔧 — factibles con datos ya en el repo</td>
+</tr>
+<tr>
+<td><strong>Fran debe poder explicar</strong></td>
+<td>«Tenemos ~la mitad del patrimonio en EEUU y es una decisión, no un accidente» · el 7% de Emergentes vs la exposición total · por qué el efectivo neto sale negativo <em>(derivados del fondo de renta fija — sin alarmismo)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Capítulo 17 — Rentabilidad y métricas de riesgo</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pregunta que responde</strong></td>
+<td>¿Cómo se ha comportado esta composición y cuánto riesgo lleva — medido, no supuesto?</td>
+</tr>
+<tr>
+<td><strong>Datos disponibles</strong></td>
+<td>✅ Las 21 cifras del informe: rentabilidad 3a 14,28% <em>(+1,31 vs índice)</em> · 5a 10,71% <em>(+2,14)</em> · volatilidad 9,61/9,94 · Sharpe 1,14/0,88 · alfa 2,77/3,42 · beta 0,84/0,78 · R² 93,77/92,72 · IR 0,50/0,64 · TE 3,00/3,74 · ✅ peores ventanas <em>(1 año −7,96%; ninguna ventana de 3/5 años negativa)</em> · ✅ salvedad del All-World a 5 años <em>(registrada: métricas 3a con confianza, 5a con advertencia)</em></td>
+</tr>
+<tr>
+<td><strong>Cálculos necesarios</strong></td>
+<td>🔧 <strong>Sortino</strong> <em>(pendiente de la rúbrica — necesita serie de retornos; declarar método)</em> · 🔧 qué métricas admiten agregación lineal y cuáles no <em>(desarrollo prometido por el cap. 6 §6.8)</em></td>
+</tr>
+<tr>
+<td><strong>Evidencia externa</strong></td>
+<td>📚 Definiciones citables de las métricas <em>(pueden resolverse con el glosario — anexo G)</em></td>
+</tr>
+<tr>
+<td><strong>Gráficos</strong></td>
+<td>Tabla 3a/5a con el benchmark · barras de peores ventanas</td>
+</tr>
+<tr>
+<td><strong>Dependencias</strong></td>
+<td>Cap. 15 · decisión PIMCO <em>(escenario B altera las métricas)</em></td>
+</tr>
+<tr>
+<td><strong>Huecos</strong></td>
+<td>Sortino · la salvedad 5a sigue PENDIENTE DE VERIFICACIÓN <em>(cómo agrega Morningstar cuando una posición no tiene serie completa — no afirmar)</em></td>
+</tr>
+<tr>
+<td><strong>Fran debe poder explicar</strong></td>
+<td>Qué significan beta 0,84 y alfa en lenguaje llano · por qué usamos 3 años con confianza y 5 con salvedad · que rentabilidad pasada ≠ promesa</td>
+</tr>
+</tbody>
+</table>
+<h2>Capítulo 18 — Correlaciones, concentración y divisa</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pregunta que responde</strong></td>
+<td>¿Cuántas fuentes de comportamiento independientes hay de verdad, y qué pasa con el dólar?</td>
+</tr>
+<tr>
+<td><strong>Datos disponibles</strong></td>
+<td>✅ Matriz de correlaciones del informe <em>(10 posiciones)</em>: S&amp;P↔All-World <strong>0,97</strong> · oro↔Motor ~0,01 · monetario ~0 · Robeco↔Multifactor y parejas de Aceleración elevadas · ✅ concentración top-10 · ⚠️ ventana/frecuencia de la matriz <strong>no documentadas por el informe</strong> — publicar con esa salvedad</td>
+</tr>
+<tr>
+<td><strong>Cálculos necesarios</strong></td>
+<td>🔧 <strong>Riesgo de divisa cuantificado</strong>: % del patrimonio con exposición económica a USD <em>(sumando fondos sin cubrir)</em> + sensibilidad simple <em>(«si el dólar cae X%, el efecto directo aproximado es…» — con supuestos declarados)</em> · 🔧 lectura funcional de la matriz <em>(funcional ≠ estadístico — cierra I4 del cap. 9)</em></td>
+</tr>
+<tr>
+<td><strong>Evidencia externa</strong></td>
+<td>📚 Ninguna imprescindible; 📚 opcional: referencia sobre correlaciones que suben en crisis <em>(si se afirma, citar)</em></td>
+</tr>
+<tr>
+<td><strong>Gráficos</strong></td>
+<td>Matriz coloreada · mapa de «cuántas fuentes reales» · barra de exposición por divisa</td>
+</tr>
+<tr>
+<td><strong>Dependencias</strong></td>
+<td>Cap. 16 <em>(composición por divisa sale de sus desgloses)</em> · decisión PIMCO <em>(cambia la pata cubierta a EUR)</em></td>
+</tr>
+<tr>
+<td><strong>Huecos</strong></td>
+<td>🔴 <strong>Todo el análisis de divisa es cálculo nuevo</strong> · la ventana de la matriz</td>
+</tr>
+<tr>
+<td><strong>Fran debe poder explicar</strong></td>
+<td>«El 0,97 del Motor es la prueba del tilt, no un fallo» · «el oro es lo que menos se parece a todo lo demás» · cuánto pesa el dólar y por qué no lo cubrimos <em>(coste de cobertura, horizonte)</em> — sin prometer que no duela</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>BLOQUE B — CUATRO CAJAS, STRESS HISTÓRICO Y ESCENARIOS (19-21)</h1>
+<h2>Capítulo 19 — El marco macro: cuadrante crecimiento × inflación</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pregunta que responde</strong></td>
+<td>¿Qué cubre la cartera en cada clima económico — y hay alguna caja huérfana?</td>
+</tr>
+<tr>
+<td><strong>Datos disponibles</strong></td>
+<td>✅ Solo el <strong>mapa módulo→régimen del cap. 4 como HIPÓTESIS de diseño</strong> <em>(sin validar)</em> · ✅ la estructura conceptual <em>(Browne/All Weather, cap. 8)</em></td>
+</tr>
+<tr>
+<td><strong>Cálculos necesarios</strong></td>
+<td>🔧 <strong>TODO ES CONSTRUCCIÓN NUEVA:</strong> definir las cuatro cajas · <strong>datar históricamente</strong> los regímenes <em>(qué años fueron qué caja — con criterio explícito: crecimiento e inflación vs expectativas)</em> · asignar cada módulo a su(s) caja(s) con justificación · verificar que ninguna caja queda huérfana <em>(la estanflación es la crítica)</em></td>
+</tr>
+<tr>
+<td><strong>Evidencia externa</strong></td>
+<td>📚 <strong>Series macro históricas</strong> <em>(inflación y crecimiento — FRED/OCDE/INE como fuentes primarias a citar)</em> · 📚 comportamiento por régimen de clases de activo <em>(citar, no afirmar de memoria)</em></td>
+</tr>
+<tr>
+<td><strong>Gráficos</strong></td>
+<td>🔑 <strong>El cuadrante 2×2 con los módulos situados</strong> <em>(el visual más importante de la Parte IV)</em> · línea temporal de regímenes datados</td>
+</tr>
+<tr>
+<td><strong>Dependencias</strong></td>
+<td>Ninguna interna al bloque — puede empezar en paralelo al Bloque A</td>
+</tr>
+<tr>
+<td><strong>Huecos</strong></td>
+<td>🔴 <strong>La dimensión 11 de la rúbrica entera: 0/5.</strong> El capítulo ES el hueco</td>
+</tr>
+<tr>
+<td><strong>Fran debe poder explicar</strong></td>
+<td>Las cuatro cajas en 30 segundos con un dibujo · qué módulo defiende la estanflación <em>(oro/cobre + revisar linkers)</em> · que el mapa es diseño verificado con datos, no adivinación</td>
+</tr>
+</tbody>
+</table>
+<h2>Capítulo 20 — Stress por regímenes históricos</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pregunta que responde</strong></td>
+<td>¿Qué le habría pasado a esta cartera en 1973-74, 2000-02, 2008-09 y 2022 — con shocks auditados?</td>
+</tr>
+<tr>
+<td><strong>Datos disponibles</strong></td>
+<td>⚠️ <code>D47a</code> <strong>PROVISIONAL</strong>: método verificado <em>(reproduce el −43,17% publicado)</em> pero <strong>tres shocks heredados de bloques que cambiaron</strong> <em>(Motor ACWI vs composición actual · Emergentes «EM+Japón» · Aceleración «solo small caps»)</em> · ✅ el −43,45% como cifra provisional declarada · ✅ peores ventanas del X-Ray <em>(insuficientes: solo 2015-2026)</em></td>
+</tr>
+<tr>
+<td><strong>Cálculos necesarios</strong></td>
+<td>🔧 <strong>AUDITAR LOS SHOCKS</strong> <em>(D47a — el pendiente rojo)</em>: shock por bloque coherente con la composición v1.0 · 🔧 los <strong>cuatro episodios por régimen</strong> con series largas <em>(el X-Ray no llega a 1973 ni 2000: hacen falta índices, no productos)</em> · 🔧 el caso <strong>2022</strong> <em>(acciones y bonos cayendo a la vez — el que rompe al 60/40)</em></td>
+</tr>
+<tr>
+<td><strong>Evidencia externa</strong></td>
+<td>📚 <strong>Series históricas largas</strong> <em>(retornos por clase de activo desde ~1970: Damodaran/Shiller como fuentes citables)</em> · 📚 caídas de los episodios con fuente</td>
+</tr>
+<tr>
+<td><strong>Gráficos</strong></td>
+<td>Barras por episodio y por módulo · la cascada del escenario severo</td>
+</tr>
+<tr>
+<td><strong>Dependencias</strong></td>
+<td><strong>Cap. 19</strong> <em>(los episodios se eligen por régimen)</em> · decisión PIMCO <em>(cambia la pata de bonos en 2022)</em></td>
+</tr>
+<tr>
+<td><strong>Huecos</strong></td>
+<td>🔴 D47a entero · 🔴 los cuatro episodios · <strong>prohibido publicar el −43,45% como definitivo</strong></td>
+</tr>
+<tr>
+<td><strong>Fran debe poder explicar</strong></td>
+<td>«Nuestra pérdida estimada en un escenario tipo 2008 es provisional y por qué» · qué pasó en 2022 y por qué nos importa · que el estrés es diseño, no predicción</td>
+</tr>
+</tbody>
+</table>
+<h2>Capítulo 21 — Escenarios de despliegue de Convicción</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pregunta que responde</strong></td>
+<td>¿Cómo puede evolucionar la capa de Convicción en 3 años según lo que ofrezca el mercado — sin prometer ninguno?</td>
+</tr>
+<tr>
+<td><strong>Datos disponibles</strong></td>
+<td>✅ El alcance fijado <em>(D53/protocolo)</em>: cuatro escenarios — sin oportunidades · lento · central · gran dislocación · ✅ la mecánica de financiación <em>(aportación + Reserva, cap. 13)</em> · ✅ el techo del despliegue <em>(gradual por diseño; ~11 meses para el 14% completo)</em></td>
+</tr>
+<tr>
+<td><strong>Cálculos necesarios</strong></td>
+<td>🔧 <strong>D53 entero</strong>: la aritmética de cada escenario <em>(cuánto capital entra a la capa por año con la mecánica real)</em> · 🔧 el impacto proporcional en el presupuesto de alfa <em>(usando la regla acotada del cap. 12)</em></td>
+</tr>
+<tr>
+<td><strong>Evidencia externa</strong></td>
+<td>📚 Frecuencia histórica de correcciones del mercado <em>(si se cita, con fuente — es el dato «cada cuánto hay rebajas»)</em></td>
+</tr>
+<tr>
+<td><strong>Gráficos</strong></td>
+<td>Las cuatro sendas de despliegue <em>(área apilada Motor ordinario/Convicción)</em></td>
+</tr>
+<tr>
+<td><strong>Dependencias</strong></td>
+<td>Cap. 12 cerrado ✅ · cap. 13 cerrado ✅ · <strong>NO depende de IDC concretos</strong> <em>(escenarios de mecánica, no de empresas — pero sin Fecha Cero no puede ilustrarse con candidatas reales)</em></td>
+</tr>
+<tr>
+<td><strong>Huecos</strong></td>
+<td>🔴 D53 entero · la ilustración con candidatas espera a la Fecha Cero</td>
+</tr>
+<tr>
+<td><strong>Fran debe poder explicar</strong></td>
+<td>«No sabemos cuál escenario ocurrirá y no prometemos ninguno» · por qué el despliegue completo tarda ~un año de oportunidades · que Convicción al 0% en 3 años seguiría siendo un resultado válido</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>📊 RESUMEN DEL SPRINT</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Con el X-Ray existente</th>
+<th>Cálculo nuevo</th>
+<th>Evidencia externa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>15</strong></td>
+<td>✅ ~100%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>16</strong></td>
+<td>✅ ~70%</td>
+<td>🔧 3 cálculos <em>(EM total, tech auditada, EEUU con/sin tilt)</em></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>17</strong></td>
+<td>✅ ~80%</td>
+<td>🔧 Sortino + reglas de agregación</td>
+<td>📚 glosario</td>
+</tr>
+<tr>
+<td><strong>18</strong></td>
+<td>✅ ~50%</td>
+<td>🔴 <strong>divisa entera</strong> + lectura funcional</td>
+<td>📚 opcional</td>
+</tr>
+<tr>
+<td><strong>19</strong></td>
+<td>❌ ~5%</td>
+<td>🔴 <strong>construcción completa</strong></td>
+<td>📚 series macro</td>
+</tr>
+<tr>
+<td><strong>20</strong></td>
+<td>❌ ~10%</td>
+<td>🔴 <strong>D47a + 4 episodios</strong></td>
+<td>📚 series largas</td>
+</tr>
+<tr>
+<td><strong>21</strong></td>
+<td>✅ ~40% <em>(mecánica)</em></td>
+<td>🔴 <strong>D53 entero</strong></td>
+<td>📚 opcional</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Orden natural:</strong> decisiones previas → Bloque A <em>(15→16→17→18)</em> con el 19 arrancando en
+paralelo <em>(no depende del X-Ray)</em> → 20 → 21. <strong>El Bloque B es donde viven los tres rojos
+de la rúbrica</strong> <em>(dimensiones 5 y 11)</em>.</p></div></body></html>
