@@ -148,11 +148,27 @@ hasta ese capítulo ninguna celda debe leerse como resultado medido:
 |---|---|---|---|---|
 | Motor | **favorable** | mixto | adverso | adverso |
 | Defensivos | favorable | mixto | mixto | **menos adverso** |
-| Aceleración | **favorable** | mixto | adverso | adverso |
+| Aceleración | — | — | — | — |
 | Emergentes | favorable | **mixto/favorable** | adverso | adverso |
 | Freno | neutro | adverso | mixto | **favorable** |
 | Activos Reales | neutro | **favorable** | **favorable** | mixto |
 | Asimetría | *idiosincrático — no asignable a régimen* | | | |
+
+> **[MODELO — actualizado tras el capítulo 19 · D98]** **La fila de Aceleración aparece sin
+> valor en las cuatro columnas.** El motivo: **la prueba histórica del capítulo 19 no
+> proporciona apoyo suficiente para justificar Aceleración como una exposición
+> específicamente orientada a determinados regímenes macroeconómicos.** Por ello, la
+> justificación principal del módulo se mantiene en la búsqueda de **primas o fuentes
+> adicionales de rentabilidad esperada a largo plazo**, no en una función táctica por
+> régimen.
+>
+> ⚠️ **Esto no equivale a afirmar que Aceleración sea independiente del régimen
+> económico.** La prueba realizada no permite una conclusión tan general: **es una retirada
+> de justificación, no una afirmación contraria.** El detalle está en el capítulo 19 §19.12
+> y §19.13 *(C-3)*.
+>
+> **Alcance:** este cambio afecta **solo a la fila de Aceleración**. La función del módulo,
+> su peso, sus vehículos y las demás filas del mapa permanecen sin modificar.
 
 ---
 

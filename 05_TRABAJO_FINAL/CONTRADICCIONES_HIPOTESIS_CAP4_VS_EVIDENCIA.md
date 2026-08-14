@@ -36,7 +36,7 @@
 | **2** | Acotar Defensivos a inflación alta; retirar la afirmación para inflación baja | 🟠 Media |
 | **3** | Mantener Activos Reales, ajustando el lenguaje a «recibe apoyo» | 🟢 Menor |
 | **4** | Marcar Freno como «no evaluable en su forma original» | 🟠 Media |
-| **5** | **Retirar la lectura por regímenes de Aceleración** y dejar solo el argumento de prima | 🔴 **La más sustantiva** |
+| **5** | **Retirar la lectura por regímenes de Aceleración** y dejar solo el argumento de prima | ✅ **EJECUTADA el 14-ago (D98 decisión · D99 ejecución)** — con la calibración de no afirmar independencia del régimen |
 | **6** | Añadir al mapa la columna «nivel de apoyo empírico» con los resultados del cap. 19 | 🟢 Menor |
 
 ## 2.1 Lo que estas contradicciones NO significan

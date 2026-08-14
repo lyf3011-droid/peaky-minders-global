@@ -1,9 +1,11 @@
-# 🩹 PARCHE P-1 — PREPARADO, **NO EJECUTADO**
+# 🩹 PARCHE P-1 — ✅ **EJECUTADO**
 
 ## Aceleración: retirar la justificación por régimen · D98 · 14 de agosto de 2026
 
-> **Decisión tomada** *(P-1 aceptado con calibración)*. **Texto preparado y pendiente de tu
-> orden de ejecución.** El capítulo 4 **no se ha modificado**.
+> ✅ **EJECUTADO el 14-ago-2026 (D99).** El capítulo 4 lleva las dos ediciones aplicadas y
+> verificadas. **Trazabilidad de commits:** `d208500` es el **commit sustantivo de
+> preparación (D98)**; `cca60da` es **únicamente la reparación posterior de un enlace del
+> registro**, sin contenido sustantivo.
 
 ---
 
@@ -17,14 +19,21 @@
 | Aceleración | **favorable** | mixto | adverso | adverso |
 ```
 
-**DESPUÉS** *(propuesto)*:
+**DESPUÉS** *(ejecutado)*:
 
 ```
-| Aceleración | *sin apoyo suficiente para una lectura por régimen — ver nota* | | | |
+| Aceleración | — | — | — | — |
 ```
 
-*(Formato idéntico al que ya usa la fila «Asimetría», que también atraviesa las cuatro
-columnas con una nota en cursiva. No se introduce ninguna convención nueva.)*
+⚠️ **Cambio respecto a la propuesta inicial, por el control 1.** Se comprobó cómo renderiza
+realmente el formato heredado de «Asimetría»: **el texto queda dentro de la primera columna
+de régimen y las otras tres salen vacías**, de modo que **puede leerse como si la nota
+afectara solo a «Crecim.↑ Infl.↓»**. Es ambiguo. Se adopta por tanto la alternativa
+indicada: **`—` en las cuatro celdas y la explicación completa en la nota inferior**.
+
+🟡 **Observación registrada, no ejecutada:** la fila «Asimetría» arrastra esa misma
+ambigüedad de formato. **No se toca** —está fuera del alcance de P-1— pero conviene
+resolverla en la maquetación final.
 
 ---
 
@@ -82,4 +91,6 @@ columnas con una nota en cursiva. No se introduce ninguna convención nueva.)*
 > **Ni peso, ni vehículos, ni función del módulo, ni las otras seis filas del mapa.**
 > **P-2 a P-6 siguen sin tocar.**
 
-**Estado: PREPARADO — pendiente de orden explícita de ejecución.**
+**Estado: ✅ EJECUTADO (D99).** Verificaciones superadas: función intacta · sin pesos en el
+capítulo 4 · vehículos intactos · las otras seis filas del mapa intactas · capítulo 19
+intacto · **P-2 a P-6 sin ejecutar**.
