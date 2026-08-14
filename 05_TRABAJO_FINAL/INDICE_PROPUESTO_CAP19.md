@@ -26,11 +26,12 @@
 | **19.11** | **Prueba de robustez** — las dos clasificaciones, el desacuerdo del 16,1% y qué conclusiones sobreviven | `ROBUSTEZ_M1_M4_CAP19` | 2 pág. |
 | **19.12** | **Evaluación de las hipótesis** — cuáles reciben apoyo, cuáles resultan contrarias, cuáles no son evaluables. **Con el lenguaje calibrado: «recibe apoyo en esta prueba», nunca «demostrada»** | `RESULTADOS` §4 · `CONTRADICCIONES` | 2 pág. |
 | **19.13** | **Las contradicciones con nuestro propio diseño** — H1, H4 y H5, con sus explicaciones marcadas como **hipótesis interpretativas** | `CONTRADICCIONES_HIPOTESIS_CAP4_VS_EVIDENCIA` | 2 pág. |
+| **19.13b** | **Del análisis histórico a una experiencia real: el historial de VIGÍA** — la secuencia v1.1→v1.8 con fecha, escenario, semáforo y confianza. **No se usa para demostrar rentabilidad ni para validar R1-R6**: se usa para enseñar **trazabilidad, cambio de opinión con evidencia, registro de errores, intervención humana y no reescritura retrospectiva**. Cierra la distinción entre los **dos historiales** *(el operativo de 2026 y el macro de 1958-2026)* | `ARQUITECTURA_MACRO…` §C.2-C.3 | 1,5 pág. |
 | **19.14** | **Qué NO demuestra este capítulo** — las seis negaciones: no predice, no es causal, no es nuestra cartera, no incluye divisa, no cubre tres módulos, no es señal | `RESULTADOS` §6 | 1 pág. |
 | **19.15** | **Consecuencias para la cartera** — qué se propone corregir del capítulo 4 y qué se mantiene, **sin ejecutarlo aquí** | `CONTRADICCIONES` §2 | 1 pág. |
 | **19.16** | **Fuentes, anexos y reproducibilidad** — series con identificador y fecha, los dos CSV y el script | Matriz §3 · anexos | ½ pág. |
 
-**Total estimado: 24-25 páginas** · 4 tablas grandes, 2 diagramas *(cuadrante y
+**Total estimado: 26 páginas** · 4 tablas grandes, 2 diagramas *(cuadrante y
 trazabilidad)*, 3 gráficos *(barras por caja, cobertura, robustez)*.
 
 ---

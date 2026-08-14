@@ -133,15 +133,75 @@ La clase dejó **criterio**. Nosotros construimos **sistema** en el módulo `cla
 | **Seis regímenes R1-R6** | `R1 Goldilocks · R2 Reflación · R3 Estanflación · R4 Recesión · R5 Deflación/crisis · R6 Recuperación`, con condiciones de activación, activos ganadores y perdedores y **señales de transición** |
 | **Conexión a datos** | Conectores hacia fuentes reales *(FRED, BCE y otros)*, con estado de verificación documentado |
 
-## C.2 Una honestidad necesaria sobre el estado de VIGÍA
+## C.2 El estado real de VIGÍA — **sí tiene historial operativo**
 
-`[DESARROLLO PROPIO HARVISS/VIGÍA]` Los documentos del módulo se declaran a sí mismos
-**«versión 0.1 — metodología documentada, no operativa»**, y la correspondencia exacta
-entre los seis regímenes y los cuatro colores del semáforo figura como **decisión
-metodológica pendiente**. **El capítulo 19 debe decirlo así**: VIGÍA es un marco
-construido y documentado, no un sistema con historial de aciertos.
+`[DESARROLLO PROPIO HARVISS/VIGÍA]` La documentación temprana *(5-jun-2026)* registraba
+`claude-macro` como «registrado — no operativo — madurez 1». **Esa descripción quedó
+superada por la evolución posterior del sistema.** La formulación correcta es:
 
-## C.3 🚫 Por qué las cuatro cajas y los seis regímenes **NO se fusionan**
+> ### **VIGÍA es un sistema con historial operativo corto pero real y versionado, iniciado
+> ### en junio de 2026.** No posee un historial de mercado de largo plazo suficiente para
+> ### validar estadísticamente sus seis regímenes, **pero sí dispone de una secuencia real
+> ### de lecturas macro fechadas** que permite auditar cómo evolucionó el juicio y cómo se
+> ### corrigieron los errores.
+
+### C.2.1 El historial de lecturas oficiales
+
+| Versión | Fecha | Escenario | Semáforo | Confianza |
+|---|---|---|---|---|
+| **v1.1** | 21/06 | Liquidez / concentración | 🟡 AMARILLO | Baja |
+| **v1.2** | 21/06 | R2 Reflación | 🟡 AMARILLO | Media |
+| **v1.3** | 23/06 | R2 Reflación | 🟡 AMARILLO | **Alta** |
+| **v1.4** | 01/07 | R2 Reflación | 🟡 AMARILLO | Medio-alta |
+| **v1.5** | 02/07 | R2 Reflación | 🟡 AMARILLO | Medio-alta |
+| **v1.6** | 16/07 | En transición | 🟡 AMARILLO | Media · **cerrada por Fran** |
+| **v1.7** | 31/07 | En transición + shock | 🟠 **NARANJA** | Media |
+| **v1.8** | 07/08 | En transición | 🟡 AMARILLO | Media |
+
+*(Fuente: historial de lecturas oficiales del `Glosario Macro — 2026-08-07`. Los borradores
+de régimen correspondientes a v1.4, v1.5, v1.6 y v1.8 están archivados en el módulo y son
+verificables uno a uno.)*
+
+Existe además **`MACRO_DECODE_001_R2_REFLACION_2026-06-23`**, un output operativo completo
+con clasificación de régimen, causalidad propuesta, semáforo, transmisión a cartera, reglas
+y catalizadores de seguimiento. 🟡 *(Citado en el glosario; el archivo no se localizó en la
+carpeta del módulo durante esta revisión — pendiente de ubicar antes de citarlo en el
+libro.)*
+
+### C.2.2 Lo que el historial demuestra — y lo que no
+
+| ✅ **Sí demuestra** | ❌ **No demuestra** |
+|---|---|
+| **Trazabilidad**: cada lectura con fecha, escenario, semáforo y nivel de confianza | **Rentabilidad**: no hay ninguna medición de resultado económico |
+| **Cambio de opinión con evidencia**: el paso a NARANJA por un shock *(v1.7)* y la vuelta a AMARILLO *(v1.8)* cuando los tres indicadores que lo justificaban revirtieron | **Validez estadística de R1-R6**: ocho lecturas en tres meses no validan seis regímenes |
+| **Registro de errores**: una premisa sobre política monetaria identificada después como falsa, y un dato de actividad mal fechado y corregido | **Capacidad predictiva**: ninguna lectura se evalúa contra lo que ocurrió después |
+| **Intervención humana**: incorporación posterior del campo de decisión humana; una lectura **cerrada explícitamente por Fran** | — |
+| **No reescritura retrospectiva**: las lecturas antiguas se conservan como se emitieron | — |
+
+> **Es evidencia operativa del proceso, no evidencia estadística de rentabilidad.** Y así
+> debe presentarse ante el tribunal, sin subir ni bajar el listón.
+
+⚠️ **Discrepancia menor registrada, no armonizada:** la numeración del historial del
+glosario *(v1.1, v1.2, v1.3 el 21 y 23 de junio)* no coincide exactamente con los nombres
+de archivo de los borradores de esas fechas *(v0.1, v0.2, v1.0)*. **Conviene reconciliarla
+antes de publicar la tabla en el libro** — no se ha unificado por iniciativa propia.
+
+## C.3 🚨 Dos historiales distintos que NO se fusionan
+
+Éste es el segundo error que hay que evitar, y es distinto del de §C.4:
+
+| | **Historial de VIGÍA** | **Historial de las cuatro cajas** |
+|---|---|---|
+| **Periodo** | **2026** *(junio → agosto)* | **1958-2026** |
+| **Qué contiene** | 8 lecturas macro fechadas con su semáforo y confianza | 273 trimestres clasificados y sus retornos |
+| **Pregunta que responde** | *¿Cómo interpretamos el entorno **en tiempo real** y cómo cambiamos de opinión?* | *¿Cómo se comportaron históricamente distintas exposiciones bajo distintas combinaciones de crecimiento e inflación?* |
+| **Tipo de evidencia** | **Operativa: del proceso** | **Estadística: del comportamiento de activos** |
+| **Qué NO puede hacer** | Validar los seis regímenes ni medir rentabilidad | Decir dónde estamos hoy |
+
+**Ninguno sustituye al otro y sumarlos no produce nada.** Uno enseña **cómo pensamos**; el
+otro, **cómo se comportaron los activos**.
+
+## C.4 🚫 Por qué las cuatro cajas y los seis regímenes **NO se fusionan**
 
 Es tentador emparejarlos — **y sería un error metodológico**. La coincidencia de nombres
 es superficial:

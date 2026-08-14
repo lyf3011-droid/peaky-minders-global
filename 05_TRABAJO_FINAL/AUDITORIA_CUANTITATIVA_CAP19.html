@@ -1,0 +1,193 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AUDITORIA_CUANTITATIVA_CAP19</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🔬 AUDITORÍA CUANTITATIVA — RESULTADOS DEL CAPÍTULO 19</h1>
+<h2>14 de agosto de 2026 · verificación independiente de los cálculos</h2>
+<blockquote>
+<p><strong>Objetivo:</strong> comprobar que los números publicados son correctos, que no hay
+anticipación de información, y que las conclusiones no dependen de detalles de
+implementación no declarados. <strong>Se ejecutó con código independiente del original.</strong></p>
+</blockquote>
+<hr />
+<h1>1. Comprobaciones superadas</h1>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Prueba</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A1</strong></td>
+<td><strong>Datos ausentes en las series de Fama-French</strong> <em>(código −99,99)</em></td>
+<td>✅ <strong>0 de 1.200 meses</strong>. No se descartó ni un dato: el filtro defensivo del script no llegó a actuar</td>
+</tr>
+<tr>
+<td><strong>A2</strong></td>
+<td><strong>Recálculo independiente del Motor</strong> por caja, rehaciendo la cadena mensual → trimestre → caja</td>
+<td>✅ <strong>Coincidencia exacta</strong> con lo publicado: +12,36/+9,83 · +10,18/+5,54 · +18,04/+15,76 · +6,39/+0,95</td>
+</tr>
+<tr>
+<td><strong>A4</strong></td>
+<td><strong>Tamaños de muestra</strong></td>
+<td>✅ 273 trimestres clasificados, 273 con retorno del Motor, <strong>218 con oro</strong> <em>(coherente con el arranque en 1971Q4)</em></td>
+</tr>
+<tr>
+<td><strong>A5</strong></td>
+<td><strong>Control de anticipación</strong> <em>(look-ahead)</em></td>
+<td>✅ La ventana termina <strong>estrictamente en el trimestre anterior</strong> al clasificado. Verificado sobre el dato: 1968Q2 usa hasta 1968Q1</td>
+</tr>
+<tr>
+<td><strong>A6</strong></td>
+<td><strong>Coherencia interna de la inflación por caja</strong></td>
+<td>✅ El orden sale <strong>3 &lt; 1 &lt; 2 &lt; 4</strong> <em>(+1,97% · +2,30% · +4,39% · +5,39%)</em>, exactamente como exige la construcción de las cajas. Si no saliera así, habría un error de clasificación</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>2. 🔴 HALLAZGO MATERIAL — el oro es sensible al método de cálculo del precio</h1>
+<h2>2.1 Qué se ha encontrado</h2>
+<p>Las series de acciones son <strong>retornos verdaderos compuestos</strong>. El oro, en cambio, se
+construyó a partir de <strong>medias de precios</strong> <em>(media de los precios diarios de cada mes, y
+después media de los tres meses del trimestre)</em>. <strong>Las convenciones C1-C7 no especificaron
+qué nivel de precio usar para un activo cotizado — es un hueco del criterio congelado.</strong></p>
+<p><strong>Prueba de sensibilidad, con el mismo periodo y la misma clasificación:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Método de precio</th>
+<th style="text-align: right;">Retorno real del oro en la caja 4</th>
+<th style="text-align: right;"><strong>M3</strong></th>
+<th style="text-align: center;"><strong>M4</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Media del trimestre</strong> <em>(el usado y publicado)</em></td>
+<td style="text-align: right;"><strong>+16,59%</strong></td>
+<td style="text-align: right;"><strong>+12,44 pp</strong></td>
+<td style="text-align: center;"><strong>7/9</strong></td>
+</tr>
+<tr>
+<td><strong>Cierre del trimestre</strong> <em>(control)</em></td>
+<td style="text-align: right;"><strong>+11,19%</strong></td>
+<td style="text-align: right;"><strong>+7,34 pp</strong></td>
+<td style="text-align: center;"><strong>7/9</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>2.2 Qué significa — y qué no</h2>
+<p><strong>La conclusión de H3 no cambia: el oro sigue siendo relativamente favorable en la caja 4
+con los dos métodos, y con la misma consistencia entre episodios (7 de 9).</strong> Lo que cambia
+es <strong>la magnitud: de +12,44 a +7,34 puntos</strong> — una diferencia importante que <strong>no puede
+publicarse sin declarar</strong>.</p>
+<p>La causa es conocida: promediar precios <strong>suaviza</strong> la serie y, en un activo con tendencia
+fuerte dentro del periodo <em>(el oro en los años setenta)</em>, la media del trimestre puede
+recoger más subida que la comparación de cierres. <strong>No es un error de cálculo, es una
+elección de método que no estaba declarada.</strong></p>
+<h2>2.3 Qué NO he hecho</h2>
+<p><strong>No he sustituido la cifra publicada por la que más me gusta.</strong> Cambiar el método después
+de ver los resultados es exactamente lo que R8 prohíbe. Las dos cifras quedan sobre la
+mesa y <strong>la decisión es del equipo</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Opción</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td><strong>Publicar el cierre de trimestre</strong> como principal <em>(homogéneo con las series de acciones, que son retornos verdaderos)</em> y la media como sensibilidad</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>Mantener la media y publicar el cierre como sensibilidad, declarando el sesgo</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>Publicar <strong>ambas cifras en el cuerpo del capítulo</strong> siempre que se cite el oro</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Recomendación:</strong> la opción <strong>A</strong>, por coherencia con el resto de series — pero
+<strong>cualquiera de las tres es defendible si se declara</strong>. La opción que <strong>no</strong> es
+defendible es publicar solo +12,44 sin mencionar que con cierres sale +7,34.</p>
+</blockquote>
+<hr />
+<h1>3. Efecto sobre las conclusiones ya publicadas</h1>
+<table>
+<thead>
+<tr>
+<th>Conclusión</th>
+<th>¿Afectada?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>H3 recibe apoyo</strong> <em>(oro favorable en caja 4, consistente)</em></td>
+<td>✅ <strong>Se mantiene con los dos métodos.</strong> Solo cambia la magnitud</td>
+</tr>
+<tr>
+<td><strong>H3 robusta a las dos clasificaciones</strong></td>
+<td>✅ Sin cambios — la prueba de robustez afecta al umbral macro, no al precio del oro</td>
+</tr>
+<tr>
+<td><strong>H1, H4, H5</strong> <em>(los tres resultados contrarios)</em></td>
+<td>✅ <strong>Sin efecto</strong>: no dependen del oro</td>
+</tr>
+<tr>
+<td><strong>H7 · cobertura</strong></td>
+<td>✅ Sin efecto: el oro sigue cubriendo la caja 4 con los dos métodos</td>
+</tr>
+<tr>
+<td><strong>M1/M2/M3/M4 de todos los demás activos</strong></td>
+<td>✅ <strong>Sin efecto</strong>: son retornos verdaderos desde el origen</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>4. Limitaciones que la auditoría confirma pero no puede resolver</h1>
+<ol>
+<li><strong>Sincronía sin desfases</strong> <em>(C1)</em>: mide coincidencia, no causa. Estructural.</li>
+<li><strong>Todo en dólares</strong> <em>(C4)</em>: un inversor en euros habría obtenido otra cosa.</li>
+<li><strong>Proxies académicos sin costes ni impuestos</strong>: los retornos publicados son
+   <strong>superiores</strong> a los que habría obtenido un inversor real, en todos los activos por
+   igual — el sesgo afecta a los niveles, no tanto a las comparaciones.</li>
+<li><strong>Tres módulos sin datos</strong>: Emergentes, Asimetría y la renta fija con duración.</li>
+</ol>
+<hr />
+<h1>5. Veredicto</h1>
+<blockquote>
+<h3>✅ <strong>Los cálculos publicados son correctos y reproducibles. No hay anticipación de información ni errores de agregación.</strong></h3>
+<h3>🔴 <strong>Una cifra —el M3 del oro— depende de una elección de método no declarada, y debe corregirse la declaración antes de redactar el capítulo.</strong></h3>
+</blockquote>
+<p><strong>Ninguna conclusión cualitativa del capítulo 19 cambia.</strong> La única acción pendiente es
+<strong>decidir cuál de las tres opciones del §2.3 se adopta</strong>, y declararla en la matriz de
+series junto a C1-C7.</p></div></body></html>

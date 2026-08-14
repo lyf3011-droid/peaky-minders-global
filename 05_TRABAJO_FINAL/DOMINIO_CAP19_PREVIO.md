@@ -85,9 +85,22 @@ por tipo, darles ficha homogénea con sus errores típicos, convertir «acumulac
 señales» en procedimiento, y añadir un **semáforo de cuatro colores** y **seis regímenes
 R1-R6**.
 
-⚠️ **Honestidad obligatoria:** VIGÍA está documentado como **versión 0.1, no operativa**.
-Es un marco construido, **no un sistema con historial de aciertos** — y si te preguntan,
-se dice.
+### 🆕 Y VIGÍA sí ha funcionado de verdad — con historial
+
+No es solo un marco escrito: **desde junio de 2026 hay ocho lecturas oficiales fechadas**,
+cada una con su escenario, su semáforo y su nivel de confianza — de la v1.1 a la v1.8. En
+julio subió a **NARANJA** por un shock, y en agosto **volvió a AMARILLO** cuando los tres
+indicadores que lo habían justificado revirtieron. Una lectura la **cerró Fran
+personalmente**. Y hay errores registrados y corregidos *(una premisa de política monetaria
+que resultó falsa, un dato mal fechado)* — **sin reescribir hacia atrás las lecturas
+antiguas**.
+
+**Lo que eso demuestra y lo que no** — y hay que decir las dos cosas:
+
+> ✅ **Demuestra el proceso**: trazabilidad, que cambiamos de opinión con evidencia, que
+> anotamos los errores y que hay una persona decidiendo.
+> ❌ **No demuestra rentabilidad ni valida los seis regímenes**: ocho lecturas en tres
+> meses no son una muestra estadística. **Es evidencia operativa, no estadística.**
 
 ## 5.3 🚫 Por qué las cuatro cajas y los seis regímenes **no se mezclan**
 
@@ -97,6 +110,14 @@ Suena parecido *(hay un régimen que se llama «estanflación» y una caja que s
 > **Las cuatro cajas miran al pasado con dos variables. VIGÍA mira al presente con
 > diecisiete. Fusionarlos convertiría un análisis histórico en una señal de compraventa —
 > que es justo lo que ninguno de los dos pretende ser.**
+
+**Y ojo, son DOS historiales distintos, no uno:**
+
+| | **VIGÍA** | **Cuatro cajas** |
+|---|---|---|
+| Cuándo | **2026** *(8 lecturas)* | **1958-2026** *(273 trimestres)* |
+| Responde | *¿Cómo interpretamos el entorno hoy y cómo cambiamos de opinión?* | *¿Cómo se comportaron las exposiciones en cada clima?* |
+| Evidencia | **Del proceso** | **Del comportamiento de los activos** |
 
 **La frase que te salva:** *«Dos variables permiten clasificar el régimen histórico; un
 conjunto más amplio de indicadores ayuda a interpretar el régimen presente.»*
