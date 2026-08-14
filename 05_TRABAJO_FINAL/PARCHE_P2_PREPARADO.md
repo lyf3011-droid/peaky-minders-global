@@ -1,10 +1,9 @@
-# 🩹 PARCHE P-2 — PREPARADO, **NO EJECUTADO**
+# 🩹 PARCHE P-2 — ✅ **EJECUTADO**
 
 ## Motor: reformular su lectura por régimen · 14 de agosto de 2026
 
-> **P-2 no está aprobado todavía.** Este documento muestra el antes→después exacto y las
-> frases que quedarían incoherentes. **El capítulo 4 no se ha modificado.** P-3 a P-6 no se
-> abren.
+> ✅ **EJECUTADO el 14-ago-2026 (D100)**, con las dos decisiones tomadas: **nota sin cifra**
+> y **ajuste del encabezado dentro de P-2**. **P-3 a P-6 sin ejecutar.**
 
 ---
 
@@ -21,16 +20,19 @@ cap. 19 §19.10.1)*:
 
 | Columna del mapa | Equivale a | Dice el cap. 4 | Midió el cap. 19 | Veredicto |
 |---|---|---|---:|---|
-| **Crecim.↑ Infl.↓** | caja 1 | **favorable** | **+9,83%** | ✅ Compatible en términos absolutos… pero **no es la mejor de las cuatro**, como la tabla sugiere |
+| **Crecim.↑ Infl.↓** | caja 1 | **favorable** | **+9,83%** | ✅ **Compatible** — la celda no era incorrecta |
 | **Crecim.↑ Infl.↑** | caja 2 | mixto | **+5,54%** | ✅ Compatible |
 | **Crecim.↓ Infl.↑** | caja 4 | adverso | **+0,95%** | ✅ **Confirmado — es la peor** |
-| **Crecim.↓ Infl.↓** | caja 3 | **adverso** | **+15,76%** | 🔴 **CONTRADICHO — fue la MEJOR de las cuatro** |
+| **Crecim.↓ Infl.↓** | caja 3 | **adverso** | **+15,76%** | 🔴 **CONTRADICCIÓN DIRECTA — calificada de adversa, resultó la más favorable** |
 
-> **La incoherencia es de una celda y de un orden.** La cuarta columna está directamente
-> contradicha; y la primera, aunque no sea falsa en términos absolutos, **implica una
-> jerarquía —«el Motor rinde mejor con crecimiento fuerte»— que los datos no sostienen**.
-> Lo único que la prueba respalda sin matices es que **el peor clima para el Motor fue
-> crecimiento débil + inflación alta**.
+> **Diagnóstico calibrado.** **La contradicción directa está en una sola celda: crecimiento
+> débil + inflación baja**, calificada de adversa y que resultó la más favorable. **La celda
+> «favorable» de crecimiento fuerte + inflación baja no era incorrecta** y no se corrige por
+> no haber sido la mejor. **Lo que impide mantener el mapa es el resultado conjunto:** la
+> lectura general *«crecimiento fuerte favorable / crecimiento débil adverso»* deja de
+> sostenerse cuando uno de los dos climas de crecimiento débil resulta el más favorable de
+> los cuatro. Lo único que la prueba respalda sin matices es que **el peor clima para el
+> Motor fue crecimiento débil + inflación alta**.
 
 ---
 
@@ -143,5 +145,6 @@ nivel de apoyo empírico)* y **no se toca en P-2**.
 | **No se abre** | **P-3, P-4, P-5 y P-6** |
 | **Capítulo 19** | **Cerrado, no se toca** |
 
-**Estado: PREPARADO — pendiente de tu aprobación y de la decisión sobre §2 (cifra sí/no) y
-§3.1 (encabezado en P-2 o en P-6).**
+**Estado: ✅ EJECUTADO (D100).** Decisiones aplicadas: **nota sin cifra** *(opción A)* ·
+**encabezado corregido dentro de P-2**. Para **P-6** quedan la tabla resumen final y la
+futura columna de nivel de apoyo empírico.

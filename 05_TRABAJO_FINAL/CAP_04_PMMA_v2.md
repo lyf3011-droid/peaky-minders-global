@@ -138,21 +138,35 @@ Cuatro propiedades completan la definición:
   retorno — el árbol de clasificación (§4.9) resuelve el orden y la tesis registrada deja
   constancia del motivo.
 
-**[MODELO — hipótesis de diseño, no evidencia validada]** Como referencia de diseño, cada
-módulo lleva asociado un comportamiento *esperado* por régimen económico (crecimiento ×
-inflación). Este mapa se presenta aquí únicamente como intención de cobertura; su
-desarrollo, datación histórica y validación cuantitativa corresponden al capítulo 19, y
-hasta ese capítulo ninguna celda debe leerse como resultado medido:
+**[MODELO — mapa de diseño contrastado posteriormente en el capítulo 19]** Como referencia
+de diseño, cada módulo llevaba asociado un comportamiento *esperado* por régimen económico
+(crecimiento × inflación). Su desarrollo, datación histórica y contraste cuantitativo se
+realizaron en el capítulo 19. **Las filas que aparecen sin valor son aquellas cuya lectura
+por régimen no recibió apoyo suficiente en esa prueba; las filas que conservan valores
+siguen expresando hipótesis de diseño, no resultados históricos medidos.**
 
 | Módulo | Crecim.↑ Infl.↓ | Crecim.↑ Infl.↑ | Crecim.↓ Infl.↑ | Crecim.↓ Infl.↓ |
 |---|---|---|---|---|
-| Motor | **favorable** | mixto | adverso | adverso |
+| Motor | — | — | — | — |
 | Defensivos | favorable | mixto | mixto | **menos adverso** |
 | Aceleración | — | — | — | — |
 | Emergentes | favorable | **mixto/favorable** | adverso | adverso |
 | Freno | neutro | adverso | mixto | **favorable** |
 | Activos Reales | neutro | **favorable** | **favorable** | mixto |
 | Asimetría | *idiosincrático — no asignable a régimen* | | | |
+
+> **[MODELO — actualizado tras el capítulo 19 · D100]** **La fila del Motor aparece sin
+> valor en las cuatro columnas.** La prueba histórica del capítulo 19 **no respalda la
+> lectura direccional que este mapa proponía**: el comportamiento real más favorable del
+> Motor no se observó con crecimiento fuerte, sino **con crecimiento débil e inflación
+> baja**, que la tabla anterior calificaba de adverso. Lo único que la prueba sostiene con
+> claridad es que **el Motor obtuvo su peor comportamiento real con crecimiento débil e
+> inflación alta**. Las cifras están en el capítulo 19 *(§19.10)*.
+>
+> ⚠️ **No se sustituye una lectura direccional por otra.** El análisis empareja
+> macroeconomía y rentabilidad del **mismo trimestre**, de modo que mide **coincidencia, no
+> causa**; las explicaciones posibles quedan registradas en el capítulo 19 §19.13 *(C-1)*
+> **como hipótesis interpretativas, no adoptadas**.
 
 > **[MODELO — actualizado tras el capítulo 19 · D98]** **La fila de Aceleración aparece sin
 > valor en las cuatro columnas.** El motivo: **la prueba histórica del capítulo 19 no
