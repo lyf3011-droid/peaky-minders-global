@@ -6,10 +6,11 @@
 > **[EVIDENCIA EXTERNA]** = afirmación que requiere cita o fuente primaria.
 >
 > **Objetivo del capítulo:** demostrar que PMMA transforma una clasificación intuitiva en
-> un **procedimiento documentado, repetible y auditable**. Repetible significa que el
-> mismo equipo, siguiendo los mismos pasos, deja el mismo rastro; **no** afirmamos que dos
-> analistas independientes llegarán necesariamente a la misma clasificación — esa
-> comparabilidad sigue siendo una limitación no testada *(§7.7)*.
+> un **procedimiento documentado, repetible y auditable**. Repetible significa que **el
+> mismo procedimiento puede volver a ejecutarse y deja un registro comparable de cómo se
+> llegó a cada decisión**; **no** afirmamos que dos analistas independientes llegarán
+> necesariamente a la misma clasificación — esa concordancia **no se ha probado** y sigue
+> siendo una limitación *(§7.7)*.
 
 ---
 
