@@ -23,12 +23,14 @@ todos — y también que **tres cosas que creíamos no eran verdad**, y lo hemos
    congelamos. Eso es lo que hace que el capítulo valga.
 2. **La caja 4 —crecimiento débil con inflación alta— es la que más daña a la bolsa**:
    +0,95% real frente a casi +10% y +16% en las otras dos de inflación baja.
-3. **El oro es lo que mejor funciona ahí**: +7,34 puntos por encima de la bolsa y ganando
-   en **7 de 9 episodios** — y aguanta las dos pruebas de sensibilidad que hicimos.
+3. **El oro es el que mejor se comporta ahí frente a la bolsa**: +7,34 puntos y ganando en
+   **7 de 9 episodios**. Ojo: **no es el único consistente en esa caja** *(también lo son
+   consumo, salud, small caps y valor)*, pero **sí el único que no es renta variable** — y
+   aguanta las dos pruebas de sensibilidad.
 4. **Tres hipótesis nuestras no salieron** *(el Motor, el Freno y el valor)* y están
    publicadas con nombre.
-5. **El 11% de la cartera no se puede evaluar** *(emergentes y bitcoin)* y el Freno solo a
-   medias. Lo decimos antes de que nos lo pregunten.
+5. **11 puntos porcentuales del capital no se pueden evaluar** *(emergentes 7 y bitcoin 4)*
+   y el Freno solo a medias. Lo decimos antes de que nos lo pregunten.
 
 ## C. Explicación oral de 60 segundos
 
@@ -38,8 +40,8 @@ Unidos— y clasificamos cada trimestre desde 1958 en una de esas cuatro cajas. 
 mirar ninguna rentabilidad escribimos las reglas, las congelamos y anotamos qué resultado
 nos dejaría mal. Después miramos cómo se comportó cada tipo de inversión en cada caja. La
 conclusión más útil es que **el peor clima para la bolsa es el de crecimiento débil con
-inflación alta, y ahí el oro es lo único que funcionó de forma consistente** — que es
-exactamente por lo que tenemos un 7% en oro. Y tres cosas que dábamos por buenas no
+inflación alta, y ahí el oro es lo que mejor se comportó frente a la bolsa** — que es
+exactamente la funcion por la que tenemos oro en cartera. Y tres cosas que dábamos por buenas no
 salieron; están publicadas, no escondidas.»
 
 ---
@@ -110,7 +112,7 @@ dice. Para el presente está VIGÍA, y es interpretación, no señal.
 ## Intermedias
 
 6. ¿Por qué la clasificación empieza en 1958 y no en 1947?
-7. ¿Qué es la «prueba externa» de 1973-75 y para qué sirve?
+7. ¿Qué es el «control de plausibilidad histórica» de 1973-75 y qué NO acredita?
 8. ¿Qué significa que las dos clasificaciones discrepen en un 16,1%?
 9. ¿Qué es M3 y por qué un activo puede ser «relativamente favorable» perdiendo dinero?
 10. ¿Qué parte de la cartera no puede evaluarse y por qué no se rellenó el hueco?
@@ -132,20 +134,24 @@ dice. Para el presente está VIGÍA, y es interpretación, no señal.
 2. **La caja 4 —crecimiento débil + inflación alta—: +0,95% real anualizado**, frente a
    +9,83% y +15,76% en las dos de inflación baja.
 3. **El oro: +7,34 puntos reales por encima de la bolsa y ganando en 7 de 9 episodios.**
-4. **Pierde poder de compra**: −0,24% y −0,08% reales. Por eso la Reserva es pequeña y
-   operativa, no una inversión.
+4. **Pierde poder de compra**: −0,24% y −0,08% reales. Es coherente con que la Reserva
+   tenga **función operativa** y **no se presente como protección frente a la inflación** —
+   pero **de aquí no se deduce su peso concreto**.
 5. **1958Q1-2026Q2 · 273 trimestres.**
 6. Porque el umbral necesita **40 trimestres anteriores** y la variación interanual consume
    otros cuatro. **La regla solo mira hacia atrás**, nunca al futuro.
-7. Es un contraste **fijado de antemano**: si nuestro criterio no situara 1973-75 donde lo
-   sitúa la descripción histórica habitual, **se investigaría y publicaría la discrepancia,
-   sin tocar el algoritmo**. Lo superó: diez trimestres seguidos en caja 4.
+7. Es una comprobación **fijada de antemano**: si nuestro criterio no situara 1973-75 donde
+   lo sitúa la descripción histórica habitual, **se investigaría y publicaría la
+   discrepancia, sin tocar el algoritmo**. La superó —diez trimestres seguidos en caja 4—,
+   pero **es coherencia, no validación estadística**: acreditar la capacidad del
+   clasificador exigiría mucho más que reconocer un episodio conocido.
 8. Que **la frontera entre climas es más difusa** de lo que sugiere una tabla de cuatro
    casillas. Se publica tal cual; no se esconde.
 9. **La diferencia de rentabilidad real frente al Motor.** Un activo puede caer menos que la
    bolsa en un mal periodo: pierde dinero y aun así aporta. Por eso M3 se publica siempre
    junto a M1 y M2.
-10. **El 11%** *(Emergentes 7% y Asimetría 4%)*, más los bonos largos y el cobre. No se
+10. **11 puntos porcentuales del capital total** *(Emergentes 7 y Asimetría 4)*, más los
+    bonos largos y el cobre, que están dentro de los 18 puntos de cobertura parcial. No se
     rellenó porque **bitcoin no existe antes de 2009 y los índices de emergentes no cubren
     los setenta**: sustituirlos por acciones de EEUU sería falsear el módulo.
 11. «El mapa se publicó como hipótesis **sin validar**, y escribimos antes qué lo refutaría.
@@ -159,6 +165,7 @@ dice. Para el presente está VIGÍA, y es interpretación, no señal.
     convención no estaba especificada y la auditoría detectó la ambigüedad. **La cifra
     anterior (+12,44) se conserva publicada como sensibilidad** — el veredicto y los 7 de 9
     episodios son idénticos con ambos métodos; solo cambia la magnitud.
-15. Porque son **ocho lecturas en tres meses**: sirven para demostrar **el proceso**
+15. Porque son **ocho lecturas entre el 21 de junio y el 7 de agosto de 2026**: sirven
+    para demostrar **el proceso**
     *(trazabilidad, cambio de opinión con evidencia, errores registrados, decisión humana,
     no reescritura)*, **no el resultado**. Es evidencia operativa, no estadística.
