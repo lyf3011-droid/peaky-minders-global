@@ -1,6 +1,6 @@
 # CAPÍTULO 4 — PEAKY MINDERS MODULAR ARCHITECTURE
 
-## Investment Book · Parte I · ✅ **CERRADO v2** · aprobado el 13 de agosto de 2026 *(D79)*
+## Investment Book · Parte I · ✅ **CERRADO v2.1** · sincronizado tras el contraste del capítulo 19 · 15 de agosto de 2026 *(D105)*
 
 > **Convención tipográfica de este capítulo:**
 > **[MODELO]** = afirmación propia de PMMA, sostenida por su coherencia interna y por la
@@ -168,7 +168,14 @@ históricamente.**
 | 🌍 Emergentes | ⛔ No evaluable |
 | ⚓ Freno | ⛔ No evaluable en su forma completa |
 | 🥇 Activos Reales | 🟢 Apoyo en la pata evaluable: oro |
-| 💥 Asimetría | ⚪ No aplicable por diseño al contraste por régimen |
+| 💥 Asimetría | ⚪ No aplicable por diseño al contraste por régimen — exposición idiosincrática, no asignable a un clima macro concreto |
+
+> **[MODELO — resultado de conjunto]** **El capítulo 19 encontró al menos un módulo
+> consistentemente favorable en cada una de las cuatro cajas** entre las exposiciones con
+> información histórica suficiente. **El resultado es parcial y no equivale a cobertura
+> completa de la cartera:** sobre **100 puntos de capital total**, **68 tienen cobertura
+> suficiente, 18 parcial y 11 ninguna**; los **3 restantes** corresponden a la **Reserva**,
+> que no se evalúa como módulo de retorno.
 
 > **[MODELO — actualizado tras el capítulo 19 · D100]** **La fila del Motor aparece sin
 > valor en las cuatro columnas.** La prueba histórica del capítulo 19 **no respalda la
@@ -652,4 +659,6 @@ a *Peaky Minders Global 10Y*.
 |---|---|
 | 2026-08-13 | Borrador v1 completo — 16 secciones |
 | 2026-08-13 | **Borrador v2 tras auditoría.** Aplicadas las 10 correcciones: tres vistas analíticas *(Total Capital · Strategic Allocation · Governance/Funding)* sustituyen a las dos vistas contables; falsación principal reescrita sobre el claim organizativo con la separación estadística como test complementario; árbol reescrito para preguntar por función dominante *(P1-P3 reformuladas; ambiguos sin clasificación automática)*; Management Mode como dimensión general y Conviction Overlay como término reservado *(Robeco y PIMCO son posiciones estructurales, no overlay)*; «vistas contables» → «vistas analíticas»; linealidad del look-through acotada a exposiciones aditivas; sobreafirmaciones suavizadas; referencias internas corregidas *(§4.11, §4.9, §4.14)*; correlaciones exactas sustituidas por formulación provisional hasta el cap. 18; cierre de §4.15 sustituido por la formulación aprobada. Auditoría superada |
+| 2026-08-14 | **P-1 a P-6 ejecutados *(D99-D104)*.** Reconciliación del mapa módulo→régimen con el contraste histórico del capítulo 19: cuatro filas retiradas con su motivo, una celda acotada, dos notas de apoyo y segunda tabla de contraste |
+| 2026-08-15 | ✅ **AUDITORÍA CRUZADA FINAL Y CIERRE v2.1 *(D105)*.** Sincronización documental cap. 4 ↔ cap. 19: cabecera, registro, nota de resultado de conjunto y matiz de Asimetría. **Sin cambios en funciones, pesos, vehículos ni resultados** |
 | 2026-08-13 | ✅ **CERRADO v2 (D79).** Commit de sincronización: término **47% Governance Funding Pool**, Strategic Allocation View sin equivalencia estricta con el X-Ray, ejemplo explícito de doble vista tras compra de Convicción. **Sin más cambios conceptuales.** La v1 se conserva como trazabilidad |

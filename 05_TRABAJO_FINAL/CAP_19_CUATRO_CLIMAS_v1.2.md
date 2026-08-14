@@ -35,8 +35,8 @@ inversión cuando la economía estuvo en cada una de las cuatro combinaciones po
 crecimiento e inflación**, y qué de eso podemos comprobar con datos y qué no.
 
 Adelantamos el resultado, porque el capítulo no está escrito para lucirse: **tres de las
-siete hipótesis de diseño del capítulo 4 no se confirman en esta prueba**, y **el 11% de la
-cartera no puede evaluarse en absoluto**. Las dos cosas están publicadas con nombre.
+siete hipótesis de diseño del capítulo 4 no se confirman en esta prueba**, y **11 puntos del
+capital total no pueden evaluarse en absoluto**. Las dos cosas están publicadas con nombre.
 
 ---
 
@@ -641,12 +641,16 @@ caja se ilustra, no se infiere.** La regla de consistencia acota ese riesgo, no 
   Es coherente con que la Reserva tenga **función operativa** y **no se presente como
   protección real frente a la inflación** — sin que de ello se derive su peso concreto.
 - **Cada caja tiene al menos un módulo consistentemente favorable**, sobre los módulos con
-  datos — pero **no puede afirmarse de la cartera completa**, porque el 11% no es evaluable.
+  datos — pero **no puede afirmarse de la cartera completa**, porque **11 puntos del capital
+  total no son evaluables**.
 
 Lo que **obliga a revisar** del capítulo 4 —la lectura del Motor por regímenes, la del Freno
-y la de Aceleración— se presenta **como propuesta de parches en documento aparte**. **En
-este capítulo no se modifica el capítulo 4**: la corrección se hará después de la auditoría
-final, y quedará registrada como decisión.
+y la de Aceleración— se presentó **como propuesta de parches en documento aparte**.
+
+> **Sincronización documental posterior *(D105)*.** Estas conclusiones dieron lugar a una
+> propuesta de parches sobre el capítulo 4. **Tras el cierre D97 de este capítulo, las
+> revisiones fueron ejecutadas mediante D99-D104.** Esta sincronización posterior **no
+> modifica ninguna regla, cifra, serie, hipótesis ni resultado del capítulo 19**.
 
 ---
 
@@ -708,4 +712,9 @@ las decisiones D89-D95)*, que se cita por su registro de decisiones.
 > *(v1.2)* y el microparche final de evidencia. **v1, v1.1 y v1.2 se conservan con su
 > trazabilidad completa.** **No se modificará salvo hallazgo material nuevo.**
 >
-> **El capítulo 4 no ha sido modificado y sus parches no se han ejecutado.**
+> **Estado histórico al cierre D97:** el capítulo 4 **aún no había sido modificado**.
+> **Estado sincronizado posterior:** **P-1 a P-6 fueron ejecutados mediante D99-D104**; el
+> **contenido analítico del capítulo 19 permanece intacto**.
+>
+> *(Versión analítica: **v1.2**, sin cambios. Lo añadido el 15-ago-2026 es **sincronización
+> documental D105**, no una nueva versión del análisis.)*
