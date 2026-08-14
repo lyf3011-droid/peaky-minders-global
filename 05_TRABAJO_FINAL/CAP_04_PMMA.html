@@ -1,0 +1,657 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capítulo 4 — PMMA</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag">
+<h1>CAPÍTULO 4 — PEAKY MINDERS MODULAR ARCHITECTURE</h1>
+<h2>Investment Book · Parte I · Borrador v1 para auditoría · 13 de agosto de 2026</h2>
+<blockquote>
+<p><strong>Convención tipográfica de este capítulo:</strong>
+<strong>[MODELO]</strong> = afirmación propia de PMMA, sostenida por su coherencia interna y por la
+evidencia de implementación de este trabajo.
+<strong>[EVIDENCIA EXTERNA]</strong> = afirmación que requiere cita académica o fuente primaria,
+recogida en la tabla final de fuentes pendientes.
+Nada de lo marcado [MODELO] se presenta como hecho empírico demostrado.</p>
+</blockquote>
+<hr />
+<h2>4.1 El problema que resuelve</h2>
+<p>Una cartera de inversión suele construirse en el orden equivocado. El inversor —particular
+o profesional— parte de los productos: un fondo que ha leído recomendado, un ETF con buena
+rentabilidad reciente, una acción con una historia atractiva. El resultado es una
+<strong>acumulación de instrumentos individualmente defendibles y colectivamente inexplicables</strong>:
+nadie puede decir qué trabajo hace cada posición dentro del conjunto, qué pasaría si se
+eliminara, ni cuántas fuentes de riesgo independientes existen realmente bajo la aparente
+variedad de nombres.</p>
+<p><strong>[MODELO]</strong> Este trabajo denomina a ese estado <em>cartera-lista</em>: una colección de productos
+sin arquitectura. Frente a él, PMMA propone la <em>cartera-sistema</em>: una estructura en la que
+cada posición existe porque responde a una pregunta formulada antes de comprarla.</p>
+<p>El problema no es teórico. Tiene tres manifestaciones medibles:</p>
+<ol>
+<li><strong>Diversificación aparente.</strong> Diez ETF pueden ser diez versiones del mismo riesgo.
+   En la propia implementación de este trabajo, tres vehículos del módulo Aceleración
+   —formalmente distintos— presentan correlaciones de entre 0,70 y 0,91 entre sí y con el
+   núcleo de la cartera (capítulo 18). La variedad de tickers no era variedad de
+   comportamiento, y solo un marco funcional obliga a comprobarlo.</li>
+<li><strong>Decisiones sin registro.</strong> Sin arquitectura previa, cada compra se justifica después
+   de hecha. La literatura sobre sesgos del inversor documenta la facilidad con la que la
+   narrativa posterior sustituye al criterio anterior. <strong>[EVIDENCIA EXTERNA]</strong> — sesgo
+   retrospectivo y racionalización <em>post hoc</em> (Kahneman; Montier, <em>Behavioural Investing</em>).</li>
+<li><strong>Incomparabilidad.</strong> Dos carteras construidas con lógicas distintas no pueden
+   compararse posición a posición. Sin un lenguaje común de funciones, la comparación se
+   reduce a rentabilidades pasadas, que es exactamente la métrica menos informativa sobre
+   el diseño. <strong>[EVIDENCIA EXTERNA]</strong> — la persistencia de rentabilidad como criterio de
+   selección es débil (SPIVA Persistence Scorecard).</li>
+</ol>
+<p><strong>[MODELO]</strong> PMMA responde a los tres con una sola operación: separar la <strong>función</strong> que el
+capital debe cumplir del <strong>instrumento</strong> que la implementa, y hacer esa separación
+<strong>auditable</strong> en cada eslabón.</p>
+<hr />
+<h2>4.2 Función antes que producto</h2>
+<p><strong>[MODELO]</strong> El principio ordenador de PMMA se enuncia en cuatro palabras:</p>
+<blockquote>
+<h3><strong>Función antes que producto.</strong></h3>
+</blockquote>
+<p>Primero se decide qué funciones necesita la cartera dado su mandato; después se decide qué
+exposición implementa cada función; solo al final se elige el vehículo concreto. El ticker
+aparece en el último paso del proceso, no en el primero.</p>
+<p>La cadena completa del método es:</p>
+<pre><code>OBJETIVO → MANDATO → FUNCIÓN → MÓDULO → PESO → EXPOSICIÓN → VEHÍCULO
+        → X-RAY → RIESGO → EJECUCIÓN → CONTROL
+</code></pre>
+<p>Cada flecha es un punto de control documentable. La aportación no está en ninguna casilla
+individual —todas existen por separado en la práctica profesional— sino en exigir que la
+cadena entera quede escrita y sea verificable, de modo que cualquier tercero pueda recorrer
+el camino desde el objetivo hasta el último ISIN y encontrar en cada paso una decisión
+fechada con su motivo.</p>
+<p>Este capítulo describe el método. Los capítulos 10 a 14 muestran la cadena aplicada a la
+implementación <em>Peaky Minders Global 10Y</em>; el registro de decisiones (anexo B) constituye
+la prueba documental de que el orden se respetó.</p>
+<hr />
+<h2>4.3 El Principio de Función Dominante</h2>
+<p><strong>[MODELO]</strong> La misma clase de activo puede desempeñar funciones distintas según el motivo
+por el que se incorpora. Un ETF de salud dentro de un índice global no necesita separarse:
+forma parte del núcleo. El mismo ETF comprado deliberadamente para reducir la ciclicidad de
+la cartera cumple una función defensiva. El instrumento es idéntico; la función, no.</p>
+<p>De ahí la regla central de clasificación:</p>
+<blockquote>
+<p><strong>Toda posición se asigna principalmente al módulo que mejor explique la razón
+estratégica por la que está presente en la cartera.</strong></p>
+</blockquote>
+<p>La pregunta decisiva no es <em>«¿qué contiene este ETF?»</em> sino <em>«¿por qué existe esta posición
+dentro de esta cartera?»</em>. La primera pregunta la responde cualquier folleto; la segunda
+solo puede responderla el constructor, y PMMA le obliga a dejarla escrita (campo <code>tesis</code>
+del modelo de datos, §4.10).</p>
+<p>Esta elección tiene un coste que el método reconoce en lugar de ocultar: la función
+dominante es un juicio del analista, no una propiedad observable del instrumento. La
+sección 4.14 trata esa subjetividad como limitación estructural y describe los cinco
+mecanismos que la acotan.</p>
+<hr />
+<h2>4.4 Los siete módulos estructurales</h2>
+<p><strong>[MODELO]</strong> PMMA organiza toda asignación estratégica en siete módulos. Cada uno se define
+por su misión y se verifica con una pregunta de control; ninguno prescribe productos ni
+pesos.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Módulo</th>
+<th>Misión</th>
+<th>Pregunta de control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🚀 <strong>Motor</strong></td>
+<td>Capturar el crecimiento económico y empresarial de largo plazo</td>
+<td><em>Si elimino esta posición, ¿reduzco significativamente la capacidad central de crecimiento?</em></td>
+</tr>
+<tr>
+<td>2</td>
+<td>🌿 <strong>Defensivos</strong></td>
+<td>Mantener exposición productiva reduciendo sensibilidad al ciclo</td>
+<td><em>¿Mantiene exposición empresarial pero pretende mejorar el comportamiento relativo en escenarios adversos?</em></td>
+</tr>
+<tr>
+<td>3</td>
+<td>⚡ <strong>Aceleración</strong></td>
+<td>Introducir fuentes adicionales de rentabilidad esperada sobre el núcleo neutral</td>
+<td><em>¿Existiría esta exposición si solo quisiera replicar el mercado?</em></td>
+</tr>
+<tr>
+<td>4</td>
+<td>🌍 <strong>Emergentes</strong></td>
+<td>Exposición estratégica diferenciada a economías emergentes</td>
+<td><em>¿Existe una asignación a emergentes modificable independientemente del Motor?</em></td>
+</tr>
+<tr>
+<td>5</td>
+<td>⚓ <strong>Freno</strong></td>
+<td>Estabilizar, aportar liquidez estratégica y exponer a factores distintos de los activos productivos</td>
+<td><em>¿Forma parte estructural de la cartera para estabilizar o responder a escenarios distintos de la renta variable?</em></td>
+</tr>
+<tr>
+<td>6</td>
+<td>🥇 <strong>Activos Reales</strong></td>
+<td>Comportamiento vinculado a inflación y confianza monetaria, distinto de acciones y bonos nominales</td>
+<td><em>¿El objetivo principal es una fuente de comportamiento ligada a activos reales o inflación?</em></td>
+</tr>
+<tr>
+<td>7</td>
+<td>💥 <strong>Asimetría</strong></td>
+<td>Opcionalidad de alto potencial con pérdida máxima acotada por tamaño</td>
+<td><em>¿Aceptaríamos la pérdida prácticamente total sin comprometer el plan patrimonial?</em></td>
+</tr>
+</tbody>
+</table>
+<p>Cuatro propiedades completan la definición:</p>
+<ul>
+<li><strong>Los módulos son funciones, no productos.</strong> El Motor no «es» un índice mundial; es la
+  función de capturar crecimiento agregado, que en un mandato concreto puede implementarse
+  con uno u otro instrumento.</li>
+<li><strong>Un módulo puede pesar 0%.</strong> El cero también informa: significa que esa función no ha
+  sido incorporada deliberadamente. Una cartera 90/10 usa dos módulos y sigue siendo una
+  implementación válida del sistema.</li>
+<li><strong>Los pesos dependen del mandato.</strong> PMMA no prescribe porcentajes; los pesos de la
+  implementación de este trabajo (capítulo 10) son una parametrización, no una regla.</li>
+<li><strong>La frontera entre módulos la fija la tesis, no el instrumento.</strong> Un REIT puede ser
+  Motor (dentro de un índice global) o Activos Reales (asignación inmobiliaria específica);
+  los TIPS son Freno por defecto, porque económica y jurídicamente siguen siendo renta
+  fija; la calidad (<em>quality</em>) puede ser Defensivos si se compra por resiliencia o
+  Aceleración si se compra como prima de retorno — el árbol de clasificación (§4.8)
+  resuelve el orden y la tesis registrada deja constancia del motivo.</li>
+</ul>
+<p><strong>[MODELO — hipótesis de diseño, no evidencia validada]</strong> Como referencia de diseño, cada
+módulo lleva asociado un comportamiento <em>esperado</em> por régimen económico (crecimiento ×
+inflación). Este mapa se presenta aquí únicamente como intención de cobertura; su
+desarrollo, datación histórica y validación cuantitativa corresponden al capítulo 19, y
+hasta ese capítulo ninguna celda debe leerse como resultado medido:</p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Crecim.↑ Infl.↓</th>
+<th>Crecim.↑ Infl.↑</th>
+<th>Crecim.↓ Infl.↑</th>
+<th>Crecim.↓ Infl.↓</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motor</td>
+<td><strong>favorable</strong></td>
+<td>mixto</td>
+<td>adverso</td>
+<td>adverso</td>
+</tr>
+<tr>
+<td>Defensivos</td>
+<td>favorable</td>
+<td>mixto</td>
+<td>mixto</td>
+<td><strong>menos adverso</strong></td>
+</tr>
+<tr>
+<td>Aceleración</td>
+<td><strong>favorable</strong></td>
+<td>mixto</td>
+<td>adverso</td>
+<td>adverso</td>
+</tr>
+<tr>
+<td>Emergentes</td>
+<td>favorable</td>
+<td><strong>mixto/favorable</strong></td>
+<td>adverso</td>
+<td>adverso</td>
+</tr>
+<tr>
+<td>Freno</td>
+<td>neutro</td>
+<td>adverso</td>
+<td>mixto</td>
+<td><strong>favorable</strong></td>
+</tr>
+<tr>
+<td>Activos Reales</td>
+<td>neutro</td>
+<td><strong>favorable</strong></td>
+<td><strong>favorable</strong></td>
+<td>mixto</td>
+</tr>
+<tr>
+<td>Asimetría</td>
+<td><em>idiosincrático — no asignable a régimen</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4.5 Modos de gestión: la segunda dimensión</h2>
+<p><strong>[MODELO]</strong> La función estructural no agota la descripción de una posición. Una segunda
+dimensión, <strong>ortogonal</strong> a la primera, indica <em>cómo</em> se gestiona el capital:</p>
+<table>
+<thead>
+<tr>
+<th>Modo</th>
+<th>Quién decide</th>
+<th>Ejemplo en la implementación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① <strong>Pasiva / indexada</strong></td>
+<td>Un índice</td>
+<td>Núcleo del Motor</td>
+</tr>
+<tr>
+<td>② <strong>Sistemática / factorial</strong></td>
+<td>Una regla predefinida</td>
+<td>Small cap, multifactor</td>
+</tr>
+<tr>
+<td>③ <strong>Activa delegada</strong></td>
+<td>Un gestor externo con mandato acotado</td>
+<td>Robeco (Aceleración) · PIMCO (Freno)</td>
+</tr>
+<tr>
+<td>④ <strong>Convicción directa</strong></td>
+<td>El propio equipo, empresa a empresa, con protocolo</td>
+<td>Overlay de Convicción</td>
+</tr>
+</tbody>
+</table>
+<p>Toda posición tiene un módulo <strong>y</strong> un modo. El fondo Robeco BP Global Premium se describe
+como <em>Aceleración + activa delegada</em>: su función es capturar la prima de valor; su modo es
+la delegación en un gestor. No es —y esto importa— una posición de Convicción.</p>
+<p><strong>Active Overlay</strong> es la categoría general que agrupa los modos ③ y ④: decisiones activas
+superpuestas a la arquitectura estructural. <strong>Convicción Directa</strong> es la implementación
+específica de este mandato para el modo ④: selección directa y discrecional de compañías
+bajo un protocolo propio (precio de entrada IDC, Fecha Cero, dos tramos de compra,
+evaluación contra el Motor), desarrollado en el capítulo 12. Confundir Convicción con
+«cualquier fondo activo» destruiría la distinción más importante de la capa activa: quién
+toma la decisión y bajo qué reglas escritas.</p>
+<hr />
+<h2>4.6 Las capas transversales: Overlay y Execution Layer</h2>
+<p><strong>[MODELO]</strong> Sobre los siete módulos operan dos capas que <strong>no son clases de activo</strong> y por
+tanto no se suman a la asignación estructural.</p>
+<p><strong>Active Overlay.</strong> Señala dónde existe una decisión activa superpuesta (modos ③ y ④). El
+capital marcado por el overlay cuenta una sola vez, en su módulo estructural. El overlay
+explica el <em>cómo</em>, no añade un <em>cuánto</em>.</p>
+<p><strong>Execution Layer — la Reserva Operativa.</strong> Capital destinado a la ejecución de la
+estrategia: aportaciones en tránsito, compras planificadas, rebalanceos. Su formulación
+exacta en este trabajo es:</p>
+<blockquote>
+<p><strong>La política de Reserva es permanente; el capital que la ocupa es transitorio.</strong></p>
+</blockquote>
+<p>Existe una capacidad operativa objetivo/máxima (en esta implementación, el 3%), pero su
+saldo fluctúa con las aportaciones y la ejecución. La distinción crítica es con el Freno:
+un 20% mantenido permanentemente en letras del tesoro como estabilizador es Freno
+(asignación estratégica); un 3% esperando ejecutar una compra es Reserva (infraestructura).
+Confundir ambas cosas es confundir una decisión de inversión con una restricción operativa
+— los reembolsos de fondos tardan días y las oportunidades no esperan.</p>
+<hr />
+<h2>4.7 Las dos vistas contables</h2>
+<p><strong>[MODELO]</strong> La coexistencia de módulos y overlay exige una regla contable explícita, sin
+la cual el mismo euro podría contarse dos veces. PMMA adopta dos vistas simultáneas:</p>
+<p><strong>Structural Exposure View.</strong> Todo el capital, incluido el gestionado por el overlay, se
+clasifica por función dominante dentro de los siete módulos. Una acción comprada mediante
+el protocolo de Convicción recibe su módulo estructural más una etiqueta:
+<em>Microsoft directa → Motor + tag Convicción Directa</em>. La suma de módulos es siempre 100%;
+no existe fila «Convicción» en la asignación estructural.</p>
+<p><strong>Governance / Funding View.</strong> Registra qué capital está gestionado bajo el protocolo de
+Convicción, de dónde se financia y contra qué se evalúa. En esta implementación la
+identidad de gobernanza es <em>Motor ordinario + Reserva + Convicción Directa = 47%</em> en las
+fechas de revisión, con un techo de Convicción del 14% que es presupuesto máximo de riesgo,
+no objetivo.</p>
+<p>La regla que une ambas vistas:</p>
+<blockquote>
+<p><strong>Módulo = qué función económica desempeña el capital.
+Convicción = bajo qué protocolo se tomó y se gestiona la decisión.
+Ambas dimensiones nunca se suman en una misma tabla como clases de activo.</strong></p>
+</blockquote>
+<hr />
+<h2>4.8 Position Mode y Look-Through Mode</h2>
+<p><strong>[MODELO]</strong> PMMA analiza toda cartera en dos modos complementarios.</p>
+<p><strong>Position Mode</strong> (predeterminado). Cada vehículo se asigna íntegramente a su función
+dominante. Un índice global usado como núcleo es 100% Motor, aunque contenga
+internamente sectores defensivos o mercados emergentes. Es el modo de <strong>construcción,
+comunicación y gobierno</strong>: refleja la decisión real del constructor.</p>
+<p><strong>Look-Through Mode.</strong> Descompone cada vehículo en su exposición económica subyacente:
+países, sectores, factores, compañías, duración, crédito, divisa. Es el modo de
+<strong>auditoría</strong>: mide lo que realmente se posee, con independencia de la intención.
+Formalmente, la exposición de la cartera al atributo <em>A</em> es la suma, sobre todas las
+posiciones, del peso de cada posición por su exposición interna a <em>A</em>.</p>
+<p>La frase que resume la relación entre ambos —y entre la Parte I y la Parte III de este
+trabajo— es:</p>
+<blockquote>
+<h3><strong>La arquitectura expresa la intención. El X-Ray verifica el resultado.</strong></h3>
+</blockquote>
+<p>Ninguno de los dos modos basta por separado. Position Mode sin look-through permite
+autoengaño (la «diversificación» de diez ETF idénticos); look-through sin Position Mode
+disuelve la decisión en una nube de porcentajes sin autor. El capítulo 15 aplica esta
+doble lectura a la implementación, incluida su consecuencia más incómoda: la regla de no
+duplicidad de Emergentes se satisface en Position Mode y se verifica en Look-Through,
+donde la exposición emergente total (bloque específico más la contenida en el núcleo
+global) se cuantifica y se declara como sobreponderación deliberada.</p>
+<hr />
+<h2>4.9 El árbol de clasificación</h2>
+<p><strong>[MODELO]</strong> Para reducir la discrecionalidad del Principio de Función Dominante, toda
+posición nueva atraviesa ocho preguntas <strong>en orden fijo</strong>. El orden no es estético: decide
+los casos ambiguos (una posición que podría responder «sí» a dos preguntas recibe el módulo
+de la primera), y por eso el orden mismo forma parte del método.</p>
+<pre><code>P1  ¿Liquidez temporal esperando uso?                    → Reserva (Execution Layer)
+P2  ¿Renta fija o liquidez estratégica?                  → Freno
+P3  ¿Oro, materias primas, inmobiliario, activos reales? → Activos Reales
+P4  ¿Exposición dedicada a emergentes?                   → Emergentes
+P5  ¿Renta variable incorporada por carácter defensivo?  → Defensivos
+P6  ¿Factor o estilo para mejorar el retorno esperado?   → Aceleración
+P7  ¿Exposición productiva central de largo plazo?       → Motor
+P8  ¿Alta opcionalidad con pérdida acotada por tamaño?   → Asimetría
+—   Ninguna respuesta clara                              → Protocolo de Extensión
+</code></pre>
+<p>El caso <em>quality</em> ilustra el mecanismo: comprada por resiliencia responde «sí» en P5
+(Defensivos); comprada como prima de retorno responde «no» en P5 y «sí» en P6
+(Aceleración). La tesis registrada de la posición documenta cuál de las dos razones operó.
+Cada clasificación lleva además un campo de <strong>confianza</strong> (alta / media / ambigua) y, en
+caso de ambigüedad, una segunda revisión independiente (§4.10).</p>
+<hr />
+<h2>4.10 El Protocolo de Extensión</h2>
+<p><strong>[MODELO]</strong> Una taxonomía se corrompe cuando se deforma para aparentar que todo encaja.
+Existen instrumentos sin función dominante honesta dentro de los siete módulos: gestión
+alternativa (managed futures, market neutral, arbitraje), capital privado, crédito privado,
+estrategias de volatilidad, estructurados, apalancamiento.</p>
+<p>La regla es doble:</p>
+<ul>
+<li><strong>Si existe función dominante clara</strong>, se asigna al módulo correspondiente con etiqueta
+  descriptiva.</li>
+<li><strong>Si no existe</strong>, la posición se clasifica temporalmente como <strong>Extensión / Estrategia
+  Alternativa</strong> hasta que su función quede justificada — o se decide que no pertenece a la
+  cartera.</li>
+</ul>
+<blockquote>
+<p><strong>Es preferible reconocer una excepción que falsear la arquitectura.</strong></p>
+</blockquote>
+<p>El protocolo cumple dos papeles: permite crecer sin romper la coherencia y actúa como
+declaración de límites — el marco no pretende describirlo todo, y lo dice.</p>
+<hr />
+<h2>4.11 El modelo de datos</h2>
+<p><strong>[MODELO]</strong> Para que el método sea operable y no solo conceptual, cada posición se
+registra con un conjunto mínimo de campos. El modelo original de PMMA (26 campos:
+identificación, pesos actual y objetivo, módulo y submódulo, marcas de overlay y reserva,
+benchmark, exposiciones, coste, riesgo, tesis y regla de revisión) se amplía en este
+trabajo con <strong>nueve campos adicionales cuya necesidad demostró la propia implementación</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Campo añadido</th>
+<th>Lección que lo exige</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ISIN</strong></td>
+<td>El ticker es ambiguo en vehículos UCITS con múltiples cotizaciones</td>
+</tr>
+<tr>
+<td><strong>Clase de participación</strong></td>
+<td>Misma cartera, distinta clase, distinto coste (caso clases S/D)</td>
+</tr>
+<tr>
+<td><strong>Proxy analítico</strong> (sí/no + cuál)</td>
+<td>Sin él, la regla de atribución real-vs-proxy no es registrable</td>
+</tr>
+<tr>
+<td><strong>Cobertura de divisa</strong></td>
+<td>El único caso no equivalente del X-Ray fue exactamente éste</td>
+</tr>
+<tr>
+<td><strong>Traspasabilidad fiscal</strong></td>
+<td>Decidió la elección fondo vs ETF en pequeña capitalización</td>
+</tr>
+<tr>
+<td><strong>Acumulación / distribución</strong></td>
+<td>Atributo operativo de primer orden omitido en el modelo original</td>
+</tr>
+<tr>
+<td><strong>Fuente y fecha del dato</strong></td>
+<td>Distingue «verificado en KID» de «tomado de plataforma»</td>
+</tr>
+<tr>
+<td><strong>Confianza de clasificación</strong></td>
+<td>Convierte la subjetividad del §4.3 en dato auditable</td>
+</tr>
+<tr>
+<td><strong>Contribución al riesgo</strong></td>
+<td>El peso de capital no es el peso de riesgo</td>
+</tr>
+</tbody>
+</table>
+<p>El modelo completo (35 campos) figura en el anexo H y es la interfaz prevista con
+cualquier implementación posterior en hoja de cálculo o base de datos.</p>
+<hr />
+<h2>4.12 El Gate de aceptación</h2>
+<p><strong>[MODELO]</strong> Ninguna cartera construida con PMMA se considera aceptada hasta superar diez
+preguntas, cada una respondida con evidencia y no con adjetivos:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Gate</th>
+<th>Pregunta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Mandato</strong></td>
+<td>¿Está perfectamente definido el objetivo?</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Función</strong></td>
+<td>¿Cada posición tiene un trabajo identificable?</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Arquitectura</strong></td>
+<td>¿Los pesos de los módulos responden al objetivo?</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Diversificación</strong></td>
+<td>¿Existen realmente distintas fuentes de comportamiento?</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Solapamiento</strong></td>
+<td>¿Estamos duplicando riesgos sin saberlo?</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Riesgo</strong></td>
+<td>¿Conocemos volatilidad, drawdown y concentraciones?</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Liquidez</strong></td>
+<td>¿Podemos ejecutar el plan cuando sea necesario?</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Coste</strong></td>
+<td>¿La complejidad adicional justifica sus costes?</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Ejecución</strong></td>
+<td>¿Existen reglas de aportación y rebalanceo?</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Comportamiento</strong></td>
+<td>¿Mantendríamos esta cartera en un escenario realmente adverso?</td>
+</tr>
+</tbody>
+</table>
+<p>Una cartera que no supere alguna pregunta necesita revisión antes de ser seleccionada.
+La implementación de este trabajo pasa explícitamente por el Gate en el capítulo 26, con
+la evidencia acumulada en las Partes III a V — incluidas las preguntas donde la respuesta
+honesta es hoy incompleta.</p>
+<hr />
+<h2>4.13 Gobernanza y escalabilidad</h2>
+<p><strong>[MODELO]</strong> Diez principios condensan el método en reglas verificables. Los esenciales:
+ninguna posición sin función; ningún módulo existe porque exista un producto atractivo;
+función antes que ticker; un mismo activo no se contabiliza dos veces; el overlay no
+modifica la contabilidad estructural; la reserva operativa no se confunde con la liquidez
+estratégica; más productos no significan más diversificación; target y peso actual se
+registran por separado; la arquitectura se valida mediante X-Ray; lo que no encaja
+honestamente pasa por el Protocolo de Extensión.</p>
+<p><strong>Escalabilidad.</strong> El marco se declara aplicable desde una cartera simple de tres
+posiciones hasta una estructura patrimonial multi-cuenta, añadiendo profundidad de
+información (look-through, riesgo, divisas, consolidación) sin cambiar las siete funciones.
+Esta afirmación debe leerse con precisión: <strong>lo que este trabajo demuestra es la
+aplicación completa a un mandato concreto</strong> (nivel intermedio de esa escala) <strong>y la
+capacidad descriptiva del lenguaje sobre ocho arquitecturas ajenas</strong> (capítulo 8).
+La escalabilidad a estructuras patrimoniales complejas queda como extensión declarada,
+no como resultado.</p>
+<hr />
+<h2>4.14 Limitaciones y falsabilidad</h2>
+<p>Un marco que no declara sus límites no es un método: es una marca. PMMA reconoce cuatro
+limitaciones estructurales y un criterio de falsación.</p>
+<p><strong>L1 — Subjetividad de la función dominante.</strong> Dos analistas pueden clasificar el mismo
+instrumento de forma distinta. El método la acota con cinco mecanismos —árbol de orden
+fijo, pregunta de control por módulo, tesis registrada obligatoria, campo de confianza de
+clasificación y segunda revisión en caso de ambigüedad— pero no la elimina. La
+comparabilidad <em>entre analistas</em> no ha sido testada empíricamente y se declara como
+extensión futura.</p>
+<p><strong>L2 — Riesgo de racionalización ex post.</strong> PMMA se desarrolló en paralelo a la cartera
+que lo implementa; un lector escéptico puede sospechar que el marco describe lo que ya se
+había decidido. Las defensas son el registro de decisiones fechado —que documenta el orden
+real de las decisiones— y la validación sobre arquitecturas ajenas al proyecto (capítulo
+8). Ambas mitigan; ninguna elimina la sospecha por completo, y así se declara.</p>
+<p><strong>L3 — La separación funcional no es separación estadística.</strong> Que dos posiciones cumplan
+funciones distintas no garantiza que se comporten distinto. La propia implementación lo
+demuestra: los componentes de Aceleración correlacionan 0,70-0,91 con el Motor. El marco
+no promete descorrelación; obliga a medirla y a no confundir diversificación funcional con
+diversificación estadística. Donde ambas divergen, manda la medición.</p>
+<p><strong>L4 — El marco describe; no predice ni optimiza.</strong> PMMA no es una predicción de mercado,
+ni un optimizador, ni una garantía de rentabilidad o descorrelación futura. Es un sistema
+de arquitectura, clasificación, documentación y control. Todo lo que promete es
+trazabilidad; todo lo que no promete es alfa.</p>
+<p><strong>Criterio de falsación.</strong> <strong>[MODELO]</strong> Un marco descriptivo corre el riesgo de ser
+infalsable: siempre «funciona» porque solo etiqueta. Para evitarlo, este trabajo adopta un
+criterio explícito:</p>
+<blockquote>
+<p><strong>Si la clasificación funcional no agrupa el comportamiento observado (correlaciones,
+drawdowns, respuesta por régimen) mejor que una clasificación trivial por tipo de
+producto, entonces PMMA añade nombres sin añadir información, y debe rechazarse como
+aportación.</strong></p>
+</blockquote>
+<p>La verificación de este criterio sobre la implementación se realiza en los capítulos 18 y
+20. Se adelanta un resultado parcial en contra: dentro de la renta variable, la agrupación
+funcional aporta poca separación estadística (L3). La defensa del marco no es que separe
+comportamientos —a menudo no lo hace— sino que <strong>obliga a descubrirlo y a decidir con ese
+dato</strong>, cosa que la cartera-lista no hace nunca.</p>
+<hr />
+<h2>4.15 Relación con los métodos existentes</h2>
+<p>La pregunta obligada es por qué construir un marco propio existiendo el asset allocation
+clásico, el core-satellite, el factor investing y el risk parity. La respuesta honesta
+tiene dos partes.</p>
+<p><strong>Primera: PMMA no compite con ellos en su terreno.</strong> No aporta una teoría de formación de
+precios (como el factor investing, <strong>[EVIDENCIA EXTERNA]</strong> Fama-French; Asness et al.), ni
+un principio de asignación por riesgo (como el risk parity, <strong>[EVIDENCIA EXTERNA]</strong>
+Bridgewater, <em>The All Weather Story</em>), ni una estructura núcleo-satélite de gestión.
+Cada uno de esos marcos puede convivir con PMMA: de hecho, la implementación de este
+trabajo usa factor investing <em>dentro</em> del módulo Aceleración y una lógica núcleo-satélite
+<em>dentro</em> del macrobloque de gobernanza.</p>
+<p><strong>Segunda: lo que PMMA añade es la capa organizativa que esos marcos presuponen y ninguno
+formaliza.</strong> La práctica profesional dispone de piezas equivalentes por separado —los
+roles de cartera de las plataformas de análisis, las políticas de inversión
+institucionales (IPS), la construcción por objetivos (<strong>[EVIDENCIA EXTERNA]</strong> goals-based
+investing; Swensen, <em>Unconventional Success</em>, como antecedente de asignación por función)—
+pero dispersas y rara vez conectadas de mandato a control con trazabilidad completa. La
+aportación de PMMA es la <strong>integración auditable</strong>: un lenguaje único (siete funciones,
+dos dimensiones, dos vistas, dos modos), un procedimiento de clasificación con orden fijo
+y protocolo de excepciones, un modelo de datos que lo hace operable y un gate que lo hace
+exigible — todo ello demostrado sobre una implementación real con su registro de
+decisiones íntegro.</p>
+<p>Dicho sin defensa: <strong>con otros siete nombres, el método funcionaría igual.</strong> El valor no
+está en la taxonomía sino en las separaciones que impone (función/producto,
+estructura/gestión/ejecución, intención/resultado, target/actual) y en que cada separación
+deja rastro documental. Si el tribunal busca la aportación en los nombres, no la
+encontrará; está en el expediente.</p>
+<hr />
+<h2>4.16 Síntesis del capítulo</h2>
+<blockquote>
+<p><strong>Los módulos no representan productos. Representan trabajos que el capital debe
+realizar.</strong> Una cartera puede usar todos los módulos o solo algunos. Los módulos
+proporcionan el lenguaje; el mandato determina los pesos; los productos implementan la
+estrategia; el X-Ray verifica el resultado; y las reglas de seguimiento lo mantienen en
+el tiempo.</p>
+</blockquote>
+<p>Los capítulos 5 a 7 desarrollan las piezas instrumentales aquí introducidas; el capítulo 8
+somete el lenguaje a la prueba de describir ocho arquitecturas ajenas; el capítulo 9 reúne
+las limitaciones; y la Parte II muestra la cadena completa aplicada, decisión a decisión,
+a <em>Peaky Minders Global 10Y</em>.</p>
+<hr />
+<h2>CIERRE DEL CAPÍTULO — control de auditoría</h2>
+<table>
+<thead>
+<tr>
+<th>Decisiones</th>
+<th>Evidencia</th>
+<th>Limitaciones</th>
+<th>Visuales</th>
+<th>Fuentes pendientes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D75 <em>(arquitectura modular v1.0)</em> · D78 <em>(modos de gestión, política/capital de la Reserva, dos vistas contables, mapa módulo→régimen como hipótesis)</em> · D63 <em>(gestión activa delegada)</em> · D50 <em>(Reserva)</em> · D48 <em>(macrobloque 47%)</em></td>
+<td>Correlaciones 0,70-0,91 de Aceleración <em>(X-Ray oficial §5, cap. 18)</em> · registro D1-D78 como prueba del orden de decisión · conciliación real-vs-proxy <em>(D77)</em> como origen de 4 de los 9 campos añadidos</td>
+<td>Subjetividad inter-analista <strong>no testada</strong> <em>(L1)</em> · desarrollo paralelo marco-cartera <em>(L2)</em> · separación funcional ≠ estadística, <strong>con evidencia propia en contra</strong> <em>(L3)</em> · marco descriptivo, no predictivo <em>(L4)</em> · mapa módulo→régimen <strong>sin validar hasta el cap. 19</strong> · escalabilidad a family office <strong>declarada, no demostrada</strong></td>
+<td>① Esquema de 3 capas <em>(módulos / overlay / execution)</em> ② Árbol de clasificación de 8 preguntas ③ Tablero del Gate <em>(10 semáforos)</em> ④ Doble vista Position/Look-Through de la misma cartera ⑤ Cadena OBJETIVO→CONTROL ⑥ Cuadrante módulo→régimen <em>(marcado «hipótesis de diseño»)</em></td>
+<td>🔴 SPIVA Persistence Scorecard <em>(persistencia débil)</em> · 🔴 Kahneman / Montier <em>(sesgo retrospectivo)</em> · 🟠 Fama-French y Asness et al. <em>(primas factoriales)</em> · 🟠 Bridgewater <em>All Weather Story</em> <em>(risk parity)</em> · 🟠 Swensen <em>Unconventional Success</em> <em>(asignación funcional)</em> · 🟡 literatura goals-based investing · 🟡 documentación Morningstar sobre roles de cartera</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>REGISTRO</h2>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-13</td>
+<td><strong>Borrador v1 completo del capítulo 4</strong> — 16 secciones, con las resoluciones D78 integradas <em>(modos de gestión, Reserva política/capital, dos vistas contables, mapa módulo→régimen como hipótesis)</em>, separación tipográfica [MODELO]/[EVIDENCIA EXTERNA] y tabla de control final. <strong>Pendiente de auditoría antes de continuar al capítulo 5</strong></td>
+</tr>
+</tbody>
+</table></div></body></html>
