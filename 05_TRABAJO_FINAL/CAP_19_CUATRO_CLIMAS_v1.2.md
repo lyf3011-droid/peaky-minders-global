@@ -1,11 +1,16 @@
 # CAPÍTULO 19 — CUATRO CLIMAS ECONÓMICOS: UNA PRUEBA HISTÓRICA DE ROBUSTEZ
 
-## Investment Book · Parte IV · **Borrador v1.2** · 14 de agosto de 2026
+## Investment Book · Parte IV · 🟢 **CERRADO v1.2** · 14 de agosto de 2026 *(D97)*
 
-> **v1.1** — pasada quirúrgica tras auditoría externa: diez correcciones de precisión y
-> alcance. **v1.2** — auditoría de fuentes y cuatro remates. **En ninguna de las dos se han
-> recalculado análisis ni modificado cifras, hipótesis, pesos, vehículos, R1-R8 ni
-> resultados.** Bibliografía verificada en §19.17.
+> **Historial de versiones.** **v1** — redacción inicial. **v1.1** — pasada quirúrgica tras
+> auditoría externa: diez correcciones de precisión y alcance. **v1.2** — auditoría de
+> fuentes, cuatro remates y **microparche final de evidencia** *(retirado el día exacto del
+> lanzamiento del índice de emergentes, no respaldado por la fuente oficial verificada)*.
+> **En ninguna de ellas se han recalculado análisis ni modificado cifras, hipótesis, pesos,
+> vehículos, R1-R8 ni resultados.** Bibliografía verificada en §19.17.
+>
+> **Las tres versiones se conservan.** El capítulo **no volverá a modificarse salvo hallazgo
+> material nuevo.**
 
 > **Convención tipográfica:** **[MODELO]** = afirmación propia de PMMA · **[EVIDENCIA
 > EXTERNA]** = requiere cita de fuente primaria · **`[FUENTE ACADEMIA / ANTONIO]`** =
@@ -334,10 +339,10 @@ hueco con un proxy débil para que la tabla tenga siete filas completas.
 > régimen**: evitar mezclar el periodo de Bretton Woods con doble mercado y el posterior a
 > la **suspensión de la convertibilidad del dólar en oro, anunciada el 15 de agosto de
 > 1971 [EVIDENCIA EXTERNA — 2]**. Es una elección de alcance, no una limitación del dato.
-- **Emergentes** *(7%)*: el índice de referencia de la categoría, el MSCI Emerging Markets,
-  **se lanzó el 30 de junio de 1988 con diez países [EVIDENCIA EXTERNA — 3]**, de modo que
-  **no cubre ninguno de los episodios de inflación alta de los setenta**, que son justamente
-  los que interesan. **No se sustituye por acciones de EEUU**: sería lo contrario de lo que
+- **Emergentes** *(7%)*: **el MSCI Emerging Markets Index fue introducido en 1988 y
+  originalmente cubría diez países [EVIDENCIA EXTERNA — 3]**, de modo que **no cubre
+  ninguno de los episodios de inflación alta de los setenta**, que son justamente los que
+  interesan. **No se sustituye por acciones de EEUU**: sería lo contrario de lo que
   el módulo representa.
 - **Bitcoin** *(4%)*: existe desde 2009. **No se inventa historia anterior a su
   existencia.** El módulo se justifica por diseño —tamaño acotado—, no por evidencia
@@ -673,7 +678,7 @@ en el texto y referencia aquí. **Se priorizan fuentes primarias u oficiales.**
 |---|---|---|---|
 | **1** | Tras la disolución del London Gold Pool en marzo de 1968 se instauró un **sistema de dos niveles**: precio oficial de 35 $/onza solo entre autoridades monetarias y **mercado privado a precio libre** | §19.8, nota del oro | **Federal Reserve History**, *Nixon Ends Convertibility of U.S. Dollars to Gold* — federalreservehistory.org/essays/gold-convertibility-ends · complementado por **FMI**, *Annual Report 1968*, cap. 7 «Gold» |
 | **2** | La **convertibilidad del dólar en oro se suspendió el 15 de agosto de 1971** | §19.8, nota del oro | **Federal Reserve History**, ídem |
-| **3** | El **MSCI Emerging Markets Index se lanzó el 30 de junio de 1988**, inicialmente con diez países | §19.8 | **MSCI** *(proveedor del índice)*, documentación oficial de la familia de índices de mercados emergentes — msci.com |
+| **3** | **El MSCI Emerging Markets Index fue introducido en 1988 y originalmente cubría diez países** | §19.8 | **MSCI** *(proveedor del índice)*, documentación oficial de la familia de índices de mercados emergentes — msci.com/indexes/group/emerging-markets-indexes. ⚠️ **El día exacto de lanzamiento se retiró**: la fuente oficial verificada respalda el año y el número de países, no la fecha concreta |
 | **4** | La Reserva Federal anunció un **cambio de régimen de política monetaria el 6 de octubre de 1979** *(pasar a fijar objetivos de reservas en lugar del tipo de los fondos federales)* | §19.6 | **Federal Reserve History**, *Volcker's Announcement of Anti-Inflation Measures* — federalreservehistory.org/essays/anti-inflation-measures |
 | **5** | El marco original de cuatro cuadrantes se formula en términos de **crecimiento e inflación frente a expectativas**, y atribuye el impacto sobre los mercados a las **sorpresas** respecto de ellas | §19.3 | **Bridgewater Associates** *(la gestora que desarrolló el marco)*, *The All Weather Story* — bridgewater.com. ⚠️ **Documento divulgativo de la propia gestora, no publicación académica revisada**: se cita como fuente primaria de **cómo sus autores describen su método**, no como evidencia de su validez |
 
@@ -686,6 +691,7 @@ en el texto y referencia aquí. **Se priorizan fuentes primarias u oficiales.**
 | *«Los índices de emergentes no existen antes de finales de los ochenta»* | 🔧 **PRECISADA con fuente**: fecha exacta de lanzamiento del índice de referencia |
 | *«La transición de la política monetaria de Volcker»* *(como hecho de contexto sin fecha)* | 🔧 **PRECISADA con fuente** y fecha del anuncio |
 | *«Para comprar hace falta que una empresa llegue al precio escrito»* *(sin acotar)* | 🔧 **ACOTADA** a compras de Convicción; aportaciones y rebalanceo siguen el protocolo del cap. 13 |
+| *«El MSCI Emerging Markets Index se lanzó el 30 de junio de 1988»* | 🔧 **ATENUADA — día exacto eliminado.** La documentación oficial verificada respalda **el año (1988) y los diez países iniciales**, pero no la fecha concreta. Se aplica la regla de evidencia: lo que no está suficientemente respaldado se retira, no se completa con una fuente más débil |
 
 ### Afirmaciones que NO necesitan fuente externa
 
@@ -696,6 +702,10 @@ las decisiones D89-D95)*, que se cita por su registro de decisiones.
 
 ---
 
-> **Estado:** **borrador v1.2**, tras la pasada quirúrgica *(v1.1)* y la auditoría de
-> fuentes *(v1.2)*. **Pendiente de cierre formal.** **El capítulo 4 no ha sido modificado y
-> sus parches no se han ejecutado.**
+> ## 🟢 **Estado: CERRADO** *(v1.2 · D97)*
+>
+> Cerrado tras la redacción *(v1)*, la pasada quirúrgica *(v1.1)*, la auditoría de fuentes
+> *(v1.2)* y el microparche final de evidencia. **v1, v1.1 y v1.2 se conservan con su
+> trazabilidad completa.** **No se modificará salvo hallazgo material nuevo.**
+>
+> **El capítulo 4 no ha sido modificado y sus parches no se han ejecutado.**
