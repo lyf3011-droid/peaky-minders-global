@@ -130,7 +130,7 @@ dimensiones sigue vigente como vara de medir.)*
 | 3 | Mandato Peaky Minders Global 10Y | 100k · 1k/mes · 10a · agresivo · ventana de retirada | §8 paso 1 | `PROTOCOLO §0` · D54 | **tensión 10 años/agresivo** | ficha de mandato | 🟠 |
 | 4 | PMMA: función dominante y los siete módulos | El núcleo del método | §2-4, §31-34 | D75 · D78-D79 | — | esquema de capas | 🟢 **CERRADO v2** |
 | 5 | Capas transversales: Convicción y ejecución | Estructura ≠ gestión ≠ gobernanza ≠ ejecución | §5 | D50 · D63 · D78-D80 | — | diagrama 3 capas | 🟢 **CERRADO v2** |
-| 6 | Position Mode y Look-Through Mode | Intención vs resultado | §7, §10 | D62 regla ×0,7693 | — | doble vista | 🔵 |
+| 6 | Los dos modos de análisis: por posición y mirando dentro | Intención vs resultado | §7, §10 | D52 · D62 · D73 · D77 · D81 | — | doble vista | 🟢 **CERRADO v2** |
 | 7 | Instrumental: árbol, extensión, modelo de datos, gate | El método es procedimiento, no intuición | §14-16, §27, §29 | D75 | **9 campos nuevos (A.4)** | árbol + gate | 🟡 |
 | 8 | Validación descriptiva: 8 arquitecturas históricas | Capacidad descriptiva, no universalidad | §11-13 | — | 🔴 **fuentes primarias (B7)** | tabla comparativa | 🟠 |
 | 9 | Limitaciones del marco | Subjetividad, falsabilidad, ex post | §28 | C.2 de esta auditoría | — | — | 🟡 |
