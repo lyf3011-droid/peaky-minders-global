@@ -1,31 +1,23 @@
 # 🔜 PRÓXIMA SESIÓN — punto de partida
 
-> # 🚀 ARRANQUE DE LA PRÓXIMA SESIÓN — 14 de agosto de 2026
+> # 🚀 ARRANQUE — 14 de agosto de 2026
 >
-> ## **La cartera está CERRADA. Ya no se rediseña.**
+> **Lee primero:** [`CHECKPOINT_2026-08-13.md`](CHECKPOINT_2026-08-13.md) — estado
+> congelado, decisiones abiertas y prohibiciones vigentes.
 >
-> **Lee primero:** [`PLAN_INVESTMENT_BOOK.md`](PLAN_INVESTMENT_BOOK.md) — índice de 27
-> capítulos, matriz de evidencia, tareas delegables y dependencias.
+> ## Primera tarea, en una sola pasada
 >
-> ### Los cuatro primeros movimientos, por orden
+> **Aplicar la auditoría externa de ChatGPT a los caps. 9-14** + crear
+> **`CARTERA_V1_0_FUENTE_DE_VERDAD.md`** *(reconciliar Emergentes · Small Caps · Oro ·
+> Cobre · real vs X-Ray)* → **v2 de los caps. 9-14** → auditoría conjunta de cierre.
 >
-> | # | Qué | Tiempo |
-> |---|---|---|
-> | **1** | **Confirmar `05_TRABAJO_FINAL/`** *(o 04)* y crear la estructura | 5 min |
-> | **2** | 🔴 **T2 — KIID del PIMCO `IE00B84J9L26`.** Desbloquea los capítulos 10 y 23 | **30 min** |
-> | **3** | Repartir al grupo T1, T3, T4, T5, T6 | 20 min |
-> | **4** | 🔴 **D47a — auditoría de shocks.** Es el cuello de botella caro | media sesión |
+> ## 🔴 NO autorizado
 >
-> ### Estado congelado
+> PIMCO · clase de Emergentes · cobre/oro · Fecha Cero · IDC · D47b · cap. 15.
 >
-> **Arquitectura (D65):** Motor 44 · Reserva 3 · Convicción 0-14 · Defensivos 12 ·
-> Aceleración 12 · Emergentes 7 · Freno 9 · Activos reales 9 · Asimetría 4 = **100**.
-> **Decisiones D1 → D69.** **Coste ≈0,21% ESTIMADO**, pendiente de KIID.
->
-> ### 🔴 Lo único abierto
->
-> **D47a** *(estrés)* · **D47b** *(sobreponderaciones)* · **D53** *(escenarios)* ·
-> **TER del PIMCO** · **fichas de Convicción**. **Nada más.**
+> **Estado del libro:** caps. 4-8 🟢 *(8 provisional)* · 9-14 🔵 en auditoría · 15-27 ⚫.
+> **Decisiones: D1-D84.** Último commit: `88ddc9f`.
+
 
 
 > # 🔬 X-RAY VIGENTE: **XRAY_OFICIAL_2026-08-13** — [`02_CARTERA/XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md`](../02_CARTERA/XRAY_ALTERNATIVA_MOTOR_A_2026-08-13.md)
