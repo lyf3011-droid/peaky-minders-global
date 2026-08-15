@@ -2,6 +2,13 @@
 
 ## FASE 0 · Congelado el 15 de agosto de 2026 · **antes de examinar ninguna cartera externa**
 
+> ### 📌 **ENMIENDA PRE-EJECUCIÓN D109 — EX ANTE**
+> **El texto original de D108 se conserva íntegro y sin borrar.** El §21 añade
+> **precisiones metodológicas fijadas ANTES de ejecutar la Fase 1 y sin conocer ningún
+> resultado**. Las reglas afectadas —**C3, F7, F8**, el tratamiento de **Global 10Y** y la
+> precaución sobre **F4**— llevan marca en su punto original.
+> **No es una modificación post hoc:** la Fase 1 sigue sin ejecutarse.
+
 > ## 🔒 **Este documento se fija ANTES de mirar resultados.**
 > Ninguna regla, criterio, umbral ni predicción de este protocolo se ha escrito conociendo
 > el resultado del estudio. **Toda regla añadida después llevará la etiqueta
@@ -95,7 +102,7 @@ parsimonia que se evalúan en conjunto.
 |---|---|---|---|
 | **C1** | **Función económica diferenciable** | Debe poder explicarse **qué trabajo hace el capital**, en una frase, sin nombrar productos | Redacción de la función sin mencionar ningún vehículo |
 | **C2** | **No redundancia** | No debe ser otra forma de expresar una función ya existente | Matriz de solapamiento funcional *(§7.2)* |
-| **C3** | **Generalización** | Debe aparecer o tener sentido en **más de una arquitectura** | Recuento sobre la muestra de carteras |
+| **C3** | **Generalización** | Debe aparecer o tener sentido en **más de una arquitectura** | Recuento sobre la muestra de carteras · 📌 **redacción final en §21.2** |
 | **C4** | **Independencia de producto** | Debe poder implementarse con **≥2 vehículos distintos** de naturaleza diferente | Enumeración de implementaciones alternativas |
 | **C5** | **Gobernabilidad** | Debe permitir definir reglas de inclusión, peso, riesgo y revisión | ¿Puede escribirse una regla operativa no trivial? |
 | **C6** | **Falsabilidad** | Debe existir **alguna observación capaz de cuestionar su necesidad** | Se exige redactarla explícitamente por módulo |
@@ -137,8 +144,8 @@ representabilidad; no protege al módulo.**
 | **F4** | **Clasificación irreproducible** | **> 20%** de las asignaciones difieren en la prueba de reproducibilidad *(§9)* | 🔴 Cuestiona C9 y la auditabilidad |
 | **F5** | **Redefinición constante** | Se necesita **modificar una definición de módulo más de 2 veces** durante el estudio para acomodar carteras | 🔴 El método se está ajustando a los datos |
 | **F6** | **Los módulos describen productos, no funciones** | **≥2 módulos** solo pueden definirse enumerando los productos que contienen | 🔴 Contradice el principio central |
-| **F7** | **Solo funciona para Global 10Y** | **≥3 carteras** de la muestra requieren «encaje con tensión» o «no encaja» | 🔴 No generaliza |
-| **F8** | **No supera a una taxonomía más simple** | La **taxonomía simple de referencia** *(§6.2)* clasifica la muestra **con igual utilidad comparativa y menos categorías** | 🔴 La complejidad no se paga |
+| **F7** | **Solo funciona para Global 10Y** | **≥3 carteras** de la muestra requieren «encaje con tensión» o «no encaja» | 🔴 No generaliza · 📌 **redacción final en §21.3** |
+| **F8** | **No supera a una taxonomía más simple** | La **taxonomía simple de referencia** *(§6.2)* clasifica la muestra **con igual utilidad comparativa y menos categorías** | 🔴 La complejidad no se paga · 📌 **regla operativa en §21.4** |
 | **F9** 🆕 | **Módulo inutilizado y absorbible** | Un módulo queda a **0% en todas las carteras** de la muestra **y** su función es absorbible por otro sin pérdida de información | 🟠 Candidato a eliminación *(C11)* |
 
 ## 5.1 Qué NO cuenta como fallo
@@ -222,7 +229,7 @@ no fue diseñado**.
 | **G** | **Modelo Endowment** *(estilo Swensen)* | Alternativos ilíquidos, private markets | 🔴 **Private equity, absolute return** |
 | **H** | **Cartera de rentas / income** | Objetivo de flujo, no de crecimiento | 🔴 **El mandato es distinto: ¿PMMA lo cubre?** |
 | **I** | **Trend following / managed futures puro** | Estrategia, no clase de activo | 🔴 **La función es dinámica, no estructural** |
-| **J** | **Peaky Minders Global 10Y** | El caso de origen | Control: **debe encajar** — si no, hay un problema grave |
+| **J** | **Peaky Minders Global 10Y** | El caso de origen | 📌 **CONTROL POSITIVO — no computa para generalización. Ver §21.1** |
 
 **Diez arquitecturas, de las cuales seis están elegidas por su capacidad de romper PMMA.**
 
@@ -274,7 +281,7 @@ testada**— sigue abierta. Un protocolo que pregunte Q5 sin poder responderla e
 
 > ⚠️ **Limitación declarada:** la prueba mínima mide **consistencia intra-analista**, no
 > inter-analista. **No cierra L1.** Se declarará así en el resultado, sin presentarla como si
-> lo hiciera.
+> lo hiciera. 📌 **Precaución sobre F4 en §21.5.**
 
 ---
 
@@ -531,6 +538,161 @@ enumerando productos. **Sin esos dos criterios, PMMA sería infalsable por const
 
 ---
 
+# 21. 📌 ENMIENDA PRE-EJECUCIÓN **D109** — EX ANTE
+
+> **Fijada el 15 de agosto de 2026, con la Fase 1 sin ejecutar y sin conocer ningún
+> resultado.** **D108 permanece como versión congelada original**; nada de su texto se ha
+> borrado ni ocultado. Esta enmienda **cierra cuatro ambigüedades** detectadas al auditar el
+> protocolo antes de autorizar la ejecución.
+
+## 21.1 · Global 10Y = **CONTROL POSITIVO**, no evidencia de generalización
+
+> **Peaky Minders Global 10Y forma parte de la muestra únicamente como CONTROL POSITIVO /
+> PRUEBA DE CONSISTENCIA INTERNA. No se contabiliza para demostrar que PMMA generaliza fuera
+> de la cartera que originó el método.**
+
+| Concepto | Valor |
+|---|---|
+| **Muestra total** | **10** arquitecturas |
+| **Muestra externa para generalización** | **n = 9** *(A-I)* |
+| **Global 10Y** | **Control separado**, fuera de todo denominador de generalización |
+
+**Todo denominador referido a generalización, recurrencia externa, cobertura externa o
+funciones presentes en otras arquitecturas usa n = 9**, salvo que la métrica indique
+expresamente lo contrario.
+
+| ✅ Global 10Y **sí** sirve para | ❌ Global 10Y **no** sirve para |
+|---|---|
+| Comprobar **consistencia interna** | Sumar evidencia de universalidad |
+| Verificar que el protocolo **reproduce su arquitectura de origen** | Rellenar el mínimo de C3 |
+| Comprobar que **PMMA no falla ni describiendo la cartera de la que nació** | Contar en F1, F2, F3, F7 ni F9 |
+
+### Consecuencia sobre los umbrales
+
+| Regla | Denominador definitivo |
+|---|---|
+| **F1** *(>15% con excepción)* | Sobre las **asignaciones de las 9 externas** |
+| **F2** *(≥3 carteras)* | **≥3 arquitecturas externas** |
+| **F3** *(≥3 carteras)* | **≥3 arquitecturas externas** |
+| **F7** | **Ver §21.3** — solo externas |
+| **F9** *(módulo inutilizado)* | **0% en las 9 externas.** ⚠️ **Que un módulo se use únicamente en Global 10Y NO lo salva de F9** — sería precisamente la señal de que existe solo para la cartera de origen |
+| **M1-M9** | Se publican **por separado para las 9 externas y para el control**, nunca agregadas |
+
+## 21.2 · **C3 — redacción final**
+
+> ### **C3 · Generalización**
+> **La función del módulo debe identificarse de forma efectiva en al menos DOS
+> arquitecturas externas distintas**, utilizando la función declarada o razonablemente
+> inferible de sus exposiciones, **sin contar Global 10Y**.
+>
+> **Si una función es conceptualmente posible pero no aparece en la muestra, eso puede
+> discutirse como limitación de muestra, pero NO cuenta como evidencia positiva de C3.**
+
+**Qué cierra esta redacción:** la formulación original *(«aparece o tiene sentido en más de
+una arquitectura»)* permitía **salvar un módulo diciendo que «podría tener sentido» en otra
+cartera**. Con la redacción final, **la posibilidad conceptual no puntúa: solo puntúa la
+identificación efectiva**.
+
+## 21.3 · **F7 — redacción final, con la distinción tensión ≠ fallo**
+
+### Definiciones congeladas
+
+> **❌ NO ENCAJA** — Existe una función material de la arquitectura que **PMMA no puede
+> representar** sin: excepción · extensión · contradicción de fronteras · o redefinición.
+
+> **⚠️ ENCAJA CON TENSIÓN** — La función **puede representarse sin modificar PMMA**, pero
+> existe **ambigüedad material, pérdida de información o conflicto entre módulos**.
+
+### Regla de activación
+
+> ### **F7 se activa si:**
+> **(a)** **≥3 arquitecturas externas** obtienen **❌ NO ENCAJA**; **o**
+> **(b)** **≥3 arquitecturas externas** presentan **⚠️ ENCAJA CON TENSIÓN por la MISMA
+> deficiencia estructural recurrente**.
+
+> ### ⛔ **Prohibido sumar tres tensiones de naturaleza distinta y declararlas un único
+> ### fallo estructural.** Para invocar (b) hay que **nombrar la deficiencia común** y
+> ### demostrar que es la misma en los tres casos.
+
+**Qué cierra:** el F7 original trataba «tensión» y «no encaja» como evidencias equivalentes,
+lo que **penalizaba en exceso a PMMA**: tres tensiones aisladas y sin relación entre sí
+podían declarar que no generaliza.
+
+## 21.4 · **F8 — regla operativa final**
+
+**Sin score agregado.** Se usan las métricas ya predefinidas: **M1** cobertura · **M2**
+ambigüedades · **M3** funciones no representadas · **M8** capacidad comparativa.
+
+> ### **F8 se activa si T1, usando solo cuatro categorías, cumple LAS CUATRO condiciones:**
+>
+> **① Cobertura (M1):** la cobertura funcional de T1 **iguala o supera** la de PMMA sobre
+> las 9 externas.
+> **② Funciones no representadas (M3):** T1 **no deja más funciones huérfanas** que PMMA.
+> **③ Ambigüedad (M2):** T1 **no presenta degradación material** — definida en §21.4.1.
+> **④ Capacidad comparativa (M8):** T1 **conserva la capacidad de distinguir** las
+> arquitecturas estudiadas — definida en §21.4.2.
+
+### 21.4.1 · «Degradación material de ambigüedad» — **margen fijado ahora**
+
+> **No hay degradación material si la tasa de asignaciones ambiguas *(media o alta)* de T1
+> NO supera la de PMMA en más de:**
+> **① 5 puntos porcentuales** sobre el total de asignaciones externas, **y**
+> **② 3 asignaciones en términos absolutos.**
+> **Deben cumplirse las dos condiciones.**
+
+**Justificación del margen, escrita antes de ver datos:** con ~9 arquitecturas externas y una
+media estimada de 5-7 exposiciones cada una, el total de asignaciones externas rondará las
+**45-60**. A ese tamaño, **3 asignaciones ≈ 5-6 puntos porcentuales**, de modo que los dos
+umbrales son **prácticamente equivalentes** y la conjunción **no esconde una protección a
+PMMA**: es una salvaguarda frente a que un denominador pequeño convierta una sola asignación
+en un porcentaje engañoso.
+
+⚠️ **No se busca precisión estadística: la muestra es pequeña.** Se busca **una regla
+transparente que un tercero pueda aplicar y obtener la misma conclusión.**
+
+### 21.4.2 · «Conservar la capacidad de distinguir» — **definición operativa**
+
+> **T1 conserva capacidad comparativa si el número de pares de arquitecturas externas que
+> quedan con perfil indistinguible bajo T1 NO supera en más de UN par al número de pares
+> indistinguibles bajo PMMA.**
+
+*(Con 9 externas hay 36 pares posibles. «Perfil indistinguible» = misma asignación de
+categorías con pesos equivalentes, de modo que la taxonomía no permite diferenciar las dos
+arquitecturas.)*
+
+**Qué cierra:** *«igual utilidad comparativa»* era interpretable. Ahora **hay un recuento
+que un tercero puede reproducir**.
+
+## 21.5 · **F4 — precaución sobre la prueba de reproducibilidad**
+
+> **No se activará F4 por «falta de prueba inter-analista».** Si no se consigue un segundo
+> analista, **F4 solo se activa por discrepancia realmente observada** en la prueba
+> ejecutada.
+>
+> **La ausencia del test ideal queda como limitación *(L-U1)*, no como resultado negativo
+> ni positivo.**
+
+## 21.6 · Trazabilidad de la enmienda
+
+| | |
+|---|---|
+| **D108** | **Protocolo original congelado.** Texto íntegro conservado, sin borrar ni ocultar |
+| **D109** | **Clarificaciones metodológicas pre-ejecución**, realizadas **sin conocer ningún resultado de la Fase 1** |
+| **Naturaleza** | **EX ANTE.** No es post hoc: la Fase 1 no se ha ejecutado |
+| **Alcance** | C3 · F7 · F8 *(con §21.4.1 y §21.4.2)* · tratamiento de Global 10Y · precaución sobre F4 · denominadores n=9 |
+
+### Actualización de la tabla de trazabilidad *(§15.1)*
+
+| Regla | Fecha de fijación | ¿Pre-resultados? | Cambio posterior | Motivo |
+|---|---|---|---|---|
+| **Global 10Y como control positivo · n=9** | 15-ago-2026 | ✅ **Sí — D109** | — | El caso de origen no puede probar generalización |
+| **C3 redacción final** | 15-ago-2026 | ✅ **Sí — D109** | — | «Podría tener sentido» no es evidencia |
+| **F7 redacción final** | 15-ago-2026 | ✅ **Sí — D109** | — | Tensión ≠ fallo; se exige deficiencia común |
+| **F8 regla operativa + márgenes** | 15-ago-2026 | ✅ **Sí — D109** | — | «Igual utilidad» era interpretable |
+| **Precaución F4** | 15-ago-2026 | ✅ **Sí — D109** | — | La ausencia de test no es resultado |
+
+---
+
 ## REGISTRO
 
 **15-ago-2026 — Fase 0 de PMMA Universal.** Se fijan pregunta, hipótesis, criterios de
@@ -538,3 +700,11 @@ existencia *(C1-C12)*, criterios de fallo con umbrales *(F1-F9)*, taxonomías ri
 *(T0, T1)*, universo de 26 exposiciones, muestra de 10 arquitecturas, plantilla única, Red
 Team de 12 casos, métricas M1-M9, límites frente a los regímenes, siete predicciones y
 autoauditoría. **Pendiente de aprobación antes de ejecutar la Fase 1.**
+
+**15-ago-2026 — Enmienda pre-ejecución D109 (EX ANTE).** Se cierran cuatro ambigüedades
+**sin haber ejecutado la Fase 1 ni conocer ningún resultado**: Global 10Y pasa a **control
+positivo con n=9 para generalización** · **C3** exige identificación efectiva en ≥2
+arquitecturas externas · **F7** distingue tensión de fallo y exige **deficiencia común**
+para acumular · **F8** recibe **regla operativa de cuatro condiciones con márgenes
+numéricos** · **F4** no se activa por ausencia de segundo analista. **D108 se conserva
+íntegro.**
