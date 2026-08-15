@@ -1,0 +1,623 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auditoría de versionado — base oficial ↔ laboratorio</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🧬 AUDITORÍA DE VERSIONADO — CARTERA OFICIAL ↔ BASE DEL LABORATORIO</h1>
+<h2>15 de agosto de 2026 · genealogía reconstruida con evidencia</h2>
+<blockquote>
+<p><strong>Nada modificado.</strong> Ni cartera, ni capítulos, ni fuente de verdad, ni Dxx, ni PMMA.
+<strong>No se han ejecutado pruebas X-Ray, ni validación histórica, ni R-1 a R-6.</strong></p>
+</blockquote>
+<hr />
+<h1>0. Las tres entidades, separadas <em>(regla de autoridad)</em></h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Entidad</th>
+<th>Qué es</th>
+<th>Documento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td><strong>CARTERA OFICIAL DOCUMENTADA</strong></td>
+<td>Última versión formalmente aprobada en el Investment Book</td>
+<td><code>CARTERA_V1_0_FUENTE_DE_VERDAD.md</code> + <code>XRAY_OFICIAL_2026-08-13.md</code></td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td><strong>BASE OPERATIVA DEL LABORATORIO</strong></td>
+<td>Cartera real sobre la que se ejecutaron <strong>todos</strong> los X-Rays</td>
+<td><code>mi_cartera.txt</code> <em>(«PEAKY MINDERS GLOBAL v10»)</em></td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td><strong>CANDIDATA FINAL</strong></td>
+<td>B + India + commodities</td>
+<td><code>CARTERA_GANADORA.txt</code> · X-Ray 34</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A partir de aquí no se mezclan.</strong> Que <strong>B</strong> no se hubiera propagado a <strong>A</strong> no invalida las
+pruebas hechas entre <strong>B</strong> y <strong>C</strong>.</p>
+<hr />
+<h1>1. Cronología reconstruida — con marcas de tiempo verificables</h1>
+<table>
+<thead>
+<tr>
+<th>Momento</th>
+<th>Evento</th>
+<th>Evidencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>11-ago</strong></td>
+<td>AXA Trésor entra en el catálogo <strong>con una advertencia</strong>: <em>«Ojo: se usa como liquidez pero por dentro es 57% bonos y 29% otros, no efectivo puro»</em></td>
+<td><code>catalogo.json</code>, campo <code>fecha_dato: 2026-08-11</code></td>
+</tr>
+<tr>
+<td><strong>13-ago</strong></td>
+<td><strong>SPDR Global Aggregate se cataloga con análisis detallado</strong>: composición por tipo de emisor, geografía, <strong>⚠️ clase de distribución</strong> y <strong>⚠️ «2022: −13,16%»</strong></td>
+<td><code>catalogo.json</code>, <code>fecha_dato: 2026-08-13</code></td>
+</tr>
+<tr>
+<td><strong>14-ago 01:10</strong></td>
+<td><strong>Commit del X-Ray oficial</strong> con <strong>Freno = AXA 6,19 + PIMCO 3,09</strong></td>
+<td><code>git 9c590da</code></td>
+</tr>
+<tr>
+<td><strong>14-ago 12:09</strong></td>
+<td><strong>Commit de la fuente de verdad v1.0</strong> con el mismo Freno</td>
+<td><code>git 138aaae</code> <em>(D85)</em></td>
+</tr>
+<tr>
+<td><strong>14-ago 17:46</strong></td>
+<td>🔴 <strong>Se fija <code>mi_cartera.txt</code> v10 con SPDR 9,28 sustituyendo a AXA+PIMCO</strong></td>
+<td><code>mtime</code> del archivo</td>
+</tr>
+<tr>
+<td><strong>14-ago 19:53</strong></td>
+<td><strong>Primer X-Ray del laboratorio</strong> <em>(<code>00_BASE-v10</code>)</em></td>
+<td><code>mtime</code> del PDF</td>
+</tr>
+<tr>
+<td><strong>14-ago 19:53 → 15-ago 02:19</strong></td>
+<td>Las 33 pruebas restantes</td>
+<td><code>mtime</code> de los 35 PDF</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3>⏱️ <strong>La BASE se fijó 2 horas y 7 minutos ANTES del primer X-Ray, y no se tocó después.</strong></h3>
+<p><strong>[RESULTADO]</strong> El archivo <code>mi_cartera.txt</code> no ha vuelto a modificarse desde las 17:46 del
+14-ago, mientras los X-Rays se generaron entre las 19:53 y las 02:19. <strong>La baseline es
+anterior a todos los resultados.</strong></p>
+</blockquote>
+<h2>1.1 Matiz importante sobre «desfase documental»</h2>
+<p><strong>[DATO]</strong> La documentación oficial <strong>no estaba desactualizada por antigüedad</strong>: el X-Ray
+oficial se comprometió a la <strong>01:10</strong> y la fuente de verdad a las <strong>12:09 del mismo día</strong>.
+El cambio del Freno se produjo <strong>5 horas y 37 minutos después</strong> de la fuente de verdad.</p>
+<p><strong>[INTERPRETACIÓN]</strong> No es una deriva de semanas sin propagar: es <strong>un cambio operativo del
+mismo día, posterior a la documentación y no comunicado</strong>. Eso no lo hace ilegítimo —pero
+sí cambia la etiqueta: <strong>no es «documentación vieja», es «decisión nueva sin registrar»</strong>.</p>
+<hr />
+<h1>2. GENEALOGÍA COMPLETA — todos los cambios, no solo el Freno</h1>
+<p><strong>Referencia usada: el X-Ray oficial del 13-ago</strong> <em>(<code>XRAY_OFICIAL_2026-08-13.md</code>)</em>, porque es
+<strong>la fotografía medida</strong> de la cartera oficial, no su descripción. Pesos en columna X-Ray
+<em>(normalizada al 97%)</em> para que sean directamente comparables.</p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Cartera anterior <em>(A)</em></th>
+<th>BASE v10 <em>(B)</em></th>
+<th>Cambio</th>
+<th>Evidencia / fecha</th>
+<th>¿Deliberado?</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Motor · S&amp;P 500</strong></td>
+<td><code>IE00B5BMR087</code> <strong>23,00</strong></td>
+<td><code>IE00B5BMR087</code> <strong>23,00</strong></td>
+<td><strong>Ninguno</strong></td>
+<td>X-Ray oficial + <code>mi_cartera.txt</code></td>
+<td>—</td>
+<td>✅ <strong>Idéntico</strong></td>
+</tr>
+<tr>
+<td><strong>Motor · All-World</strong></td>
+<td><code>IE00BK5BQT80</code> <strong>22,36</strong></td>
+<td><code>IE00BK5BQT80</code> <strong>22,36</strong></td>
+<td><strong>Ninguno</strong></td>
+<td>Ídem. El reparto interno <strong>50,7/49,3</strong> está <strong>explícito en el X-Ray oficial</strong></td>
+<td>—</td>
+<td>✅ <strong>Idéntico</strong></td>
+</tr>
+<tr>
+<td><strong>Defensivos · consumo</strong></td>
+<td><code>IE00BM67HN09</code> 6,19</td>
+<td><code>IE00BM67HN09</code> 6,19</td>
+<td>Ninguno</td>
+<td>Ídem</td>
+<td>—</td>
+<td>✅ Idéntico</td>
+</tr>
+<tr>
+<td><strong>Defensivos · salud</strong></td>
+<td><code>IE00B43HR379</code> 6,19</td>
+<td><code>IE00B43HR379</code> 6,19</td>
+<td>Ninguno</td>
+<td>Ídem</td>
+<td>—</td>
+<td>✅ Idéntico</td>
+</tr>
+<tr>
+<td><strong>Aceleración · Robeco</strong></td>
+<td><code>LU0203975437</code> 4,12</td>
+<td><code>LU0203975437</code> 4,12</td>
+<td>Ninguno</td>
+<td>Ídem</td>
+<td>—</td>
+<td>✅ Idéntico</td>
+</tr>
+<tr>
+<td><strong>Aceleración · multifactor</strong></td>
+<td><code>IE00BZ0PKV06</code> 4,12</td>
+<td><code>IE00BZ0PKV06</code> 4,12</td>
+<td>Ninguno</td>
+<td>Ídem</td>
+<td>—</td>
+<td>✅ Idéntico</td>
+</tr>
+<tr>
+<td><strong>Aceleración · small caps</strong></td>
+<td>X-Ray usó <strong>SPDR</strong> <code>IE00BCBJG560</code> <em>(proxy D77)</em></td>
+<td><strong>Vanguard</strong> <code>IE00B42W4L06</code> <strong>(el vehículo real)</strong></td>
+<td>🟢 <strong>El laboratorio usa el REAL en vez del proxy</strong></td>
+<td>Fuente de verdad §2.2 · <code>mi_cartera.txt</code></td>
+<td>✅ Sí</td>
+<td>🟢 <strong>MEJORA sobre A</strong></td>
+</tr>
+<tr>
+<td><strong>Activos reales · oro</strong></td>
+<td>X-Ray usó <strong>clase estándar</strong> <code>JE00B1VS3770</code> <em>(proxy)</em></td>
+<td><strong>Core</strong> <code>JE00BN2CJ301</code> <strong>(el real)</strong></td>
+<td>🟢 <strong>El laboratorio usa el REAL</strong></td>
+<td>Fuente de verdad §2.3</td>
+<td>✅ Sí</td>
+<td>🟢 <strong>MEJORA sobre A</strong></td>
+</tr>
+<tr>
+<td><strong>Activos reales · cobre</strong></td>
+<td>X-Ray usó <strong>EUR Daily Hedged</strong> <em>(proxy)</em></td>
+<td><code>GB00B15KXQ89</code> <strong>sin cubrir (el real)</strong></td>
+<td>🟢 <strong>El laboratorio usa el REAL</strong> — y era <strong>la única divergencia que cambiaba el comportamiento</strong> según la propia fuente de verdad</td>
+<td>Fuente de verdad §2.4</td>
+<td>✅ Sí</td>
+<td>🟢 <strong>MEJORA sobre A</strong></td>
+</tr>
+<tr>
+<td><strong>Asimetría · bitcoin</strong></td>
+<td><code>CH1199067674</code> 4,12</td>
+<td><code>CH1199067674</code> 4,12</td>
+<td>Ninguno</td>
+<td>Ídem</td>
+<td>—</td>
+<td>✅ Idéntico</td>
+</tr>
+<tr>
+<td><strong>Emergentes</strong></td>
+<td>Real: clase <strong>S</strong> <code>IE000QAZP7L2</code> · X-Ray del libro: clase <strong>D</strong> <code>IE00BYWYCC39</code></td>
+<td><strong>Instl</strong> <code>IE00B3D07F16</code></td>
+<td>🟡 <strong>Proxy distinto del mismo fondo</strong></td>
+<td><code>mi_cartera.txt</code> <strong>lo documenta en el propio archivo</strong>, invoca <strong>la regla D77</strong> y explica que la clase S no tiene serie histórica</td>
+<td>✅ <strong>Sí, y por escrito</strong></td>
+<td>🟡 <strong>Proxy documentado — tres clases circulando</strong></td>
+</tr>
+<tr>
+<td><strong>⚓ FRENO</strong></td>
+<td><strong>AXA <code>FR0000447823</code> 6,19 + PIMCO <code>IE00B84J9L26</code> 3,09</strong></td>
+<td><strong>SPDR <code>IE00BF1QPL78</code> 9,28</strong></td>
+<td>🔴 <strong>CAMBIO SUSTANTIVO de instrumentos</strong></td>
+<td>Catálogo con análisis del SPDR fechado <strong>13-ago</strong> · sustitución el <strong>14-ago 17:46</strong> · <strong>ningún Dxx</strong> <em>(verificado: <code>IE00BF1QPL78</code> aparece 0 veces en <code>ESTADO.md</code>)</em></td>
+<td>⚠️ <strong>Probablemente sí</strong> <em>(ver §3)</em></td>
+<td>🔴 <strong>Decisión operativa de laboratorio pendiente de propagación documental</strong></td>
+</tr>
+<tr>
+<td><strong>Reserva</strong></td>
+<td>3,00 fuera del informe</td>
+<td>3,00 fuera del informe</td>
+<td>Ninguno</td>
+<td>Ídem</td>
+<td>—</td>
+<td>✅ Idéntico</td>
+</tr>
+</tbody>
+</table>
+<h2>2.1 Recuento — la divergencia es <strong>una</strong>, no varias</h2>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th style="text-align: right;">Nº</th>
+<th>Posiciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ <strong>Idénticas</strong></td>
+<td style="text-align: right;"><strong>8</strong></td>
+<td>S&amp;P, All-World, ambos defensivos, Robeco, multifactor, bitcoin, reserva</td>
+</tr>
+<tr>
+<td>🟢 <strong>El laboratorio usa el vehículo REAL donde el libro usaba proxy</strong></td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td>Small caps, oro, cobre</td>
+</tr>
+<tr>
+<td>🟡 <strong>Proxy distinto, documentado en ambos lados</strong></td>
+<td style="text-align: right;"><strong>1</strong></td>
+<td>Emergentes</td>
+</tr>
+<tr>
+<td>🔴 <strong>Divergencia sustantiva</strong></td>
+<td style="text-align: right;"><strong>1</strong></td>
+<td><strong>Freno</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3>**Conclusión de la genealogía: la BASE v10 no es «otra cartera». Es la cartera oficial</h3>
+<h3>con UN cambio de instrumento en el Freno — y con tres posiciones donde el laboratorio</h3>
+<h3>es MÁS fiel a la realidad que el propio X-Ray oficial del libro.**</h3>
+</blockquote>
+<p><strong>Esto rebaja materialmente el alcance de H-1 tal como lo formulé en la v1 de la auditoría.</strong></p>
+<hr />
+<h1>3. ¿Fue deliberado el cambio del Freno? — evidencia a favor y en contra</h1>
+<h2>3.1 A favor de que fue deliberado</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Evidencia</th>
+<th>Fuerza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>El SPDR se catalogó el 13-ago con análisis detallado</strong>: 10.369 bonos, desglose por tipo de emisor y geografía, aviso de clase de distribución y <strong>aviso explícito de «2022: −13,16%»</strong>. <strong>Nadie documenta así un vehículo que no está considerando</strong></td>
+<td>🟢 Alta</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>AXA llevaba desde el 11-ago una advertencia en el catálogo</strong>: <em>«se usa como liquidez pero por dentro es 57% bonos y 29% otros, no efectivo puro»</em>. <strong>Hay un motivo documentado y anterior para no usarlo como Freno puro</strong></td>
+<td>🟢 Alta</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>AXA sigue en el catálogo</strong>: no se borró ni se descartó — se dejó de usar. Es coherente con una elección, no con un olvido</td>
+<td>🟠 Media</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>La sustitución es limpia</strong>: 6,19 + 3,09 = 9,28 exactos. <strong>El peso del módulo se conserva al céntimo</strong></td>
+<td>🟢 Alta</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong><code>mi_cartera.txt</code> documenta escrupulosamente el otro proxy</strong> <em>(Emergentes, con la regla D77 citada)</em>. Quien documenta un proxy y no el otro <strong>probablemente no lo considera un proxy</strong>, sino el vehículo elegido</td>
+<td>🟠 Media</td>
+</tr>
+</tbody>
+</table>
+<h2>3.2 En contra / lo que falta</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Hueco</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>🔴 <strong>No existe ningún Dxx</strong>, nota, comentario ni línea de registro que diga «se sustituye el Freno». <strong>Verificado</strong>: <code>IE00BF1QPL78</code> aparece <strong>0 veces</strong> en <code>ESTADO.md</code></td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>🔴 <strong><code>mi_cartera.txt</code> no lleva nota explicativa en la línea del Freno</strong>, a diferencia de Emergentes, que sí la lleva</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>🟠 <strong>PIMCO desaparece sin rastro</strong>: <code>IE00B84J9L26</code> <strong>no aparece en ningún archivo del laboratorio</strong>, ni siquiera en el catálogo</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>🟠 <strong>El cambio se produjo 5h37m después de commitear la fuente de verdad</strong> que decía lo contrario. No es deriva antigua: es divergencia del mismo día</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>🟠 <strong>Los tres documentos del laboratorio llaman «Freno · bonos globales» al bloque</strong> y razonan sobre él como si fuera renta fija agregada — <strong>coherente internamente, pero incompatible con la descripción oficial</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>3.3 Veredicto sobre la deliberación</h2>
+<blockquote>
+<p><strong>[INTERPRETACIÓN]</strong> <strong>Hay evidencia razonable de que el cambio fue deliberado</strong> —el
+análisis del SPDR fechado el día anterior y la advertencia sobre AXA son difíciles de
+explicar de otro modo—, <strong>pero no hay evidencia directa de la decisión</strong>, y <strong>el motivo es
+reconstruido, no documentado</strong>.</p>
+<p><strong>Clasificación:</strong> <strong>decisión operativa de laboratorio pendiente de propagación
+documental</strong>, con <strong>motivo plausible reconstruido pero no declarado</strong>.</p>
+</blockquote>
+<p>⚠️ <strong>Lo que NO puedo afirmar:</strong> que el cambio se hiciera <em>por una razón de inversión</em>
+<em>(p. ej. sustituir un monetario impuro por un agregado global)</em> frente a <em>por comodidad de
+medición</em> <em>(el SPDR tiene serie X-Ray larga y limpia; un monetario francés y un fondo
+PIMCO clase E podrían no tenerla)</em>. <strong>Son dos motivos muy distintos y solo tú puedes
+decir cuál fue.</strong></p>
+<hr />
+<h1>4. ¿Es BASE v10 una baseline metodológicamente válida?</h1>
+<table>
+<thead>
+<tr>
+<th>Criterio exigido</th>
+<th>Evidencia</th>
+<th>Cumple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fijada antes de ejecutar las pruebas</strong></td>
+<td><code>mi_cartera.txt</code> a las <strong>17:46</strong>; primer X-Ray a las <strong>19:53</strong>; sin modificaciones posteriores</td>
+<td>✅ <strong>Sí, con marca de tiempo</strong></td>
+</tr>
+<tr>
+<td><strong>Cambios deliberados respecto a la anterior</strong></td>
+<td>Análisis del SPDR el 13-ago + advertencia sobre AXA el 11-ago</td>
+<td>🟡 <strong>Probable, no probado</strong></td>
+</tr>
+<tr>
+<td><strong>No modificada retrospectivamente para favorecer resultados</strong></td>
+<td><strong><code>mtime</code> congelado en 17:46</strong> frente a 35 informes generados después. <strong>Es la prueba más fuerte del expediente</strong></td>
+<td>✅ <strong>Sí</strong></td>
+</tr>
+<tr>
+<td><strong>Reconstruible posición a posición</strong></td>
+<td>✅ <strong>Reconstruida en §2</strong>: 8 idénticas, 3 mejoras, 1 proxy documentado, 1 divergencia</td>
+<td>✅ <strong>Sí</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h2>🟢 <strong>BASE v10 ES UNA BASELINE METODOLÓGICAMENTE VÁLIDA.</strong></h2>
+<p><strong>Fue fijada antes de los resultados, no se tocó después, y su composición es
+reconstruible al céntimo.</strong> El laboratorio <strong>es internamente válido respecto a su propia
+BASE</strong>, y <strong>G2 es un resultado válido dentro de ella</strong>.</p>
+</blockquote>
+<h2>4.1 Lo que sigue sin poder afirmarse</h2>
+<p><strong>Que BASE v10 sea ya la cartera oficial.</strong> Son dos preguntas distintas y solo la primera
+está resuelta:</p>
+<table>
+<thead>
+<tr>
+<th>Pregunta</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>¿El experimento es válido dentro de BASE v10?</strong></td>
+<td>🟢 <strong>Sí</strong></td>
+</tr>
+<tr>
+<td><strong>¿BASE v10 debe convertirse en la cartera oficial?</strong></td>
+<td>🔴 <strong>Decisión pendiente, no auditable con los datos</strong></td>
+</tr>
+<tr>
+<td><strong>¿Commodities supera además la validación histórica independiente?</strong></td>
+<td>🔴 <strong>Pendiente de §K</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>5. AUDITORÍA DEL 47% — ¿rompe realmente la reclasificación de Robeco?</h1>
+<p><strong>Tenías razón en pedir que lo auditara antes de declarar contradicción.</strong></p>
+<h2>5.1 Las tres posibilidades, evaluadas</h2>
+<table>
+<thead>
+<tr>
+<th>Hipótesis</th>
+<th>¿Qué implicaría?</th>
+<th>Veredicto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>(a) Solo cambia la clasificación funcional de Robeco</strong></td>
+<td>Ningún euro se mueve; cambia la etiqueta del módulo</td>
+<td>✅ <strong>Cierto: es una reclasificación, no una asignación</strong></td>
+</tr>
+<tr>
+<td><strong>(b) Cambia el peso económico del macrobloque</strong></td>
+<td>El 47% pasaría a 51%</td>
+<td>❌ <strong>Falso.</strong> No entra ni sale capital. <strong>El 47% es una identidad de gobernanza, no una suma de módulos</strong></td>
+</tr>
+<tr>
+<td><strong>(c) Revela que la definición debe actualizarse</strong></td>
+<td>El texto del cap. 5 no distingue los casos</td>
+<td>🟢 <strong>Ésta es la correcta</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>5.2 Por qué (c) y no (b)</h2>
+<p><strong>[DATO]</strong> El capítulo 5 define la bolsa como <strong>«44 Motor ordinario + 3 Reserva + 0
+Convicción = 47%»</strong>, y el término clave es <strong>«Motor ordinario»</strong>, no «módulo Motor».</p>
+<p><strong>[DATO]</strong> El propio libro clasifica a Robeco como <strong>posición estructural con forma de
+gestión ③ <em>(activa delegada)</em></strong>, explícitamente <strong>no</strong> como parte del flujo ordinario:
+<em>«Robeco es capital del módulo Aceleración cuya administración se ha delegado en un gestor…
+es una posición estructural con forma de gestión ③ — no una capa superpuesta»</em>.</p>
+<p><strong>[INTERPRETACIÓN]</strong> Si Robeco se reclasifica a Motor, pasa a ser <strong>«Motor + activa
+delegada»</strong>. <strong>Y «Motor ordinario» —el capital indexado que participa del flujo mensual y
+de la bolsa de gobernanza— seguiría siendo 44.</strong> Bajo esa lectura, <strong>la identidad
+47 = 44 + 3 + 0 se mantiene intacta</strong>.</p>
+<blockquote>
+<h3>🟡 <strong>No hay contradicción definitiva: hay una definición incompleta.</strong></h3>
+<p>El capítulo 5 nunca tuvo que distinguir entre «módulo Motor» y «Motor ordinario» porque
+<strong>hasta ahora coincidían</strong>. La reclasificación de Robeco <strong>es el primer caso que los
+separa</strong> — y eso es un <strong>hueco de definición</strong>, no una ruptura del sistema.</p>
+</blockquote>
+<p><strong>Corrección a mi propia auditoría:</strong> en la v1 escribí que Motor 48% <em>«rompe»</em> la identidad.
+<strong>Es más preciso decir que la obliga a explicitarse.</strong> Aplico aquí la máxima del propio
+proyecto: <em>«la Convicción explica cómo se compró; el módulo explica para qué está»</em> — y
+añado su corolario: <strong>la bolsa del 47% explica cómo se gobierna, y no tiene por qué
+coincidir con la suma de los módulos</strong>.</p>
+<p><strong>Lo que sigue haciendo falta antes de ejecutar:</strong> <strong>una decisión explícita</strong> que fije si
+«Motor ordinario» = capital indexado del Motor <em>(el 44 se mantiene)</em> o = módulo Motor
+completo <em>(el 47 pasa a 51)</em>. <strong>Es una decisión de una línea, no un rediseño.</strong></p>
+<hr />
+<h1>6. QUÉ NECESITARÍA FORMALIZARSE PARA CONVERTIR BASE v10 EN CARTERA OFICIAL</h1>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Decisión a formalizar</th>
+<th>Tipo</th>
+<th>Bloquea a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F-1</strong></td>
+<td><strong>Sustitución del Freno: AXA 6% + PIMCO 3% → SPDR Global Aggregate 9%.</strong> Con motivo declarado, fecha y <strong>el efecto sobre la función del módulo</strong> <em>(pasa de «monetario + renta fija flexible» a «renta fija agregada global»)</em></td>
+<td>🔴 <strong>Cambio de vehículo Y de exposición</strong> <em>(nivel alto en la escala del cap. 10)</em></td>
+<td>Todo el laboratorio</td>
+</tr>
+<tr>
+<td><strong>F-2</strong></td>
+<td><strong>Cierre de la revisión de PIMCO por coste</strong> <em>(pendiente desde D-a)</em>. <strong>El laboratorio la resolvió de facto eliminándolo</strong> — hay que decidirlo explícitamente, no por omisión</td>
+<td>🔴 Decisión pendiente ya identificada</td>
+<td>F-1</td>
+</tr>
+<tr>
+<td><strong>F-3</strong></td>
+<td><strong>Actualizar <code>CARTERA_V1_0_FUENTE_DE_VERDAD.md</code></strong> con los tres vehículos reales que el laboratorio ya usa <em>(Vanguard small caps, oro Core, cobre sin cubrir)</em> — <strong>el libro los tiene como proxies en su X-Ray y el laboratorio usa los reales</strong></td>
+<td>🟢 Menor: es propagación, no cambio</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>F-4</strong></td>
+<td><strong>Fijar el proxy de Emergentes</strong>: tres clases circulando <em>(<code>IE000QAZP7L2</code> real · <code>IE00BYWYCC39</code> proxy del libro · <code>IE00B3D07F16</code> proxy del laboratorio)</em>. <strong>Elegir uno para X-Ray y declararlo</strong></td>
+<td>🟠 Media</td>
+<td>Coherencia entre informes</td>
+</tr>
+<tr>
+<td><strong>F-5</strong></td>
+<td><strong>Definición de «Motor ordinario»</strong> para la bolsa del 47% <em>(§5)</em></td>
+<td>🟠 Media, una línea</td>
+<td>Reclasificación de Robeco</td>
+</tr>
+<tr>
+<td><strong>F-6</strong></td>
+<td><strong>Regenerar el X-Ray oficial</strong> con la composición aprobada, para que <strong>A</strong> y <strong>B</strong> vuelvan a coincidir</td>
+<td>🟠 Media</td>
+<td>Caps. 15-18</td>
+</tr>
+<tr>
+<td><strong>F-7</strong></td>
+<td><strong>Registrar BASE v10 como versión</strong> <em>(v1.1 de la cartera)</em> con su fecha real: <strong>14-ago 17:46</strong></td>
+<td>🟢 Menor</td>
+<td>Trazabilidad</td>
+</tr>
+</tbody>
+</table>
+<h2>6.1 Lo que <strong>no</strong> hace falta</h2>
+<p><strong>No hace falta repetir las 33 pruebas.</strong> Son válidas dentro de su baseline, que está
+fechada, congelada y es reconstruible. <strong>Lo que hace falta es formalizar la baseline.</strong></p>
+<p>⚠️ <strong>Con una excepción, y es la de siempre:</strong> si <strong>F-1 se rechaza</strong> y el Freno vuelve a
+AXA+PIMCO, entonces <strong>G2 sí habría que repetirlo</strong> <em>(R-2 y R-3 de la auditoría)</em>, porque la
+financiación del 1% de commodities saldría de instrumentos distintos. <strong>Las demás pruebas
+seguirían siendo válidas</strong>, porque el Freno no interviene en ellas salvo por dilución.</p>
+<hr />
+<h1>7. RESUMEN</h1>
+<table>
+<thead>
+<tr>
+<th>Pregunta que hiciste</th>
+<th>Respuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Genealogía exacta</strong></td>
+<td>§2 — <strong>13 posiciones comparadas una a una</strong></td>
+</tr>
+<tr>
+<td><strong>Todos los cambios</strong></td>
+<td><strong>8 idénticas · 3 mejoras · 1 proxy documentado · 1 divergencia sustantiva</strong></td>
+</tr>
+<tr>
+<td><strong>Cuáles están documentados</strong></td>
+<td>El proxy de Emergentes <em>(con la regla D77 citada en el propio archivo)</em>. <strong>Ninguno más</strong></td>
+</tr>
+<tr>
+<td><strong>Deliberados pero no propagados</strong></td>
+<td><strong>El Freno.</strong> Evidencia indirecta sólida <em>(catálogo 13-ago + advertencia sobre AXA 11-ago + sustitución al céntimo)</em>, <strong>sin decisión registrada</strong></td>
+</tr>
+<tr>
+<td><strong>Que no puedo explicar</strong></td>
+<td><strong>Por qué desapareció PIMCO sin dejar rastro</strong> en ningún archivo del laboratorio · <strong>y cuál fue el motivo real del cambio</strong> <em>(inversión o comodidad de medición)</em></td>
+</tr>
+<tr>
+<td><strong>¿BASE v10 es baseline válida?</strong></td>
+<td>🟢 <strong>Sí.</strong> Fijada 2h07m antes del primer X-Ray, congelada desde entonces, reconstruible al céntimo</td>
+</tr>
+<tr>
+<td><strong>Qué formalizar</strong></td>
+<td><strong>F-1 a F-7</strong> — encabezado por la sustitución del Freno y el cierre de PIMCO</td>
+</tr>
+</tbody>
+</table>
+<h2>7.1 Reformulación final de H-1</h2>
+<blockquote>
+<h2>🟠 **H-1 · Divergencia de versionado entre la cartera documental oficial y la BASE v10</h2>
+<h2>realmente usada en el laboratorio.**</h2>
+<p><strong>El laboratorio es internamente válido respecto a su propia BASE v10</strong>, que fue fijada
+antes de ejecutar las pruebas, no se modificó retrospectivamente y es reconstruible
+posición a posición. <strong>G2 es un resultado válido dentro de BASE v10.</strong></p>
+<p><strong>Lo que todavía no puede afirmarse es que BASE v10 sea la cartera oficial definitiva.</strong>
+La divergencia se reduce a <strong>una posición —el Freno—</strong> y a <strong>un proxy de clase
+—Emergentes—</strong>; en las otras tres diferencias <strong>el laboratorio es más fiel a la realidad
+que el X-Ray oficial del libro</strong>.</p>
+<p><strong>Acción:</strong> formalizar F-1 a F-7. <strong>No rehacer las 33 pruebas.</strong></p>
+</blockquote>
+<hr />
+<p><strong>Estado:</strong> auditoría de versionado completada. <strong>Sin ejecutar R-1 a R-6, sin validación
+histórica, sin tocar el Investment Book y sin abrir PMMA Universal.</strong></p></div></body></html>
