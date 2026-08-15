@@ -1,0 +1,1105 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auditoría externa del laboratorio X-Ray</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🔬 INFORME DE AUDITORÍA EXTERNA DEL LABORATORIO X-RAY</h1>
+<h2>Peaky Minders Global 10Y · 15 de agosto de 2026 · auditor metodológico externo</h2>
+<blockquote>
+<p><strong>Nada se ha modificado.</strong> Ni cartera oficial, ni Investment Book, ni capítulos, ni pesos,
+ni vehículos, ni decisiones Dxx. <strong>PMMA Universal no se ha abierto.</strong> No se han ejecutado
+nuevas pruebas X-Ray ni la validación histórica.</p>
+<p><strong>Convención de categorías, aplicada en todo el informe:</strong> <strong>[DATO]</strong> medido por
+Morningstar o ficha · <strong>[RESULTADO]</strong> calculado o comparado por el laboratorio ·
+<strong>[INTERPRETACIÓN]</strong> inferencia · <strong>[HIPÓTESIS]</strong> pendiente de prueba · <strong>[DECISIÓN]</strong>
+aprobado. <strong>Ninguna categoría se convierte en otra.</strong></p>
+</blockquote>
+<hr />
+<h1>0. Qué he leído y cómo lo he verificado</h1>
+<p>Los tres documentos, <strong>íntegros</strong>. Los tres PDF llegaron como archivo sin texto legible en
+mi contexto, así que <strong>extraje su contenido</strong> <em>(PyMuPDF)</em> antes de auditarlos, en lugar de
+opinar sobre documentos que no había leído.</p>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Documento</th>
+<th>Verificación realizada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><code>INFORME_COMPLETO.md</code> <em>(1.091 líneas)</em></td>
+<td>Leído íntegro</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><code>FICHA_CARTERA_GANADORA.pdf</code> <em>(12 págs.)</em></td>
+<td>Extraído y <strong>cotejado cifra a cifra contra el X-Ray 34</strong></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Síntesis 29 pruebas <em>(15 págs.)</em></td>
+<td>Extraído y cotejado</td>
+</tr>
+<tr>
+<td><strong>+</strong></td>
+<td><code>34_GANADOR_FINAL…pdf</code> <em>(4 págs.)</em></td>
+<td><strong>Fuente primaria: usada para verificar las otras dos</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Verificación de las 14 métricas del §9 de tu encargo contra el X-Ray oficial:</strong> vol 3a
+9,71 ✓ · vol 5a 10,21 ✓ · media 3a 14,71 ✓ · media 5a <strong>11,06</strong> ⚠️ <em>(ver D-6)</em> · Sharpe
+1,22 / 0,90 ✓ · alfa 3,64 / 3,65 ✓ · beta 0,83 / 0,80 ✓ · R² 91,31 / 92,16 ✓ · IR 3a
+0,72 ✓ · TE 3a 3,39 ✓. <strong>Trece de catorce coinciden exactamente con el informe oficial.</strong></p>
+<hr />
+<h1>A. RESUMEN EJECUTIVO</h1>
+<p><strong>El laboratorio está metodológicamente por encima de lo que se ve en trabajos de este
+nivel.</strong> Tiene base fija, cambio único por prueba, criterios escritos antes de mirar,
+<strong>una prueba de control deliberada</strong>, preservación de descartes, errores publicados y
+límites declarados. La verificación externa contra MAPFRE y el cuadre de India por dos
+caminos <em>(5,22 calculado vs 5,24 medido)</em> son trabajo serio.</p>
+<p><strong>Y aun así, tres hallazgos impiden aprobar la candidata tal como está.</strong></p>
+<blockquote>
+<h2>🔴 <strong>H-1 · La BASE del laboratorio no es la cartera oficial.</strong></h2>
+<p>El Freno de la BASE v10 es <strong>un ETF de bonos globales agregados al 9%</strong>
+<em>(<code>IE00BF1QPL78</code>)</em>. El Freno oficial es <strong>6% de fondo monetario en euros
+(<code>FR0000447823</code>) + 3% de renta fija flexible (<code>IE00B84J9L26</code>)</strong>. <strong>Son instrumentos
+distintos con duración, crédito y divisa distintos.</strong> El CAMBIO 3 —financiar
+commodities «desde el Freno»— <strong>se probó sobre un Freno que la cartera oficial no
+tiene</strong>. La conclusión no es trasladable sin repetir la prueba.</p>
+<h2>🔴 <strong>H-2 · La justificación del CAMBIO 1 contiene un error factual.</strong></h2>
+<p><code>INFORME_COMPLETO</code> afirma que Robeco debe ir a Motor porque <em>«su volatilidad (15,92) es
+la de un fondo de núcleo»</em>. <strong>15,92 no es su volatilidad: es su rentabilidad media a 3
+años.</strong> Su volatilidad real es <strong>9,88</strong> — <strong>la más baja de todas las posiciones de renta
+variable de la cartera</strong>, por debajo del S&amp;P 500 (13,08) y del All-World (11,52). El
+argumento, con el dato correcto, <strong>apunta en dirección contraria</strong>.</p>
+<h2>🔴 <strong>H-3 · El criterio de selección es casi tautológico.</strong></h2>
+<p>Se eligió por <strong>R² a la baja y tracking error al alza</strong>. Pero <strong>añadir cualquier activo
+poco correlacionado baja el R² y sube el TE por construcción algebraica</strong>. El criterio
+no es independiente de la hipótesis que pretende contrastar: mide <em>que has añadido algo
+distinto</em>, no <em>que hayas mejorado la cartera</em>. Con 33 configuraciones probadas, la
+objeción de <em>data snooping</em> no queda neutralizada por este criterio.</p>
+</blockquote>
+<p><strong>Veredicto:</strong> 🟡 <strong>NECESITA CORRECCIONES ANTES DE VALIDAR</strong> <em>(desarrollado en §N)</em>.</p>
+<hr />
+<h1>B. RECONSTRUCCIÓN DEL PROCESO</h1>
+<pre><code>BASE v10 (12 posiciones + 3% reserva)
+   │
+   ├─ A · 01-02  commodities ampliadas ................ 2 descartes
+   ├─ B · 03-06  rediseño de Defensivos ............... 4 descartes  ← incluye el mejor descarte (biotech)
+   ├─ C · 07-11  Aceleración, 1ª ronda ................ 5 descartes  ← empate → no tocar (regla 4)
+   ├─ D · 12-15  tanda de IA .......................... 4 descartes  ← 1 a lista de espera por histórico
+   ├─ E · 16-18  Robeco + Asia + control .............. 3 descartes + RECLASIFICACIÓN de Robeco
+   │                                                     └─ prueba 18 = CONTROL metodológico
+   ├─ F · 19-22  búsqueda de huecos ................... 3 descartados sin gastar X-Ray + INDIA SUPERA
+   ├─ G · 23-26  ¿y China? ............................ China 0% + corrección del error del 20%
+   ├─ H · 27-28  dosis de India ....................... A100 (4%) domina
+   └─ I · 30-33  el seguro que faltaba ................ commodities desde Freno (31) elegida
+                                                         33 = tirada diagnóstica, NO es cartera
+   ▼
+34 · CANDIDATA FINAL — India 4% + commodities 1%
+</code></pre>
+<p><strong>Cuatro supervivientes de ~33 pruebas.</strong> Dos son cambios reales de producto <em>(India,
+commodities)</em>, uno es reclasificación contable <em>(Robeco)</em> y otro es cambio de clase del
+mismo fondo <em>(Emergentes)</em>.</p>
+<hr />
+<h1>C. FORTALEZAS METODOLÓGICAS — lo que está realmente bien hecho</h1>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Fortaleza</th>
+<th>Por qué cuenta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>C1</strong></td>
+<td><strong>La prueba de control (18 · Polar Tecnología)</strong></td>
+<td>Introducir a propósito el candidato con <strong>mejores números retrospectivos</strong> para comprobar que el método no lo elige. <strong>Es la mejor pieza del laboratorio</strong> y muy poco frecuente en trabajos de este nivel</td>
+</tr>
+<tr>
+<td><strong>C2</strong></td>
+<td><strong>Rechazar biotech (prueba 05) con Sharpe +0,07 y alfa +0,83</strong></td>
+<td>Rechazar un ganador numérico por incumplimiento funcional demuestra que la regla «función antes que producto» <strong>se aplicó de verdad</strong>, no solo se enunció</td>
+</tr>
+<tr>
+<td><strong>C3</strong></td>
+<td><strong>Regla de empate a favor de lo existente (prueba 11)</strong></td>
+<td>Reduce la rotación espuria y el sesgo de acción</td>
+</tr>
+<tr>
+<td><strong>C4</strong></td>
+<td><strong>Descartes sin gastar prueba</strong> <em>(momentum, defensa europea, equiponderado)</em></td>
+<td>Aplicar el criterio de histórico insuficiente <strong>también a la idea que más gustaba</strong> <em>(defensa europea: 0% EEUU, 0% tecnología)</em> es coherencia poco común</td>
+</tr>
+<tr>
+<td><strong>C5</strong></td>
+<td><strong>Errores conservados y explicados</strong> <em>(6 documentados)</em></td>
+<td>El error 3 —el «20% de India» que era China— <strong>se detectó porque se pidió verificarlo</strong>. Eso es control activo, no suerte</td>
+</tr>
+<tr>
+<td><strong>C6</strong></td>
+<td><strong>Cuadre de India por dos caminos</strong> <em>(5,22 calculado vs 5,24 medido)</em></td>
+<td><strong>[RESULTADO]</strong> verificado por mí: 6,80% de la parte en acciones × 77,02% = 5,24% del patrimonio. <strong>Cuadra</strong></td>
+</tr>
+<tr>
+<td><strong>C7</strong></td>
+<td><strong>Validación externa del motor</strong> <em>(MAPFRE, 4 productos, coincidencia a la centésima)</em></td>
+<td>Demuestra que la herramienta reproduce la fuente y no calcula nada propio</td>
+</tr>
+<tr>
+<td><strong>C8</strong></td>
+<td><strong>La síntesis de 29 pruebas cita literatura pertinente</strong> <em>(White 2000 sobre data snooping; Bailey y López de Prado 2014 sobre inflación del Sharpe; DeMiguel-Garlappi-Uppal 2009 sobre 1/N)</em></td>
+<td><strong>El laboratorio se cita a sí mismo la objeción principal.</strong> Eso es honestidad intelectual, no adorno</td>
+</tr>
+<tr>
+<td><strong>C9</strong></td>
+<td><strong>Tres controles de integridad del informe</strong> <em>(cobertura 100%, presencia por nombre, cuadre del % en acciones)</em></td>
+<td>Invalidaron <strong>cuatro informes</strong> que parecían correctos</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>D. DEBILIDADES — lo que criticaría un profesor</h1>
+<h2>🔴 D-1 · La BASE no es la cartera oficial <em>(hallazgo principal)</em></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cartera oficial <em>(fuente de verdad, D73-D77)</em></th>
+<th>BASE v10 del laboratorio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Freno 9%</strong></td>
+<td><strong>6% AXA Trésor Court Terme</strong> <em>(monetario EUR)</em> + <strong>3% PIMCO GIS Income</strong> <em>(renta fija flexible, cubierta)</em></td>
+<td><strong>9% SPDR Global Aggregate Bond EUR Hedged</strong> <code>IE00BF1QPL78</code></td>
+</tr>
+<tr>
+<td><strong>Emergentes</strong></td>
+<td>Clase S <code>IE000QAZP7L2</code> <em>(proxy en X-Ray: clase D <code>IE00BYWYCC39</code>)</em></td>
+<td>Clase Instl <code>IE00B3D07F16</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Consecuencias, en orden de gravedad:</strong></p>
+<ol>
+<li><strong>El CAMBIO 3 pierde su base.</strong> «Financiar 1% desde el Freno» significa, en la BASE del
+   laboratorio, <strong>quitar 1% de bonos agregados globales</strong>. En la cartera oficial
+   significaría quitarlo <strong>del monetario o del PIMCO</strong> — instrumentos con duración,
+   crédito y comportamiento distintos. <strong>La correlación −0,51 entre commodities y «bonos»
+   es contra el SPDR, no contra el Freno oficial.</strong></li>
+<li><strong>El X-Ray de la candidata no es comparable con el X-Ray oficial</strong> <em>(<code>XRAY_OFICIAL_2026-08-13</code>)</em>,
+   porque difieren en dos posiciones de partida.</li>
+<li><strong>No es un error del laboratorio si la BASE v10 se declaró como tal</strong> — pero <strong>en ningún
+   punto de los tres documentos se advierte de esta diferencia</strong>, y el lector natural
+   asume que BASE v10 = cartera oficial.</li>
+</ol>
+<h2>🔴 D-2 · Error factual en la justificación de la reclasificación de Robeco</h2>
+<p><code>INFORME_COMPLETO</code> línea 377: <em>«su volatilidad (15,92) es la de un fondo de núcleo, no la
+de un acelerador»</em>. <strong>[DATO]</strong> de la ficha y del X-Ray: Robeco <strong>Media 3a = 15,92 · Volat.
+3a = 9,88</strong>. Se ha tomado la columna de rentabilidad por la de volatilidad.</p>
+<p><strong>Con el dato correcto el argumento se invierte:</strong> Robeco es <strong>la posición de renta
+variable menos volátil de la cartera</strong> <em>(9,88 frente a 11,52 del All-World y 13,08 del
+S&amp;P 500)</em>. Un activo <strong>menos volátil que el núcleo</strong> no se justifica como núcleo por su
+volatilidad.</p>
+<h2>🔴 D-3 · El criterio de decisión no es independiente de la hipótesis</h2>
+<p><strong>R² a la baja + TE al alza</strong> es, algebraicamente, <strong>lo que produce cualquier activo poco
+correlacionado que se añada</strong>. No distingue entre <em>«he añadido diversificación útil»</em> y
+<em>«he añadido ruido no correlacionado»</em>. <strong>Un activo puramente aleatorio bajaría el R² y
+subiría el TE igual de bien.</strong></p>
+<p>Lo que faltaría para cerrar el argumento: una métrica que <strong>premie la contribución al
+objetivo</strong> <em>(p. ej. reducción de la caída máxima, mejora de la rentabilidad ajustada por
+riesgo con significación, o contribución al riesgo por unidad de peso)</em>, no solo la
+disimilitud con el índice.</p>
+<h2>🟠 D-4 · Colisión con la gobernanza del capítulo 5</h2>
+<p>Reclasificar Robeco a Motor lleva <strong>Motor de 44% a 48%</strong>. Pero la <strong>bolsa del 47%</strong> del
+capítulo 5 <em>(D78/D80)</em> es una identidad de gobernanza: <strong>44 Motor ordinario + 3 Reserva +
+0 Convicción = 47</strong>. <strong>Con Motor 48 esa identidad deja de cuadrar</strong> y habría que
+reformular la vista C completa.</p>
+<p><strong>[INTERPRETACIÓN]</strong> No invalida la reclasificación; <strong>obliga a decidir si el 47% se
+define sobre el Motor «ordinario indexado» o sobre el módulo Motor completo.</strong> El
+laboratorio no lo menciona.</p>
+<h2>🟠 D-5 · El recuento de pruebas es inconsistente</h2>
+<table>
+<thead>
+<tr>
+<th>Documento</th>
+<th>Dice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Síntesis <em>(F-3)</em></td>
+<td><strong>«29 pruebas»</strong> · «de 29, 26 no aportaron evidencia» · <strong>«3 decisiones sobrevivieron»</strong></td>
+</tr>
+<tr>
+<td><code>INFORME_COMPLETO</code> <em>(F-1)</em></td>
+<td><strong>«LAS 33 PRUEBAS»</strong> · «de 33, cuatro cosas cambian» · «29 de 33 confirmaron» · pero también <strong>«el único candidato de 29»</strong></td>
+</tr>
+<tr>
+<td>Carpeta <code>xrays\</code></td>
+<td><strong>35 archivos</strong> <em>(00-34)</em>, de los que 00 es la base, 33 es <strong>diagnóstico y no cartera</strong>, 34 es la configuración final</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Es una inconsistencia interna de la FUENTE 1</strong>, no solo entre documentos. <strong>Recuento
+defendible:</strong> 32 pruebas de sustitución <em>(01-32)</em> + 1 base + 1 diagnóstico + 1
+configuración final.</p>
+<h2>🟠 D-6 · Discrepancia numérica de la rentabilidad a 5 años</h2>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Rentabilidad 5a de la candidata</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>INFORME_COMPLETO</code> tabla comparativa</td>
+<td><strong>11,08</strong> <em>(Δ −0,03 sobre 11,11)</em></td>
+</tr>
+<tr>
+<td><strong>X-Ray oficial 34 y FICHA</strong></td>
+<td><strong>11,06</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Prevalece el informe oficial: 11,06.</strong> El Δ correcto sería <strong>−0,05</strong>, no −0,03. Diferencia
+menor pero <strong>la tabla que sostiene «a cinco años no se paga rentabilidad» usa el número
+equivocado</strong>.</p>
+<h2>🟠 D-7 · El «peor trimestre» empeora, y es la métrica más cercana a lo que se promete</h2>
+<p><strong>[DATO]</strong> Peor trimestre: BASE −15,99 → candidata <strong>−16,44</strong> <em>(−0,45)</em>. La candidata
+introduce commodities <strong>como seguro</strong> y <strong>empeora la única métrica de tensión disponible</strong>.</p>
+<p>El informe lo declara con honestidad y lo explica <em>(las commodities no protegen del
+pánico)</em>. <strong>[INTERPRETACIÓN] mía:</strong> esa explicación es plausible, pero <strong>convierte el
+argumento en no falsable con los datos disponibles</strong> — si la protección no aparece ni en
+el peor trimestre ni en el peor año, no hay en todo el X-Ray ninguna métrica que pueda
+mostrarla.</p>
+<h2>🟡 D-8 · Otras</h2>
+<p><strong>D-8a</strong> · <strong>La «lista de espera» no tiene fecha de revisión</strong> <em>(WPAI, defensa europea,
+equiponderado)</em>: sin plazo, es un descarte con otro nombre.
+<strong>D-8b</strong> · <strong>Coste sin verificar en el 10% de la cartera</strong> <em>(Salud y Bitcoin, n/d)</em> — bien
+declarado, pero el coste total publicado <em>(0,19%)</em> cubre solo el 87%.
+<strong>D-8c</strong> · <strong>Robeco aporta el 31% del coste verificado pesando el 4%</strong> <em>(FICHA)</em>. El
+laboratorio lo publica como dato sin valoración, <strong>pero no lo cruza con la reclasificación
+a Motor</strong>: un Motor con una pata al 1,46% es una decisión de coste, no solo de etiqueta.
+<strong>D-8d</strong> · <strong>Dos posiciones replican por swap</strong> <em>(commodities y cobre)</em> — riesgo de
+contrapartida declarado en la FICHA, <strong>ausente en <code>INFORME_COMPLETO</code></strong>.</p>
+<hr />
+<h1>E. SESGOS POTENCIALES</h1>
+<table>
+<thead>
+<tr>
+<th>Sesgo</th>
+<th>Exposición del laboratorio</th>
+<th>Mitigación existente</th>
+<th>Suficiencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data snooping / multiple testing</strong></td>
+<td>🔴 <strong>Alta</strong> — 33 configuraciones sobre la misma muestra</td>
+<td>Criterios previos · función antes que producto · control · descartes conservados</td>
+<td>⚠️ <strong>Insuficiente.</strong> Ver §E.1</td>
+</tr>
+<tr>
+<td><strong>Selección retrospectiva</strong></td>
+<td>🟠 Media</td>
+<td>Regla explícita de no elegir por rentabilidad</td>
+<td>✅ Aplicada con rigor <em>(pruebas 05 y 18)</em></td>
+</tr>
+<tr>
+<td><strong>Ventana temporal</strong></td>
+<td>🔴 <strong>Alta</strong></td>
+<td>Se publican 3a y 5a</td>
+<td>⚠️ <strong>Solo dos ventanas, ambas terminando en el mismo mes.</strong> No hay rolling ni submuestras</td>
+</tr>
+<tr>
+<td><strong>Dependencia de proveedor único</strong></td>
+<td>🟠 Media</td>
+<td>Declarado como limitación</td>
+<td>⚠️ La verificación MAPFRE <strong>no es independiente</strong>: MAPFRE también usa Morningstar</td>
+</tr>
+<tr>
+<td><strong>Correlaciones inestables</strong></td>
+<td>🔴 <strong>Alta</strong></td>
+<td>Declarado <em>(«en crisis suben todas»)</em></td>
+<td>⚠️ Ninguna medición en submuestras de crisis</td>
+</tr>
+<tr>
+<td><strong>Sesgo de supervivencia del vehículo</strong></td>
+<td>🟡 Baja-media</td>
+<td>—</td>
+<td>India y commodities existen hoy; los ETF que cerraron no están en el universo</td>
+</tr>
+<tr>
+<td><strong>Sesgo de confirmación en la narrativa</strong></td>
+<td>🟠 Media</td>
+<td>Sacrificios publicados sin maquillar</td>
+<td>⚠️ El lenguaje del ganador <em>(«el descubrimiento que decide el bloque»)</em> es más fuerte que la evidencia</td>
+</tr>
+</tbody>
+</table>
+<h2>E.1 Por qué las mitigaciones <strong>no bastan</strong> contra el multiple testing</h2>
+<p><strong>[INTERPRETACIÓN]</strong> Las seis reglas del laboratorio reducen el riesgo de elegir por
+<strong>rentabilidad</strong> — y lo hacen bien. <strong>No reducen el riesgo de elegir por diversificación
+aparente</strong>, que es exactamente lo que se hizo.</p>
+<p>Tres razones concretas:</p>
+<ol>
+<li><strong>El criterio ganador (R² / TE) favorece mecánicamente a cualquier candidato exótico</strong>
+   <em>(D-3)</em>. Con 33 intentos, encontrar uno que baje el R² 1,48 puntos no requiere que sea
+   bueno: requiere que sea distinto.</li>
+<li><strong>Las magnitudes son pequeñas frente al ruido de estimación.</strong> Δvol −0,07, ΔSharpe
+   +0,01 a 5 años, Δalfa +0,06. <strong>Ninguna viene con intervalo de confianza ni error
+   estándar.</strong> Con 36 y 60 observaciones mensuales, esas diferencias son estadísticamente
+   indistinguibles de cero.</li>
+<li><strong>No hay corrección por número de pruebas</strong> <em>(ni Bonferroni, ni White's Reality Check,
+   ni deflated Sharpe)</em> — y la propia síntesis <strong>cita a White (2000) y a Bailey y López de
+   Prado (2014) sin aplicar ninguno de los dos</strong>. Citar la objeción no es responderla.</li>
+</ol>
+<hr />
+<h1>F. AUDITORÍA DE LOS CUATRO CAMBIOS</h1>
+<h2>CAMBIO 1 · Robeco: Aceleración → Motor</h2>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Evidencia a favor</strong></td>
+<td><strong>[DATO]</strong> ρ(Robeco, All-World) = 0,69 y ρ(Robeco, Small Caps) = 0,81 · es un fondo de <strong>renta variable global</strong> <em>(no un satélite temático)</em> · <strong>[DATO]</strong> ρ con Consumo básico 0,70 · <strong>[INTERPRETACIÓN]</strong> su comportamiento es el de una cartera amplia con sesgo <em>value</em>, no el de una fuente de retorno ajena al núcleo</td>
+</tr>
+<tr>
+<td><strong>Evidencia en contra</strong></td>
+<td>🔴 <strong>La justificación publicada usa un dato equivocado</strong> <em>(D-2: 15,92 es rentabilidad, no volatilidad)</em> · <strong>Su volatilidad real (9,88) es la más baja de la renta variable de la cartera</strong>, lo que <strong>no</strong> apoya «es núcleo» · <strong>El argumento «correlaciona más con Small Caps que con el índice» es lógicamente reversible</strong>: correlacionar 0,81 con su compañero de bloque argumenta <strong>redundancia dentro de Aceleración</strong>, no pertenencia al Motor</td>
+</tr>
+<tr>
+<td><strong>Evidencia que falta</strong></td>
+<td>Contribución al riesgo · solapamiento de posiciones subyacentes con el Motor <em>(el X-Ray puede darlo y no se usa)</em> · comportamiento en submuestras · criterio explícito y previo de qué correlación define «núcleo»</td>
+</tr>
+<tr>
+<td><strong>Principal riesgo</strong></td>
+<td><strong>Reclasificar por correlación convierte a PMMA en una taxonomía estadística.</strong> El capítulo 4 dice literalmente lo contrario: la función la fija <strong>la tesis</strong>, no el instrumento ni su comportamiento <em>(«separación funcional ≠ separación estadística», limitación L3)</em></td>
+</tr>
+<tr>
+<td><strong>Confianza actual</strong></td>
+<td>🟡 <strong>Media-baja</strong></td>
+</tr>
+<tr>
+<td><strong>Veredicto</strong></td>
+<td>⚠️ <strong>NO APROBAR COMO ESTÁ.</strong> La conclusión puede ser correcta, pero <strong>la evidencia publicada no la sostiene</strong>: contiene un error factual y un argumento reversible. <strong>Rehacer la justificación sobre criterio funcional</strong> <em>(¿por qué existe esta posición?)</em>, no sobre correlación. Y resolver antes la colisión del 47% <em>(D-4)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>CAMBIO 2 · Europe Multifactor 4% → India 4%</h2>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Evidencia a favor</strong></td>
+<td><strong>[DATO]</strong> El europeo correlaciona <strong>0,91 con Robeco</strong> y <strong>0,71 con Small Caps</strong>: <strong>su propio bloque estaba cogido de la mano</strong> · <strong>[DATO]</strong> India: 0,27 / 0,31 / 0,44 con All-World · <strong>[DATO]</strong> composición genuinamente distinta <em>(Emergentes 44,2% tecnología vs India 8,3%; India 27,4% financieras)</em> · <strong>[DATO]</strong> ρ(India, Emergentes) = 0,34 <strong>es menor que</strong> ρ(Emergentes, índice mundial) = 0,74 — <strong>India no es «más emergentes»</strong> · <strong>[DATO]</strong> único candidato que <strong>baja</strong> la volatilidad · <strong>[RESULTADO]</strong> cuadre de India efectiva por dos caminos ✓ · <strong>[DATO]</strong> coste 0,19% frente al 2,43% del fondo Goldman</td>
+</tr>
+<tr>
+<td><strong>Evidencia en contra</strong></td>
+<td><strong>Concentración:</strong> India pasa a ser <strong>el 2.º país</strong> de la cartera <em>(5,24%)</em> · <strong>divisa:</strong> rupia sin cubrir, <strong>no cuantificada en ningún documento</strong> · <strong>riesgo país</strong> concentrado en un solo mercado emergente con gobernanza propia · <strong>se pierde la única posición europea dedicada</strong> <em>(Europa baja de 8,9% a 5,6%)</em> · <strong>valoración:</strong> el mercado indio ha cotizado con múltiplos elevados frente a otros emergentes — <strong>[DATO] ausente en los tres documentos</strong> · alfa 3a −0,31 e IR 3a −0,22</td>
+</tr>
+<tr>
+<td><strong>Evidencia que falta</strong></td>
+<td>🔴 <strong>Correlación en submuestras</strong> <em>(la de 3-5 años puede no sobrevivir a una crisis global)</em> · 🔴 <strong>valoración de partida</strong> <em>(PER/PB de India vs alternativas)</em> · <strong>rendimiento en 2008 y 2013</strong> <em>(el «taper tantrum» golpeó a India de forma específica)</em> · <strong>contribución al riesgo</strong>, no solo correlación · <strong>efecto divisa cuantificado</strong></td>
+</tr>
+<tr>
+<td><strong>Principal riesgo</strong></td>
+<td><strong>Que la baja correlación de India sea un artefacto de la ventana 2021-2026</strong> —un periodo en que India tuvo un ciclo doméstico desacoplado— <strong>y desaparezca justo en la crisis global en que se necesita</strong></td>
+</tr>
+<tr>
+<td><strong>Confianza actual</strong></td>
+<td>🟢 <strong>Media-alta en el diagnóstico</strong> <em>(el europeo era redundante: 0,91 es difícil de discutir)</em> · 🟡 <strong>media en la solución</strong> <em>(que el sustituto deba ser India)</em></td>
+</tr>
+<tr>
+<td><strong>Veredicto</strong></td>
+<td>🟡 <strong>APROBABLE CONDICIONADO.</strong> El problema detectado es real y bien documentado. <strong>La elección del sustituto necesita validación fuera de la ventana</strong> <em>(§K)</em>. <strong>Alternativas no exploradas que un profesor preguntará:</strong> ¿por qué no reducir Aceleración a una sola pata? ¿por qué no un factor value/quality no europeo? ¿por qué no small caps emergentes?</td>
+</tr>
+</tbody>
+</table>
+<h2>CAMBIO 3 · Freno 9% → 8% bonos + 1% commodities</h2>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Evidencia a favor</strong></td>
+<td><strong>[DATO]</strong> Correlación negativa frente a <strong>las nueve posiciones de renta variable, sin excepción</strong> <em>(−0,07 a −0,39)</em> · <strong>[DATO]</strong> ρ(commodities, bonos) = <strong>−0,51</strong>, el valor más bajo de la matriz · <strong>[DATO]</strong> ρ(commodities, oro) = <strong>0,20</strong>: <strong>no duplican</strong> · <strong>[RESULTADO]</strong> la prueba 31 es <strong>la única limpia</strong> <em>(la parte en acciones queda idéntica, 77,02%)</em>, frente a la 32 que mezcla dilución · <strong>[RESULTADO]</strong> financiado desde oro <strong>empeora</strong> <em>(R² sube)</em> y desde Freno <strong>mejora</strong>: el laboratorio <strong>probó su propia alternativa y la descartó</strong></td>
+</tr>
+<tr>
+<td><strong>Evidencia en contra</strong></td>
+<td>🔴 <strong>D-1: se financió desde un Freno que la cartera oficial no tiene</strong> · 🔴 <strong>la única evidencia de la función anti-inflación es 2022</strong> — un año, un episodio · <strong>[DATO]</strong> el peor trimestre <strong>empeora 0,45</strong> · <strong>1% es un peso que no puede mover el resultado de una cartera</strong>: con 1%, un +28% aporta +0,28% · <strong>[INTERPRETACIÓN]</strong> el propio laboratorio descartó posiciones del 1% como «residuo, no arquitectura» <em>(bloque H)</em> y aquí adopta una</td>
+</tr>
+<tr>
+<td><strong>Evidencia que falta</strong></td>
+<td>🔴 <strong>Comportamiento en más de un episodio inflacionario</strong> <em>(1973-75, 1979-81 · el capítulo 19 ya tiene el marco para identificarlos)</em> · <strong>la correlación −0,51 con bonos medida en submuestras</strong> · <strong>coste real de rolar futuros</strong> <em>(contango/backwardation)</em>, ausente en los tres documentos · <strong>por qué 1% y no 2% o 3%</strong> — no hay prueba de dosis, cuando <strong>sí la hubo para India</strong></td>
+</tr>
+<tr>
+<td><strong>Principal riesgo</strong></td>
+<td><strong>Confundir financiación con clasificación</strong> <em>(tu propia pregunta, y es la correcta)</em>. La ubicación en Freno se justifica por <strong>función declarada</strong> <em>(«dos seguros contra dos amenazas»)</em>, pero <strong>la evidencia aportada es de correlación, no de función</strong>. Y con 1% de peso, <strong>la decisión es simbólica en la cartera y sustantiva solo en la arquitectura</strong></td>
+</tr>
+<tr>
+<td><strong>Confianza actual</strong></td>
+<td>🔴 <strong>Baja</strong></td>
+</tr>
+<tr>
+<td><strong>Veredicto</strong></td>
+<td>🔴 <strong>NO APROBAR.</strong> Tres bloqueos: <strong>(a)</strong> la base de financiación no es la real <em>(D-1)</em>; <strong>(b)</strong> un solo episodio no sostiene una función; <strong>(c)</strong> falta prueba de dosis. <strong>La asimetría de rigor frente a India es la crítica más fácil de un tribunal</strong>: a India se le exigieron cuatro dosis y a commodities ninguna</td>
+</tr>
+</tbody>
+</table>
+<h2>CAMBIO 4 · Emergentes: cambio de clase</h2>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Evidencia a favor</strong></td>
+<td><strong>[DATO]</strong> Mismo fondo, misma cartera, mismo índice; solo cambia la clase · <strong>[DATO]</strong> coste 0,32% → <strong>0,16%</strong> · mantiene la traspasabilidad fiscal · <strong>[RESULTADO]</strong> es el cambio de mayor certeza del laboratorio</td>
+</tr>
+<tr>
+<td><strong>Evidencia en contra</strong></td>
+<td>Ninguna sustantiva</td>
+</tr>
+<tr>
+<td><strong>Evidencia que falta</strong></td>
+<td>🔴 <strong>La confirmación de que la clase de destino es CONTRATABLE</strong> para plataforma, tipo de inversor e importe. ⚠️ <strong>Y aquí hay un choque con el libro:</strong> la fuente de verdad de la cartera <strong>marca <code>IE000QAZP7L2</code> como «candidato», DECISIÓN PENDIENTE</strong>, con tres requisitos sin cumplir <em>(VETO 0 de contratabilidad, cierre formal y documentación primaria)</em>. <strong>El laboratorio lo presenta como «cambio 4 aprobado»; el libro lo tiene como pendiente</strong></td>
+</tr>
+<tr>
+<td><strong>Principal riesgo</strong></td>
+<td>Que la clase barata <strong>no sea contratable</strong> y el cambio no exista</td>
+</tr>
+<tr>
+<td><strong>Confianza actual</strong></td>
+<td>🟢 <strong>Alta en la equivalencia</strong> · 🔴 <strong>nula en la accesibilidad, que no se ha verificado</strong></td>
+</tr>
+<tr>
+<td><strong>Veredicto</strong></td>
+<td>🟢 <strong>APROBAR sujeto al VETO 0.</strong> Además, <strong>tres ISIN distintos circulan para «el mismo fondo»</strong> en el corpus: <code>IE00B3D07F16</code> <em>(proxy del laboratorio)</em>, <code>IE00BYWYCC39</code> <em>(proxy del X-Ray del libro)</em> e <code>IE000QAZP7L2</code> <em>(destino)</em>. <strong>Hay que fijar cuál es cuál antes de escribir nada</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>G. AUDITORÍA DE MÉTRICAS — interpretaciones excesivas encontradas</h1>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Frase del corpus</th>
+<th>Problema</th>
+<th>Formulación correcta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>R²</strong></td>
+<td><em>«</em><em>Más BAJO = más diversificado</em><em>»</em> <em>(glosario de <code>INFORME_COMPLETO</code>)</em></td>
+<td>🔴 <strong>Interpretación excesiva.</strong> R² mide <strong>qué parte de la varianza explica el índice</strong>, no diversificación. Una cartera con un único activo exótico tendría R² bajísimo y <strong>cero</strong> diversificación</td>
+<td>«Menor R² indica menor proporción de variación explicada por el índice de referencia. Es <strong>compatible</strong> con mayor diferenciación, <strong>no equivalente</strong> a ella»</td>
+</tr>
+<tr>
+<td><strong>R²</strong></td>
+<td><em>«La idea más importante de todo el trabajo: R² bajo y TE alto significan que la cartera tiene vida propia»</em></td>
+<td>🔴 <strong>El criterio de decisión elevado a tesis.</strong> Ver D-3</td>
+<td>«Son indicadores de <strong>diferenciación frente al índice</strong>, no de calidad de la cartera»</td>
+</tr>
+<tr>
+<td><strong>Tracking error</strong></td>
+<td><em>«Más ALTO = más independiente»</em></td>
+<td>🟠 Excesiva. Mayor TE = mayor desviación, <strong>en ambas direcciones</strong>. Un TE alto por un activo que cae solo cuando el índice sube es peor, no mejor</td>
+<td>«Mayor desviación respecto del índice; debe interpretarse junto con riesgo, retorno y función»</td>
+</tr>
+<tr>
+<td><strong>Sharpe</strong></td>
+<td><em>«Sharpe 5 años </em><em>mejora</em><em> (+0,01)»</em> usado como argumento a favor</td>
+<td>🔴 <strong>+0,01 es ruido.</strong> Sin intervalo de confianza no significa nada; <strong>Bailey y López de Prado (2014), citado por el propio laboratorio</strong>, existe precisamente para esto</td>
+<td>«Diferencia no distinguible de cero con la muestra disponible»</td>
+</tr>
+<tr>
+<td><strong>Alfa</strong></td>
+<td><em>«el alfa mejora (+0,06)»</em> a 5 años</td>
+<td>🔴 Igual: +0,06 con 60 observaciones no es evidencia. Además <strong>el alfa depende del índice elegido</strong> <em>(RV Global Cap. Grande Blend)</em>, que <strong>no es el benchmark natural de una cartera con 23% de no-acciones</strong></td>
+<td>«Alfa frente a un índice de renta variable global; la cartera tiene 23% en activos no accionariales, lo que <strong>infla mecánicamente el alfa</strong>»</td>
+</tr>
+<tr>
+<td><strong>Beta</strong></td>
+<td>0,83 presentada sin comentario</td>
+<td>🟠 La beta baja <strong>refleja sobre todo el 23% no accionarial</strong>, no habilidad</td>
+<td>Declararlo</td>
+</tr>
+<tr>
+<td><strong>Correlación</strong></td>
+<td><em>«Correlación negativa contra toda la renta variable, sin una sola excepción»</em></td>
+<td>🟠 <strong>[DATO]</strong> correcto. Pero se usa como <strong>[INTERPRETACIÓN]</strong> de protección</td>
+<td>«Relación histórica media en la ventana medida. No implica protección en un episodio futuro concreto»</td>
+</tr>
+<tr>
+<td><strong>Volatilidad</strong></td>
+<td><em>«baja la volatilidad»</em> como mérito de India</td>
+<td>🟠 −0,07 sobre 9,78 es <strong>0,7% relativo</strong>: dentro del error de medición</td>
+<td>Declarar la magnitud relativa</td>
+</tr>
+</tbody>
+</table>
+<h2>G.1 El problema del índice de referencia — no señalado en ningún documento</h2>
+<p><strong>[DATO]</strong> El X-Ray compara contra <strong>«RV Global Cap. Grande Blend»</strong>, un índice de renta
+variable pura. <strong>[INTERPRETACIÓN]</strong> Alfa, beta, R², TE e IR de <strong>toda</strong> la cartera están
+calculados contra un índice que no incluye bonos, oro, bitcoin ni materias primas. Con un
+23% en activos no accionariales, <strong>el alfa positivo y la beta baja son en buena parte un
+artefacto de composición</strong>, no una medida de habilidad. <strong>Ninguno de los tres documentos
+lo advierte, y es de las primeras cosas que preguntará un profesor.</strong></p>
+<hr />
+<h1>H. AUDITORÍA DE LA MATRIZ AMPLIADA</h1>
+<h2>H.1 ¿Es defendible el método de las tiradas diagnósticas?</h2>
+<blockquote>
+<h3>✅ <strong>Sí. El argumento matemático es correcto.</strong></h3>
+</blockquote>
+<p><strong>[DATO]</strong> La correlación de Pearson entre dos series de rendimientos mensuales
+<code>ρ(X,Y) = Cov(X,Y)/(σx·σy)</code> es <strong>una propiedad del par de series</strong>. Los pesos de cartera
+no entran en la fórmula. Inflar un activo del 1% al 9,28% <strong>no puede alterar su
+correlación con otro activo</strong>.</p>
+<p><strong>Y la verificación empírica está bien hecha:</strong> <strong>[RESULTADO]</strong> nueve parejas compartidas
+entre tiradas con pesos muy distintos devolvieron <strong>el mismo valor sin variar una
+centésima</strong> <em>(S&amp;P↔All-World 0,97 en 5 tiradas; S&amp;P↔Oro −0,07 en 4; commodities↔India
+−0,39 en 2)</em>. Eso convierte un supuesto en evidencia.</p>
+<p><strong>Además, verifiqué las filas 1-10 de la FICHA contra el X-Ray 34 y coinciden exactamente.</strong></p>
+<h2>H.2 Limitaciones que el método <strong>no</strong> salva</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Limitación</th>
+<th>Consecuencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>H-a</strong></td>
+<td>🔴 <strong>La ventana de estimación no está documentada.</strong> Morningstar no publica sobre cuántos meses calcula la matriz</td>
+<td><strong>Si la ventana es el histórico común disponible, cambia según los constituyentes de cada tirada.</strong> Que nueve parejas coincidieran es tranquilizador <strong>pero no lo prueba</strong>: esas parejas tenían histórico largo en todas las tiradas. <strong>Es la comprobación que falta</strong></td>
+</tr>
+<tr>
+<td><strong>H-b</strong></td>
+<td><strong>Correlación media ≠ correlación condicional</strong></td>
+<td>Una ρ media de −0,39 es compatible con ρ <strong>positiva</strong> en las caídas. <strong>Nada en la matriz habla de comportamiento en crisis</strong></td>
+</tr>
+<tr>
+<td><strong>H-c</strong></td>
+<td><strong>13 posiciones = 78 pares</strong>, estimados sobre ~36-60 observaciones</td>
+<td>Error estándar apreciable. <strong>Ningún valor lleva intervalo de confianza</strong></td>
+</tr>
+<tr>
+<td><strong>H-d</strong></td>
+<td><strong>Las tiradas diagnósticas no son carteras</strong> — bien declarado</td>
+<td>✅ Riesgo de confusión bien gestionado <em>(el archivo 33 se llama literalmente <code>NO-ES-CARTERA</code>)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>H.3 Qué <strong>no</strong> permite concluir la matriz</h2>
+<p><strong>No permite concluir que la cartera esté diversificada</strong>, solo que ciertos pares se
+mueven distinto <strong>en promedio, en el pasado reciente</strong>. La diversificación depende de
+<strong>pesos × correlaciones × volatilidades</strong>, y la matriz solo aporta el segundo factor.</p>
+<hr />
+<h1>I. AUDITORÍA INDIA — hipótesis formal</h1>
+<blockquote>
+<h2><strong>H-INDIA</strong></h2>
+<p><em>«La sustitución de una exposición europea multifactor por una exposición a renta
+variable india de igual peso </em><em>reduce la redundancia interna del bloque Aceleración</em><em>,
+medida como correlación con las demás posiciones de la cartera, </em><em>sin aumentar el riesgo
+total</em><em>, y esa reducción </em><em>persiste fuera de la ventana 2021-2026</em><em>.»</em></p>
+</blockquote>
+<p><strong>Descomposición en tres afirmaciones independientes, porque tienen fuerza distinta:</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Sub-hipótesis</th>
+<th>Estado actual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>I-1</strong></td>
+<td>El Europe Multifactor era redundante <em>(ρ 0,91 con Robeco, 0,71 con Small Caps)</em></td>
+<td>🟢 <strong>Bien sostenida.</strong> Es el hallazgo más sólido del laboratorio</td>
+</tr>
+<tr>
+<td><strong>I-2</strong></td>
+<td>India presenta correlaciones sustancialmente menores <em>(0,27 / 0,31 / 0,44)</em></td>
+<td>🟢 <strong>[DATO] verificado</strong> en la ventana medida</td>
+</tr>
+<tr>
+<td><strong>I-3</strong></td>
+<td>Esa diferencia <strong>persiste</strong> y <strong>no es un artefacto de ventana</strong></td>
+<td>🔴 <strong>Sin evidencia alguna.</strong> Es la que sostiene la decisión y la única sin probar</td>
+</tr>
+</tbody>
+</table>
+<h2>I.1 Evidencia independiente necesaria</h2>
+<ol>
+<li><strong>Correlaciones rolling a 36 meses</strong> de India frente a All-World, Robeco, Small Caps y
+   Emergentes <strong>desde 2005</strong>, no solo el promedio de una ventana.</li>
+<li><strong>Correlaciones condicionales en crisis</strong>: 2008, 2011, 2013 <em>(taper tantrum — episodio
+   específicamente adverso para India)</em>, marzo de 2020, 2022.</li>
+<li><strong>Comparación con el contrafactual correcto:</strong> no «India vs Europe Multifactor», sino
+   <strong>India vs <em>no tener nada</em> en ese 4%</strong> y <strong>vs las alternativas no probadas</strong>
+   <em>(small caps emergentes, value global no europeo, o simplemente ampliar el Motor)</em>.</li>
+<li><strong>Valoración de partida</strong> <em>(PER, P/B de India frente a su historia y a otros
+   emergentes)</em> — <strong>ausente en todo el corpus</strong> y es la pregunta obvia sobre un mercado que
+   ha subido mucho.</li>
+<li><strong>Efecto divisa cuantificado:</strong> rupia sin cubrir, con su contribución al riesgo.</li>
+</ol>
+<hr />
+<h1>J. AUDITORÍA COMMODITIES — hipótesis formal</h1>
+<blockquote>
+<h2><strong>H-COMMODITIES</strong></h2>
+<p><em>«Una asignación del 1% a materias primas amplias, financiada desde el módulo Freno,
+</em><em>aporta protección frente a escenarios de inflación y shocks de oferta</em><em> que los bonos y
+el oro no proporcionan, </em><em>sin degradar la función estabilizadora del módulo</em><em>.»</em></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Sub-hipótesis</th>
+<th>Estado actual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>C-1</strong></td>
+<td>Las commodities están descorrelacionadas de la renta variable de la cartera</td>
+<td>🟢 <strong>[DATO]</strong> en la ventana medida</td>
+</tr>
+<tr>
+<td><strong>C-2</strong></td>
+<td>No duplican al oro <em>(ρ 0,20)</em></td>
+<td>🟢 <strong>[DATO]</strong>, y bien argumentado</td>
+</tr>
+<tr>
+<td><strong>C-3</strong></td>
+<td><strong>Protegen frente a shocks de inflación</strong></td>
+<td>🔴 <strong>[HIPÓTESIS].</strong> Única evidencia: <strong>2022</strong>. Un episodio</td>
+</tr>
+<tr>
+<td><strong>C-4</strong></td>
+<td><strong>El Freno es su ubicación funcional correcta</strong></td>
+<td>🔴 <strong>[HIPÓTESIS] sin contrastar.</strong> El argumento es de diseño, no de dato</td>
+</tr>
+<tr>
+<td><strong>C-5</strong></td>
+<td><strong>Financiar desde el Freno es preferible</strong></td>
+<td>🔴 <strong>Probado sobre un Freno que no es el oficial</strong> <em>(D-1)</em></td>
+</tr>
+<tr>
+<td><strong>C-6</strong></td>
+<td>Un 1% es un peso suficiente para cumplir la función</td>
+<td>🔴 <strong>No probado.</strong> Sin prueba de dosis</td>
+</tr>
+</tbody>
+</table>
+<h2>J.1 Evidencia independiente necesaria</h2>
+<ol>
+<li>🔴 <strong>Comportamiento en ≥3 episodios inflacionarios</strong>, no uno. <strong>El capítulo 19 ya tiene
+   el clasificador que los identifica</strong> — es la sinergia evidente y nadie la ha usado.</li>
+<li><strong>Rentabilidad real</strong> <em>(descontada la inflación)</em>, no nominal: es la única forma de
+   hablar de protección del poder de compra.</li>
+<li><strong>Coste de rolar futuros</strong>: en contango prolongado, un índice de commodities pierde
+   valor de forma estructural. <strong>No aparece en ningún documento</strong> y es una objeción clásica.</li>
+<li><strong>Prueba de dosis 0,5% / 1% / 2% / 3%</strong>, con el mismo rigor que se aplicó a India.</li>
+<li><strong>Repetir la financiación sobre el Freno real</strong> <em>(monetario + PIMCO)</em>.</li>
+<li><strong>Correlación condicional con bonos en episodios de tipos al alza</strong>, no la media.</li>
+</ol>
+<hr />
+<h1>K. PROTOCOLO DE VALIDACIÓN HISTÓRICA INDEPENDIENTE — <strong>diseñado, NO ejecutado</strong></h1>
+<blockquote>
+<p><strong>Criterios escritos ANTES de mirar datos.</strong> Se registran aquí para que no puedan
+ajustarse después. <strong>No se ha ejecutado ninguna medición.</strong></p>
+</blockquote>
+<h2>K.1 Diseño común</h2>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Especificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fuente</strong></td>
+<td><strong>Independiente de Morningstar</strong> — índices, no productos <em>(MSCI India, Bloomberg Commodity, MSCI World, agregado global)</em>. Rompe la dependencia de proveedor único</td>
+</tr>
+<tr>
+<td><strong>Ventanas</strong></td>
+<td><strong>Rolling de 36 meses</strong>, paso mensual, desde 2005 · <strong>más</strong> 2000-2004 si hay datos</td>
+</tr>
+<tr>
+<td><strong>Submuestras obligatorias</strong></td>
+<td>2008-09 · 2011 · <strong>2013 taper tantrum</strong> · 2015-16 · <strong>2020 covid</strong> · <strong>2021-23 inflación</strong></td>
+</tr>
+<tr>
+<td><strong>Clasificadores de régimen</strong></td>
+<td><strong>Los dos ya congelados en el capítulo 19</strong> <em>(mediana móvil de 40 trimestres y media de 10 años)</em> — evita crear un tercer criterio</td>
+</tr>
+<tr>
+<td><strong>Moneda</strong></td>
+<td>En euros <strong>y</strong> en dólares. La rupia sin cubrir es parte de la tesis</td>
+</tr>
+<tr>
+<td><strong>Corrección por multiple testing</strong></td>
+<td><strong>Obligatoria.</strong> Declarar el número de configuraciones examinadas y aplicar al menos un ajuste <em>(White's Reality Check o Bonferroni sobre las decisiones finales)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>K.2 INDIA — criterios de decisión previos</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Criterio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟢 <strong>APOYO</strong></td>
+<td>ρ(India, All-World) rolling <strong>&lt; 0,60 en ≥70% de las ventanas</strong> desde 2005 · <strong>y</strong> ρ(India, Robeco) <strong>&lt; 0,55</strong> en la mayoría · <strong>y</strong> en ≥3 de las 6 submuestras de crisis la correlación <strong>no supera</strong> la del Europe Multifactor en el mismo periodo · <strong>y</strong> la volatilidad total de la cartera <strong>no aumenta</strong> en la mayoría de ventanas</td>
+</tr>
+<tr>
+<td>🔴 <strong>CONTRADICCIÓN</strong></td>
+<td>ρ(India, All-World) <strong>&gt; 0,75 en ≥3 submuestras de crisis</strong> <em>(la diversificación desaparece cuando se necesita)</em> · <strong>o</strong> ρ media rolling <strong>&gt; 0,60</strong> · <strong>o</strong> el Europe Multifactor resulta <strong>igual o menos correlacionado</strong> que India en la mayoría de ventanas largas</td>
+</tr>
+<tr>
+<td>⚪ <strong>INCONCLUSO</strong></td>
+<td>Resultados que dependan del clasificador, de la moneda o de la ventana · <strong>o</strong> menos de 3 submuestras con datos utilizables</td>
+</tr>
+</tbody>
+</table>
+<h2>K.3 COMMODITIES — criterios de decisión previos</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Criterio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟢 <strong>APOYO</strong></td>
+<td>Rentabilidad <strong>real</strong> positiva en <strong>≥3 de 4 episodios de inflación alta</strong> identificados por <strong>los dos clasificadores del cap. 19</strong> · <strong>y</strong> rentabilidad real superior a la de los bonos en esos mismos episodios · <strong>y</strong> ρ(commodities, bonos) <strong>&lt; 0</strong> en ≥60% de las ventanas rolling · <strong>y</strong> el resultado se mantiene <strong>tras descontar el coste de rolo</strong></td>
+</tr>
+<tr>
+<td>🔴 <strong>CONTRADICCIÓN</strong></td>
+<td>Rentabilidad real negativa en <strong>la mayoría</strong> de episodios de inflación alta · <strong>o</strong> ρ(commodities, bonos) <strong>&gt; 0 en la mayoría</strong> de ventanas <em>(no serían dos seguros distintos)</em> · <strong>o</strong> el coste de rolo anula el diferencial frente a los bonos · <strong>o</strong> en los episodios de inflación alta el <strong>oro</strong> las domina <em>(entonces la posición es redundante y debe financiarse desde oro o no existir)</em></td>
+</tr>
+<tr>
+<td>⚪ <strong>INCONCLUSO</strong></td>
+<td>Menos de 3 episodios con datos · <strong>o</strong> signo dependiente de la moneda · <strong>o</strong> diferencia dentro del error de estimación</td>
+</tr>
+</tbody>
+</table>
+<h2>K.4 Pruebas transversales <em>(ambos)</em></h2>
+<ol>
+<li><strong>Frente al Motor:</strong> ¿la diferenciación aparece en los trimestres en que el Motor cae?</li>
+<li><strong>Frente a bonos:</strong> ¿el −0,51 sobrevive fuera de 2021-2023?</li>
+<li><strong>Frente al oro:</strong> ¿oro y commodities se comportan distinto <strong>en los mismos episodios</strong>,
+   o el 0,20 medio esconde correlación alta cuando importa?</li>
+<li><strong>Contrafactual sin el cambio:</strong> medir la cartera oficial <strong>sin</strong> India y <strong>sin</strong>
+   commodities en las mismas ventanas.</li>
+</ol>
+<hr />
+<h1>L. MAPA DE IMPACTO SOBRE EL INVESTMENT BOOK — <strong>sin ejecutar nada</strong></h1>
+<table>
+<thead>
+<tr>
+<th>Capítulo</th>
+<th>Qué se vería afectado</th>
+<th>Gravedad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cap. 4 · PMMA</strong></td>
+<td><strong>La reclasificación de Robeco por correlación choca con la limitación L3</strong> <em>(«separación funcional ≠ separación estadística»)</em> y con el Principio de Función Dominante: la función la fija <strong>la tesis</strong>, no el comportamiento. <strong>Si se aprueba el CAMBIO 1 por correlación, hay que reformular el árbol de clasificación</strong></td>
+<td>🔴 <strong>Alta</strong></td>
+</tr>
+<tr>
+<td><strong>Cap. 5 · Capas transversales</strong></td>
+<td><strong>La bolsa del 47% deja de cuadrar con Motor 48%</strong> <em>(D-4)</em>. Habría que redefinir si el 47% se calcula sobre Motor ordinario indexado o sobre el módulo completo</td>
+<td>🔴 <strong>Alta</strong></td>
+</tr>
+<tr>
+<td><strong>Cap. 10 · Parametrización</strong></td>
+<td>Motor 44→48 y Aceleración 12→8 <strong>son cambios de peso por módulo</strong>: en la escala de cinco niveles del propio capítulo, es <strong>cambio de exposición</strong>, no de vehículo</td>
+<td>🟠 Media</td>
+</tr>
+<tr>
+<td><strong>Cap. 11 · Los siete módulos</strong></td>
+<td>Fichas de <strong>Motor</strong> <em>(nueva pata)</em>, <strong>Aceleración</strong> <em>(India sustituye al multifactor)</em>, <strong>Freno</strong> <em>(dos instrumentos)</em> y <strong>Emergentes</strong> <em>(clase)</em>. ⚠️ <strong>La ficha de Aceleración acaba de perder su justificación por régimen (P-1/D99)</strong>: añadir India <strong>sin</strong> argumento de régimen es coherente, pero hay que redactarlo así</td>
+<td>🟠 Media</td>
+</tr>
+<tr>
+<td><strong>Cap. 13 · Reserva y aportaciones</strong></td>
+<td>Si se aprueba el CAMBIO 3, <strong>el Freno pasa a tener dos instrumentos</strong>: el árbol mensual debe decir a cuál se aporta</td>
+<td>🟡 Menor</td>
+</tr>
+<tr>
+<td><strong>Cap. 14 · Vehículos</strong></td>
+<td><strong>Cuatro filas nuevas o modificadas</strong> · el <strong>VETO 0</strong> aplica a India <em>(¿contratable el Franklin?)</em>, a commodities y a la clase de Emergentes · <strong>el archivo de descartes se enriquece con 29 descartes documentados</strong> — es la mejor aportación del laboratorio a este capítulo</td>
+<td>🟢 <strong>Positiva</strong></td>
+</tr>
+<tr>
+<td><strong>Cap. 19 · Cuatro climas</strong></td>
+<td>🔴 <strong>Colisión doble.</strong> ① El capítulo 19 acaba de declarar <strong>H4 «no evaluable en su forma original»</strong> por faltar la pata de renta fija con duración — <strong>y el laboratorio propone modificar ese mismo módulo</strong> basándose en un Freno distinto. ② El capítulo 19 <strong>prohíbe</strong> convertir un episodio en evidencia; <strong>el argumento de commodities descansa en 2022</strong></td>
+<td>🔴 <strong>Alta</strong></td>
+</tr>
+<tr>
+<td><strong>Caps. 16-18</strong> <em>(no escritos)</em></td>
+<td>El X-Ray de referencia cambiaría; <strong>la matriz de correlaciones del cap. 18 tendría que rehacerse</strong> con la composición nueva</td>
+<td>🟠 Media</td>
+</tr>
+<tr>
+<td><strong>Cap. 20 · Estrés</strong></td>
+<td><strong>Los shocks de D47a habría que revisarlos</strong>: cambian dos posiciones</td>
+<td>🟠 Media</td>
+</tr>
+<tr>
+<td><strong><code>CARTERA_V1_0_FUENTE_DE_VERDAD</code></strong></td>
+<td>Cuatro filas afectadas + <strong>la discrepancia de tres ISIN de Emergentes</strong></td>
+<td>🔴 <strong>Alta</strong></td>
+</tr>
+<tr>
+<td><strong>PMMA Universal</strong></td>
+<td>🔒 <strong>Registrado, no abierto.</strong> El laboratorio genera <strong>dos preguntas legítimas para esa auditoría</strong>: ¿debe existir un módulo «Aceleración» si sus dos patas necesitan justificarse por separado? ¿es el Freno un módulo o <strong>dos módulos con nombres distintos</strong> <em>(estabilidad nominal y protección real)</em>?</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>M. LAS 15 PREGUNTAS MÁS PELIGROSAS</h1>
+<p><strong>P1 · «¿Su cartera base del laboratorio es su cartera real?»</strong>
+🔴 <strong>La pregunta letal.</strong> <strong>No lo es</strong>: el Freno difiere. <strong>Respuesta correcta:</strong> <em>«No del
+todo, y es una limitación que hemos identificado: la base del laboratorio usa un ETF de
+bonos agregados donde la cartera oficial tiene un monetario y un fondo de renta fija
+flexible. Por eso la conclusión sobre financiar commodities desde el Freno no la damos por
+válida hasta repetirla sobre la composición real.»</em> <strong>Reconocerlo es la única salida.</strong></p>
+<p><strong>P2 · «Han probado 33 configuraciones. ¿Cómo sé que la ganadora no es ruido?»</strong>
+<em>«No puede descartarse con lo que tenemos. Por eso citamos a White (2000) y hemos diseñado
+una validación independiente con criterios escritos antes de mirar. Lo que sí podemos
+defender es que la selección no se hizo por rentabilidad —lo demuestra el control de la
+prueba 18— sino por redundancia medida. Y una diferencia de Sharpe de 0,01 no la
+presentamos como evidencia.»</em></p>
+<p><strong>P3 · «R² más bajo, ¿por qué es eso bueno?»</strong>
+<em>«No es bueno por sí mismo, y nuestro glosario lo formulaba mal. Un R² menor solo indica
+menor proporción de varianza explicada por el índice. Lo usamos como </em><em>indicio</em><em> de
+diferenciación, junto con la correlación par a par, no como criterio de calidad.»</em></p>
+<p><strong>P4 · «Su alfa es 3,64 con un 23% de la cartera fuera de la renta variable. ¿No es un
+artefacto?»</strong>
+🔴 <strong>La pregunta técnica más peligrosa.</strong> <em>«En buena parte sí. El índice de referencia del
+X-Ray es de renta variable global, y nuestra cartera tiene bonos, oro, bitcoin y materias
+primas. Alfa y beta frente a ese índice reflejan sobre todo la composición, no habilidad.
+Por eso no usamos el alfa como criterio de decisión.»</em></p>
+<p><strong>P5 · «¿Por qué a India le exigieron cuatro dosis y a las materias primas ninguna?»</strong>
+<em>«Es una asimetría de rigor que no tiene justificación metodológica. La prueba de dosis de
+commodities está pendiente y es condición para aprobar el cambio.»</em></p>
+<p><strong>P6 · «Un 1% de materias primas, ¿qué puede cambiar?»</strong>
+<em>«En rentabilidad, casi nada: un +28% aporta 0,28 puntos. Su valor sería estructural —
+cubrir un escenario sin cobertura—, pero con ese peso el efecto es simbólico. Es una
+crítica que aceptamos y que hace obligatoria la prueba de dosis.»</em></p>
+<p><strong>P7 · «Dicen que las materias primas protegen de la inflación. ¿Con qué evidencia?»</strong>
+<em>«Con un solo episodio: 2022. Nuestro propio capítulo 19 establece que con uno o dos
+episodios se ilustra, no se infiere. Por tanto hoy es una hipótesis, no un resultado.»</em></p>
+<p><strong>P8 · «Reclasifican Robeco a Motor por su correlación. ¿No contradice eso su propio
+método?»</strong>
+🔴 <em>«Sí, hay tensión con el Principio de Función Dominante y con nuestra limitación L3, que
+dice que la separación funcional no es estadística. Si reclasificamos por correlación,
+estamos usando el comportamiento para definir la función. La reclasificación puede ser
+correcta, pero debe justificarse por tesis, no por rho.»</em></p>
+<p><strong>P9 · «Su Motor pasa a 48%. ¿Qué ocurre con la bolsa del 47% del capítulo 5?»</strong>
+<em>«Deja de cuadrar. Es una consecuencia que el laboratorio no había detectado y que hay que
+resolver antes de aprobar la reclasificación: definir si el 47% se mide sobre el Motor
+ordinario indexado o sobre el módulo completo.»</em></p>
+<p><strong>P10 · «Su matriz mezcla filas del informe oficial con filas de carteras que no existen.»</strong>
+<em>«Las filas 11 a 13 vienen de tiradas de diagnóstico, y está declarado en la propia ficha.
+El fundamento es que la correlación entre dos series no depende de los pesos de cartera, y
+lo verificamos empíricamente: nueve pares compartidos entre tiradas devolvieron el mismo
+valor sin variar una centésima. Lo que no sabemos es sobre qué ventana calcula Morningstar,
+y eso sí es una limitación abierta.»</em></p>
+<p><strong>P11 · «India ha sido uno de los mercados más caros del mundo emergente. ¿A qué valoración
+compran?»</strong>
+🔴 <strong>No tenemos respuesta.</strong> <em>«No lo hemos analizado, y es un hueco real: todo el argumento
+de India es de correlación y ninguno de valoración.»</em> <strong>Hay que traer el dato antes de la
+defensa.</strong></p>
+<p><strong>P12 · «¿Qué pasa con la rupia?»</strong>
+<em>«Está sin cubrir y no hemos cuantificado su contribución al riesgo. Es la segunda pieza
+que falta.»</em></p>
+<p><strong>P13 · «Han eliminado su única posición europea dedicada. ¿Es deliberado?»</strong>
+<em>«Sí, y lo declaramos: Europa baja del 8,9% al 5,6%, sostenida por el índice global y por
+Robeco. Aceptamos perder la exposición dedicada porque el vehículo que la daba duplicaba
+el núcleo con correlación 0,91. Lo que no hemos hecho es buscar un sustituto europeo no
+redundante.»</em></p>
+<p><strong>P14 · «Si las materias primas protegen, ¿por qué su peor trimestre empeora?»</strong>
+<em>«Porque protegen frente a inflación, no frente a pánico de liquidez. Pero reconocemos el
+problema de fondo: si la protección no aparece en el peor trimestre ni en el peor año, no
+hay en el X-Ray ninguna métrica capaz de mostrarla. Por eso la validación tiene que ir a
+episodios de inflación, no al X-Ray.»</em></p>
+<p><strong>P15 · «Todo viene de Morningstar. ¿Qué han contrastado?»</strong>
+<em>«Cotejamos cuatro volatilidades con el buscador de MAPFRE y coinciden a la centésima —
+pero MAPFRE también usa Morningstar, así que </em><em>no es una fuente independiente</em><em>. La
+validación con datos de índices, ajena a Morningstar, está diseñada y pendiente de
+ejecutar.»</em></p>
+<hr />
+<h1>N. VEREDICTO GLOBAL</h1>
+<blockquote>
+<h1>🟡 <strong>NECESITA CORRECCIONES ANTES DE VALIDAR</strong></h1>
+</blockquote>
+<p><strong>Por qué no es 🟢:</strong> tres bloqueos sustantivos, no cosméticos.</p>
+<ol>
+<li>🔴 <strong>La base experimental no coincide con la cartera oficial en el Freno</strong> — y el
+   CAMBIO 3 se decidió exactamente ahí.</li>
+<li>🔴 <strong>La justificación del CAMBIO 1 contiene un error factual</strong> <em>(rentabilidad tomada por
+   volatilidad)</em> y un argumento reversible.</li>
+<li>🔴 <strong>El criterio de selección (R² / TE) no es independiente de la hipótesis</strong> y no
+   neutraliza el <em>multiple testing</em> de 33 configuraciones.</li>
+</ol>
+<p><strong>Por qué no es 🔴:</strong> la metodología <strong>no</strong> es insuficiente. Tiene control deliberado,
+descartes conservados, errores publicados, criterios previos, verificación cruzada de la
+matriz y límites declarados. <strong>Los tres bloqueos son corregibles sin rehacer el
+laboratorio</strong>: uno exige repetir una prueba, otro reescribir una justificación y el tercero
+añadir una validación fuera de muestra que <strong>ya está diseñada en §K</strong>.</p>
+<h2>N.1 Qué hay que hacer, en orden</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Acción</th>
+<th>Bloquea a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Repetir la prueba 31</strong> sobre el Freno oficial <em>(monetario + PIMCO)</em> — o declarar explícitamente que la BASE v10 no es la cartera oficial y acotar todas las conclusiones</td>
+<td>CAMBIO 3</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Reescribir la justificación del CAMBIO 1</strong> sobre criterio funcional, corrigiendo el dato de volatilidad</td>
+<td>CAMBIO 1</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Resolver la colisión del 47%</strong> <em>(cap. 5)</em></td>
+<td>CAMBIO 1</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Ejecutar la validación de §K</strong> con criterios ya escritos</td>
+<td>CAMBIOS 2 y 3</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Prueba de dosis de commodities</strong></td>
+<td>CAMBIO 3</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Traer valoración y divisa de India</strong></td>
+<td>CAMBIO 2</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>VETO 0</strong> de los tres vehículos nuevos y fijar el ISIN correcto de Emergentes</td>
+<td>CAMBIO 4</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Unificar el recuento de pruebas</strong> y corregir la rentabilidad 5a <em>(11,06)</em></td>
+<td>Todos</td>
+</tr>
+</tbody>
+</table>
+<h2>N.2 Estado por cambio</h2>
+<table>
+<thead>
+<tr>
+<th>Cambio</th>
+<th>Veredicto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · Robeco → Motor</strong></td>
+<td>⚠️ <strong>No aprobar como está</strong> — la conclusión puede ser correcta, la evidencia publicada no</td>
+</tr>
+<tr>
+<td><strong>2 · Europa → India</strong></td>
+<td>🟡 <strong>Aprobable condicionado</strong> a validación fuera de muestra, valoración y divisa</td>
+</tr>
+<tr>
+<td><strong>3 · Freno → 8+1</strong></td>
+<td>🔴 <strong>No aprobar</strong> — base incorrecta, un solo episodio, sin dosis</td>
+</tr>
+<tr>
+<td><strong>4 · Clase de Emergentes</strong></td>
+<td>🟢 <strong>Aprobar sujeto al VETO 0</strong> y a fijar el ISIN</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Nota final del auditor</h2>
+<p><strong>El laboratorio no tiene un problema de honestidad: tiene un problema de fuerza
+probatoria.</strong> Publica sus errores, conserva sus descartes, se cita a sí mismo la objeción
+del <em>data snooping</em> y declara sus sacrificios sin maquillarlos. Eso es infrecuente y hay
+que decirlo.</p>
+<p>Lo que le falta es lo contrario de lo que suele faltar: <strong>no le sobra confianza, le falta
+evidencia fuera de la ventana en la que se tomaron las decisiones.</strong> Y las dos piezas más
+débiles —el Freno de la base y el episodio único de 2022— son <strong>exactamente las que un
+tribunal exigente encontraría primero</strong>.</p>
+<p><strong>Encontrarlas ahora vale más que diez elogios.</strong></p></div></body></html>
