@@ -656,9 +656,16 @@ transparente que un tercero pueda aplicar y obtener la misma conclusión.**
 > quedan con perfil indistinguible bajo T1 NO supera en más de UN par al número de pares
 > indistinguibles bajo PMMA.**
 
-*(Con 9 externas hay 36 pares posibles. «Perfil indistinguible» = misma asignación de
-categorías con pesos equivalentes, de modo que la taxonomía no permite diferenciar las dos
-arquitecturas.)*
+*(Con 9 externas hay 36 pares posibles.)*
+
+#### 21.4.3 · «Pesos equivalentes» — **aclaración pre-ejecución (D110), antes de observar resultados**
+
+> **Dos perfiles se consideran equivalentes si, normalizados ambos al 100%, utilizan las
+> mismas categorías funcionales y la diferencia absoluta de peso en cada categoría común no
+> supera 5 puntos porcentuales.**
+
+**«Perfil indistinguible»** = ambos perfiles cumplen esa definición, de modo que la taxonomía
+no permite diferenciar las dos arquitecturas. **Ninguna otra regla se modifica.**
 
 **Qué cierra:** *«igual utilidad comparativa»* era interpretable. Ahora **hay un recuento
 que un tercero puede reproducir**.
