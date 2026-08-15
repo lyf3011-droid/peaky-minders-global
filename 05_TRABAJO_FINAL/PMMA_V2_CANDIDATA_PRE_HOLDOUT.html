@@ -1,0 +1,453 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PMMA v2 — Candidata congelada pre-holdout</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🔒 PMMA v2 — CANDIDATA CONGELADA ANTES DEL HOLDOUT</h1>
+<h2>Arquitectura bidimensional · congelada el 15 de agosto de 2026</h2>
+<blockquote>
+<h2>⚠️ <strong>NINGÚN RESULTADO DE VALIDACIÓN EXTERNA NUEVA.</strong></h2>
+<p>Esta candidata se ha diseñado <strong>exclusivamente contra los fallos ya observados en D111</strong>.
+<strong>No se ha buscado ni utilizado ninguna cartera nueva.</strong> La muestra <em>holdout</em> está
+<strong>intacta y sin mirar</strong>.</p>
+<p><strong>PMMA v1 sigue vigente y sin modificar.</strong> <strong>D111 es inmutable.</strong> Esta candidata <strong>no
+sustituye a nada</strong> hasta que se valide.</p>
+</blockquote>
+<hr />
+<h1>1. PRINCIPIO DE DISEÑO</h1>
+<blockquote>
+<h2><strong>Una función reparte el capital. Los atributos lo describen.</strong></h2>
+</blockquote>
+<p><strong>El capital se parte una sola vez y por una sola razón: qué trabajo hace.</strong> Todo lo demás
+—dónde está, de qué estilo es, cómo se gestiona, con qué vehículo, con qué liquidez, con
+cuánta convicción y si reparte o acumula— <strong>son propiedades de ese mismo capital, no trozos
+adicionales de él</strong>.</p>
+<p><strong>Es la regla que PMMA v1 ya aplicaba a la Convicción</strong>, generalizada:</p>
+<blockquote>
+<p><em>«La Convicción explica cómo se compró; el módulo explica para qué está.»</em></p>
+</blockquote>
+<hr />
+<h1>2. EJE 1 · FUNCIÓN PRIMARIA — <strong>reparte el capital, suma 100%</strong></h1>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Función</th>
+<th>Definición <em>(sin nombrar ningún producto)</em></th>
+<th>Pregunta de control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F1</strong></td>
+<td><strong>Crecimiento productivo</strong></td>
+<td>Capital que se remunera por <strong>la actividad económica de empresas o proyectos</strong></td>
+<td><em>¿Su rendimiento depende de que la economía real produzca y venda?</em></td>
+</tr>
+<tr>
+<td><strong>F2</strong></td>
+<td><strong>Estabilidad y liquidez</strong></td>
+<td>Capital cuyo trabajo es <strong>conservar valor nominal y estar disponible</strong></td>
+<td><em>¿Está aquí para no perder valor nominal y poder usarse?</em></td>
+</tr>
+<tr>
+<td><strong>F3</strong></td>
+<td><strong>Cobertura de duración</strong></td>
+<td>Capital que <strong>se revaloriza cuando caen los tipos de interés</strong>, típicamente en shocks de crecimiento o desinflación</td>
+<td><em>¿Su rendimiento depende de la caída de los tipos?</em></td>
+</tr>
+<tr>
+<td><strong>F4</strong></td>
+<td><strong>Protección real</strong></td>
+<td>Capital cuyo comportamiento <strong>se vincula a la inflación o a la confianza monetaria</strong>, distinto de acciones y bonos nominales</td>
+<td><em>¿Está aquí por su relación con el poder adquisitivo del dinero?</em></td>
+</tr>
+<tr>
+<td><strong>F5</strong></td>
+<td><strong>Retorno divergente</strong></td>
+<td>Capital cuyo <strong>perfil de resultado es convexo o descorrelacionado por construcción</strong>, no por la clase de activo que contiene</td>
+<td><em>¿Su perfil de resultado lo produce </em><em>cómo está construido</em><em>, no </em><em>qué contiene</em><em>?</em></td>
+</tr>
+</tbody>
+</table>
+<h2>2.1 Fronteras — enunciadas <strong>sin apelar a casos concretos</strong> <em>(exigencia C12)</em></h2>
+<table>
+<thead>
+<tr>
+<th>Frontera</th>
+<th>Qué la define</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F1 ↔ F4</strong></td>
+<td><strong>El origen de la remuneración</strong>: actividad productiva <em>(F1)</em> frente a relación con el valor del dinero <em>(F4)</em></td>
+</tr>
+<tr>
+<td><strong>F2 ↔ F3</strong></td>
+<td><strong>La duración</strong>: F2 no la tiene y por eso conserva valor nominal; <strong>F3 la tiene y por eso gana cuando los tipos caen y pierde cuando suben</strong></td>
+</tr>
+<tr>
+<td><strong>F3 ↔ F4</strong></td>
+<td><strong>El escenario que las remunera</strong>: caída de tipos <em>(F3)</em> frente a pérdida de poder adquisitivo <em>(F4)</em>. <strong>Son opuestos, no vecinos</strong></td>
+</tr>
+<tr>
+<td><strong>F5 ↔ todas</strong></td>
+<td><strong>F5 no se define por lo que contiene sino por cómo se construye.</strong> Un mismo activo puede estar en F1 y en F5 según si se posee direccionalmente o dentro de una estructura convexa</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3>🔴 <strong>REGLA DURA CONTRA EL CAJÓN DE SASTRE <em>(riesgo RN2)</em>:</strong></h3>
+<p><strong>F5 exige demostrar convexidad o divergencia POR CONSTRUCCIÓN. «No encaja en las otras
+cuatro» NO es criterio de F5.</strong> Lo que no encaja va al <strong>Protocolo de Extensión</strong>, igual
+que en v1.</p>
+</blockquote>
+<hr />
+<h1>3. EJE 2 · ATRIBUTOS ORTOGONALES — <strong>anotan, NO reparten</strong></h1>
+<blockquote>
+<h2>🔒 <strong>LISTA CERRADA EN SIETE.</strong> Añadir un atributo durante la validación se registra</h2>
+<h2>como <strong>FALLO</strong>, no como mejora <em>(mitigación de RN1 y RN3)</em>.</h2>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Atributo</th>
+<th>Valores</th>
+<th>Qué recupera de v1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A1</strong></td>
+<td><strong>Geografía</strong></td>
+<td>global · desarrollado · emergente · país único</td>
+<td><strong>El antiguo módulo Emergentes</strong></td>
+</tr>
+<tr>
+<td><strong>A2</strong></td>
+<td><strong>Factor o estilo</strong></td>
+<td>valor · tamaño · momentum · calidad · baja volatilidad · sectorial · ninguno</td>
+<td><strong>Aceleración y el sesgo de Defensivos</strong></td>
+</tr>
+<tr>
+<td><strong>A3</strong></td>
+<td><strong>Liquidez</strong></td>
+<td>diaria · periódica · ilíquida</td>
+<td><em>(nuevo — v1 no lo tenía)</em></td>
+</tr>
+<tr>
+<td><strong>A4</strong></td>
+<td><strong>Forma de gestión</strong></td>
+<td>pasiva/indexada · sistemática · activa delegada · convicción directa</td>
+<td><strong>Ya existía en v1, sin cambios</strong></td>
+</tr>
+<tr>
+<td><strong>A5</strong></td>
+<td><strong>Vehículo</strong></td>
+<td>fondo · ETF · ETC/ETP · directo · derivado</td>
+<td>Ya existía en el modelo de datos</td>
+</tr>
+<tr>
+<td><strong>A6</strong></td>
+<td><strong>Concentración y convicción</strong></td>
+<td>diversificado · dedicado · convicción</td>
+<td><strong>La capa de Convicción y el «tamaño acotado» de Asimetría</strong></td>
+</tr>
+<tr>
+<td><strong>A7</strong></td>
+<td><strong>Perfil de distribución</strong></td>
+<td>acumulación · reparto</td>
+<td><strong>La función «rentas»</strong>, huérfana en v1</td>
+</tr>
+</tbody>
+</table>
+<h2>3.1 Reglas del eje 2</h2>
+<ol>
+<li><strong>Los atributos NO suman 100%</strong> ni reparten capital.</li>
+<li><strong>Una posición tiene exactamente una función y tantos atributos como apliquen.</strong></li>
+<li>🔴 <strong>Si una asignación del eje 1 solo puede decidirse mirando el eje 2, es un fallo del
+   eje 1</strong> — no una virtud del eje 2 <em>(mitigación de RN1)</em>.</li>
+<li><strong>La ficha debe seguir siendo correcta leyendo solo el eje 1</strong> <em>(mitigación de RN4)</em>.</li>
+</ol>
+<h2>3.2 Capas transversales que se conservan</h2>
+<table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Estado en v2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reserva Operativa</strong></td>
+<td>✅ <strong>Se conserva como capa de ejecución.</strong> No es F2: F2 es asignación estratégica, la Reserva es infraestructura</td>
+</tr>
+<tr>
+<td><strong>Convicción</strong></td>
+<td>✅ <strong>Se conserva</strong>, ahora formalizada como <strong>A6 = convicción</strong>. <strong>Sigue sin ser un módulo</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>4. ÁRBOL DE CLASIFICACIÓN</h1>
+<h2>Paso 1 · Función primaria — <strong>orden fijo, de lo más específico a lo más general</strong></h2>
+<pre><code>P1  ¿Su perfil de resultado lo produce CÓMO ESTÁ CONSTRUIDO
+    (convexidad o divergencia demostrable), y no qué contiene?      → F5
+                                     │ no
+P2  ¿Su función dominante es vincularse a la inflación
+    o a la confianza monetaria?                                     → F4
+                                     │ no
+P3  ¿Su función dominante depende de la DURACIÓN — se revaloriza
+    cuando caen los tipos?                                          → F3
+                                     │ no
+P4  ¿Está para conservar valor nominal y estar disponible?          → F2
+                                     │ no
+P5  ¿Se remunera por la actividad económica de empresas
+    o proyectos?                                                    → F1
+                                     │ no
+                            → PROTOCOLO DE EXTENSIÓN
+</code></pre>
+<p><strong>Por qué este orden:</strong> de lo más específico a lo más general, como en v1. <strong>F1 va la última
+por ser la más ancha</strong>, no por ser la menos importante — si se preguntara primero, absorbería
+casos que pertenecen a F4 o F5.</p>
+<h2>Paso 2 · Atributos</h2>
+<p><strong>Sin orden.</strong> Se anotan los siete que apliquen. <strong>Este paso no puede cambiar el resultado
+del paso 1</strong> <em>(regla 3 del §3.1)</em>.</p>
+<hr />
+<h1>5. EJEMPLOS CONCEPTUALES</h1>
+<blockquote>
+<p>⚠️ <strong>Todos proceden de casos YA publicados en D111.</strong> <strong>Ninguno es una cartera nueva.</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Caso <em>(de D111)</em></th>
+<th>PMMA v1</th>
+<th><strong>PMMA v2 candidata</strong></th>
+<th>Fallo que resuelve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bonos del Tesoro a largo</strong> <em>(Permanent Portfolio)</em></td>
+<td>Freno</td>
+<td><strong>F3</strong> + A1 desarrollado</td>
+<td>🔴 <strong>D-FRENO</strong></td>
+</tr>
+<tr>
+<td><strong>Efectivo</strong> <em>(Permanent Portfolio)</em></td>
+<td>Freno <em>(el mismo)</em></td>
+<td><strong>F2</strong></td>
+<td>🔴 <strong>D-FRENO</strong></td>
+</tr>
+<tr>
+<td><strong>Bonos largos + bonos cortos</strong> <em>(Golden Butterfly)</em></td>
+<td>Freno <em>(uno solo, 40%)</em></td>
+<td><strong>F3 + F2, separados</strong></td>
+<td>🔴 <strong>D-FRENO</strong></td>
+</tr>
+<tr>
+<td><strong>Small cap value</strong> <em>(Golden Butterfly)</em></td>
+<td>Aceleración</td>
+<td><strong>F1</strong> + A2 <em>(tamaño, valor)</em></td>
+<td>⚡↔🌿 frontera</td>
+</tr>
+<tr>
+<td><strong>Quality</strong> <em>(multifactorial)</em></td>
+<td>¿Aceleración o Defensivos?</td>
+<td><strong>F1</strong> + A2 <em>(calidad)</em></td>
+<td>⚡↔🌿 <strong>desaparece la frontera</strong></td>
+</tr>
+<tr>
+<td><strong>Momentum</strong> <em>(multifactorial)</em></td>
+<td>Aceleración <em>(indistinguible de value)</em></td>
+<td><strong>F1</strong> + A2 <em>(momentum)</em></td>
+<td><strong>D-GRANULARIDAD</strong></td>
+</tr>
+<tr>
+<td><strong>Renta variable emergente</strong> <em>(Swensen)</em></td>
+<td>Emergentes</td>
+<td><strong>F1</strong> + A1 <em>(emergente)</em> + A6 <em>(dedicado)</em></td>
+<td>🌍 <strong>Emergentes geográfico</strong></td>
+</tr>
+<tr>
+<td><strong>TIPS</strong> <em>(Swensen)</em></td>
+<td>Activos Reales <em>(contra su propio default)</em></td>
+<td><strong>F4</strong> + A1</td>
+<td>R1 — <strong>ya no hay «default» que contradecir</strong></td>
+</tr>
+<tr>
+<td><strong>REITs</strong> <em>(Swensen)</em></td>
+<td>Activos Reales</td>
+<td><strong>F4</strong> + A2 <em>(sectorial)</em> + A3 <em>(diaria)</em></td>
+<td>R2</td>
+</tr>
+<tr>
+<td><strong>Trend following</strong></td>
+<td>❌ <strong>sin módulo</strong></td>
+<td><strong>F5</strong> + A4 <em>(sistemática)</em> + A5 <em>(derivado)</em></td>
+<td>🔴 <strong>O-DINÁMICA</strong></td>
+</tr>
+<tr>
+<td><strong>Bitcoin</strong> <em>(Global 10Y)</em></td>
+<td>Asimetría</td>
+<td><strong>F5</strong> + A6 <em>(convicción)</em> — <strong>el tamaño acotado pasa a ser atributo, no definición</strong></td>
+<td>💥 <strong>Asimetría estrecha</strong></td>
+</tr>
+<tr>
+<td><strong>Renta variable de dividendo</strong> <em>(rentas)</em></td>
+<td>Motor <em>(se pierde el rasgo)</em></td>
+<td><strong>F1</strong> + <strong>A7 <em>(reparto)</em></strong></td>
+<td>🟡 <strong>O-RENTAS, parcialmente</strong></td>
+</tr>
+<tr>
+<td><strong>High yield</strong> <em>(rentas)</em></td>
+<td>Extensión</td>
+<td><strong>Extensión</strong> <em>(sin cambio)</em></td>
+<td>⬜ No resuelto</td>
+</tr>
+</tbody>
+</table>
+<h2>5.1 Qué <strong>no</strong> resuelve la candidata</h2>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>High yield</strong></td>
+<td>Sigue yendo al Protocolo de Extensión. <strong>v2 no lo mejora</strong></td>
+</tr>
+<tr>
+<td><strong>«Generación de rentas» como función</strong></td>
+<td><strong>A7 captura el rasgo, no la intención.</strong> Queda pendiente decidir si es <strong>función, atributo o propiedad del mandato</strong></td>
+</tr>
+<tr>
+<td><strong>Private equity, infraestructura, opciones y país único</strong></td>
+<td><strong>No testados en D111.</strong> <strong>Su tratamiento en v2 es una hipótesis sin comprobar</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>6. COMPARACIÓN ESTRUCTURAL v1 → v2 <em>(candidata)</em></h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>PMMA v1</strong></th>
+<th><strong>PMMA v2 candidata</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Categorías que reparten capital</strong></td>
+<td><strong>7</strong></td>
+<td><strong>5</strong></td>
+</tr>
+<tr>
+<td><strong>Dimensiones mezcladas</strong></td>
+<td><strong>5</strong> <em>(función, geografía, factor, payoff, gobernanza)</em></td>
+<td><strong>2, explícitas y separadas</strong></td>
+</tr>
+<tr>
+<td><strong>Capas transversales</strong></td>
+<td>Convicción · Reserva</td>
+<td><strong>Reserva</strong> <em>(Convicción pasa a A6)</em></td>
+</tr>
+<tr>
+<td><strong>Atributos formalizados</strong></td>
+<td>1 <em>(forma de gestión)</em></td>
+<td><strong>7, lista cerrada</strong></td>
+</tr>
+<tr>
+<td><strong>Módulos por geografía</strong></td>
+<td>1 <em>(Emergentes)</em></td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td><strong>Módulo definido por payoff</strong></td>
+<td>1, con condición de tamaño</td>
+<td><strong>1, sin condición de tamaño</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>7. CÓMO SE VALIDARÁ — <strong>y cómo puede fracasar</strong></h1>
+<blockquote>
+<p><strong>Esta candidata se someterá a la muestra HOLDOUT con las mismas reglas C1-C12 y F1-F9, y
+con la misma regla F8 frente a T0 y T1. Las reglas no se renegocian.</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Podría fracasar si…</th>
+<th>Fallo asociado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F5 acaba absorbiendo lo que no encaja</strong></td>
+<td>RN2 · F6</td>
+</tr>
+<tr>
+<td><strong>Hace falta un octavo atributo</strong></td>
+<td>🔴 <strong>RN1/RN3 — se registra como fallo, no como mejora</strong></td>
+</tr>
+<tr>
+<td><strong>Alguna asignación del eje 1 solo se resuelve mirando el eje 2</strong></td>
+<td>🔴 <strong>Regla 3 del §3.1</strong></td>
+</tr>
+<tr>
+<td><strong>T1 vuelve a cumplir las cuatro condiciones de F8</strong></td>
+<td>🔴 <strong>F8 — la complejidad no se paga</strong></td>
+</tr>
+<tr>
+<td><strong>Aparecen funciones huérfanas nuevas en ≥3 arquitecturas</strong></td>
+<td>F3</td>
+</tr>
+<tr>
+<td><strong>Las cinco funciones no se identifican en ≥2 arquitecturas externas cada una</strong></td>
+<td>C3</td>
+</tr>
+</tbody>
+</table>
+<h2>7.1 La advertencia que debe acompañar a esta candidata</h2>
+<blockquote>
+<h3>🔴 **Esta arquitectura resuelve 6,5 de los 7 fallos porque fue diseñada exactamente</h3>
+<h3>contra ellos. Eso NO es evidencia: es tautología.**</h3>
+<p><strong>El único dato con valor será el de la muestra holdout, que no se ha mirado.</strong></p>
+</blockquote>
+<hr />
+<h2>REGISTRO</h2>
+<p><strong>15-ago-2026 — Candidata PMMA v2 congelada antes del holdout.</strong> Arquitectura bidimensional:
+<strong>cinco funciones que reparten capital</strong> <em>(crecimiento productivo · estabilidad y liquidez ·
+cobertura de duración · protección real · retorno divergente)</em> y <strong>siete atributos
+ortogonales de lista cerrada</strong> que anotan sin repartir. Incluye definiciones, fronteras
+enunciadas en abstracto, árbol de clasificación de cinco preguntas, trece ejemplos
+conceptuales procedentes <strong>solo de D111</strong> y las condiciones bajo las que puede fracasar.
+<strong>Sin ninguna cartera nueva. Sin validación. PMMA v1 intacto.</strong></p></div></body></html>

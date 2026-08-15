@@ -1,0 +1,597 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PMMA v2 — Generación de hipótesis</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🧬 PMMA v2 — GENERACIÓN DE HIPÓTESIS</h1>
+<h2>15 de agosto de 2026 · <strong>muestra de desarrollo = exclusivamente los fallos de D111</strong></h2>
+<blockquote>
+<h2>⚠️ <strong>NO SE HA BUSCADO NI UTILIZADO NINGUNA CARTERA NUEVA.</strong></h2>
+<p>Todo el material de este documento procede <strong>únicamente de los fallos ya observados y
+publicados en D111</strong>. <strong>No hay validación</strong>: la muestra <em>holdout</em> está intacta y sin mirar.</p>
+<p><strong>PMMA v1 y el capítulo 4 no se modifican.</strong> <strong>D111 queda aceptado e inmutable</strong> como
+resultado de PMMA v1.</p>
+</blockquote>
+<hr />
+<h1>1. LA HIPÓTESIS A COMPROBAR</h1>
+<blockquote>
+<p><strong>[HIPÓTESIS]</strong> <strong>PMMA v1 puede estar mezclando dimensiones conceptualmente distintas
+dentro de una sola taxonomía.</strong></p>
+</blockquote>
+<p>Si es cierta, explicaría <strong>por qué fallaron cosas que a primera vista no tienen relación
+entre sí</strong>: un módulo geográfico que no generaliza, dos módulos con frontera borrosa, un
+módulo contenedor y una función huérfana.</p>
+<hr />
+<h1>2. ANÁLISIS DIMENSIONAL DE LOS SIETE MÓDULOS ACTUALES</h1>
+<p><strong>Pregunta aplicada a cada módulo:</strong> <em>¿qué tipo de cosa es realmente esta categoría?</em></p>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Función económica</th>
+<th>Geografía</th>
+<th>Factor / tilt</th>
+<th>Perfil de payoff</th>
+<th>Forma de gestión</th>
+<th>Gobernanza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🚀 <strong>Motor</strong></td>
+<td>✅ <strong>Sí — crecimiento productivo</strong></td>
+<td>⬜ neutro</td>
+<td>⬜ neutro</td>
+<td>Direccional convergente</td>
+<td>⬜ indiferente</td>
+<td>Núcleo ordinario</td>
+</tr>
+<tr>
+<td>🌿 <strong>Defensivos</strong></td>
+<td>🟡 Parcial — crecimiento <strong>con menor ciclicidad</strong></td>
+<td>⬜</td>
+<td>🔴 <strong>Sí — sesgo sectorial y de baja beta</strong></td>
+<td>Direccional atenuado</td>
+<td>⬜</td>
+<td>⬜</td>
+</tr>
+<tr>
+<td>⚡ <strong>Aceleración</strong></td>
+<td>🟡 «Fuentes adicionales de retorno»</td>
+<td>⬜</td>
+<td>🔴 <strong>ES un factor/tilt, no otra función</strong></td>
+<td>Direccional</td>
+<td>⬜</td>
+<td>⬜</td>
+</tr>
+<tr>
+<td>🌍 <strong>Emergentes</strong></td>
+<td>🔴 <strong>La misma que Motor</strong></td>
+<td>🔴 <strong>ES geografía</strong></td>
+<td>⬜</td>
+<td>Direccional</td>
+<td>⬜</td>
+<td>🟡 «decisión dedicada»</td>
+</tr>
+<tr>
+<td>⚓ <strong>Freno</strong></td>
+<td>🔴 <strong>DOS funciones distintas</strong></td>
+<td>⬜</td>
+<td>⬜</td>
+<td>🔴 <strong>Dos payoffs opuestos</strong> <em>(duración larga vs nula)</em></td>
+<td>⬜</td>
+<td>⬜</td>
+</tr>
+<tr>
+<td>🥇 <strong>Activos Reales</strong></td>
+<td>✅ <strong>Sí — vínculo con inflación y confianza monetaria</strong></td>
+<td>⬜</td>
+<td>⬜</td>
+<td>Distinto de acciones y bonos nominales</td>
+<td>⬜</td>
+<td>⬜</td>
+</tr>
+<tr>
+<td>💥 <strong>Asimetría</strong></td>
+<td>🟡 Opcionalidad</td>
+<td>⬜</td>
+<td>⬜</td>
+<td>🔴 <strong>ES un perfil de payoff</strong></td>
+<td>⬜</td>
+<td>🔴 <strong>«pérdida acotada por tamaño» es gobernanza</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>2.1 Veredicto sobre la hipótesis</h2>
+<blockquote>
+<h3>🔴 <strong>CONFIRMADA.</strong> Los siete módulos de PMMA v1 **no pertenecen todos a la misma</h3>
+<h3>dimensión conceptual<strong>. Conviven al menos </strong>cinco tipos de cosa distintos** bajo una</h3>
+<h3>sola etiqueta llamada «módulo».</h3>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Dimensión</th>
+<th>Módulos que en realidad pertenecen a ella</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función económica</strong></td>
+<td>Motor · Freno <em>(dos)</em> · Activos Reales</td>
+</tr>
+<tr>
+<td><strong>Geografía</strong></td>
+<td><strong>Emergentes</strong></td>
+</tr>
+<tr>
+<td><strong>Factor / estilo</strong></td>
+<td><strong>Aceleración</strong> · parcialmente <strong>Defensivos</strong></td>
+</tr>
+<tr>
+<td><strong>Perfil de payoff</strong></td>
+<td><strong>Asimetría</strong></td>
+</tr>
+<tr>
+<td><strong>Gobernanza / tamaño</strong></td>
+<td>la coletilla de <strong>Asimetría</strong> <em>(«pérdida acotada por tamaño»)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>2.2 La hipótesis explica <strong>los siete fallos observados</strong>, no solo algunos</h2>
+<table>
+<thead>
+<tr>
+<th>Fallo de D111</th>
+<th>Explicación dimensional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D-FRENO</strong></td>
+<td>Un solo nombre cubre <strong>dos funciones económicas</strong> con payoff opuesto</td>
+</tr>
+<tr>
+<td><strong>Emergentes no generaliza</strong></td>
+<td>Es un <strong>atributo geográfico</strong> disfrazado de función. Solo aparece cuando alguien decide separarlo, no cuando la función existe</td>
+</tr>
+<tr>
+<td><strong>Aceleración ↔ Defensivos</strong></td>
+<td><strong>Ambos son tilts sobre la misma función</strong> <em>(crecimiento)</em>. La frontera es borrosa porque <strong>no hay dos funciones que separar</strong>, solo dos intenciones</td>
+</tr>
+<tr>
+<td><strong>Trend following huérfano</strong></td>
+<td>Su rasgo definitorio es el <strong>perfil de payoff</strong>, y el único módulo de payoff —Asimetría— estaba <strong>cerrado por una condición de gobernanza</strong></td>
+</tr>
+<tr>
+<td><strong>Asimetría demasiado estrecha</strong></td>
+<td>Mezcla <strong>payoff</strong> <em>(opcionalidad)</em> con <strong>tamaño</strong> <em>(gobernanza)</em>. La segunda condición excluyó al primer candidato legítimo</td>
+</tr>
+<tr>
+<td><strong>Función rentas huérfana</strong></td>
+<td>El <strong>perfil de distribución</strong> es otra dimensión más, ausente por completo</td>
+</tr>
+<tr>
+<td><strong>Pérdida de información de T1</strong></td>
+<td>T1 resuelve el problema <strong>eliminando las dimensiones sobrantes en lugar de separarlas</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Una sola causa explica los siete síntomas.</strong> Eso es lo que convierte esto en una
+hipótesis de arquitectura y no en una lista de parches.</p>
+</blockquote>
+<hr />
+<h1>3. LAS TRES CANDIDATAS</h1>
+<h2>CANDIDATA A — <strong>T1</strong> <em>(cuatro funciones)</em></h2>
+<p><strong>Crecimiento · Estabilidad · Protección Real · Opcionalidad.</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Naturaleza</strong></td>
+<td>Una sola dimensión: función, con granularidad mínima</td>
+</tr>
+<tr>
+<td><strong>Cómo resuelve</strong></td>
+<td><strong>Eliminando</strong> las dimensiones sobrantes: sin geografía, sin factor, sin gobernanza</td>
+</tr>
+<tr>
+<td><strong>Precedente</strong></td>
+<td><strong>Es la taxonomía que empató o superó a PMMA v1 en F8</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>CANDIDATA B — <strong>función pura con separación del Freno</strong> <em>(cinco funciones)</em></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Función</th>
+<th>Qué resuelve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Crecimiento productivo</strong></td>
+<td>Absorbe Motor, Aceleración, Defensivos y Emergentes</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Estabilidad / liquidez</strong></td>
+<td><strong>Separa la primera mitad del Freno</strong></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Cobertura de duración / deflación</strong></td>
+<td><strong>Separa la segunda mitad del Freno</strong></td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Protección real</strong></td>
+<td>Hereda Activos Reales</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Diversificación convexa / retorno divergente</strong></td>
+<td><strong>Sustituye a Asimetría sin la condición de tamaño</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Naturaleza</strong></td>
+<td>Una sola dimensión: función, con granularidad correcta</td>
+</tr>
+<tr>
+<td><strong>Cómo resuelve</strong></td>
+<td><strong>Separando</strong> lo que estaba fusionado y <strong>eliminando</strong> lo que no era función</td>
+</tr>
+</tbody>
+</table>
+<h2>CANDIDATA C — <strong>arquitectura bidimensional</strong></h2>
+<h3>Eje 1 · <strong>FUNCIÓN PRIMARIA</strong> — <em>particiona el capital, suma 100%</em></h3>
+<p><strong>Las cinco funciones de la candidata B.</strong></p>
+<h3>Eje 2 · <strong>ATRIBUTOS ORTOGONALES</strong> — <em>anotan, NO particionan, no suman 100%</em></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Atributo</th>
+<th>Valores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A1</strong></td>
+<td><strong>Geografía</strong></td>
+<td>global · desarrollado · emergente · país único</td>
+</tr>
+<tr>
+<td><strong>A2</strong></td>
+<td><strong>Factor o estilo</strong></td>
+<td>valor · tamaño · momentum · calidad · baja volatilidad · sectorial · ninguno</td>
+</tr>
+<tr>
+<td><strong>A3</strong></td>
+<td><strong>Liquidez</strong></td>
+<td>diaria · periódica · ilíquida</td>
+</tr>
+<tr>
+<td><strong>A4</strong></td>
+<td><strong>Forma de gestión</strong></td>
+<td>pasiva/indexada · sistemática · activa delegada · convicción directa</td>
+</tr>
+<tr>
+<td><strong>A5</strong></td>
+<td><strong>Vehículo</strong></td>
+<td>fondo · ETF · ETC/ETP · directo · derivado</td>
+</tr>
+<tr>
+<td><strong>A6</strong></td>
+<td><strong>Concentración y convicción</strong></td>
+<td>diversificado · dedicado · convicción</td>
+</tr>
+<tr>
+<td><strong>A7</strong></td>
+<td><strong>Perfil de distribución</strong></td>
+<td>acumulación · reparto</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Naturaleza</strong></td>
+<td><strong>Dos dimensiones separadas explícitamente</strong></td>
+</tr>
+<tr>
+<td><strong>Cómo resuelve</strong></td>
+<td><strong>Separando</strong> las funciones <strong>y conservando</strong> la información que A y B tiran</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Clave de diseño:</strong> <strong>el capital se reparte una sola vez, por función. Los atributos
+anotan ese mismo capital y nunca lo dividen.</strong> Es <strong>exactamente el principio que PMMA v1
+ya aplica a la Convicción</strong> —<em>«la Convicción explica cómo se compró; el módulo explica
+para qué está»</em>— <strong>generalizado a seis atributos más</strong>. No es una invención nueva.</p>
+</blockquote>
+<hr />
+<h1>4. EVALUACIÓN CONTRA LOS SIETE FALLOS CONOCIDOS</h1>
+<p><strong>Solo se usan los fallos de D111. Ninguna cartera nueva.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Fallo</th>
+<th style="text-align: center;"><strong>A · T1</strong></th>
+<th style="text-align: center;"><strong>B · función pura</strong></th>
+<th style="text-align: center;"><strong>C · bidimensional</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D-FRENO</strong></td>
+<td style="text-align: center;">❌ <em>«Estabilidad» sigue fusionando duración larga y efectivo</em></td>
+<td style="text-align: center;">✅ <strong>Separadas en F2 y F3</strong></td>
+<td style="text-align: center;">✅ <strong>Separadas</strong></td>
+</tr>
+<tr>
+<td><strong>Emergentes geográfico</strong></td>
+<td style="text-align: center;">✅ <em>(por eliminación)</em></td>
+<td style="text-align: center;">🟡 <em>(elimina el módulo y pierde el dato de decisión dedicada)</em></td>
+<td style="text-align: center;">✅ <strong>F1 + A1 emergente + A6 dedicado — se conserva la información</strong></td>
+</tr>
+<tr>
+<td><strong>Aceleración ↔ Defensivos</strong></td>
+<td style="text-align: center;">✅ <em>(colapso)</em></td>
+<td style="text-align: center;">🟡 <em>(colapso: desaparece la frontera y también la distinción)</em></td>
+<td style="text-align: center;">✅ <strong>F1 + A2 = calidad / tamaño / valor. No hay frontera que trazar</strong></td>
+</tr>
+<tr>
+<td><strong>Trend following</strong></td>
+<td style="text-align: center;">✅ <em>(Opcionalidad, por vaguedad)</em></td>
+<td style="text-align: center;">✅ <strong>F5 por construcción</strong></td>
+<td style="text-align: center;">✅ <strong>F5 + A4 sistemática</strong></td>
+</tr>
+<tr>
+<td><strong>Asimetría demasiado estrecha</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅ <strong>La condición de tamaño sale de la definición</strong></td>
+<td style="text-align: center;">✅ <strong>Sale a A6, donde le corresponde</strong></td>
+</tr>
+<tr>
+<td><strong>Función rentas</strong></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">🟡 <strong>A7 reparto captura el rasgo; queda por decidir si «rentas» es función o mandato</strong></td>
+</tr>
+<tr>
+<td><strong>Pérdida de información de T1</strong></td>
+<td style="text-align: center;">❌ <strong>Es el problema</strong></td>
+<td style="text-align: center;">🟡 <strong>Menor, pero pierde factores y geografía</strong></td>
+<td style="text-align: center;">✅ <strong>La conserva toda en el eje 2</strong></td>
+</tr>
+<tr>
+<td><strong>RESUELTOS</strong></td>
+<td style="text-align: center;"><strong>4 / 7</strong> <em>(dos por colapso)</em></td>
+<td style="text-align: center;"><strong>4,5 / 7</strong></td>
+<td style="text-align: center;"><strong>6,5 / 7</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>5. CRITERIOS DE SELECCIÓN — <strong>escritos antes de elegir</strong></h1>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Criterio</th>
+<th>Por qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S1</strong></td>
+<td><strong>Resuelve el mayor número de fallos observados</strong></td>
+<td>Es el objetivo del ejercicio</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td><strong>Parsimonia sobre el eje que reparte capital</strong></td>
+<td>F8 penaliza categorías que particionan; <strong>no penaliza anotaciones</strong></td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td><strong>No pierde información que las arquitecturas declaran explícitamente</strong></td>
+<td>Fue el fallo de T1</td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td><strong>Deriva de un principio ya presente en el proyecto</strong>, no de una invención <em>ad hoc</em></td>
+<td>Evita construir a medida del problema</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td><strong>Es falsable</strong></td>
+<td>Sin esto no puede validarse en el holdout</td>
+</tr>
+</tbody>
+</table>
+<h2>5.1 Puntuación</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: center;"><strong>A</strong></th>
+<th style="text-align: center;"><strong>B</strong></th>
+<th style="text-align: center;"><strong>C</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S1</strong> <em>(fallos resueltos)</em></td>
+<td style="text-align: center;">4/7</td>
+<td style="text-align: center;">4,5/7</td>
+<td style="text-align: center;"><strong>6,5/7</strong></td>
+</tr>
+<tr>
+<td><strong>S2</strong> <em>(categorías que particionan)</em></td>
+<td style="text-align: center;"><strong>4</strong> ✅</td>
+<td style="text-align: center;">5 🟡</td>
+<td style="text-align: center;">5 🟡</td>
+</tr>
+<tr>
+<td><strong>S3</strong> <em>(conserva información)</em></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">🟡</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><strong>S4</strong> <em>(deriva de principio propio)</em></td>
+<td style="text-align: center;">🟡</td>
+<td style="text-align: center;">🟡</td>
+<td style="text-align: center;">✅ <strong>generaliza la regla de la Convicción</strong></td>
+</tr>
+<tr>
+<td><strong>S5</strong> <em>(falsable)</em></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">🟡 <strong>requiere blindaje explícito — ver §7</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>6. CANDIDATA SELECCIONADA</h1>
+<blockquote>
+<h1>🏆 <strong>CANDIDATA C — ARQUITECTURA BIDIMENSIONAL</strong></h1>
+</blockquote>
+<h2>6.1 Por qué gana</h2>
+<ol>
+<li><strong>Resuelve 6,5 de 7 fallos</strong>, frente a 4 y 4,5.</li>
+<li><strong>Es la única que resuelve sin destruir.</strong> A y B resuelven la frontera
+   Aceleración↔Defensivos <strong>haciendo desaparecer la distinción</strong>; C la resuelve
+   <strong>trasladándola al eje donde siempre perteneció</strong>.</li>
+<li><strong>Cuesta lo mismo que B en el eje que importa para F8.</strong> Ambas parten el capital en
+   <strong>cinco</strong> categorías. <strong>Los atributos no reparten capital, luego no cuentan como
+   categorías de partición.</strong></li>
+<li><strong>Explica los siete síntomas con una sola causa</strong> <em>(§2.2)</em> — es una arquitectura, no un
+   conjunto de parches.</li>
+<li><strong>No inventa un principio nuevo:</strong> generaliza el que PMMA v1 ya usa para la Convicción.</li>
+</ol>
+<h2>6.2 Por qué NO gana la candidata A, pese a haber ganado F8</h2>
+<p><strong>T1 ganó F8 en D111 por ser menos específica</strong> <em>(declarado en D111 §7.4)</em>. Resuelve cuatro
+fallos <strong>a base de no poder representar aquello que los causaba</strong>. Bajo <strong>S3 es la peor de
+las tres</strong>: es literalmente el fallo nº 7 de la lista.</p>
+<p>⚠️ <strong>Pero A sigue siendo el rival a batir en el holdout.</strong> Que pierda aquí <strong>no la descarta</strong>:
+si en la muestra nueva C no consigue superar a T1 bajo la regla F8, <strong>la conclusión será que
+la complejidad no se paga</strong> — y ese resultado también será aceptable.</p>
+<hr />
+<h1>7. RIESGOS NUEVOS QUE INTRODUCE LA CANDIDATA C</h1>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Riesgo</th>
+<th>Gravedad</th>
+<th>Mitigación propuesta <em>(a congelar antes del holdout)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RN1</strong></td>
+<td>🔴 <strong>Infalsabilidad por flexibilidad.</strong> Con un eje de atributos, <strong>casi todo es describible</strong> — y una taxonomía que nunca falla no informa</td>
+<td>🔴 <strong>Alta</strong></td>
+<td><strong>Lista de atributos CERRADA en siete.</strong> Añadir uno durante la validación = <strong>fallo registrado</strong>, no mejora. <strong>Y regla dura: si una asignación del eje 1 solo puede decidirse mirando el eje 2, es un fallo del eje 1</strong></td>
+</tr>
+<tr>
+<td><strong>RN2</strong></td>
+<td>🔴 <strong>F5 se convierte en cajón de sastre</strong>, exactamente el papel en que fracasó Asimetría</td>
+<td>🔴 <strong>Alta</strong></td>
+<td><strong>F5 exige demostrar convexidad o divergencia POR CONSTRUCCIÓN</strong>, no por ausencia de mejor destino. <strong>«No encaja en las otras cuatro» NO es criterio de F5</strong></td>
+</tr>
+<tr>
+<td><strong>RN3</strong></td>
+<td>🟠 <strong>Proliferación de atributos</strong></td>
+<td>🟠 Media</td>
+<td>Contador explícito; <strong>cada atributo nuevo debe justificar C1-C12 como si fuera un módulo</strong></td>
+</tr>
+<tr>
+<td><strong>RN4</strong></td>
+<td>🟠 <strong>Complejidad de lectura</strong>: dos ejes son más difíciles de explicar que cuatro cajas</td>
+<td>🟠 Media</td>
+<td>La ficha debe poder leerse <strong>solo con el eje 1</strong> y seguir siendo correcta</td>
+</tr>
+<tr>
+<td><strong>RN5</strong></td>
+<td>🔴 <strong>SOBREAJUSTE A LA MUESTRA DE DESARROLLO</strong></td>
+<td>🔴 <strong>La más grave</strong></td>
+<td><strong>C se ha diseñado exactamente contra los fallos que resuelve.</strong> Que resuelva 6,5/7 <strong>no es evidencia</strong>: es tautología. <strong>Solo el holdout puede decir algo</strong></td>
+</tr>
+<tr>
+<td><strong>RN6</strong></td>
+<td>🟠 <strong>F8 sin comprobar</strong>: C parte el capital en 5 categorías frente a las 4 de T1</td>
+<td>🟠 Media</td>
+<td>Se comprobará en el holdout <strong>con la misma regla y sin renegociarla</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3>⚠️ <strong>RN5 es la razón de existir del holdout.</strong> Este documento <strong>no valida nada</strong>.</h3>
+</blockquote>
+<hr />
+<h1>8. LO QUE ESTE DOCUMENTO <strong>NO</strong> HACE</h1>
+<ul>
+<li>❌ <strong>No busca ni usa ninguna cartera nueva.</strong></li>
+<li>❌ <strong>No valida</strong> ninguna candidata.</li>
+<li>❌ <strong>No modifica</strong> PMMA v1, el capítulo 4, el 19 ni la cartera.</li>
+<li>❌ <strong>No revisa</strong> D111, que queda <strong>aceptado e inmutable</strong>.</li>
+<li>❌ <strong>No ejecuta</strong> el holdout.</li>
+</ul>
+<hr />
+<h2>REGISTRO</h2>
+<p><strong>15-ago-2026 — Generación de hipótesis para PMMA v2.</strong> Confirmada la hipótesis de mezcla de
+dimensiones: los siete módulos de v1 pertenecen a <strong>cinco tipos de cosa distintos</strong>, y esa
+única causa explica <strong>los siete fallos</strong> de D111. Tres candidatas evaluadas <strong>solo contra los
+fallos conocidos</strong>. <strong>Seleccionada la candidata C</strong>, bidimensional, con <strong>seis riesgos nuevos
+declarados</strong> — el principal, <strong>el sobreajuste a la propia muestra de desarrollo</strong>.
+<strong>Congelada en <code>PMMA_V2_CANDIDATA_PRE_HOLDOUT.md</code>.</strong></p></div></body></html>
