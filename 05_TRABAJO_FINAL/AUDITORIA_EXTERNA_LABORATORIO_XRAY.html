@@ -1,6 +1,6 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Auditoría externa del laboratorio X-Ray</title><style>
+<title>Auditoría externa del laboratorio X-Ray · v2</title><style>
 :root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
 *{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
 font:17px/1.65 Georgia,'Times New Roman',serif}
@@ -24,8 +24,12 @@ hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
 strong{color:#000}
 @media print{body{background:#fff}.pag{padding:0}}
 </style></head><body><div class="pag"><h1>🔬 INFORME DE AUDITORÍA EXTERNA DEL LABORATORIO X-RAY</h1>
-<h2>Peaky Minders Global 10Y · 15 de agosto de 2026 · auditor metodológico externo</h2>
+<h2>Peaky Minders Global 10Y · <strong>v2</strong> · 15 de agosto de 2026 · auditor metodológico externo</h2>
 <blockquote>
+<p><strong>v2 — auditoría de la auditoría aplicada.</strong> Se <strong>retira</strong> un hallazgo erróneo <em>(D-6)</em>, se
+<strong>reformulan</strong> dos que estaban sobredimensionados <em>(H-2, H-3)</em>, se <strong>añade un bloqueo
+material no detectado en v1</strong> <em>(H-4: commodities frente al capítulo 19)</em> y se acota el
+recuento de pruebas. <strong>v1 se conserva en el historial de git.</strong></p>
 <p><strong>Nada se ha modificado.</strong> Ni cartera oficial, ni Investment Book, ni capítulos, ni pesos,
 ni vehículos, ni decisiones Dxx. <strong>PMMA Universal no se ha abierto.</strong> No se han ejecutado
 nuevas pruebas X-Ray ni la validación histórica.</p>
@@ -71,9 +75,40 @@ opinar sobre documentos que no había leído.</p>
 </tbody>
 </table>
 <p><strong>Verificación de las 14 métricas del §9 de tu encargo contra el X-Ray oficial:</strong> vol 3a
-9,71 ✓ · vol 5a 10,21 ✓ · media 3a 14,71 ✓ · media 5a <strong>11,06</strong> ⚠️ <em>(ver D-6)</em> · Sharpe
-1,22 / 0,90 ✓ · alfa 3,64 / 3,65 ✓ · beta 0,83 / 0,80 ✓ · R² 91,31 / 92,16 ✓ · IR 3a
-0,72 ✓ · TE 3a 3,39 ✓. <strong>Trece de catorce coinciden exactamente con el informe oficial.</strong></p>
+9,71 ✓ · vol 5a 10,21 ✓ · media 3a 14,71 ✓ · media 5a 11,06 ✓ · Sharpe 1,22 / 0,90 ✓ ·
+alfa 3,64 / 3,65 ✓ · beta 0,83 / 0,80 ✓ · R² 91,31 / 92,16 ✓ · IR 3a 0,72 ✓ · TE 3a
+3,39 ✓. <strong>Las catorce coinciden exactamente con el informe oficial.</strong></p>
+<h2>0.1 ⚠️ Aclaración necesaria: el X-Ray publica DOS rentabilidades distintas</h2>
+<p><strong>[DATO] verificado en el X-Ray 34.</strong> El informe contiene dos bloques con cifras de
+rentabilidad que <strong>no son el mismo campo</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Bloque del informe</th>
+<th style="text-align: right;">3 años</th>
+<th style="text-align: right;">5 años</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rentabilidades Acumuladas</strong> <em>(anualizado)</em></td>
+<td style="text-align: right;"><strong>15,23</strong></td>
+<td style="text-align: right;"><strong>11,08</strong></td>
+</tr>
+<tr>
+<td><strong>Estadísticas de Rentabilidad y Riesgo</strong> <em>(«Medio»)</em></td>
+<td style="text-align: right;"><strong>14,71</strong></td>
+<td style="text-align: right;"><strong>11,06</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Esto explica dos aparentes discrepancias del corpus y ninguna de las dos es un error:</strong>
+<code>INFORME_COMPLETO</code> usa el bloque de <strong>Rentabilidades Acumuladas</strong> cuando habla de
+«rentabilidad anualizada» <em>(11,08; y 15,72 para la BASE a 3 años)</em>; la <strong>FICHA</strong> usa
+<strong>«Medio»</strong> <em>(11,06)</em>. <strong>Ambos son datos oficiales del mismo informe.</strong></p>
+<p>⚠️ <strong>Recomendación de redacción:</strong> citar siempre <strong>qué campo</strong> se está usando. Un tribunal
+que vea 11,06 y 11,08 en dos documentos del mismo trabajo preguntará, y la respuesta debe
+ser inmediata.</p>
 <hr />
 <h1>A. RESUMEN EJECUTIVO</h1>
 <p><strong>El laboratorio está metodológicamente por encima de lo que se ve en trabajos de este
@@ -81,7 +116,7 @@ nivel.</strong> Tiene base fija, cambio único por prueba, criterios escritos an
 <strong>una prueba de control deliberada</strong>, preservación de descartes, errores publicados y
 límites declarados. La verificación externa contra MAPFRE y el cuadre de India por dos
 caminos <em>(5,22 calculado vs 5,24 medido)</em> son trabajo serio.</p>
-<p><strong>Y aun así, tres hallazgos impiden aprobar la candidata tal como está.</strong></p>
+<p><strong>Y aun así, cuatro hallazgos impiden aprobar la candidata tal como está.</strong></p>
 <blockquote>
 <h2>🔴 <strong>H-1 · La BASE del laboratorio no es la cartera oficial.</strong></h2>
 <p>El Freno de la BASE v10 es <strong>un ETF de bonos globales agregados al 9%</strong>
@@ -90,18 +125,32 @@ caminos <em>(5,22 calculado vs 5,24 medido)</em> son trabajo serio.</p>
 distintos con duración, crédito y divisa distintos.</strong> El CAMBIO 3 —financiar
 commodities «desde el Freno»— <strong>se probó sobre un Freno que la cartera oficial no
 tiene</strong>. La conclusión no es trasladable sin repetir la prueba.</p>
-<h2>🔴 <strong>H-2 · La justificación del CAMBIO 1 contiene un error factual.</strong></h2>
-<p><code>INFORME_COMPLETO</code> afirma que Robeco debe ir a Motor porque <em>«su volatilidad (15,92) es
-la de un fondo de núcleo»</em>. <strong>15,92 no es su volatilidad: es su rentabilidad media a 3
-años.</strong> Su volatilidad real es <strong>9,88</strong> — <strong>la más baja de todas las posiciones de renta
-variable de la cartera</strong>, por debajo del S&amp;P 500 (13,08) y del All-World (11,52). El
-argumento, con el dato correcto, <strong>apunta en dirección contraria</strong>.</p>
-<h2>🔴 <strong>H-3 · El criterio de selección es casi tautológico.</strong></h2>
-<p>Se eligió por <strong>R² a la baja y tracking error al alza</strong>. Pero <strong>añadir cualquier activo
-poco correlacionado baja el R² y sube el TE por construcción algebraica</strong>. El criterio
-no es independiente de la hipótesis que pretende contrastar: mide <em>que has añadido algo
-distinto</em>, no <em>que hayas mejorado la cartera</em>. Con 33 configuraciones probadas, la
-objeción de <em>data snooping</em> no queda neutralizada por este criterio.</p>
+<h2>🔴 <strong>H-2 · La reclasificación de Robeco no puede aprobarse con la evidencia aportada.</strong></h2>
+<p><strong>Error factual:</strong> <code>INFORME_COMPLETO</code> justifica el cambio diciendo que <em>«su volatilidad
+(15,92) es la de un fondo de núcleo»</em>. <strong>15,92 no es su volatilidad: es su rentabilidad
+media a 3 años.</strong> Su volatilidad real es <strong>9,88</strong>.
+<strong>Formulación del bloqueo:</strong> <em>«La reclasificación de Robeco no puede aprobarse únicamente
+por correlaciones y volatilidad. Debe justificarse por función económica y reconciliarse
+además con el protocolo del macrobloque 47%.»</em>
+<strong>Incompatibilidad de gobernanza:</strong> el protocolo vigente fija <strong>Motor 44 + Reserva 3 +
+Convicción 0 = 47%</strong>. Reclasificar el 4% de Robeco a Motor lo llevaría a <strong>48%</strong> y <strong>exige
+resolver expresamente esa gobernanza antes de cualquier ejecución</strong>.</p>
+<h2>🔴 <strong>H-3 · El criterio de selección no es suficiente por sí solo.</strong></h2>
+<p>Se eligió por <strong>R² a la baja y tracking error al alza</strong>. <strong>Ambas métricas capturan
+diferenciación respecto del benchmark y están parcialmente relacionadas; no constituyen
+criterios independientes suficientes de mejora. Deben evaluarse junto con volatilidad,
+drawdown/estrés, función económica, concentración, costes y evidencia independiente.</strong>
+Con 33 configuraciones examinadas sobre la misma muestra, <strong>la objeción de <em>data
+snooping</em> no queda neutralizada por estas dos métricas</strong>.</p>
+<h2>🔴 <strong>H-4 · La narrativa de commodities contradice el capítulo 19 ya cerrado.</strong></h2>
+<p><code>INFORME_COMPLETO</code> presenta un cuadro de amenazas en el que <strong>«shock de inflación → nadie
+→ ❌ no cubierto»</strong> y llama a las materias primas <strong>«el seguro que faltaba»</strong>. <strong>Eso no es
+compatible con el capítulo 19</strong>, que encontró que <strong>el oro presentó comportamiento
+relativo medio favorable en las dos cajas de inflación alta</strong> y <strong>consistencia mayoritaria
+entre episodios en crecimiento débil + inflación alta</strong>.
+<strong>La cartera no estaba descubierta frente a la inflación: tenía una pata de oro con apoyo
+histórico.</strong> Presentar las commodities como el primer o único seguro <strong>ignora evidencia
+propia ya validada y cerrada</strong>. <em>(Formulación correcta en D-9.)</em></p>
 </blockquote>
 <p><strong>Veredicto:</strong> 🟡 <strong>NECESITA CORRECCIONES ANTES DE VALIDAR</strong> <em>(desarrollado en §N)</em>.</p>
 <hr />
@@ -224,19 +273,30 @@ mismo fondo <em>(Emergentes)</em>.</p>
 <p><code>INFORME_COMPLETO</code> línea 377: <em>«su volatilidad (15,92) es la de un fondo de núcleo, no la
 de un acelerador»</em>. <strong>[DATO]</strong> de la ficha y del X-Ray: Robeco <strong>Media 3a = 15,92 · Volat.
 3a = 9,88</strong>. Se ha tomado la columna de rentabilidad por la de volatilidad.</p>
-<p><strong>Con el dato correcto el argumento se invierte:</strong> Robeco es <strong>la posición de renta
-variable menos volátil de la cartera</strong> <em>(9,88 frente a 11,52 del All-World y 13,08 del
-S&amp;P 500)</em>. Un activo <strong>menos volátil que el núcleo</strong> no se justifica como núcleo por su
-volatilidad.</p>
+<p><strong>Qué implica el dato correcto —y qué no.</strong> Robeco es <strong>la posición de renta variable menos
+volátil de la cartera</strong> <em>(9,88 frente a 11,52 del All-World y 13,08 del S&amp;P 500)</em>. Una
+volatilidad de ese orden <strong>es compatible con —e incluso refuerza descriptivamente— un perfil
+de riesgo más parecido al del núcleo que al de un acelerador</strong>.</p>
+<p>⚠️ <strong>Pero eso no demuestra que Robeco deba pertenecer al Motor.</strong> Un perfil de riesgo
+compatible no es una función económica. El bloqueo se formula así:</p>
+<blockquote>
+<p><strong>La reclasificación de Robeco no puede aprobarse únicamente por correlaciones y
+volatilidad. Debe justificarse por función económica y reconciliarse además con el
+protocolo del macrobloque 47%.</strong></p>
+</blockquote>
+<p><strong>Incompatibilidad de gobernanza, explícita:</strong> el protocolo vigente fija <strong>Motor 44 +
+Reserva 3 + Convicción 0 = 47%</strong>. Con Robeco reclasificado, <strong>Motor = 48%</strong> y la identidad
+deja de cumplirse. <strong>Debe resolverse antes de cualquier ejecución</strong>, no después.</p>
 <h2>🔴 D-3 · El criterio de decisión no es independiente de la hipótesis</h2>
-<p><strong>R² a la baja + TE al alza</strong> es, algebraicamente, <strong>lo que produce cualquier activo poco
-correlacionado que se añada</strong>. No distingue entre <em>«he añadido diversificación útil»</em> y
-<em>«he añadido ruido no correlacionado»</em>. <strong>Un activo puramente aleatorio bajaría el R² y
-subiría el TE igual de bien.</strong></p>
-<p>Lo que faltaría para cerrar el argumento: una métrica que <strong>premie la contribución al
-objetivo</strong> <em>(p. ej. reducción de la caída máxima, mejora de la rentabilidad ajustada por
-riesgo con significación, o contribución al riesgo por unidad de peso)</em>, no solo la
-disimilitud con el índice.</p>
+<p><strong>Ambas métricas capturan diferenciación respecto del benchmark y están parcialmente
+relacionadas entre sí; no constituyen criterios independientes suficientes de mejora.</strong>
+Un R² más bajo y un TE más alto indican que la cartera se separa del índice, <strong>no que la
+separación sea beneficiosa</strong>.</p>
+<p><strong>Deben evaluarse junto con:</strong> volatilidad · drawdown y comportamiento en estrés · función
+económica del módulo · concentración · costes · y evidencia independiente fuera de la
+ventana de decisión. <strong>Ninguna de esas seis dimensiones pesó en la selección del ganador</strong>,
+y eso es lo que hace que el criterio, por sí solo, no cierre el argumento frente a 33
+configuraciones examinadas.</p>
 <h2>🟠 D-4 · Colisión con la gobernanza del capítulo 5</h2>
 <p>Reclasificar Robeco a Motor lleva <strong>Motor de 44% a 48%</strong>. Pero la <strong>bolsa del 47%</strong> del
 capítulo 5 <em>(D78/D80)</em> es una identidad de gobernanza: <strong>44 Motor ordinario + 3 Reserva +
@@ -268,31 +328,57 @@ laboratorio no lo menciona.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Es una inconsistencia interna de la FUENTE 1</strong>, no solo entre documentos. <strong>Recuento
-defendible:</strong> 32 pruebas de sustitución <em>(01-32)</em> + 1 base + 1 diagnóstico + 1
-configuración final.</p>
-<h2>🟠 D-6 · Discrepancia numérica de la rentabilidad a 5 años</h2>
+<p><strong>[INTERPRETACIÓN] revisada:</strong> <strong>no es una contradicción material</strong>, sino <strong>falta de
+nomenclatura</strong>. Los tres documentos describen fases distintas de un proceso que creció, y
+cada uno contó lo que existía cuando se escribió.</p>
+<h3>Nomenclatura única propuesta <em>(para eliminar la ambigüedad)</em></h3>
 <table>
 <thead>
 <tr>
-<th>Fuente</th>
-<th>Rentabilidad 5a de la candidata</th>
+<th>Nombre propuesto</th>
+<th>Contenido</th>
+<th>Archivos</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>INFORME_COMPLETO</code> tabla comparativa</td>
-<td><strong>11,08</strong> <em>(Δ −0,03 sobre 11,11)</em></td>
+<td><strong>BASE v10</strong></td>
+<td>Cartera de referencia del laboratorio <em>(no es la cartera oficial — ver D-1)</em></td>
+<td><code>00</code></td>
 </tr>
 <tr>
-<td><strong>X-Ray oficial 34 y FICHA</strong></td>
-<td><strong>11,06</strong></td>
+<td><strong>FASE 1 — 29 pruebas</strong></td>
+<td>Bloques A-H: sustituciones, dosis de India y China</td>
+<td><code>01</code>-<code>29</code></td>
+</tr>
+<tr>
+<td><strong>FASE 2 — ampliación commodities</strong></td>
+<td>Bloque I: tres fuentes de financiación</td>
+<td><code>30</code>-<code>32</code></td>
+</tr>
+<tr>
+<td><strong>TIRADA DIAGNÓSTICA</strong></td>
+<td>⚠️ <strong>No es una cartera.</strong> Solo para leer correlaciones</td>
+<td><code>33</code></td>
+</tr>
+<tr>
+<td><strong>CANDIDATA FINAL</strong></td>
+<td>Configuración resultante, confirmada por X-Ray</td>
+<td><code>34</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Prevalece el informe oficial: 11,06.</strong> El Δ correcto sería <strong>−0,05</strong>, no −0,03. Diferencia
-menor pero <strong>la tabla que sostiene «a cinco años no se paga rentabilidad» usa el número
-equivocado</strong>.</p>
+<p><strong>Con esta nomenclatura, las tres cifras del corpus dejan de contradecirse:</strong> «29 pruebas»
+= FASE 1 · «33 pruebas» = FASE 1 + FASE 2 + diagnóstica · «35 archivos» = todo lo anterior
+más base y candidata. <strong>Recomiendo adoptarla en los tres documentos.</strong></p>
+<h2>⬜ D-6 · <strong>RETIRADO — no había discrepancia</strong></h2>
+<p><em>(Hallazgo de la v1, eliminado tras verificación.)</em> Se señaló como error que
+<code>INFORME_COMPLETO</code> usara <strong>11,08</strong> y la FICHA <strong>11,06</strong> para la rentabilidad a 5 años.
+<strong>No es un error: son dos campos distintos del mismo informe oficial</strong> — <em>Rentabilidades
+Acumuladas · 5 años anualizado = 11,08</em> frente a <em>Estadísticas · Medio 5a = 11,06</em>
+<strong>(verificado en el X-Ray 34, §0.1)</strong>. Cada documento usa uno de forma consistente.</p>
+<p><strong>Queda solo una recomendación de redacción, no un hallazgo:</strong> citar siempre qué campo se
+está usando.</p>
 <h2>🟠 D-7 · El «peor trimestre» empeora, y es la métrica más cercana a lo que se promete</h2>
 <p><strong>[DATO]</strong> Peor trimestre: BASE −15,99 → candidata <strong>−16,44</strong> <em>(−0,45)</em>. La candidata
 introduce commodities <strong>como seguro</strong> y <strong>empeora la única métrica de tensión disponible</strong>.</p>
@@ -301,6 +387,57 @@ pánico)</em>. <strong>[INTERPRETACIÓN] mía:</strong> esa explicación es plau
 argumento en no falsable con los datos disponibles</strong> — si la protección no aparece ni en
 el peor trimestre ni en el peor año, no hay en todo el X-Ray ninguna métrica que pueda
 mostrarla.</p>
+<h2>🔴 D-9 · La narrativa de commodities contradice el capítulo 19 <em>(bloqueo nuevo)</em></h2>
+<p><strong>Lo que dice <code>INFORME_COMPLETO</code></strong> <em>(bloque I)</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Amenaza</th>
+<th>Quién protege</th>
+<th>¿Cubierta?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shock de crecimiento</td>
+<td>Freno</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Miedo monetario</td>
+<td>Oro</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>Shock de inflación</strong></td>
+<td><strong>nadie</strong></td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<p>…y titula el bloque <strong>«El seguro que faltaba»</strong>.</p>
+<p><strong>Lo que dice el capítulo 19, cerrado y validado</strong> <em>(D97, D103)</em>: <strong>el oro presentó
+comportamiento relativo medio favorable en las dos cajas de inflación alta</strong>, y <strong>en
+crecimiento débil + inflación alta mostró además consistencia mayoritaria entre episodios</strong>
+— bajo dos clasificadores y dos convenciones de precio. <strong>La evidencia apoya exclusivamente
+la pata de oro, no el módulo Activos Reales completo.</strong></p>
+<blockquote>
+<h3>🔴 **La casilla «shock de inflación → nadie» es incorrecta según la evidencia propia</h3>
+<h3>del trabajo.<strong> No es que la cartera careciera de cobertura de inflación: </strong>tenía la</h3>
+<h3>única pata con apoyo histórico contrastado de todo el capítulo 19.**</h3>
+</blockquote>
+<p><strong>Formulación que debe sustituir a la narrativa actual:</strong></p>
+<blockquote>
+<p><strong>La cartera ya dispone de una pata de oro con apoyo histórico en entornos de inflación
+alta. La hipótesis de commodities es que una cesta amplia podría añadir una segunda
+fuente de comportamiento diferenciada frente a determinados shocks inflacionarios o de
+oferta. Esa función adicional todavía debe validarse históricamente.</strong></p>
+</blockquote>
+<p><strong>Por qué es un bloqueo y no una cuestión de estilo:</strong> la prueba 30 —financiar commodities
+<strong>desde el oro</strong>— se descartó porque <em>«quitas un activo descorrelacionado para meter otro»</em>.
+<strong>Con la narrativa corregida, esa prueba cambia de sentido</strong>: no se trata de sustituir un
+seguro por otro, sino de decidir <strong>si la segunda fuente añade algo sobre la primera, que ya
+tiene apoyo</strong>. Es una pregunta distinta y <strong>no se ha respondido</strong>.</p>
 <h2>🟡 D-8 · Otras</h2>
 <p><strong>D-8a</strong> · <strong>La «lista de espera» no tiene fecha de revisión</strong> <em>(WPAI, defensa europea,
 equiponderado)</em>: sin plazo, es un descarte con otro nombre.
@@ -310,7 +447,12 @@ declarado, pero el coste total publicado <em>(0,19%)</em> cubre solo el 87%.
 laboratorio lo publica como dato sin valoración, <strong>pero no lo cruza con la reclasificación
 a Motor</strong>: un Motor con una pata al 1,46% es una decisión de coste, no solo de etiqueta.
 <strong>D-8d</strong> · <strong>Dos posiciones replican por swap</strong> <em>(commodities y cobre)</em> — riesgo de
-contrapartida declarado en la FICHA, <strong>ausente en <code>INFORME_COMPLETO</code></strong>.</p>
+contrapartida declarado en la FICHA, <strong>ausente en <code>INFORME_COMPLETO</code></strong>.
+<strong>D-8e</strong> · <strong>Formulación a corregir:</strong> <code>INFORME_COMPLETO</code> lista como sacrificio <em>«materias
+primas: sin retorno real esperado»</em>. Es una afirmación más fuerte de lo que puede
+sostenerse. <strong>Formulación correcta:</strong> <em>«No se incorpora bajo una hipótesis de crecimiento
+productivo comparable a la renta variable; su eventual inclusión se justificaría por función
+de diversificación/cobertura y no por una previsión de rentabilidad superior.»</em></p>
 <hr />
 <h1>E. SESGOS POTENCIALES</h1>
 <table>
@@ -401,7 +543,7 @@ aparente</strong>, que es exactamente lo que se hizo.</p>
 </tr>
 <tr>
 <td><strong>Evidencia en contra</strong></td>
-<td>🔴 <strong>La justificación publicada usa un dato equivocado</strong> <em>(D-2: 15,92 es rentabilidad, no volatilidad)</em> · <strong>Su volatilidad real (9,88) es la más baja de la renta variable de la cartera</strong>, lo que <strong>no</strong> apoya «es núcleo» · <strong>El argumento «correlaciona más con Small Caps que con el índice» es lógicamente reversible</strong>: correlacionar 0,81 con su compañero de bloque argumenta <strong>redundancia dentro de Aceleración</strong>, no pertenencia al Motor</td>
+<td>🔴 <strong>La justificación publicada usa un dato equivocado</strong> <em>(D-2: 15,92 es rentabilidad, no volatilidad)</em> — aunque <strong>la volatilidad real (9,88) es compatible con un perfil de riesgo de núcleo</strong>, un perfil compatible <strong>no es una función económica</strong> · <strong>El argumento «correlaciona más con Small Caps que con el índice» es lógicamente reversible</strong>: correlacionar 0,81 con su compañero de bloque argumenta <strong>redundancia dentro de Aceleración</strong>, no pertenencia al Motor · 🔴 <strong>Incompatible con el macrobloque 47%</strong> mientras no se resuelva la gobernanza</td>
 </tr>
 <tr>
 <td><strong>Evidencia que falta</strong></td>
@@ -417,7 +559,7 @@ aparente</strong>, que es exactamente lo que se hizo.</p>
 </tr>
 <tr>
 <td><strong>Veredicto</strong></td>
-<td>⚠️ <strong>NO APROBAR COMO ESTÁ.</strong> La conclusión puede ser correcta, pero <strong>la evidencia publicada no la sostiene</strong>: contiene un error factual y un argumento reversible. <strong>Rehacer la justificación sobre criterio funcional</strong> <em>(¿por qué existe esta posición?)</em>, no sobre correlación. Y resolver antes la colisión del 47% <em>(D-4)</em></td>
+<td>⚠️ <strong>NO APROBAR COMO ESTÁ.</strong> <strong>La reclasificación no puede aprobarse únicamente por correlaciones y volatilidad: debe justificarse por función económica y reconciliarse con el protocolo del macrobloque 47%.</strong> La conclusión puede acabar siendo correcta; la evidencia publicada no la sostiene</td>
 </tr>
 </tbody>
 </table>
@@ -471,7 +613,7 @@ aparente</strong>, que es exactamente lo que se hizo.</p>
 </tr>
 <tr>
 <td><strong>Evidencia en contra</strong></td>
-<td>🔴 <strong>D-1: se financió desde un Freno que la cartera oficial no tiene</strong> · 🔴 <strong>la única evidencia de la función anti-inflación es 2022</strong> — un año, un episodio · <strong>[DATO]</strong> el peor trimestre <strong>empeora 0,45</strong> · <strong>1% es un peso que no puede mover el resultado de una cartera</strong>: con 1%, un +28% aporta +0,28% · <strong>[INTERPRETACIÓN]</strong> el propio laboratorio descartó posiciones del 1% como «residuo, no arquitectura» <em>(bloque H)</em> y aquí adopta una</td>
+<td>🔴 <strong>D-1: se financió desde un Freno que la cartera oficial no tiene</strong> · 🔴 <strong>D-9: la premisa de partida es incorrecta</strong> — el cuadro «shock de inflación → nadie» contradice el capítulo 19, que <strong>sí encontró apoyo para la pata de oro en las dos cajas de inflación alta</strong>. La pregunta correcta no es «¿falta un seguro?», sino <strong>«¿añade la cesta amplia algo sobre el oro, que ya tiene apoyo?»</strong> — y esa pregunta no se ha respondido · 🔴 <strong>la única evidencia de la función anti-inflación es 2022</strong> · <strong>[DATO]</strong> el peor trimestre <strong>empeora 0,45</strong> · <strong>1% aporta 0,28 puntos ante un +28%</strong> · el propio laboratorio descartó posiciones del 1% como «residuo, no arquitectura» <em>(bloque H)</em></td>
 </tr>
 <tr>
 <td><strong>Evidencia que falta</strong></td>
@@ -590,11 +732,17 @@ aparente</strong>, que es exactamente lo que se hizo.</p>
 </table>
 <h2>G.1 El problema del índice de referencia — no señalado en ningún documento</h2>
 <p><strong>[DATO]</strong> El X-Ray compara contra <strong>«RV Global Cap. Grande Blend»</strong>, un índice de renta
-variable pura. <strong>[INTERPRETACIÓN]</strong> Alfa, beta, R², TE e IR de <strong>toda</strong> la cartera están
-calculados contra un índice que no incluye bonos, oro, bitcoin ni materias primas. Con un
-23% en activos no accionariales, <strong>el alfa positivo y la beta baja son en buena parte un
-artefacto de composición</strong>, no una medida de habilidad. <strong>Ninguno de los tres documentos
-lo advierte, y es de las primeras cosas que preguntará un profesor.</strong></p>
+variable pura. Alfa, beta, R², TE e IR de <strong>toda</strong> la cartera están calculados contra un
+índice que <strong>no incluye bonos, oro, bitcoin ni materias primas</strong>, teniendo la cartera un
+<strong>23% en activos no accionariales</strong>.</p>
+<blockquote>
+<p><strong>Tratamiento correcto:</strong> el alfa de Morningstar es <strong>una estadística descriptiva
+condicionada al benchmark</strong>, no evidencia autónoma de habilidad ni de superioridad. Con
+esta composición, el alfa positivo y la beta baja reflejan <strong>en buena parte la mezcla de
+activos</strong>.</p>
+</blockquote>
+<p><strong>Ninguno de los tres documentos lo advierte</strong>, y es de las primeras cosas que preguntará un
+profesor.</p>
 <hr />
 <h1>H. AUDITORÍA DE LA MATRIZ AMPLIADA</h1>
 <h2>H.1 ¿Es defendible el método de las tiradas diagnósticas?</h2>
@@ -958,9 +1106,10 @@ episodios se ilustra, no se infiere. Por tanto hoy es una hipótesis, no un resu
 <p><strong>P8 · «Reclasifican Robeco a Motor por su correlación. ¿No contradice eso su propio
 método?»</strong>
 🔴 <em>«Sí, hay tensión con el Principio de Función Dominante y con nuestra limitación L3, que
-dice que la separación funcional no es estadística. Si reclasificamos por correlación,
-estamos usando el comportamiento para definir la función. La reclasificación puede ser
-correcta, pero debe justificarse por tesis, no por rho.»</em></p>
+dice que la separación funcional no es estadística. La reclasificación no puede aprobarse
+únicamente por correlaciones y volatilidad: debe justificarse por función económica. Y
+además debe reconciliarse con el macrobloque del 47%, que con Motor al 48% dejaría de
+cuadrar. Hasta que ambas cosas se resuelvan, el cambio está bloqueado.»</em></p>
 <p><strong>P9 · «Su Motor pasa a 48%. ¿Qué ocurre con la bolsa del 47% del capítulo 5?»</strong>
 <em>«Deja de cuadrar. Es una consecuencia que el laboratorio no había detectado y que hay que
 resolver antes de aprobar la reclasificación: definir si el 47% se mide sobre el Motor
@@ -1003,10 +1152,13 @@ ejecutar.»</em></p>
 <ol>
 <li>🔴 <strong>La base experimental no coincide con la cartera oficial en el Freno</strong> — y el
    CAMBIO 3 se decidió exactamente ahí.</li>
-<li>🔴 <strong>La justificación del CAMBIO 1 contiene un error factual</strong> <em>(rentabilidad tomada por
-   volatilidad)</em> y un argumento reversible.</li>
-<li>🔴 <strong>El criterio de selección (R² / TE) no es independiente de la hipótesis</strong> y no
-   neutraliza el <em>multiple testing</em> de 33 configuraciones.</li>
+<li>🔴 <strong>El CAMBIO 1 no puede aprobarse solo por correlación y volatilidad</strong>, contiene un
+   error factual en su justificación <strong>y es incompatible con el macrobloque del 47%</strong>
+   mientras no se resuelva la gobernanza.</li>
+<li>🔴 <strong>R² y TE capturan diferenciación, no mejora</strong>, y por sí solos no neutralizan el
+   <em>multiple testing</em> de 33 configuraciones.</li>
+<li>🔴 <strong>La premisa de partida del CAMBIO 3 contradice el capítulo 19</strong> <em>(D-9)</em>: la cartera
+   <strong>no</strong> carecía de cobertura frente a la inflación.</li>
 </ol>
 <p><strong>Por qué no es 🔴:</strong> la metodología <strong>no</strong> es insuficiente. Tiene control deliberado,
 descartes conservados, errores publicados, criterios previos, verificación cruzada de la
