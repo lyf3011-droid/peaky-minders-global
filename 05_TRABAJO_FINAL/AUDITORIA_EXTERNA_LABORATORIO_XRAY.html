@@ -30,6 +30,12 @@ strong{color:#000}
 <strong>reformulan</strong> dos que estaban sobredimensionados <em>(H-2, H-3)</em>, se <strong>añade un bloqueo
 material no detectado en v1</strong> <em>(H-4: commodities frente al capítulo 19)</em> y se acota el
 recuento de pruebas. <strong>v1 se conserva en el historial de git.</strong></p>
+<h2>🔒 <strong>ESTADO AL CIERRE (15-ago-2026): LABORATORIO CONGELADO — NO PROPAGADO</strong></h2>
+<p><strong>El laboratorio se conserva como entorno experimental separado.</strong> Sus resultados son
+<strong>evidencia para futuras decisiones, no decisiones actuales</strong>. Ver
+<strong><a href="ANEXO_CIERRE_LABORATORIO_XRAY_PRE_REUNION.md"><code>ANEXO_CIERRE_LABORATORIO_XRAY_PRE_REUNION.md</code></a></strong>,
+que fija el estado de cierre y el protocolo post-reunión.</p>
+<p>⚠️ <strong>H-1 NO exige rehacer el laboratorio</strong> <em>(ver §A)</em>.</p>
 <p><strong>Nada se ha modificado.</strong> Ni cartera oficial, ni Investment Book, ni capítulos, ni pesos,
 ni vehículos, ni decisiones Dxx. <strong>PMMA Universal no se ha abierto.</strong> No se han ejecutado
 nuevas pruebas X-Ray ni la validación histórica.</p>
@@ -118,13 +124,19 @@ límites declarados. La verificación externa contra MAPFRE y el cuadre de India
 caminos <em>(5,22 calculado vs 5,24 medido)</em> son trabajo serio.</p>
 <p><strong>Y aun así, cuatro hallazgos impiden aprobar la candidata tal como está.</strong></p>
 <blockquote>
-<h2>🔴 <strong>H-1 · La BASE del laboratorio no es la cartera oficial.</strong></h2>
-<p>El Freno de la BASE v10 es <strong>un ETF de bonos globales agregados al 9%</strong>
-<em>(<code>IE00BF1QPL78</code>)</em>. El Freno oficial es <strong>6% de fondo monetario en euros
-(<code>FR0000447823</code>) + 3% de renta fija flexible (<code>IE00B84J9L26</code>)</strong>. <strong>Son instrumentos
-distintos con duración, crédito y divisa distintos.</strong> El CAMBIO 3 —financiar
-commodities «desde el Freno»— <strong>se probó sobre un Freno que la cartera oficial no
-tiene</strong>. La conclusión no es trasladable sin repetir la prueba.</p>
+<h2>🟠 <strong>H-1 · Limitación de transferencia</strong> <em>(reformulado tras la auditoría de versionado)</em></h2>
+<p><strong>La BASE utilizada en el laboratorio no coincide completamente con la cartera oficial
+documentada —especialmente dentro del módulo Freno—; por ello, sus resultados no se
+propagan automáticamente.</strong></p>
+<p><strong>[DATO]</strong> El Freno de BASE v10 es un ETF de bonos agregados al 9% <em>(<code>IE00BF1QPL78</code>)</em>; el
+oficial documentado es <strong>6% monetario (<code>FR0000447823</code>) + 3% renta fija flexible
+(<code>IE00B84J9L26</code>)</strong>.</p>
+<p>✅ <strong>Esto NO invalida las comparaciones internas</strong>, que se hicieron todas contra la misma
+BASE. <strong>La auditoría de versionado</strong> <em>(<code>AUDITORIA_VERSIONADO_BASE.md</code>)</em> <strong>verificó que la
+BASE se fijó 2h07m antes del primer X-Ray y no se modificó después</strong>, y que de 13
+posiciones <strong>8 son idénticas, 3 usan el vehículo real donde el libro usaba proxy, 1 es un
+proxy documentado y solo 1 —el Freno— diverge</strong>.</p>
+<p>⚠️ <strong>Lo único que impide es la propagación automática a la cartera oficial.</strong></p>
 <h2>🔴 <strong>H-2 · La reclasificación de Robeco no puede aprobarse con la evidencia aportada.</strong></h2>
 <p><strong>Error factual:</strong> <code>INFORME_COMPLETO</code> justifica el cambio diciendo que <em>«su volatilidad
 (15,92) es la de un fondo de núcleo»</em>. <strong>15,92 no es su volatilidad: es su rentabilidad

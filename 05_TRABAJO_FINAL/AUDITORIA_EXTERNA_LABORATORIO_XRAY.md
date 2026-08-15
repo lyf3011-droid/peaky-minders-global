@@ -7,6 +7,14 @@
 > material no detectado en v1** *(H-4: commodities frente al capítulo 19)* y se acota el
 > recuento de pruebas. **v1 se conserva en el historial de git.**
 
+> ## 🔒 **ESTADO AL CIERRE (15-ago-2026): LABORATORIO CONGELADO — NO PROPAGADO**
+> **El laboratorio se conserva como entorno experimental separado.** Sus resultados son
+> **evidencia para futuras decisiones, no decisiones actuales**. Ver
+> **[`ANEXO_CIERRE_LABORATORIO_XRAY_PRE_REUNION.md`](ANEXO_CIERRE_LABORATORIO_XRAY_PRE_REUNION.md)**,
+> que fija el estado de cierre y el protocolo post-reunión.
+>
+> ⚠️ **H-1 NO exige rehacer el laboratorio** *(ver §A)*.
+
 > **Nada se ha modificado.** Ni cartera oficial, ni Investment Book, ni capítulos, ni pesos,
 > ni vehículos, ni decisiones Dxx. **PMMA Universal no se ha abierto.** No se han ejecutado
 > nuevas pruebas X-Ray ni la validación histórica.
@@ -67,13 +75,22 @@ caminos *(5,22 calculado vs 5,24 medido)* son trabajo serio.
 
 **Y aun así, cuatro hallazgos impiden aprobar la candidata tal como está.**
 
-> ## 🔴 **H-1 · La BASE del laboratorio no es la cartera oficial.**
-> El Freno de la BASE v10 es **un ETF de bonos globales agregados al 9%**
-> *(`IE00BF1QPL78`)*. El Freno oficial es **6% de fondo monetario en euros
-> (`FR0000447823`) + 3% de renta fija flexible (`IE00B84J9L26`)**. **Son instrumentos
-> distintos con duración, crédito y divisa distintos.** El CAMBIO 3 —financiar
-> commodities «desde el Freno»— **se probó sobre un Freno que la cartera oficial no
-> tiene**. La conclusión no es trasladable sin repetir la prueba.
+> ## 🟠 **H-1 · Limitación de transferencia** *(reformulado tras la auditoría de versionado)*
+> **La BASE utilizada en el laboratorio no coincide completamente con la cartera oficial
+> documentada —especialmente dentro del módulo Freno—; por ello, sus resultados no se
+> propagan automáticamente.**
+>
+> **[DATO]** El Freno de BASE v10 es un ETF de bonos agregados al 9% *(`IE00BF1QPL78`)*; el
+> oficial documentado es **6% monetario (`FR0000447823`) + 3% renta fija flexible
+> (`IE00B84J9L26`)**.
+>
+> ✅ **Esto NO invalida las comparaciones internas**, que se hicieron todas contra la misma
+> BASE. **La auditoría de versionado** *(`AUDITORIA_VERSIONADO_BASE.md`)* **verificó que la
+> BASE se fijó 2h07m antes del primer X-Ray y no se modificó después**, y que de 13
+> posiciones **8 son idénticas, 3 usan el vehículo real donde el libro usaba proxy, 1 es un
+> proxy documentado y solo 1 —el Freno— diverge**.
+>
+> ⚠️ **Lo único que impide es la propagación automática a la cartera oficial.**
 
 > ## 🔴 **H-2 · La reclasificación de Robeco no puede aprobarse con la evidencia aportada.**
 > **Error factual:** `INFORME_COMPLETO` justifica el cambio diciendo que *«su volatilidad
