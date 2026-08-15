@@ -1,0 +1,1180 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PMMA Universal — protocolo de falsación</title><style>
+:root{--tinta:#1a1d24;--fondo:#fbfaf7;--acento:#8b1e2d;--gris:#5a6070;--linea:#e2ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);
+font:17px/1.65 Georgia,'Times New Roman',serif}
+.pag{max-width:860px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.9em;line-height:1.2;border-bottom:3px solid var(--acento);padding-bottom:12px}
+h2{font-size:1.35em;margin-top:2.2em;color:var(--acento)}
+h3{font-size:1.1em;margin-top:1.8em}
+blockquote{margin:1.2em 0;padding:10px 20px;border-left:4px solid var(--acento);
+background:#f3efe6;font-style:normal}
+blockquote h2,blockquote h3{margin:6px 0;color:var(--tinta)}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.85em;
+font-family:system-ui,Segoe UI,sans-serif;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linea);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#efeadf}tr:nth-child(even) td{background:#f7f4ec}
+code{background:#efeadf;padding:1px 5px;border-radius:3px;
+font:.85em ui-monospace,Consolas,monospace}
+pre{background:#22252e;color:#e8e6df;padding:16px 20px;border-radius:8px;
+overflow-x:auto;font-size:.82em;line-height:1.5}
+pre code{background:none;color:inherit;padding:0}
+hr{border:none;border-top:1px solid var(--linea);margin:2.5em 0}
+strong{color:#000}
+@media print{body{background:#fff}.pag{padding:0}}
+</style></head><body><div class="pag"><h1>🧪 PMMA UNIVERSAL — PROTOCOLO DE FALSACIÓN PREESPECIFICADO</h1>
+<h2>FASE 0 · Congelado el 15 de agosto de 2026 · <strong>antes de examinar ninguna cartera externa</strong></h2>
+<blockquote>
+<h2>🔒 <strong>Este documento se fija ANTES de mirar resultados.</strong></h2>
+<p>Ninguna regla, criterio, umbral ni predicción de este protocolo se ha escrito conociendo
+el resultado del estudio. <strong>Toda regla añadida después llevará la etiqueta
+<code>POST HOC / surgida durante auditoría</code></strong>, como se hizo con C8 en el capítulo 19.</p>
+<p><strong>Nada ejecutado:</strong> ni análisis de carteras externas, ni comparación, ni backtest, ni
+X-Rays, ni modificación de PMMA. <strong>Cap. 4, cap. 19, cartera oficial y laboratorio X-Ray
+permanecen intactos.</strong></p>
+</blockquote>
+<hr />
+<h1>1. PREGUNTA PRINCIPAL</h1>
+<blockquote>
+<h2>**¿Puede PMMA representar de forma parsimoniosa y auditable las funciones económicas</h2>
+<h2>principales presentes en arquitecturas de cartera materialmente distintas, sin</h2>
+<h2>necesitar crear categorías <em>ad hoc</em> para cada una?**</h2>
+</blockquote>
+<h2>1.1 Preguntas secundarias</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Pregunta</th>
+<th>Qué la responde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Q1</strong></td>
+<td>¿Los siete módulos representan funciones <strong>realmente distintas</strong>?</td>
+<td>Matriz de solapamiento funcional <em>(§7.2)</em></td>
+</tr>
+<tr>
+<td><strong>Q2</strong></td>
+<td>¿Hay <strong>dos módulos tan parecidos</strong> que deberían fusionarse?</td>
+<td>F2 + matriz de solapamiento</td>
+</tr>
+<tr>
+<td><strong>Q3</strong></td>
+<td>¿Existe alguna <strong>función importante</strong> en otras arquitecturas que PMMA <strong>no</strong> pueda representar?</td>
+<td>F3 + registro de funciones huérfanas</td>
+</tr>
+<tr>
+<td><strong>Q4</strong></td>
+<td>¿Hay exposiciones que <strong>no puedan clasificarse</strong> por función dominante?</td>
+<td>F1 + Red Team</td>
+</tr>
+<tr>
+<td><strong>Q5</strong></td>
+<td>¿Las fronteras dependen <strong>excesivamente del juicio del analista</strong>?</td>
+<td>F4 + prueba de reproducibilidad <em>(§9)</em></td>
+</tr>
+<tr>
+<td><strong>Q6</strong></td>
+<td>¿PMMA permite <strong>comparar</strong> carteras de filosofías muy distintas?</td>
+<td>C8 + fichas comparadas</td>
+</tr>
+<tr>
+<td><strong>Q7</strong></td>
+<td>¿Sigue siendo útil aunque <strong>varios módulos tengan peso 0%</strong>?</td>
+<td>C10 + C11</td>
+</tr>
+<tr>
+<td><strong>Q8</strong></td>
+<td>¿Funciona <strong>sin exigir</strong> que cada módulo tenga un régimen macro favorable?</td>
+<td>§11 — <strong>ya resuelto por el cap. 19</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>1.2 Hipótesis inicial <em>(explícitamente falsable)</em></h2>
+<blockquote>
+<p><strong>[HIPÓTESIS]</strong> Los siete módulos actuales —<strong>Motor, Defensivos, Aceleración, Emergentes,
+Freno, Activos Reales, Asimetría</strong>— constituyen una taxonomía funcional suficientemente
+<strong>general, distinta y útil</strong> para representar arquitecturas de cartera materialmente
+diferentes de <em>Peaky Minders Global 10Y</em>.</p>
+</blockquote>
+<p><strong>Los siete módulos son la hipótesis inicial, NO el resultado.</strong> Convicción y Reserva
+Operativa son <strong>capas transversales</strong> y <strong>no se convertirán automáticamente en módulos</strong>.</p>
+<p><strong>Resultados permitidos:</strong> mantener 7 · reducir a 6 · aumentar a 8 · fusionar · dividir ·
+redefinir fronteras · concluir que alguna categoría depende demasiado del mandato · concluir
+que <strong>PMMA no generaliza</strong>.</p>
+<p><strong>Prohibido:</strong> partir de que los siete módulos son universales.</p>
+<hr />
+<h1>2. PRINCIPIO QUE SE PRESERVA</h1>
+<blockquote>
+<h2><strong>FUNCIÓN ANTES QUE PRODUCTO</strong></h2>
+</blockquote>
+<p><strong>No se clasifica por el nombre del activo.</strong> Un REIT no pertenece automáticamente a Activos
+Reales · <em>quality</em> no pertenece automáticamente a Defensivos · los TIPS no pertenecen
+automáticamente a Activos Reales · el oro no define por sí mismo un módulo · una acción no
+pertenece automáticamente a Motor.</p>
+<p><strong>La clasificación depende de qué función justifica que esa exposición exista dentro de esa
+cartera concreta.</strong> El mismo instrumento puede cumplir funciones distintas bajo mandatos
+distintos — <strong>y eso es una propiedad del método, no un defecto</strong>.</p>
+<p>⚠️ <strong>Consecuencia incómoda que se acepta desde ahora:</strong> si la función depende del mandato,
+<strong>una misma exposición puede clasificarse distinto en dos carteras</strong>, y eso <strong>no</strong> es una
+inconsistencia. Lo que sí sería un fallo es que <strong>dentro de la misma cartera</strong> dos analistas
+razonables la clasificaran distinto <em>(F4)</em>.</p>
+<hr />
+<h1>3. LAS DOS PREGUNTAS QUE NO SE MEZCLAN</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Pregunta</th>
+<th>Objeto de este estudio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A · TAXONOMÍA</strong></td>
+<td>¿PMMA clasifica de forma útil las funciones de una cartera?</td>
+<td>✅ <strong>SÍ</strong></td>
+</tr>
+<tr>
+<td><strong>B · RENDIMIENTO</strong></td>
+<td>¿Las exposiciones utilizadas tienen evidencia histórica favorable?</td>
+<td>❌ <strong>NO</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>La primera no depende de la segunda.</strong> Una taxonomía puede describir correctamente una
+función <strong>aunque la implementación concreta haya tenido mala rentabilidad</strong>.</p>
+</blockquote>
+<p><strong>Regla operativa:</strong> <strong>está prohibido usar rentabilidad, Sharpe, alfa o cualquier métrica de
+resultado como argumento a favor o en contra de la existencia de un módulo.</strong> Si aparece ese
+razonamiento durante la ejecución, se marca como violación del protocolo.</p>
+<hr />
+<h1>4. CRITERIOS DE EXISTENCIA DE UN MÓDULO — <strong>C1 a C12</strong></h1>
+<p><strong>Un módulo debe cumplir C1-C6 de forma necesaria.</strong> C7-C12 son criterios de calidad y
+parsimonia que se evalúan en conjunto.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Criterio</th>
+<th>Qué exige</th>
+<th>Cómo se comprueba</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>C1</strong></td>
+<td><strong>Función económica diferenciable</strong></td>
+<td>Debe poder explicarse <strong>qué trabajo hace el capital</strong>, en una frase, sin nombrar productos</td>
+<td>Redacción de la función sin mencionar ningún vehículo</td>
+</tr>
+<tr>
+<td><strong>C2</strong></td>
+<td><strong>No redundancia</strong></td>
+<td>No debe ser otra forma de expresar una función ya existente</td>
+<td>Matriz de solapamiento funcional <em>(§7.2)</em></td>
+</tr>
+<tr>
+<td><strong>C3</strong></td>
+<td><strong>Generalización</strong></td>
+<td>Debe aparecer o tener sentido en <strong>más de una arquitectura</strong></td>
+<td>Recuento sobre la muestra de carteras</td>
+</tr>
+<tr>
+<td><strong>C4</strong></td>
+<td><strong>Independencia de producto</strong></td>
+<td>Debe poder implementarse con <strong>≥2 vehículos distintos</strong> de naturaleza diferente</td>
+<td>Enumeración de implementaciones alternativas</td>
+</tr>
+<tr>
+<td><strong>C5</strong></td>
+<td><strong>Gobernabilidad</strong></td>
+<td>Debe permitir definir reglas de inclusión, peso, riesgo y revisión</td>
+<td>¿Puede escribirse una regla operativa no trivial?</td>
+</tr>
+<tr>
+<td><strong>C6</strong></td>
+<td><strong>Falsabilidad</strong></td>
+<td>Debe existir <strong>alguna observación capaz de cuestionar su necesidad</strong></td>
+<td>Se exige redactarla explícitamente por módulo</td>
+</tr>
+<tr>
+<td><strong>C7</strong></td>
+<td><strong>Parsimonia de creación</strong></td>
+<td>Crear un módulo debe aportar <strong>más claridad de la que cuesta</strong> en complejidad</td>
+<td>Comparación con la taxonomía simple de referencia <em>(§6.2)</em></td>
+</tr>
+<tr>
+<td><strong>C8</strong></td>
+<td><strong>Utilidad comparativa</strong></td>
+<td>Debe ayudar a <strong>comparar carteras distintas</strong></td>
+<td>¿Distingue arquitecturas que de otro modo se verían iguales?</td>
+</tr>
+<tr>
+<td><strong>C9</strong></td>
+<td><strong>Función dominante identificable</strong></td>
+<td>Un <strong>tercero razonable</strong> debe poder comprender por qué una posición se asignó allí</td>
+<td>Prueba de reproducibilidad <em>(§9)</em></td>
+</tr>
+<tr>
+<td><strong>C10</strong></td>
+<td><strong>Peso cero permitido</strong></td>
+<td>Una arquitectura <strong>no necesita usar todos los módulos</strong> para ser representable</td>
+<td>Recuento de módulos a 0% por cartera</td>
+</tr>
+<tr>
+<td><strong>C11</strong> 🆕</td>
+<td><strong>Parsimonia de conservación</strong> <em>(simétrica a C7)</em></td>
+<td><strong>Mantener</strong> un módulo también debe justificar su coste. Un módulo que <strong>nunca se usa en toda la muestra</strong> y <strong>cuya función queda cubierta por otro sin pérdida de información</strong> es candidato a <strong>eliminación o fusión</strong></td>
+<td>Ver §4.1</td>
+</tr>
+<tr>
+<td><strong>C12</strong> 🆕</td>
+<td><strong>Estabilidad de frontera</strong></td>
+<td>La frontera con los módulos vecinos debe poder enunciarse <strong>sin apelar a casos concretos</strong></td>
+<td>Redacción de la frontera en abstracto</td>
+</tr>
+</tbody>
+</table>
+<h2>4.1 ⚠️ Por qué existen C11 y C12 — <strong>corrección de un sesgo del propio protocolo</strong></h2>
+<p><strong>C7 (parsimonia) solo se aplicaba a la creación de módulos nuevos.</strong> Tal como estaba,
+<strong>protegía a los siete módulos actuales</strong>: cualquier módulo propuesto tenía que justificarse,
+pero <strong>ninguno existente tenía que justificar su permanencia</strong>. Eso es exactamente el sesgo
+que este protocolo debe evitar.</p>
+<blockquote>
+<h3><strong>C11 aplica la parsimonia en las dos direcciones.</strong> La pregunta *«¿merece existir este</h3>
+<h3>módulo nuevo?»<em> y la pregunta </em>«¿merece seguir existiendo este módulo actual?»* se</h3>
+<h3>responden con el mismo listón.</h3>
+</blockquote>
+<p><strong>C10 y C11 no se contradicen:</strong> C10 dice que <strong>una cartera concreta</strong> puede no usar un
+módulo sin que eso invalide la representación. C11 dice que <strong>si ningún caso de toda la
+muestra lo usa y su función es absorbible</strong>, el módulo sobra. <strong>C10 protege la
+representabilidad; no protege al módulo.</strong></p>
+<hr />
+<h1>5. CRITERIOS DE FALLO — <strong>F1 a F9, con umbrales fijados ex ante</strong></h1>
+<blockquote>
+<p>⚠️ <strong>Sin umbral, un criterio de fallo no es falsable.</strong> «Numerosos activos» o «módulos
+parecidos» son inauditables. Por eso cada F lleva <strong>su umbral escrito antes de mirar</strong>.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Fallo</th>
+<th>Umbral preespecificado</th>
+<th>Consecuencia si se cumple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F1</strong></td>
+<td><strong>Activos no clasificables sin excepción</strong></td>
+<td><strong>&gt; 15%</strong> de las exposiciones del universo requieren excepción, Protocolo de Extensión o categoría <em>ad hoc</em></td>
+<td>🔴 Cuestiona la cobertura del método</td>
+</tr>
+<tr>
+<td><strong>F2</strong></td>
+<td><strong>Dos módulos funcionalmente indistinguibles</strong></td>
+<td>En <strong>≥3 de las carteras</strong> de la muestra, dos módulos reciben asignaciones que <strong>un analista razonable podría intercambiar</strong> sin cambiar la lectura</td>
+<td>🟠 Obliga a evaluar fusión</td>
+</tr>
+<tr>
+<td><strong>F3</strong></td>
+<td><strong>Función recurrente sin módulo</strong></td>
+<td>Una función aparece en <strong>≥3 carteras</strong> de la muestra y <strong>no encaja</strong> en ninguno de los siete</td>
+<td>🔴 Obliga a evaluar módulo nuevo</td>
+</tr>
+<tr>
+<td><strong>F4</strong></td>
+<td><strong>Clasificación irreproducible</strong></td>
+<td><strong>&gt; 20%</strong> de las asignaciones difieren en la prueba de reproducibilidad <em>(§9)</em></td>
+<td>🔴 Cuestiona C9 y la auditabilidad</td>
+</tr>
+<tr>
+<td><strong>F5</strong></td>
+<td><strong>Redefinición constante</strong></td>
+<td>Se necesita <strong>modificar una definición de módulo más de 2 veces</strong> durante el estudio para acomodar carteras</td>
+<td>🔴 El método se está ajustando a los datos</td>
+</tr>
+<tr>
+<td><strong>F6</strong></td>
+<td><strong>Los módulos describen productos, no funciones</strong></td>
+<td><strong>≥2 módulos</strong> solo pueden definirse enumerando los productos que contienen</td>
+<td>🔴 Contradice el principio central</td>
+</tr>
+<tr>
+<td><strong>F7</strong></td>
+<td><strong>Solo funciona para Global 10Y</strong></td>
+<td><strong>≥3 carteras</strong> de la muestra requieren «encaje con tensión» o «no encaja»</td>
+<td>🔴 No generaliza</td>
+</tr>
+<tr>
+<td><strong>F8</strong></td>
+<td><strong>No supera a una taxonomía más simple</strong></td>
+<td>La <strong>taxonomía simple de referencia</strong> <em>(§6.2)</em> clasifica la muestra <strong>con igual utilidad comparativa y menos categorías</strong></td>
+<td>🔴 La complejidad no se paga</td>
+</tr>
+<tr>
+<td><strong>F9</strong> 🆕</td>
+<td><strong>Módulo inutilizado y absorbible</strong></td>
+<td>Un módulo queda a <strong>0% en todas las carteras</strong> de la muestra <strong>y</strong> su función es absorbible por otro sin pérdida de información</td>
+<td>🟠 Candidato a eliminación <em>(C11)</em></td>
+</tr>
+</tbody>
+</table>
+<h2>5.1 Qué NO cuenta como fallo</h2>
+<ul>
+<li><strong>Que un módulo tenga peso 0% en algunas carteras</strong> <em>(C10)</em>.</li>
+<li><strong>Que una misma exposición se clasifique distinto en carteras con mandatos distintos</strong>
+  <em>(§2)</em>.</li>
+<li><strong>Que un módulo no tenga un régimen macro favorable propio</strong> <em>(§11 — resuelto por el
+  cap. 19)</em>.</li>
+<li><strong>Que la implementación concreta de una función haya rendido mal</strong> <em>(§3, pregunta B)</em>.</li>
+</ul>
+<hr />
+<h1>6. LA COMPARACIÓN OBLIGATORIA CONTRA ALTERNATIVAS MÁS SIMPLES</h1>
+<p><strong>F8 no es auditable sin definir contra qué se compara. Se fija ahora, antes de mirar.</strong></p>
+<h2>6.1 Por qué es imprescindible</h2>
+<p>El criterio de falsación del propio capítulo 4 exige que PMMA <strong>mejore materialmente frente a
+una clasificación convencional más sencilla</strong>. Sin una alternativa concreta, esa exigencia es
+retórica.</p>
+<h2>6.2 Las tres taxonomías de referencia — <strong>congeladas</strong></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Taxonomía</th>
+<th>Categorías</th>
+<th>Por qué se elige</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>T0 · Clases de activo</strong></td>
+<td>Renta variable · Renta fija · Alternativos · Liquidez</td>
+<td><strong>4</strong></td>
+<td>Es el estándar de la industria. Si PMMA no bate esto, no aporta nada</td>
+</tr>
+<tr>
+<td><strong>T1 · Funcional mínima</strong></td>
+<td>Crecimiento · Estabilidad · Protección real · Opcionalidad</td>
+<td><strong>4</strong></td>
+<td>Es <strong>la versión más sencilla del propio principio funcional</strong>. Es el rival más duro</td>
+</tr>
+<tr>
+<td><strong>T2 · PMMA</strong></td>
+<td>Los siete módulos + 2 capas transversales</td>
+<td><strong>7 + 2</strong></td>
+<td>La hipótesis</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regla:</strong> las tres taxonomías se aplican <strong>a la misma muestra, con la misma plantilla y en
+el mismo orden</strong>, y se comparan con las métricas del §13. <strong>T1 es el competidor real</strong>, no T0.</p>
+<p>⚠️ <strong>Si T1 clasifica igual de bien con cuatro categorías, PMMA falla F8</strong> — aunque cada
+módulo cumpla C1-C6 por separado.</p>
+<hr />
+<h1>7. UNIVERSO DE EXPOSICIONES A TESTAR <em>(no se analiza todavía)</em></h1>
+<h2>7.1 Lista congelada — 26 exposiciones</h2>
+<p><strong>Renta variable:</strong> global · EEUU · desarrollada ex-EEUU · emergentes · small caps · value ·
+quality · momentum · low volatility · growth · sectores defensivos · un país concreto.
+<strong>Renta fija:</strong> soberana · agregada · larga duración · corta duración · crédito grado de
+inversión · high yield · ligada a inflación (TIPS) · monetario/cash.
+<strong>Reales y alternativos:</strong> oro · cesta amplia de materias primas · inmobiliario/REIT ·
+infraestructura · <em>managed futures</em> / <em>trend following</em> · private equity.
+<strong>Asimétricos:</strong> bitcoin/cripto.</p>
+<blockquote>
+<p><strong>No se asume que ninguna necesite módulo propio.</strong> La pregunta es la contraria:
+<strong>¿qué función realiza?</strong></p>
+</blockquote>
+<h2>7.2 Matriz de solapamiento funcional — instrumento para Q1, Q2 y C2</h2>
+<p>Para cada par de módulos se registrará: <strong>¿existe alguna exposición del universo que un
+analista razonable pudiera asignar a cualquiera de los dos?</strong> El resultado es una matriz
+7×7 de <strong>ambigüedad estructural</strong>, no de correlación.</p>
+<p><strong>Predicción registrada:</strong> ver §16.</p>
+<hr />
+<h1>8. MUESTRA DE CARTERAS EXTERNAS <em>(no se analiza todavía)</em></h1>
+<h2>8.1 Principio de selección: <strong>maximizar la tensión, no la comodidad</strong></h2>
+<p>⚠️ <strong>Una muestra formada solo por carteras multiactivo estratégicas haría que PMMA encajara
+trivialmente.</strong> Por eso la muestra incluye deliberadamente <strong>arquitecturas para las que PMMA
+no fue diseñado</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Arquitectura</th>
+<th>Por qué está en la muestra</th>
+<th>Tensión esperada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td><strong>60/40 tradicional</strong></td>
+<td>El caso más simple y más extendido</td>
+<td>¿PMMA aporta algo o es sobreingeniería?</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td><strong>Permanent Portfolio</strong> <em>(Browne)</em></td>
+<td>Cuatro bloques por escenario económico</td>
+<td>🔴 <strong>Su lógica es de régimen, no funcional</strong></td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td><strong>All Weather / risk parity</strong></td>
+<td>Asignación por contribución al riesgo</td>
+<td>🔴 <strong>El peso no es la unidad de decisión</strong></td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td><strong>Golden Butterfly</strong></td>
+<td>Variante con sesgo a small value</td>
+<td>Frontera Motor/Aceleración</td>
+</tr>
+<tr>
+<td><strong>E</strong></td>
+<td><strong>Cartera global indexada de un solo fondo</strong></td>
+<td>Un único vehículo</td>
+<td>🔴 <strong>¿Se puede clasificar una cartera con una sola posición?</strong></td>
+</tr>
+<tr>
+<td><strong>F</strong></td>
+<td><strong>Cartera factorial multi-factor</strong></td>
+<td>Value, momentum, quality, low vol</td>
+<td>🔴 <strong>¿Todos los factores caben en Aceleración?</strong></td>
+</tr>
+<tr>
+<td><strong>G</strong></td>
+<td><strong>Modelo Endowment</strong> <em>(estilo Swensen)</em></td>
+<td>Alternativos ilíquidos, private markets</td>
+<td>🔴 <strong>Private equity, absolute return</strong></td>
+</tr>
+<tr>
+<td><strong>H</strong></td>
+<td><strong>Cartera de rentas / income</strong></td>
+<td>Objetivo de flujo, no de crecimiento</td>
+<td>🔴 <strong>El mandato es distinto: ¿PMMA lo cubre?</strong></td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td><strong>Trend following / managed futures puro</strong></td>
+<td>Estrategia, no clase de activo</td>
+<td>🔴 <strong>La función es dinámica, no estructural</strong></td>
+</tr>
+<tr>
+<td><strong>J</strong></td>
+<td><strong>Peaky Minders Global 10Y</strong></td>
+<td>El caso de origen</td>
+<td>Control: <strong>debe encajar</strong> — si no, hay un problema grave</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Diez arquitecturas, de las cuales seis están elegidas por su capacidad de romper PMMA.</strong></p>
+<h2>8.2 Reglas de fuente para la Fase 1</h2>
+<ol>
+<li><strong>Fuentes primarias siempre que existan</strong>: documento del creador, libro original,
+   documentación institucional del gestor.</li>
+<li><strong>Si una cartera tiene varias versiones, se declara cuál se usa y por qué.</strong></li>
+<li><strong>No se fijan composiciones de memoria.</strong> Ninguna cartera entra en el estudio sin fuente
+   citada con autor, obra y año.</li>
+<li><strong>Los blogs no son fuente principal.</strong></li>
+<li><strong>Prohibido usar resultados del laboratorio X-Ray como validación universal</strong> — es un
+   entorno experimental congelado y no propagado <em>(D107)</em>.</li>
+</ol>
+<hr />
+<h1>9. PLANTILLA ÚNICA DE ANÁLISIS — <strong>congelada</strong></h1>
+<p><strong>Se aplica idéntica a las diez arquitecturas y a las tres taxonomías. No se adapta después
+de cada cartera.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mandato</strong></td>
+<td>Qué intenta conseguir</td>
+</tr>
+<tr>
+<td><strong>Horizonte</strong></td>
+<td>Largo / corto / indefinido</td>
+</tr>
+<tr>
+<td><strong>Filosofía</strong></td>
+<td>Qué lógica utiliza</td>
+</tr>
+<tr>
+<td><strong>Fuente</strong></td>
+<td>Autor, obra, año, versión declarada</td>
+</tr>
+<tr>
+<td><strong>Exposiciones</strong></td>
+<td>Qué contiene realmente</td>
+</tr>
+<tr>
+<td><strong>Función de cada exposición</strong></td>
+<td>Para qué está <strong>en esa cartera</strong></td>
+</tr>
+<tr>
+<td><strong>Módulo PMMA candidato</strong></td>
+<td>Clasificación inicial</td>
+</tr>
+<tr>
+<td><strong>Ambigüedad</strong></td>
+<td>Baja / media / alta</td>
+</tr>
+<tr>
+<td><strong>Alternativa posible</strong></td>
+<td>Otro módulo razonable, si lo hay</td>
+</tr>
+<tr>
+<td><strong>Función sin representación</strong></td>
+<td>Si existe</td>
+</tr>
+<tr>
+<td><strong>Módulo no utilizado</strong></td>
+<td>Si existe</td>
+</tr>
+<tr>
+<td><strong>Resultado</strong></td>
+<td>✅ Encaja · ⚠️ Encaja con tensión · ❌ No encaja</td>
+</tr>
+</tbody>
+</table>
+<h2>9.1 Prueba de reproducibilidad — <strong>para Q5 y F4</strong></h2>
+<p><strong>El problema:</strong> la limitación <strong>L1</strong> del capítulo 4 —subjetividad inter-analista <strong>no
+testada</strong>— sigue abierta. Un protocolo que pregunte Q5 sin poder responderla es débil.</p>
+<p><strong>Diseño factible, con su limitación declarada:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Prueba</th>
+<th>Viabilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ideal</strong></td>
+<td>Dos analistas independientes clasifican a ciegas las mismas 30 exposiciones</td>
+<td>⚠️ <strong>Requiere una segunda persona.</strong> Si el equipo puede aportarla, es el test correcto</td>
+</tr>
+<tr>
+<td><strong>Mínimo viable</strong></td>
+<td><strong>Clasificación a ciegas diferida</strong>: las 30 exposiciones se clasifican <strong>dos veces con ≥48h de separación</strong>, sin consultar la primera tanda, y se mide la coincidencia</td>
+<td>✅ Ejecutable</td>
+</tr>
+<tr>
+<td><strong>Complementario</strong></td>
+<td><strong>Test del tercero</strong>: por cada asignación se redacta la justificación <strong>sin nombrar el producto</strong>; si la justificación no permite reconstruir el módulo, cuenta como ambigua</td>
+<td>✅ Ejecutable</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Limitación declarada:</strong> la prueba mínima mide <strong>consistencia intra-analista</strong>, no
+inter-analista. <strong>No cierra L1.</strong> Se declarará así en el resultado, sin presentarla como si
+lo hiciera.</p>
+</blockquote>
+<hr />
+<h1>10. RED TEAM PMMA — <strong>fase obligatoria</strong></h1>
+<p><strong>Su trabajo es buscar deliberadamente casos que hagan incómodo a PMMA.</strong> No se esconde
+ninguno.</p>
+<h2>10.1 Casos duros preidentificados</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Caso</th>
+<th>Por qué es duro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>R1</strong></td>
+<td><strong>TIPS</strong></td>
+<td>¿Freno <em>(estabilidad nominal)</em> o Activos Reales <em>(protección real)</em>? <strong>El propio cap. 4 lo declara «default revisable»</strong></td>
+</tr>
+<tr>
+<td><strong>R2</strong></td>
+<td><strong>REIT</strong></td>
+<td>Motor si está dentro de un índice global; Activos Reales si es asignación específica. <strong>Depende del mandato</strong></td>
+</tr>
+<tr>
+<td><strong>R3</strong></td>
+<td><strong>Quality</strong></td>
+<td>Defensivos por resiliencia o Aceleración por prima. <strong>El cap. 4 lo usa como ejemplo del orden del árbol</strong></td>
+</tr>
+<tr>
+<td><strong>R4</strong></td>
+<td><strong>Trend following / managed futures</strong></td>
+<td>🔴 <strong>Función dinámica, no estructural.</strong> ¿Es Asimetría, Freno o <strong>una función que PMMA no tiene</strong>?</td>
+</tr>
+<tr>
+<td><strong>R5</strong></td>
+<td><strong>High yield</strong></td>
+<td>Renta fija con comportamiento de renta variable. <strong>El cap. 4 ya lo manda al Protocolo de Extensión</strong></td>
+</tr>
+<tr>
+<td><strong>R6</strong></td>
+<td><strong>Private equity</strong></td>
+<td>¿Motor ilíquido, o una función distinta <em>(prima de iliquidez)</em>?</td>
+</tr>
+<tr>
+<td><strong>R7</strong></td>
+<td><strong>Infraestructura</strong></td>
+<td>Entre Activos Reales, Defensivos y Motor</td>
+</tr>
+<tr>
+<td><strong>R8</strong></td>
+<td><strong>Opciones / estrategias de cobertura</strong></td>
+<td>Función de seguro sin exposición direccional</td>
+</tr>
+<tr>
+<td><strong>R9</strong></td>
+<td><strong>Un fondo mixto o un multiactivo delegado</strong></td>
+<td>Contiene <strong>varias funciones en un solo vehículo</strong></td>
+</tr>
+<tr>
+<td><strong>R10</strong></td>
+<td><strong>Cash: Freno o Reserva</strong></td>
+<td><strong>La distinción es de mandato, no de instrumento.</strong> Riesgo de circularidad</td>
+</tr>
+<tr>
+<td><strong>R11</strong></td>
+<td><strong>Bitcoin</strong></td>
+<td>¿Asimetría, Activos Reales <em>(reserva de valor)</em> o especulación sin módulo?</td>
+</tr>
+<tr>
+<td><strong>R12</strong></td>
+<td><strong>Renta variable de un solo país</strong> <em>(caso India del laboratorio)</em></td>
+<td>¿Aceleración, Emergentes o Motor con sesgo? <strong>Ya generó desacuerdo real</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>10.2 Regla del Red Team</h2>
+<p><strong>Un caso resuelto invocando el Protocolo de Extensión cuenta como excepción para F1.</strong> El
+Protocolo de Extensión es una válvula honesta, <strong>pero cada uso es evidencia de cobertura
+incompleta y se contabiliza como tal.</strong></p>
+<hr />
+<h1>11. RELACIÓN CON LOS CUATRO CLIMAS — <strong>límite estricto</strong></h1>
+<blockquote>
+<h2>🔴 <strong>Queda descartado como condición de existencia:</strong> *«cada módulo debe tener un</h2>
+<h2>cuadrante macro en el que funcione»*.</h2>
+</blockquote>
+<p><strong>El capítulo 19 ya lo resolvió</strong> <em>(D97, y los parches D99-D104)</em>: de las siete hipótesis de
+régimen, <strong>una recibió apoyo, una parcial, tres no se confirmaron y dos no eran evaluables</strong>.
+Exigir un cuadrante favorable por módulo <strong>contradiría evidencia propia ya cerrada</strong>.</p>
+<p><strong>PMMA es principalmente una arquitectura funcional, no un modelo de <em>timing</em> macro.</strong></p>
+<table>
+<thead>
+<tr>
+<th>✅ Los regímenes <strong>podrán</strong> usarse después para estudiar</th>
+<th>❌ Los regímenes <strong>NO</strong> se usarán para</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sensibilidades</td>
+<td>Justificar la existencia de un módulo</td>
+</tr>
+<tr>
+<td>Complementariedad entre funciones</td>
+<td>Eliminar un módulo por no «ganar» un cuadrante</td>
+</tr>
+<tr>
+<td>Concentración de vulnerabilidades</td>
+<td>Reordenar la taxonomía</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ejemplos que quedan expresamente protegidos:</strong> <strong>Aceleración</strong> puede existir por primas de
+retorno a largo plazo · <strong>Asimetría</strong> por opcionalidad · <strong>Motor</strong> como fuente productiva
+central. <strong>Ninguno necesita ganar un cuadrante para justificar su existencia.</strong></p>
+<hr />
+<h1>12. MÉTRICAS DEL ESTUDIO — <strong>sin puntuación agregada</strong></h1>
+<blockquote>
+<p>⚠️ <strong>No se construirá ningún «PMMA Score».</strong> Una puntuación agregada esconde las
+compensaciones y permite que un mal resultado se diluya en un promedio.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Indicador</th>
+<th>Cómo se mide</th>
+<th>Se compara con</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M1</strong></td>
+<td><strong>Cobertura sin excepción</strong></td>
+<td>% de exposiciones clasificables sin excepción ni extensión</td>
+<td>T0 y T1</td>
+</tr>
+<tr>
+<td><strong>M2</strong></td>
+<td><strong>Ambigüedades</strong></td>
+<td>Nº de asignaciones con ambigüedad media o alta</td>
+<td>T0 y T1</td>
+</tr>
+<tr>
+<td><strong>M3</strong></td>
+<td><strong>Funciones no representadas</strong></td>
+<td>Nº de funciones huérfanas, con su frecuencia</td>
+<td>T0 y T1</td>
+</tr>
+<tr>
+<td><strong>M4</strong></td>
+<td><strong>Módulos nunca utilizados</strong></td>
+<td>Nº de módulos a 0% en <strong>toda</strong> la muestra</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>M5</strong></td>
+<td><strong>Solapamientos recurrentes</strong></td>
+<td>Pares de módulos ambiguos en ≥2 carteras</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>M6</strong></td>
+<td><strong>Discrepancia de clasificación</strong></td>
+<td>% de asignaciones que difieren en la prueba de reproducibilidad</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>M7</strong></td>
+<td><strong>Necesidad de redefinición</strong></td>
+<td>Nº de veces que hubo que retocar una definición</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>M8</strong></td>
+<td><strong>Parsimonia</strong></td>
+<td>Categorías utilizadas / capacidad de distinguir arquitecturas</td>
+<td><strong>T1 es el rival</strong></td>
+</tr>
+<tr>
+<td><strong>M9</strong></td>
+<td><strong>Usos del Protocolo de Extensión</strong></td>
+<td>Recuento absoluto</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cada métrica se publica por separado, con su numerador y denominador.</strong></p>
+<hr />
+<h1>13. POSIBLES RESULTADOS — <strong>predefinidos</strong></h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Resultado</th>
+<th>Condición aproximada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟢 <strong>A</strong></td>
+<td><strong>PMMA SOBREVIVE</strong></td>
+<td>Ningún F se cumple · M1 alto · PMMA aporta sobre T1</td>
+</tr>
+<tr>
+<td>🟡 <strong>B</strong></td>
+<td><strong>SOBREVIVE CON AJUSTES</strong></td>
+<td>Se cumplen <strong>F2 o F5</strong> de forma acotada: alguna frontera o definición necesita modificación, pero la estructura aguanta</td>
+</tr>
+<tr>
+<td>🟠 <strong>C</strong></td>
+<td><strong>REESTRUCTURACIÓN</strong></td>
+<td>Se cumplen <strong>F3, F9 o F2 de forma amplia</strong>: la lógica funcional sirve, pero el número o la estructura de módulos debe cambiar materialmente</td>
+</tr>
+<tr>
+<td>🔴 <strong>D</strong></td>
+<td><strong>NO GENERALIZA</strong></td>
+<td>Se cumplen <strong>F1, F4, F7 u F8</strong>: PMMA funciona principalmente como descripción de Global 10Y</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Los cuatro resultados son igualmente aceptables.</strong> El estudio no tiene un desenlace
+preferido, y <strong>el resultado D no es un fracaso del trabajo: es un hallazgo publicable.</strong></p>
+</blockquote>
+<hr />
+<h1>14. FUENTES REQUERIDAS</h1>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Exigencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Carteras externas</strong></td>
+<td>Fuente primaria: libro, documento del creador o documentación institucional. <strong>Versión declarada</strong></td>
+</tr>
+<tr>
+<td><strong>Funciones económicas y factores</strong></td>
+<td>Literatura académica revisada</td>
+</tr>
+<tr>
+<td><strong>Datos de producto</strong></td>
+<td>Documentación primaria del emisor</td>
+</tr>
+<tr>
+<td><strong>Etiquetado obligatorio</strong></td>
+<td><strong>[DATO]</strong> · <strong>[EVIDENCIA EXTERNA]</strong> · <strong>[INTERPRETACIÓN]</strong> · <strong>[HIPÓTESIS PMMA]</strong> — <strong>ninguna categoría se convierte en otra</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>15. CONTROL DE HINDSIGHT Y TRAZABILIDAD</h1>
+<blockquote>
+<p><strong>Esta metodología se fija ANTES de estudiar sistemáticamente las carteras externas y
+ANTES de decidir si los siete módulos sobreviven.</strong></p>
+</blockquote>
+<h2>15.1 Tabla de trazabilidad de reglas</h2>
+<table>
+<thead>
+<tr>
+<th>Regla</th>
+<th>Fecha de fijación</th>
+<th>¿Pre-resultados?</th>
+<th>Cambio posterior</th>
+<th>Motivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pregunta principal y Q1-Q8</strong></td>
+<td>15-ago-2026</td>
+<td>✅ Sí</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>C1-C10</strong></td>
+<td>15-ago-2026</td>
+<td>✅ Sí</td>
+<td>—</td>
+<td>Propuestos en el encargo</td>
+</tr>
+<tr>
+<td><strong>C11 · parsimonia de conservación</strong></td>
+<td>15-ago-2026</td>
+<td>✅ Sí</td>
+<td>—</td>
+<td><strong>Añadido en la autoauditoría §19: C7 solo penalizaba crear, no conservar</strong></td>
+</tr>
+<tr>
+<td><strong>C12 · estabilidad de frontera</strong></td>
+<td>15-ago-2026</td>
+<td>✅ Sí</td>
+<td>—</td>
+<td>Añadido para hacer operativo C9</td>
+</tr>
+<tr>
+<td><strong>F1-F8</strong></td>
+<td>15-ago-2026</td>
+<td>✅ Sí</td>
+<td>—</td>
+<td>Propuestos en el encargo</td>
+</tr>
+<tr>
+<td><strong>Umbrales cuantitativos de F1-F9</strong></td>
+<td>15-ago-2026</td>
+<td>✅ Sí</td>
+<td>—</td>
+<td><strong>Sin umbral no eran falsables</strong></td>
+</tr>
+<tr>
+<td><strong>F9 · módulo inutilizado</strong></td>
+<td>15-ago-2026</td>
+<td>✅ Sí</td>
+<td>—</td>
+<td>Contrapartida de C11</td>
+</tr>
+<tr>
+<td><strong>T0 y T1 como taxonomías rivales</strong></td>
+<td>15-ago-2026</td>
+<td>✅ Sí</td>
+<td>—</td>
+<td><strong>F8 no era auditable sin rival concreto</strong></td>
+</tr>
+<tr>
+<td><strong>Muestra de 10 arquitecturas</strong></td>
+<td>15-ago-2026</td>
+<td>✅ Sí</td>
+<td>—</td>
+<td>6 elegidas por su capacidad de romper PMMA</td>
+</tr>
+<tr>
+<td><strong>Predicciones registradas §16</strong></td>
+<td>15-ago-2026</td>
+<td>✅ Sí</td>
+<td>—</td>
+<td>Anti-hindsight</td>
+</tr>
+<tr>
+<td><em>(filas siguientes)</em></td>
+<td>—</td>
+<td>❌ <strong>POST HOC</strong></td>
+<td>—</td>
+<td><strong>Toda regla añadida después se etiqueta así</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>16. 🔮 PREDICCIONES REGISTRADAS — <strong>antes de mirar</strong></h1>
+<blockquote>
+<p><strong>El dispositivo anti-hindsight más fuerte del protocolo.</strong> Si aciertan, los criterios
+capturaban algo real; si fallan, queda registrado que fallaron.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Predicción</th>
+<th>Falsable por</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P1</strong></td>
+<td><strong>Emergentes será el módulo más cuestionado.</strong> Es geográfico, no funcional: su función <em>(crecimiento)</em> ya la cubre Motor, y su justificación real parece ser <strong>decisión dedicada modificable</strong>, que es gobernanza, no función</td>
+<td>Si sobrevive C1-C2 sin tensión</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td><strong>Defensivos y Freno se solaparán</strong> en al menos dos carteras: ambos «estabilizan», con instrumentos distintos</td>
+<td>Si M5 no los empareja</td>
+</tr>
+<tr>
+<td><strong>P3</strong></td>
+<td><strong>Trend following (R4) no tendrá módulo natural</strong> y será el caso más fuerte a favor de F3</td>
+<td>Si encaja limpiamente</td>
+</tr>
+<tr>
+<td><strong>P4</strong></td>
+<td><strong>La cartera de un solo fondo (E) será representable pero trivial</strong>, y pondrá a prueba C8 más que C1</td>
+<td>Si resulta no representable</td>
+</tr>
+<tr>
+<td><strong>P5</strong></td>
+<td><strong>All Weather (C) generará tensión de unidad de medida</strong>: PMMA asigna por peso y ella por riesgo</td>
+<td>Si no aparece esa tensión</td>
+</tr>
+<tr>
+<td><strong>P6</strong></td>
+<td><strong>PMMA superará a T0</strong> con claridad <strong>y le costará superar a T1</strong></td>
+<td>Si T1 pierde con holgura</td>
+</tr>
+<tr>
+<td><strong>P7</strong></td>
+<td><strong>El resultado más probable es 🟡 B o 🟠 C</strong>, no 🟢 A</td>
+<td>Cualquier otro desenlace</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Estas predicciones no condicionan el análisis. Se contrastarán al final como prueba de
+calibración.</strong></p>
+<hr />
+<h1>17. LIMITACIONES DEL ESTUDIO — declaradas desde ahora</h1>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Limitación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>L-U1</strong></td>
+<td><strong>Un solo analista.</strong> La prueba de reproducibilidad es intra-analista; <strong>L1 del cap. 4 no se cierra</strong></td>
+</tr>
+<tr>
+<td><strong>L-U2</strong></td>
+<td><strong>La muestra de carteras es intencionada, no aleatoria.</strong> Se elige para maximizar tensión, lo que <strong>sesga hacia encontrar problemas</strong> — declarado como sesgo deliberado y conservador</td>
+</tr>
+<tr>
+<td><strong>L-U3</strong></td>
+<td><strong>PMMA lo diseñó quien lo evalúa.</strong> El conflicto es estructural y solo se mitiga con reglas escritas antes y publicación de todos los fallos</td>
+</tr>
+<tr>
+<td><strong>L-U4</strong></td>
+<td><strong>«Función» no es observable.</strong> Se infiere del mandato declarado del creador; cuando el creador no lo declara, <strong>la función se atribuye y eso se marca como ambigüedad alta</strong></td>
+</tr>
+<tr>
+<td><strong>L-U5</strong></td>
+<td><strong>El estudio es conceptual, no empírico.</strong> No mide si las funciones se comportan como se supone — eso es la pregunta B, fuera de alcance</td>
+</tr>
+<tr>
+<td><strong>L-U6</strong></td>
+<td><strong>Diez arquitecturas no son la población de carteras posibles</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>18. PLAN DE EJECUCIÓN DE LA FASE 1 <em>(no se ejecuta ahora)</em></h1>
+<table>
+<thead>
+<tr>
+<th>Paso</th>
+<th>Contenido</th>
+<th>Producto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Fuentes</strong>: localizar y citar las diez arquitecturas con versión declarada</td>
+<td>Tabla de fuentes</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Universo de exposiciones</strong>: función económica de cada una de las 26, <strong>sin asignar módulo todavía</strong></td>
+<td>Diccionario de funciones</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Clasificación ciega</strong>: asignar módulo con la plantilla, una cartera cada vez</td>
+<td>10 fichas</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Prueba de reproducibilidad</strong> <em>(§9.1)</em>, con ≥48h de separación</td>
+<td>M6</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Red Team</strong> sobre los 12 casos duros</td>
+<td>Registro de excepciones</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Aplicar T0 y T1</strong> a la misma muestra</td>
+<td>Comparación de M1, M2, M3, M8</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Matriz de solapamiento funcional 7×7</strong></td>
+<td>M5</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Evaluar F1-F9</strong> contra sus umbrales</td>
+<td>Tabla de fallos</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td><strong>Contrastar las predicciones §16</strong></td>
+<td>Calibración</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td><strong>Veredicto A/B/C/D</strong> y, si procede, propuesta de arquitectura revisada</td>
+<td>Informe final</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ningún paso puede adelantarse.</strong> El paso 6 <strong>no</strong> puede hacerse después de conocer el
+resultado de PMMA para ajustar la comparación.</p>
+<hr />
+<h1>19. 🔍 AUTOAUDITORÍA DEL PROTOCOLO — <strong>antes de congelar</strong></h1>
+<h2>A · ¿Hay alguna regla diseñada para que sobrevivan los siete módulos?</h2>
+<p>🔴 <strong>Sí, había una — y se ha corregido.</strong> <strong>C7 (parsimonia) penalizaba únicamente crear
+módulos nuevos</strong>, no conservarlos. Tal como estaba, cualquier propuesta de módulo adicional
+tenía que justificarse mientras <strong>los siete existentes no tenían que justificar su
+permanencia</strong>. <strong>Corrección: se añaden C11 (parsimonia de conservación) y F9 (módulo
+inutilizado y absorbible).</strong></p>
+<p>🟠 <strong>Segundo riesgo detectado: C10 («peso cero permitido»)</strong> puede usarse para blindar un
+módulo que nadie usa. <strong>Corrección: C10 se acota explícitamente</strong> — protege la
+representabilidad de una cartera concreta, <strong>no la existencia del módulo</strong>, que responde ante
+C11 y F9.</p>
+<h2>B · ¿Algún criterio sería distinto si PMMA tuviera 6 u 8 módulos?</h2>
+<p><strong>Revisados C1-C12 uno a uno: ninguno menciona el número siete ni depende de él.</strong> Todos se
+formulan sobre <strong>un módulo genérico</strong>. La muestra, el universo, los umbrales y las taxonomías
+rivales tampoco dependen del número actual.</p>
+<p>⚠️ <strong>Salvo un punto:</strong> la matriz de solapamiento es <strong>7×7</strong> porque hoy hay siete. <strong>Se
+redimensionaría automáticamente</strong> con otro número. <strong>No es un sesgo, es una consecuencia.</strong></p>
+<h2>C · ¿El protocolo permite realmente concluir que PMMA no generaliza?</h2>
+<p><strong>Sí, y por tres vías independientes:</strong> F1 <em>(&gt;15% de exposiciones necesitan excepción)</em> ·
+F4 <em>(&gt;20% de discrepancia)</em> · F7 <em>(≥3 carteras no encajan)</em> · <strong>y F8</strong>, que puede tumbar
+PMMA <strong>aunque todos los módulos cumplan C1-C6</strong>, simplemente porque una taxonomía de cuatro
+categorías haga el mismo trabajo.</p>
+<p><strong>F8 es la vía más peligrosa para PMMA y está deliberadamente incluida</strong>, con <strong>T1
+definida ex ante</strong> para que no pueda elegirse después un rival cómodo.</p>
+<h2>D · ¿Confundimos función económica con rentabilidad histórica?</h2>
+<p><strong>No, y está blindado en §3:</strong> la pregunta A <em>(taxonomía)</em> y la B <em>(rendimiento)</em> se separan
+formalmente, y <strong>queda prohibido usar rentabilidad, Sharpe o alfa como argumento sobre la
+existencia de un módulo</strong>. Si ese razonamiento aparece durante la ejecución, <strong>se marca como
+violación del protocolo</strong>.</p>
+<h2>E · ¿Intentamos convertir los cuatro regímenes en algo que el cap. 19 ya demostró que no son?</h2>
+<p><strong>No.</strong> §11 lo prohíbe expresamente y cita la evidencia: de siete hipótesis de régimen, <strong>solo
+una recibió apoyo</strong>. <strong>Exigir un cuadrante por módulo contradiría evidencia propia cerrada.</strong>
+Los regímenes quedan disponibles <strong>después</strong>, para estudiar sensibilidades — nunca como
+condición de existencia.</p>
+<h2>F 🆕 · Un sesgo adicional que detecto yo, y que conviene declarar</h2>
+<p><strong>El propio principio «función antes que producto» es difícil de falsar</strong>, porque permite
+reasignar cualquier caso incómodo diciendo «su función aquí es otra». <strong>Esa flexibilidad es
+la fuerza del método y a la vez su mayor riesgo epistemológico.</strong></p>
+<p><strong>Contrapeso incorporado:</strong> <strong>C12 (estabilidad de frontera)</strong> exige enunciar la frontera <strong>sin
+apelar a casos concretos</strong>, y <strong>F6</strong> declara fallo si un módulo solo puede definirse
+enumerando productos. <strong>Sin esos dos criterios, PMMA sería infalsable por construcción.</strong></p>
+<hr />
+<h1>20. CIERRE DE LA FASE 0</h1>
+<p><strong>Este protocolo queda CONGELADO el 15 de agosto de 2026.</strong></p>
+<table>
+<thead>
+<tr>
+<th>✅ Verificado</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cap. 4</strong></td>
+<td>Intacto — cerrado v2.1 <em>(D105)</em></td>
+</tr>
+<tr>
+<td><strong>Cap. 19</strong></td>
+<td>Intacto — cerrado v1.2 <em>(D97)</em></td>
+</tr>
+<tr>
+<td><strong>Cartera oficial</strong></td>
+<td>Intacta — congelada</td>
+</tr>
+<tr>
+<td><strong>Laboratorio X-Ray</strong></td>
+<td>Intacto — congelado y no propagado <em>(D107)</em></td>
+</tr>
+<tr>
+<td><strong>PMMA</strong></td>
+<td><strong>No modificado.</strong> Ni un módulo añadido, eliminado ni redefinido</td>
+</tr>
+<tr>
+<td><strong>Fase 1</strong></td>
+<td><strong>NO ejecutada</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3>**El objetivo no es que PMMA sobreviva. El objetivo es saber qué queda de PMMA después</h3>
+<h3>de intentar romperlo con reglas escritas antes de saber el resultado.**</h3>
+</blockquote>
+<hr />
+<h2>REGISTRO</h2>
+<p><strong>15-ago-2026 — Fase 0 de PMMA Universal.</strong> Se fijan pregunta, hipótesis, criterios de
+existencia <em>(C1-C12)</em>, criterios de fallo con umbrales <em>(F1-F9)</em>, taxonomías rivales
+<em>(T0, T1)</em>, universo de 26 exposiciones, muestra de 10 arquitecturas, plantilla única, Red
+Team de 12 casos, métricas M1-M9, límites frente a los regímenes, siete predicciones y
+autoauditoría. <strong>Pendiente de aprobación antes de ejecutar la Fase 1.</strong></p></div></body></html>
